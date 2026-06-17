@@ -1,0 +1,173 @@
+# Hoax.ai Decision Log
+
+This decision log records major strategic, technical, governance, content, SEO, interface, monetization, and infrastructure decisions.
+
+The log is append-only.
+
+Decisions may be amended by later decisions, but prior decisions should not be silently erased.
+
+---
+
+## DEC-001 — Evidence Posture, Not Truth Verdict
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai will operate as an evidence-posture system, not a truth-verdict platform.
+
+### Rationale
+
+The strategic value of Hoax.ai comes from disciplined classification of evidence conditions, not from careless claims of truth detection.
+
+This protects the asset from legal, reputational, and conceptual weakness.
+
+### Implications
+
+Hoax.ai may classify evidence posture, synthetic risk signals, source confidence, contextual gaps, provenance weaknesses, and deception patterns.
+
+Hoax.ai must not issue final verdicts about truth, people, institutions, or events.
+
+---
+
+## DEC-002 — Framework, Not Verdict
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+The governing communication frame is:
+
+> A framework, not a verdict.
+
+### Rationale
+
+This phrase protects the asset from being mistaken for a political fact-checking platform, accusation engine, or absolute AI detector.
+
+### Implications
+
+All public pages, tools, reports, and interface language must support bounded classification rather than final judgment.
+
+---
+
+## DEC-003 — GitHub-First Public Build
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai will be built and published first through GitHub.
+
+Cloudflare nameserver routing will be added only after the GitHub version has a complete, visible public foundation.
+
+### Rationale
+
+GitHub-first execution preserves governance, transparency, version control, and clean early deployment.
+
+Cloudflare is a later DNS, performance, and security layer.
+
+### Implications
+
+Do not request nameserver changes before the public foundation is ready.
+
+---
+
+## DEC-004 — No Thin Pages
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai will not create thin SEO pages, fake reference pages, or keyword-stuffed content.
+
+### Rationale
+
+The asset must become a durable category reference, not a low-quality AI content site.
+
+### Implications
+
+Every public page must have a clear purpose, sufficient depth, internal linking value, and governance alignment.
+
+---
+
+## DEC-005 — Interface Must Embody Evidence Structure
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+The interface must show evidence posture and evidence layers.
+
+It must not simulate truth judgment.
+
+### Rationale
+
+The interface is part of the asset thesis.
+
+A generic cyber dashboard or fake AI detector aesthetic would weaken trust.
+
+### Implications
+
+All design decisions must serve evidence structure, accessibility, SEO safety, mobile stability, and performance.
+
+---
+
+## DEC-006 — Primary Buyer Focus
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+The initial buyer logic focuses on Trust & Safety, Brand Protection, Digital Risk, Platform Integrity, and Security/Fraud Intelligence teams.
+
+### Rationale
+
+These teams experience real operational exposure from synthetic deception and evidence uncertainty.
+
+### Implications
+
+Early content, tools, and monetization ideas should serve operational evidence-risk workflows, not general consumer entertainment.
+
+---
+
+## DEC-007 — Monetization Must Preserve Trust
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai may monetize before acquisition, but only through trust-preserving outputs.
+
+### Rationale
+
+Cheap monetization would damage the asset's strategic value.
+
+### Implications
+
+Avoid low-quality ads, sensationalism, political outrage, paid accusations, and unsupported claims.
+
+---
+
+## DEC-008 — Source Discipline Is Required
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai must be source-disciplined from the beginning.
+
+### Rationale
+
+A project about evidence cannot be built on weak evidence.
+
+### Implications
+
+Reference pages, standards, and claims must rely on credible sources, careful framing, and explicit boundaries.
