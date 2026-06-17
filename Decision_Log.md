@@ -171,3 +171,39 @@ A project about evidence cannot be built on weak evidence.
 ### Implications
 
 Reference pages, standards, and claims must rely on credible sources, careful framing, and explicit boundaries.
+
+---
+
+## DEC-009 — Sprint 0A Governance Foundation Audit Passed
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+The Sprint 0 governance foundation has passed the Sprint 0A audit. Development may proceed to Sprint 1.
+
+### Rationale
+
+A structured audit was performed across all nine Sprint 0 governance files to verify consistency, alignment with the Hoax.ai thesis, and enforcement of the governance boundary.
+
+All ten audit criteria passed:
+
+1. Evidence posture language used consistently across all files.
+2. No claims of absolute detection, proof, certification, or truth judgment.
+3. Fake/real binary treated as restricted or prohibited language throughout.
+4. Governance boundary against accusing individuals and institutions is clear and consistent.
+5. Source discipline is fully defined in Source_Policy.md and confirmed by DEC-008.
+6. Buyer logic correctly prioritises Trust & Safety, Brand Protection, Digital Risk, Platform Integrity, and Security/Fraud Intelligence.
+7. Monetization paths preserve trust and prohibit attention-harvesting models.
+8. Interface thesis is aligned with evidence layers and rejects false-authority design patterns.
+9. GitHub-first execution is preserved with Cloudflare deferred.
+10. Roadmap sprint sequence does not jump prematurely to tools, scale, or SEO expansion.
+
+One minor documentation correction was made: the Sprint 0 deliverables list in Roadmap.md used UPPERCASE filenames that did not match actual Mixed_Case repository filenames. This was corrected in the audit commit.
+
+### Implications
+
+The Sprint 0 governance layer is confirmed complete and consistent.
+
+Development may proceed to Sprint 1: Public Thesis Surface.

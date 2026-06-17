@@ -18,14 +18,14 @@ It should become evidence-risk reference infrastructure for the synthetic media 
 
 - README.md
 - CATEGORY_THESIS.md
-- GOVERNANCE_BOUNDARY.md
-- CLAIM_POLICY.md
-- SOURCE_POLICY.md
-- INTERFACE_THESIS.md
-- BUYER_LOGIC.md
-- MONETIZATION_BOUNDARY.md
-- DECISION_LOG.md
-- ROADMAP.md
+- Governance_Boundary.md
+- Claim_Policy.md
+- Source_Policy.md
+- Interface_Thesis.md
+- Buyer_Logic.md
+- Monetization_Boundary.md
+- Decision_Log.md
+- Roadmap.md
 
 ### Prohibited
 
