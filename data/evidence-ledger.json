@@ -1,0 +1,73 @@
+{
+  "ledger_version": "0.1",
+  "last_updated": "2026-06-17",
+  "description": "Internal claim registry for Hoax.ai self-application discipline. Does not certify truth.",
+  "claims": [
+    {
+      "claim_id": "CLAIM-0001",
+      "claim_text": "Hoax.ai is not a truth machine.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "DECISION_LOG.md (DEC-001), GOVERNANCE_BOUNDARY.md, index.html",
+      "source_type": "decision_log",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Core governance boundary. Conceptual thesis framing reinforced by governance files and public surface."
+    },
+    {
+      "claim_id": "CLAIM-0002",
+      "claim_text": "Hoax.ai classifies evidence posture, not truth verdicts.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "DECISION_LOG.md (DEC-001, DEC-002), CLAIM_POLICY.md, GOVERNANCE_BOUNDARY.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Extends DEC-001 and DEC-002. Bounded classification only."
+    },
+    {
+      "claim_id": "CLAIM-0003",
+      "claim_text": "Hoax.ai classifies evidence artifacts, not connected subjects.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "DECISION_LOG.md (DEC-012), GOVERNANCE_BOUNDARY.md (Artifact–Subject Separation Doctrine), CLAIM_POLICY.md",
+      "source_type": "decision_log",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Artifact–Subject Separation Doctrine. Evidence risk on artifacts does not transfer to persons or institutions."
+    },
+    {
+      "claim_id": "CLAIM-0004",
+      "claim_text": "Hoax.ai follows GitHub-first execution.",
+      "claim_type": "operational_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "DECISION_LOG.md (DEC-003), README.md, ROADMAP.md (Sprint 9 deferred)",
+      "source_type": "decision_log",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Public foundation built on GitHub before DNS or Cloudflare connection."
+    },
+    {
+      "claim_id": "CLAIM-0005",
+      "claim_text": "Hoax.ai uses governance files and a decision log.",
+      "claim_type": "operational_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "Repository root governance files, DECISION_LOG.md (DEC-009 through DEC-012)",
+      "source_type": "repository",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Nine governance files plus decision log through DEC-012. Sprint audits on record."
+    },
+    {
+      "claim_id": "CLAIM-0006",
+      "claim_text": "Hoax.ai has a public thesis surface.",
+      "claim_type": "operational_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "index.html, styles.css, robots.txt, sitemap.xml, DECISION_LOG.md (DEC-011)",
+      "source_type": "public_surface",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Static thesis surface only. No classifier, upload, or tool deployed."
+    }
+  ]
+}

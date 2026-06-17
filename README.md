@@ -40,6 +40,12 @@ It does not claim absolute detection.
 
 It provides a governed framework for examining evidence before belief, action, publication, escalation, or institutional response.
 
+## Sovereign Integrity
+
+Hoax.ai does not ask for trust by assertion. It makes trust inspectable.
+
+The [Self-Application Doctrine](SELF_APPLICATION.md) requires Hoax.ai to subject its own claims to the same evidence discipline it applies to the category. Foundational claims are recorded in the [Evidence Ledger](data/evidence-ledger.json) per [EVIDENCE_LEDGER_POLICY.md](EVIDENCE_LEDGER_POLICY.md). Reference-grade status is governed by the [Sovereign Reference Integrity Standard](SOVEREIGN_REFERENCE_INTEGRITY_STANDARD.md).
+
 ## First Build Direction
 
 Hoax.ai will be developed as a GitHub-first sovereign digital asset.

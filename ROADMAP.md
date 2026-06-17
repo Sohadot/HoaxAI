@@ -82,8 +82,46 @@ It should become evidence-risk reference infrastructure for the synthetic media 
 
 ---
 
+## Sprint 1A — Artifact–Subject Separation
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Separate classification of evidence artifacts from connected subjects across governance and public surface.
+
+### Deliverables
+
+- DEC-012 appended to DECISION_LOG.md
+- Artifact–Subject Separation Doctrine in GOVERNANCE_BOUNDARY.md
+- CLAIM_POLICY.md and index.html updated
+- SPRINT_1A_ARTIFACT_SUBJECT_SEPARATION_AUDIT.md
+
+---
+
+## Sprint 1B — Sovereign Integrity and Self-Application Foundation
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Establish the sovereign integrity architecture that makes Hoax.ai a governed Category Intelligence Factory.
+
+### Deliverables
+
+- SELF_APPLICATION.md
+- EVIDENCE_LEDGER_POLICY.md
+- data/evidence-ledger.json
+- SOVEREIGN_REFERENCE_INTEGRITY_STANDARD.md
+- CATEGORY_INTELLIGENCE_FACTORY_PLAN.md
+- MASTER_EXECUTION_PLAN.md
+- SPRINT_1B_SOVEREIGN_INTEGRITY_AUDIT.md
+- DEC-013, DEC-014, DEC-015 appended to DECISION_LOG.md
+- README.md and ROADMAP.md updated
+
+### Gate
+
+Ontology, standard, protocol, classifier, and reference pages **cannot proceed** until Sprint 1B passes validation.
+
+---
+
 ## Sprint 2 — Evidence Posture Taxonomy
 
+**Status:** READY — G1B passed  
 **Goal:** Define the first taxonomy for evidence-risk classification.
 
 ### Initial Classes

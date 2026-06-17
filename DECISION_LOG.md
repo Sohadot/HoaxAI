@@ -313,3 +313,83 @@ Hoax.ai must prevent that interpretation from the beginning.
 - Evidence posture, synthetic risk, provenance, source confidence, contextual uncertainty, and forensic coherence describe the condition of the artifact or evidence chain.
 - Public outputs must not state or imply that a classified artifact establishes intent, guilt, dishonesty, fraud, misconduct, deception, or involvement by any connected subject.
 - This boundary governs all future taxonomy, classifier outputs, reference pages, interface language, reports, and monetization products.
+
+---
+
+## DEC-013 — Self-Application Doctrine Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts the Self-Application Doctrine.
+
+Hoax.ai subjects its own claims to the evidence discipline it applies to the category.
+
+### Rationale
+
+A governed evidence-risk intelligence system cannot ask others to trust its outputs while exempting its own claims from evidence posture discipline.
+
+Self-application makes trust inspectable through governance files, decision records, and the evidence ledger — not through assertion.
+
+### Implications
+
+- Conceptual framing must be separated from factual claims.
+- Operational claims require repository evidence.
+- External factual claims require source support.
+- Future capabilities must not be described as existing.
+- SELF_APPLICATION.md and EVIDENCE_LEDGER_POLICY.md govern claim self-discipline.
+- data/evidence-ledger.json is the operational claim registry.
+
+---
+
+## DEC-014 — Sovereign Reference Integrity Standard Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts the Sovereign Reference Integrity Standard.
+
+Reference authority must be earned by structure, not claimed by language.
+
+### Rationale
+
+A site can claim trust. A governed asset must make trust inspectable.
+
+Reference-grade status requires validated structural integrity across claims, pages, routes, sources, tools, and governance — not marketing language or domain prestige.
+
+### Implications
+
+- SOVEREIGN_REFERENCE_INTEGRITY_STANDARD.md defines fourteen integrity dimensions and a validation rule.
+- Hoax.ai may not claim reference authority until sprint validation confirms structural requirements.
+- Security posture uses validated language: no known unresolved critical issues after validation.
+- No absolute security, technical perfection, or gap-free claims are permitted.
+
+---
+
+## DEC-015 — Category Intelligence Factory and Master Execution Plan Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts the Category Intelligence Factory model and Master Execution Plan.
+
+The domain is the category signal. The system must become the category operation.
+
+### Rationale
+
+Hoax.ai must become a governed Category Intelligence Factory producing evidence-risk intelligence through twelve interdependent layers — not merely a website claiming trust.
+
+Strict phase order, gates, and stop conditions prevent trust debt from premature expansion.
+
+### Implications
+
+- CATEGORY_INTELLIGENCE_FACTORY_PLAN.md defines factory layers and imitation resistance.
+- MASTER_EXECUTION_PLAN.md defines phase order, gates, sprint closure rules, and structural rules.
+- Ontology, standard, protocol, classifier, and reference pages are blocked until Sprint 1B gate (G1B) passes.
+- No route without purpose. No page without reference value. No tool without output boundary.
