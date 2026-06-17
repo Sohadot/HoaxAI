@@ -10,24 +10,58 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 VALIDATORS = [
     ROOT / "validators" / "validate_factory_foundation.py",
+    ROOT / "validators" / "validate_adversarial_enforcement.py",
 ]
+MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
+
+
+def run_step(label: str, command: list[str]) -> int:
+    result = subprocess.run(command, cwd=ROOT, check=False)
+    if result.returncode != 0:
+        print(f"ERROR: {label} failed with exit code {result.returncode}")
+    return result.returncode
 
 
 def main() -> int:
     exit_code = 0
+
+    if not (ROOT / "BUILD_MANIFEST.json").exists() and MANIFEST_GENERATOR.exists():
+        code = run_step(
+            "generate_build_manifest.py (bootstrap)",
+            [sys.executable, str(MANIFEST_GENERATOR)],
+        )
+        if code != 0:
+            return code
+
     for validator in VALIDATORS:
         if not validator.exists():
             print(f"ERROR: validator missing: {validator}")
             exit_code = 1
             continue
-        result = subprocess.run(
-            [sys.executable, str(validator)],
-            cwd=ROOT,
-            check=False,
-        )
-        if result.returncode != 0:
-            exit_code = result.returncode
-    return exit_code
+        code = run_step(validator.name, [sys.executable, str(validator)])
+        if code != 0:
+            exit_code = code
+
+    if exit_code != 0:
+        return exit_code
+
+    if not MANIFEST_GENERATOR.exists():
+        print(f"ERROR: manifest generator missing: {MANIFEST_GENERATOR}")
+        return 1
+
+    code = run_step("generate_build_manifest.py", [sys.executable, str(MANIFEST_GENERATOR)])
+    if code != 0:
+        return code
+
+    foundation = ROOT / "validators" / "validate_factory_foundation.py"
+    code = run_step(
+        "validate_factory_foundation.py (post-manifest)",
+        [sys.executable, str(foundation)],
+    )
+    if code != 0:
+        return code
+
+    return 0
 
 
 if __name__ == "__main__":

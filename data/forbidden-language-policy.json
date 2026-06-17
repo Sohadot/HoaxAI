@@ -1,0 +1,129 @@
+{
+  "policy_id": "FORBIDDEN-LANGUAGE-POLICY-001",
+  "name": "Hoax.ai Forbidden Language Policy",
+  "version": "v1.0.0",
+  "status": "governed_internal_enforcement",
+  "governing_principle": "Do not merely describe governance. Make violations fail. Unclassified ambiguity fails closed.",
+  "contexts": [
+    "public_facing",
+    "internal_governance",
+    "expected_fail_tests",
+    "negation_only",
+    "repository_fixture"
+  ],
+  "rules": {
+    "absolute_forbidden_public_claims": [
+      "detects all synthetic media",
+      "guaranteed detection",
+      "certifies truth",
+      "proves guilt",
+      "proves fraud",
+      "hoax confirmed",
+      "deepfake detected"
+    ],
+    "tool_implication_terms": [
+      "scan now",
+      "upload to check",
+      "detect fake",
+      "check authenticity",
+      "submit evidence",
+      "analyze your file"
+    ],
+    "verdict_terms": [
+      "truth verdict",
+      "final verdict",
+      "pass/fail truth",
+      "hoax confirmed"
+    ],
+    "fake_real_binary_terms": [
+      "this is fake",
+      "this is real",
+      "fake/real",
+      "fake or real"
+    ],
+    "scoring_terms": [
+      "truth score",
+      "lie score",
+      "guilt score",
+      "authenticity score",
+      "deception score",
+      "subject risk score",
+      "probability of fake",
+      "risk meter"
+    ],
+    "subject_accusation_terms": [
+      "deceptive person",
+      "guilty institution",
+      "person is lying",
+      "institution is guilty",
+      "fraud by association",
+      "involved by evidence risk"
+    ],
+    "unsupported_superiority_terms": [
+      "first in the world",
+      "only system",
+      "guaranteed authority",
+      "impossible to copy"
+    ],
+    "future_capability_as_live_terms": [
+      "active classifier",
+      "live tool",
+      "operational service",
+      "now available",
+      "currently running"
+    ]
+  },
+  "allowed_contexts": {
+    "allowed_in_negation_only": [
+      "truth score",
+      "lie score",
+      "deepfake detected",
+      "detect fake",
+      "upload to check",
+      "first in the world",
+      "active classifier",
+      "live tool",
+      "this is fake",
+      "this is real",
+      "guaranteed detection",
+      "certifies truth",
+      "proves guilt"
+    ],
+    "allowed_in_expected_fail_tests": [
+      "truth score",
+      "this is fake",
+      "deepfake detected",
+      "upload to check",
+      "first in the world",
+      "active classifier",
+      "deceptive person",
+      "guilty institution"
+    ],
+    "allowed_in_internal_governance_only": [
+      "truth score",
+      "lie score",
+      "guilt score",
+      "deepfake detected",
+      "guaranteed detection",
+      "certifies truth",
+      "proves guilt",
+      "first in the world",
+      "active classifier",
+      "upload workflow",
+      "public classifier"
+    ]
+  },
+  "prohibited_contexts": {
+    "public_facing_unless_negated": [
+      "absolute_forbidden_public_claims",
+      "tool_implication_terms",
+      "verdict_terms",
+      "fake_real_binary_terms",
+      "scoring_terms",
+      "subject_accusation_terms",
+      "unsupported_superiority_terms",
+      "future_capability_as_live_terms"
+    ]
+  },
+  "last_reviewed": "2026-06-17"
+}

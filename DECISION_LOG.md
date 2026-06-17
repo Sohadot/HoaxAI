@@ -546,3 +546,26 @@ The taxonomy names posture states. The standard defines sufficiency. The protoco
 - No numeric score is created by this model.
 - No subject classification is allowed.
 - Future implementation must validate against this model before public exposure.
+
+---
+
+## DEC-022 — Adversarial Enforcement Harness Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts an adversarial enforcement harness to ensure that prohibited claims, forbidden language, invalid route states, invalid output structures, dependency drift, and ungoverned expansion fail validation.
+
+### Rationale
+
+Governance that only describes rules remains imitable. Governance becomes structurally difficult to imitate when violations are tested, rejected, and recorded through machine-readable validation.
+
+### Implications
+
+- Validators must test both valid and intentionally invalid cases.
+- Forbidden language must be context-aware.
+- Claims, routes, sources, taxonomy states, standard rules, protocol rules, output fields, and engine model dependencies must remain contract-aligned.
+- Build state must be recorded in a manifest.
+- Future sprints must not close unless adversarial enforcement passes.

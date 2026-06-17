@@ -1,0 +1,370 @@
+{
+  "adversarial_case_set_id": "ADVERSARIAL-CASE-SET-001",
+  "name": "Hoax.ai Adversarial Validation Cases",
+  "version": "v1.0.0",
+  "status": "active",
+  "maturity": "internal_enforcement_only",
+  "cases": [
+    {
+      "case_id": "ADV-CASE-0001",
+      "case_name": "Sitemap route not in route registry",
+      "enforcement_domain": "sitemap",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "sitemap_paths": ["/", "/fictional-unregistered-route/"],
+        "registry_paths": ["/"]
+      },
+      "expected_failure_reason": "sitemap URL path not in route-registry",
+      "notes": "Synthetic sitemap alignment test. Fictional route only."
+    },
+    {
+      "case_id": "ADV-CASE-0002",
+      "case_name": "Route registry entry missing canonical_url",
+      "enforcement_domain": "routes",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "route": {
+          "route_id": "ROUTE-9998",
+          "path": "/fictional-test/",
+          "title": "Fictional Test Route",
+          "route_type": "internal_test",
+          "status": "draft",
+          "index_policy": "noindex",
+          "sitemap_included": false,
+          "internal_linking_required": false,
+          "public_surface": false,
+          "deployment_status": "external_deployment_deferred",
+          "notes": "Intentionally missing canonical_url for adversarial test."
+        }
+      },
+      "expected_failure_reason": "route missing required canonical_url",
+      "notes": "Synthetic route fixture. Not a real public route."
+    },
+    {
+      "case_id": "ADV-CASE-0003",
+      "case_name": "Posture state not in taxonomy",
+      "enforcement_domain": "taxonomy",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "posture_state": "invented_verdict_posture"
+      },
+      "expected_failure_reason": "posture state not in taxonomy",
+      "notes": "Fictional invented state for fail-closed test."
+    },
+    {
+      "case_id": "ADV-CASE-0004",
+      "case_name": "Standard rule references missing taxonomy state",
+      "enforcement_domain": "standard",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "standard_rule": {
+          "rule_id": "STD-RULE-9999",
+          "taxonomy_state_id": "STATE-9999",
+          "state_label": "invented_state"
+        }
+      },
+      "expected_failure_reason": "standard rule taxonomy_state_id not in taxonomy",
+      "notes": "Synthetic standard rule drift test."
+    },
+    {
+      "case_id": "ADV-CASE-0005",
+      "case_name": "Protocol rule references missing standard rule",
+      "enforcement_domain": "protocol",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "protocol_rule": {
+          "selection_rule_id": "PROTO-RULE-9999",
+          "taxonomy_state_id": "STATE-0001",
+          "standard_rule_id": "STD-RULE-9999",
+          "state_label": "documented_posture"
+        }
+      },
+      "expected_failure_reason": "protocol rule standard_rule_id not in standard",
+      "notes": "Synthetic protocol dependency drift test."
+    },
+    {
+      "case_id": "ADV-CASE-0006",
+      "case_name": "Output missing subject_boundary_statement",
+      "enforcement_domain": "output_schema",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "output": {
+          "output_id": "OUT-FIXTURE-0006",
+          "schema_version": "v1.0.0",
+          "protocol_version": "v1.0.0",
+          "taxonomy_version": "1.0",
+          "standard_version": "v1.0.0",
+          "artifact_scope": "Fictional screenshot artifact only.",
+          "artifact_type": "screenshot",
+          "posture_state": "not_assessable_posture",
+          "posture_reason_summary": "Insufficient fictional source notes.",
+          "dimension_findings": [],
+          "limiting_factors": ["missing provenance notes"],
+          "prohibited_interpretations": ["truth verdict"],
+          "confidence_boundary": "Bounded uncertainty only.",
+          "output_status": "draft_internal",
+          "generated_by": "adversarial_fixture",
+          "last_reviewed": "2026-06-17"
+        }
+      },
+      "expected_failure_reason": "output missing subject_boundary_statement",
+      "notes": "Fictional output missing required boundary field."
+    },
+    {
+      "case_id": "ADV-CASE-0007",
+      "case_name": "Output contains truth_score",
+      "enforcement_domain": "output_schema",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "output": {
+          "output_id": "OUT-FIXTURE-0007",
+          "truth_score": 0.87,
+          "posture_state": "not_assessable_posture"
+        }
+      },
+      "expected_failure_reason": "output contains prohibited scoring field",
+      "notes": "Expected-fail scoring field test."
+    },
+    {
+      "case_id": "ADV-CASE-0008",
+      "case_name": "Output contains This is fake verdict",
+      "enforcement_domain": "output_schema",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "output": {
+          "posture_reason_summary": "This is fake.",
+          "posture_state": "high_risk_evidence_posture"
+        }
+      },
+      "expected_failure_reason": "output contains fake/real verdict language",
+      "notes": "Expected-fail verdict language in test payload only."
+    },
+    {
+      "case_id": "ADV-CASE-0009",
+      "case_name": "Output contains deepfake detected",
+      "enforcement_domain": "output_schema",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "output": {
+          "confidence_boundary": "deepfake detected with certainty",
+          "posture_state": "coherence_questioned_posture"
+        }
+      },
+      "expected_failure_reason": "output contains prohibited detection claim",
+      "notes": "Expected-fail detection language in test payload only."
+    },
+    {
+      "case_id": "ADV-CASE-0010",
+      "case_name": "Output accuses connected subject",
+      "enforcement_domain": "output_schema",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "output": {
+          "subject_boundary_statement": "The deceptive person connected to this artifact is lying.",
+          "posture_state": "high_risk_evidence_posture"
+        }
+      },
+      "expected_failure_reason": "output implies subject accusation",
+      "notes": "Fictional subject accusation in expected-fail payload only."
+    },
+    {
+      "case_id": "ADV-CASE-0011",
+      "case_name": "Public page copy implies active upload tool",
+      "enforcement_domain": "public_language",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "text": "Upload to check your file now and detect fake media instantly."
+      },
+      "expected_failure_reason": "public language implies active upload tool",
+      "notes": "Synthetic public copy test. Not deployed."
+    },
+    {
+      "case_id": "ADV-CASE-0012",
+      "case_name": "Public page copy says first in the world",
+      "enforcement_domain": "public_language",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "text": "Hoax.ai is the first in the world evidence classifier."
+      },
+      "expected_failure_reason": "unsupported superiority claim",
+      "notes": "Synthetic superiority claim test."
+    },
+    {
+      "case_id": "ADV-CASE-0013",
+      "case_name": "Future capability written as active service",
+      "enforcement_domain": "future_capability_claims",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "claim": {
+          "claim_text": "The public classifier is now available as an active classifier and live tool.",
+          "claim_type": "future_capability_claim",
+          "evidence_posture": "repository_supported"
+        }
+      },
+      "expected_failure_reason": "future capability described as live",
+      "notes": "Synthetic claim posture mismatch test."
+    },
+    {
+      "case_id": "ADV-CASE-0014",
+      "case_name": "External factual claim without source",
+      "enforcement_domain": "claims",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "claim": {
+          "claim_text": "A fictional external market grew 40 percent last year.",
+          "claim_type": "external_factual_claim",
+          "evidence_posture": "source_supported",
+          "support_location": "",
+          "source_type": "external_web"
+        }
+      },
+      "expected_failure_reason": "external factual claim without source support",
+      "notes": "Fictional external claim without support_location."
+    },
+    {
+      "case_id": "ADV-CASE-0015",
+      "case_name": "Source registry entry points to missing internal file",
+      "enforcement_domain": "source_registry",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "source": {
+          "source_id": "SOURCE-9999",
+          "source_title": "Missing Fictional File",
+          "source_type": "internal_governance",
+          "location": "FICTIONAL_MISSING_FILE.md"
+        }
+      },
+      "expected_failure_reason": "internal source file missing",
+      "notes": "Synthetic missing file test."
+    },
+    {
+      "case_id": "ADV-CASE-0016",
+      "case_name": "Evidence ledger claim missing support_location",
+      "enforcement_domain": "claims",
+      "expected_result": "fail",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": true,
+      "test_payload": {
+        "claim": {
+          "claim_id": "CLAIM-9999",
+          "claim_text": "Fictional governance claim without support.",
+          "claim_type": "governance_claim",
+          "evidence_posture": "repository_supported",
+          "support_location": "",
+          "source_type": "governance_file",
+          "status": "active",
+          "last_reviewed": "2026-06-17",
+          "notes": "Intentionally missing support_location."
+        }
+      },
+      "expected_failure_reason": "repository_supported claim missing support_location",
+      "notes": "Synthetic ledger claim test."
+    },
+    {
+      "case_id": "ADV-CASE-0017",
+      "case_name": "Valid bounded internal output",
+      "enforcement_domain": "output_schema",
+      "expected_result": "pass",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": false,
+      "test_payload": {
+        "output": {
+          "output_id": "OUT-FIXTURE-0017",
+          "schema_version": "v1.0.0",
+          "protocol_version": "v1.0.0",
+          "taxonomy_version": "1.0",
+          "standard_version": "v1.0.0",
+          "artifact_scope": "Fictional document artifact with bounded scope.",
+          "artifact_type": "document",
+          "posture_state": "partially_supported_posture",
+          "posture_reason_summary": "Fictional source notes partially support artifact scope.",
+          "dimension_findings": [{"dimension": "source_visibility", "finding": "partial"}],
+          "limiting_factors": ["incomplete provenance chain"],
+          "subject_boundary_statement": "Posture applies to the fictional document artifact only, not to any connected subject.",
+          "prohibited_interpretations": ["truth verdict", "subject accusation"],
+          "confidence_boundary": "Bounded qualitative uncertainty only. No numeric score.",
+          "recommended_next_checks": ["review fictional source chain"],
+          "output_status": "draft_internal",
+          "generated_by": "adversarial_fixture",
+          "last_reviewed": "2026-06-17"
+        }
+      },
+      "expected_failure_reason": "",
+      "notes": "Valid fictional internal output fixture."
+    },
+    {
+      "case_id": "ADV-CASE-0018",
+      "case_name": "Valid route registry homepage route",
+      "enforcement_domain": "routes",
+      "expected_result": "pass",
+      "fixture_type": "repository_fixture",
+      "intentionally_invalid": false,
+      "test_payload": {
+        "route_id": "ROUTE-0001"
+      },
+      "expected_failure_reason": "",
+      "notes": "Validates actual homepage route in repository registry."
+    },
+    {
+      "case_id": "ADV-CASE-0019",
+      "case_name": "Valid planned_not_claimed capability language",
+      "enforcement_domain": "future_capability_claims",
+      "expected_result": "pass",
+      "fixture_type": "synthetic_fixture",
+      "intentionally_invalid": false,
+      "test_payload": {
+        "claim": {
+          "claim_text": "A future evidence-posture engine is planned, not claimed as live.",
+          "claim_type": "future_capability_claim",
+          "evidence_posture": "planned_not_claimed"
+        }
+      },
+      "expected_failure_reason": "",
+      "notes": "Valid planned capability framing."
+    },
+    {
+      "case_id": "ADV-CASE-0020",
+      "case_name": "Valid prohibited-term usage inside expected-fail test",
+      "enforcement_domain": "adversarial_meta",
+      "expected_result": "pass",
+      "fixture_type": "repository_fixture",
+      "intentionally_invalid": false,
+      "test_payload": {
+        "allowed_prohibited_terms_in_cases_only": true
+      },
+      "expected_failure_reason": "",
+      "notes": "Ensures prohibited terms in intentionally_invalid cases do not leak to public-facing files."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

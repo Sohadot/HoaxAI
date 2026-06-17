@@ -1551,6 +1551,8 @@ def validate_json_files() -> bool:
         "data/output-boundary-schema.json",
         "data/internal-engine-model.json",
         "data/internal-engine-fixtures.json",
+        "data/forbidden-language-policy.json",
+        "data/adversarial-validation-cases.json",
     ]:
         path = ROOT / rel
         try:

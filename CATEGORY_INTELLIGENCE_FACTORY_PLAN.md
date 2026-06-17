@@ -52,6 +52,8 @@ Machine-readable registries and validators/validate_all.py enforce expansion dis
 
 The internal engine model is an operational design layer, not a public tool. It defines how future outputs may be assembled through governed dependencies.
 
+The category factory becomes harder to imitate when it validates not only compliant states but also intentionally invalid states. The enforcement layer proves that the system rejects what it says it rejects.
+
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.
 
 ## Why the Asset Becomes Difficult to Imitate

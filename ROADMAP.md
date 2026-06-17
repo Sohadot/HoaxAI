@@ -332,22 +332,55 @@ External deployment remains deferred (Sprint 1C). Engine model is internal/gover
 
 ---
 
-## Sprint 7 — Internal Engine Validation Harness v0
+## Sprint 7 — Adversarial Enforcement Harness v1
 
-**Status:** READY — G6 passed  
-**Goal:** Create an internal validation harness that tests engine model alignment with protocol and output schema without creating a public classifier or tool.
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Create an adversarial enforcement layer that proves Hoax.ai rejects invalid claims, routes, outputs, forbidden language, dependency drift, and ungoverned expansion.
 
 ### Deliverables
 
-- internal validation harness (future — not in current scope)
-- fixture-driven schema alignment checks
+- ADVERSARIAL_ENFORCEMENT_HARNESS.md
+- data/forbidden-language-policy.json
+- data/adversarial-validation-cases.json
+- validators/validate_adversarial_enforcement.py
+- validators/generate_build_manifest.py
+- BUILD_MANIFEST.json
+- SPRINT_7_ADVERSARIAL_ENFORCEMENT_AUDIT.md
+- DEC-022 appended to DECISION_LOG.md
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Enforcement Scope
+
+- 20 adversarial validation cases (ADV-CASE-0001 through ADV-CASE-0020)
+- Context-aware forbidden language policy
+- Build manifest with SHA-256 file hashes
+- No engine, classifier, score, upload workflow, public route, or tool created
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Enforcement harness is internal_only_not_public_tool.
+
+---
+
+## Sprint 8 — Interface Embodiment Governance v1
+
+**Status:** READY — G7 passed  
+**Goal:** Govern interface embodiment alignment with evidence-structure thesis without creating a public classifier or tool.
+
+### Deliverables
+
+- interface embodiment governance (future — not in current scope)
+- visual system alignment checks
 - no public classifier page
 - no upload workflow
-- no scoring system
 
 ### Required Principle
 
-Validation harness must follow internal engine model, protocol, and output boundary schema. Public classifier remains blocked.
+Interface governance must follow interface thesis and governance boundary. Public classifier remains blocked.
 
 ---
 
