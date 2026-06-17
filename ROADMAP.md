@@ -143,11 +143,47 @@ Enable GitHub Pages: branch `main`, folder `/` (root). Re-validate load, then cl
 
 Ontology, standard, protocol, classifier, and reference pages **cannot proceed** until Sprint 1C passes validation.
 
+External deployment remains deferred. Repository validation may pass while external exposure remains blocked.
+
+---
+
+## Sprint 1D — Category Factory Enforcement Layer v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Convert governance from strategic documentation into enforceable repository structure.
+
+### Deliverables
+
+- data/route-registry.json
+- data/category-language.json
+- data/ontology-foundation.json
+- data/source-registry.json
+- validators/validate_factory_foundation.py
+- validators/validate_all.py
+- SPRINT_1D_FACTORY_ENFORCEMENT_AUDIT.md
+- DEC-016 appended to DECISION_LOG.md
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+Sprint 2 (ontology) **cannot proceed** until:
+
+- route registry exists
+- category language registry exists
+- ontology foundation exists
+- source registry exists
+- validate_all.py passes
+
+External deployment remains deferred until deployment readiness gate (Sprint 1C).
+
 ---
 
 ## Sprint 2 — Evidence Posture Taxonomy
 
-**Status:** BLOCKED — requires Sprint 1C gate (G1C)  
+**Status:** READY — G1D passed; external deployment still deferred (G1C pending)  
 **Goal:** Define the first taxonomy for evidence-risk classification.
 
 ### Initial Classes

@@ -1,0 +1,128 @@
+{
+  "foundation_version": "0.1",
+  "last_updated": "2026-06-17",
+  "description": "Ontology foundation scope definition. Not a classifier. Not live scoring.",
+  "classes": [
+    {
+      "class_id": "CLASS-0001",
+      "class_name": "EvidenceArtifact",
+      "category": "core_entity",
+      "definition": "A discrete digital evidence object that may be classified for evidence posture, provenance, coherence, and synthetic risk signals.",
+      "allowed_use": "Classification target for evidence posture, provenance gap, and synthetic risk assessment.",
+      "prohibited_use": "Subject accusation, guilt inference, truth verdict, fake/real binary output.",
+      "related_terms": ["TERM-0002", "TERM-0009"],
+      "status": "foundation_defined",
+      "notes": "Primary classification target per DEC-012."
+    },
+    {
+      "class_id": "CLASS-0002",
+      "class_name": "SourceRecord",
+      "category": "evidence_component",
+      "definition": "A record describing origin, publication path, custody, or attribution signals associated with an evidence artifact.",
+      "allowed_use": "Source confidence evaluation and provenance examination.",
+      "prohibited_use": "Labeling a person or institution as deceptive, fraudulent, or guilty.",
+      "related_terms": ["TERM-0005", "TERM-0006"],
+      "status": "foundation_defined",
+      "notes": "Describes artifact-linked source signals only."
+    },
+    {
+      "class_id": "CLASS-0003",
+      "class_name": "ClaimRecord",
+      "category": "evidence_component",
+      "definition": "A structured record of a statement, assertion, or claim embedded in or associated with an evidence artifact.",
+      "allowed_use": "Contextual mapping and claim-evidence relationship examination.",
+      "prohibited_use": "Truth verdict on the claim, subject accusation, event occurrence determination.",
+      "related_terms": ["TERM-0007", "TERM-0001"],
+      "status": "foundation_defined",
+      "notes": "Claim examination is artifact-bound, not subject-bound."
+    },
+    {
+      "class_id": "CLASS-0004",
+      "class_name": "ProvenanceSignal",
+      "category": "signal",
+      "definition": "An observable signal about origin, custody, metadata, source chain, or traceability of an evidence artifact.",
+      "allowed_use": "Provenance gap identification and source chain examination.",
+      "prohibited_use": "Proof of forgery, fraud accusation, subject involvement verdict.",
+      "related_terms": ["TERM-0005", "TERM-0006"],
+      "status": "foundation_defined",
+      "notes": "Signal applies to artifact path, not subject character."
+    },
+    {
+      "class_id": "CLASS-0005",
+      "class_name": "ContextSignal",
+      "category": "signal",
+      "definition": "An observable signal about temporal, geographic, institutional, or situational fit of an evidence artifact.",
+      "allowed_use": "Contextual stability assessment and contextual uncertainty mapping.",
+      "prohibited_use": "Determining whether an event occurred, judging subject involvement, institutional bad faith.",
+      "related_terms": ["TERM-0007"],
+      "status": "foundation_defined",
+      "notes": "Context is part of evidence structure, not subject judgment."
+    },
+    {
+      "class_id": "CLASS-0006",
+      "class_name": "CoherenceSignal",
+      "category": "signal",
+      "definition": "A structural, linguistic, media, temporal, or format-based signal indicating whether an evidence artifact holds together under examination.",
+      "allowed_use": "Forensic coherence assessment and uncertainty marker identification.",
+      "prohibited_use": "Absolute detection claim, fake/real determination, truth verdict.",
+      "related_terms": ["TERM-0008"],
+      "status": "foundation_defined",
+      "notes": "Coherence signals only. Not detection authority."
+    },
+    {
+      "class_id": "CLASS-0007",
+      "class_name": "SyntheticRiskIndicator",
+      "category": "indicator",
+      "definition": "A bounded indicator that synthetic generation, alteration, imitation, or simulation risk signals are present in an evidence artifact.",
+      "allowed_use": "Evidence posture risk signal communication and further review recommendation.",
+      "prohibited_use": "Declaring content fake, certifying authenticity, accusing connected subjects.",
+      "related_terms": ["TERM-0004", "TERM-0001"],
+      "status": "foundation_defined",
+      "notes": "Risk indicator on artifact condition only."
+    },
+    {
+      "class_id": "CLASS-0008",
+      "class_name": "DeceptionPatternIndicator",
+      "category": "indicator",
+      "definition": "A bounded indicator that an evidence artifact aligns with a known deception-pattern category requiring further examination.",
+      "allowed_use": "Pattern alignment communication within output boundary.",
+      "prohibited_use": "Subject deception verdict, fraud accusation, guilt by association.",
+      "related_terms": ["TERM-0010", "TERM-0001"],
+      "status": "foundation_defined",
+      "notes": "Pattern indicator is artifact-bound."
+    },
+    {
+      "class_id": "CLASS-0009",
+      "class_name": "SubjectReference",
+      "category": "reference_only",
+      "definition": "An identifiable person, institution, brand, organization, or event depicted or referenced by an evidence artifact. SubjectReference is metadata for contextual orientation only.",
+      "allowed_use": "Recording that an artifact depicts or references a subject. Orienting examination scope.",
+      "prohibited_use": "Classification target, deception verdict, guilt assessment, involvement determination, institutional bad-faith judgment.",
+      "related_terms": ["TERM-0003", "TERM-0002"],
+      "status": "foundation_defined",
+      "notes": "Artifact–Subject Separation: SubjectReference is explicitly not a classification target. Evidence about evidence is not evidence about people."
+    },
+    {
+      "class_id": "CLASS-0010",
+      "class_name": "OutputBoundary",
+      "category": "governance",
+      "definition": "The governed constraint on classification outputs: bounded evidence posture, confidence, uncertainty, and recommended checks without truth verdicts or subject accusation.",
+      "allowed_use": "Governing all future protocol, tool, and report outputs.",
+      "prohibited_use": "Expanding outputs to verdicts, scores, or subject judgments.",
+      "related_terms": ["TERM-0010", "TERM-0003"],
+      "status": "foundation_defined",
+      "notes": "Required before any tool deployment."
+    },
+    {
+      "class_id": "CLASS-0011",
+      "class_name": "EvidencePostureClassification",
+      "category": "future_layer",
+      "definition": "A planned, bounded classification layer that will combine provenance, coherence, context, and risk signals into an evidence posture assessment for artifacts and evidence chains.",
+      "allowed_use": "Future taxonomy, standard, and protocol development scope definition.",
+      "prohibited_use": "Active tool claim, live scoring, truth verdict output, subject classification.",
+      "related_terms": ["TERM-0001", "TERM-0011", "TERM-0010"],
+      "status": "planned_not_deployed",
+      "notes": "Future bounded classification layer per Sprint 2–4 roadmap. Not an active tool. No live scoring."
+    }
+  ]
+}

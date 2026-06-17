@@ -393,3 +393,28 @@ Strict phase order, gates, and stop conditions prevent trust debt from premature
 - MASTER_EXECUTION_PLAN.md defines phase order, gates, sprint closure rules, and structural rules.
 - Ontology, standard, protocol, classifier, and reference pages are blocked until Sprint 1B gate (G1B) passes.
 - No route without purpose. No page without reference value. No tool without output boundary.
+
+---
+
+## DEC-016 — Category Factory Enforcement Layer Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai will not rely on strategic language alone. Routes, category language, ontology foundations, sources, and claims must be represented in machine-readable registries and checked by validators before expansion.
+
+### Rationale
+
+A sovereign reference asset must be difficult to imitate through structure, not through language. The repository must make disorder difficult and disciplined expansion normal.
+
+### Implications
+
+- No new public route may be added without route-registry entry.
+- No category term may become canonical without category-language entry.
+- No ontology class may be used without ontology-foundation entry.
+- No source-supported claim may be introduced without source-registry and evidence-ledger alignment.
+- No sprint may close without validator pass or documented blocked status.
+- data/route-registry.json, data/category-language.json, data/ontology-foundation.json, and data/source-registry.json are canonical enforcement registries.
+- validators/validate_all.py is the quality gate entry point.

@@ -44,6 +44,12 @@ The Category Intelligence Factory operates through twelve interdependent layers:
 
 Each layer depends on prior layers. Skipping layers weakens the factory.
 
+## Factory Operational Requirement
+
+The factory is not considered operational until its category language, ontology, routes, sources, claims, and future outputs are governed by registries and validators.
+
+Machine-readable registries and validators/validate_all.py enforce expansion discipline. Strategic language alone is insufficient.
+
 ## Why the Asset Becomes Difficult to Imitate
 
 A domain name alone is imitable.

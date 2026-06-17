@@ -1,0 +1,107 @@
+{
+  "registry_version": "0.1",
+  "last_updated": "2026-06-17",
+  "description": "Initial source registry. Internal governance sources only for Sprint 1D.",
+  "sources": [
+    {
+      "source_id": "SOURCE-0001",
+      "source_title": "DECISION_LOG.md",
+      "source_type": "internal_governance",
+      "location": "DECISION_LOG.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Append-only strategic and governance decision record."
+    },
+    {
+      "source_id": "SOURCE-0002",
+      "source_title": "GOVERNANCE_BOUNDARY.md",
+      "source_type": "internal_governance",
+      "location": "GOVERNANCE_BOUNDARY.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Core boundary including Artifact–Subject Separation Doctrine."
+    },
+    {
+      "source_id": "SOURCE-0003",
+      "source_title": "CLAIM_POLICY.md",
+      "source_type": "internal_governance",
+      "location": "CLAIM_POLICY.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public claim discipline and prohibited claims."
+    },
+    {
+      "source_id": "SOURCE-0004",
+      "source_title": "SOURCE_POLICY.md",
+      "source_type": "internal_governance",
+      "location": "SOURCE_POLICY.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "External factual claim discipline. Not used for broad external facts in Sprint 1D."
+    },
+    {
+      "source_id": "SOURCE-0005",
+      "source_title": "SELF_APPLICATION.md",
+      "source_type": "internal_governance",
+      "location": "SELF_APPLICATION.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Self-Application Doctrine per DEC-013."
+    },
+    {
+      "source_id": "SOURCE-0006",
+      "source_title": "EVIDENCE_LEDGER_POLICY.md",
+      "source_type": "internal_governance",
+      "location": "EVIDENCE_LEDGER_POLICY.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Claim registry policy and prohibited ledger uses."
+    },
+    {
+      "source_id": "SOURCE-0007",
+      "source_title": "SOVEREIGN_REFERENCE_INTEGRITY_STANDARD.md",
+      "source_type": "internal_governance",
+      "location": "SOVEREIGN_REFERENCE_INTEGRITY_STANDARD.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Reference-grade structural integrity requirements."
+    },
+    {
+      "source_id": "SOURCE-0008",
+      "source_title": "CATEGORY_INTELLIGENCE_FACTORY_PLAN.md",
+      "source_type": "internal_governance",
+      "location": "CATEGORY_INTELLIGENCE_FACTORY_PLAN.md",
+      "supports": ["conceptual_thesis", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Category Intelligence Factory model per DEC-015."
+    },
+    {
+      "source_id": "SOURCE-0009",
+      "source_title": "MASTER_EXECUTION_PLAN.md",
+      "source_type": "internal_governance",
+      "location": "MASTER_EXECUTION_PLAN.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Phase order, gates, and stop conditions."
+    },
+    {
+      "source_id": "SOURCE-0010",
+      "source_title": "data/evidence-ledger.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-ledger.json",
+      "supports": ["operational_claim", "governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable claim registry. Does not certify truth."
+    }
+  ]
+}

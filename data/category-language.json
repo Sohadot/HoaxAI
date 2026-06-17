@@ -1,0 +1,139 @@
+{
+  "registry_version": "0.1",
+  "last_updated": "2026-06-17",
+  "description": "Controlled category language registry. Canonical terms for evidence-risk intelligence discourse.",
+  "terms": [
+    {
+      "term_id": "TERM-0001",
+      "term": "Evidence Posture",
+      "canonical_status": "canonical",
+      "definition": "The observable condition of an evidence artifact or evidence chain before belief, action, publication, escalation, or institutional response. Not a truth verdict.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0002", "TERM-0010"],
+      "prohibited_misreadings": ["truth verdict", "fake/real determination", "subject guilt assessment"],
+      "notes": "Core classification frame per DEC-001."
+    },
+    {
+      "term_id": "TERM-0002",
+      "term": "Evidence Artifact",
+      "canonical_status": "canonical",
+      "definition": "A discrete item of digital evidence: an image, video, audio recording, document, screenshot, source record, claim record, or media object subject to evidence posture classification.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0003", "TERM-0009"],
+      "prohibited_misreadings": ["person", "institution", "subject accusation target"],
+      "notes": "Classification target per DEC-012."
+    },
+    {
+      "term_id": "TERM-0003",
+      "term": "Artifact–Subject Separation",
+      "canonical_status": "canonical",
+      "definition": "The doctrine that Hoax.ai classifies evidence artifacts and evidence chains, not the people, institutions, brands, organizations, or events connected to them.",
+      "layer": "governance",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0002", "TERM-0010"],
+      "prohibited_misreadings": ["guilt by association", "subject deception verdict", "institutional bad-faith judgment"],
+      "notes": "DEC-012 and GOVERNANCE_BOUNDARY.md Artifact–Subject Separation Doctrine."
+    },
+    {
+      "term_id": "TERM-0004",
+      "term": "Synthetic Fragility",
+      "canonical_status": "canonical",
+      "definition": "The collapse of easy confidence in the evidence layer when synthetic media, altered sources, and simulated contexts can be produced at scale.",
+      "layer": "domain_thesis",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0007", "TERM-0006"],
+      "prohibited_misreadings": ["all content is fake", "detection guarantee", "truth collapse verdict"],
+      "notes": "Strategic thesis framing. Conceptual, not operational detection claim."
+    },
+    {
+      "term_id": "TERM-0005",
+      "term": "Provenance Gap",
+      "canonical_status": "canonical",
+      "definition": "A weakness, break, or uncertainty in the origin, custody, metadata, source chain, or traceability of an evidence artifact.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0006", "TERM-0001"],
+      "prohibited_misreadings": ["proves forgery", "proves fraud", "subject deception confirmed"],
+      "notes": "Describes artifact evidentiary condition only."
+    },
+    {
+      "term_id": "TERM-0006",
+      "term": "Source Confidence",
+      "canonical_status": "canonical",
+      "definition": "A bounded assessment of how reliably a source, publication path, or origin signal supports examination of an evidence artifact. Not a truth certification.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0005", "TERM-0001"],
+      "prohibited_misreadings": ["source is lying", "institution acted in bad faith", "certified authentic"],
+      "notes": "Bounded confidence language only."
+    },
+    {
+      "term_id": "TERM-0007",
+      "term": "Contextual Stability",
+      "canonical_status": "canonical",
+      "definition": "The degree to which an evidence artifact fits known temporal, geographic, institutional, and situational constraints without unresolved contextual conflict.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0001", "TERM-0008"],
+      "prohibited_misreadings": ["event did not occur", "claim is false", "subject involvement confirmed"],
+      "notes": "Context describes artifact fit, not event or subject verdict."
+    },
+    {
+      "term_id": "TERM-0008",
+      "term": "Forensic Coherence",
+      "canonical_status": "canonical",
+      "definition": "Structural, linguistic, media, temporal, and format-based coherence signals and uncertainty markers indicating whether an evidence artifact holds together under examination.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0001", "TERM-0007"],
+      "prohibited_misreadings": ["absolute detection", "proven fake", "proven real"],
+      "notes": "Coherence signals only. Not absolute detection."
+    },
+    {
+      "term_id": "TERM-0009",
+      "term": "Evidence Chain",
+      "canonical_status": "canonical",
+      "definition": "A linked sequence of evidence artifacts, source records, and custody signals that together form an examinable evidence structure.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0002", "TERM-0005"],
+      "prohibited_misreadings": ["chain proves guilt", "chain accuses subject"],
+      "notes": "Chain classification applies to artifacts, not subjects."
+    },
+    {
+      "term_id": "TERM-0010",
+      "term": "Output Boundary",
+      "canonical_status": "canonical",
+      "definition": "The governed limit on what Hoax.ai outputs may state: evidence posture, risk signals, confidence, uncertainty, and recommended checks — never final truth verdicts or subject accusation.",
+      "layer": "governance",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0001", "TERM-0003"],
+      "prohibited_misreadings": ["verdict output", "fake/real score", "guilt determination"],
+      "notes": "Required for all future tool and protocol outputs."
+    },
+    {
+      "term_id": "TERM-0011",
+      "term": "Planned-Not-Claimed Capability",
+      "canonical_status": "canonical",
+      "definition": "A future factory layer — taxonomy, standard, protocol, classifier, or reference page — that is planned or under development but must not be described as existing or operational.",
+      "layer": "governance",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0010", "TERM-0012"],
+      "prohibited_misreadings": ["already deployed", "live tool", "active classifier"],
+      "notes": "Maps to evidence_posture planned_not_claimed in evidence ledger."
+    },
+    {
+      "term_id": "TERM-0012",
+      "term": "Evidence-Risk Intelligence",
+      "canonical_status": "canonical",
+      "definition": "Governed intelligence about the condition, uncertainty, and risk signals of evidence artifacts and evidence chains in the synthetic media age. Not truth detection or subject accusation.",
+      "layer": "category_language",
+      "public_use_allowed": true,
+      "related_terms": ["TERM-0001", "TERM-0002", "TERM-0010"],
+      "prohibited_misreadings": ["AI detector", "truth machine", "hoax prover"],
+      "notes": "Approved core positioning per CLAIM_POLICY.md."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "registry_version": "0.1",
+  "last_updated": "2026-06-17",
+  "description": "Machine-readable route registry. No route may appear in sitemap.xml unless registered here.",
+  "routes": [
+    {
+      "route_id": "ROUTE-0001",
+      "path": "/",
+      "title": "Hoax.ai",
+      "route_type": "public_thesis_surface",
+      "status": "active_in_repository",
+      "index_policy": "indexable_after_external_deployment",
+      "canonical_url": "https://hoax.ai/",
+      "sitemap_included": true,
+      "internal_linking_required": false,
+      "public_surface": true,
+      "deployment_status": "external_deployment_deferred",
+      "notes": "First public thesis surface exists in repository. External domain deployment is deferred until governance gates pass."
+    }
+  ]
+}
