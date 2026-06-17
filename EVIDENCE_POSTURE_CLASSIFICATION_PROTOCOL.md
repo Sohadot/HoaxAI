@@ -306,3 +306,7 @@ Canonical machine-readable protocol: `data/evidence-posture-protocol.json`
 - DEC-017 — Evidence Posture Taxonomy v1
 - DEC-018 — Evidence Posture Standard v1
 - DEC-019 — Evidence Posture Classification Protocol v1
+
+## Output Boundary Schema Dependency
+
+Future protocol outputs must conform to `OUTPUT_BOUNDARY_SCHEMA.md` and `data/output-boundary-schema.json`. The protocol defines how posture is assigned; the output boundary schema defines what the resulting statement is allowed to say.

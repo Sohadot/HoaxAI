@@ -271,32 +271,58 @@ External deployment remains deferred (Sprint 1C). Protocol is internal/governed 
 
 ## Sprint 5 — Output Boundary Schema v1
 
-**Status:** READY — G4 passed  
-**Goal:** Define the first governed output boundary schema for protocol-compliant evidence posture statements.
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Define the governed output contract for protocol-compliant evidence posture statements.
 
 ### Deliverables
 
-- output boundary schema document
-- machine-readable output schema JSON
-- mapping to protocol minimum_output_shape
-- confidence boundary language
-- no-verdict disclaimer templates
+- OUTPUT_BOUNDARY_SCHEMA.md
+- data/output-boundary-schema.json
+- SPRINT_5_OUTPUT_BOUNDARY_SCHEMA_AUDIT.md
+- DEC-020 appended to DECISION_LOG.md
+- Protocol updated with output schema dependency
+- Validator extended for schema checks
 
-### Required Principle
+### Validation
 
-Output schema must follow protocol, standard, and taxonomy. No engine or public tool in this sprint.
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Schema Scope
+
+- 20 required output fields (OUT-FIELD-0001 through OUT-FIELD-0020)
+- 8 allowed posture states mapped to taxonomy
+- Prohibited output fields and language defined
+- No engine, classifier, score, upload workflow, public route, or tool created
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Schema is internal/governed with maturity not_public_tool.
 
 ---
 
-## Sprint 6 — Evidence Posture Classifier v0
+## Sprint 6 — Internal Engine Model v0
 
-**Status:** BLOCKED — requires Sprint 5 (Output Boundary Schema) and later engine gates  
-**Goal:** Build a lightweight rule-based tool only after output boundary schema exists.
+**Status:** READY — G5 passed  
+**Goal:** Define the first internal engine model that operationalizes protocol and output schema without creating a public tool or upload workflow.
 
-## Sprint 6 — Evidence Posture Classifier v0
+### Deliverables
 
-**Status:** BLOCKED — requires Sprint 5 (Output Boundary Schema) and later engine gates  
-**Goal:** Build a lightweight rule-based tool only after output boundary schema exists.
+- internal engine model document
+- machine-readable engine model JSON
+- mapping to protocol and output boundary schema
+- no public classifier page
+- no upload workflow
+
+### Required Principle
+
+Engine model must follow protocol and output boundary schema. No public tool in this sprint.
+
+---
+
+## Sprint 7 — Evidence Posture Classifier v0
+
+**Status:** BLOCKED — requires Sprint 6 (Internal Engine Model) and later gates  
+**Goal:** Build a lightweight rule-based tool only after engine model exists.
 
 ### Deliverables
 
@@ -317,7 +343,7 @@ Output schema must follow protocol, standard, and taxonomy. No engine or public 
 
 ---
 
-## Sprint 7 — Reference Layer v1
+## Sprint 8 — Reference Layer v1
 
 **Status:** BLOCKED — requires reference governance gates  
 **Goal:** Add a small number of strong reference pages.

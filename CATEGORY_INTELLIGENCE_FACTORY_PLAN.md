@@ -50,7 +50,7 @@ The factory is not considered operational until its category language, ontology,
 
 Machine-readable registries and validators/validate_all.py enforce expansion discipline. Strategic language alone is insufficient.
 
-The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.
+The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.
 
 ## Why the Asset Becomes Difficult to Imitate
 

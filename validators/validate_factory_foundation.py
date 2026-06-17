@@ -135,6 +135,7 @@ ID_PATTERNS = {
     "STD-RULE": re.compile(r"^STD-RULE-\d{4}$"),
     "PROTO-STAGE": re.compile(r"^PROTO-STAGE-\d{4}$"),
     "PROTO-RULE": re.compile(r"^PROTO-RULE-\d{4}$"),
+    "OUT-FIELD": re.compile(r"^OUT-FIELD-\d{4}$"),
 }
 
 DIMENSION_REQUIRED = {
@@ -299,6 +300,89 @@ PROTOCOL_PROHIBITED = [
 ]
 
 PROTOCOL_WORD_BOUNDARY = {"fake", "real"}
+
+SCHEMA_FIELD_REQUIRED = {
+    "field_id",
+    "field_name",
+    "required",
+    "field_type",
+    "definition",
+    "prohibited_use",
+    "boundary_requirement",
+    "status",
+}
+
+SCHEMA_TOP_REQUIRED = {
+    "schema_id",
+    "name",
+    "version",
+    "status",
+    "maturity",
+    "governing_principle",
+    "dependencies",
+    "required_output_fields",
+    "allowed_posture_states",
+    "required_boundary_statements",
+    "prohibited_output_fields",
+    "prohibited_output_language",
+    "allowed_output_language_examples",
+    "minimum_output_template",
+    "output_status_values",
+    "last_reviewed",
+}
+
+SCHEMA_REQUIRED_FIELD_NAMES = {
+    "output_id",
+    "schema_version",
+    "protocol_version",
+    "taxonomy_version",
+    "standard_version",
+    "artifact_scope",
+    "artifact_type",
+    "posture_state",
+    "posture_reason_summary",
+    "dimension_findings",
+    "limiting_factors",
+    "subject_boundary_statement",
+    "prohibited_interpretations",
+    "confidence_boundary",
+    "output_status",
+    "last_reviewed",
+}
+
+SCHEMA_PROHIBITED_LANGUAGE = [
+    "this is fake",
+    "this is real",
+    "truth score",
+    "lie score",
+    "deepfake detected",
+    "guaranteed detection",
+    "certifies truth",
+    "authenticity certified",
+    "hoax confirmed",
+    "proves guilt",
+    "proves fraud",
+    "deceptive person",
+    "guilty institution",
+]
+
+SCHEMA_PROHIBITED_FIELDS = {
+    "truth_score",
+    "lie_score",
+    "guilt_score",
+    "fraud_score",
+    "authenticity_score",
+    "deception_score",
+    "subject_risk_score",
+    "person_score",
+    "institution_score",
+    "fake_real_result",
+    "deepfake_detected",
+    "verdict",
+    "accusation",
+    "legal_conclusion",
+    "guilt_finding",
+}
 
 
 def error(msg: str) -> None:
@@ -853,6 +937,20 @@ def validate_evidence_posture_protocol() -> bool:
         error("evidence-posture-protocol: maturity must be not_public_tool")
         ok = False
 
+    if not data.get("output_schema_dependency"):
+        error("evidence-posture-protocol: output_schema_dependency missing")
+        ok = False
+    elif data.get("output_schema_dependency") != "SCHEMA-OUTPUT-BOUNDARY-001":
+        error("evidence-posture-protocol: output_schema_dependency mismatch")
+        ok = False
+
+    protocol_md = ROOT / "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md"
+    if protocol_md.exists():
+        md_text = protocol_md.read_text(encoding="utf-8").lower()
+        if "output_boundary_schema" not in md_text and "output boundary schema" not in md_text:
+            error("evidence-posture-protocol: protocol document missing output schema reference")
+            ok = False
+
     status = data.get("status", "").lower()
     if "active_classifier" in status or "live_tool" in status:
         error("evidence-posture-protocol: status implies active classifier")
@@ -950,6 +1048,152 @@ def validate_evidence_posture_protocol() -> bool:
     ]:
         if required not in locations:
             error(f"source-registry: missing protocol source '{required}'")
+            ok = False
+
+    return ok
+
+
+def contains_prohibited_schema_language(text: str, phrase: str) -> bool:
+    lower = text.lower()
+    idx = 0
+    while True:
+        pos = lower.find(phrase, idx)
+        if pos == -1:
+            return False
+        prefix = lower[max(0, pos - 30) : pos]
+        if any(
+            marker in prefix
+            for marker in [
+                "no ",
+                "not ",
+                "without ",
+                "never ",
+                "avoid ",
+                "does not ",
+                "not be interpreted as ",
+                "not a ",
+            ]
+        ):
+            idx = pos + len(phrase)
+            continue
+        return True
+    return False
+
+
+def validate_output_boundary_schema() -> bool:
+    ok = True
+    taxonomy = load_json(ROOT / "data" / "evidence-posture-taxonomy.json")
+    protocol = load_json(ROOT / "data" / "evidence-posture-protocol.json")
+    taxonomy_state_labels = {s["label"] for s in taxonomy.get("states", [])}
+
+    data = load_json(ROOT / "data" / "output-boundary-schema.json")
+    missing_top = SCHEMA_TOP_REQUIRED - set(data.keys())
+    if missing_top:
+        error(f"output-boundary-schema: missing top-level fields {sorted(missing_top)}")
+        ok = False
+
+    if not data.get("schema_id"):
+        error("output-boundary-schema: schema_id missing")
+        ok = False
+    if not data.get("version"):
+        error("output-boundary-schema: version missing")
+        ok = False
+    if data.get("status") != "governed_internal_schema":
+        error("output-boundary-schema: status must be governed_internal_schema")
+        ok = False
+    if data.get("maturity") != "not_public_tool":
+        error("output-boundary-schema: maturity must be not_public_tool")
+        ok = False
+    if not data.get("dependencies"):
+        error("output-boundary-schema: dependencies missing")
+        ok = False
+
+    fields = data.get("required_output_fields", [])
+    if not fields:
+        error("output-boundary-schema: required_output_fields missing or empty")
+        ok = False
+
+    ok &= validate_unique_ids(fields, "field_id", "OUT-FIELD", "output-boundary-schema")
+    ok &= validate_required_fields(fields, SCHEMA_FIELD_REQUIRED, "output-boundary-schema field")
+
+    field_names = {f.get("field_name") for f in fields}
+    for required_name in SCHEMA_REQUIRED_FIELD_NAMES:
+        if required_name not in field_names:
+            error(f"output-boundary-schema: missing required field '{required_name}'")
+            ok = False
+
+    for prohibited in SCHEMA_PROHIBITED_FIELDS:
+        if prohibited in field_names:
+            error(f"output-boundary-schema: prohibited field '{prohibited}' in required_output_fields")
+            ok = False
+
+    posture_field = next((f for f in fields if f.get("field_name") == "posture_state"), None)
+    if posture_field is None:
+        error("output-boundary-schema: posture_state field missing")
+        ok = False
+    else:
+        allowed = set(posture_field.get("allowed_values", []))
+        if allowed != taxonomy_state_labels:
+            error("output-boundary-schema: posture_state allowed_values do not match taxonomy")
+            ok = False
+        schema_allowed = set(data.get("allowed_posture_states", []))
+        if schema_allowed != taxonomy_state_labels:
+            error("output-boundary-schema: allowed_posture_states do not match taxonomy")
+            ok = False
+
+    subject_field = next(
+        (f for f in fields if f.get("field_name") == "subject_boundary_statement"), None
+    )
+    if subject_field is None or not subject_field.get("required"):
+        error("output-boundary-schema: subject_boundary_statement must be required")
+        ok = False
+
+    prohibited_field = next(
+        (f for f in fields if f.get("field_name") == "prohibited_interpretations"), None
+    )
+    if prohibited_field is None or not prohibited_field.get("required"):
+        error("output-boundary-schema: prohibited_interpretations must be required")
+        ok = False
+
+    confidence_field = next((f for f in fields if f.get("field_name") == "confidence_boundary"), None)
+    if confidence_field is None:
+        error("output-boundary-schema: confidence_boundary field missing")
+        ok = False
+    else:
+        definition = confidence_field.get("definition", "").lower()
+        if confidence_field.get("field_type") not in {"string", "text"}:
+            error("output-boundary-schema: confidence_boundary must be qualitative string type")
+            ok = False
+        if "numeric" in definition and "not" not in definition.split("numeric")[0][-15:]:
+            error("output-boundary-schema: confidence_boundary must not be numeric score")
+            ok = False
+
+    scan_parts = []
+    for field in fields:
+        scan_parts.extend(
+            [
+                field.get("definition", ""),
+                field.get("prohibited_use", ""),
+                field.get("boundary_requirement", ""),
+            ]
+        )
+    scan_parts.extend(data.get("allowed_output_language_examples", []))
+    scan_text = " ".join(scan_parts).lower()
+
+    for phrase in SCHEMA_PROHIBITED_LANGUAGE:
+        if contains_prohibited_schema_language(scan_text, phrase):
+            error(f"output-boundary-schema: prohibited language '{phrase}' in schema content")
+            ok = False
+
+    if protocol.get("output_schema_dependency") != data.get("schema_id"):
+        error("output-boundary-schema: protocol output_schema_dependency mismatch")
+        ok = False
+
+    registry = load_json(ROOT / "data" / "source-registry.json")
+    locations = {s.get("location") for s in registry.get("sources", [])}
+    for required in ["OUTPUT_BOUNDARY_SCHEMA.md", "data/output-boundary-schema.json"]:
+        if required not in locations:
+            error(f"source-registry: missing output schema source '{required}'")
             ok = False
 
     return ok
@@ -1063,6 +1307,7 @@ def validate_json_files() -> bool:
         "data/evidence-posture-taxonomy.json",
         "data/evidence-posture-standard.json",
         "data/evidence-posture-protocol.json",
+        "data/output-boundary-schema.json",
     ]:
         path = ROOT / rel
         try:
@@ -1084,6 +1329,7 @@ def main() -> int:
         ("Evidence posture taxonomy", validate_evidence_posture_taxonomy),
         ("Evidence posture standard", validate_evidence_posture_standard),
         ("Evidence posture protocol", validate_evidence_posture_protocol),
+        ("Output boundary schema", validate_output_boundary_schema),
         ("Public surface", validate_public_surface),
     ]
 

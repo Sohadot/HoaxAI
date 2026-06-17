@@ -90,6 +90,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Governed internal protocol. Maturity not_public_tool. Not an active classifier or public service."
+    },
+    {
+      "claim_id": "CLAIM-0009",
+      "claim_text": "Hoax.ai has adopted Output Boundary Schema v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "OUTPUT_BOUNDARY_SCHEMA.md, data/output-boundary-schema.json, DECISION_LOG.md (DEC-020)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Governed internal output schema. Maturity not_public_tool. Not an active engine or public service."
     }
   ]
 }

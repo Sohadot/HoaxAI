@@ -162,6 +162,26 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Machine-readable protocol. not_public_tool. No active classifier."
+    },
+    {
+      "source_id": "SOURCE-0017",
+      "source_title": "OUTPUT_BOUNDARY_SCHEMA.md",
+      "source_type": "internal_governance",
+      "location": "OUTPUT_BOUNDARY_SCHEMA.md",
+      "supports": ["governance_claim", "conceptual_thesis"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable Output Boundary Schema per DEC-020."
+    },
+    {
+      "source_id": "SOURCE-0018",
+      "source_title": "data/output-boundary-schema.json",
+      "source_type": "internal_registry",
+      "location": "data/output-boundary-schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable output boundary schema. not_public_tool."
     }
   ]
 }

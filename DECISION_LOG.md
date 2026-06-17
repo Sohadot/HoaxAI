@@ -495,3 +495,29 @@ The taxonomy names posture states. The standard defines sufficiency. The protoco
 - EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md and data/evidence-posture-protocol.json are canonical protocol sources.
 - Twelve protocol stages (PROTO-STAGE-0001 through PROTO-STAGE-0012) and eight selection rules (PROTO-RULE-0001 through PROTO-RULE-0008) govern posture assignment.
 - Protocol maturity is not_public_tool.
+
+---
+
+## DEC-020 — Output Boundary Schema v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Output Boundary Schema v1 to define the required structure, allowed fields, required boundary statements, and prohibited interpretations for any future evidence-posture output.
+
+### Rationale
+
+The taxonomy defines posture states. The standard defines sufficiency. The protocol defines the classification sequence. The output boundary schema defines what a future output may say. Without this schema, a future engine could drift into verdicts, fake/real language, scoring, subject accusation, or unsupported certainty.
+
+### Implications
+
+- No future engine or tool may produce output outside this schema.
+- No future report may omit the subject-separation boundary.
+- No future output may use truth verdicts, fake/real classification, accusation, or unsupported certainty.
+- No future output may include numeric scores unless a later scoring standard is separately adopted and validated.
+- Output examples remain internal/governed until public route governance allows publication.
+- OUTPUT_BOUNDARY_SCHEMA.md and data/output-boundary-schema.json are canonical output schema sources.
+- Twenty required output fields (OUT-FIELD-0001 through OUT-FIELD-0020) define the governed output contract.
+- Schema maturity is not_public_tool.

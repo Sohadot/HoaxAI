@@ -1,0 +1,338 @@
+{
+  "schema_id": "SCHEMA-OUTPUT-BOUNDARY-001",
+  "name": "Hoax.ai Output Boundary Schema",
+  "version": "v1.0.0",
+  "status": "governed_internal_schema",
+  "maturity": "not_public_tool",
+  "governing_principle": "Before the system can produce outputs, the system must govern what an output is allowed to say. An output is a bounded evidence-posture statement about an artifact or evidence chain, not a verdict about truth, authenticity, people, institutions, brands, organizations, or events.",
+  "dependencies": {
+    "taxonomy": "TAXONOMY-EVIDENCE-POSTURE-001",
+    "standard": "STANDARD-EVIDENCE-POSTURE-001",
+    "protocol": "PROTOCOL-EVIDENCE-POSTURE-001",
+    "documents": [
+      "EVIDENCE_POSTURE_TAXONOMY.md",
+      "data/evidence-posture-taxonomy.json",
+      "EVIDENCE_POSTURE_STANDARD.md",
+      "data/evidence-posture-standard.json",
+      "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
+      "data/evidence-posture-protocol.json",
+      "GOVERNANCE_BOUNDARY.md",
+      "CLAIM_POLICY.md"
+    ]
+  },
+  "required_output_fields": [
+    {
+      "field_id": "OUT-FIELD-0001",
+      "field_name": "output_id",
+      "required": true,
+      "field_type": "string",
+      "definition": "Unique identifier for a future output instance.",
+      "prohibited_use": "Subject identification, verdict encoding, score encoding.",
+      "boundary_requirement": "Identifier only. No accusation or verdict semantics.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0002",
+      "field_name": "schema_version",
+      "required": true,
+      "field_type": "string",
+      "definition": "Output boundary schema version reference.",
+      "allowed_values": ["v1.0.0"],
+      "prohibited_use": "Truth verdict marker, capability claim.",
+      "boundary_requirement": "Must reference governed schema version.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0003",
+      "field_name": "protocol_version",
+      "required": true,
+      "field_type": "string",
+      "definition": "Evidence Posture Classification Protocol version used.",
+      "allowed_values": ["v1.0.0"],
+      "prohibited_use": "Active tool claim, automation authority claim.",
+      "boundary_requirement": "Must reference governed protocol version.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0004",
+      "field_name": "taxonomy_version",
+      "required": true,
+      "field_type": "string",
+      "definition": "Evidence Posture Taxonomy version used.",
+      "allowed_values": ["1.0"],
+      "prohibited_use": "Invented posture states, verdict taxonomy.",
+      "boundary_requirement": "Must reference governed taxonomy version.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0005",
+      "field_name": "standard_version",
+      "required": true,
+      "field_type": "string",
+      "definition": "Evidence Posture Standard version used.",
+      "allowed_values": ["v1.0.0"],
+      "prohibited_use": "Sufficiency bypass, verdict standard.",
+      "boundary_requirement": "Must reference governed standard version.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0006",
+      "field_name": "artifact_scope",
+      "required": true,
+      "field_type": "string",
+      "definition": "Bounded description of the artifact or evidence chain being reviewed.",
+      "prohibited_use": "Subject accusation scope, event verdict scope.",
+      "boundary_requirement": "Artifact or evidence chain focus only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0007",
+      "field_name": "artifact_type",
+      "required": true,
+      "field_type": "string",
+      "definition": "Type of artifact under review.",
+      "allowed_values": [
+        "image",
+        "video",
+        "audio",
+        "document",
+        "screenshot",
+        "source_record",
+        "claim_record",
+        "media_object",
+        "evidence_chain"
+      ],
+      "prohibited_use": "Person type, institution type, subject classification.",
+      "boundary_requirement": "Artifact type only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0008",
+      "field_name": "posture_state",
+      "required": true,
+      "field_type": "string",
+      "definition": "One bounded taxonomy posture state for the artifact or evidence chain.",
+      "allowed_values": [
+        "documented_posture",
+        "partially_supported_posture",
+        "provenance_limited_posture",
+        "contextually_unstable_posture",
+        "coherence_questioned_posture",
+        "high_risk_evidence_posture",
+        "not_assessable_posture",
+        "planned_not_claimed_posture"
+      ],
+      "prohibited_use": "Invented states, verdict states, fake/real states, subject states.",
+      "boundary_requirement": "Must match taxonomy state exactly.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0009",
+      "field_name": "posture_reason_summary",
+      "required": true,
+      "field_type": "string",
+      "definition": "Concise bounded explanation of why the posture state was selected.",
+      "prohibited_use": "Truth verdict summary, subject accusation summary.",
+      "boundary_requirement": "Evidence posture reasoning only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0010",
+      "field_name": "dimension_findings",
+      "required": true,
+      "field_type": "array",
+      "definition": "Structured list mapping findings to the nine taxonomy/standard dimensions.",
+      "prohibited_use": "Subject judgment findings, verdict findings.",
+      "boundary_requirement": "Dimension findings on artifact evidence only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0011",
+      "field_name": "limiting_factors",
+      "required": true,
+      "field_type": "array",
+      "definition": "List of missing, weak, unstable, or unresolved factors affecting posture.",
+      "prohibited_use": "Subject guilt factors, fraud proof factors.",
+      "boundary_requirement": "Artifact evidence limitations only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0012",
+      "field_name": "subject_boundary_statement",
+      "required": true,
+      "field_type": "string",
+      "definition": "Required statement that posture applies to artifact or evidence chain, not connected subjects.",
+      "prohibited_use": "Subject accusation, guilt transfer, institutional judgment.",
+      "boundary_requirement": "Must explicitly separate artifact posture from subject judgment.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0013",
+      "field_name": "prohibited_interpretations",
+      "required": true,
+      "field_type": "array",
+      "definition": "Required list of what the output must not be read to mean.",
+      "prohibited_use": "Empty list, verdict encouragement.",
+      "boundary_requirement": "Must list non-verdict, non-accusation boundaries.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0014",
+      "field_name": "confidence_boundary",
+      "required": true,
+      "field_type": "string",
+      "definition": "Qualitative boundary statement explaining limits of reliance. Not a numeric score.",
+      "prohibited_use": "Numeric score, percentage certainty, truth probability.",
+      "boundary_requirement": "Qualitative uncertainty framing only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0015",
+      "field_name": "recommended_next_checks",
+      "required": false,
+      "field_type": "array",
+      "definition": "Optional bounded next checks for further examination.",
+      "prohibited_use": "Accusation steps, certainty claims, upload prompts.",
+      "boundary_requirement": "Bounded verification guidance only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0016",
+      "field_name": "source_record_refs",
+      "required": false,
+      "field_type": "array",
+      "definition": "Optional references to source records when available.",
+      "prohibited_use": "Subject accusation via source, unsupported external claims.",
+      "boundary_requirement": "Artifact-linked source references only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0017",
+      "field_name": "claim_record_refs",
+      "required": false,
+      "field_type": "array",
+      "definition": "Optional references to claim records when available.",
+      "prohibited_use": "Truth verdict on claim, subject accusation.",
+      "boundary_requirement": "Artifact-linked claim references only.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0018",
+      "field_name": "output_status",
+      "required": true,
+      "field_type": "string",
+      "definition": "Governance status of the output instance.",
+      "allowed_values": [
+        "draft_internal",
+        "governed_internal",
+        "public_allowed_after_gate",
+        "retired",
+        "blocked"
+      ],
+      "prohibited_use": "Public tool status, live service status without gate.",
+      "boundary_requirement": "Must reflect governance gate state.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0019",
+      "field_name": "generated_by",
+      "required": true,
+      "field_type": "string",
+      "definition": "System, protocol, or manual process that created the output.",
+      "prohibited_use": "Active classifier claim before engine exists, automation authority.",
+      "boundary_requirement": "Accurate process attribution without false capability claim.",
+      "status": "active"
+    },
+    {
+      "field_id": "OUT-FIELD-0020",
+      "field_name": "last_reviewed",
+      "required": true,
+      "field_type": "date",
+      "definition": "Date the output was last reviewed.",
+      "prohibited_use": "Certification date, legal verification date.",
+      "boundary_requirement": "Review date only.",
+      "status": "active"
+    }
+  ],
+  "allowed_posture_states": [
+    "documented_posture",
+    "partially_supported_posture",
+    "provenance_limited_posture",
+    "contextually_unstable_posture",
+    "coherence_questioned_posture",
+    "high_risk_evidence_posture",
+    "not_assessable_posture",
+    "planned_not_claimed_posture"
+  ],
+  "required_boundary_statements": [
+    "artifact focus",
+    "posture state",
+    "reason summary",
+    "limitation statement",
+    "subject-separation boundary",
+    "prohibited interpretations",
+    "confidence boundary",
+    "no truth verdict",
+    "no fake/real binary",
+    "no accusation"
+  ],
+  "prohibited_output_fields": [
+    "truth_score",
+    "lie_score",
+    "guilt_score",
+    "fraud_score",
+    "authenticity_score",
+    "deception_score",
+    "subject_risk_score",
+    "person_score",
+    "institution_score",
+    "fake_real_result",
+    "deepfake_detected",
+    "verdict",
+    "accusation",
+    "legal_conclusion",
+    "guilt_finding"
+  ],
+  "prohibited_output_language": [
+    "This is fake.",
+    "This is real.",
+    "This proves fraud.",
+    "This proves deception.",
+    "The person is lying.",
+    "The institution is guilty.",
+    "This confirms the event did not happen.",
+    "Deepfake detected.",
+    "Truth score.",
+    "Lie score.",
+    "Authenticity certified.",
+    "Guaranteed detection.",
+    "Verified truth.",
+    "Hoax confirmed."
+  ],
+  "allowed_output_language_examples": [
+    "The artifact has a provenance-limited posture because the available source chain is incomplete.",
+    "The evidence chain is partially supported within the available context.",
+    "The available information is not sufficient for a responsible posture classification.",
+    "This posture applies to the artifact, not to any connected subject.",
+    "The output should not be interpreted as a truth verdict, authenticity certification, or accusation."
+  ],
+  "minimum_output_template": {
+    "artifact_scope": "",
+    "posture_state": "",
+    "posture_reason_summary": "",
+    "limiting_factors": [],
+    "subject_boundary_statement": "",
+    "prohibited_interpretations": [],
+    "confidence_boundary": "",
+    "recommended_next_checks": [],
+    "notes": "Future template only. Not an active public tool or service."
+  },
+  "output_status_values": [
+    "draft_internal",
+    "governed_internal",
+    "public_allowed_after_gate",
+    "retired",
+    "blocked"
+  ],
+  "last_reviewed": "2026-06-17"
+}

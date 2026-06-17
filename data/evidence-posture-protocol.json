@@ -7,6 +7,7 @@
   "governing_principle": "The protocol governs how posture is assigned; it does not automate judgment. A protocol outcome is a bounded evidence-posture statement, not a verdict about truth, authenticity, people, institutions, or events.",
   "taxonomy_dependency": "TAXONOMY-EVIDENCE-POSTURE-001",
   "standard_dependency": "STANDARD-EVIDENCE-POSTURE-001",
+  "output_schema_dependency": "SCHEMA-OUTPUT-BOUNDARY-001",
   "applies_to": [
     "evidence artifacts",
     "evidence chains",
