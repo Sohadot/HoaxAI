@@ -133,6 +133,8 @@ ID_PATTERNS = {
     "STATE": re.compile(r"^STATE-\d{4}$"),
     "STD-DIM": re.compile(r"^STD-DIM-\d{4}$"),
     "STD-RULE": re.compile(r"^STD-RULE-\d{4}$"),
+    "PROTO-STAGE": re.compile(r"^PROTO-STAGE-\d{4}$"),
+    "PROTO-RULE": re.compile(r"^PROTO-RULE-\d{4}$"),
 }
 
 DIMENSION_REQUIRED = {
@@ -241,6 +243,62 @@ STANDARD_RULE_PROHIBITED = [
     "lie score",
     "truth score",
 ]
+
+PROTOCOL_STAGE_REQUIRED = {
+    "stage_id",
+    "name",
+    "purpose",
+    "required_checks",
+    "maps_to_dimensions",
+    "possible_stop_conditions",
+    "prohibited_interpretations",
+    "status",
+}
+
+PROTOCOL_RULE_REQUIRED = {
+    "selection_rule_id",
+    "taxonomy_state_id",
+    "standard_rule_id",
+    "state_label",
+    "selection_conditions",
+    "boundary_statement",
+    "prohibited_interpretations",
+    "fallback_state",
+    "status",
+}
+
+PROTOCOL_TOP_REQUIRED = {
+    "protocol_id",
+    "name",
+    "version",
+    "status",
+    "maturity",
+    "governing_principle",
+    "taxonomy_dependency",
+    "standard_dependency",
+    "applies_to",
+    "does_not_apply_to",
+    "stages",
+    "state_selection_rules",
+    "stop_conditions",
+    "minimum_output_shape",
+    "prohibited_outputs",
+    "last_reviewed",
+}
+
+PROTOCOL_PROHIBITED = [
+    "truth score",
+    "lie score",
+    "deepfake detected",
+    "guaranteed detection",
+    "certifies truth",
+    "proves guilt",
+    "proves fraud",
+    "deceptive person",
+    "guilty institution",
+]
+
+PROTOCOL_WORD_BOUNDARY = {"fake", "real"}
 
 
 def error(msg: str) -> None:
@@ -744,6 +802,159 @@ def validate_evidence_posture_standard() -> bool:
     return ok
 
 
+def contains_prohibited_protocol_term(text: str, term: str) -> bool:
+    lower = text.lower()
+    if term in PROTOCOL_WORD_BOUNDARY:
+        return bool(re.search(rf"\b{re.escape(term)}\b", lower))
+    idx = 0
+    while True:
+        pos = lower.find(term, idx)
+        if pos == -1:
+            return False
+        prefix = lower[max(0, pos - 25) : pos]
+        if any(
+            marker in prefix
+            for marker in ["no ", "not ", "without ", "never ", "avoid ", "does not ", "imply "]
+        ):
+            idx = pos + len(term)
+            continue
+        return True
+    return False
+
+
+def validate_evidence_posture_protocol() -> bool:
+    ok = True
+    taxonomy = load_json(ROOT / "data" / "evidence-posture-taxonomy.json")
+    standard = load_json(ROOT / "data" / "evidence-posture-standard.json")
+    taxonomy_dim_ids = {d["dimension_id"] for d in taxonomy.get("dimensions", [])}
+    taxonomy_state_ids = {s["state_id"] for s in taxonomy.get("states", [])}
+    taxonomy_state_labels = {s["label"] for s in taxonomy.get("states", [])}
+    standard_rule_ids = {r["rule_id"] for r in standard.get("posture_sufficiency_rules", [])}
+
+    data = load_json(ROOT / "data" / "evidence-posture-protocol.json")
+    missing_top = PROTOCOL_TOP_REQUIRED - set(data.keys())
+    if missing_top:
+        error(f"evidence-posture-protocol: missing top-level fields {sorted(missing_top)}")
+        ok = False
+
+    if not data.get("protocol_id"):
+        error("evidence-posture-protocol: protocol_id missing")
+        ok = False
+    if not data.get("version"):
+        error("evidence-posture-protocol: version missing")
+        ok = False
+    if data.get("taxonomy_dependency") != taxonomy.get("taxonomy_id"):
+        error("evidence-posture-protocol: taxonomy_dependency mismatch")
+        ok = False
+    if data.get("standard_dependency") != standard.get("standard_id"):
+        error("evidence-posture-protocol: standard_dependency mismatch")
+        ok = False
+    if data.get("maturity") != "not_public_tool":
+        error("evidence-posture-protocol: maturity must be not_public_tool")
+        ok = False
+
+    status = data.get("status", "").lower()
+    if "active_classifier" in status or "live_tool" in status:
+        error("evidence-posture-protocol: status implies active classifier")
+        ok = False
+
+    stages = data.get("stages", [])
+    rules = data.get("state_selection_rules", [])
+    stop_conditions = data.get("stop_conditions", [])
+    output_shape = data.get("minimum_output_shape", {})
+
+    if not stages:
+        error("evidence-posture-protocol: stages missing or empty")
+        ok = False
+    if not rules:
+        error("evidence-posture-protocol: state_selection_rules missing or empty")
+        ok = False
+
+    ok &= validate_unique_ids(stages, "stage_id", "PROTO-STAGE", "evidence-posture-protocol")
+    ok &= validate_unique_ids(rules, "selection_rule_id", "PROTO-RULE", "evidence-posture-protocol")
+    ok &= validate_required_fields(stages, PROTOCOL_STAGE_REQUIRED, "evidence-posture-protocol stage")
+    ok &= validate_required_fields(rules, PROTOCOL_RULE_REQUIRED, "evidence-posture-protocol rule")
+
+    stop_text = " ".join(stop_conditions).lower()
+    if "subject separation" not in stop_text:
+        error("evidence-posture-protocol: stop_conditions must include subject-separation failure")
+        ok = False
+
+    if "subject_boundary_statement" not in output_shape:
+        error("evidence-posture-protocol: minimum_output_shape missing subject_boundary_statement")
+        ok = False
+    if "prohibited_interpretations" not in output_shape:
+        error("evidence-posture-protocol: minimum_output_shape missing prohibited_interpretations")
+        ok = False
+
+    for stage in stages:
+        sid = stage["stage_id"]
+        for dim_id in stage.get("maps_to_dimensions", []):
+            if dim_id not in taxonomy_dim_ids:
+                error(
+                    f"evidence-posture-protocol '{sid}': invalid maps_to_dimensions '{dim_id}'"
+                )
+                ok = False
+        scan_text = " ".join(
+            [
+                stage.get("purpose", ""),
+                " ".join(stage.get("required_checks", [])),
+                " ".join(stage.get("possible_stop_conditions", [])),
+            ]
+        )
+        for term in PROTOCOL_PROHIBITED:
+            if contains_prohibited_protocol_term(scan_text, term):
+                error(f"evidence-posture-protocol '{sid}': prohibited term '{term}' in stage")
+                ok = False
+        for term in PROTOCOL_WORD_BOUNDARY:
+            if contains_prohibited_protocol_term(scan_text, term):
+                error(f"evidence-posture-protocol '{sid}': prohibited term '{term}' in stage")
+                ok = False
+
+    for rule in rules:
+        rid = rule["selection_rule_id"]
+        state_id = rule.get("taxonomy_state_id")
+        std_rule = rule.get("standard_rule_id")
+        label = rule.get("state_label", "")
+
+        if state_id not in taxonomy_state_ids:
+            error(f"evidence-posture-protocol '{rid}': invalid taxonomy_state_id '{state_id}'")
+            ok = False
+        if std_rule not in standard_rule_ids:
+            error(f"evidence-posture-protocol '{rid}': invalid standard_rule_id '{std_rule}'")
+            ok = False
+        if label not in taxonomy_state_labels:
+            error(f"evidence-posture-protocol '{rid}': state_label '{label}' not in taxonomy")
+            ok = False
+
+        scan_text = " ".join(
+            [
+                rule.get("boundary_statement", ""),
+                " ".join(rule.get("selection_conditions", [])),
+            ]
+        )
+        for term in PROTOCOL_PROHIBITED:
+            if contains_prohibited_protocol_term(scan_text, term):
+                error(f"evidence-posture-protocol '{rid}': prohibited term '{term}' in rule")
+                ok = False
+        for term in PROTOCOL_WORD_BOUNDARY:
+            if contains_prohibited_protocol_term(scan_text, term):
+                error(f"evidence-posture-protocol '{rid}': prohibited term '{term}' in rule")
+                ok = False
+
+    registry = load_json(ROOT / "data" / "source-registry.json")
+    locations = {s.get("location") for s in registry.get("sources", [])}
+    for required in [
+        "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
+        "data/evidence-posture-protocol.json",
+    ]:
+        if required not in locations:
+            error(f"source-registry: missing protocol source '{required}'")
+            ok = False
+
+    return ok
+
+
 def validate_source_registry() -> bool:
     ok = True
     data = load_json(ROOT / "data" / "source-registry.json")
@@ -851,6 +1062,7 @@ def validate_json_files() -> bool:
         "data/source-registry.json",
         "data/evidence-posture-taxonomy.json",
         "data/evidence-posture-standard.json",
+        "data/evidence-posture-protocol.json",
     ]:
         path = ROOT / rel
         try:
@@ -871,6 +1083,7 @@ def main() -> int:
         ("Source registry", validate_source_registry),
         ("Evidence posture taxonomy", validate_evidence_posture_taxonomy),
         ("Evidence posture standard", validate_evidence_posture_standard),
+        ("Evidence posture protocol", validate_evidence_posture_protocol),
         ("Public surface", validate_public_surface),
     ]
 

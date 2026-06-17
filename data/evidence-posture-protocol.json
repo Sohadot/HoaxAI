@@ -1,0 +1,366 @@
+{
+  "protocol_id": "PROTOCOL-EVIDENCE-POSTURE-001",
+  "name": "Hoax.ai Evidence Posture Classification Protocol",
+  "version": "v1.0.0",
+  "status": "governed_internal_protocol",
+  "maturity": "not_public_tool",
+  "governing_principle": "The protocol governs how posture is assigned; it does not automate judgment. A protocol outcome is a bounded evidence-posture statement, not a verdict about truth, authenticity, people, institutions, or events.",
+  "taxonomy_dependency": "TAXONOMY-EVIDENCE-POSTURE-001",
+  "standard_dependency": "STANDARD-EVIDENCE-POSTURE-001",
+  "applies_to": [
+    "evidence artifacts",
+    "evidence chains",
+    "claim records",
+    "source records",
+    "provenance signals",
+    "context signals",
+    "coherence signals",
+    "future bounded outputs"
+  ],
+  "does_not_apply_to": [
+    "people as classification targets",
+    "institutions as classification targets",
+    "brands as classification targets",
+    "organizations as classification targets",
+    "events as subjects of judgment"
+  ],
+  "stages": [
+    {
+      "stage_id": "PROTO-STAGE-0001",
+      "name": "Artifact Boundary Identification",
+      "purpose": "Identify the discrete artifact or evidence chain being reviewed.",
+      "required_checks": [
+        "Is there a discrete artifact?",
+        "Is the artifact type known?",
+        "Is the artifact distinct from the subject connected to it?",
+        "Is the review scope bounded?"
+      ],
+      "maps_to_dimensions": ["DIM-0001"],
+      "possible_stop_conditions": ["no discrete artifact identified — use not_assessable_posture"],
+      "prohibited_interpretations": ["subject identification", "subject accusation"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0002",
+      "name": "Subject Separation Check",
+      "purpose": "Ensure the protocol does not transfer artifact risk to a connected subject.",
+      "required_checks": [
+        "Does the artifact depict, reference, or imply an identifiable subject?",
+        "Is all output language bounded to the artifact?",
+        "Does the output avoid intent, guilt, deception, misconduct, or involvement language?"
+      ],
+      "maps_to_dimensions": ["DIM-0008"],
+      "possible_stop_conditions": ["subject separation cannot be preserved — no posture output issued"],
+      "prohibited_interpretations": ["guilt transfer", "subject accusation", "institutional bad faith"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0003",
+      "name": "Source Record Review",
+      "purpose": "Review whether the source record is visible, bounded, or missing.",
+      "required_checks": [
+        "Is the source known?",
+        "Is the publication path visible?",
+        "Is the source appropriate to the claim?",
+        "Is source confidence limited or sufficient?"
+      ],
+      "maps_to_dimensions": ["DIM-0003"],
+      "possible_stop_conditions": ["source cannot be responsibly assessed"],
+      "prohibited_interpretations": ["source is lying", "institution acted in bad faith"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0004",
+      "name": "Provenance Visibility Review",
+      "purpose": "Assess origin, custody, publication path, or source-chain visibility.",
+      "required_checks": [
+        "Is origin visible?",
+        "Is chain of custody visible where relevant?",
+        "Is publication path bounded?",
+        "Are provenance gaps present?"
+      ],
+      "maps_to_dimensions": ["DIM-0002"],
+      "possible_stop_conditions": ["provenance cannot be examined"],
+      "prohibited_interpretations": ["manipulation proven", "bad faith established"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0005",
+      "name": "Contextual Stability Review",
+      "purpose": "Assess whether surrounding context is stable enough for bounded interpretation.",
+      "required_checks": [
+        "Is context missing?",
+        "Is context ambiguous?",
+        "Is context disputed?",
+        "Is context stable enough for bounded reliance?"
+      ],
+      "maps_to_dimensions": ["DIM-0004"],
+      "possible_stop_conditions": ["context cannot be responsibly mapped"],
+      "prohibited_interpretations": ["event occurrence verdict", "subject involvement"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0006",
+      "name": "Forensic Coherence Review",
+      "purpose": "Review coherence signals without turning them into conclusions.",
+      "required_checks": [
+        "Are coherence signals internally consistent?",
+        "Are there unresolved inconsistencies?",
+        "Is further examination needed?",
+        "Are coherence questions described as questions rather than proof?"
+      ],
+      "maps_to_dimensions": ["DIM-0005"],
+      "possible_stop_conditions": ["coherence cannot be responsibly examined"],
+      "prohibited_interpretations": ["synthetic origin proof", "falsity determination"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0007",
+      "name": "Evidence Chain Continuity Review",
+      "purpose": "Determine whether the artifact is supported by a stable chain of records.",
+      "required_checks": [
+        "Are supporting records available?",
+        "Is the chain partial?",
+        "Is the chain broken?",
+        "Are supporting records conflicting?"
+      ],
+      "maps_to_dimensions": ["DIM-0006"],
+      "possible_stop_conditions": ["chain continuity cannot be assessed"],
+      "prohibited_interpretations": ["subject involvement proven", "institutional misconduct proven"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0008",
+      "name": "Corroboration Posture Review",
+      "purpose": "Review whether supporting signals exist, are absent, partial, or conflicting.",
+      "required_checks": [
+        "Is there corroboration?",
+        "Is corroboration independent?",
+        "Is corroboration partial?",
+        "Is corroboration conflicting?"
+      ],
+      "maps_to_dimensions": ["DIM-0007"],
+      "possible_stop_conditions": ["corroboration posture cannot be assessed"],
+      "prohibited_interpretations": ["claim verdict", "subject accusation"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0009",
+      "name": "Standard Mapping",
+      "purpose": "Map reviewed conditions to the Evidence Posture Standard.",
+      "required_checks": [
+        "Which standard dimensions are sufficient?",
+        "Which are limited?",
+        "Which are weak?",
+        "Which are not assessable?",
+        "Which posture sufficiency rule is satisfied?"
+      ],
+      "maps_to_dimensions": ["DIM-0001", "DIM-0002", "DIM-0003", "DIM-0004", "DIM-0005", "DIM-0006", "DIM-0007", "DIM-0008", "DIM-0009"],
+      "possible_stop_conditions": ["required taxonomy or standard mapping is missing"],
+      "prohibited_interpretations": ["invented sufficiency criteria", "verdict language"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0010",
+      "name": "Posture State Selection",
+      "purpose": "Select one bounded posture state from the taxonomy.",
+      "required_checks": [
+        "Does the selected state match a taxonomy state?",
+        "Does the selected state satisfy standard sufficiency rules?",
+        "Is the most bounded responsible state chosen when multiple appear possible?",
+        "Is not_assessable_posture preferred over speculation when information is missing?"
+      ],
+      "maps_to_dimensions": ["DIM-0009"],
+      "possible_stop_conditions": ["no valid taxonomy state satisfies standard requirements"],
+      "prohibited_interpretations": ["invented posture state", "verdict language", "subject accusation"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0011",
+      "name": "Output Boundary Composition",
+      "purpose": "Create a bounded evidence-posture statement.",
+      "required_checks": [
+        "Does output include artifact focus?",
+        "Does output include posture state?",
+        "Does output include limitation statement?",
+        "Does output include subject-separation boundary?",
+        "Does output avoid verdict, score, and accusation language?"
+      ],
+      "maps_to_dimensions": ["DIM-0009"],
+      "possible_stop_conditions": ["output would imply accusation or verdict"],
+      "prohibited_interpretations": ["truth verdict output", "fake/real binary output"],
+      "status": "active"
+    },
+    {
+      "stage_id": "PROTO-STAGE-0012",
+      "name": "Final Governance Check",
+      "purpose": "Ensure the output complies with governance before use.",
+      "required_checks": [
+        "Does it stay within artifact posture?",
+        "Does it avoid subject judgment?",
+        "Does it avoid unsupported certainty?",
+        "Does it avoid planned capability as existing service?",
+        "Does it follow taxonomy and standard?",
+        "Does it avoid public tool implication before an engine exists?"
+      ],
+      "maps_to_dimensions": ["DIM-0008", "DIM-0009"],
+      "possible_stop_conditions": ["governance check fails — no output issued"],
+      "prohibited_interpretations": ["active classifier implication", "live automation claim"],
+      "status": "active"
+    }
+  ],
+  "state_selection_rules": [
+    {
+      "selection_rule_id": "PROTO-RULE-0001",
+      "taxonomy_state_id": "STATE-0001",
+      "standard_rule_id": "STD-RULE-0001",
+      "state_label": "documented_posture",
+      "selection_conditions": [
+        "artifact clearly identified",
+        "source context visible or bounded",
+        "provenance sufficiently visible",
+        "context stable enough for bounded reliance",
+        "no major unresolved coherence issue"
+      ],
+      "boundary_statement": "Does not mean verified as fact, authentic, complete, legally verified, or final.",
+      "prohibited_interpretations": ["truth verdict", "authenticity certification", "subject accusation"],
+      "fallback_state": "partially_supported_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0002",
+      "taxonomy_state_id": "STATE-0002",
+      "standard_rule_id": "STD-RULE-0002",
+      "state_label": "partially_supported_posture",
+      "selection_conditions": [
+        "at least one supporting signal exists",
+        "one or more posture dimensions remain incomplete or unresolved"
+      ],
+      "boundary_statement": "Does not imply falsity, deception, or unreliability as a whole.",
+      "prohibited_interpretations": ["falsity verdict", "deception accusation"],
+      "fallback_state": "not_assessable_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0003",
+      "taxonomy_state_id": "STATE-0003",
+      "standard_rule_id": "STD-RULE-0003",
+      "state_label": "provenance_limited_posture",
+      "selection_conditions": [
+        "provenance visibility insufficient",
+        "limitation affects reliance on artifact"
+      ],
+      "boundary_statement": "Does not establish manipulation, bad faith, fraud, or deception.",
+      "prohibited_interpretations": ["manipulation proven", "bad faith established"],
+      "fallback_state": "not_assessable_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0004",
+      "taxonomy_state_id": "STATE-0004",
+      "standard_rule_id": "STD-RULE-0004",
+      "state_label": "contextually_unstable_posture",
+      "selection_conditions": [
+        "context missing, disputed, or unstable",
+        "interpretation risky without further context"
+      ],
+      "boundary_statement": "Does not determine the occurrence verdict of the event.",
+      "prohibited_interpretations": ["event occurrence verdict", "subject involvement"],
+      "fallback_state": "not_assessable_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0005",
+      "taxonomy_state_id": "STATE-0005",
+      "standard_rule_id": "STD-RULE-0005",
+      "state_label": "coherence_questioned_posture",
+      "selection_conditions": [
+        "coherence signals require further examination",
+        "issue described as coherence question not proof"
+      ],
+      "boundary_statement": "Does not imply synthetic generation, falsity, or fraud.",
+      "prohibited_interpretations": ["synthetic origin proof", "fraud accusation"],
+      "fallback_state": "high_risk_evidence_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0006",
+      "taxonomy_state_id": "STATE-0006",
+      "standard_rule_id": "STD-RULE-0006",
+      "state_label": "high_risk_evidence_posture",
+      "selection_conditions": [
+        "multiple dimensions contain unresolved risk signals",
+        "reliance inappropriate without further review"
+      ],
+      "boundary_statement": "Does not accuse any person, institution, brand, organization, or event. Does not prove deception, guilt, fraud, misconduct, or involvement.",
+      "prohibited_interpretations": ["subject accusation", "guilt determination", "fraud proof"],
+      "fallback_state": "not_assessable_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0007",
+      "taxonomy_state_id": "STATE-0007",
+      "standard_rule_id": "STD-RULE-0007",
+      "state_label": "not_assessable_posture",
+      "selection_conditions": [
+        "available information insufficient for responsible classification",
+        "missing data prevents bounded statement"
+      ],
+      "boundary_statement": "Not assessable is not suspicious by itself.",
+      "prohibited_interpretations": ["suspicion by default", "presumption of deception"],
+      "fallback_state": "not_assessable_posture",
+      "status": "active"
+    },
+    {
+      "selection_rule_id": "PROTO-RULE-0008",
+      "taxonomy_state_id": "STATE-0008",
+      "standard_rule_id": "STD-RULE-0008",
+      "state_label": "planned_not_claimed_posture",
+      "selection_conditions": [
+        "capability discussed as planned",
+        "capability not currently active"
+      ],
+      "boundary_statement": "Planned is not live. Mention is not capability.",
+      "prohibited_interpretations": ["active tool claim", "operational service availability"],
+      "fallback_state": "planned_not_claimed_posture",
+      "status": "active"
+    }
+  ],
+  "stop_conditions": [
+    "no discrete artifact or evidence chain exists",
+    "subject separation cannot be preserved",
+    "available information insufficient and not_assessable language is not safe",
+    "output would imply accusation",
+    "output would imply truth verdict",
+    "output would imply fake/real binary",
+    "output would claim future capability as active",
+    "required taxonomy or standard mapping is missing"
+  ],
+  "minimum_output_shape": {
+    "artifact_scope": "Bounded description of artifact or evidence chain reviewed",
+    "posture_state": "Selected taxonomy state label",
+    "posture_reason_summary": "Brief bounded reason for state selection",
+    "limiting_factors": "Unresolved dimensions or gaps",
+    "subject_boundary_statement": "Explicit artifact–subject separation statement",
+    "prohibited_interpretations": "What the output must not be read as",
+    "recommended_next_checks": "Bounded verification steps if appropriate",
+    "confidence_boundary": "Uncertainty and limitation framing",
+    "protocol_version": "Protocol version reference",
+    "notes": "Future output shape only. Not an active public tool."
+  },
+  "prohibited_outputs": [
+    "This is fake.",
+    "This is real.",
+    "This proves fraud.",
+    "This proves deception.",
+    "The person is lying.",
+    "The institution is guilty.",
+    "This confirms the event did not happen.",
+    "Deepfake detected.",
+    "Truth score.",
+    "Lie score.",
+    "Authenticity certified.",
+    "Guaranteed detection."
+  ],
+  "last_reviewed": "2026-06-17"
+}

@@ -241,34 +241,66 @@ External deployment remains deferred (Sprint 1C). Standard is internal/governed 
 
 ## Sprint 4 — Evidence Posture Classification Protocol v1
 
-**Status:** READY — G3 passed  
-**Goal:** Define the first protocol for bounded evidence-risk classification.
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Define the governed sequence for assigning evidence posture states to artifacts and evidence chains.
 
 ### Deliverables
 
-- EVIDENCE_POSTURE_PROTOCOL.md
-- output boundary language
-- classification rules
-- confidence language
-- no-verdict disclaimer
-- first output templates
+- EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md
+- data/evidence-posture-protocol.json
+- SPRINT_4_EVIDENCE_POSTURE_PROTOCOL_AUDIT.md
+- DEC-019 appended to DECISION_LOG.md
+- Validator extended for protocol checks
 
-### Required Principle
+### Validation
 
-Outputs must communicate risk, confidence, uncertainty, and next checks.
+`python validators/validate_all.py` — PASS required for sprint closure.
 
-They must not declare final truth.
+### Protocol Scope
+
+- 12 protocol stages (PROTO-STAGE-0001 through PROTO-STAGE-0012)
+- 8 state selection rules (PROTO-RULE-0001 through PROTO-RULE-0008)
+- Maps to taxonomy and standard
+- No classifier, engine, score, upload workflow, public route, or tool created
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Protocol is internal/governed with maturity not_public_tool.
 
 ---
 
-## Sprint 5 — Evidence Posture Classifier v0
+## Sprint 5 — Output Boundary Schema v1
 
-**Status:** BLOCKED — requires Sprint 4 (Protocol)  
-**Goal:** Build a lightweight rule-based tool.
+**Status:** READY — G4 passed  
+**Goal:** Define the first governed output boundary schema for protocol-compliant evidence posture statements.
 
 ### Deliverables
 
-- static classifier page
+- output boundary schema document
+- machine-readable output schema JSON
+- mapping to protocol minimum_output_shape
+- confidence boundary language
+- no-verdict disclaimer templates
+
+### Required Principle
+
+Output schema must follow protocol, standard, and taxonomy. No engine or public tool in this sprint.
+
+---
+
+## Sprint 6 — Evidence Posture Classifier v0
+
+**Status:** BLOCKED — requires Sprint 5 (Output Boundary Schema) and later engine gates  
+**Goal:** Build a lightweight rule-based tool only after output boundary schema exists.
+
+## Sprint 6 — Evidence Posture Classifier v0
+
+**Status:** BLOCKED — requires Sprint 5 (Output Boundary Schema) and later engine gates  
+**Goal:** Build a lightweight rule-based tool only after output boundary schema exists.
+
+### Deliverables
+
+- static classifier page (future — not in current scope)
 - no backend
 - no sensitive data storage
 - no AI detection claims
@@ -285,7 +317,7 @@ They must not declare final truth.
 
 ---
 
-## Sprint 6 — Reference Layer v1
+## Sprint 7 — Reference Layer v1
 
 **Status:** BLOCKED — requires reference governance gates  
 **Goal:** Add a small number of strong reference pages.

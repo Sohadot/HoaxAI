@@ -79,6 +79,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Internal governed standard. Not a public product, classifier, or service output."
+    },
+    {
+      "claim_id": "CLAIM-0008",
+      "claim_text": "Hoax.ai has adopted Evidence Posture Classification Protocol v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md, data/evidence-posture-protocol.json, DECISION_LOG.md (DEC-019)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Governed internal protocol. Maturity not_public_tool. Not an active classifier or public service."
     }
   ]
 }

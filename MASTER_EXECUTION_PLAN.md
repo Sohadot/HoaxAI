@@ -40,14 +40,14 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G1D | Category factory enforcement layer | Sprint 1D validator PASS |
 | G2 | Evidence posture taxonomy | Sprint 2 validator PASS |
 | G3 | Evidence posture standard | Sprint 3 validator PASS |
-| G4 | Classifier v0 | Tool deployed with no-verdict disclaimer, no upload |
+| G4 | Evidence posture classification protocol | Sprint 4 validator PASS |
 | G5 | Reference layer v1 | Pages reference-grade, source-disciplined, no thin pages |
 | G6 | Source registry | Claim mapping and citation policy active |
 | G7 | Interface embodiment | Visual system aligned with interface thesis |
 | G8 | GitHub public completion | All links working, no false claims, mobile-safe |
 | G9 | DNS and Cloudflare | Public foundation complete and validated |
 
-**Gate G3 passed.** Sprint 4 (Evidence Posture Classification Protocol) may proceed. External deployment remains deferred until G1C passes.
+**Gate G4 passed.** Sprint 5 (Output Boundary Schema) may proceed. Engine and tool remain blocked. External deployment remains deferred until G1C passes.
 
 ## Sprint Closure Rules
 
@@ -140,7 +140,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 1D | COMPLETE | G1D passed |
 | Sprint 2 | COMPLETE | G2 passed |
 | Sprint 3 | COMPLETE | G3 passed |
-| Sprint 4+ | READY | G3 passed — proceed per phase order; G1C still pending |
+| Sprint 4 | COMPLETE | G4 passed |
+| Sprint 5+ | READY | G4 passed — proceed per phase order; G1C still pending; engine/tool blocked |
 
 ## Governing Sentence
 

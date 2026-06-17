@@ -469,3 +469,29 @@ A taxonomy names evidence posture states. A standard defines what makes those st
 - EVIDENCE_POSTURE_STANDARD.md and data/evidence-posture-standard.json are canonical standard sources.
 - Nine standard dimensions (STD-DIM-0001 through STD-DIM-0009) map to taxonomy dimensions.
 - Eight sufficiency rules (STD-RULE-0001 through STD-RULE-0008) map to taxonomy states.
+
+---
+
+## DEC-019 — Evidence Posture Classification Protocol v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Classification Protocol v1 as a governed process for assigning evidence posture states to evidence artifacts and evidence chains, using the adopted taxonomy and standard.
+
+### Rationale
+
+The taxonomy names posture states. The standard defines sufficiency. The protocol defines the sequence for applying those states responsibly. Without a protocol, future engines, reports, reference examples, and outputs could become arbitrary, vague, binary, or accusatory.
+
+### Implications
+
+- Future tools must follow this protocol.
+- Future output schemas must map to this protocol.
+- Future reference examples must not bypass the protocol.
+- No posture state may be assigned without satisfying taxonomy and standard requirements.
+- The protocol remains internal/governed and does not create a public classifier or active service.
+- EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md and data/evidence-posture-protocol.json are canonical protocol sources.
+- Twelve protocol stages (PROTO-STAGE-0001 through PROTO-STAGE-0012) and eight selection rules (PROTO-RULE-0001 through PROTO-RULE-0008) govern posture assignment.
+- Protocol maturity is not_public_tool.
