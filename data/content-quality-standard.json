@@ -83,7 +83,7 @@
     "no_numeric_content_scores",
     "no_seo_scores_or_grades",
     "validate_all_py_required_before_public_release",
-    "publisher_remains_blocked_until_internal_draft_blueprint_or_candidate_evaluation"
+    "publisher_remains_blocked_until_internal_draft_blueprint"
   ],
   "last_reviewed": "2026-06-17"
 }

@@ -1,0 +1,66 @@
+{
+  "registry_id": "REF-CAND-PRIORITY-BANDS-001",
+  "name": "Hoax.ai Reference Candidate Priority Bands",
+  "version": "v1.0.0",
+  "status": "governed_internal_candidate_priority_bands",
+  "maturity": "evaluation_only_no_drafts_no_routes_no_publication",
+  "priority_bands": [
+    {
+      "priority_band_id": "PRIORITY-BAND-0001",
+      "name": "priority_foundational",
+      "meaning": "Candidate defines a core concept other reference units depend on.",
+      "allowed_next_step": "future_internal_draft_blueprint_consideration_after_dependencies_reviewed",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication_right, publication",
+      "notes": "Foundational only; not publication priority."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0002",
+      "name": "priority_high_dependency",
+      "meaning": "Candidate supports governance, traceability, or boundary logic required by other candidates.",
+      "allowed_next_step": "future_draft_blueprint_after_foundational_candidates",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication, route_approval, sitemap_approval, draft_approval, seo_volume_priority",
+      "notes": "Dependency value; not output authorization."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0003",
+      "name": "priority_ready_for_draft_blueprint",
+      "meaning": "Candidate may be considered in a future Internal Draft Blueprint sprint after evaluation gates pass.",
+      "allowed_next_step": "future_internal_draft_blueprint_consideration_only",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation_now, page_creation, route_activation, publication",
+      "notes": "Future consideration only."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0004",
+      "name": "priority_needs_boundary_refinement",
+      "meaning": "Candidate requires clearer governance boundary before draft blueprint work.",
+      "allowed_next_step": "boundary_refinement_review_before_draft_blueprint",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication",
+      "notes": "Refinement required; not blocked permanently unless escalated."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0005",
+      "name": "priority_needs_claim_scope_refinement",
+      "meaning": "Candidate claim or source scope needs tightening before drafting.",
+      "allowed_next_step": "claim_source_scope_review",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication, external_claim_expansion",
+      "notes": "Traceability refinement required."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0006",
+      "name": "priority_defer",
+      "meaning": "Candidate deferred until foundational or dependency candidates advance.",
+      "allowed_next_step": "re_evaluation_after_prerequisite_candidates",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication, low_quality_score, seo_deprioritization, abandonment",
+      "notes": "Deferred by governance order; not numeric ranking."
+    },
+    {
+      "priority_band_id": "PRIORITY-BAND-0007",
+      "name": "priority_blocked",
+      "meaning": "Candidate blocked by unresolved governance or safety issues.",
+      "allowed_next_step": "blocker_resolution_only",
+      "prohibited_interpretation": "public_release, route_creation, sitemap_expansion, draft_creation, publication, permanent_rejection_without_review, publication_block_override",
+      "notes": "Blocked until issues resolved."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

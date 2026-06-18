@@ -1,0 +1,79 @@
+{
+  "policy_id": "REF-CAND-EVAL-POLICY-001",
+  "name": "Hoax.ai Reference Candidate Evaluation Policy",
+  "version": "v1.0.0",
+  "status": "governed_internal_candidate_evaluation_policy",
+  "maturity": "evaluation_only_no_drafts_no_routes_no_publication",
+  "governing_principle": "Evaluation ranks readiness. It does not grant publication permission.",
+  "boundary_principle": "A prioritized candidate is still not a page.",
+  "allowed_evaluation_actions": [
+    "evaluation_record_creation",
+    "priority_band_assignment",
+    "dependency_note_creation",
+    "readiness_state_assignment",
+    "blocker_identification",
+    "qualitative_dimension_review"
+  ],
+  "prohibited_evaluation_actions": [
+    "draft_creation",
+    "page_creation",
+    "route_activation",
+    "sitemap_expansion",
+    "public_metadata",
+    "publication",
+    "deployment",
+    "dns",
+    "cloudflare",
+    "tool",
+    "classifier",
+    "upload",
+    "scoring",
+    "forms",
+    "analytics",
+    "external_factual_claims",
+    "numeric_score_assignment",
+    "seo_score_assignment",
+    "quality_grade_assignment"
+  ],
+  "evaluation_dimensions": [
+    "foundation_value",
+    "governance_clarity",
+    "claim_source_scope_clarity",
+    "semantic_seo_safety",
+    "internal_link_dependency_value",
+    "content_substance_readiness",
+    "publisher_safety",
+    "route_risk",
+    "draft_blueprint_suitability",
+    "blocking_issues"
+  ],
+  "priority_bands": [
+    "priority_foundational",
+    "priority_high_dependency",
+    "priority_ready_for_draft_blueprint",
+    "priority_needs_boundary_refinement",
+    "priority_needs_claim_scope_refinement",
+    "priority_defer",
+    "priority_blocked"
+  ],
+  "readiness_states": [
+    "evaluation_complete",
+    "draft_blueprint_candidate",
+    "needs_boundary_refinement",
+    "needs_claim_source_refinement",
+    "needs_semantic_seo_refinement",
+    "dependency_candidate",
+    "deferred",
+    "blocked"
+  ],
+  "non_authorization_rules": [
+    "evaluation_does_not_authorize_drafts",
+    "evaluation_does_not_authorize_routes",
+    "evaluation_does_not_authorize_sitemap",
+    "evaluation_does_not_authorize_publishing",
+    "evaluation_does_not_authorize_deployment",
+    "evaluation_does_not_authorize_seo_expansion",
+    "no_numeric_scores_or_grades_permitted"
+  ],
+  "last_reviewed": "2026-06-17"
+}

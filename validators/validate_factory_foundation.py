@@ -1592,6 +1592,10 @@ def validate_json_files() -> bool:
         "data/publisher-dry-run-expected-results.json",
         "data/reference-candidate-pack-policy.json",
         "data/reference-candidate-pack-v1.json",
+        "data/reference-candidate-evaluation-policy.json",
+        "data/reference-candidate-evaluation-v1.json",
+        "data/reference-candidate-priority-bands.json",
+        "data/reference-candidate-dependency-map.json",
     ]:
         path = ROOT / rel
         try:

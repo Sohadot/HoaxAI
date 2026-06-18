@@ -478,10 +478,10 @@ def validate_cross_file() -> bool:
 
     pub_policy = load_json(ROOT / "data" / "publisher-governance-policy.json")
     status = pub_policy.get("current_publisher_status", "")
-    if status != "blocked_until_internal_draft_blueprint_or_candidate_evaluation":
+    if status != "blocked_until_internal_draft_blueprint":
         error(
             "publisher-governance-policy: current_publisher_status must be "
-            "blocked_until_internal_draft_blueprint_or_candidate_evaluation"
+            "blocked_until_internal_draft_blueprint"
         )
         ok = False
 
@@ -489,6 +489,9 @@ def validate_cross_file() -> bool:
     checks = " ".join(expansion.get("required_pre_release_checks", [])).lower()
     if "candidate_pack" not in checks and "reference_candidate" not in checks:
         error("reference-expansion-gate.json: must include candidate pack pre-release check")
+        ok = False
+    if "candidate_evaluation" not in checks and "reference_candidate_evaluation" not in checks:
+        error("reference-expansion-gate.json: must include candidate evaluation pre-release check")
         ok = False
 
     pub_gate = load_json(ROOT / "data" / "publisher-quality-gates.json")
@@ -498,6 +501,14 @@ def validate_cross_file() -> bool:
         ok = False
     elif cp_gate.get("required_before_public_release") is not True or cp_gate.get("bypassable") is True:
         error("publisher-quality-gates: PUB-GATE-0017 must be required and not bypassable")
+        ok = False
+
+    eval_gate = next((g for g in pub_gate.get("gates", []) if g.get("gate_id") == "PUB-GATE-0018"), None)
+    if not eval_gate:
+        error("publisher-quality-gates: PUB-GATE-0018 missing")
+        ok = False
+    elif eval_gate.get("required_before_public_release") is not True or eval_gate.get("bypassable") is True:
+        error("publisher-quality-gates: PUB-GATE-0018 must be required and not bypassable")
         ok = False
 
     sources = load_json(ROOT / "data" / "source-registry.json").get("sources", [])

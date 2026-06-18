@@ -3,12 +3,13 @@
   "name": "Hoax.ai Publisher State Machine",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_internal_draft_blueprint_or_candidate_evaluation",
-  "current_system_state": "blocked_until_internal_draft_blueprint_or_candidate_evaluation",
+  "maturity": "publisher_blocked_until_internal_draft_blueprint",
+  "current_system_state": "blocked_until_internal_draft_blueprint",
   "states": [
     "blocked",
     "dry_run_pass",
     "candidate_pack_registered",
+    "candidate_evaluation_complete",
     "proposed_internal",
     "candidate_registered",
     "blueprint_checked",
@@ -28,7 +29,8 @@
   "allowed_transitions": [
     {"from": "blocked", "to": "dry_run_pass", "requires": "publisher_dry_run_harness_passed"},
     {"from": "blocked", "to": "candidate_pack_registered", "requires": "first_reference_candidate_pack_registered"},
-    {"from": "candidate_pack_registered", "to": "proposed_internal", "requires": "candidate_evaluation_authorized"},
+    {"from": "candidate_pack_registered", "to": "candidate_evaluation_complete", "requires": "reference_candidate_evaluation_passed"},
+    {"from": "candidate_evaluation_complete", "to": "proposed_internal", "requires": "internal_draft_blueprint_authorized"},
     {"from": "blocked", "to": "proposed_internal", "requires": "content_quality_standard_passed"},
     {"from": "proposed_internal", "to": "candidate_registered", "requires": "candidate_registry_entry"},
     {"from": "candidate_registered", "to": "blueprint_checked", "requires": "reference_blueprint_gate"},
@@ -51,6 +53,8 @@
     {"from": "dry_run_pass", "to": "release_eligible", "reason": "dry_run_pass_does_not_authorize_release"},
     {"from": "dry_run_pass", "to": "public_release_blocked", "reason": "dry_run_pass_does_not_authorize_public_release"},
     {"from": "dry_run_pass", "to": "public_live", "reason": "dry_run_pass_is_test_only"},
+    {"from": "candidate_evaluation_complete", "to": "release_eligible", "reason": "evaluation_does_not_authorize_release"},
+    {"from": "candidate_evaluation_complete", "to": "public_release_blocked", "reason": "evaluation_does_not_authorize_public_release"},
     {"from": "candidate_pack_registered", "to": "release_eligible", "reason": "candidate_pack_does_not_authorize_release"},
     {"from": "candidate_pack_registered", "to": "public_release_blocked", "reason": "candidate_pack_does_not_authorize_public_release"},
     {"from": "proposed_internal", "to": "release_eligible", "reason": "must_pass_all_intermediate_gates"},
@@ -75,6 +79,7 @@
     "audit_record_exists",
     "publisher_dry_run_harness_passed",
     "first_reference_candidate_pack_passed",
+    "reference_candidate_evaluation_passed",
     "publisher_control_plane_compliance"
   ],
   "last_reviewed": "2026-06-17"

@@ -257,6 +257,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "First reference candidate pack adoption per DEC-035."
+    },
+    {
+      "claim_id": "CLAIM-0024",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md", "DECISION_LOG.md", "data/reference-candidate-evaluation-v1.json"],
+      "source_refs": ["SOURCE-0100", "SOURCE-0101", "SOURCE-0102", "SOURCE-0105"],
+      "support_scope": "reference candidate evaluation and prioritization adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Reference candidate evaluation adoption per DEC-036."
     }
   ],
   "last_reviewed": "2026-06-17"

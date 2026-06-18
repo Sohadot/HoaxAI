@@ -647,7 +647,7 @@ def validate_cross_file_integration() -> bool:
     pub_policy = load_json(ROOT / "data" / "publisher-governance-policy.json")
     if pub_policy.get("current_publisher_status") not in (
         "blocked_until_first_reference_candidate_pack",
-        "blocked_until_internal_draft_blueprint_or_candidate_evaluation",
+        "blocked_until_internal_draft_blueprint",
     ):
         error("publisher-governance-policy: publisher must remain blocked from drafts and publication")
         ok = False

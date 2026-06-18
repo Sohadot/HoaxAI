@@ -838,7 +838,52 @@ External deployment remains deferred (Sprint 1C). Maturity is candidates_only_no
 
 ### Next Phase
 
-**Sprint 18 — Reference Candidate Evaluation and Prioritization v1**
+**Sprint 19 — Internal Draft Blueprint Governance v1**
+
+Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked from drafts and publication until future explicit approval.
+
+---
+
+## Sprint 18 — Reference Candidate Evaluation and Prioritization v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Evaluate and prioritize the eight registered reference candidates by readiness and dependency without creating drafts, pages, routes, or sitemap entries.
+
+### Deliverables
+
+- REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md
+- data/reference-candidate-evaluation-policy.json
+- data/reference-candidate-priority-bands.json
+- data/reference-candidate-dependency-map.json
+- data/reference-candidate-evaluation-v1.json
+- validators/validate_reference_candidate_evaluation.py
+- SPRINT_18_REFERENCE_CANDIDATE_EVALUATION_AUDIT.md
+- DEC-036 appended to DECISION_LOG.md
+- data/reference-page-candidate-registry.json updated (evaluation references)
+- data/reference-expansion-gate.json updated
+- data/publisher-quality-gates.json updated (PUB-GATE-0018)
+- data/publisher-governance-policy.json updated (blocked_until_internal_draft_blueprint)
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Evaluation Scope
+
+- 8 candidates evaluated (REF-CAND-0001–0008)
+- 24 evidence ledger claims (CLAIM-0024 added)
+- Priority bands: 2 foundational, 3 high_dependency, 2 ready_for_draft_blueprint, 1 needs_boundary_refinement
+- Publisher queues remain empty
+- No draft pages, public pages, routes, or sitemap expansion
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Maturity is evaluation_only_no_drafts_no_routes_no_publication.
+
+### Next Phase
+
+**Sprint 19 — Internal Draft Blueprint Governance v1**
 
 Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked from drafts and publication until future explicit approval.
 

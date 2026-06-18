@@ -32,6 +32,7 @@
     "structured_data_semantic_seo_validation",
     "publisher_dry_run_harness_validation",
     "first_reference_candidate_pack_validation",
+    "reference_candidate_evaluation_validation",
     "publisher_control_plane_validation",
     "validate_all_py_pass",
     "final_audit"
@@ -53,11 +54,12 @@
     "placeholder_page",
     "unmapped_public_claim",
     "publisher_control_plane_failure",
-    "publisher_blocked_until_internal_draft_blueprint_or_candidate_evaluation",
+    "publisher_blocked_until_internal_draft_blueprint",
     "content_quality_substance_failure",
     "structured_data_semantic_seo_failure",
     "publisher_dry_run_harness_failure",
     "first_reference_candidate_pack_failure",
+    "reference_candidate_evaluation_failure",
     "thin_content_pattern_failure"
   ],
   "release_eligibility_rules": [
@@ -70,7 +72,8 @@
     "no_public_release_without_content_quality_substance_validation",
     "no_public_release_without_structured_data_semantic_seo_validation",
     "no_public_release_without_publisher_dry_run_harness_validation",
-    "no_public_release_without_first_reference_candidate_pack_validation"
+    "no_public_release_without_first_reference_candidate_pack_validation",
+    "no_public_release_without_reference_candidate_evaluation_validation"
   ],
   "last_reviewed": "2026-06-17"
 }

@@ -255,6 +255,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Eight internal candidates registered. No drafts, routes, pages, or publication authorized."
+    },
+    {
+      "claim_id": "CLAIM-0024",
+      "claim_text": "Hoax.ai has adopted Reference Candidate Evaluation and Prioritization v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md, DECISION_LOG.md (DEC-036)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Eight candidates evaluated. No drafts, routes, pages, or publication authorized."
     }
   ]
 }

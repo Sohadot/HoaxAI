@@ -1,0 +1,66 @@
+{
+  "dependency_map_id": "REF-CAND-DEP-MAP-001",
+  "name": "Hoax.ai Reference Candidate Dependency Map",
+  "version": "v1.0.0",
+  "status": "governed_internal_candidate_dependency_map",
+  "maturity": "evaluation_only_no_drafts_no_routes_no_publication",
+  "dependencies": [
+    {
+      "candidate_id": "REF-CAND-0001",
+      "depends_on": [],
+      "supports_future_candidates": ["REF-CAND-0003", "REF-CAND-0004", "REF-CAND-0005", "REF-CAND-0006", "REF-CAND-0008"],
+      "dependency_role": "foundational_vocabulary_anchor",
+      "notes": "Evidence posture anchors taxonomy-linked candidates. Internal dependency only."
+    },
+    {
+      "candidate_id": "REF-CAND-0002",
+      "depends_on": [],
+      "supports_future_candidates": ["REF-CAND-0001", "REF-CAND-0005", "REF-CAND-0007", "REF-CAND-0008"],
+      "dependency_role": "foundational_governance_boundary",
+      "notes": "Artifact-subject separation supports misreading prevention across candidates."
+    },
+    {
+      "candidate_id": "REF-CAND-0003",
+      "depends_on": ["REF-CAND-0001"],
+      "supports_future_candidates": ["REF-CAND-0004"],
+      "dependency_role": "framework_extension",
+      "notes": "Source confidence extends posture vocabulary after evidence posture is defined."
+    },
+    {
+      "candidate_id": "REF-CAND-0004",
+      "depends_on": ["REF-CAND-0001", "REF-CAND-0003"],
+      "supports_future_candidates": [],
+      "dependency_role": "framework_extension",
+      "notes": "Provenance gap depends on posture and source confidence framing."
+    },
+    {
+      "candidate_id": "REF-CAND-0005",
+      "depends_on": ["REF-CAND-0001", "REF-CAND-0002"],
+      "supports_future_candidates": [],
+      "dependency_role": "posture_state_reference",
+      "notes": "Not assessable posture state requires foundational posture and boundary context."
+    },
+    {
+      "candidate_id": "REF-CAND-0006",
+      "depends_on": ["REF-CAND-0001"],
+      "supports_future_candidates": ["REF-CAND-0007"],
+      "dependency_role": "governance_output_boundary",
+      "notes": "Output boundary supports traceability and engine language discipline."
+    },
+    {
+      "candidate_id": "REF-CAND-0007",
+      "depends_on": ["REF-CAND-0002", "REF-CAND-0006"],
+      "supports_future_candidates": ["REF-CAND-0003", "REF-CAND-0004", "REF-CAND-0005", "REF-CAND-0008"],
+      "dependency_role": "governance_traceability_anchor",
+      "notes": "Claim and source traceability supports all future reference claim discipline."
+    },
+    {
+      "candidate_id": "REF-CAND-0008",
+      "depends_on": ["REF-CAND-0001", "REF-CAND-0002", "REF-CAND-0007"],
+      "supports_future_candidates": [],
+      "dependency_role": "category_thesis_reference",
+      "notes": "Synthetic fragility depends on posture, boundary, and traceability clarity before drafting."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

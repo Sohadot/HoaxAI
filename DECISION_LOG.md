@@ -877,3 +877,32 @@ Reference expansion must begin with candidate discipline, not page production. T
 - Candidate records may be added.
 - Candidate records do not authorize pages, drafts, routes, sitemap expansion, SEO expansion, or publishing.
 - Future work may evaluate candidates, but no candidate becomes a page without later explicit approval.
+
+---
+
+## DEC-036 — Reference Candidate Evaluation and Prioritization v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Reference Candidate Evaluation and Prioritization v1 to evaluate the first 8 reference candidates by readiness, dependency, governance risk, reference value, semantic role, claim/source clarity, and draft-preparation suitability without authorizing drafts, routes, sitemap expansion, or publication.
+
+### Rationale
+
+Candidate registration alone does not establish execution order. The first reference candidates must be evaluated and prioritized so future drafting begins with foundational, dependency-resolving, low-risk, high-reference-value units rather than volume-driven or SEO-driven page creation.
+
+### Implications
+
+- Candidates may receive evaluation records.
+- Candidates may receive qualitative priority bands.
+- Candidates may receive dependency notes.
+- Candidates may receive readiness states.
+- No candidate becomes a draft.
+- No candidate becomes a page.
+- No candidate becomes a route.
+- No candidate becomes sitemap eligible.
+- No candidate becomes publication eligible.
+- Evaluation does not authorize publisher output.
+- Future work may create an Internal Draft Blueprint only after this evaluation passes.

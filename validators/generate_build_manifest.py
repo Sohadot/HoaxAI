@@ -29,6 +29,7 @@ GOVERNANCE_FILES = [
     "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md",
     "PUBLISHER_DRY_RUN_HARNESS.md",
     "FIRST_REFERENCE_CANDIDATE_PACK.md",
+    "REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md",
     "INTERNAL_ENGINE_MODEL.md",
     "OUTPUT_BOUNDARY_SCHEMA.md",
     "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
@@ -95,6 +96,10 @@ DATA_FILES = [
     "data/publisher-dry-run-expected-results.json",
     "data/reference-candidate-pack-policy.json",
     "data/reference-candidate-pack-v1.json",
+    "data/reference-candidate-evaluation-policy.json",
+    "data/reference-candidate-evaluation-v1.json",
+    "data/reference-candidate-priority-bands.json",
+    "data/reference-candidate-dependency-map.json",
 ]
 
 VALIDATORS = [
@@ -113,6 +118,7 @@ VALIDATORS = [
     "validators/validate_structured_data_semantic_seo.py",
     "validators/validate_publisher_dry_run.py",
     "validators/validate_reference_candidate_pack.py",
+    "validators/validate_reference_candidate_evaluation.py",
     "validators/generate_build_manifest.py",
 ]
 

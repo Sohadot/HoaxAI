@@ -992,6 +992,66 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Reference candidate pack validator."
+    },
+    {
+      "source_id": "SOURCE-0100",
+      "source_title": "REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md",
+      "source_type": "internal_governance",
+      "location": "REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable candidate evaluation doctrine per DEC-036."
+    },
+    {
+      "source_id": "SOURCE-0101",
+      "source_title": "data/reference-candidate-evaluation-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-candidate-evaluation-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable candidate evaluation policy."
+    },
+    {
+      "source_id": "SOURCE-0102",
+      "source_title": "data/reference-candidate-evaluation-v1.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-candidate-evaluation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "First reference candidate evaluation records."
+    },
+    {
+      "source_id": "SOURCE-0103",
+      "source_title": "data/reference-candidate-priority-bands.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-candidate-priority-bands.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Qualitative priority band registry."
+    },
+    {
+      "source_id": "SOURCE-0104",
+      "source_title": "data/reference-candidate-dependency-map.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-candidate-dependency-map.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal candidate dependency map."
+    },
+    {
+      "source_id": "SOURCE-0105",
+      "source_title": "validators/validate_reference_candidate_evaluation.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_reference_candidate_evaluation.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Reference candidate evaluation validator."
     }
   ]
 }
