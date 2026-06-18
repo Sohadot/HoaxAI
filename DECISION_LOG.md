@@ -1482,3 +1482,27 @@ Sprint 38 strengthened the internal visual system, but hardening must be validat
 - No public navigation may link to the prototype.
 - No engine, classifier, upload, scoring, API, analytics, DNS, Cloudflare, deployment change, or public tool behavior may be introduced.
 - Future work may move to visual system baseline lock only after this validation passes.
+
+---
+
+## DEC-058 - Non-Public Static Workbench Visual System Baseline Lock v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Visual System Baseline Lock v1 to lock the validated internal static Evidence Posture Workbench visual system as the current internal visual baseline without modifying prototype files, creating new prototype files, expanding the prototype, creating public routes, adding sitemap entries, linking public navigation, or introducing engine, classifier, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior.
+
+### Rationale
+
+Sprint 39 validated the hardened visual system as eligible for baseline lock. The baseline lock preserves the governed evidence field, evidence chamber, boundary rails, provenance shadows, missing-context absence, not-assessable restraint, refusal gate, output envelope containment, verification path, local tokens, visual patterns, anti-pattern exclusions, public isolation, static-only status, and non-operational boundary as the reference baseline for future governed work.
+
+### Implications
+
+- The validated hardened visual system is locked as the current internal static visual baseline.
+- Prototype files must not be modified in this sprint.
+- No new prototype files may be created.
+- Any future baseline change requires governed change control, explicit allowed files, validator coverage, boundary audit, public-isolation confirmation, and static-safety confirmation.
+- No public route, sitemap entry, public navigation, engine, classifier, upload, scoring, API, forms, analytics, DNS, Cloudflare, deployment change, custom domain launch, monetization, or public tool behavior is authorized.
+- Future work may validate the baseline lock before any further prototype or interface expansion.

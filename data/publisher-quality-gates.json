@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_non_public_static_workbench_visual_system_baseline_lock",
+  "maturity": "publisher_blocked_until_non_public_static_workbench_visual_system_baseline_lock_validation",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -486,7 +486,22 @@
       "failure_condition": "non_public_static_workbench_visual_system_hardening_validation_not_met",
       "bypassable": false,
       "notes": "Visual system hardening validation defined Sprint 39 (DEC-057). Does not authorize public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, prototype file changes, or prototype expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0040",
+      "name": "Non-Public Static Workbench Visual System Baseline Lock Gate",
+      "status": "non_public_static_visual_system_baseline_locked_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_non_public_static_workbench_visual_system_baseline_lock_validation": true,
+      "required_before_any_interface_prototype_expansion": true,
+      "required_before_engine_governance": true,
+      "validation_source": "NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK_V1.md",
+      "failure_condition": "non_public_static_workbench_visual_system_baseline_lock_not_met",
+      "bypassable": false,
+      "notes": "Visual system baseline lock defined Sprint 40 (DEC-058). Does not authorize public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, prototype file changes, or prototype expansion."
     }
   ],
-  "last_reviewed": "2026-06-17"
+  "last_reviewed": "2026-06-18"
 }

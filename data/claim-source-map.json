@@ -930,6 +930,29 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Non-Public Static Workbench Visual System Hardening Validation adoption per DEC-057."
+    },
+    {
+      "claim_id": "CLAIM-0046",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK_V1.md",
+        "DECISION_LOG.md",
+        "data/non-public-static-workbench-visual-system-baseline-lock-policy.json"
+      ],
+      "source_refs": [
+        "SOURCE-0251",
+        "SOURCE-0252",
+        "SOURCE-0253",
+        "SOURCE-0254",
+        "SOURCE-0255",
+        "SOURCE-0256",
+        "SOURCE-0257"
+      ],
+      "support_scope": "non-public static workbench visual system baseline lock adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Non-Public Static Workbench Visual System Baseline Lock adoption per DEC-058."
     }
   ],
   "last_reviewed": "2026-06-18"

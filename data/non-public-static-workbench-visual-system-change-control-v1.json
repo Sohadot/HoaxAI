@@ -1,0 +1,48 @@
+{
+  "change_control_id": "NP-VIS-CHANGE-CONTROL-001",
+  "name": "Non-Public Static Workbench Visual System Change Control v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_visual_system_change_control_active",
+  "maturity": "change_control_only_no_public_route_no_engine_no_classifier",
+  "controlled_files": [
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+    "_internal_prototypes/evidence-posture-workbench/prototype.css"
+  ],
+  "future_change_requirements": [
+    "future sprint required",
+    "decision log entry required",
+    "allowed files must be explicit",
+    "prohibited changes must be explicit",
+    "validator required",
+    "boundary audit required",
+    "public isolation audit required",
+    "static safety audit required",
+    "source registry update required",
+    "evidence ledger update only if claim added",
+    "no public route without separate public route governance",
+    "no engine/classifier/upload/scoring authorization without separate engine governance"
+  ],
+  "prohibited_informal_changes": [
+    "unscheduled CSS edits",
+    "unscheduled HTML edits",
+    "visual redesign without DEC entry",
+    "adding JS",
+    "adding forms",
+    "adding inputs",
+    "adding upload controls",
+    "adding scoring visuals",
+    "adding fake/real language",
+    "adding public links",
+    "adding sitemap entries",
+    "adding route registry entries",
+    "adding deployment changes"
+  ],
+  "required_future_validation": [
+    "validate_all.py must pass",
+    "dedicated validator must pass",
+    "public surface must remain governed",
+    "Python cache files must not be committed"
+  ],
+  "non_authorization_statement": "Change control does not authorize public routes, sitemap entries, public navigation, engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, or public tool behavior.",
+  "last_reviewed": "2026-06-18"
+}

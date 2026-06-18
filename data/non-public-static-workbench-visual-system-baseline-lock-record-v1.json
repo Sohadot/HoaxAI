@@ -1,0 +1,65 @@
+{
+  "baseline_lock_id": "NP-VIS-BASELINE-LOCK-RECORD-001",
+  "name": "Non-Public Static Workbench Visual System Baseline Lock Record v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_visual_system_baseline_locked",
+  "maturity": "baseline_lock_only_no_prototype_modification_no_engine_no_classifier_no_public_route",
+  "locked_baseline_source": "Sprint 38 hardening validated by Sprint 39",
+  "locked_files": [
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+    "_internal_prototypes/evidence-posture-workbench/prototype.css"
+  ],
+  "validation_refs": [
+    "non_public_static_visual_system_hardening_validated",
+    "token_system_validated",
+    "pattern_system_validated",
+    "visual_antipattern_blocking_validated",
+    "hardening_public_isolation_validated",
+    "hardening_static_safety_validated"
+  ],
+  "locked_identity": [
+    "evidence_chamber",
+    "governed_evidence_field",
+    "boundary_rail",
+    "provenance_shadow",
+    "missing_context_absence",
+    "not_assessable_restraint",
+    "refusal_gate",
+    "output_envelope",
+    "verification_path",
+    "anti_detector_identity"
+  ],
+  "locked_public_surface_status": [
+    "four_public_urls_only",
+    "not_registered_as_public_route",
+    "not_in_sitemap",
+    "not_linked_from_public_navigation"
+  ],
+  "allowed_next_phase": "Sprint 41 — Non-Public Static Workbench Visual System Baseline Lock Validation v1",
+  "prohibited_capabilities": [
+    "prototype_modification_in_sprint_40",
+    "new_prototype_files",
+    "public_route",
+    "sitemap_entry",
+    "public_navigation",
+    "engine",
+    "classifier",
+    "detector",
+    "upload",
+    "scoring",
+    "fake_real_output",
+    "forms",
+    "inputs",
+    "API",
+    "analytics",
+    "storage",
+    "network_calls",
+    "monetization",
+    "DNS",
+    "Cloudflare",
+    "custom_domain_launch",
+    "deployment_change"
+  ],
+  "non_authorization_statement": "The baseline lock does not authorize public route creation, sitemap expansion, public navigation, engine, classifier, detector, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, or public tool behavior.",
+  "last_reviewed": "2026-06-18"
+}

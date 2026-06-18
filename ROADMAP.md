@@ -1669,6 +1669,98 @@ Public classifier remains blocked. Public engine remains blocked. The prototype 
 
 ---
 
+## Sprint 38 - Non-Public Static Workbench Visual System Hardening v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Harden the non-public static Evidence Posture Workbench visual system while preserving internal-only, static-only, non-operational boundaries.
+
+### Deliverables
+
+- NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_V1.md
+- data/non-public-static-workbench-visual-system-hardening-policy.json
+- data/non-public-static-workbench-visual-system-token-contract-v1.json
+- data/non-public-static-workbench-visual-system-pattern-registry-v1.json
+- data/non-public-static-workbench-visual-system-antipattern-audit-v1.json
+- data/non-public-static-workbench-visual-system-boundary-audit-v1.json
+- validators/validate_non_public_static_workbench_visual_system_hardening.py
+- SPRINT_38_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_AUDIT.md
+- DEC-056 appended to DECISION_LOG.md
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G38 passed.** Visual system hardening validation blocked until Sprint 39.
+
+---
+
+## Sprint 39 - Non-Public Static Workbench Visual System Hardening Validation v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Validate the Sprint 38 hardened internal static Evidence Posture Workbench visual system before accepting it as eligible for baseline lock.
+
+### Deliverables
+
+- NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_VALIDATION_V1.md
+- data/non-public-static-workbench-visual-system-hardening-validation-policy.json
+- data/non-public-static-workbench-visual-system-hardening-validation-results-v1.json
+- data/non-public-static-workbench-visual-system-token-validation-v1.json
+- data/non-public-static-workbench-visual-system-pattern-validation-v1.json
+- data/non-public-static-workbench-visual-system-antipattern-validation-v1.json
+- data/non-public-static-workbench-visual-system-public-isolation-audit-v1.json
+- data/non-public-static-workbench-visual-system-static-safety-audit-v1.json
+- validators/validate_non_public_static_workbench_visual_system_hardening_validation.py
+- SPRINT_39_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_VALIDATION_AUDIT.md
+- DEC-057 appended to DECISION_LOG.md
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G39 passed.** Visual system baseline lock blocked until Sprint 40.
+
+---
+
+## Sprint 40 - Non-Public Static Workbench Visual System Baseline Lock v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Lock the validated non-public static Evidence Posture Workbench visual system as the current internal static visual baseline without modifying prototype files or authorizing public capability.
+
+### Deliverables
+
+- NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK_V1.md
+- data/non-public-static-workbench-visual-system-baseline-lock-policy.json
+- data/non-public-static-workbench-visual-system-baseline-lock-record-v1.json
+- data/non-public-static-workbench-visual-system-baseline-locked-elements-v1.json
+- data/non-public-static-workbench-visual-system-change-control-v1.json
+- data/non-public-static-workbench-visual-system-baseline-boundary-audit-v1.json
+- validators/validate_non_public_static_workbench_visual_system_baseline_lock.py
+- SPRINT_40_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK_AUDIT.md
+- DEC-058 appended to DECISION_LOG.md
+- Publisher status -> blocked_until_non_public_static_workbench_visual_system_baseline_lock_validation
+- PUB-GATE-0040 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G40 passed.** Baseline lock validation blocked until Sprint 41.
+
+### Next Phase
+
+**Sprint 41 - Non-Public Static Workbench Visual System Baseline Lock Validation v1**
+
+Public classifier remains blocked. Public engine remains blocked. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  

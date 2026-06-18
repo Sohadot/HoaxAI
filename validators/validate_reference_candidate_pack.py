@@ -504,7 +504,7 @@ def validate_cross_file() -> bool:
         "blocked_until_non_public_static_workbench_visual_system_hardening",
         "blocked_until_non_public_static_workbench_visual_system_hardening_validation",
         "blocked_until_non_public_static_workbench_visual_system_baseline_lock",
-        "blocked_until_non_public_static_workbench_visual_system_baseline_lock",
+        "blocked_until_non_public_static_workbench_visual_system_baseline_lock_validation",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "
