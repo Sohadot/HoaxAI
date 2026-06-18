@@ -1,0 +1,47 @@
+{
+  "state_machine_id": "INT-DRAFT-BP-STATE-001",
+  "name": "Hoax.ai Internal Draft Blueprint State Machine",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_blueprint_state_machine",
+  "maturity": "blueprint_governance_only_no_drafts_no_routes_no_publication",
+  "current_system_state": "blueprint_governance_defined_no_drafts",
+  "states": [
+    "blueprint_not_created",
+    "blueprint_required",
+    "blueprint_created_internal",
+    "blueprint_validation_pending",
+    "blueprint_validated",
+    "ready_for_future_internal_draft_pack",
+    "blocked_needs_candidate_refinement",
+    "blocked_needs_claim_scope",
+    "blocked_needs_source_scope",
+    "blocked_needs_boundary_refinement",
+    "retired"
+  ],
+  "allowed_transitions": [
+    {"from": "blueprint_not_created", "to": "blueprint_required", "requires": "candidate_evaluation_passed"},
+    {"from": "blueprint_required", "to": "blueprint_created_internal", "requires": "future_draft_blueprint_pack_authorized"},
+    {"from": "blueprint_created_internal", "to": "blueprint_validation_pending", "requires": "blueprint_record_created"},
+    {"from": "blueprint_validation_pending", "to": "blueprint_validated", "requires": "section_contracts_and_gates_passed"},
+    {"from": "blueprint_validated", "to": "ready_for_future_internal_draft_pack", "requires": "all_draft_readiness_gates_passed"},
+    {"from": "blueprint_required", "to": "blocked_needs_candidate_refinement", "requires": "candidate_refinement_required"},
+    {"from": "blueprint_required", "to": "blocked_needs_claim_scope", "requires": "claim_scope_refinement_required"},
+    {"from": "blueprint_required", "to": "blocked_needs_source_scope", "requires": "source_scope_refinement_required"},
+    {"from": "blueprint_required", "to": "blocked_needs_boundary_refinement", "requires": "boundary_refinement_required"},
+    {"from": "blocked_needs_boundary_refinement", "to": "blueprint_required", "requires": "boundary_refinement_passed"},
+    {"from": "ready_for_future_internal_draft_pack", "to": "retired", "requires": "explicit_retirement"},
+    {"from": "blueprint_not_created", "to": "retired", "requires": "explicit_retirement"}
+  ],
+  "blocked_transitions": [
+    {"from": "blueprint_governance_defined_no_drafts", "to": "draft_created", "reason": "sprint_19_does_not_authorize_drafts"},
+    {"from": "ready_for_future_internal_draft_pack", "to": "draft_created", "reason": "future_draft_pack_required_first"},
+    {"from": "blueprint_validated", "to": "route_active", "reason": "blueprint_does_not_authorize_routes"},
+    {"from": "blueprint_validated", "to": "sitemap_eligible", "reason": "blueprint_does_not_authorize_sitemap"},
+    {"from": "blueprint_validated", "to": "publication_allowed", "reason": "blueprint_does_not_authorize_publication"},
+    {"from": "ready_for_future_internal_draft_pack", "to": "release_eligible", "reason": "blueprint_does_not_authorize_release"},
+    {"from": "ready_for_future_internal_draft_pack", "to": "deployed", "reason": "blueprint_does_not_authorize_deployment"},
+    {"from": "any", "to": "public_page_created", "reason": "blueprint_governance_is_non_public"}
+  ],
+  "terminal_states": ["retired"],
+  "last_reviewed": "2026-06-17"
+}

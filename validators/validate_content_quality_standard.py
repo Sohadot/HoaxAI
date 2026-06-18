@@ -396,11 +396,13 @@ def validate_cross_file_integration() -> bool:
     if status not in (
         "blocked_until_first_reference_candidate_pack",
         "blocked_until_internal_draft_blueprint",
+        "blocked_until_first_internal_draft_blueprint_pack",
     ):
         error(f"publisher-governance-policy: publisher must remain blocked from drafts and publication, got {status}")
         ok = False
-    if "draft" in " ".join(pub_policy.get("allowed_current_outputs", [])).lower():
-        error("publisher-governance-policy: drafts must not be allowed current outputs")
+    prohibited = " ".join(pub_policy.get("prohibited_current_outputs", [])).lower()
+    if "draft_pages" not in prohibited and "content_drafts" not in prohibited:
+        error("publisher-governance-policy: draft outputs must remain prohibited")
         ok = False
 
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])

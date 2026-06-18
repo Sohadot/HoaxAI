@@ -1052,6 +1052,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Reference candidate evaluation validator."
+    },
+    {
+      "source_id": "SOURCE-0106",
+      "source_title": "INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable internal draft blueprint governance per DEC-037."
+    },
+    {
+      "source_id": "SOURCE-0107",
+      "source_title": "data/internal-draft-blueprint-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-blueprint-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable internal draft blueprint policy."
+    },
+    {
+      "source_id": "SOURCE-0108",
+      "source_title": "data/internal-draft-template-registry.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-template-registry.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft blueprint template registry."
+    },
+    {
+      "source_id": "SOURCE-0109",
+      "source_title": "data/internal-draft-section-contracts.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-section-contracts.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft section contract registry."
+    },
+    {
+      "source_id": "SOURCE-0110",
+      "source_title": "data/internal-draft-state-machine.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-state-machine.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft blueprint state machine."
+    },
+    {
+      "source_id": "SOURCE-0111",
+      "source_title": "data/internal-draft-readiness-gates.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-readiness-gates.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft readiness gates."
+    },
+    {
+      "source_id": "SOURCE-0112",
+      "source_title": "validators/validate_internal_draft_blueprint_governance.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_draft_blueprint_governance.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft blueprint governance validator."
     }
   ]
 }

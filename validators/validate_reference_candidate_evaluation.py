@@ -421,14 +421,18 @@ def validate_publisher_and_gates() -> bool:
 
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
     status = pub.get("current_publisher_status", "")
-    if status != "blocked_until_internal_draft_blueprint":
+    if status not in (
+        "blocked_until_internal_draft_blueprint",
+        "blocked_until_first_internal_draft_blueprint_pack",
+    ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
-            f"blocked_until_internal_draft_blueprint, got {status}"
+            f"blocked_until_internal_draft_blueprint or blocked_until_first_internal_draft_blueprint_pack, got {status}"
         )
         ok = False
-    if "draft" in " ".join(pub.get("allowed_current_outputs", [])).lower():
-        error("publisher-governance-policy: drafts must not be allowed current outputs")
+    prohibited = " ".join(pub.get("prohibited_current_outputs", [])).lower()
+    if "draft_pages" not in prohibited and "content_drafts" not in prohibited:
+        error("publisher-governance-policy: draft outputs must remain prohibited")
         ok = False
 
     gates = load_json(ROOT / "data" / "publisher-quality-gates.json").get("gates", [])

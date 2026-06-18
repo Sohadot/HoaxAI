@@ -38,9 +38,9 @@ The publisher is a controlled pipeline that may later transform approved referen
 
 | Field | Value |
 |-------|-------|
-| current_status | blocked_until_internal_draft_blueprint |
+| current_status | blocked_until_first_internal_draft_blueprint_pack |
 
-**Reason:** Reference Candidate Evaluation (Sprint 18) completed for eight internal candidates. Publisher remains blocked from drafts, public pages, routes, and publication until a future Internal Draft Blueprint sprint and explicit approval.
+**Reason:** Internal Draft Blueprint Governance (Sprint 19) defines draft structure and section contracts. Publisher remains blocked from actual draft files, public pages, routes, and publication until a future First Internal Draft Blueprint Pack and explicit approval.
 
 ## F. Publisher Workflow Stages
 

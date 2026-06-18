@@ -57,12 +57,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G16 | Publisher Dry-Run Harness | Sprint 16 validator PASS |
 | G17 | First Reference Candidate Pack | Sprint 17 validator PASS |
 | G18 | Reference Candidate Evaluation and Prioritization | Sprint 18 validator PASS |
+| G19 | Internal Draft Blueprint Governance | Sprint 19 validator PASS |
 
-**Gate G18 passed.** Sprint 19 (Internal Draft Blueprint Governance) may proceed when authorized. Public classifier and tool remain blocked. Publisher remains blocked from drafts and publication until future explicit approval. External deployment remains deferred until deployment gates pass.
+**Gate G19 passed.** Sprint 20 (First Internal Draft Blueprint Pack) may proceed when authorized. Public classifier and tool remain blocked. Publisher remains blocked from actual draft files and publication until future explicit approval. External deployment remains deferred until deployment gates pass.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0–G18) govern category infrastructure, reference governance, and expansion readiness. They must pass before reference layer scale.
+Foundation gates (G0–G19) govern category infrastructure, reference governance, and expansion readiness. They must pass before reference layer scale.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -182,7 +183,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 16 | COMPLETE | G16 passed |
 | Sprint 17 | COMPLETE | G17 passed |
 | Sprint 18 | COMPLETE | G18 passed |
-| Sprint 19+ | READY | G18 passed — Internal Draft Blueprint pending; publisher blocked from drafts and publication; deployment gates not passed |
+| Sprint 19 | COMPLETE | G19 passed |
+| Sprint 20+ | READY | G19 passed — First Internal Draft Blueprint Pack pending; publisher blocked from actual drafts and publication; deployment gates not passed |
 
 ## Governing Sentence
 

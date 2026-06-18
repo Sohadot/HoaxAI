@@ -478,10 +478,13 @@ def validate_cross_file() -> bool:
 
     pub_policy = load_json(ROOT / "data" / "publisher-governance-policy.json")
     status = pub_policy.get("current_publisher_status", "")
-    if status != "blocked_until_internal_draft_blueprint":
+    if status not in (
+        "blocked_until_internal_draft_blueprint",
+        "blocked_until_first_internal_draft_blueprint_pack",
+    ):
         error(
             "publisher-governance-policy: current_publisher_status must be "
-            "blocked_until_internal_draft_blueprint"
+            "blocked_until_internal_draft_blueprint or blocked_until_first_internal_draft_blueprint_pack"
         )
         ok = False
 

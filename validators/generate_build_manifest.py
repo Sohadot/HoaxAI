@@ -30,6 +30,7 @@ GOVERNANCE_FILES = [
     "PUBLISHER_DRY_RUN_HARNESS.md",
     "FIRST_REFERENCE_CANDIDATE_PACK.md",
     "REFERENCE_CANDIDATE_EVALUATION_AND_PRIORITIZATION.md",
+    "INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md",
     "INTERNAL_ENGINE_MODEL.md",
     "OUTPUT_BOUNDARY_SCHEMA.md",
     "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
@@ -100,6 +101,11 @@ DATA_FILES = [
     "data/reference-candidate-evaluation-v1.json",
     "data/reference-candidate-priority-bands.json",
     "data/reference-candidate-dependency-map.json",
+    "data/internal-draft-blueprint-policy.json",
+    "data/internal-draft-template-registry.json",
+    "data/internal-draft-section-contracts.json",
+    "data/internal-draft-state-machine.json",
+    "data/internal-draft-readiness-gates.json",
 ]
 
 VALIDATORS = [
@@ -119,6 +125,7 @@ VALIDATORS = [
     "validators/validate_publisher_dry_run.py",
     "validators/validate_reference_candidate_pack.py",
     "validators/validate_reference_candidate_evaluation.py",
+    "validators/validate_internal_draft_blueprint_governance.py",
     "validators/generate_build_manifest.py",
 ]
 

@@ -1,0 +1,180 @@
+{
+  "gate_set_id": "INT-DRAFT-READINESS-GATES-001",
+  "name": "Hoax.ai Internal Draft Readiness Gates",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_readiness_gates",
+  "maturity": "blueprint_governance_only_no_drafts_no_routes_no_publication",
+  "gates": [
+    {
+      "gate_id": "DRAFT-GATE-0001",
+      "name": "Candidate Evaluation Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/reference-candidate-evaluation-v1.json",
+      "failure_condition": "candidate_evaluation_not_passed",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0002",
+      "name": "Candidate Status Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/reference-page-candidate-registry.json",
+      "failure_condition": "candidate_status_not_eligible",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0003",
+      "name": "Candidate Priority Band Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/reference-candidate-priority-bands.json",
+      "failure_condition": "priority_band_not_suitable",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0004",
+      "name": "Blueprint Template Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/internal-draft-template-registry.json",
+      "failure_condition": "blueprint_template_not_matched",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0005",
+      "name": "Section Contract Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/internal-draft-section-contracts.json",
+      "failure_condition": "section_contracts_not_satisfied",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0006",
+      "name": "Claim Scope Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/claim-source-map.json",
+      "failure_condition": "claim_scope_not_defined",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0007",
+      "name": "Source Scope Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/source-registry.json",
+      "failure_condition": "source_scope_not_defined",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0008",
+      "name": "Semantic SEO Boundary Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/semantic-seo-governance.json",
+      "failure_condition": "semantic_seo_boundary_not_met",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0009",
+      "name": "Prohibited Misreading Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/forbidden-language-policy.json",
+      "failure_condition": "prohibited_misreading_not_addressed",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0010",
+      "name": "Internal Link Plan Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/internal-link-graph.json",
+      "failure_condition": "internal_link_plan_not_defined",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0011",
+      "name": "Structured Data Boundary Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/structured-data-policy.json",
+      "failure_condition": "structured_data_boundary_not_met",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0012",
+      "name": "Interface Boundary Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/interface-surface-map.json",
+      "failure_condition": "interface_boundary_not_met",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0013",
+      "name": "Security Privacy Boundary Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/security-privacy-boundary.json",
+      "failure_condition": "security_privacy_boundary_not_met",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0014",
+      "name": "Publisher Boundary Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "data/publisher-governance-policy.json",
+      "failure_condition": "publisher_boundary_not_met",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0015",
+      "name": "Final validate_all.py Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "validators/validate_all.py",
+      "failure_condition": "validate_all_py_not_passed",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0016",
+      "name": "Audit Record Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "SPRINT audit records",
+      "failure_condition": "audit_record_missing",
+      "notes": "Does not authorize draft creation or public release by itself."
+    },
+    {
+      "gate_id": "DRAFT-GATE-0017",
+      "name": "User/Governance Approval Gate",
+      "status": "defined_pre_future_draft",
+      "required_before_future_internal_draft": true,
+      "required_before_public_release": true,
+      "validation_source": "DECISION_LOG.md",
+      "failure_condition": "governance_approval_not_recorded",
+      "notes": "Does not authorize draft creation or public release by itself."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

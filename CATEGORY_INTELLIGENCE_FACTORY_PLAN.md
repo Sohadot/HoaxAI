@@ -78,6 +78,8 @@ The category factory begins reference expansion through candidate records, not p
 
 The category factory does not move directly from candidates to pages. Candidate records must be evaluated for foundation value, governance clarity, claim/source scope, semantic SEO safety, dependency value, substance readiness, publisher safety, route risk, and draft-blueprint suitability before drafting begins.
 
+The category factory must define internal draft structure before producing draft language. Draft blueprints govern the structure, section contracts, claim/source scope, semantic SEO boundaries, internal link plans, and non-public status that future drafts must satisfy before any prose is generated.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

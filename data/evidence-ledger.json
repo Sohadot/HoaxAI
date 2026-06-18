@@ -266,6 +266,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Eight candidates evaluated. No drafts, routes, pages, or publication authorized."
+    },
+    {
+      "claim_id": "CLAIM-0025",
+      "claim_text": "Hoax.ai has adopted Internal Draft Blueprint Governance v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md, DECISION_LOG.md (DEC-037)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Draft blueprint governance defined. No draft files, routes, pages, or publication authorized."
     }
   ]
 }

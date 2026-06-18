@@ -906,3 +906,30 @@ Candidate registration alone does not establish execution order. The first refer
 - No candidate becomes publication eligible.
 - Evaluation does not authorize publisher output.
 - Future work may create an Internal Draft Blueprint only after this evaluation passes.
+
+---
+
+## DEC-037 — Internal Draft Blueprint Governance v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Draft Blueprint Governance v1 to define how future internal drafts must be structured, sectioned, claim-bounded, source-scoped, semantically governed, and validated before any internal draft file may be created.
+
+### Rationale
+
+A reference candidate should not move directly into prose. Before writing begins, Hoax.ai must define what an internal draft is allowed to contain, what it must not imply, what sections it must include, which gates it must satisfy, and how it remains non-public, non-route, non-sitemap, and non-publishable until later explicit approval.
+
+### Implications
+
+- Internal draft blueprint governance may be created.
+- No actual internal draft files may be created in this sprint.
+- No public pages may be created.
+- No route files may be created.
+- No sitemap entries may be added.
+- No public metadata may be added.
+- No publisher draft output is authorized by this sprint alone.
+- Future work may create a First Internal Draft Blueprint Pack only after this governance passes.
+- Publisher remains blocked from actual drafts and publication.

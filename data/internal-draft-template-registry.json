@@ -1,0 +1,94 @@
+{
+  "registry_id": "INT-DRAFT-TEMPLATE-REG-001",
+  "name": "Hoax.ai Internal Draft Template Registry",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_template_registry",
+  "maturity": "blueprint_governance_only_no_drafts_no_routes_no_publication",
+  "templates": [
+    {
+      "template_id": "DRAFT-TEMPLATE-0001",
+      "name": "Category Language Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0001"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0015", "DRAFT-SECTION-0016", "DRAFT-SECTION-0017"],
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, subject accusation, unsupported external claim, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0008", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0002",
+      "name": "Evidence Posture State Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0002"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0011", "DRAFT-SECTION-0012", "DRAFT-SECTION-0013", "DRAFT-SECTION-0015", "DRAFT-SECTION-0016"],
+      "prohibited_content": "tool implication, detector implication, upload, scoring, fake/real verdict, truth machine language, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0003", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0008", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0003",
+      "name": "Evidence Posture Dimension Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0003"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0011", "DRAFT-SECTION-0012", "DRAFT-SECTION-0013", "DRAFT-SECTION-0015", "DRAFT-SECTION-0016"],
+      "prohibited_content": "tool implication, detector implication, upload, scoring, fake/real verdict, detection authority, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0003", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0008", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0004",
+      "name": "Governance Boundary Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0007"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0015", "DRAFT-SECTION-0016", "DRAFT-SECTION-0017"],
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, unmapped claims, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0009", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0005",
+      "name": "Output Boundary Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0006"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0014", "DRAFT-SECTION-0015", "DRAFT-SECTION-0016"],
+      "prohibited_content": "tool implication, upload, scoring, verdict language, subject accusation, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0008", "DRAFT-GATE-0011", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0006",
+      "name": "Claim/Source Traceability Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0007"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0015", "DRAFT-SECTION-0016", "DRAFT-SECTION-0017"],
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, unsupported external claim, invented citations, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0009", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    },
+    {
+      "template_id": "DRAFT-TEMPLATE-0007",
+      "name": "Reference Framework Internal Draft Blueprint",
+      "status": "blueprint_governance_only",
+      "allowed_currently": true,
+      "applies_to_page_type_refs": ["REF-TYPE-0008"],
+      "required_sections": ["DRAFT-SECTION-0001", "DRAFT-SECTION-0002", "DRAFT-SECTION-0003", "DRAFT-SECTION-0004", "DRAFT-SECTION-0005", "DRAFT-SECTION-0006", "DRAFT-SECTION-0007", "DRAFT-SECTION-0008", "DRAFT-SECTION-0009", "DRAFT-SECTION-0010"],
+      "conditional_sections": ["DRAFT-SECTION-0011", "DRAFT-SECTION-0012", "DRAFT-SECTION-0013", "DRAFT-SECTION-0015", "DRAFT-SECTION-0016"],
+      "prohibited_content": "tool implication, upload, scoring, fake/real detector, thin SEO, keyword stuffing, public page creation, route creation, sitemap expansion, publication",
+      "required_gates": ["DRAFT-GATE-0001", "DRAFT-GATE-0002", "DRAFT-GATE-0003", "DRAFT-GATE-0004", "DRAFT-GATE-0005", "DRAFT-GATE-0006", "DRAFT-GATE-0007", "DRAFT-GATE-0008", "DRAFT-GATE-0015"],
+      "notes": "Blueprint governance template only. Does not authorize draft creation, route creation, sitemap expansion, or publication."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

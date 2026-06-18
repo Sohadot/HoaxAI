@@ -268,6 +268,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Reference candidate evaluation adoption per DEC-036."
+    },
+    {
+      "claim_id": "CLAIM-0025",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md", "DECISION_LOG.md", "data/internal-draft-blueprint-policy.json"],
+      "source_refs": ["SOURCE-0106", "SOURCE-0107", "SOURCE-0112"],
+      "support_scope": "internal draft blueprint governance adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal draft blueprint governance adoption per DEC-037."
     }
   ],
   "last_reviewed": "2026-06-17"
