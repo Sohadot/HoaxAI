@@ -1,0 +1,149 @@
+{
+  "flow_contract_id": "EP-WB-FLOW-CONTRACT-001",
+  "name": "Hoax.ai Evidence Posture Workbench Flow Contract",
+  "version": "v1.0.0",
+  "status": "governed_workbench_flow_contract",
+  "maturity": "specification_only_no_workbench_no_interface_no_engine_no_classifier_no_tool",
+  "flow_steps": [
+    {
+      "flow_step_id": "WB-FLOW-0001",
+      "name": "Artifact context recognized",
+      "purpose": "Recognize governed artifact description and type context.",
+      "required_preconditions": ["intake_not_started"],
+      "allowed_next_steps": ["WB-FLOW-0002"],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0001", "WB-STATE-0002"],
+      "related_module_ids": ["WB-SPEC-MODULE-0001"],
+      "boundary_requirement": "artifact_only_context",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0002",
+      "name": "Artifact–Subject boundary checked",
+      "purpose": "Verify artifact-subject separation before further reasoning.",
+      "required_preconditions": ["artifact_context_present"],
+      "allowed_next_steps": ["WB-FLOW-0003"],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0003"],
+      "related_module_ids": ["WB-SPEC-MODULE-0002"],
+      "boundary_requirement": "artifact_subject_separation_verified",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0003",
+      "name": "Source and provenance context reviewed",
+      "purpose": "Review source and provenance context under bounded posture language.",
+      "required_preconditions": ["artifact_boundary_checked"],
+      "allowed_next_steps": ["WB-FLOW-0004"],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0004", "WB-STATE-0005"],
+      "related_module_ids": ["WB-SPEC-MODULE-0003", "WB-SPEC-MODULE-0004"],
+      "boundary_requirement": "source_and_provenance_bounded",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0004",
+      "name": "Missing information identified",
+      "purpose": "Identify information gaps that constrain posture description.",
+      "required_preconditions": ["source_context_reviewed"],
+      "allowed_next_steps": ["WB-FLOW-0005"],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0002", "WB-STATE-0007"],
+      "related_module_ids": ["WB-SPEC-MODULE-0005", "WB-SPEC-MODULE-0009"],
+      "boundary_requirement": "missing_information_acknowledged",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0005",
+      "name": "State selected",
+      "purpose": "Select governed state from state model.",
+      "required_preconditions": ["context_and_gaps_reviewed"],
+      "allowed_next_steps": ["WB-FLOW-0006"],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0001", "WB-STATE-0002", "WB-STATE-0003", "WB-STATE-0004", "WB-STATE-0005", "WB-STATE-0006", "WB-STATE-0007", "WB-STATE-0008", "WB-STATE-0009", "WB-STATE-0010"],
+      "related_module_ids": ["WB-SPEC-MODULE-0006"],
+      "boundary_requirement": "state_model_compliance",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0006",
+      "name": "Refusal requirement checked",
+      "purpose": "Check whether refusal family applies before output selection.",
+      "required_preconditions": ["state_selected"],
+      "allowed_next_steps": ["WB-FLOW-0007", "WB-FLOW-0010"],
+      "forbidden_next_steps": [],
+      "related_state_ids": ["WB-STATE-0009"],
+      "related_module_ids": ["WB-SPEC-MODULE-0007"],
+      "boundary_requirement": "refusal_model_checked",
+      "non_authorization_statement": "This flow step does not process real inputs or authorize interface, engine, or public output."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0007",
+      "name": "Output family selected",
+      "purpose": "Select allowed output family when refusal is not required.",
+      "required_preconditions": ["refusal_not_required"],
+      "allowed_next_steps": ["WB-FLOW-0008"],
+      "forbidden_next_steps": [],
+      "related_state_ids": ["WB-STATE-0008"],
+      "related_module_ids": ["WB-SPEC-MODULE-0008"],
+      "boundary_requirement": "allowed_output_family_only",
+      "non_authorization_statement": "This flow step does not create user-facing output or authorize public engine."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0008",
+      "name": "Output envelope constrained",
+      "purpose": "Apply output envelope limits to selected output family.",
+      "required_preconditions": ["output_family_selected"],
+      "allowed_next_steps": ["WB-FLOW-0009"],
+      "forbidden_next_steps": [],
+      "related_state_ids": ["WB-STATE-0006", "WB-STATE-0008"],
+      "related_module_ids": ["WB-SPEC-MODULE-0008", "WB-SPEC-MODULE-0010"],
+      "boundary_requirement": "output_envelope_applied",
+      "non_authorization_statement": "This flow step does not create user-facing output or authorize public engine."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0009",
+      "name": "Non-authorization boundary applied",
+      "purpose": "Apply non-authorization rules to prevent capability drift.",
+      "required_preconditions": ["output_envelope_constrained"],
+      "allowed_next_steps": ["WB-FLOW-0010"],
+      "forbidden_next_steps": [],
+      "related_state_ids": ["WB-STATE-0006"],
+      "related_module_ids": ["WB-SPEC-MODULE-0008"],
+      "boundary_requirement": "non_authorization_enforced",
+      "non_authorization_statement": "This flow step does not authorize interface, prototype, engine, classifier, upload, scoring, or public routes."
+    },
+    {
+      "flow_step_id": "WB-FLOW-0010",
+      "name": "Human review escalation considered",
+      "purpose": "Consider human review escalation when case exceeds governed scope.",
+      "required_preconditions": ["flow_complete_or_refusal_applied"],
+      "allowed_next_steps": [],
+      "forbidden_next_steps": ["WB-FLOW-0007"],
+      "related_state_ids": ["WB-STATE-0010"],
+      "related_module_ids": ["WB-SPEC-MODULE-0010"],
+      "boundary_requirement": "human_review_boundary",
+      "non_authorization_statement": "This flow step does not authorize interface, prototype, engine, classifier, upload, scoring, or public routes."
+    }
+  ],
+  "transition_constraints": [
+    "artifact_subject_separation_preserved",
+    "no_fake_real_verdict_in_flow",
+    "no_scoring_in_flow",
+    "no_subject_accusation_in_flow",
+    "no_public_output_in_flow"
+  ],
+  "forbidden_flows": [
+    "direct_fake_real_verdict_flow",
+    "direct_scoring_flow",
+    "direct_subject_accusation_flow",
+    "upload_to_verdict_flow",
+    "source_confidence_to_truth_certification_flow",
+    "provenance_gap_to_falsehood_verdict_flow",
+    "evidence_free_certainty_flow",
+    "high_stakes_determination_flow",
+    "interface_to_engine_without_governance_flow"
+  ],
+  "non_authorization_statement": "This flow contract defines future non-operational flow only. It does not authorize interface, prototype, engine, classifier, upload, scoring, or public output.",
+  "last_reviewed": "2026-06-17"
+}

@@ -1191,3 +1191,35 @@ Workbench governance must prove it can refuse unsafe requests, preserve artifact
 - No public tool may be created.
 - No routes or sitemap URLs may be added.
 - Future work may create a non-public workbench specification only after dry-run validation passes.
+
+---
+
+## DEC-048 — Evidence Posture Workbench Specification Layer v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Workbench Specification Layer v1 to define the future workbench's non-operational module structure, flow contract, output envelope, boundary guardrails, and specification record before any workbench interface, prototype, engine, classifier, upload workflow, scoring system, form, API, or public route is created.
+
+### Rationale
+
+After workbench governance and dry-run validation, Hoax.ai can specify the workbench's future shape without implementing it. This prevents premature interface or engine creation and ensures that the eventual workbench remains artifact-focused, non-verdict, non-scoring, non-accusatory, and governed by Evidence Posture, Artifact–Subject Separation, Output Boundary, Not Assessable, and refusal rules.
+
+### Implications
+
+- Workbench specification may be created.
+- Future module contracts may be defined.
+- Future flow contracts may be defined.
+- Future output envelopes may be defined.
+- Future boundary guardrails may be mapped.
+- No interface is created.
+- No prototype is created.
+- No engine is implemented.
+- No classifier is implemented.
+- No upload workflow is created.
+- No scoring system is created.
+- No public tool is created.
+- No routes or sitemap URLs are added.
+- Future work may create Workbench Interface Blueprint Governance only after this specification layer passes.

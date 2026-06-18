@@ -418,6 +418,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_evidence_posture_workbench_governance",
         "blocked_until_evidence_posture_workbench_dry_run_harness",
         "blocked_until_workbench_specification_layer",
+        "blocked_until_workbench_interface_blueprint_governance",
     ):
         error(f"publisher-governance-policy: publisher must remain blocked from drafts and publication, got {status}")
         ok = False

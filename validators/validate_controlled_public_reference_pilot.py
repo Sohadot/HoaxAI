@@ -21,6 +21,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_WORKBENCH_GOVERNANCE,
     PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN,
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+    PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
     validate_no_extra_public_html,
     validate_pilot_era_public_surface,
     validate_pilot_routes_present,
@@ -338,6 +339,7 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_WORKBENCH_GOVERNANCE,
         PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN,
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+    PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
     ):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_PILOT}, "
@@ -345,6 +347,7 @@ def validate_publisher_governance() -> bool:
             f"{PUBLISHER_STATUS_POST_WORKBENCH_GOVERNANCE}, or "
             f"{PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN}, "
             f"{PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION}, "
+            f"{PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT}, "
             f"got {pub.get('current_publisher_status')}"
         )
         ok = False

@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_workbench_specification_layer",
+  "maturity": "publisher_blocked_until_workbench_interface_blueprint_governance",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -336,6 +336,21 @@
       "failure_condition": "evidence_posture_workbench_dry_run_not_met",
       "bypassable": false,
       "notes": "Workbench dry-run harness defined Sprint 29 (DEC-047). Tests governance behavior with fictional cases without authorizing interface, prototype, engine, classifier, tool, upload, scoring, API, forms, analytics, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or monetization by itself."
+    },
+    {
+      "gate_id": "PUB-GATE-0030",
+      "name": "Evidence Posture Workbench Specification Layer Gate",
+      "status": "workbench_specification_complete_pre_interface_blueprint",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_workbench_interface_blueprint": true,
+      "required_before_workbench_prototype": true,
+      "validation_source": "EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER.md",
+      "failure_condition": "evidence_posture_workbench_specification_not_met",
+      "bypassable": false,
+      "notes": "Workbench specification layer defined Sprint 30 (DEC-048). Defines module registry, flow contract, output envelopes, and boundary guardrails without authorizing interface, prototype, engine, classifier, tool, upload, scoring, API, forms, analytics, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or monetization by itself."
     }
   ],
   "last_reviewed": "2026-06-17"

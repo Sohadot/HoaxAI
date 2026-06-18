@@ -1,0 +1,118 @@
+{
+  "guardrail_map_id": "EP-WB-GUARDRAIL-MAP-001",
+  "name": "Hoax.ai Evidence Posture Workbench Boundary Guardrail Map",
+  "version": "v1.0.0",
+  "status": "governed_workbench_boundary_guardrail_map",
+  "maturity": "specification_only_no_workbench_no_interface_no_engine_no_classifier_no_tool",
+  "guardrails": [
+    {
+      "guardrail_id": "WB-GUARDRAIL-0001",
+      "name": "Artifact–Subject Separation Guardrail",
+      "protected_boundary": "artifact_subject_separation",
+      "trigger_condition": "subject_judgment_or_accusation_request",
+      "required_action": "redirect_to_artifact_description",
+      "blocked_action": "subject_accusation_output",
+      "related_language_terms": ["LANG-TERM-0001", "LANG-TERM-0002"],
+      "related_refusal_families": ["WB-REFUSAL-0001", "WB-REFUSAL-0004"],
+      "related_states": ["WB-STATE-0003", "WB-STATE-0009"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0002",
+      "name": "No Verdict Guardrail",
+      "protected_boundary": "no_verdict",
+      "trigger_condition": "fake_real_or_truth_verdict_request",
+      "required_action": "apply_output_boundary",
+      "blocked_action": "verdict_output",
+      "related_language_terms": ["LANG-TERM-0006"],
+      "related_refusal_families": ["WB-REFUSAL-0002"],
+      "related_states": ["WB-STATE-0006", "WB-STATE-0009"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0003",
+      "name": "No Scoring Guardrail",
+      "protected_boundary": "no_scoring",
+      "trigger_condition": "scoring_or_confidence_grade_request",
+      "required_action": "refuse_score_and_apply_boundary",
+      "blocked_action": "numeric_score_output",
+      "related_language_terms": ["LANG-TERM-0006"],
+      "related_refusal_families": ["WB-REFUSAL-0006"],
+      "related_states": ["WB-STATE-0009"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0004",
+      "name": "No Upload Guardrail",
+      "protected_boundary": "no_upload",
+      "trigger_condition": "upload_or_file_submission_request",
+      "required_action": "refuse_out_of_scope_tool",
+      "blocked_action": "upload_workflow",
+      "related_language_terms": ["LANG-TERM-0006"],
+      "related_refusal_families": ["WB-REFUSAL-0007"],
+      "related_states": ["WB-STATE-0009"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0005",
+      "name": "No Subject Accusation Guardrail",
+      "protected_boundary": "no_subject_accusation",
+      "trigger_condition": "subject_accusation_request",
+      "required_action": "refuse_and_redirect_to_artifact",
+      "blocked_action": "subject_accusation_output",
+      "related_language_terms": ["LANG-TERM-0002"],
+      "related_refusal_families": ["WB-REFUSAL-0001"],
+      "related_states": ["WB-STATE-0009"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0006",
+      "name": "Not Assessable Guardrail",
+      "protected_boundary": "not_assessable",
+      "trigger_condition": "insufficient_signals_or_evidence_free_certainty",
+      "required_action": "apply_not_assessable_state",
+      "blocked_action": "false_certainty_output",
+      "related_language_terms": ["LANG-TERM-0005"],
+      "related_refusal_families": ["WB-REFUSAL-0003"],
+      "related_states": ["WB-STATE-0007"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0007",
+      "name": "Output Boundary Guardrail",
+      "protected_boundary": "output_boundary",
+      "trigger_condition": "verdict_framing_or_tool_language_drift",
+      "required_action": "enforce_output_boundary_note",
+      "blocked_action": "verdict_or_detector_language",
+      "related_language_terms": ["LANG-TERM-0006"],
+      "related_refusal_families": ["WB-REFUSAL-0002", "WB-REFUSAL-0007"],
+      "related_states": ["WB-STATE-0006"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0008",
+      "name": "Human Review Escalation Guardrail",
+      "protected_boundary": "human_review",
+      "trigger_condition": "case_exceeds_governed_automated_scope",
+      "required_action": "escalate_to_human_review",
+      "blocked_action": "unsupported_automated_determination",
+      "related_language_terms": ["LANG-TERM-0005", "LANG-TERM-0006"],
+      "related_refusal_families": ["WB-REFUSAL-0005"],
+      "related_states": ["WB-STATE-0010"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    },
+    {
+      "guardrail_id": "WB-GUARDRAIL-0009",
+      "name": "Non-Authorization Guardrail",
+      "protected_boundary": "non_authorization",
+      "trigger_condition": "capability_drift_or_engine_claim",
+      "required_action": "preserve_blocked_capabilities",
+      "blocked_action": "public_engine_classifier_tool_claim",
+      "related_language_terms": ["LANG-TERM-0006", "LANG-TERM-0008"],
+      "related_refusal_families": ["WB-REFUSAL-0007"],
+      "related_states": ["WB-STATE-0001", "WB-STATE-0006"],
+      "non_authorization_statement": "This guardrail does not authorize interface, prototype, or engine behavior."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

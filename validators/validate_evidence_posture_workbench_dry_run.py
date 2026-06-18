@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+    PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -347,8 +348,9 @@ def validate_public_safety() -> bool:
 def validate_publisher_governance() -> bool:
     ok = True
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION:
-        error(f"publisher status must be {PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION}")
+    allowed = {PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION, PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT}
+    if pub.get("current_publisher_status") not in allowed:
+        error(f"publisher status must be one of {sorted(allowed)}")
         ok = False
 
     gates = load_json(ROOT / "data" / "publisher-quality-gates.json").get("gates", [])
@@ -384,8 +386,9 @@ def validate_publisher_governance() -> bool:
         ok = False
     blocked = expansion.get("blocked_conditions", [])
     if "publisher_blocked_until_workbench_specification_layer" not in blocked:
-        error("reference-expansion-gate: publisher blocked until workbench specification")
-        ok = False
+        if "publisher_blocked_until_workbench_interface_blueprint_governance" not in blocked:
+            error("reference-expansion-gate: publisher blocked until workbench specification")
+            ok = False
     return ok
 
 

@@ -47,6 +47,8 @@ PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN = "blocked_until_evidence_posture_workbe
 
 PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION = "blocked_until_workbench_specification_layer"
 
+PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT = "blocked_until_workbench_interface_blueprint_governance"
+
 PUBLISHER_STATUSES_ALLOWED = (
     "blocked_until_first_reference_candidate_pack",
     "blocked_until_internal_draft_blueprint",
@@ -62,6 +64,7 @@ PUBLISHER_STATUSES_ALLOWED = (
     PUBLISHER_STATUS_POST_WORKBENCH_GOVERNANCE,
     PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN,
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+    PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
 )
 
 

@@ -100,6 +100,8 @@ The category factory now begins workbench governance after validating its public
 
 The category factory tests workbench governance through an internal dry-run harness before any workbench interface or engine exists. The dry-run layer validates refusal behavior, not-assessable behavior, output boundaries, state transitions, and non-authorization discipline using fictional cases only. This ensures future workbench operation cannot drift into verdicts, scoring, subject accusation, upload behavior, or generic detector logic.
 
+The category factory now defines a non-operational workbench specification layer. This specification translates governance and dry-run results into future module contracts, flow contracts, output envelopes, and boundary guardrails without creating an interface or engine. The workbench is specified before it is designed, and designed before it is prototyped.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

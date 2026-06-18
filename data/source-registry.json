@@ -1732,6 +1732,86 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Evidence Posture Workbench dry-run validator."
+    },
+    {
+      "source_id": "SOURCE-0174",
+      "source_title": "EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER.md",
+      "source_type": "internal_governance",
+      "location": "EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench specification layer doctrine."
+    },
+    {
+      "source_id": "SOURCE-0175",
+      "source_title": "data/evidence-posture-workbench-specification-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-specification-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench specification policy."
+    },
+    {
+      "source_id": "SOURCE-0176",
+      "source_title": "data/evidence-posture-workbench-module-registry.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-module-registry.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench module registry."
+    },
+    {
+      "source_id": "SOURCE-0177",
+      "source_title": "data/evidence-posture-workbench-flow-contract.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-flow-contract.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench flow contract."
+    },
+    {
+      "source_id": "SOURCE-0178",
+      "source_title": "data/evidence-posture-workbench-output-envelope.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-output-envelope.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench output envelope specification."
+    },
+    {
+      "source_id": "SOURCE-0179",
+      "source_title": "data/evidence-posture-workbench-boundary-guardrail-map.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-boundary-guardrail-map.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench boundary guardrail map."
+    },
+    {
+      "source_id": "SOURCE-0180",
+      "source_title": "data/evidence-posture-workbench-specification-v1.json",
+      "source_type": "internal_registry",
+      "location": "data/evidence-posture-workbench-specification-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench specification v1 master record."
+    },
+    {
+      "source_id": "SOURCE-0181",
+      "source_title": "validators/validate_evidence_posture_workbench_specification.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_evidence_posture_workbench_specification.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench specification validator."
     }
   ]
 }

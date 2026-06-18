@@ -1296,6 +1296,51 @@ Public classifier remains blocked. Public engine remains blocked. No workbench p
 
 ---
 
+## Sprint 30 — Evidence Posture Workbench Specification Layer v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Define non-operational workbench specification (modules, flow, output envelopes, guardrails) without building interface, prototype, engine, classifier, tool, upload, scoring, form, API, or route.
+
+### Deliverables
+
+- EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER.md
+- data/evidence-posture-workbench-specification-policy.json
+- data/evidence-posture-workbench-module-registry.json
+- data/evidence-posture-workbench-flow-contract.json
+- data/evidence-posture-workbench-output-envelope.json
+- data/evidence-posture-workbench-boundary-guardrail-map.json
+- data/evidence-posture-workbench-specification-v1.json
+- validators/validate_evidence_posture_workbench_specification.py
+- SPRINT_30_EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER_AUDIT.md
+- DEC-048 appended to DECISION_LOG.md
+- Publisher status → blocked_until_workbench_interface_blueprint_governance
+- PUB-GATE-0030 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Specification Scope
+
+- 10 specification modules, 10 flow steps, 8 output envelopes, 9 boundary guardrails
+- Master specification record with governance and dry-run prerequisites
+- 36 evidence ledger claims (CLAIM-0036 added)
+- 4 sitemap URLs unchanged
+- No workbench interface, prototype, engine, classifier, tool, upload, scoring, forms, analytics, API, monetization, DNS, Cloudflare, custom domain launch, or .nojekyll
+
+### Gate
+
+**Gate G30 passed.** Workbench interface blueprint governance blocked until Sprint 31.
+
+### Next Phase
+
+**Sprint 31 — Evidence Posture Workbench Interface Blueprint Governance v1**
+
+Public classifier remains blocked. Public engine remains blocked. No workbench prototype or interface may be created until interface blueprint governance passes.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  

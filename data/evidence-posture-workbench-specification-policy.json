@@ -1,0 +1,62 @@
+{
+  "policy_id": "EP-WB-SPEC-POLICY-001",
+  "name": "Hoax.ai Evidence Posture Workbench Specification Policy",
+  "version": "v1.0.0",
+  "status": "governed_evidence_posture_workbench_specification_policy",
+  "maturity": "specification_only_no_workbench_no_interface_no_engine_no_classifier_no_tool",
+  "governing_principle": "A specification may define the workbench's shape. It must not become the workbench.",
+  "boundary_principle": "The first workbench specification must preserve refusal, uncertainty, and artifact boundaries before it describes any user-facing experience.",
+  "allowed_specification_actions": [
+    "module_specification",
+    "flow_contract_specification",
+    "output_envelope_specification",
+    "boundary_guardrail_mapping",
+    "specification_record_creation",
+    "validation_only"
+  ],
+  "prohibited_actions": [
+    "interface_creation",
+    "prototype_creation",
+    "public_workbench",
+    "public_engine",
+    "public_classifier",
+    "public_tool",
+    "upload",
+    "scoring",
+    "fake_real_output",
+    "forms",
+    "analytics",
+    "api",
+    "monetization",
+    "new_routes",
+    "sitemap_expansion",
+    "dns",
+    "cloudflare",
+    "custom_domain_launch",
+    "deployment_changes",
+    "external_factual_claims",
+    "subject_accusation"
+  ],
+  "specification_definition": "Non-operational governance-to-design contract describing future workbench modules, flow, output envelopes, refusal checkpoints, state transitions, boundary guardrails, and non-authorization requirements.",
+  "specification_non_purpose": "Does not create interface, prototype, engine, classifier, upload, scoring, API, routes, sitemap expansion, deployment, DNS, Cloudflare, custom domain launch, or public tool.",
+  "non_authorization_rules": {
+    "blocked": [
+      "workbench_interface",
+      "workbench_prototype",
+      "workbench_engine",
+      "workbench_classifier",
+      "upload",
+      "scoring",
+      "api",
+      "new_public_routes",
+      "sitemap_expansion",
+      "deployment_change",
+      "dns",
+      "cloudflare",
+      "custom_domain_launch",
+      "public_tool_behavior"
+    ],
+    "statement": "Specification layer does not authorize interface, prototype, engine, classifier, upload, scoring, API, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or public tool behavior."
+  },
+  "last_reviewed": "2026-06-17"
+}

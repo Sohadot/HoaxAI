@@ -387,6 +387,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Dry-run harness defined. No interface, engine, classifier, tool, upload, scoring, or public prototype created."
+    },
+    {
+      "claim_id": "CLAIM-0036",
+      "claim_text": "Hoax.ai has adopted Evidence Posture Workbench Specification Layer v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "EVIDENCE_POSTURE_WORKBENCH_SPECIFICATION_LAYER.md, DECISION_LOG.md (DEC-048)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Specification layer defined. No interface, prototype, engine, classifier, tool, upload, scoring, or public route created."
     }
   ]
 }

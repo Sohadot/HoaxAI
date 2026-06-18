@@ -16,6 +16,7 @@ from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN,
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+    PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -371,7 +372,11 @@ def validate_publisher_governance() -> bool:
     ok = True
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
     status = pub.get("current_publisher_status")
-    allowed = {PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN, PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION}
+    allowed = {
+        PUBLISHER_STATUS_POST_WORKBENCH_DRY_RUN,
+        PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
+        PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
+    }
     if status not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")
         ok = False

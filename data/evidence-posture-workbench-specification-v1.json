@@ -1,0 +1,42 @@
+{
+  "specification_id": "EP-WB-SPECIFICATION-V1-001",
+  "name": "Hoax.ai Evidence Posture Workbench Specification v1",
+  "version": "v1.0.0",
+  "status": "evidence_posture_workbench_specification_created",
+  "maturity": "specification_only_no_workbench_no_interface_no_engine_no_classifier_no_tool",
+  "governance_ref": "EVIDENCE_POSTURE_WORKBENCH_GOVERNANCE.md",
+  "dry_run_ref": "data/evidence-posture-workbench-dry-run-results-v1.json",
+  "module_registry_ref": "data/evidence-posture-workbench-module-registry.json",
+  "flow_contract_ref": "data/evidence-posture-workbench-flow-contract.json",
+  "output_envelope_ref": "data/evidence-posture-workbench-output-envelope.json",
+  "boundary_guardrail_map_ref": "data/evidence-posture-workbench-boundary-guardrail-map.json",
+  "current_public_surface": [
+    "homepage root",
+    "/reference/evidence-posture/",
+    "/reference/artifact-subject-separation/",
+    "/language/"
+  ],
+  "prohibited_capabilities": [
+    "public_engine",
+    "public_classifier",
+    "public_tool",
+    "workbench_interface",
+    "prototype",
+    "upload",
+    "scoring",
+    "fake_real_output",
+    "API",
+    "forms",
+    "analytics",
+    "monetization",
+    "DNS",
+    "Cloudflare",
+    "custom_domain_launch",
+    "new_public_routes",
+    "sitemap_expansion",
+    "deployment_change"
+  ],
+  "allowed_next_phase": "Sprint 31 — Evidence Posture Workbench Interface Blueprint Governance v1",
+  "non_authorization_statement": "This specification record does not authorize interface, prototype, engine, classifier, upload, scoring, API, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or public tool behavior.",
+  "last_reviewed": "2026-06-17"
+}
