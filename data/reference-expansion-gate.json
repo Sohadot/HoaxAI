@@ -29,6 +29,7 @@
     "interface_governance_validation",
     "security_privacy_validation",
     "content_quality_substance_validation",
+    "structured_data_semantic_seo_validation",
     "publisher_control_plane_validation",
     "validate_all_py_pass",
     "final_audit"
@@ -52,6 +53,7 @@
     "publisher_control_plane_failure",
     "publisher_blocked_until_dry_run_harness",
     "content_quality_substance_failure",
+    "structured_data_semantic_seo_failure",
     "thin_content_pattern_failure"
   ],
   "release_eligibility_rules": [
@@ -61,7 +63,8 @@
     "validate_all_py_must_pass_before_public_release",
     "no_public_release_without_final_audit",
     "no_public_release_without_publisher_governance_compliance",
-    "no_public_release_without_content_quality_substance_validation"
+    "no_public_release_without_content_quality_substance_validation",
+    "no_public_release_without_structured_data_semantic_seo_validation"
   ],
   "last_reviewed": "2026-06-17"
 }

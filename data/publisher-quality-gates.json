@@ -158,6 +158,17 @@
       "failure_condition": "missing_audit_record",
       "bypassable": false,
       "notes": "Sprint or release audit required."
+    },
+    {
+      "gate_id": "PUB-GATE-0015",
+      "name": "Structured Data and Semantic SEO Governance Gate",
+      "status": "standard_defined_pre_publication",
+      "required_currently": false,
+      "required_before_public_release": true,
+      "validation_source": "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md",
+      "failure_condition": "structured_data_semantic_seo_not_met",
+      "bypassable": false,
+      "notes": "Standard defined Sprint 15 (DEC-033). Does not authorize publishing. Publisher remains blocked until dry-run harness."
     }
   ],
   "last_reviewed": "2026-06-17"

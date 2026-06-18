@@ -806,3 +806,26 @@ Reference authority is not produced by page count, word count, keyword coverage,
 - Future reference candidates must be evaluated against substance rules before route approval.
 - Publisher automation remains blocked until a future Publisher Dry-Run Harness validates candidate-only generation.
 - Content quality standard existence does not authorize drafts, public pages, routes, sitemap expansion, or publishing.
+
+---
+
+## DEC-033 — Structured Data and Semantic SEO Governance v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Structured Data and Semantic SEO Governance v1 to ensure that metadata, structured data, titles, descriptions, schema types, canonical signals, and future SEO patterns express governed reference meaning without creating unsupported authority, active-tool implication, detector implication, product/service/software claims, or public classifier signals.
+
+### Rationale
+
+SEO can strengthen a sovereign reference asset only when it clarifies the asset's governed meaning. Without semantic SEO governance, metadata and structured data could overclaim Hoax.ai as a detector, software product, public classifier, service, API, fact-checking authority, or commercial tool before those gates exist.
+
+### Implications
+
+- SEO metadata must be claim-bounded.
+- Structured data must not use SoftwareApplication, Product, Service, Organization-as-provider, API, Review, Rating, or HowTo schemas unless a future decision explicitly approves them.
+- Current homepage schema, if any, must remain limited, bounded, and non-tool-implying.
+- Future reference pages must define semantic SEO role before release.
+- No route, sitemap, public page, publisher draft, or deployment is authorized by this sprint.

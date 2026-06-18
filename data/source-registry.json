@@ -832,6 +832,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Content quality standard validator."
+    },
+    {
+      "source_id": "SOURCE-0084",
+      "source_title": "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md",
+      "source_type": "internal_governance",
+      "location": "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable semantic SEO governance per DEC-033."
+    },
+    {
+      "source_id": "SOURCE-0085",
+      "source_title": "data/semantic-seo-governance.json",
+      "source_type": "internal_registry",
+      "location": "data/semantic-seo-governance.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable semantic SEO governance."
+    },
+    {
+      "source_id": "SOURCE-0086",
+      "source_title": "data/structured-data-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/structured-data-policy.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Structured data policy."
+    },
+    {
+      "source_id": "SOURCE-0087",
+      "source_title": "data/schema-type-registry.json",
+      "source_type": "internal_registry",
+      "location": "data/schema-type-registry.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Schema type registry."
+    },
+    {
+      "source_id": "SOURCE-0088",
+      "source_title": "data/metadata-pattern-registry.json",
+      "source_type": "internal_registry",
+      "location": "data/metadata-pattern-registry.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Metadata pattern registry."
+    },
+    {
+      "source_id": "SOURCE-0089",
+      "source_title": "data/seo-prohibited-patterns.json",
+      "source_type": "internal_registry",
+      "location": "data/seo-prohibited-patterns.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "SEO prohibited patterns."
+    },
+    {
+      "source_id": "SOURCE-0090",
+      "source_title": "validators/validate_structured_data_semantic_seo.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_structured_data_semantic_seo.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Structured data and semantic SEO validator."
     }
   ]
 }

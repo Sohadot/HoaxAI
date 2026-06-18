@@ -709,7 +709,52 @@ External deployment remains deferred (Sprint 1C). Maturity is pre_reference_publ
 
 ### Next Phase
 
-**Sprint 15 — Structured Data and Semantic SEO Governance v1**
+**Sprint 16 — Publisher Dry-Run Harness v1**
+
+Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked until future dry-run harness.
+
+---
+
+## Sprint 15 — Structured Data and Semantic SEO Governance v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Define how Hoax.ai may use metadata, structured data, titles, descriptions, canonical signals, and future page SEO without implying active tool capability, detector status, or unsupported authority.
+
+### Deliverables
+
+- STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md
+- data/semantic-seo-governance.json
+- data/structured-data-policy.json
+- data/schema-type-registry.json
+- data/metadata-pattern-registry.json
+- data/seo-prohibited-patterns.json
+- validators/validate_structured_data_semantic_seo.py
+- SPRINT_15_STRUCTURED_DATA_SEMANTIC_SEO_AUDIT.md
+- DEC-033 appended to DECISION_LOG.md
+- data/reference-expansion-gate.json updated
+- data/publisher-quality-gates.json updated (PUB-GATE-0015)
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Semantic SEO Scope
+
+- 15 schema types registered (SCHEMA-TYPE-0001–0015)
+- 12 metadata patterns registered
+- 14 SEO prohibited patterns (SEO-PATTERN-0001–0014)
+- 21 evidence ledger claims (CLAIM-0021 added)
+- Publisher PUB-GATE-0015 standard defined; publisher blocked until dry-run harness
+- No public pages, draft pages, routes, sitemap expansion, or JSON-LD overclaiming
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Maturity is pre_reference_publication_seo_governance.
+
+### Next Phase
+
+**Sprint 16 — Publisher Dry-Run Harness v1**
 
 Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked until future dry-run harness.
 

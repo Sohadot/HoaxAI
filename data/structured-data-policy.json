@@ -1,0 +1,58 @@
+{
+  "policy_id": "STRUCTURED-DATA-POLICY-001",
+  "name": "Hoax.ai Structured Data Policy",
+  "version": "v1.0.0",
+  "status": "governed_internal_structured_data_policy",
+  "maturity": "pre_reference_publication_schema_governance",
+  "governing_principle": "Structured data must not claim product, tool, detector, service, or software capability before those gates exist.",
+  "allowed_current_schema_types": [
+    {
+      "type": "WebSite",
+      "condition": "bounded_non_tool_implying_only"
+    },
+    {
+      "type": "WebPage",
+      "condition": "bounded_non_tool_implying_only"
+    },
+    {
+      "type": "Organization",
+      "condition": "bounded_identity_not_service_tool_provider"
+    }
+  ],
+  "prohibited_current_schema_types": [
+    "SoftwareApplication",
+    "Product",
+    "Service",
+    "APIReference",
+    "HowTo",
+    "FAQPage",
+    "Review",
+    "AggregateRating",
+    "Dataset",
+    "MedicalSchema",
+    "LegalSchema",
+    "FinancialSchema",
+    "ForensicSchema"
+  ],
+  "schema_capability_boundaries": [
+    "no_tool_capability_claim",
+    "no_detector_capability_claim",
+    "no_public_classifier_claim",
+    "no_upload_capability_claim",
+    "no_scoring_capability_claim",
+    "no_api_capability_claim",
+    "no_product_availability_claim",
+    "no_service_availability_claim",
+    "no_commercial_availability_claim",
+    "no_software_application_claim"
+  ],
+  "json_ld_rules": [
+    "parse_and_validate_before_release",
+    "only_allowed_schema_types_on_current_surface",
+    "no_prohibited_type_in_json_ld",
+    "no_capability_overclaim_in_schema_properties",
+    "organization_must_not_imply_service_provider"
+  ],
+  "future_schema_approval_gate": "explicit_decision_and_validator_update_required",
+  "last_reviewed": "2026-06-17"
+}

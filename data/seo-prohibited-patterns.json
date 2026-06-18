@@ -1,0 +1,150 @@
+{
+  "pattern_set_id": "SEO-PROHIBITED-PATTERNS-001",
+  "name": "Hoax.ai SEO Prohibited Patterns",
+  "version": "v1.0.0",
+  "status": "governed_internal_seo_prohibited_patterns",
+  "maturity": "pre_reference_publication_seo_governance",
+  "patterns": [
+    {
+      "pattern_id": "SEO-PATTERN-0001",
+      "name": "Keyword stuffing",
+      "description": "Repeating target keywords in metadata or headings without governed substance.",
+      "prohibited_because": "Manufactures SEO authority without reference meaning.",
+      "detection_hint": "Repeated keyword clusters in title, description, or H1.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Semantic SEO requires governed concept clarity."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0002",
+      "name": "Search-volume-first page creation",
+      "description": "Creating pages primarily to capture search volume rather than governed reference value.",
+      "prohibited_because": "Route inflation and thin reference quality.",
+      "detection_hint": "Page thesis absent; keyword list drives structure.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Volume strategy is not reference strategy."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0003",
+      "name": "Detector keyword capture",
+      "description": "Metadata or slugs targeting detector, deepfake detector, or scan keywords.",
+      "prohibited_because": "Implies active detector before gate exists.",
+      "detection_hint": "detector, deepfake detector, scan for fakes in title or slug.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Blocked on all current surfaces."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0004",
+      "name": "Fake/real keyword capture",
+      "description": "Metadata framing content as fake-or-real verdict capture.",
+      "prohibited_because": "Implies truth verdict capability.",
+      "detection_hint": "fake or real, is it fake, real or fake in metadata.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Evidence posture is not fake/real framing."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0005",
+      "name": "Tool-implying title",
+      "description": "Title language implying an active tool, scanner, or checker.",
+      "prohibited_because": "Manufactures product capability in metadata.",
+      "detection_hint": "try our tool, scan now, check now, free tool in title.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Titles describe governed meaning only."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0006",
+      "name": "Upload-implying description",
+      "description": "Meta description promising upload, file drop, or submission workflow.",
+      "prohibited_because": "Implies upload gate before it exists.",
+      "detection_hint": "upload your, upload a file, submit media in description.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Upload remains blocked."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0007",
+      "name": "Scoring-implying metadata",
+      "description": "Metadata promising scores, ratings, grades, or numeric verdict outputs.",
+      "prohibited_because": "Implies scoring before gate exists.",
+      "detection_hint": "truth score, fake score, risk score, percent accurate in metadata.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Scoring remains blocked."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0008",
+      "name": "Unsupported superiority metadata",
+      "description": "Metadata claiming unmatched, first-in-world, or best-in-class superiority.",
+      "prohibited_because": "Manufactures authority without evidence support.",
+      "detection_hint": "world's first, industry-leading, only system that in metadata.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Superiority claims require mapped sources."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0009",
+      "name": "Clickbait metadata",
+      "description": "Sensational metadata designed for clicks without substance alignment.",
+      "prohibited_because": "Hides weak content behind strong metadata.",
+      "detection_hint": "shocking, you won't believe, instant verdict in metadata.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Metadata must match substance."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0010",
+      "name": "Schema overclaiming",
+      "description": "Structured data properties that exceed governed page capability.",
+      "prohibited_because": "Schema manufactures authority in search surfaces.",
+      "detection_hint": "Prohibited @type or capability properties in JSON-LD.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Schema must match bounded reference role."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0011",
+      "name": "Service/Product schema misuse",
+      "description": "Use of Product, Service, or SoftwareApplication schema before gates exist.",
+      "prohibited_because": "Claims commercial product or service availability.",
+      "detection_hint": "SoftwareApplication, Product, Service in JSON-LD @type.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Blocked until explicit future decision."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0012",
+      "name": "Programmatic route inflation",
+      "description": "SEO-driven creation of routes, canonicals, or sitemap entries without governance.",
+      "prohibited_because": "Inflates indexable surface without reference substance.",
+      "detection_hint": "Unregistered routes in canonical or sitemap expansion.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Routes require registry and expansion gate."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0013",
+      "name": "Placeholder canonical",
+      "description": "Canonical URL pointing to planned, placeholder, or unregistered route.",
+      "prohibited_because": "Creates indexable placeholders and route inflation.",
+      "detection_hint": "Canonical not in route registry or marked planned.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Canonical must match active registered route."
+    },
+    {
+      "pattern_id": "SEO-PATTERN-0014",
+      "name": "Public classifier implication",
+      "description": "Metadata implying a live or public classifier is available.",
+      "prohibited_because": "Implies classifier gate before it exists.",
+      "detection_hint": "public classifier, live classifier, try the classifier in metadata.",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Classifier remains blocked."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

@@ -1,0 +1,160 @@
+{
+  "registry_id": "SCHEMA-TYPE-REGISTRY-001",
+  "name": "Hoax.ai Schema Type Registry",
+  "version": "v1.0.0",
+  "status": "governed_internal_schema_type_registry",
+  "maturity": "pre_reference_publication_schema_governance",
+  "schema_types": [
+    {
+      "schema_type_id": "SCHEMA-TYPE-0001",
+      "schema_type": "WebSite",
+      "status": "allowed_currently_bounded",
+      "allowed_currently": true,
+      "allowed_conditions": ["non_tool_implying", "bounded_reference_identity"],
+      "prohibited_use": ["detector_provider", "software_product", "service_provider"],
+      "requires_future_decision": false,
+      "notes": "Homepage only if bounded; no tool or classifier implication."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0002",
+      "schema_type": "WebPage",
+      "status": "allowed_currently_bounded",
+      "allowed_currently": true,
+      "allowed_conditions": ["non_tool_implying", "matches_page_substance"],
+      "prohibited_use": ["scan_page", "upload_page", "classifier_page"],
+      "requires_future_decision": false,
+      "notes": "Per-page when public routes exist; must match governed substance."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0003",
+      "schema_type": "Organization",
+      "status": "bounded_identity_only",
+      "allowed_currently": false,
+      "allowed_conditions": ["bounded_identity_not_service_tool_provider"],
+      "prohibited_use": ["commercial_service", "tool_provider", "detector_provider", "product_vendor"],
+      "requires_future_decision": true,
+      "notes": "Must not imply active service, tool, or product capability."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0004",
+      "schema_type": "BreadcrumbList",
+      "status": "future_allowed_only",
+      "allowed_currently": false,
+      "allowed_conditions": ["multiple_public_routes", "route_governance_permits"],
+      "prohibited_use": ["planned_route_breadcrumbs", "placeholder_routes"],
+      "requires_future_decision": true,
+      "notes": "Not for current single-route surface."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0005",
+      "schema_type": "Article",
+      "status": "future_allowed_only",
+      "allowed_currently": false,
+      "allowed_conditions": ["reference_page_release_gate", "claim_source_mapped"],
+      "prohibited_use": ["thin_content", "detector_seo_capture"],
+      "requires_future_decision": true,
+      "notes": "Reference pages only after expansion gate."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0006",
+      "schema_type": "DefinedTerm",
+      "status": "future_allowed_only",
+      "allowed_currently": false,
+      "allowed_conditions": ["glossary_or_definition_page", "governed_term_scope"],
+      "prohibited_use": ["verdict_terms", "fake_real_framing"],
+      "requires_future_decision": true,
+      "notes": "For governed definition pages when authorized."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0007",
+      "schema_type": "TechArticle",
+      "status": "future_allowed_only",
+      "allowed_currently": false,
+      "allowed_conditions": ["technical_reference_substance", "content_quality_gate"],
+      "prohibited_use": ["tool_documentation", "api_docs"],
+      "requires_future_decision": true,
+      "notes": "Not for current public expansion."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0008",
+      "schema_type": "SoftwareApplication",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked until explicit product/software gate."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0009",
+      "schema_type": "Product",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked until explicit product gate."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0010",
+      "schema_type": "Service",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked until explicit service gate."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0011",
+      "schema_type": "APIReference",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked until API gate."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0012",
+      "schema_type": "FAQPage",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": ["future_claim_bounded_faq_only"],
+      "prohibited_use": ["claim_heavy_seo_capture", "unsupported_authority_faq"],
+      "requires_future_decision": true,
+      "notes": "Not for SEO capture; future use requires decision."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0013",
+      "schema_type": "Dataset",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": ["future_source_governance_approval"],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Requires future source governance approval."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0014",
+      "schema_type": "Review",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked."
+    },
+    {
+      "schema_type_id": "SCHEMA-TYPE-0015",
+      "schema_type": "AggregateRating",
+      "status": "prohibited_currently",
+      "allowed_currently": false,
+      "allowed_conditions": [],
+      "prohibited_use": ["all_current_surfaces"],
+      "requires_future_decision": true,
+      "notes": "Blocked."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

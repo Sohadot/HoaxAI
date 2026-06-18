@@ -70,6 +70,8 @@ The category factory requires publisher governance before expansion. The publish
 
 The category factory cannot become reference-grade through page count. It becomes reference-grade when each future public page carries governed substance: purpose, definition, boundary, system relationship, claim traceability, source scope, semantic SEO discipline, internal link logic, prohibited misreadings, review posture, and technical quality.
 
+Semantic SEO is part of the category factory only when it clarifies governed reference meaning. Structured data and metadata must not manufacture authority, imply active tools, or claim service/product/software capability before those gates exist.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

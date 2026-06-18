@@ -224,6 +224,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Content quality standard adoption per DEC-032."
+    },
+    {
+      "claim_id": "CLAIM-0021",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md", "DECISION_LOG.md", "data/semantic-seo-governance.json"],
+      "source_refs": ["SOURCE-0084", "SOURCE-0085", "SOURCE-0090"],
+      "support_scope": "structured data and semantic SEO governance adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Semantic SEO governance adoption per DEC-033."
     }
   ],
   "last_reviewed": "2026-06-17"

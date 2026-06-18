@@ -1,0 +1,93 @@
+{
+  "governance_id": "SEMANTIC-SEO-GOV-001",
+  "name": "Hoax.ai Semantic SEO Governance",
+  "version": "v1.0.0",
+  "status": "governed_internal_semantic_seo_standard",
+  "maturity": "pre_reference_publication_seo_governance",
+  "governing_principle": "SEO must describe governed meaning, not manufacture authority. Structured data must not claim product, tool, detector, service, or software capability before those gates exist.",
+  "semantic_seo_definition": "Disciplined use of titles, descriptions, headings, canonical URLs, structured data, internal links, and metadata to clarify governed reference concepts without keyword stuffing, route inflation, false capability claims, unsupported authority, or detector/tool implication.",
+  "seo_is_not": [
+    "keyword_stuffing",
+    "search_volume_first_publishing",
+    "route_inflation",
+    "content_volume_strategy",
+    "detector_keyword_capture",
+    "fake_real_keyword_capture",
+    "clickbait_metadata",
+    "unsupported_superiority",
+    "schema_overclaiming",
+    "hiding_weak_content_behind_metadata"
+  ],
+  "current_metadata_posture": {
+    "allowed": [
+      "governed_evidence_posture_reference_asset",
+      "not_a_truth_machine",
+      "evidence_structure_and_trust_posture",
+      "governance_boundaries",
+      "category_thesis",
+      "reference_infrastructure_under_governance"
+    ],
+    "prohibited": [
+      "live_public_classifier",
+      "active_detector",
+      "upload_workflow",
+      "scan_check_functionality",
+      "scoring",
+      "api",
+      "commercial_service",
+      "software_application",
+      "product_availability",
+      "deployment_completion",
+      "truth_certification",
+      "forensic_validity_claim",
+      "fraud_guilt_determination"
+    ]
+  },
+  "title_description_rules": [
+    "describe_governed_concept",
+    "match_page_substance",
+    "no_active_tool_language",
+    "no_detector_fake_real_scan_upload_scoring",
+    "no_unsupported_superiority",
+    "no_clickbait",
+    "no_unmapped_external_factual_claims"
+  ],
+  "heading_rules": [
+    "reflect_governed_concept",
+    "no_keyword_chasing_without_substance",
+    "no_live_tool_implication",
+    "no_fake_real_detector_framing",
+    "no_subject_accusation_from_artifact_posture"
+  ],
+  "canonical_route_rules": [
+    "align_with_route_registry",
+    "align_with_sitemap_eligibility",
+    "no_planned_route_canonicalization",
+    "no_indexable_placeholders",
+    "no_deployment_completion_implication",
+    "no_programmatic_route_inflation"
+  ],
+  "internal_semantic_link_rules": [
+    "connect_governed_concepts",
+    "descriptive_anchor_text",
+    "registered_eligible_routes_only",
+    "no_planned_route_links",
+    "reference_comprehension_not_link_stuffing"
+  ],
+  "publisher_seo_rules": [
+    "candidate_must_be_registered",
+    "page_family_must_be_assigned",
+    "reference_thesis_must_be_defined",
+    "claim_scope_must_be_defined",
+    "source_scope_must_be_defined",
+    "content_quality_gate_must_be_satisfied",
+    "route_purpose_must_be_defined",
+    "seo_must_not_exceed_claim_source_support"
+  ],
+  "validation_requirements": [
+    "validate_structured_data_semantic_seo_py",
+    "validate_all_py_pass",
+    "no_public_expansion_from_seo_governance_alone"
+  ],
+  "last_reviewed": "2026-06-17"
+}

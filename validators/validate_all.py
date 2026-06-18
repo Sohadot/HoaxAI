@@ -20,6 +20,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_automation_governance.py",
     ROOT / "validators" / "validate_publisher_control_plane.py",
     ROOT / "validators" / "validate_content_quality_standard.py",
+    ROOT / "validators" / "validate_structured_data_semantic_seo.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

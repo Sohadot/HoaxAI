@@ -26,6 +26,7 @@ GOVERNANCE_FILES = [
     "AGENT_EXECUTION_RULES.md",
     "GOVERNED_PUBLISHER_CONTROL_PLANE.md",
     "CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md",
+    "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md",
     "INTERNAL_ENGINE_MODEL.md",
     "OUTPUT_BOUNDARY_SCHEMA.md",
     "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
@@ -82,6 +83,11 @@ DATA_FILES = [
     "data/reference-substance-rules.json",
     "data/thin-content-failure-patterns.json",
     "data/reference-section-requirements.json",
+    "data/semantic-seo-governance.json",
+    "data/structured-data-policy.json",
+    "data/schema-type-registry.json",
+    "data/metadata-pattern-registry.json",
+    "data/seo-prohibited-patterns.json",
 ]
 
 VALIDATORS = [
@@ -97,6 +103,7 @@ VALIDATORS = [
     "validators/validate_automation_governance.py",
     "validators/validate_publisher_control_plane.py",
     "validators/validate_content_quality_standard.py",
+    "validators/validate_structured_data_semantic_seo.py",
     "validators/generate_build_manifest.py",
 ]
 

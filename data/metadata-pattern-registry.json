@@ -1,0 +1,130 @@
+{
+  "registry_id": "METADATA-PATTERN-REGISTRY-001",
+  "name": "Hoax.ai Metadata Pattern Registry",
+  "version": "v1.0.0",
+  "status": "governed_internal_metadata_pattern_registry",
+  "maturity": "pre_reference_publication_seo_governance",
+  "metadata_patterns": [
+    {
+      "pattern_id": "META-PATTERN-0001",
+      "metadata_field": "title",
+      "allowed_pattern": "governed_reference_concept_title",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api, deployment_complete",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "Title must describe governed concept only."
+    },
+    {
+      "pattern_id": "META-PATTERN-0002",
+      "metadata_field": "meta description",
+      "allowed_pattern": "bounded_reference_description",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api, commercial_service",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "Description must match page substance."
+    },
+    {
+      "pattern_id": "META-PATTERN-0003",
+      "metadata_field": "canonical",
+      "allowed_pattern": "registered_route_canonical_only",
+      "prohibited_pattern": "placeholder canonical, planned route canonical, indexable placeholder",
+      "allowed_claim_scope": "route_registry_alignment",
+      "prohibited_claim_scope": "planned_route, deployment_implication, route_inflation",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "Canonical must align with route registry."
+    },
+    {
+      "pattern_id": "META-PATTERN-0004",
+      "metadata_field": "og:title",
+      "allowed_pattern": "governed_reference_concept_title",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "Open Graph title bounded to reference meaning."
+    },
+    {
+      "pattern_id": "META-PATTERN-0005",
+      "metadata_field": "og:description",
+      "allowed_pattern": "bounded_reference_description",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "Open Graph description must not overclaim."
+    },
+    {
+      "pattern_id": "META-PATTERN-0006",
+      "metadata_field": "twitter:title",
+      "allowed_pattern": "governed_reference_concept_title",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api",
+      "applies_to": ["future_reference_pages"],
+      "notes": "Twitter title when present must be bounded."
+    },
+    {
+      "pattern_id": "META-PATTERN-0007",
+      "metadata_field": "twitter:description",
+      "allowed_pattern": "bounded_reference_description",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, detector, upload, scoring, product, api",
+      "applies_to": ["future_reference_pages"],
+      "notes": "Twitter description when present must be bounded."
+    },
+    {
+      "pattern_id": "META-PATTERN-0008",
+      "metadata_field": "JSON-LD name",
+      "allowed_pattern": "bounded_site_or_page_name",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority, SoftwareApplication, Product, Service",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "tool, detector, product, service, api, scoring",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "JSON-LD name must not imply capability."
+    },
+    {
+      "pattern_id": "META-PATTERN-0009",
+      "metadata_field": "JSON-LD description",
+      "allowed_pattern": "bounded_reference_description",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority, SoftwareApplication, Product, Service",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "tool, detector, product, service, api, scoring",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "JSON-LD description must not overclaim."
+    },
+    {
+      "pattern_id": "META-PATTERN-0010",
+      "metadata_field": "heading/H1",
+      "allowed_pattern": "governed_concept_heading",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, truth certification, public classifier, active service, unsupported superiority",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "live_tool, fake_real_verdict, subject_accusation, detector_framing",
+      "applies_to": ["index.html", "future_reference_pages"],
+      "notes": "H1 reflects governed concept; no keyword chasing."
+    },
+    {
+      "pattern_id": "META-PATTERN-0011",
+      "metadata_field": "future slug",
+      "allowed_pattern": "governed_concept_slug",
+      "prohibited_pattern": "detector, scan, upload, fake, real, scoring, classifier, tool, api",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "detector_keyword_capture, route_inflation, tool_implication",
+      "applies_to": ["future_reference_pages"],
+      "notes": "Future slugs must not chase detector or fake/real keywords."
+    },
+    {
+      "pattern_id": "META-PATTERN-0012",
+      "metadata_field": "future breadcrumb label",
+      "allowed_pattern": "descriptive_governed_label",
+      "prohibited_pattern": "detector, scan, upload, fake/real, scoring, public classifier, active service",
+      "allowed_claim_scope": "governed_reference_meaning",
+      "prohibited_claim_scope": "planned_route_label, tool_implication",
+      "applies_to": ["future_reference_pages"],
+      "notes": "Breadcrumb labels only when route governance permits."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

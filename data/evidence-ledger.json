@@ -222,6 +222,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Pre-publication substance standard. Publisher remains blocked until dry-run harness."
+    },
+    {
+      "claim_id": "CLAIM-0021",
+      "claim_text": "Hoax.ai has adopted Structured Data and Semantic SEO Governance v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "STRUCTURED_DATA_SEMANTIC_SEO_GOVERNANCE.md, DECISION_LOG.md (DEC-033)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Pre-publication semantic SEO governance. No routes, drafts, or deployment authorized."
     }
   ]
 }
