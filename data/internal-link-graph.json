@@ -1,36 +1,117 @@
 {
   "graph_id": "INTERNAL-LINK-GRAPH-001",
   "name": "Hoax.ai Internal Link Graph",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "status": "active",
-  "maturity": "pre_expansion_hardening",
+  "maturity": "controlled_public_reference_pilot",
   "routes": [
     {
       "route_id": "ROUTE-0001",
       "path": "/",
       "source_file": "index.html",
       "internal_links_out": [
-        "styles.css"
+        "styles.css",
+        "/reference/evidence-posture/",
+        "/reference/artifact-subject-separation/"
       ],
-      "internal_links_in": [],
+      "internal_links_in": [
+        "/reference/evidence-posture/",
+        "/reference/artifact-subject-separation/"
+      ],
       "anchor_targets": [
         "main-heading",
         "fragility-heading",
         "posture-heading",
         "pillars-heading",
         "governance-heading",
+        "reference-heading",
         "github-heading",
         "next-heading"
       ],
-      "public_navigation_links": [],
-      "orphan_status": "allowed_single_route_foundation",
-      "notes": "Homepage is the only public route. Multi-route orphan checks become strict after additional public routes are approved."
+      "public_navigation_links": [
+        "/reference/evidence-posture/",
+        "/reference/artifact-subject-separation/"
+      ],
+      "orphan_status": "not_orphan",
+      "notes": "Homepage links to two controlled reference pilot pages."
+    },
+    {
+      "route_id": "ROUTE-0002",
+      "path": "/reference/evidence-posture/",
+      "source_file": "reference/evidence-posture/index.html",
+      "internal_links_out": [
+        "../../styles.css",
+        "/",
+        "/reference/artifact-subject-separation/"
+      ],
+      "internal_links_in": [
+        "/",
+        "/reference/artifact-subject-separation/"
+      ],
+      "anchor_targets": [
+        "what-means",
+        "why-matters",
+        "what-not",
+        "artifact-boundary",
+        "how-hoax",
+        "source-provenance",
+        "not-verdict",
+        "public-boundary",
+        "related"
+      ],
+      "public_navigation_links": [
+        "/",
+        "/reference/artifact-subject-separation/"
+      ],
+      "orphan_status": "not_orphan",
+      "notes": "Evidence Posture controlled public reference page."
+    },
+    {
+      "route_id": "ROUTE-0003",
+      "path": "/reference/artifact-subject-separation/",
+      "source_file": "reference/artifact-subject-separation/index.html",
+      "internal_links_out": [
+        "../../styles.css",
+        "/",
+        "/reference/evidence-posture/"
+      ],
+      "internal_links_in": [
+        "/",
+        "/reference/evidence-posture/"
+      ],
+      "anchor_targets": [
+        "what-means",
+        "why-exists",
+        "difference",
+        "prevents",
+        "how-hoax",
+        "posture-rel",
+        "not-accusation",
+        "public-boundary",
+        "related"
+      ],
+      "public_navigation_links": [
+        "/",
+        "/reference/evidence-posture/"
+      ],
+      "orphan_status": "not_orphan",
+      "notes": "Artifact–Subject Separation controlled public reference page."
     }
   ],
   "file_links": [
     {
       "source_file": "index.html",
       "target": "styles.css",
+      "link_type": "stylesheet_asset"
+    },
+    {
+      "source_file": "reference/evidence-posture/index.html",
+      "target": "../../styles.css",
+      "link_type": "stylesheet_asset"
+    },
+    {
+      "source_file": "reference/artifact-subject-separation/index.html",
+      "target": "../../styles.css",
       "link_type": "stylesheet_asset"
     }
   ],
@@ -40,6 +121,18 @@
       "target": "https://hoax.ai/",
       "link_type": "canonical_url",
       "route_id": "ROUTE-0001"
+    },
+    {
+      "source_file": "reference/evidence-posture/index.html",
+      "target": "https://hoax.ai/reference/evidence-posture/",
+      "link_type": "canonical_url",
+      "route_id": "ROUTE-0002"
+    },
+    {
+      "source_file": "reference/artifact-subject-separation/index.html",
+      "target": "https://hoax.ai/reference/artifact-subject-separation/",
+      "link_type": "canonical_url",
+      "route_id": "ROUTE-0003"
     }
   ],
   "markdown_reference_links": [],

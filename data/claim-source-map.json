@@ -323,6 +323,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public route readiness gate adoption per DEC-041."
+    },
+    {
+      "claim_id": "CLAIM-0030",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT.md", "DECISION_LOG.md", "data/controlled-public-reference-pilot-v1.json"],
+      "source_refs": ["SOURCE-0137", "SOURCE-0138", "SOURCE-0139", "SOURCE-0142"],
+      "support_scope": "first controlled public reference pilot adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "First controlled public reference pilot adoption per DEC-042."
     }
   ],
   "last_reviewed": "2026-06-17"

@@ -1,9 +1,9 @@
 {
   "registry_id": "PUBLIC-FILE-REGISTRY-001",
   "name": "Hoax.ai Public File Registry",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "status": "active",
-  "maturity": "pre_expansion_static_quality_gate",
+  "maturity": "controlled_public_reference_pilot",
   "public_files": [
     {
       "file_id": "PUB-FILE-0001",
@@ -16,6 +16,30 @@
       "allowed_dependencies": ["styles.css"],
       "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring",
       "notes": "Primary public thesis surface."
+    },
+    {
+      "file_id": "PUB-FILE-0005",
+      "path": "reference/evidence-posture/index.html",
+      "file_type": "html",
+      "public_role": "controlled_public_reference_page",
+      "route_id_if_applicable": "ROUTE-0002",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": ["../../styles.css"],
+      "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring, classifier, detector",
+      "notes": "Evidence Posture controlled public reference pilot page."
+    },
+    {
+      "file_id": "PUB-FILE-0006",
+      "path": "reference/artifact-subject-separation/index.html",
+      "file_type": "html",
+      "public_role": "controlled_public_reference_page",
+      "route_id_if_applicable": "ROUTE-0003",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": ["../../styles.css"],
+      "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring, classifier, detector",
+      "notes": "Artifact–Subject Separation controlled public reference pilot page."
     },
     {
       "file_id": "PUB-FILE-0002",

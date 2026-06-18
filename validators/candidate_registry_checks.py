@@ -15,6 +15,8 @@ def validate_candidates_blocked_only(candidates: list, error) -> bool:
     """Return True if every registry candidate is internal-only and blocked from public output."""
     ok = True
     for entry in candidates:
+        if entry.get("public_reference_pilot_status") == "converted_to_controlled_public_reference_pilot":
+            continue
         cid = entry.get("candidate_id", "?")
         status = entry.get("candidate_status", "")
         if status not in ALLOWED_CANDIDATE_STATUS:

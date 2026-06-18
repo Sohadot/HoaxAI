@@ -19,7 +19,7 @@
     "sitemap.xml may not include planned, blocked, future, draft, or internal_only routes",
     "sitemap.xml must not contain placeholder URLs",
     "sitemap.xml must not imply external deployment completion when deferred",
-    "Current sitemap may contain only homepage route until further governance"
+    "Current sitemap may include homepage and exactly two controlled public reference pilot routes until further governance"
   ],
   "canonical_rules": [
     "Each public route must have one canonical URL",

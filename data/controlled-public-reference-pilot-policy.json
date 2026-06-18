@@ -1,0 +1,59 @@
+{
+  "policy_id": "CTRL-PUB-REF-PILOT-POLICY-001",
+  "name": "Hoax.ai Controlled Public Reference Pilot Policy",
+  "version": "v1.0.0",
+  "status": "governed_controlled_public_reference_pilot_policy",
+  "maturity": "two_public_reference_pages_only_no_engine_no_classifier_no_tool",
+  "governing_principle": "A controlled public reference page teaches the language. It does not operate the engine.",
+  "category_language_principle": "The first public routes must make Hoax.ai's category legible before any public classifier exists.",
+  "allowed_pilot_actions": [
+    "controlled_public_reference_page_creation",
+    "controlled_route_registry_activation",
+    "controlled_sitemap_inclusion",
+    "controlled_public_metadata_creation",
+    "homepage_reference_section_links",
+    "internal_link_graph_update",
+    "validation_only"
+  ],
+  "prohibited_pilot_actions": [
+    "classifier",
+    "detector",
+    "upload",
+    "scoring",
+    "forms",
+    "analytics",
+    "api",
+    "monetization",
+    "dns",
+    "cloudflare",
+    "custom_domain_launch",
+    "broader_route_expansion",
+    "external_factual_claims",
+    "subject_accusation",
+    "engine_route",
+    "tool_route"
+  ],
+  "pilot_scope": [
+    "/reference/evidence-posture/",
+    "/reference/artifact-subject-separation/"
+  ],
+  "metadata_policy": "Controlled title, description, canonical, robots, OG, and WebPage JSON-LD only. No Product, SoftwareApplication, Service, FactCheck, ClaimReview, or tool-implying schema.",
+  "structured_data_policy": "WebPage JSON-LD allowed when bounded and non-tool-implying. No product, service, software, detector, or API schema.",
+  "route_policy": "Exactly two new controlled public reference routes in route-registry. No classifier, tool, upload, or scoring routes.",
+  "sitemap_policy": "Exactly two new public reference URLs added to sitemap.xml alongside homepage.",
+  "homepage_link_policy": "Homepage may link only to the two pilot reference pages in a controlled reference section. No tool, upload, classifier, or scoring CTAs.",
+  "non_authorization_rules": [
+    "pilot_does_not_authorize_engine",
+    "pilot_does_not_authorize_classifier",
+    "pilot_does_not_authorize_upload",
+    "pilot_does_not_authorize_scoring",
+    "pilot_does_not_authorize_forms",
+    "pilot_does_not_authorize_analytics",
+    "pilot_does_not_authorize_api",
+    "pilot_does_not_authorize_monetization",
+    "pilot_does_not_authorize_dns",
+    "pilot_does_not_authorize_cloudflare",
+    "pilot_does_not_authorize_broader_publication"
+  ],
+  "last_reviewed": "2026-06-17"
+}

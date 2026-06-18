@@ -63,6 +63,17 @@ body {
   color: var(--text);
 }
 
+a.site-mark-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.site-mark-link:hover,
+a.site-mark-link:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .site-descriptor {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -287,6 +298,135 @@ strong {
   font-size: 0.9375rem;
   margin-bottom: 0.5rem;
   opacity: 0.85;
+}
+
+/* ─── Reference Pages ─────────────────────────────────── */
+
+.reference-main {
+  padding-bottom: 2rem;
+}
+
+.reference-nav {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 2rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reference-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.reference-nav a:hover,
+.reference-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.reference-nav-sep {
+  opacity: 0.5;
+}
+
+.reference-article {
+  padding: 2rem 0 0;
+}
+
+.reference-article h1 {
+  margin-bottom: 1.25rem;
+}
+
+.page-thesis {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 62ch;
+}
+
+.reference-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.reference-section h2 {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.reference-boundary {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.related-concepts {
+  list-style: none;
+  margin: 0;
+}
+
+.related-concepts li {
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 2px solid var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.related-concepts a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.related-concepts a:hover,
+.related-concepts a:focus-visible {
+  text-decoration: underline;
+}
+
+.reference-boundary-block {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--amber);
+  background: var(--bg-surface);
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+.reference-boundary-block p {
+  margin: 0;
+  max-width: none;
+}
+
+.section-reference .reference-links {
+  list-style: none;
+  margin-top: 1.25rem;
+}
+
+.section-reference .reference-links li {
+  padding: 0.625rem 0 0.625rem 1rem;
+  border-left: 2px solid var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.section-reference .reference-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.section-reference .reference-links a:hover,
+.section-reference .reference-links a:focus-visible {
+  text-decoration: underline;
 }
 
 /* ─── Footer ─────────────────────────────────────────── */

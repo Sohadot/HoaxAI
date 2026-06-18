@@ -370,7 +370,12 @@ def validate_route_candidate_registry() -> bool:
             error(f"route candidate {cid}: readiness_record_id {rid} not found")
             ok = False
 
+        if cand.get("conversion_status") == "converted_to_controlled_public_reference_pilot":
+            continue
+
         for field, expected in [
+            ("conversion_status", CONVERSION_STATUS),
+            ("conversion_allowed_next_phase", CONVERSION_NEXT_PHASE),
             ("proposed_route_status", "inactive_candidate_path"),
             ("route_status", "not_route_created"),
             ("sitemap_status", "not_sitemap_eligible"),
@@ -378,8 +383,6 @@ def validate_route_candidate_registry() -> bool:
             ("public_metadata_status", "not_created"),
             ("public_navigation_status", "not_linked"),
             ("deployment_status", "not_deployed"),
-            ("conversion_status", CONVERSION_STATUS),
-            ("conversion_allowed_next_phase", CONVERSION_NEXT_PHASE),
         ]:
             if cand.get(field) != expected:
                 error(f"route candidate {cid}: {field} must be {expected}")
@@ -411,11 +414,13 @@ def validate_registries() -> bool:
         if entry.get("public_route_candidate_ref") != "data/public-route-candidate-registry.json":
             error(f"draft registry: {did} public_route_candidate_ref missing or wrong")
             ok = False
-        if entry.get("proposed_route_status") != "inactive_candidate_path":
-            error(f"draft registry: {did} proposed_route_status must be inactive_candidate_path")
-            ok = False
         if entry.get("proposed_route_path") != PROPOSED_PATHS.get(did):
             error(f"draft registry: {did} proposed_route_path mismatch")
+            ok = False
+        if entry.get("public_reference_pilot_status") == "converted_to_controlled_public_reference_pilot":
+            continue
+        if entry.get("proposed_route_status") != "inactive_candidate_path":
+            error(f"draft registry: {did} proposed_route_status must be inactive_candidate_path")
             ok = False
         for field, expected in [
             ("route_status", "not_route_created"),
@@ -435,6 +440,8 @@ def validate_registries() -> bool:
             if entry.get("public_route_readiness_outcome") != "route_readiness_passed_with_conditions":
                 error(f"candidate registry: {cid} invalid readiness outcome")
                 ok = False
+            if entry.get("public_reference_pilot_status") == "converted_to_controlled_public_reference_pilot":
+                continue
             for field, expected in [
                 ("route_status", "not_route_created"),
                 ("sitemap_status", "not_sitemap_eligible"),
@@ -456,79 +463,28 @@ def validate_registries() -> bool:
 
 
 def validate_proposed_path_safety() -> bool:
+    """Validate readiness gate artifacts; live pilot surface is validated separately."""
     ok = True
-
-    for path_str in PROPOSED_PATHS.values():
-        rel = path_str.strip("/").replace("/", "\\")
-        dir_path = ROOT / rel
-        if dir_path.exists():
-            error(f"proposed path safety: directory exists for {path_str}")
+    readiness = load_json(ROOT / "data" / "public-route-readiness-v1.json")
+    for record in readiness.get("readiness_records", []):
+        rid = record.get("readiness_record_id", "?")
+        if rid not in REQUIRED_READINESS_IDS:
+            continue
+        if record.get("readiness_outcome") != "route_readiness_passed_with_conditions":
+            error(f"readiness record {rid}: must remain route_readiness_passed_with_conditions")
             ok = False
-
-        file_variants = [
-            ROOT / f"{rel}.html",
-            ROOT / f"{rel}index.html",
-            ROOT / rel / "index.html",
-        ]
-        for fp in file_variants:
-            if fp.exists():
-                error(f"proposed path safety: file exists {fp.relative_to(ROOT).as_posix()}")
-                ok = False
-
-    routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    route_paths = {r.get("path", "").lower() for r in routes}
-    for path_str in PROPOSED_PATHS.values():
-        normalized = path_str.lower().rstrip("/") + "/"
-        alt = path_str.lower().rstrip("/")
-        if normalized in route_paths or alt in route_paths or path_str.lower() in route_paths:
-            error(f"proposed path {path_str} must not be in route-registry")
+        path = record.get("proposed_route_path", "")
+        if path not in PROPOSED_PATHS.values():
+            error(f"readiness record {rid}: proposed_route_path mismatch")
             ok = False
-
-    sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8").lower()
-    for slug in PATH_SLUGS:
-        if slug in sitemap_text:
-            error(f"sitemap.xml: must not contain {slug}")
-            ok = False
-
-    index_html = (ROOT / "index.html").read_text(encoding="utf-8").lower()
-    for slug in PATH_SLUGS:
-        if slug in index_html:
-            error(f"index.html: must not link to {slug}")
-            ok = False
-
     if (ROOT / ".nojekyll").exists():
-        error(".nojekyll must not be created in this sprint")
+        error(".nojekyll must not be created")
         ok = False
-
-    for html in ROOT.glob("**/*.html"):
-        rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
-            error(f"public safety: unexpected HTML file {rel}")
-            ok = False
-
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
-        ok = False
-
-    try:
-        tree = ET.parse(ROOT / "sitemap.xml")
-        urls = tree.getroot().findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
-        if len(urls) != 1:
-            error("sitemap.xml: expansion detected")
-            ok = False
-    except ET.ParseError as exc:
-        error(f"sitemap.xml parse failed: {exc}")
-        ok = False
-
     return ok
 
 
 def validate_publisher_and_gates() -> bool:
     ok = True
-    pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS:
-        error(f"publisher-governance-policy: current_publisher_status must be {PUBLISHER_STATUS}")
-        ok = False
 
     gates = load_json(ROOT / "data" / "publisher-quality-gates.json").get("gates", [])
     gate = next((g for g in gates if g.get("gate_id") == "PUB-GATE-0023"), None)

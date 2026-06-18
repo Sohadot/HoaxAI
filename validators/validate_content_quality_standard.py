@@ -102,7 +102,18 @@ REQUIRED_SECTION_NAMES = [
     "last reviewed",
 ]
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 RULE_ID_PATTERN = re.compile(r"^SUBSTANCE-RULE-\d{4}$")
 PATTERN_ID_PATTERN = re.compile(r"^THIN-PATTERN-\d{4}$")
@@ -401,6 +412,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(f"publisher-governance-policy: publisher must remain blocked from drafts and publication, got {status}")
         ok = False
@@ -410,8 +422,8 @@ def validate_cross_file_integration() -> bool:
         ok = False
 
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     queues = load_json(ROOT / "data" / "publisher-queue-registry.json").get("queues", [])
@@ -428,7 +440,7 @@ def validate_repository_safety() -> bool:
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"unexpected HTML file: {rel}")
             ok = False
 

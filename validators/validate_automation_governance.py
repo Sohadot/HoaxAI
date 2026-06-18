@@ -106,7 +106,18 @@ WORKFLOW_PROHIBITED = [
     "rsync ",
 ]
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 
 def error(msg: str) -> None:
@@ -338,8 +349,8 @@ def validate_source_registry() -> bool:
 def validate_route_sitemap_safety() -> bool:
     ok = True
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     candidates = load_json(ROOT / "data" / "reference-page-candidate-registry.json").get("candidates", [])
@@ -351,7 +362,7 @@ def validate_route_sitemap_safety() -> bool:
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"unexpected public HTML: {rel}")
             ok = False
 

@@ -258,10 +258,27 @@ def validate_public_file_registry_data() -> bool:
         error("public-file-registry: index.html must map to ROUTE-0001")
         ok = False
 
-    required_paths = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+    required_paths = {
+        "index.html",
+        "reference/evidence-posture/index.html",
+        "reference/artifact-subject-separation/index.html",
+        "styles.css",
+        "robots.txt",
+        "sitemap.xml",
+    }
     if set(paths) != required_paths:
         error(f"public-file-registry: expected paths {sorted(required_paths)}")
         ok = False
+
+    pilot_paths = {
+        "reference/evidence-posture/index.html": "ROUTE-0002",
+        "reference/artifact-subject-separation/index.html": "ROUTE-0003",
+    }
+    for path, route_id in pilot_paths.items():
+        entry = next((f for f in files if f.get("path") == path), None)
+        if not entry or entry.get("route_id_if_applicable") != route_id:
+            error(f"public-file-registry: {path} must map to {route_id}")
+            ok = False
 
     for entry in files:
         if entry.get("required") and not (ROOT / entry["path"]).exists():
@@ -305,6 +322,18 @@ def validate_html_metadata_registry_data() -> bool:
                 if field not in entry:
                     error(f"html-metadata-registry: {entry.get('metadata_id', '?')} missing {field}")
                     ok = False
+
+    reference_pages = data.get("reference_pages", [])
+    if len(reference_pages) != 2:
+        error("html-metadata-registry: expected two reference_pages entries")
+        ok = False
+    for page in reference_pages:
+        if page.get("route_id") not in ("ROUTE-0002", "ROUTE-0003"):
+            error("html-metadata-registry: invalid reference page route_id")
+            ok = False
+        if not page.get("source_file", "").startswith("reference/"):
+            error("html-metadata-registry: reference page source_file invalid")
+            ok = False
 
     return ok
 

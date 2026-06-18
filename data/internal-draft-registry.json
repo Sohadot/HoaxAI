@@ -3,7 +3,7 @@
   "name": "Hoax.ai Internal Draft Registry",
   "version": "v1.0.0",
   "status": "governed_internal_draft_registry",
-  "maturity": "public_route_readiness_checked_no_routes_no_sitemap_no_publication",
+  "maturity": "controlled_public_reference_pilot_converted",
   "draft_pack_id": "INT-DRAFT-PACK-V1-001",
   "draft_pack_source": "data/internal-draft-pack-v1.json",
   "review_source": "data/internal-draft-review-v1.json",
@@ -35,7 +35,10 @@
       "public_route_readiness_ref": "data/public-route-readiness-v1.json",
       "public_route_candidate_ref": "data/public-route-candidate-registry.json",
       "proposed_route_path": "/reference/evidence-posture/",
-      "proposed_route_status": "inactive_candidate_path"
+      "proposed_route_status": "controlled_public_reference_route",
+      "public_reference_pilot_status": "converted_to_controlled_public_reference_pilot",
+      "public_page_ref": "reference/evidence-posture/index.html",
+      "public_route_path": "/reference/evidence-posture/"
     },
     {
       "draft_id": "DRAFT-0002",
@@ -61,7 +64,10 @@
       "public_route_readiness_ref": "data/public-route-readiness-v1.json",
       "public_route_candidate_ref": "data/public-route-candidate-registry.json",
       "proposed_route_path": "/reference/artifact-subject-separation/",
-      "proposed_route_status": "inactive_candidate_path"
+      "proposed_route_status": "controlled_public_reference_route",
+      "public_reference_pilot_status": "converted_to_controlled_public_reference_pilot",
+      "public_page_ref": "reference/artifact-subject-separation/index.html",
+      "public_route_path": "/reference/artifact-subject-separation/"
     }
   ],
   "last_reviewed": "2026-06-17"

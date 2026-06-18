@@ -88,6 +88,8 @@ The category factory reviews internal drafts before public route readiness. Inte
 
 The category factory introduces a public route readiness gate before controlled public reference publication. Reviewed internal drafts may become inactive route candidates only after boundary, claim/source, semantic SEO, route-path, sitemap, metadata, navigation, and non-authorization checks pass. Route readiness does not create routes; it creates the governed condition for a later controlled public reference pilot.
 
+The category factory has begun its public language layer through a controlled two-page reference pilot. Evidence Posture and Artifact–Subject Separation form the first public conceptual anchors for Hoax.ai. These pages teach the category language before any public engine, classifier, upload workflow, or scoring interface exists.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

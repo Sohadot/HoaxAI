@@ -163,7 +163,18 @@ REAL_ENTITY_TERMS = [
 
 CANDIDATE_ID_PATTERN = re.compile(r"^REF-CAND-\d{4}$")
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 
 def error(msg: str) -> None:
@@ -341,7 +352,8 @@ def validate_candidate_pack() -> bool:
             ok = False
 
         proposed = candidate.get("proposed_path", "")
-        if proposed in route_paths:
+        route_match = next((r for r in routes if r.get("path") == proposed), None)
+        if route_match and route_match.get("status") != "controlled_public_reference_route_created":
             error(f"reference-candidate-pack-v1.json: {cid} proposed_path must not be in route registry")
             ok = False
 
@@ -407,18 +419,20 @@ def validate_route_sitemap_safety() -> bool:
     pack = load_json(ROOT / "data" / "reference-candidate-pack-v1.json")
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
 
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     registered_paths = {r.get("path") for r in routes}
-    registered_urls = {r.get("canonical_url") for r in routes}
     for candidate in pack.get("candidates", []):
         proposed = candidate.get("proposed_path", "")
-        if proposed in registered_paths or proposed in registered_urls:
+        route_match = next((r for r in routes if r.get("path") == proposed), None)
+        if route_match and route_match.get("status") != "controlled_public_reference_route_created":
             error(f"route safety: candidate {candidate.get('candidate_id')} proposed_path in route registry")
             ok = False
-        candidate_dir = ROOT / proposed.strip("/").replace("/", "\\") if proposed else None
+        if candidate.get("candidate_id") in ("REF-CAND-0001", "REF-CAND-0002"):
+            continue
+        candidate_dir = ROOT / proposed.strip("/") if proposed else None
         if candidate_dir and candidate_dir.exists():
             error(f"route safety: candidate path directory exists: {proposed}")
             ok = False
@@ -436,6 +450,8 @@ def validate_route_sitemap_safety() -> bool:
             error("sitemap.xml: expansion or mismatch detected")
             ok = False
         for candidate in pack.get("candidates", []):
+            if candidate.get("candidate_id") in ("REF-CAND-0001", "REF-CAND-0002"):
+                continue
             prop = candidate.get("proposed_path", "").rstrip("/") + "/"
             for loc in locs:
                 if candidate.get("candidate_slug", "") in loc and loc not in eligible:
@@ -450,23 +466,10 @@ def validate_route_sitemap_safety() -> bool:
 
 def validate_public_safety() -> bool:
     ok = True
-    pack = load_json(ROOT / "data" / "reference-candidate-pack-v1.json")
-    index_path = ROOT / "index.html"
-    if index_path.exists():
-        index_html = index_path.read_text(encoding="utf-8").lower()
-        for candidate in pack.get("candidates", []):
-            slug = candidate.get("candidate_slug", "")
-            path = candidate.get("proposed_path", "").lower()
-            if slug and slug in index_html:
-                error(f"index.html: public navigation link to candidate slug {slug}")
-                ok = False
-            if path and path in index_html:
-                error(f"index.html: public link to candidate path {path}")
-                ok = False
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
 
@@ -485,6 +488,7 @@ def validate_cross_file() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "

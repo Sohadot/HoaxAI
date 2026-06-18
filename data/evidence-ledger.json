@@ -321,6 +321,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Two inactive route candidates recorded. No routes, pages, sitemap expansion, public metadata, or publication authorized."
+    },
+    {
+      "claim_id": "CLAIM-0030",
+      "claim_text": "Hoax.ai has adopted First Controlled Public Reference Pilot v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT.md, DECISION_LOG.md (DEC-042)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Two controlled public reference pages created. Broader publication, engine, classifier, and tool remain blocked."
     }
   ]
 }

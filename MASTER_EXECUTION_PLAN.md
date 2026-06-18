@@ -62,12 +62,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G21 | First Internal Draft Pack | Sprint 21 validator PASS |
 | G22 | Internal Draft Review and Refinement | Sprint 22 validator PASS |
 | G23 | Public Route Readiness Gate | Sprint 23 validator PASS |
+| G24 | First Controlled Public Reference Pilot | Sprint 24 validator PASS |
 
-**Gate G23 passed.** Sprint 24 (First Controlled Public Reference Pilot) may proceed when authorized. Public classifier and tool remain blocked. Publisher remains blocked from publication, routes, sitemap, and public metadata until controlled public reference pilot and explicit future approval. External deployment remains separately governed.
+**Gate G24 passed.** Sprint 25 (Public Reference Validation and Live Surface Audit) may proceed when authorized. Public classifier and engine remain blocked. Publisher remains blocked from broader publication until validation and explicit future approval. External deployment remains separately governed.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0–G23) govern category infrastructure, reference governance, and expansion readiness. They must pass before reference layer scale.
+Foundation gates (G0–G24) govern category infrastructure, reference governance, controlled public reference pilot, and expansion readiness. They must pass before reference layer scale.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -192,7 +193,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 21 | COMPLETE | G21 passed |
 | Sprint 22 | COMPLETE | G22 passed |
 | Sprint 23 | COMPLETE | G23 passed |
-| Sprint 24+ | READY | G23 passed — First Controlled Public Reference Pilot pending; publisher blocked from publication; deployment gates separately governed |
+| Sprint 24 | COMPLETE | G24 passed |
+| Sprint 25+ | READY | G24 passed — Public Reference Validation and Live Surface Audit pending; broader publication blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

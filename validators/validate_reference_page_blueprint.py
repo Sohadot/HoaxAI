@@ -110,7 +110,16 @@ PAGE_TYPE_PROHIBITED_PATTERNS = [
     "public classifier",
 ]
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 PAGE_TYPE_ID_PATTERN = re.compile(r"^REF-TYPE-\d{4}$")
 
@@ -302,47 +311,13 @@ def validate_route_sitemap_safety() -> bool:
     ok = True
 
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    route_ids = [r.get("route_id") for r in routes]
-    if route_ids != ["ROUTE-0001"]:
-        error(f"route-registry: expected only ROUTE-0001, found {route_ids}")
+    if not validate_pilot_public_surface(routes, error):
         ok = False
-
-    sitemap_path = ROOT / "sitemap.xml"
-    if not sitemap_path.exists():
-        error("sitemap.xml missing")
-        return False
-
-    try:
-        tree = ET.parse(sitemap_path)
-        root = tree.getroot()
-        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-        locs = [el.text.strip() for el in root.findall(".//sm:loc", ns) if el.text]
-        if not locs:
-            locs = [el.text.strip() for el in root.findall(".//{*}loc") if el.text]
-    except ET.ParseError as exc:
-        error(f"sitemap.xml parse failed: {exc}")
-        return False
-
-    eligible = {
-        r.get("canonical_url")
-        for r in routes
-        if r.get("sitemap_included") is True
-    }
-    for url in locs:
-        if url not in eligible:
-            error(f"sitemap.xml: URL not eligible in route registry: {url}")
-            ok = False
-
-    for html in ROOT.glob("**/*.html"):
-        rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
-            error(f"unexpected public HTML file: {rel}")
-            ok = False
 
     public_registry = load_json(ROOT / "data" / "public-file-registry.json")
     registered = {f.get("path") for f in public_registry.get("public_files", [])}
-    if registered != PUBLIC_FILES:
-        error(f"public-file-registry: expected only {sorted(PUBLIC_FILES)}")
+    if registered != ALLOWED_PUBLIC_ROOT_FILES:
+        error(f"public-file-registry: expected {sorted(ALLOWED_PUBLIC_ROOT_FILES)}")
         ok = False
 
     return ok

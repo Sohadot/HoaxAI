@@ -1027,3 +1027,31 @@ Reviewed internal drafts should not become public routes automatically. A separa
 - Future route candidate records may be created as inactive candidate paths only.
 - No route, page, sitemap entry, public metadata, navigation link, publication, or deployment is authorized.
 - Future work may create a controlled public reference pilot only after this gate passes and a later explicit sprint authorizes conversion.
+
+---
+
+## DEC-042 — First Controlled Public Reference Pilot v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts First Controlled Public Reference Pilot v1 to publish exactly two controlled public reference pages — Evidence Posture and Artifact–Subject Separation — while preserving the prohibition on public classifier, public tool, upload, scoring, forms, analytics, API, DNS, Cloudflare, custom domain launch, and broader route expansion.
+
+### Rationale
+
+Hoax.ai must become a public category language before it becomes a public engine. The first controlled public reference pages explain the core concepts that later engine outputs must rely on. Evidence Posture defines the central language of evidence condition. Artifact–Subject Separation defines the boundary that prevents evidence-risk language from becoming accusation language.
+
+### Implications
+
+- Exactly two controlled public reference pages may be created.
+- Exactly two public routes may be activated.
+- Exactly two sitemap entries may be added.
+- Exactly two route-registry entries may be added.
+- Homepage links may be added only to these two reference pages.
+- Controlled metadata may be created only for these two pages.
+- No classifier/tool/engine/upload/scoring behavior is authorized.
+- No broader reference expansion is authorized.
+- No DNS/Cloudflare/custom domain launch is authorized.
+- Future public engine work remains blocked until reference language and public route validation mature.

@@ -220,7 +220,18 @@ H1_PROHIBITED_PHRASES = [
 SCHEMA_ID_PATTERN = re.compile(r"^SCHEMA-TYPE-\d{4}$")
 SEO_ID_PATTERN = re.compile(r"^SEO-PATTERN-\d{4}$")
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 
 def error(msg: str) -> None:
@@ -653,6 +664,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error("publisher-governance-policy: publisher must remain blocked from drafts and publication")
         ok = False
@@ -665,8 +677,8 @@ def validate_cross_file_integration() -> bool:
             ok = False
 
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     sitemap_path = ROOT / "sitemap.xml"

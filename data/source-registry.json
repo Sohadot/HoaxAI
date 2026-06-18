@@ -1362,6 +1362,66 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route readiness gate validator."
+    },
+    {
+      "source_id": "SOURCE-0137",
+      "source_title": "FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT.md",
+      "source_type": "internal_governance",
+      "location": "FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "First controlled public reference pilot doctrine."
+    },
+    {
+      "source_id": "SOURCE-0138",
+      "source_title": "data/controlled-public-reference-pilot-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/controlled-public-reference-pilot-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Controlled public reference pilot policy."
+    },
+    {
+      "source_id": "SOURCE-0139",
+      "source_title": "data/controlled-public-reference-pilot-v1.json",
+      "source_type": "internal_registry",
+      "location": "data/controlled-public-reference-pilot-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "First controlled public reference pilot record."
+    },
+    {
+      "source_id": "SOURCE-0140",
+      "source_title": "reference/evidence-posture/index.html",
+      "source_type": "public_reference_page",
+      "location": "reference/evidence-posture/index.html",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture controlled public reference page."
+    },
+    {
+      "source_id": "SOURCE-0141",
+      "source_title": "reference/artifact-subject-separation/index.html",
+      "source_type": "public_reference_page",
+      "location": "reference/artifact-subject-separation/index.html",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Artifact–Subject Separation controlled public reference page."
+    },
+    {
+      "source_id": "SOURCE-0142",
+      "source_title": "validators/validate_controlled_public_reference_pilot.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_controlled_public_reference_pilot.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Controlled public reference pilot validator."
     }
   ]
 }

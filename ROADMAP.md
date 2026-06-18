@@ -1066,9 +1066,9 @@ External deployment remains deferred (Sprint 1C). Maturity is internal_review_on
 
 ### Next Phase
 
-**Sprint 24 — First Controlled Public Reference Pilot v1**
+**Sprint 25 — Public Reference Validation and Live Surface Audit v1**
 
-Public classifier remains blocked. External deployment remains separately governed. Public page conversion remains blocked until Sprint 24 explicitly creates controlled public reference pages.
+Public classifier remains blocked. Public engine remains blocked. External deployment remains separately governed. Broader publication remains blocked until validation and future approval.
 
 ---
 
@@ -1112,9 +1112,56 @@ External deployment remains separately governed (Sprint 1C). Maturity is readine
 
 ### Next Phase
 
-**Sprint 24 — First Controlled Public Reference Pilot v1**
+**Sprint 25 — Public Reference Validation and Live Surface Audit v1**
 
-Public classifier remains blocked. External deployment remains separately governed. Public page conversion remains blocked until Sprint 24 explicitly creates controlled public reference pages.
+Public classifier remains blocked. Public engine remains blocked. External deployment remains separately governed. Broader publication remains blocked until validation and future approval.
+
+---
+
+## Sprint 24 — First Controlled Public Reference Pilot v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Convert two route-ready internal drafts into exactly two controlled public reference pages while preserving prohibition on public classifier, engine, tool, upload, scoring, forms, analytics, API, DNS, Cloudflare, custom domain launch, and broader route expansion.
+
+### Deliverables
+
+- reference/evidence-posture/index.html
+- reference/artifact-subject-separation/index.html
+- FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT.md
+- data/controlled-public-reference-pilot-policy.json
+- data/controlled-public-reference-pilot-v1.json
+- validators/validate_controlled_public_reference_pilot.py
+- SPRINT_24_FIRST_CONTROLLED_PUBLIC_REFERENCE_PILOT_AUDIT.md
+- DEC-042 appended to DECISION_LOG.md
+- Route registry, sitemap, homepage, internal link graph updated for two pilot routes
+- Registry updates for DRAFT-0001, DRAFT-0002, REF-CAND-0001, REF-CAND-0002, PUBLIC-ROUTE-CAND-0001, PUBLIC-ROUTE-CAND-0002
+- data/publisher-governance-policy.json updated (blocked_until_public_reference_validation_and_live_surface_audit)
+- data/publisher-quality-gates.json updated (PUB-GATE-0024)
+- data/reference-expansion-gate.json updated
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Pilot Scope
+
+- 2 controlled public reference pages (Evidence Posture, Artifact–Subject Separation)
+- 3 active routes (homepage + 2 reference pages)
+- 3 sitemap URLs
+- Homepage links to exactly two reference pages
+- 30 evidence ledger claims (CLAIM-0030 added)
+- No classifier, tool, upload, scoring, forms, analytics, API, DNS, Cloudflare, custom domain launch, or .nojekyll
+
+### Gate
+
+**Gate G24 passed.** External deployment remains separately governed. Broader publication blocked until Sprint 25 validation.
+
+### Next Phase
+
+**Sprint 25 — Public Reference Validation and Live Surface Audit v1**
+
+Public classifier remains blocked. Public engine remains blocked. External deployment remains separately governed. Broader publication remains blocked until validation and future approval.
 
 ---
 

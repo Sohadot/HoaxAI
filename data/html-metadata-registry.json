@@ -1,7 +1,7 @@
 {
   "registry_id": "HTML-METADATA-REGISTRY-001",
   "name": "Hoax.ai HTML Metadata Registry",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "status": "active",
   "route_id": "ROUTE-0001",
   "source_file": "index.html",
@@ -88,6 +88,24 @@
       "allowed_claim_scope": "canonical URL alignment",
       "prohibited_claim_scope": "unregistered route",
       "notes": "Open Graph URL matches canonical."
+    }
+  ],
+  "reference_pages": [
+    {
+      "route_id": "ROUTE-0002",
+      "source_file": "reference/evidence-posture/index.html",
+      "required_metadata": ["charset", "viewport", "title", "meta_description", "canonical", "robots"],
+      "optional_metadata": ["og_title", "og_description", "og_type", "og_url", "theme_color"],
+      "structured_data": "WebPage JSON-LD only",
+      "notes": "Evidence Posture controlled public reference pilot metadata."
+    },
+    {
+      "route_id": "ROUTE-0003",
+      "source_file": "reference/artifact-subject-separation/index.html",
+      "required_metadata": ["charset", "viewport", "title", "meta_description", "canonical", "robots"],
+      "optional_metadata": ["og_title", "og_description", "og_type", "og_url", "theme_color"],
+      "structured_data": "WebPage JSON-LD only",
+      "notes": "Artifact–Subject Separation controlled public reference pilot metadata."
     }
   ],
   "prohibited_metadata_claims": [

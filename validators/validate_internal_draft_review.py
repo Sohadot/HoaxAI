@@ -209,7 +209,18 @@ NUMERIC_SCORE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 MIN_WORDS = 900
 MAX_WORDS = 1400
@@ -656,6 +667,7 @@ def validate_publisher_and_gates() -> bool:
     if status not in (
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
@@ -690,21 +702,18 @@ def validate_publisher_and_gates() -> bool:
 def validate_route_sitemap_public_safety() -> bool:
     ok = True
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
-    for candidate in load_json(ROOT / "data" / "reference-candidate-pack-v1.json").get("candidates", []):
-        path = candidate.get("proposed_path", "").lower()
-        if any(r.get("path", "").lower() == path for r in routes):
-            error(f"route-registry: candidate path {path} must not be registered")
-            ok = False
+    from public_surface_checks import validate_candidate_paths_not_registered_except_pilot
+    candidates = load_json(ROOT / "data" / "reference-candidate-pack-v1.json").get("candidates", [])
+    if not validate_candidate_paths_not_registered_except_pilot(routes, candidates, error):
+        ok = False
 
+    from public_surface_checks import validate_pilot_sitemap
     try:
-        tree = ET.parse(ROOT / "sitemap.xml")
-        urls = tree.getroot().findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
-        if len(urls) != 1:
-            error("sitemap.xml: expansion detected")
+        if not validate_pilot_sitemap(routes, error):
             ok = False
     except ET.ParseError as exc:
         error(f"sitemap.xml parse failed: {exc}")
@@ -714,15 +723,10 @@ def validate_route_sitemap_public_safety() -> bool:
         error(".nojekyll must not be created in this sprint")
         ok = False
 
-    index_html = (ROOT / "index.html").read_text(encoding="utf-8").lower()
-    for slug in ["evidence-posture", "artifact-subject-separation"]:
-        if slug in index_html:
-            error(f"index.html: link to candidate slug {slug}")
-            ok = False
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
 

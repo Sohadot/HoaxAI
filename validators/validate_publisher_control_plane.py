@@ -75,7 +75,7 @@ REQUIRED_STATES = [
     "retired",
 ]
 
-REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 24)]
+REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 25)]
 
 REQUIRED_WORKFLOW_IDS = [f"PUB-WORKFLOW-{i:04d}" for i in range(1, 16)]
 
@@ -110,7 +110,18 @@ PROHIBITED_CURRENT_OUTPUTS = [
     "monetization",
 ]
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 WORKFLOW_ID_PATTERN = re.compile(r"^PUB-WORKFLOW-\d{4}$")
 GATE_ID_PATTERN = re.compile(r"^PUB-GATE-\d{4}$")
@@ -142,11 +153,14 @@ def validate_publisher_policy() -> bool:
     if data.get("status") != "governed_internal_publisher_policy":
         error("publisher-governance-policy.json: invalid status")
         ok = False
-    if data.get("maturity") != "publisher_blocked_until_first_controlled_public_reference_pilot":
+    if data.get("maturity") not in (
+        "publisher_blocked_until_first_controlled_public_reference_pilot",
+        "publisher_blocked_until_public_reference_validation_and_live_surface_audit",
+    ):
         error("publisher-governance-policy.json: invalid maturity")
         ok = False
-    if data.get("current_publisher_status") != "blocked_until_first_controlled_public_reference_pilot":
-        error("publisher-governance-policy.json: publisher must be blocked until first controlled public reference pilot")
+    if data.get("current_publisher_status") not in PUBLISHER_STATUSES_ALLOWED:
+        error(f"publisher-governance-policy.json: invalid current_publisher_status {data.get('current_publisher_status')}")
         ok = False
 
     allowed = " ".join(data.get("allowed_current_outputs", [])).lower()
@@ -265,7 +279,7 @@ def validate_state_machine() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
-        "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
@@ -432,8 +446,8 @@ def validate_repository_safety() -> bool:
     ok = True
 
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     candidates = load_json(ROOT / "data" / "reference-page-candidate-registry.json").get("candidates", [])
@@ -445,7 +459,7 @@ def validate_repository_safety() -> bool:
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"unexpected HTML file: {rel}")
             ok = False
 

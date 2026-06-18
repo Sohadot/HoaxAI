@@ -169,7 +169,18 @@ REAL_ENTITY_TERMS = [
 
 BAND_ID_PATTERN = re.compile(r"^PRIORITY-BAND-\d{4}$")
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 
 def error(msg: str) -> None:
@@ -432,6 +443,7 @@ def validate_publisher_and_gates() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
@@ -466,8 +478,8 @@ def validate_route_sitemap_public_safety() -> bool:
     pack = load_json(ROOT / "data" / "reference-candidate-pack-v1.json")
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
 
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
     sitemap_path = ROOT / "sitemap.xml"
@@ -486,20 +498,9 @@ def validate_route_sitemap_public_safety() -> bool:
         error(f"sitemap.xml parse failed: {exc}")
         ok = False
 
-    index_html = (ROOT / "index.html").read_text(encoding="utf-8").lower() if (ROOT / "index.html").exists() else ""
-    for candidate in pack.get("candidates", []):
-        slug = candidate.get("candidate_slug", "")
-        path = candidate.get("proposed_path", "").lower()
-        if slug and slug in index_html:
-            error(f"index.html: link to candidate slug {slug}")
-            ok = False
-        if path and path in index_html:
-            error(f"index.html: link to candidate path {path}")
-            ok = False
-
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
 

@@ -176,7 +176,18 @@ SECTION_ID_PATTERN = re.compile(r"^DRAFT-SECTION-\d{4}$")
 DRAFT_GATE_PATTERN = re.compile(r"^DRAFT-GATE-\d{4}$")
 PUB_GATE_PATTERN = re.compile(r"^PUB-GATE-\d{4}$")
 
-PUBLIC_FILES = {"index.html", "styles.css", "robots.txt", "sitemap.xml"}
+from public_surface_checks import (
+    ALLOWED_PUBLIC_HTML,
+    ALLOWED_PUBLIC_ROOT_FILES,
+    PUBLISHER_STATUSES_ALLOWED,
+    PUBLISHER_STATUS_POST_PILOT,
+    validate_no_extra_public_html,
+    validate_pilot_public_surface,
+    validate_pilot_route_registry,
+    validate_pilot_sitemap,
+)
+
+PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
 
 DRAFT_PATH_CANDIDATES = [ROOT / "internal" / "drafts", ROOT / "governance" / "drafts"]
 
@@ -532,6 +543,7 @@ def validate_publisher_and_gates() -> bool:
         "blocked_until_internal_draft_review_and_refinement",
         "blocked_until_public_route_readiness_gate",
         "blocked_until_first_controlled_public_reference_pilot",
+        "blocked_until_public_reference_validation_and_live_surface_audit",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
@@ -573,22 +585,18 @@ def validate_route_sitemap_public_safety() -> bool:
     pack = load_json(ROOT / "data" / "internal-draft-blueprint-pack-v1.json")
     routes = load_json(ROOT / "data" / "route-registry.json").get("routes", [])
 
-    if [r.get("route_id") for r in routes] != ["ROUTE-0001"]:
-        error("route-registry: unexpected routes added")
+    from public_surface_checks import validate_pilot_route_registry
+    if not validate_pilot_route_registry(routes, error):
         ok = False
 
-    for candidate in load_json(ROOT / "data" / "reference-candidate-pack-v1.json").get("candidates", []):
-        path = candidate.get("proposed_path", "").lower()
-        if any(r.get("path", "").lower() == path for r in routes):
-            error(f"route-registry: candidate path {path} must not be registered")
-            ok = False
+    from public_surface_checks import validate_candidate_paths_not_registered_except_pilot
+    candidates = load_json(ROOT / "data" / "reference-candidate-pack-v1.json").get("candidates", [])
+    if not validate_candidate_paths_not_registered_except_pilot(routes, candidates, error):
+        ok = False
 
-    sitemap_path = ROOT / "sitemap.xml"
+    from public_surface_checks import validate_pilot_sitemap
     try:
-        tree = ET.parse(sitemap_path)
-        urls = tree.getroot().findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
-        if len(urls) != 1:
-            error("sitemap.xml: expansion detected")
+        if not validate_pilot_sitemap(routes, error):
             ok = False
     except ET.ParseError as exc:
         error(f"sitemap.xml parse failed: {exc}")
@@ -601,28 +609,9 @@ def validate_route_sitemap_public_safety() -> bool:
                     error(f"public safety: draft directory content at {item.relative_to(ROOT)}")
                     ok = False
 
-    index_html = (ROOT / "index.html").read_text(encoding="utf-8").lower()
-    for candidate in pack.get("blueprints", []):
-        cand_pack = next(
-            (
-                c
-                for c in load_json(ROOT / "data" / "reference-candidate-pack-v1.json").get("candidates", [])
-                if c.get("candidate_id") == candidate.get("candidate_id")
-            ),
-            {},
-        )
-        slug = cand_pack.get("candidate_slug", "").lower()
-        path = cand_pack.get("proposed_path", "").lower()
-        if slug and slug in index_html:
-            error(f"index.html: link to candidate slug {slug}")
-            ok = False
-        if path and path in index_html:
-            error(f"index.html: link to candidate path {path}")
-            ok = False
-
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in PUBLIC_FILES:
+        if rel not in ALLOWED_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
 
