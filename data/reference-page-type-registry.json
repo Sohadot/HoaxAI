@@ -1,0 +1,113 @@
+{
+  "registry_id": "REF-PAGE-TYPE-REGISTRY-001",
+  "name": "Hoax.ai Reference Page Type Registry",
+  "version": "v1.0.0",
+  "status": "active",
+  "page_types": [
+    {
+      "page_type_id": "REF-TYPE-0001",
+      "name": "Category Language Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a governed category language term from category-language registry.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, subject accusation, thin SEO",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0002",
+      "name": "Evidence Posture State Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a taxonomy posture state and its bounded use.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, truth machine language",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0003",
+      "name": "Evidence Posture Dimension Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a taxonomy posture dimension.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, detection authority",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0004",
+      "name": "Standard Element Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a standard dimension or sufficiency rule element.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, unsupported superiority",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0005",
+      "name": "Protocol Stage Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a protocol stage and its governed role.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, classifier availability, public tool",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0006",
+      "name": "Output Boundary Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining output boundary schema fields or language contracts.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, verdict language, subject accusation",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0007",
+      "name": "Governance Boundary Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a governance boundary, policy, or claim discipline element.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real verdict, unmapped claims",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    },
+    {
+      "page_type_id": "REF-TYPE-0008",
+      "name": "Reference Framework Page",
+      "status": "blueprint_only",
+      "route_allowed_currently": false,
+      "description": "Future page explaining a reference framework concept such as synthetic fragility or source confidence.",
+      "required_sections": ["page_thesis", "definition_scope", "governance_boundary", "relationship_to_taxonomy_standard_protocol", "allowed_use", "prohibited_misreadings", "claim_and_source_traceability", "internal_links", "last_reviewed"],
+      "required_claim_mapping": true,
+      "required_source_scope": true,
+      "required_internal_links": true,
+      "prohibited_content": "tool implication, upload, scoring, fake/real detector, thin SEO, keyword stuffing",
+      "notes": "Blueprint only. Not a route. Not publicly available."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

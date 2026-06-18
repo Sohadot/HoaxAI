@@ -539,19 +539,43 @@ Public classifier remains blocked. External deployment remains blocked.
 
 ## Sprint 13 — Reference Page Blueprint and Expansion Gate v1
 
-**Status:** READY — G12 passed  
+**Status:** COMPLETE — 2026-06-17  
 **Goal:** Define the governed blueprint and expansion gate for reference pages before any reference layer publication, SEO growth, or route addition.
 
 ### Deliverables
 
-- Reference page blueprint and expansion gate (future — not in current scope)
-- no public reference pages yet
-- no route expansion yet
-- no SEO expansion yet
+- REFERENCE_PAGE_BLUEPRINT.md
+- data/reference-page-blueprint.json
+- data/reference-page-type-registry.json
+- data/reference-expansion-gate.json
+- data/reference-page-candidate-registry.json
+- validators/validate_reference_page_blueprint.py
+- SPRINT_13_REFERENCE_PAGE_BLUEPRINT_AUDIT.md
+- DEC-029 appended to DECISION_LOG.md
+- validators/validate_all.py updated
 
-### Required Principle
+### Validation
 
-Reference expansion must pass blueprint and expansion gate validation before publication. Public classifier remains blocked. External deployment remains blocked. DNS, Cloudflare, and custom domain work remain in later deployment gates (DEPLOY-G1 through DEPLOY-G3), not current foundation steps.
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Blueprint Scope
+
+- 8 future page types registered (REF-TYPE-0001 through REF-TYPE-0008)
+- Empty candidate registry (no candidates added)
+- 17 evidence ledger claims (CLAIM-0017 added)
+- No public pages added
+- No public routes added
+- No sitemap expansion
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Blueprint is pre_reference_expansion_gate.
+
+### Next Phase
+
+**Sprint 14 — Content Quality and Reference Substance Standard v1**
+
+Public classifier remains blocked. External deployment remains blocked. DNS, Cloudflare, and custom domain work remain in later deployment gates (DEPLOY-G1 through DEPLOY-G3).
 
 ---
 

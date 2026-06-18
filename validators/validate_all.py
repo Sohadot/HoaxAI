@@ -16,6 +16,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_link_route_integrity.py",
     ROOT / "validators" / "validate_claim_source_traceability.py",
     ROOT / "validators" / "validate_technical_quality_gate.py",
+    ROOT / "validators" / "validate_reference_page_blueprint.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

@@ -21,6 +21,7 @@ GOVERNANCE_FILES = [
     "LINK_ROUTE_INTEGRITY_POLICY.md",
     "CLAIM_SOURCE_TRACEABILITY_POLICY.md",
     "TECHNICAL_QUALITY_GATE.md",
+    "REFERENCE_PAGE_BLUEPRINT.md",
     "INTERNAL_ENGINE_MODEL.md",
     "OUTPUT_BOUNDARY_SCHEMA.md",
     "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
@@ -62,6 +63,10 @@ DATA_FILES = [
     "data/technical-quality-gate.json",
     "data/public-file-registry.json",
     "data/html-metadata-registry.json",
+    "data/reference-page-blueprint.json",
+    "data/reference-page-type-registry.json",
+    "data/reference-expansion-gate.json",
+    "data/reference-page-candidate-registry.json",
 ]
 
 VALIDATORS = [
@@ -73,6 +78,7 @@ VALIDATORS = [
     "validators/validate_link_route_integrity.py",
     "validators/validate_claim_source_traceability.py",
     "validators/validate_technical_quality_gate.py",
+    "validators/validate_reference_page_blueprint.py",
     "validators/generate_build_manifest.py",
 ]
 

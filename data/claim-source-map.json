@@ -180,6 +180,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Technical quality gate adoption per DEC-027."
+    },
+    {
+      "claim_id": "CLAIM-0017",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["REFERENCE_PAGE_BLUEPRINT.md", "DECISION_LOG.md", "data/reference-page-blueprint.json"],
+      "source_refs": ["SOURCE-0052", "SOURCE-0053", "SOURCE-0057"],
+      "support_scope": "reference page blueprint and expansion gate adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Reference blueprint adoption per DEC-029."
     }
   ],
   "last_reviewed": "2026-06-17"

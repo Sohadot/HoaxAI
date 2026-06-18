@@ -1,0 +1,59 @@
+{
+  "gate_id": "REF-EXPANSION-GATE-001",
+  "name": "Hoax.ai Reference Expansion Gate",
+  "version": "v1.0.0",
+  "status": "governed_internal_reference_expansion_gate",
+  "maturity": "pre_expansion",
+  "governing_principle": "No reference page may become public without passing blueprint, claim, source, route, link, metadata, interface, privacy, and technical quality gates.",
+  "candidate_statuses": [
+    "proposed_internal",
+    "blueprint_checked",
+    "claim_mapping_required",
+    "source_scope_required",
+    "route_candidate",
+    "validation_pending",
+    "release_eligible",
+    "blocked",
+    "retired"
+  ],
+  "required_pre_release_checks": [
+    "candidate_registry_entry",
+    "route_registry_entry",
+    "claim_source_map_alignment",
+    "public_claim_map_prepared",
+    "source_registry_alignment",
+    "link_graph_update",
+    "sitemap_eligibility_confirmed",
+    "technical_quality_validation",
+    "forbidden_language_validation",
+    "interface_governance_validation",
+    "security_privacy_validation",
+    "validate_all_py_pass",
+    "final_audit"
+  ],
+  "blocked_conditions": [
+    "missing_route_registry",
+    "missing_claim_mapping",
+    "missing_source_scope",
+    "broken_links",
+    "sitemap_mismatch",
+    "unsupported_external_claim",
+    "forbidden_language",
+    "tool_implication",
+    "upload_implication",
+    "scoring_implication",
+    "subject_accusation",
+    "technical_quality_failure",
+    "thin_seo_content",
+    "placeholder_page",
+    "unmapped_public_claim"
+  ],
+  "release_eligibility_rules": [
+    "candidate_must_be_release_eligible_status",
+    "route_must_be_registered_and_active",
+    "all_pre_release_checks_must_pass",
+    "validate_all_py_must_pass_before_public_release",
+    "no_public_release_without_final_audit"
+  ],
+  "last_reviewed": "2026-06-17"
+}

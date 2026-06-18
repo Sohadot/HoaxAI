@@ -1,0 +1,121 @@
+{
+  "blueprint_id": "REF-BLUEPRINT-001",
+  "name": "Hoax.ai Reference Page Blueprint",
+  "version": "v1.0.0",
+  "status": "governed_internal_reference_blueprint",
+  "maturity": "pre_reference_expansion_gate",
+  "governing_principle": "A reference page is not a URL. It is a governed unit of reference value. No reference expansion before blueprint, claim mapping, route eligibility, source scope, link integrity, and technical quality gates exist.",
+  "reference_page_definition": "A public page that explains a governed concept, term, posture state, dimension, standard element, protocol element, source/claim boundary, or reference framework in a useful, bounded, internally linked, claim-traceable, technically valid, and non-thin way.",
+  "prohibited_page_types": [
+    "thin_seo_pages",
+    "keyword_only_pages",
+    "placeholder_pages",
+    "future_route_teaser_pages",
+    "tool_implying_pages",
+    "upload_implying_pages",
+    "fake_real_detector_pages",
+    "sensational_example_pages",
+    "accusation_oriented_pages",
+    "unsupported_superiority_pages",
+    "unmapped_public_claim_pages",
+    "unsupported_external_factual_claim_pages",
+    "uncandidate_registered_pages"
+  ],
+  "allowed_future_page_families": [
+    {
+      "family_id": "REF-FAMILY-0001",
+      "name": "Category Language Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0002",
+      "name": "Evidence Posture State Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0003",
+      "name": "Evidence Posture Dimension Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0004",
+      "name": "Standard Element Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0005",
+      "name": "Protocol Stage Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0006",
+      "name": "Output Boundary Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0007",
+      "name": "Governance Boundary Pages",
+      "route_status": "future_not_routes"
+    },
+    {
+      "family_id": "REF-FAMILY-0008",
+      "name": "Reference Framework Pages",
+      "route_status": "future_not_routes"
+    }
+  ],
+  "minimum_page_requirements": [
+    "registered_candidate_id",
+    "approved_page_family",
+    "route_candidate_status",
+    "defined_reference_purpose",
+    "page_thesis",
+    "target_concept_or_governed_entity",
+    "allowed_claim_scope",
+    "required_claim_mappings",
+    "source_support_scope",
+    "internal_link_obligations",
+    "metadata_requirements",
+    "canonical_plan",
+    "sitemap_eligibility_plan",
+    "governance_boundary",
+    "technical_quality_compliance",
+    "no_active_tool_implication",
+    "no_subject_accusation_risk",
+    "no_fake_real_verdict_language",
+    "no_scoring_language"
+  ],
+  "required_page_sections": [
+    "page_thesis",
+    "definition_scope",
+    "governance_boundary",
+    "relationship_to_taxonomy_standard_protocol",
+    "allowed_use",
+    "prohibited_misreadings",
+    "claim_and_source_traceability",
+    "internal_links",
+    "last_reviewed"
+  ],
+  "expansion_gate_requirements": [
+    "candidate_registry_entry",
+    "route_registry_entry",
+    "claim_source_map_alignment",
+    "public_claim_map_prepared",
+    "source_registry_alignment",
+    "link_graph_update",
+    "sitemap_eligibility",
+    "technical_quality_validation",
+    "forbidden_language_validation",
+    "interface_governance_validation",
+    "security_privacy_validation",
+    "final_audit"
+  ],
+  "sitemap_eligibility_requirements": [
+    "public_file_exists",
+    "route_active_in_route_registry",
+    "sitemap_eligible_flag_true",
+    "internal_links_valid",
+    "claim_source_traceability_passes",
+    "technical_quality_passes"
+  ],
+  "last_reviewed": "2026-06-17"
+}

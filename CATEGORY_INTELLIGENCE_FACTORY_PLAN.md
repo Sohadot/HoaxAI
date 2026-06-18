@@ -62,6 +62,8 @@ The category factory cannot scale its reference layer until routes, sitemap entr
 
 The category factory cannot expand its reference layer until its public file structure, metadata, accessibility, dependency posture, and static security posture are validated.
 
+Reference expansion is not a content activity alone. It is a governed transformation from category language and ontology into public reference units that must pass claim, source, route, link, metadata, interface, privacy, and technical gates.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

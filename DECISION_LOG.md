@@ -712,3 +712,27 @@ ROADMAP.md correctly identified Sprint 13 — Reference Page Blueprint and Expan
 - Sprint 1C and external deployment remain blocked.
 - Obsolete ROADMAP sections for old Sprint 6–9 duplicate numbering are removed.
 - No DNS, Cloudflare, or external deployment work is implied as near-term.
+
+---
+
+## DEC-029 — Reference Page Blueprint and Expansion Gate v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Reference Page Blueprint and Expansion Gate v1 to define the minimum structural, conceptual, claim, source, link, route, metadata, technical, and governance requirements for any future reference page before public expansion is allowed.
+
+### Rationale
+
+Reference authority cannot be created by adding pages. A future page must justify its existence as a governed unit of reference value. Without a blueprint and expansion gate, reference growth could become thin SEO, route inflation, unsupported claims, broken links, or public-surface overreach.
+
+### Implications
+
+- No new public reference page may be created without blueprint compliance.
+- No reference route may be added to route-registry until candidate requirements pass.
+- No reference page may enter sitemap.xml until route, claim, source, link, technical, metadata, interface, and security checks pass.
+- No page may be created only for SEO keywords.
+- Future reference expansion remains blocked until this gate is satisfied.
+- External deployment remains blocked.

@@ -49,10 +49,10 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G10 | Link and route integrity hardening | Sprint 10 validator PASS |
 | G11 | Claim and source traceability hardening | Sprint 11 validator PASS |
 | G12 | Technical quality gate hardening | Sprint 12 validator PASS |
-| G13 | Reference Page Blueprint and Expansion Gate | Sprint 13 validator PASS — **pending** |
+| G13 | Reference Page Blueprint and Expansion Gate | Sprint 13 validator PASS |
 | G14 | Content Quality and Reference Substance Standard | Sprint 14 validator PASS — **pending** |
 
-**Gate G12 passed.** Sprint 13 (Reference Page Blueprint and Expansion Gate) may proceed. Public classifier and tool remain blocked. External deployment remains deferred until deployment gates pass.
+**Gate G13 passed.** Sprint 14 (Content Quality and Reference Substance Standard) may proceed. Public classifier and tool remain blocked. External deployment remains deferred until deployment gates pass.
 
 ### Foundation Gates vs Deployment Gates
 
@@ -168,8 +168,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 10 | COMPLETE | G10 passed |
 | Sprint 11 | COMPLETE | G11 passed |
 | Sprint 12 | COMPLETE | G12 passed |
-| Sprint 13 | READY | G13 pending — reference expansion gate |
-| Sprint 14+ | BLOCKED | Requires G13; deployment gates not passed |
+| Sprint 13 | COMPLETE | G13 passed |
+| Sprint 14+ | READY | G13 passed — proceed per phase order; G1C and deployment gates not passed; public tool blocked |
 
 ## Governing Sentence
 
