@@ -905,6 +905,31 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Non-Public Static Workbench Visual System Hardening adoption per DEC-056."
+    },
+    {
+      "claim_id": "CLAIM-0045",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_VALIDATION_V1.md",
+        "DECISION_LOG.md",
+        "data/non-public-static-workbench-visual-system-hardening-validation-policy.json"
+      ],
+      "source_refs": [
+        "SOURCE-0242",
+        "SOURCE-0243",
+        "SOURCE-0244",
+        "SOURCE-0245",
+        "SOURCE-0246",
+        "SOURCE-0247",
+        "SOURCE-0248",
+        "SOURCE-0249",
+        "SOURCE-0250"
+      ],
+      "support_scope": "non-public static workbench visual system hardening validation adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Non-Public Static Workbench Visual System Hardening Validation adoption per DEC-057."
     }
   ],
   "last_reviewed": "2026-06-18"

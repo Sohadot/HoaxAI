@@ -1,0 +1,251 @@
+{
+  "validation_id": "NP-VIS-HARDENING-VALIDATION-RESULTS-001",
+  "name": "Non-Public Static Workbench Visual System Hardening Validation Results v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_visual_system_hardening_validated",
+  "maturity": "validation_only_hardened_static_internal_visual_system_no_engine_no_classifier_no_public_route",
+  "validation_dimensions": [
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0001",
+      "dimension": "Visual Hardening Policy Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0002",
+      "dimension": "Token Contract Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0003",
+      "dimension": "Pattern Registry Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0004",
+      "dimension": "Anti-Pattern Audit Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0005",
+      "dimension": "Boundary Audit Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0006",
+      "dimension": "Allowed File Scope Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0007",
+      "dimension": "Prototype File Count Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0008",
+      "dimension": "Static HTML Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0009",
+      "dimension": "Static CSS Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0010",
+      "dimension": "CSS Token Presence",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0011",
+      "dimension": "Evidence Field Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0012",
+      "dimension": "Evidence Chamber Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0013",
+      "dimension": "Boundary Rail Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0014",
+      "dimension": "Provenance Shadow Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0015",
+      "dimension": "Missing Context Absence Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0016",
+      "dimension": "Not-Assessable Restraint Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0017",
+      "dimension": "Refusal Gate Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0018",
+      "dimension": "Output Envelope Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0019",
+      "dimension": "Verification Path Hardening",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0020",
+      "dimension": "Anti-Detector Identity Preservation",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0021",
+      "dimension": "Anti-Upload Dashboard Preservation",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0022",
+      "dimension": "Anti-Scoring Dashboard Preservation",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0023",
+      "dimension": "Anti-SaaS Dashboard Preservation",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0024",
+      "dimension": "No JavaScript",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0025",
+      "dimension": "No Forms or Inputs",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0026",
+      "dimension": "No Upload Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0027",
+      "dimension": "No Scoring Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0028",
+      "dimension": "No Fake/Real Verdict Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0029",
+      "dimension": "No Generated Output Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0030",
+      "dimension": "No API/Network/Storage Behavior",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0031",
+      "dimension": "No Analytics",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0032",
+      "dimension": "Public Route Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0033",
+      "dimension": "Sitemap Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0034",
+      "dimension": "Public Navigation Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0035",
+      "dimension": "Homepage Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0036",
+      "dimension": "Reference Page Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0037",
+      "dimension": "Language Page Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0038",
+      "dimension": "Accessibility and Semantic Structure",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0039",
+      "dimension": "Mobile/Responsive Stability",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0040",
+      "dimension": "No Real-World Content",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0041",
+      "dimension": "No External Factual Claims",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0042",
+      "dimension": "Non-Authorization Rule Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0043",
+      "dimension": "Publisher Gate Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0044",
+      "dimension": "Reference Expansion Gate Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "NP-VIS-VAL-DIM-0045",
+      "dimension": "Python Cache Exclusion",
+      "result": "pass"
+    }
+  ],
+  "hardening_artifact_results": {
+    "doctrine": "pass",
+    "policy": "pass",
+    "token_contract": "pass",
+    "pattern_registry": "pass",
+    "antipattern_audit": "pass",
+    "boundary_audit": "pass"
+  },
+  "token_system_result": "token_system_validated",
+  "pattern_system_result": "pattern_system_validated",
+  "antipattern_blocking_result": "visual_antipattern_blocking_validated",
+  "public_isolation_result": "hardening_public_isolation_validated",
+  "static_safety_result": "hardening_static_safety_validated",
+  "governance_alignment_result": "governance_alignment_validated",
+  "python_cache_result": "python_cache_excluded",
+  "overall_result": "non_public_static_visual_system_hardening_validated",
+  "last_reviewed": "2026-06-18"
+}

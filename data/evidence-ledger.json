@@ -486,6 +486,17 @@
       "status": "active",
       "last_reviewed": "2026-06-18",
       "notes": "Visual system hardening strengthens internal static prototype identity. No public route, engine, classifier, upload, scoring, or public tool authorized."
+    },
+    {
+      "claim_id": "CLAIM-0045",
+      "claim_text": "Hoax.ai has adopted Non-Public Static Workbench Visual System Hardening Validation v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING_VALIDATION_V1.md, DECISION_LOG.md (DEC-057)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-18",
+      "notes": "Visual system hardening validated as eligible for baseline lock. No prototype file modification, public route, engine, classifier, upload, scoring, or public tool authorized."
     }
   ]
 }

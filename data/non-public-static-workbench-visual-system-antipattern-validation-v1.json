@@ -1,0 +1,26 @@
+{
+  "antipattern_validation_id": "NP-VIS-ANTIPATTERN-VALIDATION-001",
+  "name": "Non-Public Static Workbench Visual System Anti-Pattern Validation v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_visual_antipatterns_validated",
+  "maturity": "antipattern_validation_only_no_detector_no_dashboard_no_public_tool",
+  "blocked_antipattern_results": {
+    "detector_dashboard_blocked": "validated",
+    "scanner_ui_blocked": "validated",
+    "upload_dashboard_blocked": "validated",
+    "red_green_fake_real_interface_blocked": "validated",
+    "truth_meter_blocked": "validated",
+    "risk_gauge_blocked": "validated",
+    "probability_meter_blocked": "validated",
+    "forensic_game_interface_blocked": "validated",
+    "policing_dashboard_blocked": "validated",
+    "saas_analytics_dashboard_blocked": "validated",
+    "product_landing_page_cta_blocked": "validated",
+    "try_it_now_interface_blocked": "validated",
+    "black_cyber_dashboard_default_blocked": "validated"
+  },
+  "css_language_result": "css_language_preserves_evidence_field_not_detector_dashboard",
+  "html_language_result": "html_language_preserves_evidence_chamber_not_detector_tool",
+  "overall_result": "visual_antipattern_blocking_validated",
+  "last_reviewed": "2026-06-18"
+}

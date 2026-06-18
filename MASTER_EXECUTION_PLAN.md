@@ -174,6 +174,10 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 
 Gate G38 is passed after Non-Public Static Workbench Visual System Hardening exists; hardening policy exists; token contract exists; pattern registry exists; anti-pattern audit exists; boundary audit exists; validator exists; validate_all.py PASS; only index.html and prototype.css are modified in the prototype directory; and no new prototype files, public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, deployment changes, or Python cache files are created, staged, or committed.
 
+## G39: Non-Public Static Workbench Visual System Hardening Validation
+
+Gate G39 is passed after Non-Public Static Workbench Visual System Hardening Validation exists; validation policy exists; validation results exist; token validation exists; pattern validation exists; anti-pattern validation exists; public isolation audit exists; static safety audit exists; validator exists; validate_all.py PASS; Sprint 38 hardening is accepted as eligible for visual-system baseline lock; the prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no prototype files, new prototype files, public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, or deployment changes are created.
+
 ## Current Execution State
 
 | Sprint | Status | Gate |

@@ -1,0 +1,46 @@
+{
+  "token_validation_id": "NP-VIS-TOKEN-VALIDATION-001",
+  "name": "Non-Public Static Workbench Visual System Token Validation v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_visual_system_token_validated",
+  "maturity": "token_validation_only_no_public_interface_no_engine",
+  "token_family_results": {
+    "background_field": "validated",
+    "chamber_surface": "validated",
+    "chamber_edge": "validated",
+    "graphite_text": "validated",
+    "muted_text": "validated",
+    "boundary_accent": "validated",
+    "provenance_line": "validated",
+    "provenance_shadow": "validated",
+    "absence_field": "validated",
+    "not_assessable_surface": "validated",
+    "refusal_surface": "validated",
+    "output_envelope_surface": "validated",
+    "verification_path_line": "validated",
+    "subtle_rule": "validated",
+    "focus_ring": "validated",
+    "mobile_spacing": "validated"
+  },
+  "token_principle_results": {
+    "tokens_are_local_to_prototype_css": "validated",
+    "tokens_are_conceptual_not_decorative": "validated",
+    "tokens_support_governed_evidence_field": "validated",
+    "tokens_support_evidence_chamber_identity": "validated",
+    "tokens_do_not_imply_scoring_verdict_upload_classifier_or_detector": "validated",
+    "tokens_do_not_depend_on_external_assets": "validated"
+  },
+  "forbidden_token_pattern_results": {
+    "black_cyber_dashboard_default": "blocked",
+    "neon_detector_palette": "blocked",
+    "red_green_verdict_system": "blocked",
+    "score_severity_palette": "blocked",
+    "upload_dashboard_cta_palette": "blocked",
+    "saas_analytics_gradient_system": "blocked",
+    "external_font_dependency": "blocked",
+    "external_url_dependency": "blocked"
+  },
+  "css_observation_result": "css_tokens_observed_without_external_dependencies",
+  "overall_result": "token_system_validated",
+  "last_reviewed": "2026-06-18"
+}

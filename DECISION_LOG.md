@@ -1451,3 +1451,34 @@ The refined prototype baseline has passed validation. The next step is to harden
 - No public navigation may link to the prototype.
 - No JavaScript, forms, inputs, upload controls, scoring, fake/real output, generated output, API, analytics, or engine behavior may be introduced.
 - Future work must validate the hardened visual system before any further hardening, expansion, or interface phase.
+
+
+---
+
+## DEC-057 — Non-Public Static Workbench Visual System Hardening Validation v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Visual System Hardening Validation v1 to validate the Sprint 38 hardened internal static Evidence Posture Workbench visual system across visual token integrity, conceptual pattern integrity, anti-pattern blocking, static safety, public isolation, file-scope discipline, and non-authorization boundaries before accepting the hardened visual system as the current internal static visual baseline.
+
+### Rationale
+
+Sprint 38 strengthened the internal visual system, but hardening must be validated before it becomes baseline. The validation must confirm that the evidence field, evidence chamber, boundary rails, provenance shadows, missing-context absence, not-assessable restraint, refusal gate, output envelope containment, and verification path are stronger while operational capability remains zero and the prototype remains non-public, static, unlinked, unrouted, and unindexed.
+
+### Implications
+
+- Sprint 38 visual hardening may be audited.
+- Token contract may be validated.
+- Pattern registry may be validated.
+- Anti-pattern blocking may be validated.
+- Static safety may be validated.
+- Public isolation may be validated.
+- No prototype files may be modified in this sprint.
+- No new prototype files may be created.
+- No public route or sitemap entry may be created.
+- No public navigation may link to the prototype.
+- No engine, classifier, upload, scoring, API, analytics, DNS, Cloudflare, deployment change, or public tool behavior may be introduced.
+- Future work may move to visual system baseline lock only after this validation passes.
