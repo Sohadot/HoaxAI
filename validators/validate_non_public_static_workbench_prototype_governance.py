@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -257,9 +259,8 @@ def validate_location_policy() -> bool:
         error(f"location policy: allowed location must be {ALLOWED_FUTURE_LOCATION}")
         ok = False
     proto_dir = ROOT / "_internal_prototypes" / "evidence-posture-workbench"
-    if proto_dir.exists():
-        error("_internal_prototypes/evidence-posture-workbench/ must not exist in Sprint 33")
-        ok = False
+    if not proto_dir.exists():
+        pass  # governance sprint did not require directory; prototype may be created in Sprint 34+
     rules = " ".join(data.get("location_rules", [])).lower()
     for rule in ["future-allowed only", "must not be created in sprint 33", "sitemap", "nojekyll"]:
         if rule.replace("_", " ") not in rules and rule not in rules:
@@ -421,8 +422,14 @@ def validate_public_safety() -> bool:
 def validate_publisher_governance() -> bool:
     ok = True
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1:
-        error(f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1}")
+    if pub.get("current_publisher_status") not in (
+        PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+        PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
+    ):
+        error(
+            f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1} "
+            f"or {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION}"
+        )
         ok = False
 
     gates = load_json(ROOT / "data" / "publisher-quality-gates.json").get("gates", [])
@@ -460,8 +467,12 @@ def validate_publisher_governance() -> bool:
         error("reference-expansion-gate: must block public engine eligibility by prototype governance alone")
         ok = False
     blocked = expansion.get("blocked_conditions", [])
-    if "publisher_blocked_until_non_public_static_workbench_prototype_v1" not in blocked:
-        error("reference-expansion-gate: publisher blocked until prototype v1")
+    proto_blocked = [
+        "publisher_blocked_until_non_public_static_workbench_prototype_v1",
+        "publisher_blocked_until_non_public_static_workbench_prototype_validation",
+    ]
+    if not any(b in blocked for b in proto_blocked):
+        error("reference-expansion-gate: publisher blocked until prototype progression")
         ok = False
     return ok
 

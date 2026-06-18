@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_non_public_static_workbench_prototype_v1",
+  "maturity": "publisher_blocked_until_non_public_static_workbench_prototype_validation",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -396,6 +396,21 @@
       "failure_condition": "non_public_static_workbench_prototype_governance_not_met",
       "bypassable": false,
       "notes": "Prototype governance defined Sprint 33 (DEC-051). Defines future non-public static prototype location, scope, visual identity, safety boundaries, and review gates. Does not authorize prototype files, interface, engine, classifier, tool, upload, scoring, API, forms, analytics, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or monetization in Sprint 33."
+    },
+    {
+      "gate_id": "PUB-GATE-0034",
+      "name": "Non-Public Static Workbench Prototype v1 Gate",
+      "status": "non_public_static_workbench_prototype_v1_created_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_non_public_static_workbench_prototype_validation": true,
+      "required_before_any_interface_prototype_expansion": true,
+      "validation_source": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_V1.md",
+      "failure_condition": "non_public_static_workbench_prototype_v1_not_met",
+      "bypassable": false,
+      "notes": "Non-public static prototype v1 defined Sprint 34 (DEC-052). Creates static HTML/CSS in _internal_prototypes/evidence-posture-workbench/ only. Does not authorize public routes, sitemap entries, navigation links, engine, classifier, tool, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, or monetization."
     }
   ],
   "last_reviewed": "2026-06-17"

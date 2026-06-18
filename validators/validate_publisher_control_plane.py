@@ -75,7 +75,7 @@ REQUIRED_STATES = [
     "retired",
 ]
 
-REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 34)]
+REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 35)]
 
 REQUIRED_WORKFLOW_IDS = [f"PUB-WORKFLOW-{i:04d}" for i in range(1, 16)]
 
@@ -111,7 +111,7 @@ PROHIBITED_CURRENT_OUTPUTS = [
 ]
 
 from public_surface_checks import (
-    ALLOWED_PUBLIC_HTML,
+    ALLOWED_NON_PUBLIC_HTML,
     ALLOWED_PUBLIC_ROOT_FILES,
     PUBLISHER_STATUSES_ALLOWED,
     PUBLISHER_STATUS_POST_PILOT,
@@ -165,6 +165,7 @@ def validate_publisher_policy() -> bool:
         "publisher_blocked_until_workbench_interface_blueprint_validation",
         "publisher_blocked_until_non_public_static_workbench_prototype_governance",
         "publisher_blocked_until_non_public_static_workbench_prototype_v1",
+        "publisher_blocked_until_non_public_static_workbench_prototype_validation",
     ):
         error("publisher-governance-policy.json: invalid maturity")
         ok = False
@@ -298,6 +299,7 @@ def validate_state_machine() -> bool:
         "blocked_until_workbench_interface_blueprint_validation",
         "blocked_until_non_public_static_workbench_prototype_governance",
         "blocked_until_non_public_static_workbench_prototype_v1",
+        "blocked_until_non_public_static_workbench_prototype_validation",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
@@ -477,7 +479,7 @@ def validate_repository_safety() -> bool:
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in ALLOWED_PUBLIC_HTML:
+        if rel not in ALLOWED_NON_PUBLIC_HTML:
             error(f"unexpected HTML file: {rel}")
             ok = False
 

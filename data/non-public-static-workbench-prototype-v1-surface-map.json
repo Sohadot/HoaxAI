@@ -1,0 +1,23 @@
+{
+  "surface_map_id": "NP-PROTO-V1-SURFACE-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype v1 Surface Map",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_prototype_v1_surface_mapped",
+  "maturity": "static_internal_prototype_only_no_engine_no_classifier_no_tool_no_public_route",
+  "prototype_surface": [
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+    "_internal_prototypes/evidence-posture-workbench/prototype.css"
+  ],
+  "public_surface_status": "non_public_web_surface_repository_visible",
+  "route_status": "not_registered_as_public_route",
+  "sitemap_status": "not_in_sitemap",
+  "navigation_status": "not_linked_from_public_navigation",
+  "current_public_surface": [
+    "homepage root",
+    "/reference/evidence-posture/",
+    "/reference/artifact-subject-separation/",
+    "/language/"
+  ],
+  "non_authorization_statement": "Prototype surface is repository-visible but non-public. No public route, sitemap entry, or navigation link is created.",
+  "last_reviewed": "2026-06-17"
+}

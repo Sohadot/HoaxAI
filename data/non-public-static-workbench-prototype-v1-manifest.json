@@ -1,0 +1,46 @@
+{
+  "prototype_id": "NP-PROTO-V1-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_prototype_v1_created",
+  "maturity": "static_internal_prototype_only_no_engine_no_classifier_no_tool_no_public_route",
+  "location": "_internal_prototypes/evidence-posture-workbench/",
+  "files": [
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+    "_internal_prototypes/evidence-posture-workbench/prototype.css"
+  ],
+  "source_governance_refs": [
+    "EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_GOVERNANCE.md",
+    "EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION.md",
+    "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_GOVERNANCE.md"
+  ],
+  "visual_identity_refs": [
+    "data/non-public-static-workbench-prototype-visual-identity-contract.json",
+    "data/evidence-posture-workbench-interface-conceptual-identity-validation-v1.json"
+  ],
+  "allowed_next_phase": "Sprint 35 — Non-Public Static Workbench Prototype Validation v1",
+  "prohibited_capabilities": [
+    "public_route",
+    "sitemap_entry",
+    "public_navigation",
+    "engine",
+    "classifier",
+    "detector",
+    "upload",
+    "scoring",
+    "fake_real_output",
+    "forms",
+    "inputs",
+    "API",
+    "analytics",
+    "storage",
+    "network_calls",
+    "monetization",
+    "DNS",
+    "Cloudflare",
+    "custom_domain_launch",
+    "deployment_change"
+  ],
+  "non_authorization_statement": "Prototype v1 is a static internal visual artifact. It does not authorize public routes, sitemap entries, navigation links, engine, classifier, upload, scoring, or public tool behavior.",
+  "last_reviewed": "2026-06-17"
+}

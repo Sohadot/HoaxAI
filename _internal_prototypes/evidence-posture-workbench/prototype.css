@@ -1,0 +1,245 @@
+/* Non-Public Static Evidence Posture Workbench Prototype v1
+   Governed evidence field — not detector dashboard.
+   Pale document field, boundary rails, provenance shadow, output containment.
+   No external imports. No animations required. Mobile-safe. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body.evidence-field {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3d3a36;
+  background-color: #e8e4dc;
+  background-image:
+    linear-gradient(180deg, rgba(200, 196, 188, 0.35) 0%, transparent 40%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 47px,
+      rgba(140, 160, 175, 0.08) 47px,
+      rgba(140, 160, 175, 0.08) 48px
+    );
+}
+
+.prototype-banner {
+  padding: 0.75rem 1.25rem;
+  background: #d4cfc4;
+  border-bottom: 2px solid #b87333;
+  font-family: system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #3d3a36;
+  text-align: center;
+}
+
+.zone-label {
+  margin: 0 0 0.5rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8c7a6a;
+}
+
+.chamber-layout {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .chamber-layout {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .zone-boundary-header,
+  .zone-output-envelope,
+  .zone-verification-questions {
+    grid-column: 1 / -1;
+  }
+}
+
+.zone {
+  background: rgba(248, 246, 242, 0.92);
+  border: 1px solid rgba(140, 160, 175, 0.25);
+  border-left: 3px solid #b87333;
+  border-radius: 2px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(61, 58, 54, 0.06);
+}
+
+.zone-boundary-header {
+  border-left-width: 4px;
+  background: rgba(245, 243, 238, 0.95);
+}
+
+.zone h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c2926;
+  line-height: 1.3;
+}
+
+.zone h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4a4743;
+  border-bottom: 1px solid rgba(184, 115, 51, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.identity-statement,
+.conceptual-phrase {
+  margin: 0.5rem 0;
+  font-size: 0.9375rem;
+}
+
+.conceptual-phrase {
+  font-style: italic;
+  color: #5a5650;
+  border-left: 2px solid rgba(184, 115, 51, 0.5);
+  padding-left: 0.75rem;
+}
+
+.component {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: #f5f3ee;
+  border: 1px solid rgba(140, 160, 175, 0.2);
+  border-radius: 2px;
+}
+
+.component-label {
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7a756c;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder {
+  margin: 0.25rem 0;
+  color: #4a4743;
+}
+
+.concept-tag {
+  margin: 0.5rem 0 0;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: #8c7a6a;
+}
+
+.provenance-gap-indicator {
+  margin-top: 0.75rem;
+  background: linear-gradient(135deg, #f0ede6 0%, #e4e0d6 100%);
+  box-shadow: inset 0 1px 4px rgba(61, 58, 54, 0.08);
+}
+
+.absence-field {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f2efe8,
+    #f2efe8 8px,
+    #ebe7df 8px,
+    #ebe7df 16px
+  );
+  opacity: 0.95;
+}
+
+.boundary-rail {
+  border-left: 3px solid #b87333;
+}
+
+.output-envelope-containment {
+  border: 2px dashed rgba(184, 115, 51, 0.45);
+  background: rgba(248, 246, 242, 0.8);
+}
+
+.static-state-map {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #eeEBE4;
+  border: 1px solid rgba(140, 160, 175, 0.15);
+}
+
+.map-label {
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #7a756c;
+  margin-bottom: 0.5rem;
+}
+
+.state-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.verification-question-list ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.verification-question-list li {
+  margin-bottom: 0.35rem;
+}
+
+.zone-footer {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8125rem;
+  color: #6a665e;
+  border-top: 1px solid rgba(140, 160, 175, 0.2);
+}
+
+.chamber-label {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.footer-note {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid #b87333;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .zone h1 {
+    font-size: 1.25rem;
+  }
+
+  .prototype-banner {
+    font-size: 0.8125rem;
+    padding: 0.625rem 0.75rem;
+  }
+}

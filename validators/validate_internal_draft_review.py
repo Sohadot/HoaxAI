@@ -210,7 +210,7 @@ NUMERIC_SCORE_PATTERN = re.compile(
 )
 
 from public_surface_checks import (
-    ALLOWED_PUBLIC_HTML,
+    ALLOWED_NON_PUBLIC_HTML,
     ALLOWED_PUBLIC_ROOT_FILES,
     PUBLISHER_STATUSES_ALLOWED,
     PUBLISHER_STATUS_POST_PILOT,
@@ -677,6 +677,7 @@ def validate_publisher_and_gates() -> bool:
         "blocked_until_workbench_interface_blueprint_validation",
         "blocked_until_non_public_static_workbench_prototype_governance",
         "blocked_until_non_public_static_workbench_prototype_v1",
+        "blocked_until_non_public_static_workbench_prototype_validation",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
@@ -735,7 +736,7 @@ def validate_route_sitemap_public_safety() -> bool:
 
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in ALLOWED_PUBLIC_HTML:
+        if rel not in ALLOWED_NON_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
 

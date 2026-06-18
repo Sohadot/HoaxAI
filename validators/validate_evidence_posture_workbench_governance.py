@@ -20,6 +20,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -365,6 +366,7 @@ def validate_public_safety() -> bool:
                     "index.html", "language/index.html",
                     "reference/evidence-posture/index.html",
                     "reference/artifact-subject-separation/index.html",
+                    "_internal_prototypes/evidence-posture-workbench/index.html",
                 }:
                     error(f"unexpected workbench-related file: {p}")
                     ok = False
@@ -382,6 +384,7 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
     }
     if status not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

@@ -2052,6 +2052,96 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Prototype governance validator."
+    },
+    {
+      "source_id": "SOURCE-0206",
+      "source_title": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_V1.md",
+      "source_type": "internal_governance",
+      "location": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Non-public static workbench prototype v1 doctrine."
+    },
+    {
+      "source_id": "SOURCE-0207",
+      "source_title": "data/non-public-static-workbench-prototype-v1-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-v1-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 policy."
+    },
+    {
+      "source_id": "SOURCE-0208",
+      "source_title": "data/non-public-static-workbench-prototype-v1-manifest.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-v1-manifest.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 manifest."
+    },
+    {
+      "source_id": "SOURCE-0209",
+      "source_title": "data/non-public-static-workbench-prototype-v1-surface-map.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-v1-surface-map.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 surface map."
+    },
+    {
+      "source_id": "SOURCE-0210",
+      "source_title": "data/non-public-static-workbench-prototype-v1-static-content-contract.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-v1-static-content-contract.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 static content contract."
+    },
+    {
+      "source_id": "SOURCE-0211",
+      "source_title": "data/non-public-static-workbench-prototype-v1-boundary-audit.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-v1-boundary-audit.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 boundary audit."
+    },
+    {
+      "source_id": "SOURCE-0212",
+      "source_title": "_internal_prototypes/evidence-posture-workbench/index.html",
+      "source_type": "internal_governance",
+      "location": "_internal_prototypes/evidence-posture-workbench/index.html",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Non-public static workbench prototype HTML."
+    },
+    {
+      "source_id": "SOURCE-0213",
+      "source_title": "_internal_prototypes/evidence-posture-workbench/prototype.css",
+      "source_type": "internal_governance",
+      "location": "_internal_prototypes/evidence-posture-workbench/prototype.css",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Non-public static workbench prototype CSS."
+    },
+    {
+      "source_id": "SOURCE-0214",
+      "source_title": "validators/validate_non_public_static_workbench_prototype_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_non_public_static_workbench_prototype_v1.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype v1 validator."
     }
   ]
 }

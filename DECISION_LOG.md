@@ -1317,3 +1317,31 @@ The interface blueprint is validated, but prototype creation still requires its 
 - No scoring system is created.
 - No public route or sitemap URL is added.
 - Future work may create the non-public static prototype only after this governance passes.
+
+---
+
+## DEC-052 — Non-Public Static Workbench Prototype v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Prototype v1 to create the first static, repository-visible, non-public, non-operational visual prototype of the Evidence Posture Workbench inside _internal_prototypes/evidence-posture-workbench/ only, without creating a public route, sitemap entry, navigation link, interface behavior, engine, classifier, upload workflow, scoring system, form, API, analytics, deployment change, DNS, Cloudflare, or public tool.
+
+### Rationale
+
+The prototype phase is now allowed because the prototype governance passed in Sprint 33. However, prototype creation is limited to a static internal visual artifact. Its purpose is to explore the Hoax.ai evidence chamber identity, governed evidence field background, artifact-first structure, boundary-first layout, provenance shadow, refusal gate, not-assessable protected state, and output envelope containment without creating operational capability.
+
+### Implications
+
+- The approved internal prototype directory may be created.
+- Static HTML and CSS may be created inside that directory.
+- The prototype may visually explore the future workbench layout.
+- The prototype may use fictional placeholder content only.
+- The prototype must remain non-public as a web surface.
+- The prototype must not be linked from public pages.
+- The prototype must not enter sitemap.xml.
+- The prototype must not enter data/route-registry.json as a public route.
+- The prototype must not include forms, inputs, upload controls, JavaScript, scoring, fake/real output, or generated analysis.
+- Future work must validate the static prototype before any further interface or prototype expansion.

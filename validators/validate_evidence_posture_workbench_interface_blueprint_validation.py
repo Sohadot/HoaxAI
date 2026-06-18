@@ -15,6 +15,7 @@ from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -473,10 +474,12 @@ def validate_publisher_governance() -> bool:
     if pub.get("current_publisher_status") not in (
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
     ):
         error(
-            f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE} "
-            f"or {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1}"
+            f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE}, "
+            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1}, or "
+            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION}"
         )
         ok = False
 
@@ -518,15 +521,15 @@ def validate_publisher_governance() -> bool:
         error("reference-expansion-gate: must block public engine eligibility by blueprint validation alone")
         ok = False
     blocked = expansion.get("blocked_conditions", [])
-    if "publisher_blocked_until_non_public_static_workbench_prototype_v1" not in blocked:
-        error("reference-expansion-gate: publisher blocked until prototype v1")
+    if "publisher_blocked_until_non_public_static_workbench_prototype_validation" not in blocked:
+        error("reference-expansion-gate: publisher blocked until prototype validation")
         ok = False
-    workbench_blocked = [
-        "publisher_blocked_until_non_public_static_workbench_prototype_governance",
+    proto_blocked = [
         "publisher_blocked_until_non_public_static_workbench_prototype_v1",
+        "publisher_blocked_until_non_public_static_workbench_prototype_validation",
     ]
-    if not any(b in blocked for b in workbench_blocked):
-        error("reference-expansion-gate: publisher blocked until workbench progression")
+    if not any(b in blocked for b in proto_blocked):
+        error("reference-expansion-gate: publisher blocked until prototype progression")
         ok = False
     return ok
 

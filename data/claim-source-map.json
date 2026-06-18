@@ -433,6 +433,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Non-Public Static Workbench Prototype Governance adoption per DEC-051."
+    },
+    {
+      "claim_id": "CLAIM-0040",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_V1.md", "DECISION_LOG.md", "data/non-public-static-workbench-prototype-v1-policy.json"],
+      "source_refs": ["SOURCE-0206", "SOURCE-0207", "SOURCE-0208", "SOURCE-0209", "SOURCE-0210", "SOURCE-0211", "SOURCE-0212", "SOURCE-0213", "SOURCE-0214"],
+      "support_scope": "non-public static workbench prototype v1 adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Non-Public Static Workbench Prototype v1 adoption per DEC-052."
     }
   ],
   "last_reviewed": "2026-06-17"

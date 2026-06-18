@@ -1,0 +1,43 @@
+{
+  "audit_id": "NP-PROTO-V1-AUDIT-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype v1 Boundary Audit",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_prototype_v1_boundary_audit_complete",
+  "maturity": "static_internal_prototype_only_no_engine_no_classifier_no_tool_no_public_route",
+  "audited_files": [
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+    "_internal_prototypes/evidence-posture-workbench/prototype.css"
+  ],
+  "boundary_results": {
+    "static_only_passed": "pass",
+    "no_js_passed": "pass",
+    "no_forms_inputs_passed": "pass",
+    "no_upload_passed": "pass",
+    "no_scoring_passed": "pass",
+    "no_fake_real_passed": "pass",
+    "no_generated_output_passed": "pass",
+    "no_real_world_content_passed": "pass",
+    "no_external_claims_passed": "pass",
+    "evidence_field_identity_passed": "pass",
+    "non_public_surface_passed": "pass"
+  },
+  "public_surface_results": {
+    "no_route_registry_entry": "pass",
+    "no_sitemap_entry": "pass",
+    "no_homepage_link": "pass",
+    "no_public_reference_links": "pass",
+    "no_public_navigation": "pass"
+  },
+  "capability_block_results": {
+    "no_engine": "pass",
+    "no_classifier": "pass",
+    "no_detector": "pass",
+    "no_api": "pass",
+    "no_analytics": "pass",
+    "no_storage": "pass",
+    "no_network_calls": "pass",
+    "no_deployment_change": "pass"
+  },
+  "overall_outcome": "non_public_static_workbench_prototype_v1_boundary_validated",
+  "last_reviewed": "2026-06-17"
+}

@@ -431,6 +431,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Prototype governance defined. Allowed future location defined but not created. No prototype files, interface, engine, classifier, tool, upload, scoring, or public route created."
+    },
+    {
+      "claim_id": "CLAIM-0040",
+      "claim_text": "Hoax.ai has adopted Non-Public Static Workbench Prototype v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_V1.md, DECISION_LOG.md (DEC-052)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Static internal prototype v1 created. Non-public web surface. No public route, sitemap entry, engine, classifier, upload, scoring, or public tool created."
     }
   ]
 }

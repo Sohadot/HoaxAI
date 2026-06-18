@@ -25,6 +25,12 @@ ALLOWED_PUBLIC_HTML = {
     "reference/artifact-subject-separation/index.html",
 }
 
+ALLOWED_INTERNAL_PROTOTYPE_HTML = {
+    "_internal_prototypes/evidence-posture-workbench/index.html",
+}
+
+ALLOWED_NON_PUBLIC_HTML = ALLOWED_PUBLIC_HTML | ALLOWED_INTERNAL_PROTOTYPE_HTML
+
 ALLOWED_PUBLIC_ROOT_FILES = ALLOWED_PUBLIC_HTML | {
     "styles.css",
     "robots.txt",
@@ -55,6 +61,8 @@ PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE = "blocked_until_no
 
 PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1 = "blocked_until_non_public_static_workbench_prototype_v1"
 
+PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION = "blocked_until_non_public_static_workbench_prototype_validation"
+
 PUBLISHER_STATUSES_ALLOWED = (
     "blocked_until_first_reference_candidate_pack",
     "blocked_until_internal_draft_blueprint",
@@ -74,6 +82,7 @@ PUBLISHER_STATUSES_ALLOWED = (
     PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
 )
 
 
@@ -102,7 +111,7 @@ def validate_no_extra_public_html(error) -> bool:
     ok = True
     for html in ROOT.glob("**/*.html"):
         rel = html.relative_to(ROOT).as_posix()
-        if rel not in ALLOWED_PUBLIC_HTML:
+        if rel not in ALLOWED_NON_PUBLIC_HTML:
             error(f"public safety: unexpected HTML file {rel}")
             ok = False
     return ok

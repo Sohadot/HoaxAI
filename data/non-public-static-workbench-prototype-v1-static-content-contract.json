@@ -1,0 +1,48 @@
+{
+  "content_contract_id": "NP-PROTO-V1-CONTENT-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype v1 Static Content Contract",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_prototype_v1_content_contract_defined",
+  "maturity": "static_internal_prototype_only_no_engine_no_classifier_no_tool_no_public_route",
+  "required_visible_statements": [
+    "Internal static prototype. Non-public web surface. No engine. No classifier. No upload. No scoring. No verdict.",
+    "This static prototype explores the Evidence Chamber interface direction.",
+    "Evidence is structured before it is believed, escalated, published, or judged."
+  ],
+  "allowed_static_content_patterns": [
+    "fictional placeholders",
+    "artifact-focused labels",
+    "boundary labels",
+    "provenance gap labels",
+    "missing context labels",
+    "not assessable labels",
+    "refusal boundary labels",
+    "output envelope labels",
+    "verification question placeholders"
+  ],
+  "prohibited_static_content_patterns": [
+    "real people",
+    "real companies",
+    "real institutions",
+    "real brands",
+    "current events",
+    "political events",
+    "accusations",
+    "external factual claims",
+    "fake/real output",
+    "numeric score",
+    "percentage",
+    "probability score",
+    "verified/certified claim",
+    "generated analysis",
+    "upload prompt",
+    "try it now",
+    "submit evidence",
+    "detect",
+    "scan",
+    "classify"
+  ],
+  "fictional_placeholder_policy": "All visible content must use fictional placeholder labels only. No real entities, events, accusations, or external factual claims.",
+  "non_authorization_statement": "Content contract governs static placeholder content only. It does not authorize generated analysis, scoring, fake/real output, or operational behavior.",
+  "last_reviewed": "2026-06-17"
+}
