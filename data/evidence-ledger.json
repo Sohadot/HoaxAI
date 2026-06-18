@@ -299,6 +299,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Two internal draft files created. No routes, pages, sitemap expansion, public metadata, or publication authorized."
+    },
+    {
+      "claim_id": "CLAIM-0028",
+      "claim_text": "Hoax.ai has adopted Internal Draft Review and Refinement v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md, DECISION_LOG.md (DEC-040)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Two internal drafts reviewed and refined. No routes, pages, sitemap expansion, public metadata, or publication authorized."
     }
   ]
 }

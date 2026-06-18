@@ -60,12 +60,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G19 | Internal Draft Blueprint Governance | Sprint 19 validator PASS |
 | G20 | First Internal Draft Blueprint Pack | Sprint 20 validator PASS |
 | G21 | First Internal Draft Pack | Sprint 21 validator PASS |
+| G22 | Internal Draft Review and Refinement | Sprint 22 validator PASS |
 
-**Gate G21 passed.** Sprint 22 (Internal Draft Review and Refinement) may proceed when authorized. Public classifier and tool remain blocked. Publisher remains blocked from publication, routes, sitemap, and public metadata until review, refinement, and explicit future approval. External deployment remains deferred until deployment gates pass.
+**Gate G22 passed.** Sprint 23 (Public Route Readiness Gate) may proceed when authorized. Public classifier and tool remain blocked. Publisher remains blocked from publication, routes, sitemap, and public metadata until public route readiness gate and explicit future approval. External deployment remains deferred until deployment gates pass.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0–G21) govern category infrastructure, reference governance, and expansion readiness. They must pass before reference layer scale.
+Foundation gates (G0–G22) govern category infrastructure, reference governance, and expansion readiness. They must pass before reference layer scale.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -188,7 +189,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 19 | COMPLETE | G19 passed |
 | Sprint 20 | COMPLETE | G20 passed |
 | Sprint 21 | COMPLETE | G21 passed |
-| Sprint 22+ | READY | G21 passed — Internal Draft Review and Refinement pending; publisher blocked from publication; deployment gates not passed |
+| Sprint 22 | COMPLETE | G22 passed |
+| Sprint 23+ | READY | G22 passed — Public Route Readiness Gate pending; publisher blocked from publication; deployment gates not passed |
 
 ## Governing Sentence
 

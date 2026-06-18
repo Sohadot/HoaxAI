@@ -38,9 +38,9 @@ The publisher is a controlled pipeline that may later transform approved referen
 
 | Field | Value |
 |-------|-------|
-| current_status | blocked_until_internal_draft_review_and_refinement |
+| current_status | blocked_until_public_route_readiness_gate |
 
-**Reason:** First Internal Draft Pack (Sprint 21) created two non-site-public internal draft files. Publisher remains blocked from publication, routes, sitemap, and public metadata until review, refinement, and explicit future approval.
+**Reason:** Internal Draft Review and Refinement (Sprint 22) reviewed and refined two non-site-public internal draft files. Publisher remains blocked from publication, routes, sitemap, and public metadata until public route readiness gate and explicit future approval.
 
 ## F. Publisher Workflow Stages
 

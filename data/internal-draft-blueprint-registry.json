@@ -21,7 +21,9 @@
       "review_status": "blueprint_internal_pending_future_draft",
       "internal_draft_status": "internal_draft_created",
       "internal_draft_ref": "data/internal-draft-pack-v1.json",
-      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001"
+      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001",
+      "internal_draft_review_status": "review_completed_internal",
+      "internal_draft_review_ref": "data/internal-draft-review-v1.json"
     },
     {
       "blueprint_id": "DRAFT-BLUEPRINT-0002",
@@ -37,7 +39,9 @@
       "review_status": "blueprint_internal_pending_future_draft",
       "internal_draft_status": "internal_draft_created",
       "internal_draft_ref": "data/internal-draft-pack-v1.json",
-      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001"
+      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001",
+      "internal_draft_review_status": "review_completed_internal",
+      "internal_draft_review_ref": "data/internal-draft-review-v1.json"
     },
     {
       "blueprint_id": "DRAFT-BLUEPRINT-0003",

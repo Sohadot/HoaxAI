@@ -14,8 +14,9 @@
 | public_metadata_status | not_created |
 | public_navigation_status | not_linked |
 | deployment_status | not_deployed |
-| review_status | internal_draft_pending_review |
-| non_authorization_statement | This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, or SEO expansion. |
+| review_status | review_completed_internal |
+| refinement_status | refinement_applied_internal |
+| non_authorization_statement | This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, or SEO expansion. Review and refinement under DEC-040 do not authorize public release. |
 
 ## Draft Thesis
 
@@ -35,7 +36,7 @@ This draft must not be read as proof that Hoax.ai operates a truth machine, vali
 
 The boundary also blocks thin reference behavior. Posture language must not devolve into keyword capture, generic commentary, or undifferentiated landing copy. Every posture-related claim in a future public reference unit must remain mappable to governed sources and bounded by forbidden-language policy.
 
-Repository visibility is not site publicity. This file lives in the repository for governance traceability. It is not a route, not a sitemap entry, not linked from public navigation, and not accompanied by public metadata or deployment authorization.
+Repository visibility is not site publicity. This file lives under `_internal_drafts/reference/` for governance traceability. It is not a route, not a sitemap entry, not linked from public navigation, and not accompanied by public metadata or deployment authorization. Sprint 22 review confirmed this boundary without granting route, sitemap, or publication eligibility.
 
 ## Relationship to Hoax.ai System
 
@@ -80,7 +81,7 @@ No links to candidate proposed paths appear in public HTML. No updates to index.
 
 ## Structured Data Boundary
 
-If a future public reference page is ever authorized, structured data must follow structured data policy and semantic SEO governance. Acceptable planning concepts include Article or DefinedTerm semantics that describe reference meaning. Prohibited planning concepts include SoftwareApplication, Product, Service, or API documentation schema that imply operational capability.
+If a future public reference page is ever authorized, structured data must follow structured data policy and semantic SEO governance. Acceptable planning concepts include Article or DefinedTerm semantics. Prohibited concepts include SoftwareApplication, Product, Service, or API schema that imply operational capability. Review refinement strengthened this boundary: no schema type may imply posture assignment is a live public product feature.
 
 This draft creates no schema on any public surface. Structured data boundary here is a constraint for future work, not an implementation instruction.
 
@@ -104,11 +105,13 @@ The Evidence Posture Classification Protocol defines assignment sequence and bou
 | Section completeness | all required sections present |
 | Claim scope | internal governance only |
 | Source scope | repository governance files only |
-| Public surface | blocked |
+| Review outcome | review_passed_with_refinement (REVIEW-DRAFT-0001) |
+| Refinement | refinement_applied_internal (REFINEMENT-0001) |
+| Public surface | blocked — not_public_site_surface |
 | Route eligibility | not_route_created |
 | Sitemap eligibility | not_sitemap_eligible |
-| Next step | internal draft review and refinement sprint |
+| Next step | public route readiness gate (future sprint only) |
 
 ## Non-Authorization Statement
 
-This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, DNS configuration, external domain activation, SEO expansion, or any implication that Hoax.ai offers an operational public system for posture assignment. Repository visibility is not publication approval. All release pathways remain blocked until explicit future governance passes.
+This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, DNS configuration, external domain activation, SEO expansion, or any implication that Hoax.ai offers an operational public system for posture assignment. Internal draft review and refinement under DEC-040 improve substance only; they do not authorize public routes, public navigation, or release. Repository visibility is not publication approval. All release pathways remain blocked until explicit future governance passes.

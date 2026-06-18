@@ -982,3 +982,26 @@ After candidates, evaluation, draft blueprint governance, and blueprint records,
 - Internal drafts do not authorize publication.
 - Internal drafts do not authorize deployment.
 - Future work may review, refine, and validate drafts before any public route proposal.
+
+---
+
+## DEC-040 — Internal Draft Review and Refinement v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Draft Review and Refinement v1 to review and improve the first two non-site-public internal draft files while preserving blocked publication status, no public routes, no sitemap expansion, no public metadata, no public navigation, and no public-page authorization.
+
+### Rationale
+
+Internal drafts should not move toward public release merely because they exist. They must be reviewed and refined against reference substance, section contracts, claim/source boundaries, semantic SEO discipline, governance boundaries, structured data boundaries, non-authorization requirements, and prohibited implication checks before any later public route or release pathway may be considered.
+
+### Implications
+
+- Existing internal drafts may be reviewed.
+- Existing internal drafts may be refined.
+- No new internal drafts may be created in Sprint 22.
+- Internal drafts do not authorize public pages, routes, sitemap expansion, public metadata, public navigation, publication, or deployment.
+- Future work may create a Public Route Readiness Gate only after review/refinement passes.

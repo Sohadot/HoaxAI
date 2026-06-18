@@ -1019,9 +1019,56 @@ External deployment remains deferred (Sprint 1C). Maturity is internal_drafts_on
 
 ### Next Phase
 
-**Sprint 22 — Internal Draft Review and Refinement v1**
+**Sprint 23 — Public Route Readiness Gate v1**
 
-Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked from publication until future explicit approval. Public page conversion remains blocked until a later explicit public release pathway.
+Public classifier remains blocked. External deployment remains blocked. Public page conversion remains blocked until a later explicit controlled public reference pilot.
+
+---
+
+## Sprint 22 — Internal Draft Review and Refinement v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Review and refine the two existing internal draft files without creating new drafts, public pages, routes, sitemap entries, or publication rights.
+
+### Deliverables
+
+- INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md
+- data/internal-draft-review-policy.json
+- data/internal-draft-review-criteria.json
+- data/internal-draft-review-v1.json
+- data/internal-draft-refinement-log.json
+- validators/validate_internal_draft_review.py
+- SPRINT_22_INTERNAL_DRAFT_REVIEW_REFINEMENT_AUDIT.md
+- DEC-040 appended to DECISION_LOG.md
+- _internal_drafts/reference/evidence-posture.md refined
+- _internal_drafts/reference/artifact-subject-separation.md refined
+- data/internal-draft-registry.json updated (review/refinement refs)
+- data/publisher-governance-policy.json updated (blocked_until_public_route_readiness_gate)
+- data/publisher-quality-gates.json updated (PUB-GATE-0022)
+- data/reference-expansion-gate.json updated
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Review Scope
+
+- 2 internal drafts reviewed (DRAFT-0001, DRAFT-0002)
+- Review outcomes: review_passed_with_refinement for both
+- Refinement: refinement_applied_internal for both
+- 28 evidence ledger claims (CLAIM-0028 added)
+- No new draft files, public pages, routes, or sitemap expansion
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Maturity is internal_review_only_no_routes_no_sitemap_no_publication.
+
+### Next Phase
+
+**Sprint 23 — Public Route Readiness Gate v1**
+
+Public classifier remains blocked. External deployment remains blocked. Public page conversion remains blocked until a later explicit controlled public reference pilot.
 
 ---
 

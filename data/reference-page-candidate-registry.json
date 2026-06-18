@@ -3,7 +3,7 @@
   "name": "Hoax.ai Reference Page Candidate Registry",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "internal_drafts_only_no_routes_no_sitemap_no_publication",
+  "maturity": "internal_draft_review_complete_no_routes_no_sitemap_no_publication",
   "candidate_pack_id": "REF-CAND-PACK-V1-001",
   "draft_pack_id": "INT-DRAFT-PACK-V1-001",
   "draft_pack_source": "data/internal-draft-pack-v1.json",
@@ -31,7 +31,11 @@
       "internal_draft_blueprint_pack_id": "INT-DRAFT-BP-PACK-V1-001",
       "internal_draft_status": "internal_draft_created",
       "internal_draft_ref": "data/internal-draft-pack-v1.json",
-      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001"
+      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001",
+      "internal_draft_review_status": "review_completed_internal",
+      "internal_draft_review_ref": "data/internal-draft-review-v1.json",
+      "internal_draft_refinement_status": "refinement_applied_internal",
+      "internal_draft_refinement_ref": "data/internal-draft-refinement-log.json"
     },
     {
       "candidate_id": "REF-CAND-0002",
@@ -52,7 +56,11 @@
       "internal_draft_blueprint_pack_id": "INT-DRAFT-BP-PACK-V1-001",
       "internal_draft_status": "internal_draft_created",
       "internal_draft_ref": "data/internal-draft-pack-v1.json",
-      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001"
+      "internal_draft_pack_id": "INT-DRAFT-PACK-V1-001",
+      "internal_draft_review_status": "review_completed_internal",
+      "internal_draft_review_ref": "data/internal-draft-review-v1.json",
+      "internal_draft_refinement_status": "refinement_applied_internal",
+      "internal_draft_refinement_ref": "data/internal-draft-refinement-log.json"
     },
     {
       "candidate_id": "REF-CAND-0003",

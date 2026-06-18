@@ -1,0 +1,62 @@
+{
+  "policy_id": "INT-DRAFT-REVIEW-POLICY-001",
+  "name": "Hoax.ai Internal Draft Review Policy",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_review_policy",
+  "maturity": "internal_review_only_no_routes_no_sitemap_no_publication",
+  "governing_principle": "Review improves the draft. It does not move the draft toward publication.",
+  "refinement_principle": "Refinement may strengthen internal substance, but it must not create public readiness claims.",
+  "allowed_review_actions": [
+    "review_record_creation",
+    "refinement_log_creation",
+    "controlled_refinement_of_existing_internal_draft_files_only",
+    "section_completeness_verification",
+    "claim_scope_verification",
+    "source_scope_verification",
+    "semantic_seo_boundary_verification",
+    "non_authorization_verification"
+  ],
+  "prohibited_review_actions": [
+    "new_draft_files",
+    "public_page_creation",
+    "route_activation",
+    "sitemap_expansion",
+    "public_metadata",
+    "public_navigation",
+    "publication",
+    "deployment",
+    "dns",
+    "cloudflare",
+    "tool",
+    "classifier",
+    "upload",
+    "scoring",
+    "forms",
+    "analytics",
+    "external_factual_claims"
+  ],
+  "review_scope": [
+    "_internal_drafts/reference/evidence-posture.md",
+    "_internal_drafts/reference/artifact-subject-separation.md"
+  ],
+  "review_outcomes": [
+    "review_passed_internal",
+    "review_passed_with_refinement",
+    "needs_minor_refinement",
+    "needs_major_refinement",
+    "blocked_for_boundary_issue",
+    "blocked_for_claim_source_issue",
+    "blocked_for_public_implication"
+  ],
+  "non_authorization_rules": [
+    "review_does_not_authorize_routes",
+    "review_does_not_authorize_sitemap",
+    "review_does_not_authorize_public_pages",
+    "review_does_not_authorize_public_metadata",
+    "review_does_not_authorize_public_navigation",
+    "review_does_not_authorize_publishing",
+    "review_does_not_authorize_deployment",
+    "review_does_not_authorize_seo_expansion"
+  ],
+  "last_reviewed": "2026-06-17"
+}

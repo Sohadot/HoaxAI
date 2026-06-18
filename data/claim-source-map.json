@@ -301,6 +301,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "First internal draft pack adoption per DEC-039."
+    },
+    {
+      "claim_id": "CLAIM-0028",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md", "DECISION_LOG.md", "data/internal-draft-review-v1.json"],
+      "source_refs": ["SOURCE-0125", "SOURCE-0126", "SOURCE-0128", "SOURCE-0130"],
+      "support_scope": "internal draft review and refinement adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal draft review and refinement adoption per DEC-040."
     }
   ],
   "last_reviewed": "2026-06-17"

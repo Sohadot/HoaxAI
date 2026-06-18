@@ -14,8 +14,9 @@
 | public_metadata_status | not_created |
 | public_navigation_status | not_linked |
 | deployment_status | not_deployed |
-| review_status | internal_draft_pending_review |
-| non_authorization_statement | This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, or SEO expansion. |
+| review_status | review_completed_internal |
+| refinement_status | refinement_applied_internal |
+| non_authorization_statement | This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, or SEO expansion. Review and refinement under DEC-040 do not authorize public release. |
 
 ## Draft Thesis
 
@@ -23,7 +24,7 @@ Artifact–subject separation is a core Hoax.ai governance boundary: examination
 
 ## Definition and Scope
 
-An artifact, in this context, is material treated as evidence under governance: documents, media objects, chains of custody references, and related metadata when discussed as evidentiary objects rather than as identity proxies. A subject, in the prohibited sense, is a person, institution, or event positioned as the target of guilt, fraud determination, impersonation verdict, or institutional blame through Hoax.ai reference language.
+An artifact, in this context, is material treated as evidence under governance: documents, media objects, chains of custody references, and related metadata when discussed as evidentiary objects rather than as identity proxies. A subject, in the prohibited sense, is a person, institution, or event positioned as the target of guilt, fraud determination, impersonation verdict, or institutional blame through Hoax.ai reference language. Review refinement clarified that separation applies to reference prose and planning language, not to external adjudication of any party.
 
 Separation requires that reference units describe what can be said about artifacts under posture, provenance, and traceability rules without converting artifact discussion into subject accusation. The scope includes boundary definitions, allowed posture framing, prohibited accusation framing, and interface embodiment constraints that prevent UI language from reintroducing subject targeting.
 
@@ -66,6 +67,7 @@ Readers must not misread this draft as:
 - a public operational boundary enforcement system;
 - proof of live subject-scoring capability;
 - a substitute for adversarial enforcement test cases on future interfaces;
+- authorization to publish accusation-oriented reference content;
 - permission to add public navigation toward accusation-oriented paths;
 - authorization to bypass publisher or expansion gates;
 - deployment readiness for GitHub Pages or custom domain publication.
@@ -92,11 +94,13 @@ This draft depends on evidence posture vocabulary being understood first (REF-CA
 | Section completeness | all required sections present |
 | Claim scope | internal governance only |
 | Source scope | repository governance files only |
-| Public surface | blocked |
+| Review outcome | review_passed_with_refinement (REVIEW-DRAFT-0002) |
+| Refinement | refinement_applied_internal (REFINEMENT-0002) |
+| Public surface | blocked — not_public_site_surface |
 | Route eligibility | not_route_created |
 | Sitemap eligibility | not_sitemap_eligible |
-| Next step | internal draft review and refinement sprint |
+| Next step | public route readiness gate (future sprint only) |
 
 ## Non-Authorization Statement
 
-This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, DNS or Cloudflare work, SEO expansion, or any implication that Hoax.ai provides accusation, fraud determination, or subject adjudication services. Repository visibility is not publication approval. Public conversion remains blocked until future explicit governance passes.
+This internal draft does not authorize public pages, routes, sitemap expansion, public metadata, publication, deployment, DNS or Cloudflare work, SEO expansion, or any implication that Hoax.ai provides accusation, fraud determination, or subject adjudication services. Internal draft review and refinement under DEC-040 strengthen boundary doctrine only; they do not authorize public routes, public navigation, or release. Repository visibility is not publication approval. Public conversion remains blocked until future explicit governance passes.

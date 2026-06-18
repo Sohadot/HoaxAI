@@ -1,0 +1,163 @@
+{
+  "criteria_set_id": "INT-DRAFT-REVIEW-CRITERIA-001",
+  "name": "Hoax.ai Internal Draft Review Criteria",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_review_criteria",
+  "maturity": "internal_review_only_no_routes_no_sitemap_no_publication",
+  "criteria": [
+    {
+      "criterion_id": "REVIEW-CRITERION-0001",
+      "name": "Draft Status Integrity",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft status block preserves internal_draft_created and all blocked publication statuses.",
+      "failure_condition": "Missing status fields or route/sitemap/publication eligibility implied.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "blocked_for_boundary_issue"],
+      "validation_notes": "No numeric scoring. No publication authorization."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0002",
+      "name": "Required Section Completeness",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "All required sections from blueprint contract are present.",
+      "failure_condition": "Missing required section headers.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "needs_minor_refinement"],
+      "validation_notes": "Conditional sections included where blueprint requires."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0003",
+      "name": "Reference Substance",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft carries governed reference substance, not generic commentary.",
+      "failure_condition": "Thin, repetitive, or undifferentiated prose.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "needs_minor_refinement"],
+      "validation_notes": "Substance over word count alone."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0004",
+      "name": "Definition and Scope Clarity",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Definitions and scope boundaries are precise and bounded.",
+      "failure_condition": "Ambiguous scope or undefined terms.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "needs_minor_refinement"],
+      "validation_notes": "Clarity without external factual claims."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0005",
+      "name": "Governance Boundary Clarity",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Governance boundary section states what draft must not be read as.",
+      "failure_condition": "Boundary language weak or missing.",
+      "allowed_outcomes": ["passed", "passed_with_refinement"],
+      "validation_notes": "Repository visibility distinguished from site publicity."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0006",
+      "name": "Claim Scope Discipline",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Claims remain internal governance scope only.",
+      "failure_condition": "Unsupported external factual claims.",
+      "allowed_outcomes": ["passed", "blocked_for_claim_source_issue"],
+      "validation_notes": "No truth certification or external validation."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0007",
+      "name": "Source Scope Discipline",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Source scope limited to repository governance documents.",
+      "failure_condition": "Unmapped third-party or external citations.",
+      "allowed_outcomes": ["passed", "blocked_for_claim_source_issue"],
+      "validation_notes": "Traceability internal only."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0008",
+      "name": "Semantic SEO Boundary Discipline",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Semantic SEO role remains internal planning only.",
+      "failure_condition": "Public metadata or SEO expansion implied.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "blocked_for_public_implication"],
+      "validation_notes": "No public title, meta, canonical, or schema deployment."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0009",
+      "name": "Prohibited Misreading Protection",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Prohibited misreadings section blocks common misinterpretations.",
+      "failure_condition": "Missing or incomplete misreading list.",
+      "allowed_outcomes": ["passed", "passed_with_refinement"],
+      "validation_notes": "Includes tool, verdict, and publication misreadings."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0010",
+      "name": "Internal Link Plan Discipline",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Internal link plan describes conceptual dependencies only.",
+      "failure_condition": "Public navigation or route registry changes implied.",
+      "allowed_outcomes": ["passed", "passed_with_refinement"],
+      "validation_notes": "No public hyperlinks authorized."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0011",
+      "name": "Structured Data Boundary",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Structured data boundary prohibits product/service schema on public surfaces.",
+      "failure_condition": "Schema deployment or public structured data implied.",
+      "allowed_outcomes": ["passed", "passed_with_refinement"],
+      "validation_notes": "Planning constraints only."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0012",
+      "name": "Interface Boundary",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft does not imply public interface or embodiment availability.",
+      "failure_condition": "UI product or operational interface implied.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "blocked_for_public_implication"],
+      "validation_notes": "Interface embodiment governance respected."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0013",
+      "name": "Security Privacy Boundary",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft does not imply data collection, upload, or analytics surfaces.",
+      "failure_condition": "Upload, forms, or analytics workflow implied.",
+      "allowed_outcomes": ["passed", "blocked_for_public_implication"],
+      "validation_notes": "Security privacy boundary preserved."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0014",
+      "name": "Non-Authorization Strength",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Non-authorization statement explicitly blocks routes, sitemap, metadata, publication, deployment.",
+      "failure_condition": "Weak or missing non-authorization language.",
+      "allowed_outcomes": ["passed", "passed_with_refinement"],
+      "validation_notes": "Review does not authorize release."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0015",
+      "name": "Forbidden Language Safety",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "No detector, classifier, upload, scoring, fake-real verdict, or tool language without prohibition context.",
+      "failure_condition": "Forbidden implication detected in affirmative context.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "blocked_for_public_implication"],
+      "validation_notes": "Prohibition context allowed."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0016",
+      "name": "Public Surface Safety",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft remains non-site-public with no public readiness claims.",
+      "failure_condition": "Publication, route, or deployment readiness claimed.",
+      "allowed_outcomes": ["passed", "blocked_for_public_implication"],
+      "validation_notes": "public_status remains not_public_site_surface."
+    },
+    {
+      "criterion_id": "REVIEW-CRITERION-0017",
+      "name": "Word Count and Substance Control",
+      "applies_to": ["DRAFT-0001", "DRAFT-0002"],
+      "requirement": "Draft remains between 900 and 1400 words with controlled substance.",
+      "failure_condition": "Below minimum or above maximum word count.",
+      "allowed_outcomes": ["passed", "passed_with_refinement", "needs_minor_refinement"],
+      "validation_notes": "Word count is substance control, not SEO target."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

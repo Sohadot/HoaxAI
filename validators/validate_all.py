@@ -27,6 +27,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_internal_draft_blueprint_governance.py",
     ROOT / "validators" / "validate_internal_draft_blueprint_pack.py",
     ROOT / "validators" / "validate_internal_draft_pack.py",
+    ROOT / "validators" / "validate_internal_draft_review.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

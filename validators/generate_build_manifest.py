@@ -33,6 +33,7 @@ GOVERNANCE_FILES = [
     "INTERNAL_DRAFT_BLUEPRINT_GOVERNANCE.md",
     "FIRST_INTERNAL_DRAFT_BLUEPRINT_PACK.md",
     "FIRST_INTERNAL_DRAFT_PACK.md",
+    "INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md",
     "INTERNAL_ENGINE_MODEL.md",
     "OUTPUT_BOUNDARY_SCHEMA.md",
     "EVIDENCE_POSTURE_CLASSIFICATION_PROTOCOL.md",
@@ -114,6 +115,10 @@ DATA_FILES = [
     "data/internal-draft-pack-policy.json",
     "data/internal-draft-pack-v1.json",
     "data/internal-draft-registry.json",
+    "data/internal-draft-review-policy.json",
+    "data/internal-draft-review-criteria.json",
+    "data/internal-draft-review-v1.json",
+    "data/internal-draft-refinement-log.json",
 ]
 
 VALIDATORS = [
@@ -136,6 +141,7 @@ VALIDATORS = [
     "validators/validate_internal_draft_blueprint_governance.py",
     "validators/validate_internal_draft_blueprint_pack.py",
     "validators/validate_internal_draft_pack.py",
+    "validators/validate_internal_draft_review.py",
     "validators/generate_build_manifest.py",
 ]
 

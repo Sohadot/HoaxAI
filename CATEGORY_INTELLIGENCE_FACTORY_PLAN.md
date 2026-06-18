@@ -84,6 +84,8 @@ The category factory moves from evaluated candidates to draft blueprints before 
 
 The category factory may begin internal draft prose only after candidates, evaluation, blueprint governance, and blueprint records exist. Internal drafts are repository-visible but non-site-public working artifacts; they must preserve blocked publication status until review, refinement, route eligibility, and release governance pass.
 
+The category factory reviews internal drafts before public route readiness. Internal draft review refines substance, boundaries, claim/source scope, semantic SEO restraint, structured data boundaries, internal link plans, and non-authorization language without moving drafts into public routes or publication eligibility.
+
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
 The Evidence Posture Taxonomy (DEC-017) defines bounded posture dimensions and states. The Evidence Posture Standard (DEC-018) defines sufficiency rules for assigning those states. The Evidence Posture Classification Protocol (DEC-019) defines the governed assignment sequence. The Output Boundary Schema (DEC-020) defines the language contract for any future engine. The Internal Engine Model (DEC-021) defines how a future engine may assemble outputs through governed dependencies without creating a public tool. The engine may not produce statements outside the schema. The protocol is the first operational bridge between standard and future engine, but it is not itself a public tool.

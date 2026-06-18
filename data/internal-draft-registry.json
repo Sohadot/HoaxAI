@@ -3,9 +3,11 @@
   "name": "Hoax.ai Internal Draft Registry",
   "version": "v1.0.0",
   "status": "governed_internal_draft_registry",
-  "maturity": "internal_drafts_only_no_routes_no_sitemap_no_publication",
+  "maturity": "internal_draft_review_complete_no_routes_no_sitemap_no_publication",
   "draft_pack_id": "INT-DRAFT-PACK-V1-001",
   "draft_pack_source": "data/internal-draft-pack-v1.json",
+  "review_source": "data/internal-draft-review-v1.json",
+  "refinement_log_source": "data/internal-draft-refinement-log.json",
   "draft_records": [
     {
       "draft_id": "DRAFT-0001",
@@ -22,7 +24,10 @@
       "public_navigation_status": "not_linked",
       "deployment_status": "not_deployed",
       "draft_ref": "data/internal-draft-pack-v1.json",
-      "review_status": "internal_draft_pending_review"
+      "review_status": "review_completed_internal",
+      "review_ref": "data/internal-draft-review-v1.json",
+      "refinement_status": "refinement_applied_internal",
+      "refinement_ref": "data/internal-draft-refinement-log.json"
     },
     {
       "draft_id": "DRAFT-0002",
@@ -39,7 +44,10 @@
       "public_navigation_status": "not_linked",
       "deployment_status": "not_deployed",
       "draft_ref": "data/internal-draft-pack-v1.json",
-      "review_status": "internal_draft_pending_review"
+      "review_status": "review_completed_internal",
+      "review_ref": "data/internal-draft-review-v1.json",
+      "refinement_status": "refinement_applied_internal",
+      "refinement_ref": "data/internal-draft-refinement-log.json"
     }
   ],
   "last_reviewed": "2026-06-17"

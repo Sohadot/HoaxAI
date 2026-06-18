@@ -1,0 +1,88 @@
+{
+  "refinement_log_id": "INT-DRAFT-REFINEMENT-LOG-001",
+  "name": "Hoax.ai Internal Draft Refinement Log",
+  "version": "v1.0.0",
+  "status": "governed_internal_draft_refinement_log",
+  "maturity": "internal_review_only_no_routes_no_sitemap_no_publication",
+  "refinements": [
+    {
+      "refinement_id": "REFINEMENT-0001",
+      "draft_id": "DRAFT-0001",
+      "candidate_id": "REF-CAND-0001",
+      "draft_file_path": "_internal_drafts/reference/evidence-posture.md",
+      "refinement_status": "refinement_applied_internal",
+      "refinement_actions": [
+        "updated_review_status_to_review_completed_internal",
+        "strengthened_governance_boundary_repository_visibility_language",
+        "tightened_structured_data_boundary_constraints",
+        "expanded_non_authorization_statement_with_review_non_authorization",
+        "updated_review_status_section_with_sprint_22_completion"
+      ],
+      "prohibited_changes_avoided": [
+        "public_route",
+        "sitemap",
+        "public_metadata",
+        "public_navigation",
+        "publication",
+        "deployment",
+        "external_factual_claims",
+        "tool_language",
+        "classifier_language",
+        "upload_language",
+        "scoring_language"
+      ],
+      "post_refinement_status": {
+        "draft_status": "internal_draft_created",
+        "route_status": "not_route_created",
+        "sitemap_status": "not_sitemap_eligible",
+        "publication_status": "publication_blocked",
+        "public_metadata_status": "not_created",
+        "public_navigation_status": "not_linked",
+        "deployment_status": "not_deployed",
+        "review_status": "review_completed_internal"
+      },
+      "non_authorization_statement": "Refinement does not authorize routes, sitemap, public metadata, public navigation, publication, deployment, or SEO expansion.",
+      "notes": "Controlled internal refinement only."
+    },
+    {
+      "refinement_id": "REFINEMENT-0002",
+      "draft_id": "DRAFT-0002",
+      "candidate_id": "REF-CAND-0002",
+      "draft_file_path": "_internal_drafts/reference/artifact-subject-separation.md",
+      "refinement_status": "refinement_applied_internal",
+      "refinement_actions": [
+        "updated_review_status_to_review_completed_internal",
+        "clarified_artifact_and_subject_definitions",
+        "strengthened_prohibited_misreadings_for_accusation_framing",
+        "expanded_non_authorization_statement_with_review_non_authorization",
+        "updated_review_status_section_with_sprint_22_completion"
+      ],
+      "prohibited_changes_avoided": [
+        "public_route",
+        "sitemap",
+        "public_metadata",
+        "public_navigation",
+        "publication",
+        "deployment",
+        "external_factual_claims",
+        "tool_language",
+        "classifier_language",
+        "upload_language",
+        "scoring_language"
+      ],
+      "post_refinement_status": {
+        "draft_status": "internal_draft_created",
+        "route_status": "not_route_created",
+        "sitemap_status": "not_sitemap_eligible",
+        "publication_status": "publication_blocked",
+        "public_metadata_status": "not_created",
+        "public_navigation_status": "not_linked",
+        "deployment_status": "not_deployed",
+        "review_status": "review_completed_internal"
+      },
+      "non_authorization_statement": "Refinement does not authorize routes, sitemap, public metadata, public navigation, publication, deployment, or SEO expansion.",
+      "notes": "Controlled internal refinement only."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

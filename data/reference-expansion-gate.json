@@ -36,6 +36,7 @@
     "internal_draft_blueprint_governance_validation",
     "first_internal_draft_blueprint_pack_validation",
     "first_internal_draft_pack_validation",
+    "internal_draft_review_refinement_validation",
     "publisher_control_plane_validation",
     "validate_all_py_pass",
     "final_audit"
@@ -57,8 +58,9 @@
     "placeholder_page",
     "unmapped_public_claim",
     "publisher_control_plane_failure",
-    "publisher_blocked_until_internal_draft_review_and_refinement",
+    "publisher_blocked_until_public_route_readiness_gate",
     "first_internal_draft_pack_failure",
+    "internal_draft_review_refinement_failure",
     "first_internal_draft_blueprint_pack_failure",
     "internal_draft_blueprint_governance_failure",
     "content_quality_substance_failure",
@@ -82,7 +84,8 @@
     "no_public_release_without_reference_candidate_evaluation_validation",
     "no_public_release_without_internal_draft_blueprint_governance_validation",
     "no_public_release_without_first_internal_draft_blueprint_pack_validation",
-    "no_public_release_without_first_internal_draft_pack_validation"
+    "no_public_release_without_first_internal_draft_pack_validation",
+    "no_public_release_without_internal_draft_review_refinement_validation"
   ],
   "last_reviewed": "2026-06-17"
 }

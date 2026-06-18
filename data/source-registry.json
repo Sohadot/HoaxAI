@@ -1242,6 +1242,66 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Internal draft pack validator."
+    },
+    {
+      "source_id": "SOURCE-0125",
+      "source_title": "INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_DRAFT_REVIEW_AND_REFINEMENT.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable internal draft review and refinement per DEC-040."
+    },
+    {
+      "source_id": "SOURCE-0126",
+      "source_title": "data/internal-draft-review-policy.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-review-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable internal draft review policy."
+    },
+    {
+      "source_id": "SOURCE-0127",
+      "source_title": "data/internal-draft-review-criteria.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-review-criteria.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft review criteria set."
+    },
+    {
+      "source_id": "SOURCE-0128",
+      "source_title": "data/internal-draft-review-v1.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-review-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "First internal draft review results."
+    },
+    {
+      "source_id": "SOURCE-0129",
+      "source_title": "data/internal-draft-refinement-log.json",
+      "source_type": "internal_registry",
+      "location": "data/internal-draft-refinement-log.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft refinement log."
+    },
+    {
+      "source_id": "SOURCE-0130",
+      "source_title": "validators/validate_internal_draft_review.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_draft_review.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Internal draft review validator."
     }
   ]
 }

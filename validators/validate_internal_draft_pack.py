@@ -583,10 +583,14 @@ def validate_publisher_and_gates() -> bool:
 
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
     status = pub.get("current_publisher_status", "")
-    if status != "blocked_until_internal_draft_review_and_refinement":
+    if status not in (
+        "blocked_until_internal_draft_review_and_refinement",
+        "blocked_until_public_route_readiness_gate",
+    ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "
-            f"blocked_until_internal_draft_review_and_refinement, got {status}"
+            f"blocked_until_internal_draft_review_and_refinement or "
+            f"blocked_until_public_route_readiness_gate, got {status}"
         )
         ok = False
 
