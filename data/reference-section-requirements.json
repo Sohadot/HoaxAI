@@ -1,0 +1,172 @@
+{
+  "requirements_id": "REF-SECTION-REQ-001",
+  "name": "Hoax.ai Reference Section Requirements",
+  "version": "v1.0.0",
+  "status": "active",
+  "maturity": "pre_reference_publication_standard",
+  "required_sections": [
+    {
+      "section_id": "REF-SECTION-0001",
+      "name": "Page Thesis",
+      "required_for": "all_future_reference_pages",
+      "purpose": "State the governed thesis of the reference unit",
+      "minimum_substance_requirement": "One clear thesis tied to category system purpose",
+      "prohibited_content": "tool implication, keyword stuffing, unsupported superiority",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0001"],
+      "notes": "Required for all reference pages."
+    },
+    {
+      "section_id": "REF-SECTION-0002",
+      "name": "Definition and Scope",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Define concept and state coverage boundaries",
+      "minimum_substance_requirement": "Bounded definition with explicit inclusions and exclusions",
+      "prohibited_content": "circular definitions, thin glossary only",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0002", "SUBSTANCE-RULE-0003"],
+      "notes": "Combines definition and scope gates."
+    },
+    {
+      "section_id": "REF-SECTION-0003",
+      "name": "Governance Boundary",
+      "required_for": "all_future_reference_pages",
+      "purpose": "State what the page must not be read to claim",
+      "minimum_substance_requirement": "Explicit non-claims and misreading prevention",
+      "prohibited_content": "truth certification, detector promises",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0004"],
+      "notes": "Governance boundary gate."
+    },
+    {
+      "section_id": "REF-SECTION-0004",
+      "name": "Relationship to Hoax.ai System",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Connect page to governed taxonomy, standard, protocol, or governance layers",
+      "minimum_substance_requirement": "At least one system relationship documented",
+      "prohibited_content": "orphan content without system link",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0005"],
+      "notes": "System relationship gate."
+    },
+    {
+      "section_id": "REF-SECTION-0005",
+      "name": "Semantic SEO Role",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Explain how title, description, headings clarify governed concept",
+      "minimum_substance_requirement": "SEO metadata aligned with thesis and claim scope",
+      "prohibited_content": "keyword stuffing, tool-implying titles, clickbait metadata, fake/real detector keywords",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0008", "SUBSTANCE-RULE-0014"],
+      "notes": "Semantic SEO discipline gate."
+    },
+    {
+      "section_id": "REF-SECTION-0006",
+      "name": "Prohibited Misreadings",
+      "required_for": "all_future_reference_pages",
+      "purpose": "List misreadings the page must prevent",
+      "minimum_substance_requirement": "Explicit prohibited misreadings including truth machine and detector framing",
+      "prohibited_content": "scoring language, subject accusation, upload implication",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0009", "SUBSTANCE-RULE-0015"],
+      "notes": "Prohibited misreading gate."
+    },
+    {
+      "section_id": "REF-SECTION-0007",
+      "name": "Claim and Source Traceability",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Map material claims to ledger, claim-source map, and source registry",
+      "minimum_substance_requirement": "Traceability table or explicit claim-source mapping",
+      "prohibited_content": "unsupported external claims, invented citations",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0006", "SUBSTANCE-RULE-0007"],
+      "notes": "Claim and source scope gates."
+    },
+    {
+      "section_id": "REF-SECTION-0008",
+      "name": "Internal Links",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Document required internal links to eligible registered routes",
+      "minimum_substance_requirement": "Link plan to existing eligible routes only",
+      "prohibited_content": "links to planned or blocked routes",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0010"],
+      "notes": "Internal link gate."
+    },
+    {
+      "section_id": "REF-SECTION-0009",
+      "name": "Last Reviewed",
+      "required_for": "all_future_reference_pages",
+      "purpose": "Record review status and date",
+      "minimum_substance_requirement": "Review date or status metadata present",
+      "prohibited_content": "none",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0013"],
+      "notes": "Review status gate."
+    }
+  ],
+  "conditional_sections": [
+    {
+      "section_id": "REF-SECTION-0010",
+      "name": "Taxonomy Relationship",
+      "required_for": "taxonomy_related_reference_pages",
+      "purpose": "Link to evidence posture taxonomy dimensions or states",
+      "minimum_substance_requirement": "Explicit taxonomy dimension or state mapping",
+      "prohibited_content": "verdict language, scoring",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0005"],
+      "notes": "Conditional when page explains taxonomy element."
+    },
+    {
+      "section_id": "REF-SECTION-0011",
+      "name": "Standard Relationship",
+      "required_for": "standard_related_reference_pages",
+      "purpose": "Link to evidence posture standard elements",
+      "minimum_substance_requirement": "Standard dimension or rule mapping",
+      "prohibited_content": "tool implication",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0005"],
+      "notes": "Conditional for standard element pages."
+    },
+    {
+      "section_id": "REF-SECTION-0012",
+      "name": "Protocol Relationship",
+      "required_for": "protocol_related_reference_pages",
+      "purpose": "Link to classification protocol stages",
+      "minimum_substance_requirement": "Protocol stage or rule mapping",
+      "prohibited_content": "public classifier implication",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0005"],
+      "notes": "Conditional for protocol pages."
+    },
+    {
+      "section_id": "REF-SECTION-0013",
+      "name": "Output Boundary Relationship",
+      "required_for": "output_boundary_related_reference_pages",
+      "purpose": "Link to output boundary schema fields or language",
+      "minimum_substance_requirement": "Schema field or language contract mapping",
+      "prohibited_content": "scoring, fake/real verdict",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0005", "SUBSTANCE-RULE-0012"],
+      "notes": "Conditional for output boundary pages."
+    },
+    {
+      "section_id": "REF-SECTION-0014",
+      "name": "Source Scope Notes",
+      "required_for": "pages_with_external_factual_claims",
+      "purpose": "Document source support scope and limits",
+      "minimum_substance_requirement": "Registered source references with support scope",
+      "prohibited_content": "invented sources, overbroad source claims",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0007"],
+      "notes": "Required when external facts appear."
+    },
+    {
+      "section_id": "REF-SECTION-0015",
+      "name": "Related Reference Concepts",
+      "required_for": "pages_with_cross_reference_value",
+      "purpose": "Link to related governed reference concepts",
+      "minimum_substance_requirement": "Internal links to eligible concepts or routes",
+      "prohibited_content": "links to unregistered routes",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0010"],
+      "notes": "Conditional cross-reference section."
+    },
+    {
+      "section_id": "REF-SECTION-0016",
+      "name": "Publisher Candidate Notes",
+      "required_for": "publisher_proposed_candidates",
+      "purpose": "Document candidate ID, page family, and publisher workflow state",
+      "minimum_substance_requirement": "Candidate registry alignment and blocked publisher status acknowledgment",
+      "prohibited_content": "direct publish instructions, draft generation without harness",
+      "linked_substance_rules": ["SUBSTANCE-RULE-0016"],
+      "notes": "Conditional for publisher-tracked candidates."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

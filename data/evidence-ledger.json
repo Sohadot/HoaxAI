@@ -211,6 +211,17 @@
       "status": "active",
       "last_reviewed": "2026-06-17",
       "notes": "Publisher blocked until content quality standard. No drafts or public pages."
+    },
+    {
+      "claim_id": "CLAIM-0020",
+      "claim_text": "Hoax.ai has adopted Content Quality and Reference Substance Standard v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md, DECISION_LOG.md (DEC-032)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-17",
+      "notes": "Pre-publication substance standard. Publisher remains blocked until dry-run harness."
     }
   ]
 }

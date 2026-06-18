@@ -1,0 +1,170 @@
+{
+  "rules_id": "REF-SUBSTANCE-RULES-001",
+  "name": "Hoax.ai Reference Substance Rules",
+  "version": "v1.0.0",
+  "status": "active",
+  "maturity": "pre_reference_publication_standard",
+  "rules": [
+    {
+      "rule_id": "SUBSTANCE-RULE-0001",
+      "name": "Purpose Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must explain why it exists inside Hoax.ai category system",
+      "failure_condition": "missing_or_generic_purpose",
+      "validation_method": "section_and_claim_review",
+      "severity": "blocking",
+      "notes": "No SEO-only purpose."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0002",
+      "name": "Definition Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must define governed concept, term, state, dimension, boundary, or framework",
+      "failure_condition": "undefined_or_circular_definition",
+      "validation_method": "definition_scope_section_review",
+      "severity": "blocking",
+      "notes": "Definition must be bounded."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0003",
+      "name": "Scope Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must state what it covers and does not cover",
+      "failure_condition": "unbounded_scope_or_missing_exclusions",
+      "validation_method": "scope_section_review",
+      "severity": "blocking",
+      "notes": "Scope includes explicit non-coverage."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0004",
+      "name": "Governance Boundary Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must state what it must not be read to claim",
+      "failure_condition": "missing_governance_boundary",
+      "validation_method": "governance_boundary_section_review",
+      "severity": "blocking",
+      "notes": "Required for all reference pages."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0005",
+      "name": "System Relationship Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must connect to at least one governed layer",
+      "failure_condition": "orphan_page_without_system_relationship",
+      "validation_method": "system_relationship_section_review",
+      "severity": "blocking",
+      "notes": "Taxonomy, standard, protocol, governance, or traceability layer."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0006",
+      "name": "Claim Traceability Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Major claim-bearing statements must map to evidence ledger and claim-source map",
+      "failure_condition": "unmapped_material_claims",
+      "validation_method": "claim_source_map_alignment",
+      "severity": "blocking",
+      "notes": "No persuasive claims without traceability."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0007",
+      "name": "Source Scope Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "External factual claims require registered external source support",
+      "failure_condition": "unsupported_external_factual_claim",
+      "validation_method": "source_registry_alignment",
+      "severity": "blocking",
+      "notes": "Internal governance claims use repository support within scope."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0008",
+      "name": "Semantic SEO Discipline Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "SEO metadata clarifies governed concept without unsupported claims or tool implications",
+      "failure_condition": "seo_substitutes_for_substance_or_overclaims",
+      "validation_method": "metadata_and_heading_review",
+      "severity": "blocking",
+      "notes": "SEO after thesis, claim scope, source scope defined."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0009",
+      "name": "Prohibited Misreading Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must prevent truth-machine, detector, upload, scoring, accusation misreadings",
+      "failure_condition": "prohibited_misreading_language",
+      "validation_method": "forbidden_language_and_boundary_review",
+      "severity": "blocking",
+      "notes": "Includes explicit prohibited misreadings section."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0010",
+      "name": "Internal Link Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Internal links only to registered existing eligible routes",
+      "failure_condition": "broken_links_or_planned_route_links",
+      "validation_method": "link_graph_and_route_registry_review",
+      "severity": "blocking",
+      "notes": "No placeholder route links."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0011",
+      "name": "Technical Quality Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must pass technical quality gate before release",
+      "failure_condition": "technical_quality_validation_failure",
+      "validation_method": "validate_technical_quality_gate",
+      "severity": "blocking",
+      "notes": "Static HTML, metadata, security posture."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0012",
+      "name": "Interface Boundary Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "No scanner, detector, fake/real, scoring, surveillance, threat-dashboard visual logic",
+      "failure_condition": "interface_boundary_violation",
+      "validation_method": "interface_governance_review",
+      "severity": "blocking",
+      "notes": "Interface embodiment governance applies."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0013",
+      "name": "Review Status Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must include last reviewed or review status metadata",
+      "failure_condition": "missing_review_status",
+      "validation_method": "last_reviewed_section_check",
+      "severity": "blocking",
+      "notes": "Inspectable review posture required."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0014",
+      "name": "No Thin SEO Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must not be keyword-only, search-volume-first, or SEO route filler",
+      "failure_condition": "thin_seo_or_keyword_only_content",
+      "validation_method": "thin_content_pattern_check",
+      "severity": "blocking",
+      "notes": "SEO clarifies substance; does not replace it."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0015",
+      "name": "No Tool-Implying Content Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must not imply active classifier, upload, scoring, or detector capability",
+      "failure_condition": "tool_upload_scoring_implication",
+      "validation_method": "forbidden_language_review",
+      "severity": "blocking",
+      "notes": "Tool promise language prohibited."
+    },
+    {
+      "rule_id": "SUBSTANCE-RULE-0016",
+      "name": "Publisher Boundary Gate",
+      "applies_to": "future_reference_pages",
+      "requirement": "Page must not be publisher-generated without approved candidate state and dry-run harness",
+      "failure_condition": "publisher_output_without_approval",
+      "validation_method": "publisher_state_and_candidate_registry_review",
+      "severity": "blocking",
+      "notes": "Publisher remains blocked until dry-run harness."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

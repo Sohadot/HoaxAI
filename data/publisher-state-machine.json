@@ -4,7 +4,7 @@
   "version": "v1.0.0",
   "status": "active",
   "maturity": "publisher_blocked_until_quality_standard",
-  "current_system_state": "blocked_until_content_quality_standard",
+  "current_system_state": "blocked_until_publisher_dry_run_harness",
   "states": [
     "blocked",
     "proposed_internal",

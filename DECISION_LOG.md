@@ -782,3 +782,27 @@ A sovereign reference asset cannot use publisher automation as a volume engine. 
 - Publisher automation may not create public pages, draft pages, routes, or sitemap entries in this sprint.
 - Publisher automation may not invent claims or sources or publish directly.
 - Future publisher outputs must move through candidate registry, blueprint alignment, content quality, claim/source traceability, route/link integrity, technical quality, interface governance, security/privacy governance, forbidden language checks, final validation, audit, and user/governance approval.
+
+---
+
+## DEC-032 — Content Quality and Reference Substance Standard v1 Adopted
+
+**Date:** 2026-06-17  
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Content Quality and Reference Substance Standard v1 to define the minimum governed substance requirements that future reference pages must satisfy before they may become public, route-eligible, sitemap-eligible, or part of the reference layer.
+
+### Rationale
+
+Reference authority is not produced by page count, word count, keyword coverage, or automated publication. A future Hoax.ai page must demonstrate governed substance: defined purpose, concept scope, boundary, system relationship, claim traceability, source scope, internal link logic, prohibited misreadings, review status, semantic SEO discipline, and technical validity. Without a substance standard, reference expansion could degrade into thin SEO, decorative content, unsupported claims, or publisher-driven volume.
+
+### Implications
+
+- No future reference page may be approved by length alone or created only for search keywords.
+- No future reference page may be released without required substance sections.
+- No page may use unsupported external factual claims or imply active tool, classifier, upload, scoring, fake/real verdict, detection authority, or subject accusation.
+- Future reference candidates must be evaluated against substance rules before route approval.
+- Publisher automation remains blocked until a future Publisher Dry-Run Harness validates candidate-only generation.
+- Content quality standard existence does not authorize drafts, public pages, routes, sitemap expansion, or publishing.

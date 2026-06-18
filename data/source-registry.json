@@ -772,6 +772,66 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Cursor publisher governance rules."
+    },
+    {
+      "source_id": "SOURCE-0078",
+      "source_title": "CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md",
+      "source_type": "internal_governance",
+      "location": "CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Human-readable content quality standard per DEC-032."
+    },
+    {
+      "source_id": "SOURCE-0079",
+      "source_title": "data/content-quality-standard.json",
+      "source_type": "internal_registry",
+      "location": "data/content-quality-standard.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Machine-readable content quality standard."
+    },
+    {
+      "source_id": "SOURCE-0080",
+      "source_title": "data/reference-substance-rules.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-substance-rules.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Reference substance rules."
+    },
+    {
+      "source_id": "SOURCE-0081",
+      "source_title": "data/thin-content-failure-patterns.json",
+      "source_type": "internal_registry",
+      "location": "data/thin-content-failure-patterns.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Thin content failure patterns."
+    },
+    {
+      "source_id": "SOURCE-0082",
+      "source_title": "data/reference-section-requirements.json",
+      "source_type": "internal_registry",
+      "location": "data/reference-section-requirements.json",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Reference section requirements."
+    },
+    {
+      "source_id": "SOURCE-0083",
+      "source_title": "validators/validate_content_quality_standard.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_content_quality_standard.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Content quality standard validator."
     }
   ]
 }

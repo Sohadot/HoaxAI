@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_quality_standard",
+  "maturity": "publisher_blocked_until_dry_run_harness",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -30,13 +30,13 @@
     {
       "gate_id": "PUB-GATE-0003",
       "name": "Content Quality Gate",
-      "status": "blocked_until_sprint_14",
+      "status": "standard_defined_pre_publication",
       "required_currently": false,
       "required_before_public_release": true,
       "validation_source": "CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md",
-      "failure_condition": "content_quality_standard_not_passed",
+      "failure_condition": "content_quality_substance_not_met",
       "bypassable": false,
-      "notes": "Blocked until Sprint 14 content quality standard passes."
+      "notes": "Standard defined Sprint 14 (DEC-032). Public release and draft generation remain blocked until publisher dry-run harness and governance approval."
     },
     {
       "gate_id": "PUB-GATE-0004",

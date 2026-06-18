@@ -670,6 +670,53 @@ Public classifier remains blocked. External deployment remains blocked.
 
 ---
 
+## Sprint 14 — Content Quality and Reference Substance Standard v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Define minimum governed substance requirements for future reference pages before public, route, or sitemap eligibility.
+
+### Deliverables
+
+- CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md
+- data/content-quality-standard.json
+- data/reference-substance-rules.json
+- data/thin-content-failure-patterns.json
+- data/reference-section-requirements.json
+- validators/validate_content_quality_standard.py
+- SPRINT_14_CONTENT_QUALITY_REFERENCE_SUBSTANCE_AUDIT.md
+- DEC-032 appended to DECISION_LOG.md
+- data/reference-expansion-gate.json updated
+- data/publisher-quality-gates.json updated
+- data/publisher-governance-policy.json updated (blocked_until_publisher_dry_run_harness)
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Substance Scope
+
+- 16 substance rules (SUBSTANCE-RULE-0001–0016)
+- 14 thin-content failure patterns (THIN-PATTERN-0001–0014)
+- 16 section requirements (9 required, 7 conditional)
+- 20 evidence ledger claims (CLAIM-0020 added)
+- Publisher PUB-GATE-0003 standard defined; publisher blocked until dry-run harness
+- No public pages, draft pages, routes, or sitemap expansion
+
+### Gate
+
+External deployment remains deferred (Sprint 1C). Maturity is pre_reference_publication_standard.
+
+### Next Phase
+
+**Sprint 15 — Structured Data and Semantic SEO Governance v1**
+
+Public classifier remains blocked. External deployment remains blocked. Publisher remains blocked until future dry-run harness.
+
+---
+
+## Long-Term Roadmap
+
 Future layers may include:
 
 - Evidence Risk Briefs;

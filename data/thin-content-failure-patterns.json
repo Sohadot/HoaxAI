@@ -1,0 +1,150 @@
+{
+  "pattern_set_id": "THIN-CONTENT-PATTERNS-001",
+  "name": "Hoax.ai Thin Content Failure Patterns",
+  "version": "v1.0.0",
+  "status": "active",
+  "maturity": "pre_reference_publication_standard",
+  "patterns": [
+    {
+      "pattern_id": "THIN-PATTERN-0001",
+      "name": "Keyword-only page",
+      "description": "Page exists primarily to target keywords without governed reference substance",
+      "prohibited_because": "Reference authority cannot be keyword inflation",
+      "detection_hint": "High keyword repetition without definition, scope, or system relationship",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Fails semantic SEO discipline gate."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0002",
+      "name": "Glossary-only page without governance context",
+      "description": "Thin definition list without governance boundary or system relationship",
+      "prohibited_because": "Glossary text alone is not reference substance",
+      "detection_hint": "Definitions only, no boundary or traceability sections",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Must include governance context."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0003",
+      "name": "Generic AI commentary page",
+      "description": "Generic explanatory prose without Hoax.ai governed framing",
+      "prohibited_because": "Generic commentary is not category reference value",
+      "detection_hint": "Could apply to any site; no claim/source traceability",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Substance requires system relationship."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0004",
+      "name": "Repeated thesis page",
+      "description": "Repeats homepage thesis without new reference value",
+      "prohibited_because": "Route inflation without substance",
+      "detection_hint": "Same thesis blocks as index with different keywords",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Must add governed reference unit value."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0005",
+      "name": "Placeholder page",
+      "description": "Unresolved placeholder, TODO, or coming-soon reference page",
+      "prohibited_because": "Placeholder routes weaken reference trust",
+      "detection_hint": "TODO, TBD, lorem ipsum, placeholder text",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "No public placeholder routes."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0006",
+      "name": "Future capability teaser",
+      "description": "Page teases future tool, classifier, or deployment capability",
+      "prohibited_because": "Future capability must not appear as present",
+      "detection_hint": "Now available, coming soon tool, live classifier language",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Governance boundary violation."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0007",
+      "name": "Unsupported external factual claim page",
+      "description": "External factual claims without registered source support",
+      "prohibited_because": "Reference layer requires source discipline",
+      "detection_hint": "Statistics, events, or facts without source registry entry",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Source scope gate failure."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0008",
+      "name": "Tool-promise page",
+      "description": "Page implies upload, scan, score, or classifier availability",
+      "prohibited_because": "Tool promises violate governance boundary",
+      "detection_hint": "Upload, scan now, try our tool, truth score",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Tool-implying content gate failure."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0009",
+      "name": "Fake/real detector page",
+      "description": "Page framed as fake/real or deepfake detection reference",
+      "prohibited_because": "Hoax.ai does not issue fake/real verdicts",
+      "detection_hint": "Fake or real, deepfake detected, authenticity checker",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Boundary safety contract violation."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0010",
+      "name": "Subject accusation page",
+      "description": "Page treats artifact risk as subject guilt or accuses people/institutions",
+      "prohibited_because": "Artifact-subject separation doctrine",
+      "detection_hint": "Accusation of person, institution, or event connected to artifact",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Subject accusation prohibited."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0011",
+      "name": "SEO route filler page",
+      "description": "Page created only to occupy a route for SEO volume",
+      "prohibited_because": "Route inflation without reference purpose",
+      "detection_hint": "Route exists before substance gates pass",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Candidate registry and expansion gate required first."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0012",
+      "name": "Decorative narrative without system relationship",
+      "description": "Long prose without connection to governed system layers",
+      "prohibited_because": "Length without substance is not reference-grade",
+      "detection_hint": "No taxonomy, standard, protocol, or traceability linkage",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "System relationship gate failure."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0013",
+      "name": "Search-volume-first page",
+      "description": "Page created from search volume targets before governed thesis exists",
+      "prohibited_because": "SEO must not drive substance",
+      "detection_hint": "Topic chosen for volume before claim and source scope",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Semantic SEO discipline violation."
+    },
+    {
+      "pattern_id": "THIN-PATTERN-0014",
+      "name": "Publisher-generated page without approved candidate state",
+      "description": "Content produced by publisher automation without candidate approval",
+      "prohibited_because": "Publisher must not bypass candidate and gate workflow",
+      "detection_hint": "Publisher output without candidate registry and dry-run harness",
+      "severity": "blocking",
+      "allowed_exception": "none",
+      "notes": "Publisher boundary gate failure."
+    }
+  ],
+  "last_reviewed": "2026-06-17"
+}

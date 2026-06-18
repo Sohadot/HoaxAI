@@ -38,9 +38,9 @@ The publisher is a controlled pipeline that may later transform approved referen
 
 | Field | Value |
 |-------|-------|
-| current_status | blocked_until_content_quality_standard |
+| current_status | blocked_until_publisher_dry_run_harness |
 
-**Reason:** Sprint 14 Content Quality and Reference Substance Standard has not yet passed.
+**Reason:** Content Quality Standard (Sprint 14) is defined. Publisher remains blocked until a future Publisher Dry-Run Harness validates candidate-only generation. No drafts or public pages in Sprint 13B/14 control-plane work.
 
 ## F. Publisher Workflow Stages
 

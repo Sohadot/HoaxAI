@@ -213,6 +213,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Publisher control plane adoption per DEC-031."
+    },
+    {
+      "claim_id": "CLAIM-0020",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["CONTENT_QUALITY_REFERENCE_SUBSTANCE_STANDARD.md", "DECISION_LOG.md", "data/content-quality-standard.json"],
+      "source_refs": ["SOURCE-0078", "SOURCE-0079", "SOURCE-0083"],
+      "support_scope": "content quality and reference substance standard adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Content quality standard adoption per DEC-032."
     }
   ],
   "last_reviewed": "2026-06-17"

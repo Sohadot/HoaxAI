@@ -134,11 +134,11 @@ def validate_publisher_policy() -> bool:
     if data.get("status") != "governed_internal_publisher_policy":
         error("publisher-governance-policy.json: invalid status")
         ok = False
-    if data.get("maturity") != "publisher_blocked_until_quality_standard":
+    if data.get("maturity") != "publisher_blocked_until_dry_run_harness":
         error("publisher-governance-policy.json: invalid maturity")
         ok = False
-    if data.get("current_publisher_status") != "blocked_until_content_quality_standard":
-        error("publisher-governance-policy.json: publisher must be blocked until content quality standard")
+    if data.get("current_publisher_status") != "blocked_until_publisher_dry_run_harness":
+        error("publisher-governance-policy.json: publisher must be blocked until dry-run harness")
         ok = False
 
     allowed = " ".join(data.get("allowed_current_outputs", [])).lower()
@@ -247,7 +247,7 @@ def validate_state_machine() -> bool:
             ok = False
 
     current = data.get("current_system_state", "")
-    if current not in ("blocked", "blocked_until_content_quality_standard"):
+    if current not in ("blocked", "blocked_until_publisher_dry_run_harness"):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
 
@@ -305,8 +305,8 @@ def validate_quality_gates() -> bool:
             ok = False
 
     cq = next((g for g in gates if g.get("gate_id") == "PUB-GATE-0003"), None)
-    if not cq or "blocked" not in cq.get("status", "").lower():
-        error("publisher-quality-gates: Content Quality Gate must be blocked until Sprint 14")
+    if not cq or "blocked_until_sprint_14" in cq.get("status", "").lower():
+        error("publisher-quality-gates: Content Quality Gate must be defined after Sprint 14")
         ok = False
 
     return ok
