@@ -16,6 +16,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
     PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
     PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -353,6 +354,7 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_WORKBENCH_SPECIFICATION,
         PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT,
         PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION,
+        PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     }
     if pub.get("current_publisher_status") not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")
@@ -394,6 +396,7 @@ def validate_publisher_governance() -> bool:
         "publisher_blocked_until_workbench_specification_layer",
         "publisher_blocked_until_workbench_interface_blueprint_governance",
         "publisher_blocked_until_workbench_interface_blueprint_validation",
+        "publisher_blocked_until_non_public_static_workbench_prototype_governance",
     ]
     if not any(b in blocked for b in workbench_blocked):
         error("reference-expansion-gate: publisher blocked until workbench progression")

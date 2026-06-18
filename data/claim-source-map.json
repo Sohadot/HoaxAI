@@ -411,6 +411,17 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Evidence Posture Workbench Interface Blueprint Governance adoption per DEC-049."
+    },
+    {
+      "claim_id": "CLAIM-0038",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": ["EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION.md", "DECISION_LOG.md", "data/evidence-posture-workbench-interface-blueprint-validation-policy.json"],
+      "source_refs": ["SOURCE-0191", "SOURCE-0192", "SOURCE-0193", "SOURCE-0194", "SOURCE-0195", "SOURCE-0196"],
+      "support_scope": "evidence posture workbench interface blueprint validation adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Evidence Posture Workbench Interface Blueprint Validation adoption per DEC-050."
     }
   ],
   "last_reviewed": "2026-06-17"

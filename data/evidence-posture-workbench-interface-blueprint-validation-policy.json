@@ -1,0 +1,78 @@
+{
+  "policy_id": "EP-WB-IB-VALIDATION-POLICY-001",
+  "name": "Hoax.ai Evidence Posture Workbench Interface Blueprint Validation Policy",
+  "version": "v1.0.0",
+  "status": "governed_evidence_posture_workbench_interface_blueprint_validation_policy",
+  "maturity": "validation_only_no_interface_no_prototype_no_engine_no_classifier_no_tool",
+  "governing_principle": "A blueprint must be validated before it can guide design.",
+  "identity_principle": "The interface identity must prove that Hoax.ai is not a detector before any prototype exists.",
+  "allowed_validation_actions": [
+    "blueprint_validation",
+    "conceptual_identity_validation",
+    "zone_validation",
+    "component_validation",
+    "state_contract_validation",
+    "copy_boundary_validation",
+    "accessibility_performance_validation",
+    "integrity_audit_creation",
+    "validation_only"
+  ],
+  "prohibited_actions": [
+    "interface_creation",
+    "prototype_creation",
+    "public_workbench",
+    "public_engine",
+    "public_classifier",
+    "public_tool",
+    "upload",
+    "scoring",
+    "fake_real_output",
+    "forms",
+    "analytics",
+    "api",
+    "monetization",
+    "new_routes",
+    "sitemap_expansion",
+    "dns",
+    "cloudflare",
+    "custom_domain_launch",
+    "deployment_changes",
+    "external_factual_claims",
+    "subject_accusation"
+  ],
+  "validation_scope": "Non-operational validation of Sprint 31 interface blueprint governance, conceptual identity, and integrity without interface or prototype creation.",
+  "conceptual_identity_validation_policy": {
+    "required_traits": [
+      "evidence_chamber",
+      "artifact_first_framing",
+      "boundary_first_layout",
+      "posture_state_architecture",
+      "provenance_shadow",
+      "not_assessable_as_protected_state",
+      "refusal_as_governance",
+      "output_envelope_containment",
+      "no_verdict_gravity"
+    ]
+  },
+  "correction_policy": "Corrections cannot add interface files, prototype files, routes, sitemap URLs, tool language, classifier language, upload language, scoring, public CTAs, public claims, or implementation code.",
+  "non_authorization_rules": {
+    "blocked": [
+      "interface_implementation",
+      "workbench_prototype",
+      "workbench_engine",
+      "workbench_classifier",
+      "upload",
+      "scoring",
+      "api",
+      "new_public_routes",
+      "sitemap_expansion",
+      "deployment_change",
+      "dns",
+      "cloudflare",
+      "custom_domain_launch",
+      "public_tool_behavior"
+    ],
+    "statement": "Interface blueprint validation does not authorize interface implementation, prototype, engine, classifier, upload, scoring, API, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or public tool behavior."
+  },
+  "last_reviewed": "2026-06-17"
+}

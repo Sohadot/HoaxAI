@@ -1902,6 +1902,66 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Evidence Posture Workbench interface blueprint validator."
+    },
+    {
+      "source_id": "SOURCE-0191",
+      "source_title": "EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION.md",
+      "source_type": "internal_governance",
+      "location": "EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Evidence Posture Workbench interface blueprint validation doctrine."
+    },
+    {
+      "source_id": "SOURCE-0192",
+      "source_title": "data/evidence-posture-workbench-interface-blueprint-validation-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-workbench-interface-blueprint-validation-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Interface blueprint validation policy."
+    },
+    {
+      "source_id": "SOURCE-0193",
+      "source_title": "data/evidence-posture-workbench-interface-blueprint-validation-results-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-workbench-interface-blueprint-validation-results-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Interface blueprint validation results v1."
+    },
+    {
+      "source_id": "SOURCE-0194",
+      "source_title": "data/evidence-posture-workbench-interface-conceptual-identity-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-workbench-interface-conceptual-identity-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Interface conceptual identity validation v1 including background identity."
+    },
+    {
+      "source_id": "SOURCE-0195",
+      "source_title": "data/evidence-posture-workbench-interface-blueprint-integrity-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-workbench-interface-blueprint-integrity-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Interface blueprint integrity audit v1."
+    },
+    {
+      "source_id": "SOURCE-0196",
+      "source_title": "validators/validate_evidence_posture_workbench_interface_blueprint_validation.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_evidence_posture_workbench_interface_blueprint_validation.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Interface blueprint validation validator."
     }
   ]
 }

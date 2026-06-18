@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_workbench_interface_blueprint_validation",
+  "maturity": "publisher_blocked_until_non_public_static_workbench_prototype_governance",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -366,6 +366,21 @@
       "failure_condition": "evidence_posture_workbench_interface_blueprint_governance_not_met",
       "bypassable": false,
       "notes": "Interface blueprint governance defined Sprint 31 (DEC-049). Defines Hoax-specific interface zones, components, state contracts, copy boundaries, and accessibility rules without authorizing interface, prototype, engine, classifier, tool, upload, scoring, API, forms, analytics, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or monetization by itself."
+    },
+    {
+      "gate_id": "PUB-GATE-0032",
+      "name": "Evidence Posture Workbench Interface Blueprint Validation Gate",
+      "status": "interface_blueprint_validation_complete_pre_prototype_governance",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_non_public_static_workbench_prototype_governance": true,
+      "required_before_workbench_prototype": true,
+      "validation_source": "EVIDENCE_POSTURE_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION.md",
+      "failure_condition": "evidence_posture_workbench_interface_blueprint_validation_not_met",
+      "bypassable": false,
+      "notes": "Interface blueprint validation defined Sprint 32 (DEC-050). Validates conceptual identity, zone integrity, component integrity, state contracts, copy boundaries, accessibility/performance discipline, and non-authorization boundaries. Does not authorize interface, prototype, engine, classifier, tool, upload, scoring, API, forms, analytics, routes, sitemap, deployment, DNS, Cloudflare, custom domain launch, or monetization by itself."
     }
   ],
   "last_reviewed": "2026-06-17"

@@ -46,6 +46,7 @@
     "evidence_posture_workbench_dry_run_harness_validation",
     "evidence_posture_workbench_specification_layer_validation",
     "evidence_posture_workbench_interface_blueprint_governance_validation",
+    "evidence_posture_workbench_interface_blueprint_validation_validation",
     "publisher_control_plane_validation",
     "validate_all_py_pass",
     "final_audit"
@@ -67,7 +68,7 @@
     "placeholder_page",
     "unmapped_public_claim",
     "publisher_control_plane_failure",
-    "publisher_blocked_until_workbench_interface_blueprint_validation",
+    "publisher_blocked_until_non_public_static_workbench_prototype_governance",
     "first_internal_draft_pack_failure",
     "internal_draft_review_refinement_failure",
     "public_route_readiness_gate_failure",
@@ -106,7 +107,8 @@
     "no_public_engine_eligibility_by_governance_alone",
     "no_public_engine_eligibility_by_dry_run_alone",
     "no_public_engine_eligibility_by_specification_alone",
-    "no_public_engine_eligibility_by_blueprint_governance_alone"
+    "no_public_engine_eligibility_by_blueprint_governance_alone",
+    "no_public_engine_eligibility_by_blueprint_validation_alone"
   ],
   "last_reviewed": "2026-06-17"
 }

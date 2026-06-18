@@ -1256,3 +1256,34 @@ The Evidence Posture Workbench must not begin as an interface because an interfa
 - No public tool is created.
 - No routes or sitemap URLs are added.
 - Future work may create an interface blueprint validation sprint only after this governance passes.
+
+---
+
+## DEC-050 — Evidence Posture Workbench Interface Blueprint Validation v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Workbench Interface Blueprint Validation v1 to validate the future workbench interface blueprint across conceptual identity, zone integrity, component integrity, state-contract integrity, copy-boundary safety, accessibility/performance discipline, and non-authorization boundaries before any interface, prototype, engine, classifier, upload workflow, scoring system, form, API, route, sitemap entry, or public tool is created.
+
+### Rationale
+
+The Sprint 31 blueprint defines a Hoax-specific interface identity, but that identity must be validated before it guides any future design or prototype. The validation must confirm that the future interface is conceptually distinct from AI detectors, upload dashboards, scoring panels, forensic games, SaaS analytics dashboards, and fake/real classifiers. Hoax.ai must preserve the evidence chamber thesis: evidence should be structured before it is believed, escalated, published, or judged.
+
+### Implications
+
+- Interface blueprint validation may be created.
+- Conceptual identity validation may be created.
+- Blueprint integrity audit may be created.
+- Zone, component, state, copy, accessibility, and performance rules may be validated.
+- No interface may be created.
+- No prototype may be created.
+- No engine may be implemented.
+- No classifier may be implemented.
+- No upload workflow may be created.
+- No scoring system may be created.
+- No public tool may be created.
+- No routes or sitemap URLs may be added.
+- Future work may move to Non-Public Static Workbench Prototype Governance only after this validation passes.

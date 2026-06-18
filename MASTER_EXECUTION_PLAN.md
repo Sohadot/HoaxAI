@@ -70,12 +70,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G29 | Evidence Posture Workbench Dry-Run Harness | Sprint 29 validator PASS |
 | G30 | Evidence Posture Workbench Specification Layer | Sprint 30 validator PASS |
 | G31 | Evidence Posture Workbench Interface Blueprint Governance | Sprint 31 validator PASS |
+| G32 | Evidence Posture Workbench Interface Blueprint Validation | Sprint 32 validator PASS |
 
-**Gate G31 passed.** Sprint 32 (Evidence Posture Workbench Interface Blueprint Validation) may proceed when authorized. Public classifier and engine remain blocked. No workbench interface or prototype may be created until interface blueprint validation passes. External deployment remains separately governed.
+**Gate G32 passed.** Sprint 33 (Non-Public Static Workbench Prototype Governance) may proceed when authorized. Public classifier and engine remain blocked. No workbench prototype or interface may be created until prototype governance passes. External deployment remains separately governed.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0–G31) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, and expansion readiness. They must pass before reference layer scale or operational layers.
+Foundation gates (G0–G32) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, and expansion readiness. They must pass before reference layer scale or operational layers.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -208,7 +209,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 29 | COMPLETE | G29 passed |
 | Sprint 30 | COMPLETE | G30 passed |
 | Sprint 31 | COMPLETE | G31 passed |
-| Sprint 32+ | READY | G31 passed — Interface Blueprint Validation pending; engine/classifier blocked; deployment gates separately governed |
+| Sprint 32 | COMPLETE | G32 passed |
+| Sprint 33+ | READY | G32 passed — Non-Public Static Workbench Prototype Governance pending; engine/classifier blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

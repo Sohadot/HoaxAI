@@ -1,0 +1,88 @@
+{
+  "identity_validation_id": "EP-WB-IB-IDENTITY-VALIDATION-001",
+  "name": "Hoax.ai Evidence Posture Workbench Interface Conceptual Identity Validation v1",
+  "version": "v1.0.0",
+  "status": "evidence_posture_workbench_interface_conceptual_identity_validated",
+  "maturity": "conceptual_identity_validation_only_no_interface_no_prototype",
+  "interface_thesis_result": "pass",
+  "identity_trait_results": {
+    "artifact_first_framing": "pass",
+    "boundary_first_layout": "pass",
+    "posture_state_architecture": "pass",
+    "provenance_shadow": "pass",
+    "not_assessable_as_protected_state": "pass",
+    "refusal_as_governance": "pass",
+    "output_envelope_containment": "pass",
+    "no_verdict_gravity": "pass"
+  },
+  "allowed_metaphor_results": {
+    "evidence_chamber": "pass",
+    "posture_field": "pass",
+    "boundary_rail": "pass",
+    "provenance_shadow": "pass",
+    "source_trace": "pass",
+    "uncertainty_register": "pass",
+    "refusal_gate": "pass",
+    "output_envelope": "pass",
+    "not_assessable_lock": "pass",
+    "verification_path": "pass"
+  },
+  "forbidden_metaphor_results": {
+    "detector": "blocked",
+    "scanner": "blocked",
+    "truth_meter": "blocked",
+    "risk_score": "blocked",
+    "fake_real_switch": "blocked",
+    "upload_machine": "blocked",
+    "forensic_game": "blocked",
+    "lie_detector": "blocked",
+    "courtroom_verdict": "blocked",
+    "policing_dashboard": "blocked",
+    "social_media_moderation_panel": "blocked",
+    "saas_analytics_dashboard": "blocked"
+  },
+  "anti_generic_ui_results": {
+    "not_upload_dashboard": "pass",
+    "not_detector_page": "pass",
+    "not_score_dashboard": "pass",
+    "not_saas_analytics": "pass",
+    "not_fact_checking_verdict_panel": "pass",
+    "not_forensic_game": "pass",
+    "not_social_moderation_panel": "pass",
+    "not_policing_dashboard": "pass"
+  },
+  "conceptual_background_identity_result": {
+    "status": "evidence_field_background_direction_validated",
+    "preferred_direction": "governed_evidence_field_not_generic_black_dashboard",
+    "conceptual_functions": [
+      "missing_context_as_absence",
+      "provenance_gap_as_shadow",
+      "artifact_subject_boundary_as_rail",
+      "evidence_condition_as_layering",
+      "not_assessable_as_protected_restraint",
+      "output_boundary_as_containment"
+    ],
+    "preferred_visual_tone": [
+      "pale_document_field",
+      "bone_neutral",
+      "warm_ash",
+      "muted_graphite",
+      "faint_blue_grey_provenance_lines",
+      "restrained_amber_or_copper_boundary_accents"
+    ],
+    "blocked_visual_patterns": [
+      "generic_black_cyber_dashboard",
+      "neon_ai_detector",
+      "upload_dashboard",
+      "red_green_fake_real_ui",
+      "scanner_background",
+      "forensic_game_interface",
+      "policing_dashboard",
+      "saas_analytics_gradient"
+    ],
+    "maturity_boundary": "This validates conceptual background direction only. It does not create CSS, UI implementation, prototype, public workbench, public engine, classifier, upload, scoring, route, sitemap expansion, deployment, DNS, Cloudflare, or custom domain launch."
+  },
+  "originality_boundary": "This validation confirms a Hoax-specific conceptual interface direction, but does not claim final UI uniqueness, implementation completion, public readiness, or impossibility of imitation.",
+  "overall_result": "conceptual_identity_validated_with_maturity_boundary",
+  "last_reviewed": "2026-06-17"
+}
