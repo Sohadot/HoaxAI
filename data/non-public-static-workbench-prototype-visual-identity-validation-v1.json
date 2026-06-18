@@ -1,0 +1,40 @@
+{
+  "visual_validation_id": "NP-PROTO-VIS-VALIDATION-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype Visual Identity Validation v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_prototype_visual_identity_validated",
+  "maturity": "visual_validation_only_no_public_interface_no_engine",
+  "evidence_chamber_result": "pass",
+  "evidence_field_background_result": "pass",
+  "identity_trait_results": {
+    "evidence_chamber_not_detector": "pass",
+    "governed_evidence_field_not_generic_black_dashboard": "pass",
+    "artifact_first": "pass",
+    "boundary_first": "pass",
+    "posture_before_verdict": "pass",
+    "provenance_shadow": "pass",
+    "missing_context_as_absence": "pass",
+    "not_assessable_as_protected_restraint": "pass",
+    "refusal_as_governance": "pass",
+    "output_envelope_containment": "pass",
+    "no_verdict_gravity": "pass"
+  },
+  "forbidden_pattern_results": {
+    "detector_dashboard": "blocked",
+    "scanner_ui": "blocked",
+    "central_upload_box": "blocked",
+    "red_green_fake_real_result_logic": "blocked",
+    "truth_meter": "blocked",
+    "risk_score": "blocked",
+    "probability_gauge": "blocked",
+    "forensic_game_visuals": "blocked",
+    "policing_dashboard": "blocked",
+    "saas_analytics_dashboard": "blocked",
+    "product_landing_page_cta_layout": "blocked",
+    "try_it_now_pattern": "blocked",
+    "black_cyber_dashboard_default": "blocked"
+  },
+  "originality_boundary": "This validates Hoax-specific prototype direction but does not claim final UI uniqueness, public readiness, product readiness, or impossibility of imitation.",
+  "overall_result": "visual_identity_validated",
+  "last_reviewed": "2026-06-17"
+}

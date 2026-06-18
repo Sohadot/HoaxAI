@@ -16,6 +16,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT,
     validate_no_extra_public_html,
     validate_public_surface,
 )
@@ -475,11 +476,13 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE,
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION,
-    ):
+    PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT,
+):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE}, "
-            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1}, or "
-            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION}"
+            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_V1}, "
+            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_VALIDATION}, or "
+            f"{PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT}"
         )
         ok = False
 
@@ -524,9 +527,13 @@ def validate_publisher_governance() -> bool:
     if "publisher_blocked_until_non_public_static_workbench_prototype_validation" not in blocked:
         error("reference-expansion-gate: publisher blocked until prototype validation")
         ok = False
+    if "publisher_blocked_until_non_public_static_workbench_prototype_refinement" not in blocked:
+        error("reference-expansion-gate: publisher blocked until prototype refinement")
+        ok = False
     proto_blocked = [
         "publisher_blocked_until_non_public_static_workbench_prototype_v1",
         "publisher_blocked_until_non_public_static_workbench_prototype_validation",
+        "publisher_blocked_until_non_public_static_workbench_prototype_refinement",
     ]
     if not any(b in blocked for b in proto_blocked):
         error("reference-expansion-gate: publisher blocked until prototype progression")

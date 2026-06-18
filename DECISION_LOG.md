@@ -1345,3 +1345,30 @@ The prototype phase is now allowed because the prototype governance passed in Sp
 - The prototype must not enter data/route-registry.json as a public route.
 - The prototype must not include forms, inputs, upload controls, JavaScript, scoring, fake/real output, or generated analysis.
 - Future work must validate the static prototype before any further interface or prototype expansion.
+
+---
+
+## DEC-053 — Non-Public Static Workbench Prototype Validation v1 Adopted
+
+**Date:** 2026-06-17
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Prototype Validation v1 to validate the internal static Evidence Posture Workbench prototype created in Sprint 34 across static safety, public isolation, visual identity, evidence chamber integrity, governed evidence field background, forbidden capability checks, route/sitemap exclusion, and non-operational boundaries, without creating new prototype files, public routes, sitemap entries, interface behavior, engine, classifier, upload workflow, scoring system, API, analytics, DNS, Cloudflare, deployment changes, or public tool behavior.
+
+### Rationale
+
+The first static prototype exists, but existence is not enough. It must be validated before refinement. The validation must confirm that the prototype remains non-public as a web surface, static-only, repository-visible, not routed, not indexed, not linked, not operational, and visually aligned with Hoax.ai's evidence chamber direction rather than generic detector, upload, scoring, or SaaS dashboard patterns.
+
+### Implications
+
+- The Sprint 34 prototype may be audited.
+- Static HTML and CSS may be validated.
+- Visual identity may be validated.
+- Public isolation may be validated.
+- Safety and non-authorization boundaries may be validated.
+- No new prototype files may be created.
+- No public route or sitemap entry may be created.
+- No prototype expansion is authorized by this sprint.
+- Future work may refine the internal static prototype only after this validation passes.

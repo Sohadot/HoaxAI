@@ -499,6 +499,7 @@ def validate_cross_file() -> bool:
         "blocked_until_non_public_static_workbench_prototype_governance",
         "blocked_until_non_public_static_workbench_prototype_v1",
         "blocked_until_non_public_static_workbench_prototype_validation",
+        "blocked_until_non_public_static_workbench_prototype_refinement",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "

@@ -1,0 +1,17 @@
+{
+  "isolation_audit_id": "NP-PROTO-ISOLATION-AUDIT-001",
+  "name": "Hoax.ai Non-Public Static Workbench Prototype Public Isolation Audit v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_prototype_public_isolation_audit_complete",
+  "maturity": "validation_only_static_internal_prototype_no_engine_no_classifier_no_public_route",
+  "internal_prototype_location": "_internal_prototypes/evidence-posture-workbench/",
+  "route_registry_result": "not_registered_as_public_route",
+  "sitemap_result": "not_in_sitemap",
+  "homepage_link_result": "not_linked_from_homepage",
+  "reference_page_link_result": "not_linked_from_reference_pages",
+  "language_page_link_result": "not_linked_from_language_page",
+  "public_navigation_result": "not_linked_from_public_navigation",
+  "public_surface_result": "public_surface_unchanged_four_urls",
+  "overall_outcome": "public_isolation_validated",
+  "last_reviewed": "2026-06-17"
+}

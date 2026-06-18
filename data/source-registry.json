@@ -2142,6 +2142,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Prototype v1 validator."
+    },
+    {
+      "source_id": "SOURCE-0215",
+      "source_title": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_VALIDATION_V1.md",
+      "source_type": "internal_governance",
+      "location": "NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_VALIDATION_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype validation doctrine v1."
+    },
+    {
+      "source_id": "SOURCE-0216",
+      "source_title": "data/non-public-static-workbench-prototype-validation-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-validation-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype validation policy."
+    },
+    {
+      "source_id": "SOURCE-0217",
+      "source_title": "data/non-public-static-workbench-prototype-validation-results-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-validation-results-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype validation results v1."
+    },
+    {
+      "source_id": "SOURCE-0218",
+      "source_title": "data/non-public-static-workbench-prototype-visual-identity-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-visual-identity-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype visual identity validation v1."
+    },
+    {
+      "source_id": "SOURCE-0219",
+      "source_title": "data/non-public-static-workbench-prototype-public-isolation-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-public-isolation-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype public isolation audit v1."
+    },
+    {
+      "source_id": "SOURCE-0220",
+      "source_title": "data/non-public-static-workbench-prototype-static-safety-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-prototype-static-safety-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype static safety audit v1."
+    },
+    {
+      "source_id": "SOURCE-0221",
+      "source_title": "validators/validate_non_public_static_workbench_prototype_validation.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_non_public_static_workbench_prototype_validation.py",
+      "supports": ["operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Prototype validation validator."
     }
   ]
 }

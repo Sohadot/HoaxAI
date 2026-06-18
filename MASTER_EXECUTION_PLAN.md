@@ -73,12 +73,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G32 | Evidence Posture Workbench Interface Blueprint Validation | Sprint 32 validator PASS |
 | G33 | Non-Public Static Workbench Prototype Governance | Sprint 33 validator PASS |
 | G34 | Non-Public Static Workbench Prototype v1 | Sprint 34 validator PASS |
+| G35 | Non-Public Static Workbench Prototype Validation | Sprint 35 validator PASS |
 
-**Gate G34 passed.** Sprint 35 (Non-Public Static Workbench Prototype Validation) may proceed when authorized. Public classifier and engine remain blocked. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch. External deployment remains separately governed.
+**Gate G35 passed.** Sprint 36 (Non-Public Static Workbench Prototype Refinement) may proceed when authorized. Public classifier and engine remain blocked. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch. External deployment remains separately governed.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0–G34) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, and expansion readiness. They must pass before reference layer scale or operational layers.
+Foundation gates (G0–G35) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, and expansion readiness. They must pass before reference layer scale or operational layers.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -214,7 +215,8 @@ Classifier, API, and workflow tools require protocol and standard completion fir
 | Sprint 32 | COMPLETE | G32 passed |
 | Sprint 33 | COMPLETE | G33 passed |
 | Sprint 34 | COMPLETE | G34 passed |
-| Sprint 35+ | READY | G34 passed — Non-Public Static Workbench Prototype Validation pending; engine/classifier blocked; deployment gates separately governed |
+| Sprint 35 | COMPLETE | G35 passed |
+| Sprint 36+ | READY | G35 passed — Non-Public Static Workbench Prototype Refinement pending; engine/classifier blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

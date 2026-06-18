@@ -1530,6 +1530,53 @@ Public classifier remains blocked. Public engine remains blocked. The prototype 
 
 ---
 
+## Sprint 35 — Non-Public Static Workbench Prototype Validation v1
+
+**Status:** COMPLETE — 2026-06-17  
+**Goal:** Validate the first static, non-public Evidence Posture Workbench prototype across static safety, public isolation, visual identity, and non-authorization boundaries without creating new prototype files, public routes, JavaScript, forms, engine, classifier, upload, scoring, or public tool.
+
+### Deliverables
+
+- NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_VALIDATION_V1.md
+- data/non-public-static-workbench-prototype-validation-policy.json
+- data/non-public-static-workbench-prototype-validation-results-v1.json
+- data/non-public-static-workbench-prototype-visual-identity-validation-v1.json
+- data/non-public-static-workbench-prototype-public-isolation-audit-v1.json
+- data/non-public-static-workbench-prototype-static-safety-audit-v1.json
+- validators/validate_non_public_static_workbench_prototype_validation.py
+- SPRINT_35_NON_PUBLIC_STATIC_WORKBENCH_PROTOTYPE_VALIDATION_AUDIT.md
+- DEC-053 appended to DECISION_LOG.md
+- Publisher status → blocked_until_non_public_static_workbench_prototype_refinement
+- PUB-GATE-0035 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`python validators/validate_all.py` — PASS required for sprint closure.
+
+### Validation Scope
+
+- 40 validation dimensions — all pass
+- Prototype files validated (index.html + prototype.css only)
+- Public isolation validated (4 sitemap URLs unchanged)
+- Static safety validated (no JS, forms, upload, scoring)
+- Visual identity validated (evidence chamber, governed evidence field)
+- Anti-detector/anti-upload/anti-scoring dashboard patterns blocked
+- 41 evidence ledger claims (CLAIM-0041 added)
+- No new prototype files, public routes, sitemap expansion, or public navigation links
+
+### Gate
+
+**Gate G35 passed.** Prototype refinement blocked until Sprint 36.
+
+### Next Phase
+
+**Sprint 36 — Non-Public Static Workbench Prototype Refinement v1**
+
+Public classifier remains blocked. Public engine remains blocked. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  
