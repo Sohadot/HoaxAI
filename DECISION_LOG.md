@@ -1912,3 +1912,26 @@ After freezing governance scaffolding in DEC-070, Hoax.ai must prove its thesis 
 - No public engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
 - Public reference production remains the active direction until at least 10 additional public reference pages exist and pass validation.
 
+---
+
+## DEC-072 — Public Reference Batch 1 Depth, SEO, and Inevitability Hardening Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Batch 1 Depth, SEO, and Inevitability Hardening to strengthen the first four production reference pages: Source Confidence, Provenance Gap, Not Assessable, and Output Boundary. This sprint improves conceptual depth, semantic SEO, internal relationships, category language, and reference usefulness without creating new routes, tools, engines, classifiers, upload workflows, scoring systems, APIs, analytics, DNS changes, monetization, or public tool behavior.
+
+### Rationale
+
+Sprint 53 restored production by creating real public reference pages. Sprint 54 ensures those pages are not merely technically valid, but strategically strong. Hoax.ai must become authoritative through depth, clarity, category language, and conceptual necessity. Each page must help make Hoax.ai feel like the owner of a serious evidence-posture category rather than another AI detection website.
+
+### Implications
+
+- The four Batch 1 reference pages may be deepened in place.
+- Metadata, internal linking, and conceptual sections may be strengthened.
+- Public sitemap remains exactly 8 URLs.
+- No new public routes, meta-governance layers, or operational capability is authorized.
+- Batch 2 production may proceed only after Sprint 54 validation passes.
+
