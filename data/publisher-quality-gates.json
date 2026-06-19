@@ -3,7 +3,7 @@
   "name": "Hoax.ai Publisher Quality Gates",
   "version": "v1.0.0",
   "status": "active",
-  "maturity": "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_validation",
+  "maturity": "governance_scaffolding_frozen_production_mandate_active",
   "gates": [
     {
       "gate_id": "PUB-GATE-0001",
@@ -704,6 +704,23 @@
       "failure_condition": "public_route_candidate_registration_governance_validation_not_met",
       "bypassable": false,
       "notes": "Public route candidate registration governance validation completed Sprint 51 (DEC-069). Does not authorize candidate registration, candidate assessment, public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, prototype file changes, prototype exposure, or public release."
+    },
+    {
+      "gate_id": "PUB-GATE-0052",
+      "name": "Governance Scaffolding Freeze and Public Production Mandate Gate",
+      "status": "governance_scaffolding_frozen_production_mandate_active",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_any_meta_governance_layer": true,
+      "required_before_any_new_governance_validation_sprint": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "validation_source": "validators/validate_governance_scaffolding_freeze.py",
+      "failure_condition": "governance_scaffolding_freeze_not_met_or_production_threshold_not_reached",
+      "bypassable": false,
+      "notes": "Governance scaffolding freeze and public production mandate defined Sprint 52 (DEC-070). Freezes all meta-governance layers until at least 10 additional public reference pages are produced and validated. Does not authorize public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, or monetization without further production gates."
     }
   ],
   "last_reviewed": "2026-06-19"

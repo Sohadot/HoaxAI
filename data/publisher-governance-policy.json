@@ -3,10 +3,10 @@
   "name": "Hoax.ai Publisher Governance Policy",
   "version": "v1.0.0",
   "status": "governed_internal_publisher_policy",
-  "maturity": "publisher_blocked_until_public_route_candidate_registration_authorization_governance",
+  "maturity": "publisher_blocked_until_public_reference_production_batch_1",
   "governing_principle": "Automation may produce candidates. Governance decides what becomes public.",
   "quality_principle": "The publisher must not generate volume. It must generate governed reference value.",
-  "current_publisher_status": "blocked_until_public_route_candidate_registration_authorization_governance",
+  "current_publisher_status": "blocked_until_public_reference_production_batch_1",
   "allowed_current_outputs": [
     "publisher_governance_policy",
     "publisher_workflow_registry",
@@ -245,5 +245,5 @@
     "forbidden_language_passed",
     "governance_approval_required"
   ],
-  "last_reviewed": "2026-06-18"
+  "last_reviewed": "2026-06-19"
 }

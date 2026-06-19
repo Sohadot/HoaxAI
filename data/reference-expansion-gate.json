@@ -65,6 +65,7 @@
     "public_route_candidate_registry_governance_validation",
     "public_route_candidate_registration_governance",
     "public_route_candidate_registration_governance_validation",
+    "governance_scaffolding_freeze_validation",
     "publisher_control_plane_validation",
     "validate_all_py_pass",
     "final_audit"
@@ -114,7 +115,8 @@
     "publisher_blocked_until_public_route_candidate_registry_governance_validation",
     "publisher_blocked_until_public_route_candidate_registration_governance",
     "publisher_blocked_until_public_route_candidate_registration_governance_validation",
-    "publisher_blocked_until_public_route_candidate_registration_authorization_governance"
+    "publisher_blocked_until_public_reference_production_batch_1",
+    "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [
     "candidate_must_be_release_eligible_status",
@@ -186,7 +188,8 @@
     "no_candidate_registration_by_registration_governance_validation_alone",
     "no_public_route_candidate_assessment_by_registration_governance_validation_alone",
     "no_public_route_creation_by_registration_governance_validation",
-    "no_public_engine_eligibility_by_registration_governance_validation"
+    "no_public_engine_eligibility_by_registration_governance_validation",
+    "no_meta_governance_before_10_additional_public_reference_pages"
   ],
   "last_reviewed": "2026-06-19"
 }

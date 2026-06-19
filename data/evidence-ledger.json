@@ -1,6 +1,6 @@
 {
   "ledger_version": "0.1",
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "description": "Internal claim registry for Hoax.ai self-application discipline. Does not certify truth.",
   "claims": [
     {
@@ -629,6 +629,17 @@
       "status": "active",
       "last_reviewed": "2026-06-19",
       "notes": "Public route candidate registration governance validation confirms Sprint 50 registration governance integrity without registering any candidate, creating a candidate entry, instantiating a registration record, assessing a candidate, creating a route, sitemap entry, public navigation, engine, classifier, upload, scoring, API, analytics, deployment, or public release."
+    },
+    {
+      "claim_id": "CLAIM-0058",
+      "claim_text": "Hoax.ai has adopted Governance Scaffolding Freeze and Public Reference Production Mandate v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "GOVERNANCE_SCAFFOLDING_FREEZE_AND_PUBLIC_PRODUCTION_MANDATE.md, PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md, data/governance-scaffolding-freeze-policy.json, data/public-reference-production-plan-v1.json, DECISION_LOG.md (DEC-070)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-19",
+      "notes": "Governance scaffolding freeze adopted. Meta-governance frozen until 10 additional public reference pages are produced. Next phase is public reference production. No public route, engine, classifier, upload, scoring, API, analytics, deployment, or public tool authorized by this decision."
     }
   ]
 }

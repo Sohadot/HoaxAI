@@ -90,12 +90,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G49 | Public Route Candidate Registry Governance Validation | Sprint 49 validator PASS |
 | G50 | Public Route Candidate Registration Governance | Sprint 50 validator PASS |
 | G51 | Public Route Candidate Registration Governance Validation | Sprint 51 validator PASS |
+| G52 | Governance Scaffolding Freeze and Public Production Mandate | Sprint 52 validator PASS |
 
-**Gate G51 passed.** Sprint 52 (Public Route Candidate Registration Authorization Governance) may proceed when authorized. Public classifier and engine remain blocked. Public route remains blocked until candidate registration authorization governance exists. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational. External deployment remains separately governed.
+**Gate G52 passed.** Governance scaffolding is frozen. The next authorized phase is public reference page production (Sprint 53). No candidate registration authorization governance is authorized. No public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0-G51) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, public route candidate registry governance, public route candidate registry governance validation, public route candidate registration governance, public route candidate registration governance validation, and expansion readiness. They must pass before reference layer scale or operational layers.
+Foundation gates (G0-G52) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, public route candidate registry governance, public route candidate registry governance validation, public route candidate registration governance, public route candidate registration governance validation, governance scaffolding freeze and public production mandate, and expansion readiness. They must pass before reference layer scale or operational layers.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -146,7 +147,8 @@ Development must stop and remediate when:
 - a route is created without defined reference purpose;
 - monetization is introduced before reference layer validation;
 - DNS or Cloudflare work begins before GitHub public foundation is complete;
-- an absolute security, detection, or truth verdict claim appears in any file.
+- an absolute security, detection, or truth verdict claim appears in any file;
+- a meta-governance layer is added before 10 additional public reference pages exist.
 
 Stop conditions trigger remediation before the next sprint opens.
 
@@ -183,6 +185,12 @@ Thin pages, keyword-stuffed pages, and undifferentiated landing pages are prohib
 Every tool must have defined output language, confidence framing, no-verdict disclaimer, and artifact–subject separation before deployment.
 
 Classifier, API, and workflow tools require protocol and standard completion first.
+
+### No Meta-Governance Before Production Threshold
+
+No new governance layer may be added whose primary function is to govern, validate, authorize, or prepare another governance layer until Hoax.ai has produced at least 10 additional real public reference pages.
+
+This rule is enforced by DEC-070 and G52.
 
 ## G38: Non-Public Static Workbench Visual System Hardening
 
@@ -239,6 +247,10 @@ Gate G50 is passed after Public Route Candidate Registration Governance exists; 
 ## G51: Public Route Candidate Registration Governance Validation
 
 Gate G51 is passed after Public Route Candidate Registration Governance Validation exists; validation policy exists; validation results exist; registration process validation exists; registration eligibility gate validation exists; registration record template validation exists; registration state model validation exists; non-authorization validation exists; public isolation audit exists; static safety audit exists; validator exists; validate_all.py PASS; Sprint 50 registration governance is validated; no candidate registered; no candidate entry created; no candidate ID created; no candidate record instantiated; no registration record instantiated; no candidate assessed, selected, or approved; prototype files are not modified; prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created.
+
+## G52: Governance Scaffolding Freeze and Public Production Mandate
+
+Gate G52 is passed after GOVERNANCE_SCAFFOLDING_FREEZE_AND_PUBLIC_PRODUCTION_MANDATE.md exists; PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md exists; data/governance-scaffolding-freeze-policy.json exists and parses; data/public-reference-production-plan-v1.json exists and parses; DEC-070 exists in DECISION_LOG.md; production threshold is 10 additional public reference pages; public route candidate registration authorization governance is blocked; no further meta-governance layer is authorized; next phase is public reference production; production plan includes at least 10 page candidates; initial release batch includes /reference/source-confidence/, /reference/provenance-gap/, /reference/not-assessable/, /reference/output-boundary/; validator exists; validate_all.py PASS; no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created; prototype files are not modified; and prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational.
 
 ## Current Execution State
 
@@ -304,7 +316,8 @@ Gate G51 is passed after Public Route Candidate Registration Governance Validati
 | Sprint 49 | COMPLETE | G49 passed |
 | Sprint 50 | COMPLETE | G50 passed |
 | Sprint 51 | COMPLETE | G51 passed |
-| Sprint 52+ | READY | G51 passed - Public Route Candidate Registration Authorization Governance pending; engine/classifier blocked; public route blocked; deployment gates separately governed |
+| Sprint 52 | COMPLETE | G52 passed — Governance scaffolding frozen; public reference production mandated |
+| Sprint 53+ | READY | G52 passed — Public reference page production is next; engine/classifier blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

@@ -1,6 +1,6 @@
 {
   "registry_version": "0.1",
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "description": "Source registry. Internal governance sources. Taxonomy sources added Sprint 2.",
   "sources": [
     {
@@ -26,7 +26,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Core boundary including Artifact–Subject Separation Doctrine."
+      "notes": "Core boundary including Artifact\u2013Subject Separation Doctrine."
     },
     {
       "source_id": "SOURCE-0003",
@@ -1541,7 +1541,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Internal draft DRAFT-0002 Artifact–Subject Separation."
+      "notes": "Internal draft DRAFT-0002 Artifact\u2013Subject Separation."
     },
     {
       "source_id": "SOURCE-0124",
@@ -1768,7 +1768,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Artifact–Subject Separation controlled public reference page."
+      "notes": "Artifact\u2013Subject Separation controlled public reference page."
     },
     {
       "source_id": "SOURCE-0142",
@@ -3929,7 +3929,10 @@
       "source_title": "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_VALIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_VALIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment governance validation doctrine."
@@ -3939,7 +3942,10 @@
       "source_title": "data/public-route-candidate-assessment-governance-validation-policy.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-governance-validation-policy.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment governance validation policy."
@@ -3949,7 +3955,10 @@
       "source_title": "data/public-route-candidate-assessment-governance-validation-results-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-governance-validation-results-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment governance validation results."
@@ -3959,7 +3968,10 @@
       "source_title": "data/public-route-candidate-assessment-framework-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-framework-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment framework validation."
@@ -3969,7 +3981,10 @@
       "source_title": "data/public-route-candidate-assessment-record-template-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-record-template-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment record template validation."
@@ -3979,7 +3994,10 @@
       "source_title": "data/public-route-candidate-assessment-state-model-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-state-model-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment state model validation."
@@ -3989,7 +4007,10 @@
       "source_title": "data/public-route-candidate-assessment-prohibited-candidates-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-prohibited-candidates-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment prohibited candidates validation."
@@ -3999,7 +4020,10 @@
       "source_title": "data/public-route-candidate-assessment-non-authorization-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-non-authorization-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment non-authorization validation."
@@ -4009,7 +4033,10 @@
       "source_title": "data/public-route-candidate-assessment-public-isolation-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-public-isolation-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment public isolation audit."
@@ -4019,7 +4046,10 @@
       "source_title": "data/public-route-candidate-assessment-static-safety-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-assessment-static-safety-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment static safety audit."
@@ -4029,7 +4059,10 @@
       "source_title": "validators/validate_public_route_candidate_assessment_governance_validation.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_route_candidate_assessment_governance_validation.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment governance validation validator."
@@ -4039,7 +4072,10 @@
       "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance doctrine."
@@ -4049,7 +4085,10 @@
       "source_title": "data/public-route-candidate-registry-governance-policy.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-governance-policy.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance policy."
@@ -4059,7 +4098,10 @@
       "source_title": "data/public-route-candidate-registry-schema-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-schema-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry schema."
@@ -4069,7 +4111,10 @@
       "source_title": "data/public-route-candidate-registry-entry-template-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-entry-template-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry entry template."
@@ -4079,7 +4124,10 @@
       "source_title": "data/public-route-candidate-registry-state-model-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-state-model-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry state model."
@@ -4089,7 +4137,10 @@
       "source_title": "data/public-route-candidate-registry-entry-requirements-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-entry-requirements-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry entry requirements."
@@ -4099,7 +4150,10 @@
       "source_title": "data/public-route-candidate-registry-non-authorization-rules-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-non-authorization-rules-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry non-authorization rules."
@@ -4109,7 +4163,10 @@
       "source_title": "data/public-route-candidate-registry-boundary-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-boundary-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry boundary audit."
@@ -4119,7 +4176,10 @@
       "source_title": "validators/validate_public_route_candidate_registry_governance.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_route_candidate_registry_governance.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance validator."
@@ -4129,7 +4189,10 @@
       "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance validation doctrine."
@@ -4139,7 +4202,10 @@
       "source_title": "data/public-route-candidate-registry-governance-validation-policy.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-governance-validation-policy.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance validation policy."
@@ -4149,7 +4215,10 @@
       "source_title": "data/public-route-candidate-registry-governance-validation-results-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-governance-validation-results-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance validation results."
@@ -4159,7 +4228,10 @@
       "source_title": "data/public-route-candidate-registry-schema-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-schema-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry schema validation."
@@ -4169,7 +4241,10 @@
       "source_title": "data/public-route-candidate-registry-entry-template-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-entry-template-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry entry template validation."
@@ -4179,7 +4254,10 @@
       "source_title": "data/public-route-candidate-registry-state-model-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-state-model-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry state model validation."
@@ -4189,7 +4267,10 @@
       "source_title": "data/public-route-candidate-registry-entry-requirements-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-entry-requirements-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry entry requirements validation."
@@ -4199,7 +4280,10 @@
       "source_title": "data/public-route-candidate-registry-non-authorization-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-non-authorization-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry non-authorization validation."
@@ -4209,7 +4293,10 @@
       "source_title": "data/public-route-candidate-registry-public-isolation-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-public-isolation-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry public isolation audit."
@@ -4219,7 +4306,10 @@
       "source_title": "data/public-route-candidate-registry-static-safety-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registry-static-safety-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry static safety audit."
@@ -4229,7 +4319,10 @@
       "source_title": "validators/validate_public_route_candidate_registry_governance_validation.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_route_candidate_registry_governance_validation.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registry governance validation validator."
@@ -4239,7 +4332,10 @@
       "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance doctrine."
@@ -4249,7 +4345,10 @@
       "source_title": "data/public-route-candidate-registration-governance-policy.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-governance-policy.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance policy."
@@ -4259,7 +4358,10 @@
       "source_title": "data/public-route-candidate-registration-process-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-process-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration process."
@@ -4269,7 +4371,10 @@
       "source_title": "data/public-route-candidate-registration-eligibility-gate-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-eligibility-gate-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration eligibility gate."
@@ -4279,7 +4384,10 @@
       "source_title": "data/public-route-candidate-registration-record-template-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-record-template-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration record template."
@@ -4289,7 +4397,10 @@
       "source_title": "data/public-route-candidate-registration-state-model-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-state-model-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration state model."
@@ -4299,7 +4410,10 @@
       "source_title": "data/public-route-candidate-registration-non-authorization-rules-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-non-authorization-rules-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration non-authorization rules."
@@ -4309,7 +4423,10 @@
       "source_title": "data/public-route-candidate-registration-boundary-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-boundary-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration boundary audit."
@@ -4319,7 +4436,10 @@
       "source_title": "validators/validate_public_route_candidate_registration_governance.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_route_candidate_registration_governance.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validator."
@@ -4329,7 +4449,10 @@
       "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validation doctrine."
@@ -4339,7 +4462,10 @@
       "source_title": "data/public-route-candidate-registration-governance-validation-policy.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-governance-validation-policy.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validation policy."
@@ -4349,7 +4475,10 @@
       "source_title": "data/public-route-candidate-registration-governance-validation-results-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-governance-validation-results-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validation results."
@@ -4359,7 +4488,10 @@
       "source_title": "data/public-route-candidate-registration-process-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-process-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration process validation."
@@ -4369,7 +4501,10 @@
       "source_title": "data/public-route-candidate-registration-eligibility-gate-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-eligibility-gate-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration eligibility gate validation."
@@ -4379,7 +4514,10 @@
       "source_title": "data/public-route-candidate-registration-record-template-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-record-template-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration record template validation."
@@ -4389,7 +4527,10 @@
       "source_title": "data/public-route-candidate-registration-state-model-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-state-model-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration state model validation."
@@ -4399,7 +4540,10 @@
       "source_title": "data/public-route-candidate-registration-non-authorization-validation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-non-authorization-validation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration non-authorization validation."
@@ -4409,7 +4553,10 @@
       "source_title": "data/public-route-candidate-registration-public-isolation-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-public-isolation-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration public isolation audit."
@@ -4419,7 +4566,10 @@
       "source_title": "data/public-route-candidate-registration-static-safety-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-route-candidate-registration-static-safety-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration static safety audit."
@@ -4429,10 +4579,78 @@
       "source_title": "validators/validate_public_route_candidate_registration_governance_validation.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_route_candidate_registration_governance_validation.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validation validator."
+    },
+    {
+      "source_id": "SOURCE-0360",
+      "source_title": "GOVERNANCE_SCAFFOLDING_FREEZE_AND_PUBLIC_PRODUCTION_MANDATE.md",
+      "source_type": "internal_governance",
+      "location": "GOVERNANCE_SCAFFOLDING_FREEZE_AND_PUBLIC_PRODUCTION_MANDATE.md",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Governance scaffolding freeze and public production mandate doctrine."
+    },
+    {
+      "source_id": "SOURCE-0361",
+      "source_title": "PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public reference production plan v1."
+    },
+    {
+      "source_id": "SOURCE-0362",
+      "source_title": "data/governance-scaffolding-freeze-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/governance-scaffolding-freeze-policy.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Governance scaffolding freeze policy machine-readable registry."
+    },
+    {
+      "source_id": "SOURCE-0363",
+      "source_title": "data/public-reference-production-plan-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-production-plan-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public reference production plan machine-readable registry."
+    },
+    {
+      "source_id": "SOURCE-0364",
+      "source_title": "validators/validate_governance_scaffolding_freeze.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_governance_scaffolding_freeze.py",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Governance scaffolding freeze validator."
     }
   ]
 }

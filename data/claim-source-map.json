@@ -1231,6 +1231,29 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public route candidate registration governance validation adoption per DEC-069."
+    },
+    {
+      "claim_id": "CLAIM-0058",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "GOVERNANCE_SCAFFOLDING_FREEZE_AND_PUBLIC_PRODUCTION_MANDATE.md",
+        "PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md",
+        "data/governance-scaffolding-freeze-policy.json",
+        "data/public-reference-production-plan-v1.json",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0360",
+        "SOURCE-0361",
+        "SOURCE-0362",
+        "SOURCE-0363",
+        "SOURCE-0364"
+      ],
+      "support_scope": "governance scaffolding freeze and public production mandate",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Governance scaffolding freeze adoption per DEC-070. No public surface refs."
     }
   ],
   "last_reviewed": "2026-06-19"

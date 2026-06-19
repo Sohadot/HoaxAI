@@ -94,7 +94,7 @@ The category factory validates its first public language surface before expandin
 
 The category factory now exposes a public language layer. The /language/ route explains the governed vocabulary and relation system behind Hoax.ai before any public engine or classifier exists. This strengthens category ownership by making the terms, boundaries, and relation logic visible to the public without turning the asset into a tool surface.
 
-The category factory validates its public language layer before engine governance. Hoax.ai’s vocabulary and relation system now serve as public category infrastructure, but validation confirms that the language layer remains non-engine, non-classifier, non-tool, non-upload, non-scoring, and non-verdict in public meaning.
+The category factory validates its public language layer before engine governance. Hoax.ai's vocabulary and relation system now serve as public category infrastructure, but validation confirms that the language layer remains non-engine, non-classifier, non-tool, non-upload, non-scoring, and non-verdict in public meaning.
 
 The category factory now begins workbench governance after validating its public language layer. Evidence Posture Workbench Governance defines how future evidence posture reasoning may be structured before any interface, prototype, engine, classifier, upload workflow, scoring system, or public tool exists. The workbench is governed first so that future operation cannot drift into verdicts, subject accusation, fake/real detection, or generic AI-detector behavior.
 
@@ -143,6 +143,8 @@ The category factory validates public route candidate registry governance withou
 The category factory defines public route candidate registration governance without registering any candidate. This layer establishes the future candidate registration process, registration eligibility gate, registration record template, state transitions, non-authorization rules, internal prototype boundaries, public-surface isolation, and future registration requirements. It does not create a candidate entry, candidate ID, candidate record, candidate page, candidate assessment, route, sitemap entry, public navigation, deployment, monetization, or public release.
 
 The category factory validates public route candidate registration governance without registering any candidate. This validation confirms that the future registration process, eligibility gate, record template, state transitions, non-authorization rules, internal prototype boundaries, public-surface isolation, and registration prerequisites are coherent and enforceable. It does not create a candidate entry, candidate ID, candidate record, registration record, candidate page, candidate assessment, route, sitemap entry, public navigation, deployment, monetization, or public release.
+
+The Category Intelligence Factory must now prioritize production of governed public reference content. Governance must protect production, not replace production. Further meta-governance is frozen until at least 10 additional public reference pages exist and pass validation.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
 
