@@ -1960,6 +1960,44 @@ Public classifier remains blocked. Public engine remains blocked. Public route r
 
 ---
 
+## Sprint 46 - Public Route Candidate Assessment Governance v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Define public route candidate assessment governance without assessing a specific candidate, creating a route, sitemap entry, public navigation link, or operational capability.
+
+### Deliverables
+
+- PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_V1.md
+- data/public-route-candidate-assessment-governance-policy.json
+- data/public-route-candidate-assessment-framework-v1.json
+- data/public-route-candidate-assessment-record-template-v1.json
+- data/public-route-candidate-assessment-state-model-v1.json
+- data/public-route-candidate-assessment-prohibited-candidates-v1.json
+- data/public-route-candidate-assessment-non-authorization-rules-v1.json
+- data/public-route-candidate-assessment-boundary-audit-v1.json
+- validators/validate_public_route_candidate_assessment_governance.py
+- SPRINT_46_PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_AUDIT.md
+- DEC-064 appended to DECISION_LOG.md
+- Publisher status -> blocked_until_public_route_candidate_assessment_governance_validation
+- PUB-GATE-0046 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G46 passed.** Public route candidate assessment governance validation blocked until Sprint 47.
+
+### Next Phase
+
+**Sprint 47 - Public Route Candidate Assessment Governance Validation v1**
+
+Public classifier remains blocked. Public engine remains blocked. Public route remains blocked until candidate assessment governance is validated, a candidate is assessed, eligibility is validated, and a later route-specific creation sprint is separately authorized. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  

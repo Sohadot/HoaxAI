@@ -3806,6 +3806,123 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route eligibility governance validation validator."
+    },
+    {
+      "source_id": "SOURCE-0300",
+      "source_title": "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_V1.md",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment governance doctrine."
+    },
+    {
+      "source_id": "SOURCE-0301",
+      "source_title": "data/public-route-candidate-assessment-governance-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-governance-policy.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment governance policy."
+    },
+    {
+      "source_id": "SOURCE-0302",
+      "source_title": "data/public-route-candidate-assessment-framework-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-framework-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment framework."
+    },
+    {
+      "source_id": "SOURCE-0303",
+      "source_title": "data/public-route-candidate-assessment-record-template-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-record-template-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment record template."
+    },
+    {
+      "source_id": "SOURCE-0304",
+      "source_title": "data/public-route-candidate-assessment-state-model-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-state-model-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment state model."
+    },
+    {
+      "source_id": "SOURCE-0305",
+      "source_title": "data/public-route-candidate-assessment-prohibited-candidates-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-prohibited-candidates-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment prohibited candidates."
+    },
+    {
+      "source_id": "SOURCE-0306",
+      "source_title": "data/public-route-candidate-assessment-non-authorization-rules-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-non-authorization-rules-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment non-authorization rules."
+    },
+    {
+      "source_id": "SOURCE-0307",
+      "source_title": "data/public-route-candidate-assessment-boundary-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-assessment-boundary-audit-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment boundary audit."
+    },
+    {
+      "source_id": "SOURCE-0308",
+      "source_title": "validators/validate_public_route_candidate_assessment_governance.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_route_candidate_assessment_governance.py",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate assessment governance validator."
     }
   ]
 }

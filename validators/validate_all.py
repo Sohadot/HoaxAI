@@ -51,6 +51,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_non_public_static_workbench_public_readiness_boundary_validation.py",
     ROOT / "validators" / "validate_public_route_eligibility_governance.py",
     ROOT / "validators" / "validate_public_route_eligibility_governance_validation.py",
+    ROOT / "validators" / "validate_public_route_candidate_assessment_governance.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

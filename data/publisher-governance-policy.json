@@ -3,10 +3,10 @@
   "name": "Hoax.ai Publisher Governance Policy",
   "version": "v1.0.0",
   "status": "governed_internal_publisher_policy",
-  "maturity": "publisher_blocked_until_public_route_candidate_assessment_governance",
+  "maturity": "publisher_blocked_until_public_route_candidate_assessment_governance_validation",
   "governing_principle": "Automation may produce candidates. Governance decides what becomes public.",
   "quality_principle": "The publisher must not generate volume. It must generate governed reference value.",
-  "current_publisher_status": "blocked_until_public_route_candidate_assessment_governance",
+  "current_publisher_status": "blocked_until_public_route_candidate_assessment_governance_validation",
   "allowed_current_outputs": [
     "publisher_governance_policy",
     "publisher_workflow_registry",
@@ -146,7 +146,15 @@
     "public_route_eligibility_non_authorization_validation",
     "public_route_eligibility_state_model_validation",
     "public_route_eligibility_public_isolation_audit",
-    "public_route_eligibility_static_safety_audit"
+    "public_route_eligibility_static_safety_audit",
+    "public_route_candidate_assessment_governance",
+    "public_route_candidate_assessment_governance_policy",
+    "public_route_candidate_assessment_framework",
+    "public_route_candidate_assessment_record_template",
+    "public_route_candidate_assessment_state_model",
+    "public_route_candidate_assessment_prohibited_candidates",
+    "public_route_candidate_assessment_non_authorization_rules",
+    "public_route_candidate_assessment_boundary_audit"
   ],
   "prohibited_current_outputs": [
     "broader_public_pages",

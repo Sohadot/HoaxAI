@@ -1650,3 +1650,34 @@ Public route eligibility can be mistaken for route approval. Hoax.ai must valida
 - No workbench launch, engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
 - Future work may proceed to route candidate assessment governance only after this validation passes.
 
+---
+
+## DEC-064 - Public Route Candidate Assessment Governance v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Route Candidate Assessment Governance v1 to define how future public route candidates may be assessed before any route-specific eligibility decision or route creation sprint. This governance layer does not assess any specific route candidate, create a route candidate page, create a public route, add a sitemap entry, add public navigation, expose the internal prototype, launch a workbench, enable engine behavior, enable classifier behavior, enable upload, enable scoring, enable API behavior, enable analytics, change deployment, change DNS/Cloudflare, launch the custom domain, monetize, or authorize public release.
+
+### Rationale
+
+After validating public route eligibility governance, Hoax.ai needs a controlled method for assessing future route candidates without accidentally creating routes or granting implied approval. Candidate assessment must distinguish between candidate identification, candidate assessment, candidate validation, route creation authorization, sitemap authorization, navigation authorization, and public release. This prevents premature publication, sitemap expansion, public navigation drift, workbench launch implication, and operational capability creep.
+
+### Implications
+
+- Future route candidate assessment rules may be defined.
+- Candidate assessment states may be defined.
+- Candidate assessment record structure may be defined.
+- Prohibited candidate types may be defined.
+- Non-authorization rules may be defined.
+- No actual route candidate is assessed in Sprint 46.
+- No candidate route page is created.
+- No public route is created.
+- No sitemap entry is added.
+- No public navigation is added.
+- No prototype file is modified.
+- No engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
+- Future work may validate this assessment governance before any candidate assessment occurs.
+

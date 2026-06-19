@@ -1,0 +1,47 @@
+{
+  "state_model_id": "PUB-ROUTE-CANDIDATE-ASSESSMENT-STATE-MODEL-001",
+  "name": "Public Route Candidate Assessment State Model v1",
+  "version": "v1.0.0",
+  "status": "public_route_candidate_assessment_state_model_defined",
+  "maturity": "candidate_assessment_governance_only_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
+  "assessment_states": [
+    "not_assessed",
+    "assessment_required",
+    "candidate_assessment_ready",
+    "candidate_under_assessment",
+    "candidate_assessment_validated",
+    "eligible_for_route_creation_sprint",
+    "blocked_for_public_surface_risk",
+    "blocked_for_operational_implication",
+    "blocked_for_internal_prototype_exposure",
+    "blocked_for_claim_or_source_gap",
+    "blocked_for_sitemap_or_navigation_gap",
+    "blocked_for_engine_classifier_upload_scoring_implication",
+    "blocked_for_deployment_or_DNS_implication",
+    "blocked_for_public_release_implication"
+  ],
+  "transition_rules": [
+    "no automatic transition to route creation",
+    "candidate_assessment_validated may transition only to eligible_for_route_creation_sprint",
+    "eligible_for_route_creation_sprint still requires separate future route creation governance",
+    "blocked states require correction and validation before reconsideration",
+    "no state authorizes sitemap expansion",
+    "no state authorizes public navigation",
+    "no state authorizes public release"
+  ],
+  "forbidden_transitions": [
+    "candidate_assessment_validated_to_public_route_created",
+    "candidate_assessment_validated_to_sitemap_entry_created",
+    "candidate_assessment_validated_to_public_navigation_added",
+    "candidate_assessment_validated_to_engine_enabled",
+    "candidate_assessment_validated_to_classifier_enabled",
+    "candidate_assessment_validated_to_upload_enabled",
+    "candidate_assessment_validated_to_scoring_enabled",
+    "candidate_assessment_validated_to_API_enabled",
+    "candidate_assessment_validated_to_deployment",
+    "candidate_assessment_validated_to_DNS_Cloudflare",
+    "candidate_assessment_validated_to_public_release"
+  ],
+  "non_authorization_statement": "No assessment state authorizes route creation, sitemap expansion, public navigation, engine behavior, classifier behavior, upload, scoring, API, analytics, deployment, DNS, Cloudflare, monetization, or public release.",
+  "last_reviewed": "2026-06-18"
+}

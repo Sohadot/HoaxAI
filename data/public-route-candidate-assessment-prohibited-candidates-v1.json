@@ -1,0 +1,33 @@
+{
+  "prohibited_candidates_id": "PUB-ROUTE-CANDIDATE-ASSESSMENT-PROHIBITED-001",
+  "name": "Public Route Candidate Assessment Prohibited Candidates v1",
+  "version": "v1.0.0",
+  "status": "public_route_candidate_assessment_prohibited_candidates_defined",
+  "maturity": "candidate_assessment_governance_only_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
+  "blocked_by_default": [
+    "public_workbench_route_candidate",
+    "diagnostic_route_candidate",
+    "tool_route_candidate",
+    "engine_route_candidate",
+    "classifier_route_candidate",
+    "upload_route_candidate",
+    "scoring_route_candidate",
+    "API_route_candidate",
+    "analytics_route_candidate",
+    "monetization_route_candidate",
+    "deployment_route_candidate",
+    "DNS_custom_domain_route_candidate"
+  ],
+  "unblock_requirements": [
+    "separate governance required",
+    "separate validation required",
+    "separate public readiness review required",
+    "separate route readiness review required",
+    "separate privacy/security review required",
+    "separate sitemap/navigation governance required where applicable",
+    "separate deployment/DNS governance required where applicable",
+    "no unblock by candidate assessment governance alone"
+  ],
+  "non_authorization_statement": "Prohibited candidate defaults remain blocked until separate governance exists. Candidate assessment governance alone does not unblock any prohibited candidate type.",
+  "last_reviewed": "2026-06-18"
+}
