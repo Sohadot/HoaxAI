@@ -4,7 +4,7 @@ from __future__ import annotations
 import json, re, subprocess, sys, xml.etree.ElementTree as ET
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
-from public_surface_checks import PUBLIC_SITEMAP_URL_COUNT, PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_VALIDATION, validate_public_surface
+from public_surface_checks import PUBLIC_SITEMAP_URL_COUNT, PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_VALIDATION, PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE, validate_public_surface
 PROTO_DIR=ROOT/'_internal_prototypes'/'evidence-posture-workbench'
 LOCKED_FILES=['_internal_prototypes/evidence-posture-workbench/index.html','_internal_prototypes/evidence-posture-workbench/prototype.css']
 MATURE='boundary_governance_only_no_public_release_no_engine_no_classifier_no_public_route'
@@ -77,7 +77,7 @@ def validate_files_public():
     return ok
 def validate_governance():
     ok=True; pub=load('data/publisher-governance-policy.json')
-    if pub.get('current_publisher_status')!=PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_VALIDATION: error('publisher status invalid'); ok=False
+    if pub.get('current_publisher_status') not in (PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_VALIDATION, PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE): error('publisher status invalid'); ok=False
     gate=next((g for g in load('data/publisher-quality-gates.json').get('gates',[]) if g.get('name')=='Non-Public Static Workbench Public-Readiness Boundary Governance Gate'),None)
     if not gate: error('public-readiness boundary governance gate missing'); ok=False
     else:

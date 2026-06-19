@@ -26,6 +26,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
     validate_no_extra_public_html,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
 )
 
 POLICY_TOP = {
@@ -391,6 +392,7 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT_VALIDATION,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
     }
     if status not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

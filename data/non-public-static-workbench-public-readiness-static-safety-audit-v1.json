@@ -1,0 +1,74 @@
+{
+  "static_audit_id": "NP-SW-PUBLIC-READINESS-STATIC-SAFETY-AUDIT-001",
+  "name": "Non-Public Static Workbench Public-Readiness Static Safety Audit v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_public_readiness_static_safety_audited",
+  "maturity": "static_safety_validation_only_no_public_release",
+  "prototype_file_results": {
+    "prototype_files_not_modified_in_sprint_43": "pass",
+    "only_index_and_css_in_prototype_directory": "pass",
+    "no_additional_prototype_files": "pass",
+    "no_new_prototype_directories": "pass"
+  },
+  "html_safety_results": {
+    "no_script_tags": "pass",
+    "no_forms": "pass",
+    "no_inputs": "pass",
+    "no_textarea": "pass",
+    "no_file_inputs": "pass",
+    "no_buttons": "pass",
+    "no_upload_controls": "pass",
+    "no_generated_output_regions": "pass",
+    "no_external_scripts": "pass",
+    "no_external_libraries": "pass"
+  },
+  "css_safety_results": {
+    "no_imports": "pass",
+    "no_external_urls": "pass",
+    "no_upload_dropzone_styling": "pass",
+    "no_scoring_gauge_styling": "pass",
+    "no_red_green_verdict_styling": "pass",
+    "no_detector_scanner_naming": "pass",
+    "visual_tokens_present": "pass",
+    "evidence_field_classes_present": "pass",
+    "chamber_boundary_classes_present": "pass",
+    "provenance_shadow_classes_present": "pass",
+    "output_envelope_classes_present": "pass",
+    "responsive_rules_present": "pass"
+  },
+  "capability_block_results": {
+    "no_engine": "pass",
+    "no_classifier": "pass",
+    "no_detector": "pass",
+    "no_upload": "pass",
+    "no_scoring": "pass",
+    "no_fake_real": "pass",
+    "no_api": "pass",
+    "no_analytics": "pass",
+    "no_storage": "pass",
+    "no_network_calls": "pass",
+    "no_deployment_change": "pass",
+    "no_DNS_change": "pass",
+    "no_Cloudflare_change": "pass",
+    "no_custom_domain_launch": "pass"
+  },
+  "content_safety_results": {
+    "no_real_people": "pass",
+    "no_real_companies": "pass",
+    "no_real_institutions": "pass",
+    "no_real_brands": "pass",
+    "no_current_events": "pass",
+    "no_political_events": "pass",
+    "no_accusations": "pass",
+    "no_external_factual_claims": "pass",
+    "no_generated_analysis": "pass",
+    "no_verified_certified_claims": "pass"
+  },
+  "python_cache_results": {
+    "no_pycache_tracked": "pass",
+    "no_pyc_staged": "pass",
+    "no_python_cache_committed": "pass"
+  },
+  "overall_outcome": "public_readiness_static_safety_validated",
+  "last_reviewed": "2026-06-18"
+}

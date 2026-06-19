@@ -21,6 +21,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
     validate_no_extra_public_html,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
 )
 
 POLICY_REQUIRED = {
@@ -481,6 +482,7 @@ def validate_publisher_governance() -> bool:
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT,
         PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT_VALIDATION,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
+        PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
     ):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_GOVERNANCE}, "
@@ -546,6 +548,7 @@ def validate_publisher_governance() -> bool:
         "publisher_blocked_until_non_public_static_workbench_visual_system_baseline_lock_validation",
         "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_governance",
         "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_validation",
+        "publisher_blocked_until_public_route_eligibility_governance",
     ]
     if not any(b in blocked for b in proto_blocked):
         error("reference-expansion-gate: publisher blocked until prototype progression")

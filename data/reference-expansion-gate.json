@@ -97,7 +97,8 @@
     "publisher_blocked_until_non_public_static_workbench_visual_system_baseline_lock",
     "publisher_blocked_until_non_public_static_workbench_visual_system_baseline_lock_validation",
     "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_governance",
-    "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_validation"
+    "publisher_blocked_until_non_public_static_workbench_public_readiness_boundary_validation",
+    "publisher_blocked_until_public_route_eligibility_governance"
   ],
   "release_eligibility_rules": [
     "candidate_must_be_release_eligible_status",
@@ -138,7 +139,9 @@
     "no_public_engine_eligibility_by_baseline_lock_validation_alone",
     "no_public_release_by_baseline_lock_validation_alone",
     "no_public_engine_eligibility_by_public_readiness_boundary_governance_alone",
-    "no_public_route_eligibility_by_boundary_governance_alone"
+    "no_public_route_eligibility_by_boundary_governance_alone",
+    "no_public_engine_eligibility_by_public_readiness_boundary_validation_alone",
+    "no_public_route_eligibility_by_boundary_validation_alone"
   ],
   "last_reviewed": "2026-06-18"
 }

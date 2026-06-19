@@ -115,6 +115,7 @@ from public_surface_checks import (
     validate_pilot_public_surface,
     validate_pilot_route_registry,
     validate_pilot_sitemap,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
 )
 
 PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES

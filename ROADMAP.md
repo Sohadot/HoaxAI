@@ -1847,6 +1847,43 @@ Public classifier remains blocked. Public engine remains blocked. The prototype 
 
 ---
 
+## Sprint 43 - Non-Public Static Workbench Public-Readiness Boundary Governance Validation v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Validate the Sprint 42 public-readiness boundary governance layer without authorizing public release, public routes, sitemap expansion, public navigation, or operational capability.
+
+### Deliverables
+
+- NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE_VALIDATION_V1.md
+- data/non-public-static-workbench-public-readiness-boundary-validation-policy.json
+- data/non-public-static-workbench-public-readiness-boundary-validation-results-v1.json
+- data/non-public-static-workbench-public-readiness-prerequisite-validation-v1.json
+- data/non-public-static-workbench-public-readiness-non-authorization-validation-v1.json
+- data/non-public-static-workbench-public-readiness-public-isolation-audit-v1.json
+- data/non-public-static-workbench-public-readiness-static-safety-audit-v1.json
+- validators/validate_non_public_static_workbench_public_readiness_boundary_validation.py
+- SPRINT_43_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE_VALIDATION_AUDIT.md
+- DEC-061 appended to DECISION_LOG.md
+- Publisher status -> blocked_until_public_route_eligibility_governance
+- PUB-GATE-0043 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G43 passed.** Public route eligibility governance blocked until Sprint 44.
+
+### Next Phase
+
+**Sprint 44 - Public Route Eligibility Governance v1**
+
+Public classifier remains blocked. Public engine remains blocked. Public route remains blocked until eligibility governance exists and passes. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  

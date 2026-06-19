@@ -15,6 +15,7 @@ from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
 )
 
 PROTO_DIR = ROOT / "_internal_prototypes" / "evidence-posture-workbench"
@@ -478,7 +479,11 @@ def validate_public_safety() -> bool:
 def validate_publisher_governance() -> bool:
     ok = True
     pub = load_json(ROOT / "data" / "publisher-governance-policy.json")
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING:
+    if pub.get("current_publisher_status") not in (
+        PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING,
+        PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
+           PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
+    ):
         error(f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING}")
         ok = False
 

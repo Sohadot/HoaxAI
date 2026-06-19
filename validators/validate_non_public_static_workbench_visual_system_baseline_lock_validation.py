@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
     validate_public_surface,
 )
 
@@ -315,7 +316,11 @@ def validate_public_safety() -> bool:
 def validate_governance_and_registry() -> bool:
     ok = True
     pub = load_json("data/publisher-governance-policy.json")
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE:
+    if pub.get("current_publisher_status") not in (
+        PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE,
+        PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
+           PUBLISHER_STATUS_POST_PUBLIC_ROUTE_ELIGIBILITY_GOVERNANCE,
+    ):
         error("publisher status must be blocked until public-readiness boundary governance")
         ok = False
     gates = load_json("data/publisher-quality-gates.json").get("gates", [])

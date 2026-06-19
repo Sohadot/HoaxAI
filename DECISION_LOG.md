@@ -1535,6 +1535,34 @@ A baseline lock is only useful if its integrity is validated. Sprint 41 ensures 
 - No JavaScript, forms, inputs, upload controls, scoring, fake/real output, generated output, API, analytics, engine behavior, classifier behavior, deployment change, DNS, Cloudflare, or public tool behavior may be introduced.
 - Future work may proceed to the next governance phase only after this validation passes.
 
+---
+
+## DEC-061 - Non-Public Static Workbench Public-Readiness Boundary Governance Validation v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Public-Readiness Boundary Governance Validation v1 to validate the Sprint 42 public-readiness boundary governance layer. The validation confirms that public-readiness is only a future boundary concept and does not authorize public route creation, sitemap expansion, public navigation, workbench launch, engine behavior, classifier behavior, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior.
+
+### Rationale
+
+Public-readiness language can easily be misread as launch permission. Hoax.ai must preserve the distinction between readiness-boundary governance and public release authorization. Sprint 43 validates that the Sprint 42 boundary layer defines prerequisites, exclusions, public-isolation requirements, static-safety requirements, and non-authorization rules without moving the internal prototype toward public exposure or operational capability.
+
+### Implications
+
+- The Sprint 42 boundary governance may be audited.
+- Public-readiness prerequisites may be validated.
+- Public-readiness non-authorization rules may be validated.
+- Public isolation may be validated.
+- Static safety may be validated.
+- No prototype file may be modified.
+- No public route or sitemap entry may be created.
+- No public navigation may link to the prototype.
+- No engine, classifier, upload, scoring, API, analytics, DNS, Cloudflare, deployment, or public tool behavior may be introduced.
+- Future work may proceed only after this validation passes.
+
 
 ---
 

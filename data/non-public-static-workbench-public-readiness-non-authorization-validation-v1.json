@@ -1,0 +1,29 @@
+{
+  "non_authorization_validation_id": "NP-SW-PUBLIC-READINESS-NON-AUTH-VAL-001",
+  "name": "Non-Public Static Workbench Public-Readiness Non-Authorization Validation v1",
+  "version": "v1.0.0",
+  "status": "non_public_static_workbench_public_readiness_non_authorization_validated",
+  "maturity": "non_authorization_validation_only_no_public_release",
+  "blocked_authorization_results": {
+    "no_public_workbench_authorized": "pass",
+    "no_public_route_authorized": "pass",
+    "no_sitemap_expansion_authorized": "pass",
+    "no_public_navigation_authorized": "pass",
+    "no_engine_authorized": "pass",
+    "no_classifier_authorized": "pass",
+    "no_upload_authorized": "pass",
+    "no_scoring_authorized": "pass",
+    "no_API_authorized": "pass",
+    "no_analytics_authorized": "pass",
+    "no_DNS_authorized": "pass",
+    "no_Cloudflare_authorized": "pass",
+    "no_custom_domain_launch_authorized": "pass",
+    "no_deployment_authorized": "pass",
+    "no_monetization_authorized": "pass",
+    "no_public_tool_authorized": "pass",
+    "no_public_release_authorized": "pass"
+  },
+  "public_release_boundary_result": "public_release_remains_blocked",
+  "overall_result": "public_readiness_non_authorization_validated",
+  "last_reviewed": "2026-06-18"
+}

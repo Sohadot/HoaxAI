@@ -1001,6 +1001,30 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public-readiness boundary governance adoption per DEC-060."
+    },
+    {
+      "claim_id": "CLAIM-0049",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE_VALIDATION_V1.md",
+        "DECISION_LOG.md",
+        "data/non-public-static-workbench-public-readiness-boundary-validation-policy.json"
+      ],
+      "source_refs": [
+        "SOURCE-0274",
+        "SOURCE-0275",
+        "SOURCE-0276",
+        "SOURCE-0277",
+        "SOURCE-0278",
+        "SOURCE-0279",
+        "SOURCE-0280",
+        "SOURCE-0281"
+      ],
+      "support_scope": "non-public static workbench public-readiness boundary governance validation adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public-readiness boundary governance validation adoption per DEC-061."
     }
   ],
   "last_reviewed": "2026-06-18"

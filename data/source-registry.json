@@ -3468,6 +3468,110 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public-readiness boundary governance validator."
+    },
+    {
+      "source_id": "SOURCE-0274",
+      "source_title": "NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE_VALIDATION_V1.md",
+      "source_type": "internal_governance",
+      "location": "NON_PUBLIC_STATIC_WORKBENCH_PUBLIC_READINESS_BOUNDARY_GOVERNANCE_VALIDATION_V1.md",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness boundary governance validation doctrine."
+    },
+    {
+      "source_id": "SOURCE-0275",
+      "source_title": "data/non-public-static-workbench-public-readiness-boundary-validation-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-boundary-validation-policy.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness boundary validation policy."
+    },
+    {
+      "source_id": "SOURCE-0276",
+      "source_title": "data/non-public-static-workbench-public-readiness-boundary-validation-results-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-boundary-validation-results-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness boundary validation results."
+    },
+    {
+      "source_id": "SOURCE-0277",
+      "source_title": "data/non-public-static-workbench-public-readiness-prerequisite-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-prerequisite-validation-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness prerequisite validation."
+    },
+    {
+      "source_id": "SOURCE-0278",
+      "source_title": "data/non-public-static-workbench-public-readiness-non-authorization-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-non-authorization-validation-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness non-authorization validation."
+    },
+    {
+      "source_id": "SOURCE-0279",
+      "source_title": "data/non-public-static-workbench-public-readiness-public-isolation-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-public-isolation-audit-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness public isolation audit."
+    },
+    {
+      "source_id": "SOURCE-0280",
+      "source_title": "data/non-public-static-workbench-public-readiness-static-safety-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/non-public-static-workbench-public-readiness-static-safety-audit-v1.json",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness static safety audit."
+    },
+    {
+      "source_id": "SOURCE-0281",
+      "source_title": "validators/validate_non_public_static_workbench_public_readiness_boundary_validation.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_non_public_static_workbench_public_readiness_boundary_validation.py",
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public-readiness boundary governance validation validator."
     }
   ]
 }
