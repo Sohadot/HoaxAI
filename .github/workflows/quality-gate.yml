@@ -16,6 +16,8 @@ jobs:
   quality-gate:
     name: Validate governance
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -194,11 +195,20 @@ def main() -> int:
     check(prototype_index.exists(), "_internal_prototypes/evidence-posture-workbench/index.html must exist (must not be deleted)")
     check(prototype_css.exists(), "_internal_prototypes/evidence-posture-workbench/prototype.css must exist (must not be deleted)")
 
-    # 20. no Python cache files exist in the repository
-    pycache_dirs = list(ROOT.rglob("__pycache__"))
-    pyc_files = list(ROOT.rglob("*.pyc"))
-    check(len(pycache_dirs) == 0, f"No __pycache__ directories should exist in repository: found {len(pycache_dirs)}")
-    check(len(pyc_files) == 0, f"No .pyc files should exist in repository: found {len(pyc_files)}")
+    # 20. no Python cache files tracked or staged in the repository
+    cache_names = subprocess.run(
+        ["git", "ls-files"], cwd=ROOT, text=True, capture_output=True
+    ).stdout.splitlines() + subprocess.run(
+        ["git", "diff", "--cached", "--name-only"], cwd=ROOT, text=True, capture_output=True
+    ).stdout.splitlines()
+    cache_hits = [
+        rel
+        for rel in cache_names
+        if "__pycache__/" in rel.replace("\\", "/").lower()
+        or rel.lower().endswith((".pyc", ".pyo", ".pyd"))
+        or ".pytest_cache/" in rel.replace("\\", "/").lower()
+    ]
+    check(len(cache_hits) == 0, f"No Python cache files should be tracked or staged: found {cache_hits}")
 
     # 21. this validator itself exists
     this_validator = ROOT / "validators" / "validate_governance_scaffolding_freeze.py"
