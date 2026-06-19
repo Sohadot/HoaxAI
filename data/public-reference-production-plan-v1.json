@@ -1,0 +1,140 @@
+{
+  "plan_id": "PUB-REF-PROD-PLAN-V1",
+  "name": "Hoax.ai Public Reference Production Plan v1",
+  "version": "v1.0.0",
+  "status": "active",
+  "decision_ref": "DEC-070",
+  "sprint": "Sprint 52",
+  "production_threshold": {
+    "minimum_additional_public_reference_pages": 10,
+    "current_public_reference_pages": 3,
+    "pages_needed": 10
+  },
+  "page_candidates": [
+    {
+      "candidate_id": "PROD-CAND-0001",
+      "route_path": "/reference/source-confidence/",
+      "purpose": "Define source confidence as an evidence posture dimension",
+      "batch": 1,
+      "sprint": "Sprint 53",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0002",
+      "route_path": "/reference/provenance-gap/",
+      "purpose": "Define provenance gap as an evidence posture condition",
+      "batch": 1,
+      "sprint": "Sprint 53",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0003",
+      "route_path": "/reference/not-assessable/",
+      "purpose": "Define the not-assessable evidence posture state",
+      "batch": 1,
+      "sprint": "Sprint 53",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0004",
+      "route_path": "/reference/output-boundary/",
+      "purpose": "Define the scope and limits of evidence posture outputs",
+      "batch": 1,
+      "sprint": "Sprint 53",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0005",
+      "route_path": "/reference/synthetic-fragility/",
+      "purpose": "Explain structural characteristics of synthetic media detectability",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0006",
+      "route_path": "/reference/evidence-chain/",
+      "purpose": "Define how evidence posture reasoning connects artifact, context, source, and provenance",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0007",
+      "route_path": "/reference/context-collapse/",
+      "purpose": "Define what happens to evidence posture when context is removed",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0008",
+      "route_path": "/reference/claim-source-traceability/",
+      "purpose": "Explain why material claims must be traceable to sources",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0009",
+      "route_path": "/reference/evidence-limitation/",
+      "purpose": "Define the bounded nature of evidence posture assessment",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    },
+    {
+      "candidate_id": "PROD-CAND-0010",
+      "route_path": "/reference/classification-boundary/",
+      "purpose": "Define what Hoax.ai classifies and what it does not classify",
+      "batch": 2,
+      "sprint": "Sprint 54+",
+      "status": "planned"
+    }
+  ],
+  "initial_release_batch": [
+    "/reference/source-confidence/",
+    "/reference/provenance-gap/",
+    "/reference/not-assessable/",
+    "/reference/output-boundary/"
+  ],
+  "page_quality_requirements": [
+    "clear_public_purpose",
+    "teaches_real_hoaxai_concept",
+    "preserves_evidence_posture_not_truth_verdict",
+    "preserves_artifact_subject_separation",
+    "avoids_detector_scanner_fake_real_scoring_upload_implications",
+    "includes_sufficient_reference_substance",
+    "contains_exactly_one_h1",
+    "includes_metadata_and_canonical",
+    "registered_in_route_registry",
+    "included_in_sitemap_only_after_route_validation",
+    "internally_linked_from_relevant_existing_pages",
+    "passes_validate_all_py"
+  ],
+  "internal_link_requirements": [
+    "reachable_from_at_least_one_existing_public_page",
+    "links_to_at_least_one_other_reference_page_where_thematically_relevant",
+    "not_orphaned"
+  ],
+  "route_sitemap_requirements": [
+    "route_registry_entry_before_public_surface_exposure",
+    "sitemap_inclusion_only_after_route_validation",
+    "canonical_url_defined_in_metadata"
+  ],
+  "prohibited_capabilities": [
+    "engine",
+    "classifier",
+    "upload",
+    "scoring",
+    "api",
+    "analytics",
+    "dns_cloudflare",
+    "custom_domain_launch",
+    "monetization",
+    "public_tool_behavior",
+    "forms_or_inputs",
+    "external_scripts"
+  ],
+  "last_reviewed": "2026-06-19"
+}

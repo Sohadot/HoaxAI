@@ -1,0 +1,82 @@
+{
+  "policy_id": "GOV-FREEZE-POLICY-001",
+  "name": "Hoax.ai Governance Scaffolding Freeze and Public Production Mandate",
+  "version": "v1.0.0",
+  "status": "governance_scaffolding_frozen",
+  "decision_ref": "DEC-070",
+  "sprint": "Sprint 52",
+  "governing_principle": "governance_must_protect_production_not_replace_production",
+  "secondary_principle": "no_further_meta_governance_layer_until_10_additional_public_reference_pages_exist",
+  "frozen_work_types": [
+    "public_route_candidate_registration_authorization_governance",
+    "candidate_registration_authorization_validation",
+    "candidate_registry_expansion_governance",
+    "route_eligibility_abstraction_layers",
+    "governance_validation_of_governance_validation",
+    "future_public_readiness_abstraction_layers",
+    "any_sprint_whose_main_output_is_only_another_permission_framework_for_a_later_framework"
+  ],
+  "allowed_work_types": [
+    "public_reference_page_creation",
+    "route_registry_entries_for_real_public_reference_pages",
+    "sitemap_expansion_for_real_public_reference_pages",
+    "internal_links_between_real_pages",
+    "metadata_for_real_pages",
+    "source_claim_mapping_for_new_public_pages",
+    "validators_that_protect_real_page_quality",
+    "audits_proving_real_page_quality"
+  ],
+  "production_threshold": {
+    "minimum_additional_public_reference_pages": 10,
+    "current_public_reference_pages": 3,
+    "pages_needed": 10,
+    "threshold_note": "10 additional pages beyond existing 3 must exist before any new meta-governance layer may be proposed"
+  },
+  "immediate_next_phase": "public_reference_page_production",
+  "next_sprint": "Sprint 53 — Public Reference Production Batch 1",
+  "first_production_batch": [
+    "/reference/source-confidence/",
+    "/reference/provenance-gap/",
+    "/reference/not-assessable/",
+    "/reference/output-boundary/"
+  ],
+  "non_authorization_rules": [
+    "no_engine_development_or_deployment",
+    "no_classifier_development_or_deployment",
+    "no_upload_workflow",
+    "no_scoring_or_confidence_score_interfaces",
+    "no_api_development_or_deployment",
+    "no_analytics_integration",
+    "no_dns_or_cloudflare_changes",
+    "no_custom_domain_launch",
+    "no_monetization",
+    "no_public_tool_behavior",
+    "no_workbench_launch_or_public_workbench_exposure",
+    "no_sprint_whose_primary_output_is_a_new_permission_layer_for_a_later_phase"
+  ],
+  "frozen_sprint_chain": [
+    "DEC-062",
+    "DEC-063",
+    "DEC-064",
+    "DEC-065",
+    "DEC-066",
+    "DEC-067",
+    "DEC-068",
+    "DEC-069"
+  ],
+  "page_quality_requirements": [
+    "clear_public_purpose",
+    "teaches_real_hoaxai_concept",
+    "preserves_evidence_posture_not_truth_verdict",
+    "preserves_artifact_subject_separation",
+    "avoids_detector_scanner_fake_real_scoring_upload_implications",
+    "includes_sufficient_reference_substance",
+    "contains_exactly_one_h1",
+    "includes_metadata_and_canonical",
+    "registered_in_route_registry",
+    "included_in_sitemap_only_after_route_validation",
+    "internally_linked_from_relevant_existing_pages",
+    "passes_validate_all_py"
+  ],
+  "last_reviewed": "2026-06-19"
+}
