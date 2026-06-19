@@ -1537,6 +1537,35 @@ A baseline lock is only useful if its integrity is validated. Sprint 41 ensures 
 
 ---
 
+## DEC-060 - Non-Public Static Workbench Public-Readiness Boundary Governance v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+**Chronology note:** entry order corrected in Sprint 56A to restore decision-log chronological integrity.
+
+### Decision
+
+Hoax.ai adopts Non-Public Static Workbench Public-Readiness Boundary Governance v1 to define the governance boundary for any future discussion of public readiness related to the internal static Evidence Posture Workbench prototype. This boundary defines prerequisites, non-authorization rules, route blockers, public-risk boundaries, and required future gates without creating or authorizing a public workbench, public route, sitemap entry, public navigation, engine, classifier, upload workflow, scoring system, API, analytics, deployment change, DNS/Cloudflare change, custom domain launch, or public tool behavior.
+
+### Rationale
+
+The visual baseline is now locked and validated, but a locked internal baseline is not public-readiness and public-readiness is not public release. Before any public route, public workbench, or public-facing prototype can even be discussed, Hoax.ai must define what public-readiness would require and what it explicitly does not authorize. This prevents accidental launch logic, premature routing, public misinterpretation, detector implication, upload/scoring creep, and operational overclaim.
+
+### Implications
+
+- Public-readiness can be discussed only as a governed boundary.
+- Public-readiness boundary governance does not authorize public release.
+- Public-readiness boundary governance does not authorize public routes.
+- Public-readiness boundary governance does not authorize sitemap expansion.
+- Public-readiness boundary governance does not authorize public navigation.
+- Public-readiness boundary governance does not authorize engine, classifier, upload, scoring, API, analytics, or public tool behavior.
+- Future public-readiness validation must pass before any public route governance is even considered.
+- No workbench launch, engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
+- Future work may validate public route eligibility governance before any route-specific eligibility assessment.
+
+---
+
 ## DEC-061 - Non-Public Static Workbench Public-Readiness Boundary Governance Validation v1 Adopted
 
 **Date:** 2026-06-18
@@ -1591,33 +1620,6 @@ After public-readiness boundary governance validation, the next risk is confusin
 - No workbench launch, engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
 - Future work may validate public route eligibility governance before any route-specific eligibility assessment.
 
-
----
-
-## DEC-060 - Non-Public Static Workbench Public-Readiness Boundary Governance v1 Adopted
-
-**Date:** 2026-06-18
-**Status:** Active
-
-### Decision
-
-Hoax.ai adopts Non-Public Static Workbench Public-Readiness Boundary Governance v1 to define the governance boundary for any future discussion of public readiness related to the internal static Evidence Posture Workbench prototype. This boundary defines prerequisites, non-authorization rules, route blockers, public-risk boundaries, and required future gates without creating or authorizing a public workbench, public route, sitemap entry, public navigation, engine, classifier, upload workflow, scoring system, API, analytics, deployment change, DNS/Cloudflare change, custom domain launch, or public tool behavior.
-
-### Rationale
-
-The visual baseline is now locked and validated, but a locked internal baseline is not public-readiness and public-readiness is not public release. Before any public route, public workbench, or public-facing prototype can even be discussed, Hoax.ai must define what public-readiness would require and what it explicitly does not authorize. This prevents accidental launch logic, premature routing, public misinterpretation, detector implication, upload/scoring creep, and operational overclaim.
-
-### Implications
-
-- Public-readiness can be discussed only as a governed boundary.
-- Public-readiness boundary governance does not authorize public release.
-- Public-readiness boundary governance does not authorize public routes.
-- Public-readiness boundary governance does not authorize sitemap expansion.
-- Public-readiness boundary governance does not authorize public navigation.
-- Public-readiness boundary governance does not authorize engine, classifier, upload, scoring, API, analytics, or public tool behavior.
-- Future public-readiness validation must pass before any public route governance is even considered.
-- No workbench launch, engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
-- Future work may validate public route eligibility governance before any route-specific eligibility assessment.
 
 ---
 
@@ -1939,8 +1941,10 @@ Sprint 53 restored production by creating real public reference pages. Sprint 54
 
 ## DEC-073 — Public Reference Production Batch 2 Adopted
 
-**Date:** 2026-06-17
+**Date:** 2026-06-19
 **Status:** Active
+
+**Chronology note:** date corrected in Sprint 56A to restore decision-log chronological integrity.
 
 ### Decision
 
@@ -1964,8 +1968,10 @@ After Batch 1 and its depth hardening, Hoax.ai must continue building visible ca
 
 ## DEC-074 — Public Reference Batch 2 Depth, SEO, and Inevitability Hardening Adopted
 
-**Date:** 2026-06-17
+**Date:** 2026-06-19
 **Status:** Active
+
+**Chronology note:** date corrected in Sprint 56A to restore decision-log chronological integrity.
 
 ### Decision
 

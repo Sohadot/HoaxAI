@@ -2232,6 +2232,34 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 56A — Decision Log Chronology Integrity Patch
+
+**Status:** COMPLETE — 2026-06-19
+**Goal:** Correct decision-log date chronology and prevent future backward-dated DEC entries—narrow integrity repair, not a feature or governance-expansion sprint.
+
+### Deliverables
+
+- DECISION_LOG.md chronology corrections (DEC-060 order; DEC-073, DEC-074 dates)
+- validators/validate_decision_log_chronology.py
+- SPRINT_56A_DECISION_LOG_CHRONOLOGY_INTEGRITY_AUDIT.md
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G56A passed.** Sprint 57 may proceed when governance authorizes.
+
+### Next Phase
+
+**Sprint 57** — Further public reference production under governance scaffolding freeze mandate.
+
+Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, and public tool behavior remain blocked.
+
+---
+
 ## Sprint 56 — Public Reference Batch 2 Depth, SEO, and Inevitability Hardening v1
 
 **Status:** COMPLETE — 2026-06-17
