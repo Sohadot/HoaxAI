@@ -107,3 +107,13 @@ Explicit prohibitions: no engine; no classifier; no upload; no scoring; no API; 
 ## Next Phase
 
 **Sprint 61 — Evidence Posture Protocol v1 Draft** may begin only after Sprint 60 validation passes and governance authorizes protocol drafting without creating a public operational surface.
+
+---
+
+## Sprint 61 Update — Protocol Route Created
+
+Sprint 61 created the public protocol route at `/protocol/evidence-posture/` as **Hoax.ai Evidence Posture Protocol v1 Draft** (DEC-079). The sitemap expanded from seventeen to eighteen URLs. Sprint 60 language that stated no public protocol route is created remains accurate as historical Sprint 60 boundary documentation.
+
+The public protocol is a review-sequence reference document—not an engine, classifier, upload workflow, scoring system, API, analytics surface, form, or public tool. No engine, classifier, upload, scoring, API, analytics, forms, or public tool behavior is authorized by this document.
+
+**Next phase after Sprint 61 validation:** Sprint 62 — Protocol Integration, Standard Alignment, and Interface Readiness.

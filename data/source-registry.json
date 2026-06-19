@@ -4951,6 +4951,36 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Non-route protocol readiness document for Evidence Posture Standard v1."
+    },
+    {
+      "source_id": "SOURCE-0395",
+      "source_title": "validators/validate_evidence_posture_protocol_v1_draft.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_evidence_posture_protocol_v1_draft.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 61 Evidence Posture Protocol v1 Draft validator."
+    },
+    {
+      "source_id": "SOURCE-0396",
+      "source_title": "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 61 Evidence Posture Protocol v1 Draft audit."
+    },
+    {
+      "source_id": "SOURCE-0397",
+      "source_title": "protocol/evidence-posture/index.html",
+      "source_type": "public_surface",
+      "location": "protocol/evidence-posture/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Hoax.ai Evidence Posture Protocol v1 Draft public protocol page."
     }
   ]
 }

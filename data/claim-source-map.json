@@ -1369,6 +1369,25 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Evidence Posture Standard v1 per DEC-077. First public authority-layer standard."
+    },
+    {
+      "claim_id": "CLAIM-0064",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md",
+        "DECISION_LOG.md",
+        "protocol/evidence-posture/index.html"
+      ],
+      "source_refs": [
+        "SOURCE-0395",
+        "SOURCE-0396",
+        "SOURCE-0397"
+      ],
+      "support_scope": "evidence posture protocol v1 draft",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Evidence Posture Protocol v1 Draft per DEC-079. First public protocol-layer document."
     }
   ],
   "last_reviewed": "2026-06-19"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 59 — Hoax.ai Evidence Posture Standard v1 public authority layer."""
+"""Validate Sprint 61 — Hoax.ai Evidence Posture Protocol v1 Draft."""
 
 from __future__ import annotations
 
@@ -14,31 +14,34 @@ ROOT = Path(__file__).resolve().parent.parent
 
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
+    PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT,
     validate_public_surface,
 )
 
-STANDARD_PATH = "standard/evidence-posture/index.html"
-STANDARD_URL = "https://hoax.ai/standard/evidence-posture/"
-STANDARD_ROUTE = "/standard/evidence-posture/"
+PROTOCOL_PATH = "protocol/evidence-posture/index.html"
+PROTOCOL_URL = "https://hoax.ai/protocol/evidence-posture/"
+PROTOCOL_ROUTE = "/protocol/evidence-posture/"
+STANDARD_LINK = "/standard/evidence-posture/"
 
 REQUIRED_SECTIONS = [
-    "Standard Statement",
+    "Protocol Statement",
     "Scope",
-    "Governing Principles",
-    "Evidence Posture States",
-    "Evidence Support Conditions",
-    "Allowed Output Language",
-    "Prohibited Output Language",
+    "Protocol Inputs",
+    "Protocol Sequence",
+    "Step Definitions",
+    "Evidence Posture Assignment",
+    "Output Language Formation",
+    "Protocol Matrix",
+    "Failure Modes",
+    "Relationship to Evidence Posture Standard v1",
     "Relationship to Reference Layer",
-    "Standard Matrix",
-    "Boundary Rules",
     "Institutional Usefulness",
-    "Standard Versioning",
+    "Protocol Versioning",
     "Hoax.ai Boundary",
-    "Related Reference Pages",
+    "Related Pages",
 ]
 
-EPS_IDS = [f"EPS-{i:03d}" for i in range(1, 15)]
+PROTOCOL_STEPS = [f"EP-P{i:02d}" for i in range(1, 18)]
 
 POSTURE_STATES = [
     "Supported",
@@ -65,19 +68,6 @@ REFERENCE_LINKS = [
     "/reference/interpretation-risk/",
 ]
 
-ALLOWED_EXAMPLES = [
-    "The available evidence supports a limited posture.",
-    "The source basis is not sufficient for a stronger conclusion.",
-    "The evidence condition is not assessable from the available material.",
-]
-
-PROHIBITED_EXAMPLES = [
-    "This is fake.",
-    "This is real.",
-    "This proves deception.",
-    "The subject is responsible.",
-]
-
 BOUNDARY_PHRASES = [
     "artifact-subject separation",
     "output boundary",
@@ -88,14 +78,16 @@ BOUNDARY_PHRASES = [
 ]
 
 NOT_TOOL_PHRASES = [
-    "public reference standard",
-    "not a fake/real detector",
-    "not a truth engine",
+    "public reference protocol draft",
+    "not a detector",
+    "not a scanner",
+    "not a classifier",
+    "not an engine",
+    "not an upload tool",
     "not a scoring system",
-    "not an upload workflow",
     "not an api",
-    "not a public classifier",
-    "not a legal judgment system",
+    "not a legal judgment",
+    "not a moderation system",
     "not an accusation system",
 ]
 
@@ -105,8 +97,6 @@ FORBIDDEN_PATTERNS = [
     r"<textarea\b",
     r"<button\b",
     r"<script[^>]+src=",
-    r"upload your",
-    r"scan now",
     r"scoring interface",
     r"classifier interface",
     r"detector interface",
@@ -119,8 +109,8 @@ LOCKED_FILES = [
 ]
 
 SOURCE_LOCS = [
-    "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md",
-    "validators/validate_evidence_posture_standard_v1_public.py",
+    "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md",
+    "validators/validate_evidence_posture_protocol_v1_draft.py",
 ]
 
 MIN_WORDS = 2500
@@ -139,62 +129,75 @@ def visible_word_count(html: str) -> int:
     return len(re.findall(r"\b[\w'-]+\b", strip_tags(html)))
 
 
-def validate_standard_page() -> bool:
+def validate_protocol_page() -> bool:
     ok = True
-    path = ROOT / STANDARD_PATH
+    path = ROOT / PROTOCOL_PATH
     if not path.is_file():
-        error(f"missing {STANDARD_PATH}")
+        error(f"missing {PROTOCOL_PATH}")
         return False
     text = path.read_text(encoding="utf-8")
     lower = text.lower()
     if text.count("<h1") != 1:
-        error("standard page must have exactly one H1")
+        error("protocol page must have exactly one H1")
         ok = False
-    if STANDARD_URL not in text:
-        error("standard page missing canonical URL")
+    if PROTOCOL_URL not in text:
+        error("protocol page missing canonical URL")
         ok = False
     if "<title>" not in text or 'name="description"' not in text:
-        error("standard page missing title or meta description")
+        error("protocol page missing title or meta description")
         ok = False
     for section in REQUIRED_SECTIONS:
         if section not in text:
-            error(f"standard page missing section: {section}")
+            error(f"protocol page missing section: {section}")
             ok = False
-    for eps in EPS_IDS:
-        if eps not in text:
-            error(f"standard page missing {eps}")
+    for step in PROTOCOL_STEPS:
+        if step not in text:
+            error(f"protocol page missing {step}")
             ok = False
     for state in POSTURE_STATES:
         if state not in text:
-            error(f"standard page missing posture state: {state}")
+            error(f"protocol page missing posture state: {state}")
             ok = False
+    if STANDARD_LINK not in text:
+        error("protocol page must link to standard")
+        ok = False
     for link in REFERENCE_LINKS:
         if link not in text:
-            error(f"standard page missing link to {link}")
-            ok = False
-    for phrase in ALLOWED_EXAMPLES:
-        if phrase.lower() not in lower:
-            error(f"standard page missing allowed example: {phrase}")
-            ok = False
-    for phrase in PROHIBITED_EXAMPLES:
-        if phrase.lower() not in lower:
-            error(f"standard page missing prohibited example: {phrase}")
+            error(f"protocol page missing link to {link}")
             ok = False
     for phrase in BOUNDARY_PHRASES:
         if phrase not in lower:
-            error(f"standard page missing boundary phrase: {phrase}")
+            error(f"protocol page missing boundary phrase: {phrase}")
             ok = False
     for phrase in NOT_TOOL_PHRASES:
         if phrase not in lower:
-            error(f"standard page missing positioning phrase: {phrase}")
+            error(f"protocol page missing positioning phrase: {phrase}")
             ok = False
+    if "posture assignment" not in lower and "posture state" not in lower:
+        error("protocol page missing posture assignment language")
+        ok = False
+    if "prohibited inference" not in lower:
+        error("protocol page missing prohibited inference language")
+        ok = False
+    if "numeric scoring" not in lower and "without numeric scoring" not in lower:
+        error("protocol page must clarify no numeric scoring")
+        ok = False
     wc = visible_word_count(text)
     if wc < MIN_WORDS:
-        error(f"standard page insufficient depth ({wc} words, need {MIN_WORDS})")
+        error(f"protocol page insufficient depth ({wc} words, need {MIN_WORDS})")
         ok = False
     for pat in FORBIDDEN_PATTERNS:
         if re.search(pat, text, re.I):
-            error(f"standard page forbidden pattern: {pat}")
+            error(f"protocol page forbidden pattern: {pat}")
+            ok = False
+    return ok
+
+
+def validate_linking() -> bool:
+    ok = True
+    for rel in ("index.html", "language/index.html", "standard/evidence-posture/index.html"):
+        if PROTOCOL_ROUTE not in (ROOT / rel).read_text(encoding="utf-8"):
+            error(f"{rel} must link to protocol")
             ok = False
     return ok
 
@@ -205,16 +208,16 @@ def validate_surface() -> bool:
     if len(routes) != PUBLIC_SITEMAP_URL_COUNT:
         error(f"route registry must contain exactly {PUBLIC_SITEMAP_URL_COUNT} routes")
         ok = False
-    standard_routes = [r for r in routes if r.get("path") == STANDARD_ROUTE]
-    if len(standard_routes) != 1:
-        error("route registry must include exactly one standard route at /standard/evidence-posture/")
+    protocol_routes = [r for r in routes if r.get("path") == PROTOCOL_ROUTE]
+    if len(protocol_routes) != 1:
+        error("route registry must include exactly one protocol route")
         ok = False
-    elif standard_routes[0].get("route_id") != "ROUTE-0017":
-        error("standard route must be ROUTE-0017")
+    elif protocol_routes[0].get("route_id") != "ROUTE-0018":
+        error("protocol route must be ROUTE-0018")
         ok = False
-    extra_standard = [r for r in routes if r.get("path", "").startswith("/standard/") and r.get("path") != STANDARD_ROUTE]
-    if extra_standard:
-        error("no additional standard routes beyond /standard/evidence-posture/")
+    extra = [r for r in routes if r.get("path", "").startswith("/protocol/") and r.get("path") != PROTOCOL_ROUTE]
+    if extra:
+        error("no additional protocol routes beyond /protocol/evidence-posture/")
         ok = False
     if not validate_public_surface(routes, error, PUBLIC_SITEMAP_URL_COUNT):
         ok = False
@@ -222,15 +225,12 @@ def validate_surface() -> bool:
     if len(locs) != PUBLIC_SITEMAP_URL_COUNT:
         error(f"sitemap must contain exactly {PUBLIC_SITEMAP_URL_COUNT} URLs")
         ok = False
-    if STANDARD_URL not in locs:
-        error("sitemap missing standard URL")
+    if PROTOCOL_URL not in locs:
+        error("sitemap missing protocol URL")
         ok = False
-    pat = re.compile(
-        r"internal_prototypes|evidence-posture-workbench|/workbench/|/tool/|/classifier/|/detector/|/upload/|/score/",
-        re.I,
-    )
-    if pat.search((ROOT / STANDARD_PATH).read_text(encoding="utf-8")):
-        error("standard page prototype or blocked route leak")
+    pat = re.compile(r"internal_prototypes|evidence-posture-workbench", re.I)
+    if pat.search((ROOT / PROTOCOL_PATH).read_text(encoding="utf-8")):
+        error("protocol page prototype leak")
         ok = False
     if not all((ROOT / x).is_file() for x in LOCKED_FILES):
         error("prototype files missing")
@@ -248,31 +248,28 @@ def validate_surface() -> bool:
 
 def validate_governance() -> bool:
     ok = True
-    if "DEC-077" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-077 missing from DECISION_LOG.md")
+    if "DEC-079" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-079 missing from DECISION_LOG.md")
         ok = False
-    if not (ROOT / "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md").is_file():
-        error("Sprint 59 audit missing")
+    if not (ROOT / "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md").is_file():
+        error("Sprint 61 audit missing")
         ok = False
-    if "validate_evidence_posture_standard_v1_public.py" not in (
+    if "validate_evidence_posture_protocol_v1_draft.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 59 validator")
+        error("validate_all.py must include Sprint 61 validator")
         ok = False
     policy = json.loads((ROOT / "data/publisher-governance-policy.json").read_text(encoding="utf-8"))
-    if policy.get("current_publisher_status") not in (
-        "blocked_until_evidence_posture_standard_v1_validation",
-        "blocked_until_evidence_posture_protocol_v1_draft_validation",
-    ):
-        error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")
+    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT:
+        error("publisher status must be blocked_until_evidence_posture_protocol_v1_draft_validation")
         ok = False
     locs = {s.get("location") for s in json.loads((ROOT / "data/source-registry.json").read_text(encoding="utf-8")).get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
-    if not any(c.get("claim_id") == "CLAIM-0063" for c in json.loads((ROOT / "data/evidence-ledger.json").read_text(encoding="utf-8")).get("claims", [])):
-        error("CLAIM-0063 missing")
+    if not any(c.get("claim_id") == "CLAIM-0064" for c in json.loads((ROOT / "data/evidence-ledger.json").read_text(encoding="utf-8")).get("claims", [])):
+        error("CLAIM-0064 missing")
         ok = False
     return ok
 
@@ -291,7 +288,16 @@ def validate_cache() -> bool:
 
 
 def main() -> int:
-    ok = all(fn() for fn in [validate_standard_page, validate_surface, validate_governance, validate_cache])
+    ok = all(
+        fn()
+        for fn in [
+            validate_protocol_page,
+            validate_linking,
+            validate_surface,
+            validate_governance,
+            validate_cache,
+        ]
+    )
     if ok:
         print("PASS")
         return 0

@@ -12,6 +12,8 @@ from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
 
+from public_surface_checks import REGISTERED_CANDIDATE_ROUTE_STATUSES
+
 ROUTE_REQUIRED = {
     "route_id",
     "path",
@@ -117,6 +119,8 @@ def normalize_route_path(path: str) -> str:
 
 
 def route_status_prohibited_in_sitemap(status: str) -> bool:
+    if status in REGISTERED_CANDIDATE_ROUTE_STATUSES:
+        return False
     lower = status.lower()
     return any(state in lower for state in PROHIBITED_SITEMAP_STATES)
 

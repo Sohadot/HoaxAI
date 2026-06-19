@@ -2088,3 +2088,27 @@ Evidence Posture Standard v1 must not remain an isolated authority page. For Hoa
 - No public protocol, engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
 - Future protocol work may be considered only after Sprint 60 validation passes.
 
+---
+
+## DEC-079 — Evidence Posture Protocol v1 Draft Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Protocol v1 Draft as the first public protocol-layer document derived from Evidence Posture Standard v1 and the existing reference layer. The protocol defines a bounded review sequence for artifact condition, claim condition, source basis, provenance continuity, context completeness, claim-source traceability, evidence chain continuity, synthetic fragility, claim drift, evidence limitation, interpretation risk, attribution boundary, output boundary, and evidence posture assignment. It expands the public surface by exactly one route at /protocol/evidence-posture/ and does not create an engine, classifier, upload workflow, scoring system, API, analytics, forms, DNS/Cloudflare change, custom domain launch, monetization, or public tool behavior.
+
+### Rationale
+
+Evidence Posture Standard v1 defines allowed and prohibited language. Sprint 60 integrated that standard across the reference layer. Hoax.ai now needs a bounded protocol that explains the sequence by which the standard may be applied. This moves Hoax.ai from authority-layer standard into protocol-layer structure without creating an operational engine or public classifier. The protocol is production because it creates a real public reference route derived from existing standard substance, not abstract meta-governance.
+
+### Implications
+
+- One public protocol route may be created.
+- Sitemap expands from 17 to exactly 18 URLs.
+- Existing standard and reference pages may link to the protocol.
+- The protocol may define review sequence, posture assignment logic, and bounded output language formation.
+- Future controlled engine or report design may obey this protocol.
+- No public engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
+

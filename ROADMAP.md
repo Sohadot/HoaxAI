@@ -2258,6 +2258,37 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 61 — Evidence Posture Protocol v1 Draft
+
+**Status:** COMPLETE — 2026-06-19
+**Goal:** Create Hoax.ai Evidence Posture Protocol v1 Draft as the first public protocol-layer document—a bounded review sequence derived from Evidence Posture Standard v1 without operational capability.
+
+### Deliverables
+
+- protocol/evidence-posture/index.html
+- validators/validate_evidence_posture_protocol_v1_draft.py
+- SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md
+- DEC-079 appended to DECISION_LOG.md
+- ROUTE-0018 and sitemap expansion to 18 URLs
+- Homepage, language, standard, and reference protocol links
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G61 passed.** Protocol integration and interface readiness is the recommended next phase.
+
+### Next Phase
+
+**Sprint 62 — Protocol Integration, Standard Alignment, and Interface Readiness**
+
+Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, and public tool behavior remain blocked.
+
+---
+
 ## Sprint 60 — Standard Integration, Cross-Linking, and Protocol Readiness
 
 **Status:** COMPLETE — 2026-06-19

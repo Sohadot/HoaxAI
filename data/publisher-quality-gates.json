@@ -789,6 +789,23 @@
       "failure_condition": "evidence_posture_standard_v1_not_met",
       "bypassable": false,
       "notes": "Evidence Posture Standard v1 completed Sprint 59 (DEC-077). First public authority-layer standard at /standard/evidence-posture/. Public surface expanded to seventeen URLs. Does not authorize public engine, public classifier, public tool, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release."
+    },
+    {
+      "gate_id": "PUB-GATE-0057",
+      "name": "Evidence Posture Protocol v1 Draft Gate",
+      "status": "evidence_posture_protocol_v1_draft_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_evidence_posture_protocol_v1_draft_validation": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_governance": true,
+      "validation_source": "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md",
+      "failure_condition": "evidence_posture_protocol_v1_draft_not_met",
+      "bypassable": false,
+      "notes": "Evidence Posture Protocol v1 Draft completed Sprint 61 (DEC-079). First public protocol-layer document at /protocol/evidence-posture/. Public surface expanded to eighteen URLs. Does not authorize public engine, public classifier, public tool, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release."
     }
   ],
   "last_reviewed": "2026-06-19"

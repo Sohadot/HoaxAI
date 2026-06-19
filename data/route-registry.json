@@ -433,6 +433,32 @@
       "link_policy": "registered_targets_only",
       "route_visibility": "public_standard_authority_layer",
       "notes": "Sprint 59 — Hoax.ai Evidence Posture Standard v1. First public authority-layer standard. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
+    },
+    {
+      "route_id": "ROUTE-0018",
+      "path": "/protocol/evidence-posture/",
+      "title": "Hoax.ai Evidence Posture Protocol v1 Draft",
+      "route_type": "public_protocol",
+      "page_type": "public_protocol",
+      "status": "public_evidence_posture_protocol_v1_draft_created",
+      "protocol_layer": "evidence_posture_protocol_v1_draft",
+      "derived_from": "evidence_posture_standard_v1",
+      "index_policy": "indexable_public_protocol",
+      "canonical_url": "https://hoax.ai/protocol/evidence-posture/",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_protocol_metadata_created",
+      "navigation_status": "linked_from_homepage_standard_and_reference_layer",
+      "publication_status": "public_evidence_posture_protocol_v1_draft",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "protocol_language_only_no_engine_no_classifier",
+      "prohibited_capabilities": ["engine", "classifier", "detector", "upload", "scoring", "fake_real_verdict", "subject_accusation", "API", "analytics", "forms", "monetization", "public_tool_behavior"],
+      "sitemap_policy": "evidence_posture_protocol_v1_draft_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_protocol_layer",
+      "notes": "Sprint 61 — Hoax.ai Evidence Posture Protocol v1 Draft. First public protocol-layer document derived from Evidence Posture Standard v1. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
     }
   ]
 }

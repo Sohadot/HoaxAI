@@ -12,7 +12,7 @@ PUBLIC_ROUTE_IDS = [
     "ROUTE-0005", "ROUTE-0006", "ROUTE-0007", "ROUTE-0008",
     "ROUTE-0009", "ROUTE-0010", "ROUTE-0011", "ROUTE-0012",
     "ROUTE-0013", "ROUTE-0014", "ROUTE-0015", "ROUTE-0016",
-    "ROUTE-0017",
+    "ROUTE-0017", "ROUTE-0018",
 ]
 
 PILOT_ROUTE_IDS = PUBLIC_ROUTE_IDS  # backward compatibility
@@ -42,6 +42,7 @@ ALLOWED_PUBLIC_HTML = {
     "reference/evidence-limitation/index.html",
     "reference/interpretation-risk/index.html",
     "standard/evidence-posture/index.html",
+    "protocol/evidence-posture/index.html",
 }
 
 ALLOWED_INTERNAL_PROTOTYPE_HTML = {
@@ -56,7 +57,7 @@ ALLOWED_PUBLIC_ROOT_FILES = ALLOWED_PUBLIC_HTML | {
     "sitemap.xml",
 }
 
-PUBLIC_SITEMAP_URL_COUNT = 17
+PUBLIC_SITEMAP_URL_COUNT = 18
 
 PILOT_SITEMAP_URL_COUNT = PUBLIC_SITEMAP_URL_COUNT  # backward compatibility
 
@@ -124,6 +125,8 @@ PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_PRODUCTION_BATCH_3 = "blocked_until_publi
 
 PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_STANDARD_V1 = "blocked_until_evidence_posture_standard_v1_validation"
 
+PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT = "blocked_until_evidence_posture_protocol_v1_draft_validation"
+
 PUBLISHER_STATUSES_ALLOWED = (
     "blocked_until_first_reference_candidate_pack",
     "blocked_until_internal_draft_blueprint",
@@ -165,6 +168,7 @@ PUBLISHER_STATUSES_ALLOWED = (
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_PRODUCTION_BATCH_2,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_PRODUCTION_BATCH_3,
     PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_STANDARD_V1,
+    PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT,
 )
 
 
@@ -304,6 +308,14 @@ def is_standard_route(route: dict) -> bool:
     )
 
 
+def is_protocol_route(route: dict) -> bool:
+    return (
+        route.get("protocol_layer") == "evidence_posture_protocol_v1_draft"
+        or route.get("status") == "public_evidence_posture_protocol_v1_draft_created"
+        or route.get("path", "").lower() == "/protocol/evidence-posture/"
+    )
+
+
 def is_production_batch_route(route: dict) -> bool:
     return route.get("production_batch") in (
         "public_reference_production_batch_1",
@@ -322,6 +334,7 @@ REGISTERED_CANDIDATE_ROUTE_STATUSES = {
     "public_reference_production_batch_2_created",
     "public_reference_production_batch_3_created",
     "public_evidence_posture_standard_v1_created",
+    "public_evidence_posture_protocol_v1_draft_created",
 }
 
 BATCH1_CANDIDATE_IDS = {
@@ -345,7 +358,7 @@ def validate_candidate_paths_not_registered_except_pilot(routes: list, candidate
         for route in routes:
             if route.get("path", "").lower() != path:
                 continue
-            if is_pilot_route(route) or is_language_route(route) or is_production_batch_route(route) or is_standard_route(route):
+            if is_pilot_route(route) or is_language_route(route) or is_production_batch_route(route) or is_standard_route(route) or is_protocol_route(route):
                 continue
             error(f"route-registry: candidate path {path} must not be registered")
             ok = False

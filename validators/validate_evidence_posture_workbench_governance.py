@@ -418,6 +418,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_production_batch_2_validation",
         "blocked_until_public_reference_production_batch_3_validation",
         "blocked_until_evidence_posture_standard_v1_validation",
+        "blocked_until_evidence_posture_protocol_v1_draft_validation",
     }
     if status not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

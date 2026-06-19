@@ -695,6 +695,17 @@
       "status": "active",
       "last_reviewed": "2026-06-19",
       "notes": "Sprint 59 creates first public authority-layer standard at /standard/evidence-posture/. Sitemap expands to seventeen URLs. No engine, classifier, upload, scoring, API, analytics, or public tool behavior authorized."
+    },
+    {
+      "claim_id": "CLAIM-0064",
+      "claim_text": "Hoax.ai has adopted Evidence Posture Protocol v1 Draft as a public protocol-layer document derived from Evidence Posture Standard v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "SPRINT_61_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT_AUDIT.md, DECISION_LOG.md (DEC-079), protocol/evidence-posture/index.html",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-19",
+      "notes": "Sprint 61 creates first public protocol-layer document at /protocol/evidence-posture/. Sitemap expands to eighteen URLs. No engine, classifier, upload, scoring, API, analytics, or public tool behavior authorized."
     }
   ]
 }

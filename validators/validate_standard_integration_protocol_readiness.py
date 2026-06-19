@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_STANDARD_V1,
+    PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT,
     validate_public_surface,
 )
 
@@ -210,22 +211,30 @@ def validate_protocol_doc() -> bool:
 def validate_surface() -> bool:
     ok = True
     routes = json.loads((ROOT / "data/route-registry.json").read_text(encoding="utf-8")).get("routes", [])
-    if len(routes) != PUBLIC_SITEMAP_URL_COUNT:
-        error(f"route registry must remain {PUBLIC_SITEMAP_URL_COUNT} routes")
-        ok = False
-    standard_routes = [r for r in routes if r.get("path", "").startswith("/standard/")]
-    if len(standard_routes) != 1:
-        error("must retain exactly one standard route")
-        ok = False
+    decision_log = (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8")
     protocol_routes = [r for r in routes if "/protocol/" in r.get("path", "")]
-    if protocol_routes:
-        error("no public protocol route may be created")
-        ok = False
-    if not validate_public_surface(routes, error, PUBLIC_SITEMAP_URL_COUNT):
-        ok = False
+    if "DEC-079" in decision_log:
+        if len(routes) != PUBLIC_SITEMAP_URL_COUNT:
+            error(f"route registry must contain {PUBLIC_SITEMAP_URL_COUNT} routes after Sprint 61")
+            ok = False
+        if len(protocol_routes) != 1 or protocol_routes[0].get("path") != "/protocol/evidence-posture/":
+            error("Sprint 61 must retain exactly one protocol route at /protocol/evidence-posture/")
+            ok = False
+        if not validate_public_surface(routes, error, PUBLIC_SITEMAP_URL_COUNT):
+            ok = False
+    else:
+        if len(routes) != 17:
+            error("route registry must remain 17 routes at Sprint 60 completion")
+            ok = False
+        if protocol_routes:
+            error("no public protocol route may be created at Sprint 60")
+            ok = False
+        if not validate_public_surface(routes, error, 17):
+            ok = False
     locs = [e.text.strip() for e in ET.parse(ROOT / "sitemap.xml").findall(".//{*}loc") if e.text]
-    if len(locs) != PUBLIC_SITEMAP_URL_COUNT:
-        error(f"sitemap must contain exactly {PUBLIC_SITEMAP_URL_COUNT} URLs")
+    expected = PUBLIC_SITEMAP_URL_COUNT if "DEC-079" in decision_log else 17
+    if len(locs) != expected:
+        error(f"sitemap must contain exactly {expected} URLs for Sprint 60/61 snapshot")
         ok = False
     if not all((ROOT / x).is_file() for x in LOCKED_FILES):
         error("prototype files missing")
@@ -255,8 +264,11 @@ def validate_governance() -> bool:
         error("validate_all.py must include Sprint 60 validator")
         ok = False
     pub = json.loads((ROOT / "data/publisher-governance-policy.json").read_text(encoding="utf-8"))
-    if pub.get("current_publisher_status") != PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_STANDARD_V1:
-        error("publisher status must be blocked_until_evidence_posture_standard_v1_validation")
+    if pub.get("current_publisher_status") not in (
+        PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_STANDARD_V1,
+        PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_PROTOCOL_V1_DRAFT,
+    ):
+        error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")
         ok = False
     locs = {s.get("location") for s in json.loads((ROOT / "data/source-registry.json").read_text(encoding="utf-8")).get("sources", [])}
     for loc in SOURCE_LOCS:
