@@ -12,17 +12,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-import public_surface_checks as psc
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION,
     validate_public_surface,
-)
-
-PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION = getattr(
-    psc,
-    "PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION",
-    "blocked_until_public_route_candidate_registration_governance_validation",
 )
 
 PROTO_DIR = ROOT / "_internal_prototypes" / "evidence-posture-workbench"
@@ -693,6 +688,7 @@ def validate_governance() -> bool:
     if pub.get("current_publisher_status") not in (
         PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE,
         PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION,
+        PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
     ):
         error("publisher status must be blocked until public route candidate registration governance validation")
         ok = False

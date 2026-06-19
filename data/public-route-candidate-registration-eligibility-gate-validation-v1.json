@@ -1,0 +1,42 @@
+{
+  "gate_validation_id": "PUB-ROUTE-CANDIDATE-REGISTRATION-ELIGIBILITY-GATE-VALIDATION-001",
+  "name": "Public Route Candidate Registration Eligibility Gate Validation v1",
+  "version": "v1.0.0",
+  "status": "public_route_candidate_registration_eligibility_gate_validated",
+  "maturity": "gate_validation_only_no_candidate_registered",
+  "required_before_registration_results": {
+    "registry_governance_validation_passed": "pass",
+    "registration_governance_validation_required": "pass",
+    "candidate_identity_fields_required": "pass",
+    "candidate_boundary_fields_required": "pass",
+    "candidate_risk_fields_required": "pass",
+    "candidate_status_fields_required": "pass",
+    "non_authorization_statement_required": "pass",
+    "public_surface_review_required": "pass",
+    "prototype_exposure_review_required": "pass",
+    "dedicated_registration_validator_required": "pass",
+    "source_registry_update_required": "pass",
+    "evidence_ledger_update_only_if_claim_added": "pass"
+  },
+  "blocked_without_gate_results": {
+    "candidate_entry_creation_blocked": "pass",
+    "candidate_ID_creation_blocked": "pass",
+    "candidate_record_instantiation_blocked": "pass",
+    "candidate_assessment_blocked": "pass",
+    "candidate_approval_blocked": "pass",
+    "public_route_creation_blocked": "pass",
+    "sitemap_expansion_blocked": "pass",
+    "public_navigation_blocked": "pass",
+    "public_release_blocked": "pass"
+  },
+  "gate_non_authorization_results": {
+    "gate_does_not_register_candidate": "pass",
+    "gate_does_not_assess_candidate": "pass",
+    "gate_does_not_create_route": "pass",
+    "gate_does_not_add_sitemap": "pass",
+    "gate_does_not_add_navigation": "pass",
+    "gate_does_not_authorize_public_release": "pass"
+  },
+  "overall_result": "registration_eligibility_gate_validated",
+  "last_reviewed": "2026-06-19"
+}

@@ -1204,7 +1204,34 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public route candidate registration governance adoption per DEC-068."
+    },
+    {
+      "claim_id": "CLAIM-0057",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION_V1.md",
+        "DECISION_LOG.md",
+        "data/public-route-candidate-registration-governance-validation-policy.json"
+      ],
+      "source_refs": [
+        "SOURCE-0349",
+        "SOURCE-0350",
+        "SOURCE-0351",
+        "SOURCE-0352",
+        "SOURCE-0353",
+        "SOURCE-0354",
+        "SOURCE-0355",
+        "SOURCE-0356",
+        "SOURCE-0357",
+        "SOURCE-0358",
+        "SOURCE-0359"
+      ],
+      "support_scope": "public route candidate registration governance validation adoption",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public route candidate registration governance validation adoption per DEC-069."
     }
   ],
-  "last_reviewed": "2026-06-18"
+  "last_reviewed": "2026-06-19"
 }

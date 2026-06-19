@@ -132,6 +132,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
 )
 
 PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
@@ -530,6 +531,7 @@ def validate_state_machine() -> bool:
         "blocked_until_public_route_candidate_registry_governance_validation",
         "blocked_until_public_route_candidate_registration_governance",
         "blocked_until_public_route_candidate_registration_governance_validation",
+        "blocked_until_public_route_candidate_registration_authorization_governance",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
@@ -686,6 +688,7 @@ def validate_cross_file() -> bool:
         "blocked_until_public_route_candidate_registry_governance_validation",
         "blocked_until_public_route_candidate_registration_governance",
         "blocked_until_public_route_candidate_registration_governance_validation",
+        "blocked_until_public_route_candidate_registration_authorization_governance",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must remain blocked from publication, got {status}"

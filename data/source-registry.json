@@ -4323,6 +4323,116 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate registration governance validator."
+    },
+    {
+      "source_id": "SOURCE-0349",
+      "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration governance validation doctrine."
+    },
+    {
+      "source_id": "SOURCE-0350",
+      "source_title": "data/public-route-candidate-registration-governance-validation-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-governance-validation-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration governance validation policy."
+    },
+    {
+      "source_id": "SOURCE-0351",
+      "source_title": "data/public-route-candidate-registration-governance-validation-results-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-governance-validation-results-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration governance validation results."
+    },
+    {
+      "source_id": "SOURCE-0352",
+      "source_title": "data/public-route-candidate-registration-process-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-process-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration process validation."
+    },
+    {
+      "source_id": "SOURCE-0353",
+      "source_title": "data/public-route-candidate-registration-eligibility-gate-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-eligibility-gate-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration eligibility gate validation."
+    },
+    {
+      "source_id": "SOURCE-0354",
+      "source_title": "data/public-route-candidate-registration-record-template-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-record-template-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration record template validation."
+    },
+    {
+      "source_id": "SOURCE-0355",
+      "source_title": "data/public-route-candidate-registration-state-model-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-state-model-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration state model validation."
+    },
+    {
+      "source_id": "SOURCE-0356",
+      "source_title": "data/public-route-candidate-registration-non-authorization-validation-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-non-authorization-validation-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration non-authorization validation."
+    },
+    {
+      "source_id": "SOURCE-0357",
+      "source_title": "data/public-route-candidate-registration-public-isolation-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-public-isolation-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration public isolation audit."
+    },
+    {
+      "source_id": "SOURCE-0358",
+      "source_title": "data/public-route-candidate-registration-static-safety-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registration-static-safety-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration static safety audit."
+    },
+    {
+      "source_id": "SOURCE-0359",
+      "source_title": "validators/validate_public_route_candidate_registration_governance_validation.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_route_candidate_registration_governance_validation.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registration governance validation validator."
     }
   ]
 }

@@ -1,0 +1,406 @@
+{
+  "validation_id": "PUB-ROUTE-CANDIDATE-REGISTRATION-GOV-VALIDATION-RESULTS-001",
+  "name": "Public Route Candidate Registration Governance Validation Results v1",
+  "version": "v1.0.0",
+  "status": "public_route_candidate_registration_governance_validated",
+  "maturity": "validation_only_candidate_registration_governance_no_candidate_registered_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
+  "validation_dimensions": [
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0001",
+      "name": "Candidate Registration Governance Policy Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0002",
+      "name": "Candidate Registration Definition Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0003",
+      "name": "Registration Is Not Candidate Registration Execution",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0004",
+      "name": "Registration Is Not Candidate Assessment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0005",
+      "name": "Registration Is Not Route Creation",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0006",
+      "name": "Registration Zero-State Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0007",
+      "name": "Registration Process Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0008",
+      "name": "Registration Step Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0009",
+      "name": "Blocked Step Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0010",
+      "name": "Prerequisite Result Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0011",
+      "name": "Registration Eligibility Gate Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0012",
+      "name": "Required-Before-Registration Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0013",
+      "name": "Blocked-Without-Gate Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0014",
+      "name": "Gate Non-Authorization Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0015",
+      "name": "Registration Record Template Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0016",
+      "name": "Required Registration Field Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0017",
+      "name": "Forbidden Registration Field Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0018",
+      "name": "Required Boundary Field Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0019",
+      "name": "Required Non-Authorization Field Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0020",
+      "name": "Template Zero-State Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0021",
+      "name": "Registration State Model Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0022",
+      "name": "Registration State Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0023",
+      "name": "Transition Rule Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0024",
+      "name": "Forbidden Transition Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0025",
+      "name": "Registration Non-Authorization Rules Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0026",
+      "name": "Registration Boundary Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0027",
+      "name": "Candidate Assessment Boundary Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0028",
+      "name": "Route Creation Boundary Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0029",
+      "name": "Public Release Boundary Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0030",
+      "name": "Internal Prototype Boundary Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0031",
+      "name": "Candidate Registry Governance Validation Dependency",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0032",
+      "name": "Candidate Assessment Governance Validation Dependency",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0033",
+      "name": "Route Eligibility Governance Validation Dependency",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0034",
+      "name": "Public-Readiness Boundary Dependency",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0035",
+      "name": "Visual Baseline Lock Dependency",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0036",
+      "name": "No Populated Registry Created",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0037",
+      "name": "No Candidate Entry Created",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0038",
+      "name": "No Candidate ID Created",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0039",
+      "name": "No Candidate Record Instantiated",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0040",
+      "name": "No Registration Record Instantiated",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0041",
+      "name": "No Candidate Page Created",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0042",
+      "name": "No Candidate Registered",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0043",
+      "name": "No Candidate Assessed",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0044",
+      "name": "No Candidate Selected",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0045",
+      "name": "No Candidate Approved",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0046",
+      "name": "Public Route Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0047",
+      "name": "Route Registry Non-Expansion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0048",
+      "name": "Sitemap Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0049",
+      "name": "Public Navigation Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0050",
+      "name": "Homepage Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0051",
+      "name": "Reference Page Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0052",
+      "name": "Language Page Link Exclusion",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0053",
+      "name": "Internal Prototype Non-Exposure",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0054",
+      "name": "Prototype Files Not Modified",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0055",
+      "name": "No Additional Prototype Files",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0056",
+      "name": "No JavaScript",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0057",
+      "name": "No Forms or Inputs",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0058",
+      "name": "No Upload Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0059",
+      "name": "No Scoring Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0060",
+      "name": "No Fake/Real Verdict Surface",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0061",
+      "name": "No API/Network/Storage Behavior",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0062",
+      "name": "No Analytics",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0063",
+      "name": "No DNS/Cloudflare/Deployment Change",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0064",
+      "name": "No Public Workbench Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0065",
+      "name": "No Public Engine Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0066",
+      "name": "No Public Classifier Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0067",
+      "name": "No Public Tool Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0068",
+      "name": "No Monetization Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0069",
+      "name": "No Public Release Authorization",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0070",
+      "name": "Public Surface Four-URL Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0071",
+      "name": "Static Safety Integrity",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0072",
+      "name": "Publisher Gate Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0073",
+      "name": "Reference Expansion Gate Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0074",
+      "name": "Evidence Ledger / Claim Map Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0075",
+      "name": "Source Registry Alignment",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0076",
+      "name": "Build Manifest Regeneration",
+      "result": "pass"
+    },
+    {
+      "dimension_id": "ROUTE-CAND-REG-VAL-0077",
+      "name": "Python Cache Exclusion",
+      "result": "pass"
+    }
+  ],
+  "registration_governance_result": "public_route_candidate_registration_governance_validated",
+  "registration_process_result": "registration_process_validated",
+  "eligibility_gate_result": "registration_eligibility_gate_validated",
+  "record_template_result": "registration_record_template_validated",
+  "state_model_result": "registration_state_model_validated",
+  "non_authorization_result": "registration_non_authorization_validated",
+  "public_isolation_result": "registration_public_isolation_validated",
+  "static_safety_result": "registration_static_safety_validated",
+  "governance_alignment_result": "governance_alignment_validated",
+  "python_cache_result": "python_cache_excluded",
+  "overall_result": "public_route_candidate_registration_governance_validated",
+  "last_reviewed": "2026-06-19"
+}

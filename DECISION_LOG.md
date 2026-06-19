@@ -1821,3 +1821,41 @@ After validating registry governance, Hoax.ai needs a controlled registration go
 - No engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
 - Future work may validate candidate registration governance before any actual candidate registration sprint occurs.
 
+---
+
+## DEC-069 - Public Route Candidate Registration Governance Validation v1 Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Route Candidate Registration Governance Validation v1 to validate the Sprint 50 public route candidate registration governance layer. This validation confirms that registration governance defines only how future candidates may be registered and does not register any actual candidate, create a candidate entry, create a candidate ID, instantiate a candidate record, instantiate a registration record, assess a candidate, select a route, approve a candidate, create a candidate page, create a public route, add a sitemap entry, add public navigation, expose the internal prototype, launch a workbench, enable engine behavior, enable classifier behavior, enable upload, enable scoring, enable API behavior, enable analytics, change deployment, change DNS/Cloudflare, launch the custom domain, monetize, or authorize public release.
+
+### Rationale
+
+Candidate registration governance can be mistaken for candidate registration. Hoax.ai must validate that Sprint 50 remains a governance layer only, not a registration action, assessment action, route-creation action, sitemap action, navigation action, or launch action. The validation must confirm process integrity, eligibility gate integrity, record template integrity, state model integrity, non-authorization rules, public isolation, static safety, prototype protection, and publisher gate alignment without registering or assessing any candidate.
+
+### Implications
+
+- Sprint 50 registration governance may be audited.
+- The registration process may be validated.
+- The registration eligibility gate may be validated.
+- The registration record template may be validated.
+- The registration state model may be validated.
+- Registration non-authorization rules may be validated.
+- Public isolation may be validated.
+- Static safety may be validated.
+- No candidate may be registered in Sprint 51.
+- No candidate entry may be created.
+- No candidate ID may be created.
+- No candidate record may be instantiated.
+- No registration record may be instantiated.
+- No candidate may be assessed.
+- No public route may be created.
+- No sitemap entry may be added.
+- No public navigation may be added.
+- No prototype file may be modified.
+- No engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
+- Future work may proceed to Public Route Candidate Registration Authorization Governance v1 only after this validation passes.
+

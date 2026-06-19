@@ -89,12 +89,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G48 | Public Route Candidate Registry Governance | Sprint 48 validator PASS |
 | G49 | Public Route Candidate Registry Governance Validation | Sprint 49 validator PASS |
 | G50 | Public Route Candidate Registration Governance | Sprint 50 validator PASS |
+| G51 | Public Route Candidate Registration Governance Validation | Sprint 51 validator PASS |
 
-**Gate G50 passed.** Sprint 51 (Public Route Candidate Registration Governance Validation) may proceed when authorized. Public classifier and engine remain blocked. Public route remains blocked until candidate registration governance is validated. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational. External deployment remains separately governed.
+**Gate G51 passed.** Sprint 52 (Public Route Candidate Registration Authorization Governance) may proceed when authorized. Public classifier and engine remain blocked. Public route remains blocked until candidate registration authorization governance exists. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational. External deployment remains separately governed.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0-G50) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, public route candidate registry governance, public route candidate registry governance validation, public route candidate registration governance, and expansion readiness. They must pass before reference layer scale or operational layers.
+Foundation gates (G0-G51) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, public route candidate registry governance, public route candidate registry governance validation, public route candidate registration governance, public route candidate registration governance validation, and expansion readiness. They must pass before reference layer scale or operational layers.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -235,6 +236,10 @@ Gate G49 is passed after Public Route Candidate Registry Governance Validation e
 
 Gate G50 is passed after Public Route Candidate Registration Governance exists; registration governance policy exists; registration process exists; registration eligibility gate exists; registration record template exists; registration state model exists; non-authorization rules exists; boundary audit exists; validator exists; validate_all.py PASS; no candidate registered; no candidate entry created; no candidate ID created; no candidate record instantiated; no registration record instantiated; no candidate assessed, selected, or approved; prototype files are not modified; prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created.
 
+## G51: Public Route Candidate Registration Governance Validation
+
+Gate G51 is passed after Public Route Candidate Registration Governance Validation exists; validation policy exists; validation results exist; registration process validation exists; registration eligibility gate validation exists; registration record template validation exists; registration state model validation exists; non-authorization validation exists; public isolation audit exists; static safety audit exists; validator exists; validate_all.py PASS; Sprint 50 registration governance is validated; no candidate registered; no candidate entry created; no candidate ID created; no candidate record instantiated; no registration record instantiated; no candidate assessed, selected, or approved; prototype files are not modified; prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created.
+
 ## Current Execution State
 
 | Sprint | Status | Gate |
@@ -298,7 +303,8 @@ Gate G50 is passed after Public Route Candidate Registration Governance exists; 
 | Sprint 48 | COMPLETE | G48 passed |
 | Sprint 49 | COMPLETE | G49 passed |
 | Sprint 50 | COMPLETE | G50 passed |
-| Sprint 51+ | READY | G50 passed - Public Route Candidate Registration Governance Validation pending; engine/classifier blocked; public route blocked; deployment gates separately governed |
+| Sprint 51 | COMPLETE | G51 passed |
+| Sprint 52+ | READY | G51 passed - Public Route Candidate Registration Authorization Governance pending; engine/classifier blocked; public route blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

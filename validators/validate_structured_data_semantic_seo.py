@@ -237,6 +237,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
 )
 
 PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
@@ -699,6 +700,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_public_route_candidate_registry_governance_validation",
         "blocked_until_public_route_candidate_registration_governance",
         "blocked_until_public_route_candidate_registration_governance_validation",
+        "blocked_until_public_route_candidate_registration_authorization_governance",
     ):
         error("publisher-governance-policy: publisher must remain blocked from drafts and publication")
         ok = False
