@@ -61,6 +61,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_public_reference_production_batch_1.py",
     ROOT / "validators" / "validate_public_reference_batch_1_depth_seo_inevitability.py",
     ROOT / "validators" / "validate_public_reference_production_batch_2.py",
+    ROOT / "validators" / "validate_public_reference_batch_2_depth_seo_inevitability.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 
