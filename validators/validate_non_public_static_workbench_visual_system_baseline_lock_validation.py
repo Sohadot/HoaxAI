@@ -339,6 +339,7 @@ def validate_governance_and_registry() -> bool:
         "blocked_until_public_reference_production_batch_1_validation",
         "blocked_until_public_reference_production_batch_2_validation",
         "blocked_until_public_reference_production_batch_3_validation",
+        "blocked_until_evidence_posture_standard_v1_validation",
     ):
         error("publisher status must be blocked until public-readiness boundary governance")
         ok = False

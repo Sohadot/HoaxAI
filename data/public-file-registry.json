@@ -232,6 +232,18 @@
       "allowed_dependencies": [],
       "prohibited_content": "unregistered routes, future routes, placeholder URLs",
       "notes": "Public sitemap for registered eligible routes only."
+    },
+    {
+      "file_id": "PUB-FILE-0017",
+      "path": "standard/evidence-posture/index.html",
+      "file_type": "html",
+      "public_role": "public_standard_page",
+      "route_id_if_applicable": "ROUTE-0017",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": ["../../styles.css"],
+      "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring, classifier, detector, engine",
+      "notes": "Hoax.ai Evidence Posture Standard v1 public authority-layer page."
     }
   ],
   "last_reviewed": "2026-06-19"

@@ -122,6 +122,7 @@
     "publisher_blocked_until_public_reference_production_batch_1_validation",
     "publisher_blocked_until_public_reference_production_batch_2_validation",
     "publisher_blocked_until_public_reference_production_batch_3_validation",
+    "publisher_blocked_until_evidence_posture_standard_v1_validation",
     "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [

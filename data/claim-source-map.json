@@ -1350,6 +1350,25 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Batch 3 depth and standard readiness per DEC-076. Batch 3 hardened in place for Evidence Posture Standard v1 readiness."
+    },
+    {
+      "claim_id": "CLAIM-0063",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md",
+        "DECISION_LOG.md",
+        "standard/evidence-posture/index.html"
+      ],
+      "source_refs": [
+        "SOURCE-0389",
+        "SOURCE-0390",
+        "SOURCE-0391"
+      ],
+      "support_scope": "evidence posture standard v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Evidence Posture Standard v1 per DEC-077. First public authority-layer standard."
     }
   ],
   "last_reviewed": "2026-06-19"

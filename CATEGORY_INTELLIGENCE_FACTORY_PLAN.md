@@ -158,6 +158,8 @@ Batch 3 extends constitutional category language with Attribution Boundary, Clai
 
 The Category Intelligence Factory now treats Batch 3 as the bridge from reference layer to standard. Attribution Boundary, Claim Drift, Evidence Limitation, and Interpretation Risk must not remain standalone terms; they must prepare Hoax.ai for Evidence Posture Standard v1 by defining the output boundaries, support limits, claim-movement risks, and interpretation controls required for serious evidence-posture authority.
 
+The Category Intelligence Factory has entered the authority-layer phase through Hoax.ai Evidence Posture Standard v1. The standard converts the public reference layer into a governed system of allowed language, prohibited language, posture states, evidence support conditions, and output boundaries. This strengthens Hoax.ai as a standard-bearing evidence-posture asset rather than a collection of pages or a generic AI-detection website.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

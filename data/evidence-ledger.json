@@ -684,6 +684,17 @@
       "status": "active",
       "last_reviewed": "2026-06-19",
       "notes": "Sprint 58 deepens Batch 3 in place with Standard-Readiness and allowed/prohibited output language. Sitemap remains sixteen URLs. No new routes or operational capability authorized."
+    },
+    {
+      "claim_id": "CLAIM-0063",
+      "claim_text": "Hoax.ai has adopted Evidence Posture Standard v1 as a public authority-layer standard derived from its reference layer.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md, DECISION_LOG.md (DEC-077), standard/evidence-posture/index.html",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-19",
+      "notes": "Sprint 59 creates first public authority-layer standard at /standard/evidence-posture/. Sitemap expands to seventeen URLs. No engine, classifier, upload, scoring, API, analytics, or public tool behavior authorized."
     }
   ]
 }

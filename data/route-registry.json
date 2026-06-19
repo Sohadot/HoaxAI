@@ -408,6 +408,31 @@
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
       "notes": "Public Reference Production Batch 3 — Interpretation Risk."
+    },
+    {
+      "route_id": "ROUTE-0017",
+      "path": "/standard/evidence-posture/",
+      "title": "Hoax.ai Evidence Posture Standard v1",
+      "route_type": "public_standard",
+      "page_type": "public_standard",
+      "status": "public_evidence_posture_standard_v1_created",
+      "authority_layer": "evidence_posture_standard_v1",
+      "index_policy": "indexable_public_standard",
+      "canonical_url": "https://hoax.ai/standard/evidence-posture/",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_standard_metadata_created",
+      "navigation_status": "linked_from_homepage_and_reference_layer",
+      "publication_status": "public_evidence_posture_standard_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "standard_language_only_no_engine_no_classifier",
+      "prohibited_capabilities": ["engine", "classifier", "detector", "upload", "scoring", "fake_real_verdict", "subject_accusation", "API", "analytics", "forms", "monetization", "public_tool_behavior"],
+      "sitemap_policy": "evidence_posture_standard_v1_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_standard_authority_layer",
+      "notes": "Sprint 59 — Hoax.ai Evidence Posture Standard v1. First public authority-layer standard. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
     }
   ]
 }

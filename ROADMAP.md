@@ -2258,6 +2258,37 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 59 — Hoax.ai Evidence Posture Standard v1
+
+**Status:** COMPLETE — 2026-06-19
+**Goal:** Create Hoax.ai Evidence Posture Standard v1 as the first public authority-layer standard derived from the reference layer—defining posture states, support conditions, allowed/prohibited output language, and boundary rules without operational capability.
+
+### Deliverables
+
+- standard/evidence-posture/index.html
+- validators/validate_evidence_posture_standard_v1_public.py
+- SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md
+- DEC-077 appended to DECISION_LOG.md
+- ROUTE-0017 and sitemap expansion to 17 URLs
+- Homepage and reference cross-links to standard
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G59 passed.** Standard integration and protocol readiness is the recommended next phase.
+
+### Next Phase
+
+**Sprint 60 — Standard Integration, Cross-Linking, and Protocol Readiness**
+
+Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, and public tool behavior remain blocked.
+
+---
+
 ## Sprint 58 — Public Reference Batch 3 Depth and Standard Readiness
 
 **Status:** COMPLETE — 2026-06-19

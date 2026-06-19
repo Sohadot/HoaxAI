@@ -2038,3 +2038,28 @@ Sprint 57 expanded the public reference surface to sixteen URLs and introduced t
 - Evidence Posture Standard v1 becomes the recommended next phase after Sprint 58.
 - No public engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
 
+---
+
+## DEC-077 — Hoax.ai Evidence Posture Standard v1 Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Standard v1 as the first public authority-layer standard derived from the existing reference layer. The standard defines responsible evidence-posture states, support conditions, output boundaries, allowed language, prohibited language, and reference-concept relationships for AI-era evidence interpretation. It expands the public surface by exactly one route at /standard/evidence-posture/ and does not create an engine, classifier, upload workflow, scoring system, API, analytics, forms, DNS/Cloudflare change, custom domain launch, monetization, or public tool behavior.
+
+### Rationale
+
+After three production batches and three hardening phases, Hoax.ai has enough public reference substance to move from reference-layer expansion into standard formation. A strategic buyer, platform, analyst, researcher, or AI trust infrastructure actor does not only need pages; they need a standard that explains how those pages govern responsible output. Evidence Posture Standard v1 turns the reference layer into a public authority layer without re-entering abstract meta-governance.
+
+### Implications
+
+- One public standard route may be created.
+- Sitemap expands from 16 to exactly 17 URLs.
+- Existing reference pages may link to the standard.
+- The standard may define allowed and prohibited output language.
+- The standard may define posture states and support conditions.
+- Future protocol work may build from this standard.
+- No public engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
+

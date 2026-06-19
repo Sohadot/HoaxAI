@@ -4891,6 +4891,36 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 58 Batch 3 depth and standard-readiness audit."
+    },
+    {
+      "source_id": "SOURCE-0389",
+      "source_title": "validators/validate_evidence_posture_standard_v1_public.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_evidence_posture_standard_v1_public.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 59 Evidence Posture Standard v1 public validator."
+    },
+    {
+      "source_id": "SOURCE-0390",
+      "source_title": "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 59 Evidence Posture Standard v1 audit."
+    },
+    {
+      "source_id": "SOURCE-0391",
+      "source_title": "standard/evidence-posture/index.html",
+      "source_type": "public_standard_page",
+      "location": "standard/evidence-posture/index.html",
+      "supports": ["governance_claim", "category_language_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Hoax.ai Evidence Posture Standard v1 public authority-layer page."
     }
   ]
 }

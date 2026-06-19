@@ -578,6 +578,7 @@ def validate_cross_file() -> bool:
         "blocked_until_public_reference_production_batch_1_validation",
         "blocked_until_public_reference_production_batch_2_validation",
         "blocked_until_public_reference_production_batch_3_validation",
+        "blocked_until_evidence_posture_standard_v1_validation",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "
