@@ -623,6 +623,26 @@
       "failure_condition": "public_route_candidate_assessment_governance_validation_not_met",
       "bypassable": false,
       "notes": "Public route candidate assessment governance validation completed Sprint 47 (DEC-065). Does not authorize candidate assessment, public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, prototype file changes, prototype exposure, or public release."
+    },
+    {
+      "gate_id": "PUB-GATE-0048",
+      "name": "Public Route Candidate Registry Governance Gate",
+      "status": "public_route_candidate_registry_governance_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_public_route_candidate_registry_governance_validation": true,
+      "required_before_any_candidate_registry_entry": true,
+      "required_before_any_candidate_assessment": true,
+      "required_before_any_public_route": true,
+      "required_before_any_public_route_creation_sprint": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_governance": true,
+      "validation_source": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
+      "failure_condition": "public_route_candidate_registry_governance_not_met",
+      "bypassable": false,
+      "notes": "Public route candidate registry governance defined Sprint 48 (DEC-066). Does not authorize candidate registration, candidate assessment, public engine, public classifier, public tool, public route, sitemap, navigation, upload, scoring, API, forms, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, prototype file changes, prototype exposure, or public release."
     }
   ],
   "last_reviewed": "2026-06-18"

@@ -1715,3 +1715,37 @@ Candidate assessment governance can be mistaken for candidate assessment. Hoax.a
 - No engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
 - Future work may proceed to public route candidate registry governance only after this validation passes.
 
+---
+
+## DEC-066 - Public Route Candidate Registry Governance v1 Adopted
+
+**Date:** 2026-06-18
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Route Candidate Registry Governance v1 to define how future public route candidates may be recorded before assessment, eligibility validation, route creation, sitemap inclusion, navigation inclusion, deployment, or release. This governance layer does not register any actual candidate, instantiate a candidate record, assess a candidate, select a route, create a candidate page, create a public route, add a sitemap entry, add public navigation, expose the internal prototype, launch a workbench, enable engine behavior, enable classifier behavior, enable upload, enable scoring, enable API behavior, enable analytics, change deployment, change DNS/Cloudflare, launch the custom domain, monetize, or authorize public release.
+
+### Rationale
+
+After validating candidate assessment governance, Hoax.ai needs a controlled registry governance layer before any candidate can be recorded. Candidate registration must not become candidate assessment, route approval, route creation, sitemap expansion, or launch permission. The registry must enforce schema discipline, entry requirements, state boundaries, non-authorization rules, internal prototype protection, public-surface isolation, and future validation before any candidate is entered.
+
+### Implications
+
+- Candidate registry governance may be defined.
+- Candidate registry schema may be defined.
+- Candidate entry template may be defined.
+- Candidate entry requirements may be defined.
+- Candidate registry states may be defined.
+- Candidate registry non-authorization rules may be defined.
+- No actual candidate may be registered in Sprint 48.
+- No candidate entry may be created.
+- No candidate may be assessed.
+- No candidate page may be created.
+- No public route may be created.
+- No sitemap entry may be added.
+- No public navigation may be added.
+- No prototype file may be modified.
+- No engine, classifier, upload, scoring, API, analytics, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release is authorized.
+- Future work may validate this registry governance before any candidate registry entry exists.
+

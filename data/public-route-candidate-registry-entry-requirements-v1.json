@@ -1,0 +1,48 @@
+{
+  "requirements_id": "PUB-ROUTE-CANDIDATE-REGISTRY-ENTRY-REQUIREMENTS-001",
+  "name": "Public Route Candidate Registry Entry Requirements v1",
+  "version": "v1.0.0",
+  "status": "public_route_candidate_registry_entry_requirements_defined",
+  "maturity": "registry_governance_only_no_candidate_registered_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
+  "required_identity_fields": [
+    "candidate_id",
+    "candidate_name",
+    "proposed_route_path",
+    "proposed_route_title",
+    "candidate_class",
+    "route_type"
+  ],
+  "required_boundary_fields": [
+    "public_purpose",
+    "explicit_non_purpose",
+    "claim_boundary",
+    "source_boundary",
+    "structured_data_boundary",
+    "artifact_subject_separation_posture",
+    "evidence_posture_boundary",
+    "anti_detector_language_posture"
+  ],
+  "required_risk_fields": [
+    "public_surface_risk",
+    "operational_implication_risk",
+    "internal_prototype_exposure_risk",
+    "privacy_security_posture",
+    "accessibility_baseline",
+    "deployment_DNS_boundary",
+    "monetization_boundary",
+    "public_release_boundary"
+  ],
+  "required_status_fields": [
+    "sitemap_intention",
+    "navigation_intention",
+    "internal_linking_intention",
+    "assessment_required",
+    "current_candidate_state",
+    "required_next_gate",
+    "non_authorization_statement",
+    "date_recorded"
+  ],
+  "blocked_missing_field_policy": "missing_any_required_field_blocks_candidate_registration",
+  "non_authorization_statement": "Missing any required field blocks candidate registration. Registry entry requirements do not authorize registration, assessment, route creation, sitemap expansion, public navigation, or public release in Sprint 48.",
+  "last_reviewed": "2026-06-18"
+}

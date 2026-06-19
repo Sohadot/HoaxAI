@@ -2038,6 +2038,44 @@ Public classifier remains blocked. Public engine remains blocked. Public route r
 
 ---
 
+## Sprint 48 - Public Route Candidate Registry Governance v1
+
+**Status:** COMPLETE - 2026-06-18
+**Goal:** Define public route candidate registry governance without registering any candidate, instantiating a record, assessing a candidate, creating a route, sitemap entry, public navigation link, or operational capability.
+
+### Deliverables
+
+- PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md
+- data/public-route-candidate-registry-governance-policy.json
+- data/public-route-candidate-registry-schema-v1.json
+- data/public-route-candidate-registry-entry-template-v1.json
+- data/public-route-candidate-registry-state-model-v1.json
+- data/public-route-candidate-registry-entry-requirements-v1.json
+- data/public-route-candidate-registry-non-authorization-rules-v1.json
+- data/public-route-candidate-registry-boundary-audit-v1.json
+- validators/validate_public_route_candidate_registry_governance.py
+- SPRINT_48_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_AUDIT.md
+- DEC-066 appended to DECISION_LOG.md
+- Publisher status -> blocked_until_public_route_candidate_registry_governance_validation
+- PUB-GATE-0048 added; reference expansion gate updated
+- validators/validate_all.py updated
+
+### Validation
+
+`py -3 validators/validate_all.py` - PASS required for sprint closure.
+
+### Gate
+
+**Gate G48 passed.** Public route candidate registry governance validation blocked until Sprint 49.
+
+### Next Phase
+
+**Sprint 49 - Public Route Candidate Registry Governance Validation v1**
+
+Public classifier remains blocked. Public engine remains blocked. Public route remains blocked until candidate registry governance is validated, a candidate is registered in a later sprint, candidate assessment is governed and validated, route eligibility is validated, and a later route-specific creation sprint is separately authorized. The prototype remains non-public, static, non-operational, not a public route, and not a workbench launch.
+
+---
+
 ## Sprint 25 — Public Reference Validation and Live Surface Audit v1
 
 **Status:** COMPLETE — 2026-06-17  

@@ -4033,6 +4033,96 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Public route candidate assessment governance validation validator."
+    },
+    {
+      "source_id": "SOURCE-0320",
+      "source_title": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry governance doctrine."
+    },
+    {
+      "source_id": "SOURCE-0321",
+      "source_title": "data/public-route-candidate-registry-governance-policy.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-governance-policy.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry governance policy."
+    },
+    {
+      "source_id": "SOURCE-0322",
+      "source_title": "data/public-route-candidate-registry-schema-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-schema-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry schema."
+    },
+    {
+      "source_id": "SOURCE-0323",
+      "source_title": "data/public-route-candidate-registry-entry-template-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-entry-template-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry entry template."
+    },
+    {
+      "source_id": "SOURCE-0324",
+      "source_title": "data/public-route-candidate-registry-state-model-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-state-model-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry state model."
+    },
+    {
+      "source_id": "SOURCE-0325",
+      "source_title": "data/public-route-candidate-registry-entry-requirements-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-entry-requirements-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry entry requirements."
+    },
+    {
+      "source_id": "SOURCE-0326",
+      "source_title": "data/public-route-candidate-registry-non-authorization-rules-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-non-authorization-rules-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry non-authorization rules."
+    },
+    {
+      "source_id": "SOURCE-0327",
+      "source_title": "data/public-route-candidate-registry-boundary-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-route-candidate-registry-boundary-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry boundary audit."
+    },
+    {
+      "source_id": "SOURCE-0328",
+      "source_title": "validators/validate_public_route_candidate_registry_governance.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_route_candidate_registry_governance.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Public route candidate registry governance validator."
     }
   ]
 }

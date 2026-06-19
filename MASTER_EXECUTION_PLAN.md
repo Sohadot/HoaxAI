@@ -86,12 +86,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G45 | Public Route Eligibility Governance Validation | Sprint 45 validator PASS |
 | G46 | Public Route Candidate Assessment Governance | Sprint 46 validator PASS |
 | G47 | Public Route Candidate Assessment Governance Validation | Sprint 47 validator PASS |
+| G48 | Public Route Candidate Registry Governance | Sprint 48 validator PASS |
 
-**Gate G47 passed.** Sprint 48 (Public Route Candidate Registry Governance) may proceed when authorized. Public classifier and engine remain blocked. Public route remains blocked until candidate registry governance exists. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational. External deployment remains separately governed.
+**Gate G48 passed.** Sprint 49 (Public Route Candidate Registry Governance Validation) may proceed when authorized. Public classifier and engine remain blocked. Public route remains blocked until candidate registry governance is validated. The prototype remains non-public, static, unrouted, unindexed, unlinked, and non-operational. External deployment remains separately governed.
 
 ### Foundation Gates vs Deployment Gates
 
-Foundation gates (G0-G47) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, and expansion readiness. They must pass before reference layer scale or operational layers.
+Foundation gates (G0-G48) govern category infrastructure, reference governance, language layer, language validation, workbench governance, workbench dry-run validation, workbench specification, interface blueprint governance, interface blueprint validation, prototype governance, static prototype v1, prototype validation, prototype refinement, refinement validation, visual system hardening, hardening validation, baseline lock, baseline lock validation, public-readiness boundary governance, public-readiness boundary governance validation, public route eligibility governance, public route eligibility governance validation, public route candidate assessment governance, public route candidate assessment governance validation, public route candidate registry governance, and expansion readiness. They must pass before reference layer scale or operational layers.
 
 Deployment gates are **separate** and **not current foundation steps**. They open only after reference expansion governance is in place. None are passed.
 
@@ -220,6 +221,10 @@ Gate G46 is passed after Public Route Candidate Assessment Governance exists; as
 
 Gate G47 is passed after Public Route Candidate Assessment Governance Validation exists; validation policy exists; validation results exist; framework validation exists; record template validation exists; state model validation exists; prohibited candidates validation exists; non-authorization validation exists; public isolation audit exists; static safety audit exists; validator exists; validate_all.py PASS; Sprint 46 candidate assessment governance is validated; no specific candidate assessed; no candidate record instantiated; prototype files are not modified; prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created.
 
+## G48: Public Route Candidate Registry Governance
+
+Gate G48 is passed after Public Route Candidate Registry Governance exists; registry governance policy exists; registry schema exists; registry entry template exists; registry state model exists; registry entry requirements exists; non-authorization rules exists; boundary audit exists; validator exists; validate_all.py PASS; no populated registry created; no candidate entries created; no candidate IDs created; no candidate records instantiated; no candidate pages created; no candidate registered, assessed, selected, or approved; prototype files are not modified; prototype remains non-public, static, not routed, not sitemap-listed, not publicly linked, and non-operational; and no public route, sitemap expansion, public navigation, JavaScript, forms, inputs, upload, scoring, fake/real output, engine, classifier, tool, API, analytics, DNS, Cloudflare, custom domain launch, monetization, Python cache files, deployment changes, or public release authorization is created.
+
 ## Current Execution State
 
 | Sprint | Status | Gate |
@@ -280,7 +285,8 @@ Gate G47 is passed after Public Route Candidate Assessment Governance Validation
 | Sprint 45 | COMPLETE | G45 passed |
 | Sprint 46 | COMPLETE | G46 passed |
 | Sprint 47 | COMPLETE | G47 passed |
-| Sprint 48+ | READY | G47 passed - Public Route Candidate Registry Governance pending; engine/classifier blocked; public route blocked; deployment gates separately governed |
+| Sprint 48 | COMPLETE | G48 passed |
+| Sprint 49+ | READY | G48 passed - Public Route Candidate Registry Governance Validation pending; engine/classifier blocked; public route blocked; deployment gates separately governed |
 
 ## Governing Sentence
 

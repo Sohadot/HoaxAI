@@ -177,6 +177,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE,
+    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION,
 )
 
 PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
@@ -517,6 +518,7 @@ def validate_cross_file() -> bool:
         "blocked_until_public_route_candidate_assessment_governance",
         "blocked_until_public_route_candidate_assessment_governance_validation",
         "blocked_until_public_route_candidate_registry_governance",
+        "blocked_until_public_route_candidate_registry_governance_validation",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "

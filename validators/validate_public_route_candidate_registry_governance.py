@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Hoax.ai Public Route Candidate Assessment Governance v1."""
+"""Validate Hoax.ai Public Route Candidate Registry Governance v1."""
 
 from __future__ import annotations
 
@@ -14,7 +14,6 @@ ROOT = Path(__file__).resolve().parent.parent
 
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION,
     validate_public_surface,
@@ -25,10 +24,13 @@ LOCKED_FILES = [
     "_internal_prototypes/evidence-posture-workbench/index.html",
     "_internal_prototypes/evidence-posture-workbench/prototype.css",
 ]
-MATURE = "candidate_assessment_governance_only_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier"
-POLICY = "data/public-route-candidate-assessment-governance-policy.json"
+MATURE = "registry_governance_only_no_candidate_registered_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier"
+POLICY = "data/public-route-candidate-registry-governance-policy.json"
 PROHIBITED = [
-    "assessing a specific candidate",
+    "registering an actual candidate",
+    "candidate record instantiation",
+    "candidate assessment",
+    "candidate route selection",
     "candidate page creation",
     "public route creation",
     "public route approval",
@@ -60,81 +62,15 @@ PROHIBITED = [
     "subject accusation",
     "python cache file commit",
 ]
-ASSESSMENT_DIMENSIONS = [
-    "proposed_route_path",
-    "route_title",
-    "route_type",
-    "public_purpose",
-    "explicit_non_purpose",
-    "claim_boundary",
-    "source_boundary",
-    "structured_data_boundary",
-    "sitemap_intention",
-    "navigation_intention",
-    "internal_linking_intention",
-    "public_surface_risk",
-    "operational_implication_risk",
-    "internal_prototype_exposure_risk",
-    "artifact_subject_separation_posture",
-    "evidence_posture_boundary",
-    "anti_detector_language_posture",
-    "privacy_security_posture",
-    "accessibility_baseline",
-    "deployment_DNS_boundary",
-    "monetization_boundary",
-    "public_release_boundary",
-]
-CANDIDATE_CLASSES = [
-    "Reference Route Candidate",
-    "Governance Route Candidate",
-    "Language Route Candidate",
-    "Methodology Route Candidate",
-    "Static Explanatory Route Candidate",
-    "Public Workbench Route Candidate",
-    "Diagnostic Route Candidate",
-    "Tool Route Candidate",
-    "Engine Route Candidate",
-    "Upload Route Candidate",
-    "API Route Candidate",
-]
-ASSESSMENT_OUTCOMES = [
-    "not_assessed",
-    "assessment_required",
-    "candidate_assessment_ready",
-    "candidate_under_assessment",
-    "candidate_assessment_validated",
-    "eligible_for_route_creation_sprint",
-    "blocked_for_public_surface_risk",
-    "blocked_for_operational_implication",
-    "blocked_for_internal_prototype_exposure",
-    "blocked_for_claim_or_source_gap",
-    "blocked_for_sitemap_or_navigation_gap",
-    "blocked_for_engine_classifier_upload_scoring_implication",
-    "blocked_for_deployment_or_DNS_implication",
-    "blocked_for_public_release_implication",
-]
-BLOCKED_DEFAULTS = [
-    "public_workbench_candidate_blocked_by_default",
-    "diagnostic_candidate_blocked_by_default",
-    "tool_candidate_blocked_by_default",
-    "engine_candidate_blocked_by_default",
-    "classifier_candidate_blocked_by_default",
-    "upload_candidate_blocked_by_default",
-    "scoring_candidate_blocked_by_default",
-    "API_candidate_blocked_by_default",
-    "analytics_candidate_blocked_by_default",
-    "monetization_candidate_blocked_by_default",
-    "deployment_candidate_blocked_by_default",
-    "DNS_custom_domain_candidate_blocked_by_default",
-]
-RECORD_FIELDS = [
+ENTRY_FIELDS = [
     "candidate_id",
+    "candidate_name",
     "proposed_route_path",
     "proposed_route_title",
     "candidate_class",
+    "route_type",
     "public_purpose",
     "explicit_non_purpose",
-    "route_type",
     "claim_boundary",
     "source_boundary",
     "structured_data_boundary",
@@ -152,13 +88,18 @@ RECORD_FIELDS = [
     "deployment_DNS_boundary",
     "monetization_boundary",
     "public_release_boundary",
-    "assessment_outcome",
+    "assessment_required",
+    "current_candidate_state",
     "required_next_gate",
+    "non_authorization_statement",
+    "date_recorded",
 ]
-FORBIDDEN_RECORD_FIELDS = [
+FORBIDDEN_ENTRY_FIELDS = [
     "route_created",
+    "route_approved",
     "sitemap_entry_created",
     "public_navigation_added",
+    "public_workbench_created",
     "engine_enabled",
     "classifier_enabled",
     "upload_enabled",
@@ -169,71 +110,144 @@ FORBIDDEN_RECORD_FIELDS = [
     "DNS_enabled",
     "Cloudflare_enabled",
     "custom_domain_launched",
+    "monetization_enabled",
     "public_release_enabled",
 ]
 BOUNDARY_FIELDS = [
-    "no_route_creation_by_assessment",
-    "no_sitemap_expansion_by_assessment",
-    "no_public_navigation_by_assessment",
-    "no_public_workbench_by_assessment",
-    "no_engine_classifier_upload_scoring_by_assessment",
-    "no_public_release_by_assessment",
+    "no_route_creation_by_registry_entry",
+    "no_candidate_assessment_by_registry_entry",
+    "no_sitemap_expansion_by_registry_entry",
+    "no_public_navigation_by_registry_entry",
+    "no_public_workbench_by_registry_entry",
+    "no_engine_classifier_upload_scoring_by_registry_entry",
+    "no_public_release_by_registry_entry",
 ]
 NON_AUTH_FIELDS = [
-    "assessment_does_not_authorize_route_creation",
-    "assessment_does_not_authorize_sitemap",
-    "assessment_does_not_authorize_navigation",
-    "assessment_does_not_authorize_engine",
-    "assessment_does_not_authorize_classifier",
-    "assessment_does_not_authorize_upload",
-    "assessment_does_not_authorize_scoring",
-    "assessment_does_not_authorize_API",
-    "assessment_does_not_authorize_analytics",
-    "assessment_does_not_authorize_deployment",
-    "assessment_does_not_authorize_DNS_Cloudflare",
-    "assessment_does_not_authorize_custom_domain_launch",
-    "assessment_does_not_authorize_public_release",
+    "registry_entry_does_not_authorize_route_creation",
+    "registry_entry_does_not_authorize_candidate_assessment",
+    "registry_entry_does_not_authorize_sitemap",
+    "registry_entry_does_not_authorize_navigation",
+    "registry_entry_does_not_authorize_engine",
+    "registry_entry_does_not_authorize_classifier",
+    "registry_entry_does_not_authorize_upload",
+    "registry_entry_does_not_authorize_scoring",
+    "registry_entry_does_not_authorize_API",
+    "registry_entry_does_not_authorize_analytics",
+    "registry_entry_does_not_authorize_deployment",
+    "registry_entry_does_not_authorize_DNS_Cloudflare",
+    "registry_entry_does_not_authorize_custom_domain_launch",
+    "registry_entry_does_not_authorize_public_release",
 ]
-STATES = ASSESSMENT_OUTCOMES
+TEMPLATE_BOUNDARY_RULES = [
+    "template_is_not_an_entry",
+    "template_does_not_create_candidate_id",
+    "template_does_not_select_route",
+    "template_does_not_assess_candidate",
+    "template_does_not_create_route",
+    "template_does_not_add_sitemap",
+    "template_does_not_add_navigation",
+    "template_does_not_expose_prototype",
+]
+TEMPLATE_NON_AUTH = [
+    "no_candidate_registration_by_template",
+    "no_candidate_assessment_by_template",
+    "no_route_creation_by_template",
+    "no_sitemap_expansion_by_template",
+    "no_public_navigation_by_template",
+    "no_engine_classifier_upload_scoring_by_template",
+    "no_deployment_DNS_custom_domain_by_template",
+    "no_public_release_by_template",
+]
+REGISTRY_STATES = [
+    "registry_not_created",
+    "registry_governance_defined",
+    "registry_governance_validated",
+    "entry_not_allowed",
+    "entry_required_governance",
+    "entry_template_defined",
+    "entry_ready_for_future_recording",
+    "candidate_recorded",
+    "candidate_record_requires_assessment",
+    "candidate_under_assessment",
+    "candidate_assessment_validated",
+    "eligible_for_route_creation_sprint",
+    "blocked_for_missing_required_fields",
+    "blocked_for_public_surface_risk",
+    "blocked_for_operational_implication",
+    "blocked_for_internal_prototype_exposure",
+    "blocked_for_sitemap_or_navigation_gap",
+    "blocked_for_engine_classifier_upload_scoring_implication",
+    "blocked_for_public_release_implication",
+]
+TRANSITION_RULES = [
+    "no automatic transition to candidate registration",
+    "registry_governance_validated may transition only to future_candidate_registration_governance",
+    "candidate_recorded requires separate future candidate registration sprint",
+    "candidate_record_requires_assessment requires separate future candidate assessment sprint",
+    "candidate_assessment_validated may transition only to eligible_for_route_creation_sprint",
+    "eligible_for_route_creation_sprint still requires separate future route creation governance",
+    "no state authorizes sitemap expansion",
+    "no state authorizes public navigation",
+    "no state authorizes public release",
+]
 FORBIDDEN_TRANSITIONS = [
-    "candidate_assessment_validated_to_public_route_created",
-    "candidate_assessment_validated_to_sitemap_entry_created",
-    "candidate_assessment_validated_to_public_navigation_added",
-    "candidate_assessment_validated_to_engine_enabled",
-    "candidate_assessment_validated_to_classifier_enabled",
-    "candidate_assessment_validated_to_upload_enabled",
-    "candidate_assessment_validated_to_scoring_enabled",
-    "candidate_assessment_validated_to_API_enabled",
-    "candidate_assessment_validated_to_deployment",
-    "candidate_assessment_validated_to_DNS_Cloudflare",
-    "candidate_assessment_validated_to_public_release",
+    "registry_governance_defined_to_candidate_recorded",
+    "registry_governance_validated_to_candidate_recorded",
+    "entry_template_defined_to_candidate_recorded",
+    "candidate_recorded_to_public_route_created",
+    "candidate_recorded_to_sitemap_entry_created",
+    "candidate_recorded_to_public_navigation_added",
+    "candidate_recorded_to_engine_enabled",
+    "candidate_recorded_to_classifier_enabled",
+    "candidate_recorded_to_upload_enabled",
+    "candidate_recorded_to_scoring_enabled",
+    "candidate_recorded_to_API_enabled",
+    "candidate_recorded_to_deployment",
+    "candidate_recorded_to_DNS_Cloudflare",
+    "candidate_recorded_to_public_release",
 ]
-BLOCKED_BY_DEFAULT = [
-    "public_workbench_route_candidate",
-    "diagnostic_route_candidate",
-    "tool_route_candidate",
-    "engine_route_candidate",
-    "classifier_route_candidate",
-    "upload_route_candidate",
-    "scoring_route_candidate",
-    "API_route_candidate",
-    "analytics_route_candidate",
-    "monetization_route_candidate",
-    "deployment_route_candidate",
-    "DNS_custom_domain_route_candidate",
+IDENTITY_FIELDS = [
+    "candidate_id",
+    "candidate_name",
+    "proposed_route_path",
+    "proposed_route_title",
+    "candidate_class",
+    "route_type",
 ]
-UNBLOCK_REQS = [
-    "separate governance required",
-    "separate validation required",
-    "separate public readiness review required",
-    "separate route readiness review required",
-    "separate privacy/security review required",
-    "separate sitemap/navigation governance required where applicable",
-    "separate deployment/DNS governance required where applicable",
-    "no unblock by candidate assessment governance alone",
+BOUNDARY_REQ_FIELDS = [
+    "public_purpose",
+    "explicit_non_purpose",
+    "claim_boundary",
+    "source_boundary",
+    "structured_data_boundary",
+    "artifact_subject_separation_posture",
+    "evidence_posture_boundary",
+    "anti_detector_language_posture",
+]
+RISK_FIELDS = [
+    "public_surface_risk",
+    "operational_implication_risk",
+    "internal_prototype_exposure_risk",
+    "privacy_security_posture",
+    "accessibility_baseline",
+    "deployment_DNS_boundary",
+    "monetization_boundary",
+    "public_release_boundary",
+]
+STATUS_FIELDS = [
+    "sitemap_intention",
+    "navigation_intention",
+    "internal_linking_intention",
+    "assessment_required",
+    "current_candidate_state",
+    "required_next_gate",
+    "non_authorization_statement",
+    "date_recorded",
 ]
 BLOCKED_AUTH = [
+    "no_candidate_registered",
     "no_candidate_assessed",
+    "no_candidate_record_instantiated",
     "no_public_route_authorized",
     "no_sitemap_expansion_authorized",
     "no_public_navigation_authorized",
@@ -254,46 +268,20 @@ BLOCKED_AUTH = [
     "no_public_tool_authorized",
     "no_public_release_authorized",
 ]
-FORBIDDEN_OUTCOME_TERMS = [
-    "route_created",
-    "route_approved",
-    "sitemap_ready",
-    "navigation_ready",
-    "workbench_ready",
-    "engine_ready",
-    "classifier_ready",
-    "deployment_ready",
-    "dns_ready",
-    "cloudflare_ready",
-    "monetization_ready",
-    "public_release_ready",
-]
 SOURCE_LOCS = [
-    "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_V1.md",
-    "data/public-route-candidate-assessment-governance-policy.json",
-    "data/public-route-candidate-assessment-framework-v1.json",
-    "data/public-route-candidate-assessment-record-template-v1.json",
-    "data/public-route-candidate-assessment-state-model-v1.json",
-    "data/public-route-candidate-assessment-prohibited-candidates-v1.json",
-    "data/public-route-candidate-assessment-non-authorization-rules-v1.json",
-    "data/public-route-candidate-assessment-boundary-audit-v1.json",
-    "validators/validate_public_route_candidate_assessment_governance.py",
+    "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md",
+    "data/public-route-candidate-registry-governance-policy.json",
+    "data/public-route-candidate-registry-schema-v1.json",
+    "data/public-route-candidate-registry-entry-template-v1.json",
+    "data/public-route-candidate-registry-state-model-v1.json",
+    "data/public-route-candidate-registry-entry-requirements-v1.json",
+    "data/public-route-candidate-registry-non-authorization-rules-v1.json",
+    "data/public-route-candidate-registry-boundary-audit-v1.json",
+    "validators/validate_public_route_candidate_registry_governance.py",
 ]
 NUMERIC = re.compile(r"\b(seo_score|quality_score|quality grade|score\s*[:=]|grade\s*[:=]|\d+\s*%)\b", re.I)
-INSTANTIATED_RECORD_GLOBS = [
-    "data/public-route-candidate-assessment-record-*.json",
-]
-REAL_ROUTE_PATHS = [
-    "/workbench/",
-    "/evidence-posture-workbench/",
-    "/tool/",
-    "/classifier/",
-    "/detector/",
-    "/upload/",
-    "/score/",
-    "/demo/",
-    "/prototype/",
-]
+INSTANTIATED_ENTRY_GLOBS = ["data/public-route-candidate-registry-entry-*.json"]
+SKIP_ENTRY_SUFFIXES = ("template", "validation", "schema", "governance", "requirements", "non-authorization", "boundary-audit", "state-model")
 
 
 def error(msg: str) -> None:
@@ -310,33 +298,38 @@ def has_all(container, required) -> bool:
     return all(item.lower() in text or item.lower().replace("_", " ") in text for item in required)
 
 
+def skip_instantiated(path: Path) -> bool:
+    name = path.name.lower()
+    return any(part in name for part in SKIP_ENTRY_SUFFIXES)
+
+
 def validate_doctrine() -> bool:
     ok = True
-    text = (ROOT / "PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_V1.md").read_text(encoding="utf-8")
+    text = (ROOT / "PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_V1.md").read_text(encoding="utf-8")
     required = [
-        "Route candidate assessment governance defines how future candidates are assessed. It does not assess, approve, create, or publish a route.",
-        "A candidate is not a route. An assessed candidate is not a created route. A validated candidate is not a public release.",
-        "governed pre-creation evaluation process",
-        "not_assessed",
-        "candidate_assessment_validated",
+        "A candidate registry governs how candidates may be recorded. It does not create, assess, approve, or publish candidates.",
+        "A registry entry is not a route. A registered candidate is not an assessed candidate. A governed registry is not launch permission.",
+        "governed internal record system",
+        "registry_not_created",
+        "candidate_recorded",
         "eligible_for_route_creation_sprint",
         "blocked_for_public_release_implication",
-        "No candidate is assessed in Sprint 46.",
-        "maturity: candidate_assessment_governance_only_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
+        "Sprint 48 records no candidate entry.",
+        "maturity: registry_governance_only_no_candidate_registered_no_candidate_assessed_no_route_no_sitemap_no_public_release_no_engine_no_classifier",
     ]
     for phrase in required:
         if phrase not in text:
             error(f"doctrine: missing {phrase}")
             ok = False
     for term in [
-        "route creation",
+        "public route creation",
         "sitemap inclusion",
         "workbench launch",
         "engine readiness",
         "public release readiness",
     ]:
         if term not in text.lower():
-            error(f"doctrine: assessment-is-not missing {term}")
+            error(f"doctrine: registry-is-not missing {term}")
             ok = False
     return ok
 
@@ -344,7 +337,7 @@ def validate_doctrine() -> bool:
 def validate_policy() -> bool:
     ok = True
     d = load(POLICY)
-    if d.get("status") != "governed_public_route_candidate_assessment_policy":
+    if d.get("status") != "governed_public_route_candidate_registry_policy":
         error("policy invalid status")
         ok = False
     if d.get("maturity") != MATURE:
@@ -353,10 +346,11 @@ def validate_policy() -> bool:
     if not has_all(
         d.get("allowed_governance_actions", []),
         [
-            "candidate assessment framework definition",
-            "assessment record template definition",
-            "candidate state modeling",
-            "prohibited candidate definition",
+            "registry governance definition",
+            "registry schema definition",
+            "registry entry template definition",
+            "registry state modeling",
+            "entry requirement definition",
             "non-authorization rule definition",
             "boundary audit creation",
             "publisher gate update",
@@ -371,8 +365,9 @@ def validate_policy() -> bool:
         ok = False
     blocked = " ".join(d.get("non_authorization_rules", {}).get("blocked", [])).lower()
     for term in [
-        "specific candidate assessment",
-        "candidate page creation",
+        "candidate registration",
+        "candidate assessment",
+        "candidate record instantiation",
         "public route creation",
         "sitemap expansion",
         "public navigation",
@@ -398,134 +393,134 @@ def validate_policy() -> bool:
         if term not in blocked:
             error(f"policy non-authorization missing {term}")
             ok = False
+    zero = str(d.get("registry_zero_state", "")).lower()
+    if "no candidates are registered" not in zero and "no candidate" not in zero:
+        error("policy registry_zero_state must state no candidates registered")
+        ok = False
     if NUMERIC.search((ROOT / POLICY).read_text(encoding="utf-8")):
         error("policy contains numeric score/grade/percentage")
         ok = False
     return ok
 
 
-def validate_framework() -> bool:
+def validate_schema() -> bool:
     ok = True
-    fw = load("data/public-route-candidate-assessment-framework-v1.json")
-    if not set(ASSESSMENT_DIMENSIONS).issubset(set(fw.get("assessment_dimensions", []))):
-        error("framework missing assessment_dimensions")
+    s = load("data/public-route-candidate-registry-schema-v1.json")
+    if not set(ENTRY_FIELDS).issubset(set(s.get("required_entry_fields", []))):
+        error("schema missing required_entry_fields")
         ok = False
-    if not set(CANDIDATE_CLASSES).issubset(set(fw.get("candidate_classes", []))):
-        error("framework missing candidate_classes")
+    if not set(FORBIDDEN_ENTRY_FIELDS).issubset(set(s.get("forbidden_entry_fields", []))):
+        error("schema missing forbidden_entry_fields")
         ok = False
-    if not set(ASSESSMENT_OUTCOMES).issubset(set(fw.get("assessment_outcomes", []))):
-        error("framework missing assessment_outcomes")
+    if not set(BOUNDARY_FIELDS).issubset(set(s.get("required_boundary_fields", []))):
+        error("schema missing required_boundary_fields")
         ok = False
-    if not set(BLOCKED_DEFAULTS).issubset(set(fw.get("blocked_candidate_defaults", []))):
-        error("framework missing blocked_candidate_defaults")
+    if not set(NON_AUTH_FIELDS).issubset(set(s.get("required_non_authorization_fields", []))):
+        error("schema missing required_non_authorization_fields")
         ok = False
-    text = json.dumps(fw).lower()
-    for term in FORBIDDEN_OUTCOME_TERMS:
-        if term in text and "does not authorize" not in text:
-            pass
-    if "authorize route creation" in text or "route creation authorized" in text:
-        error("framework must not authorize route creation")
-        ok = False
-    stmt = fw.get("non_authorization_statement", "").lower()
-    for term in ["route creation", "sitemap expansion", "public navigation", "public release"]:
-        if term not in stmt:
-            error(f"framework non_authorization_statement missing {term}")
+    zs = s.get("registry_zero_state", {})
+    for key in [
+        "no_candidate_entries_exist",
+        "no_candidate_ids_created",
+        "no_candidate_records_instantiated",
+        "no_candidate_pages_created",
+    ]:
+        if zs.get(key) is not True:
+            error(f"schema registry_zero_state missing {key}")
             ok = False
     return ok
 
 
-def validate_record_template() -> bool:
+def validate_entry_template() -> bool:
     ok = True
-    t = load("data/public-route-candidate-assessment-record-template-v1.json")
-    if not set(RECORD_FIELDS).issubset(set(t.get("required_record_fields", []))):
-        error("record template missing required_record_fields")
+    t = load("data/public-route-candidate-registry-entry-template-v1.json")
+    if not set(ENTRY_FIELDS).issubset(set(t.get("template_fields", []))):
+        error("entry template missing template_fields")
         ok = False
-    if not set(FORBIDDEN_RECORD_FIELDS).issubset(set(t.get("forbidden_record_fields", []))):
-        error("record template missing forbidden_record_fields")
+    if not set(TEMPLATE_BOUNDARY_RULES).issubset(set(t.get("template_boundary_rules", []))):
+        error("entry template missing template_boundary_rules")
         ok = False
-    if not set(BOUNDARY_FIELDS).issubset(set(t.get("required_boundary_fields", []))):
-        error("record template missing required_boundary_fields")
+    if not set(TEMPLATE_NON_AUTH).issubset(set(t.get("template_non_authorization_rules", []))):
+        error("entry template missing template_non_authorization_rules")
         ok = False
-    if not set(NON_AUTH_FIELDS).issubset(set(t.get("required_non_authorization_fields", []))):
-        error("record template missing required_non_authorization_fields")
+    if t.get("template_zero_state") != "no_instantiated_entry_exists":
+        error("entry template template_zero_state must be no_instantiated_entry_exists")
         ok = False
-    if not t.get("template_non_authorization_statement"):
-        error("record template missing template_non_authorization_statement")
-        ok = False
-    text = json.dumps(t).lower()
-    if "no instantiated candidate record" not in text and "template defines record structure only" not in text:
-        error("record template must state no instantiated record")
-        ok = False
-    for path in REAL_ROUTE_PATHS:
-        if path in text and "placeholder" not in text and "template" not in text:
-            error(f"record template appears to assess real route path {path}")
-            ok = False
-    for pattern in INSTANTIATED_RECORD_GLOBS:
+    for pattern in INSTANTIATED_ENTRY_GLOBS:
         for p in ROOT.glob(pattern):
-            if "template" in p.name or "validation" in p.name:
+            if skip_instantiated(p):
                 continue
-            error(f"instantiated candidate record exists: {p.name}")
+            error(f"instantiated registry entry exists: {p.name}")
             ok = False
     return ok
 
 
 def validate_state_model() -> bool:
     ok = True
-    sm = load("data/public-route-candidate-assessment-state-model-v1.json")
-    if not set(STATES).issubset(set(sm.get("assessment_states", []))):
-        error("state model missing assessment_states")
+    sm = load("data/public-route-candidate-registry-state-model-v1.json")
+    if not set(REGISTRY_STATES).issubset(set(sm.get("registry_states", []))):
+        error("state model missing registry_states")
         ok = False
     rules = " ".join(sm.get("transition_rules", [])).lower()
-    for term in [
-        "no automatic transition to route creation",
-        "candidate_assessment_validated may transition only to eligible_for_route_creation_sprint",
-        "eligible_for_route_creation_sprint still requires separate future route creation governance",
-        "blocked states require correction and validation before reconsideration",
-        "no state authorizes sitemap expansion",
-        "no state authorizes public navigation",
-        "no state authorizes public release",
-    ]:
-        if term not in rules:
+    for term in TRANSITION_RULES:
+        if term.lower() not in rules:
             error(f"state model missing transition rule: {term}")
             ok = False
     if not set(FORBIDDEN_TRANSITIONS).issubset(set(sm.get("forbidden_transitions", []))):
         error("state model missing forbidden_transitions")
         ok = False
     stmt = sm.get("non_authorization_statement", "").lower()
-    for term in ["route creation", "sitemap expansion", "public navigation", "public release"]:
+    for term in [
+        "candidate registration",
+        "route creation",
+        "sitemap expansion",
+        "public navigation",
+        "public release",
+    ]:
         if term not in stmt:
             error(f"state model non_authorization_statement missing {term}")
             ok = False
     return ok
 
 
-def validate_prohibited_candidates() -> bool:
+def validate_entry_requirements() -> bool:
     ok = True
-    pc = load("data/public-route-candidate-assessment-prohibited-candidates-v1.json")
-    if not set(BLOCKED_BY_DEFAULT).issubset(set(pc.get("blocked_by_default", []))):
-        error("prohibited candidates missing blocked_by_default")
+    r = load("data/public-route-candidate-registry-entry-requirements-v1.json")
+    if not set(IDENTITY_FIELDS).issubset(set(r.get("required_identity_fields", []))):
+        error("entry requirements missing required_identity_fields")
         ok = False
-    if not has_all(pc.get("unblock_requirements", []), UNBLOCK_REQS):
-        error("prohibited candidates missing unblock_requirements")
+    if not set(BOUNDARY_REQ_FIELDS).issubset(set(r.get("required_boundary_fields", []))):
+        error("entry requirements missing required_boundary_fields")
+        ok = False
+    if not set(RISK_FIELDS).issubset(set(r.get("required_risk_fields", []))):
+        error("entry requirements missing required_risk_fields")
+        ok = False
+    if not set(STATUS_FIELDS).issubset(set(r.get("required_status_fields", []))):
+        error("entry requirements missing required_status_fields")
+        ok = False
+    if r.get("blocked_missing_field_policy") != "missing_any_required_field_blocks_candidate_registration":
+        error("entry requirements invalid blocked_missing_field_policy")
+        ok = False
+    if not r.get("non_authorization_statement"):
+        error("entry requirements missing non_authorization_statement")
         ok = False
     return ok
 
 
 def validate_non_authorization() -> bool:
     ok = True
-    na = load("data/public-route-candidate-assessment-non-authorization-rules-v1.json")
-    blocked = na.get("blocked_authorizations", [])
-    if isinstance(blocked, dict):
-        blocked = list(blocked.keys())
-    if not set(BLOCKED_AUTH).issubset(set(blocked)):
+    na = load("data/public-route-candidate-registry-non-authorization-rules-v1.json")
+    if not set(BLOCKED_AUTH).issubset(set(na.get("blocked_authorizations", []))):
         error("non-authorization missing blocked_authorizations")
         ok = False
     expected = {
-        "candidate_assessment_boundary": "no_specific_candidate_assessed_in_sprint_46",
+        "registry_boundary": "registry_governance_only_no_entries",
+        "candidate_registration_boundary": "candidate_registration_requires_future_registration_sprint",
+        "candidate_assessment_boundary": "candidate_assessment_requires_future_assessment_sprint",
         "route_creation_boundary": "route_creation_requires_future_route_creation_sprint",
         "public_release_boundary": "public_release_remains_blocked",
         "internal_prototype_boundary": "internal_prototype_remains_non_public_static_unlinked_unrouted_unindexed",
-        "overall_result": "public_route_candidate_assessment_non_authorization_defined",
+        "overall_result": "public_route_candidate_registry_non_authorization_defined",
     }
     for key, value in expected.items():
         if na.get(key) != value:
@@ -536,23 +531,31 @@ def validate_non_authorization() -> bool:
 
 def validate_audit() -> bool:
     ok = True
-    a = load("data/public-route-candidate-assessment-boundary-audit-v1.json")
-    if a.get("overall_outcome") != "public_route_candidate_assessment_governance_boundary_validated":
+    a = load("data/public-route-candidate-registry-boundary-audit-v1.json")
+    if a.get("overall_outcome") != "public_route_candidate_registry_governance_boundary_validated":
         error("audit invalid overall_outcome")
         ok = False
     groups = {
         "audited_scope": [
-            "public route candidate assessment governance only",
+            "public route candidate registry governance only",
             "current public surface",
             "current sitemap",
             "current route registry",
             "internal prototype as read-only boundary reference",
         ],
-        "candidate_assessment_results": [
-            "no_specific_candidate_assessed",
-            "no_candidate_record_instantiated",
-            "no_candidate_route_selected",
-            "no_candidate_page_created",
+        "registry_results": [
+            "registry_governance_created",
+            "no_populated_registry_created",
+            "no_candidate_entries_created",
+            "no_candidate_ids_created",
+            "no_candidate_records_instantiated",
+            "no_candidate_pages_created",
+        ],
+        "candidate_results": [
+            "no_candidate_registered",
+            "no_candidate_assessed",
+            "no_candidate_selected",
+            "no_candidate_approved",
         ],
         "route_surface_results": [
             "no_public_route_created",
@@ -615,12 +618,12 @@ def validate_files_public() -> bool:
     if subprocess.run(
         ["git", "diff", "--name-only", "--", *LOCKED_FILES], cwd=ROOT, text=True, capture_output=True
     ).stdout.strip():
-        error("prototype files modified in Sprint 46")
+        error("prototype files modified in Sprint 48")
         ok = False
     if subprocess.run(
         ["git", "diff", "--cached", "--name-only", "--", *LOCKED_FILES], cwd=ROOT, text=True, capture_output=True
     ).stdout.strip():
-        error("prototype files staged in Sprint 46")
+        error("prototype files staged in Sprint 48")
         ok = False
     routes = load("data/route-registry.json").get("routes", [])
     if not validate_public_surface(routes, error, PUBLIC_SITEMAP_URL_COUNT):
@@ -656,26 +659,26 @@ def validate_governance() -> bool:
     ok = True
     pub = load("data/publisher-governance-policy.json")
     if pub.get("current_publisher_status") not in (
-        PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_ASSESSMENT_GOVERNANCE_VALIDATION,
         PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE,
         PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRY_GOVERNANCE_VALIDATION,
     ):
-        error("publisher status must be blocked until public route candidate assessment governance validation")
+        error("publisher status must be blocked until public route candidate registry governance validation")
         ok = False
     gate = next(
         (
             g
             for g in load("data/publisher-quality-gates.json").get("gates", [])
-            if g.get("name") == "Public Route Candidate Assessment Governance Gate"
+            if g.get("name") == "Public Route Candidate Registry Governance Gate"
         ),
         None,
     )
     if not gate:
-        error("public route candidate assessment governance gate missing")
+        error("public route candidate registry governance gate missing")
         ok = False
     else:
         for field in [
-            "required_before_public_route_candidate_assessment_governance_validation",
+            "required_before_public_route_candidate_registry_governance_validation",
+            "required_before_any_candidate_registry_entry",
             "required_before_any_candidate_assessment",
             "required_before_any_public_route",
             "required_before_any_public_route_creation_sprint",
@@ -691,6 +694,8 @@ def validate_governance() -> bool:
             ok = False
         notes = gate.get("notes", "").lower()
         for term in [
+            "candidate registration",
+            "candidate assessment",
             "public engine",
             "public classifier",
             "public tool",
@@ -714,42 +719,45 @@ def validate_governance() -> bool:
     exp = load("data/reference-expansion-gate.json")
     checks = " ".join(exp.get("required_pre_release_checks", [])).lower()
     rules = " ".join(exp.get("release_eligibility_rules", [])).lower()
-    if "public_route_candidate_assessment_governance" not in checks:
-        error("reference gate missing public_route_candidate_assessment_governance")
+    if "public_route_candidate_registry_governance" not in checks:
+        error("reference gate missing public_route_candidate_registry_governance")
         ok = False
-    if "no_public_route_candidate_assessment_by_governance_alone" not in rules:
-        error("reference gate must block candidate assessment by governance alone")
+    if "no_candidate_registry_entries_by_registry_governance_alone" not in rules:
+        error("reference gate must block candidate registry entries by registry governance alone")
         ok = False
-    if "no_public_route_creation_by_candidate_assessment_governance" not in rules:
-        error("reference gate must block route creation by candidate assessment governance")
+    if "no_public_route_candidate_assessment_by_registry_governance_alone" not in rules:
+        error("reference gate must block candidate assessment by registry governance alone")
         ok = False
-    if "no_public_engine_eligibility_by_candidate_assessment_governance" not in rules:
-        error("reference gate must block engine eligibility by candidate assessment governance")
+    if "no_public_route_creation_by_registry_governance_alone" not in rules:
+        error("reference gate must block route creation by registry governance alone")
+        ok = False
+    if "no_public_engine_eligibility_by_registry_governance" not in rules:
+        error("reference gate must block engine eligibility by registry governance")
         ok = False
     locs = {s.get("location") for s in load("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
-    if not any(c.get("claim_id") == "CLAIM-0052" for c in load("data/evidence-ledger.json").get("claims", [])):
-        error("CLAIM-0052 missing")
+    if not any(c.get("claim_id") == "CLAIM-0054" for c in load("data/evidence-ledger.json").get("claims", [])):
+        error("CLAIM-0054 missing")
         ok = False
     if not any(
-        c.get("claim_id") == "CLAIM-0052" for c in load("data/claim-source-map.json").get("claim_source_links", [])
+        c.get("claim_id") == "CLAIM-0054" for c in load("data/claim-source-map.json").get("claim_source_links", [])
     ):
-        error("CLAIM-0052 map missing")
+        error("CLAIM-0054 map missing")
         ok = False
-    if "validate_public_route_candidate_assessment_governance.py" not in (
+    if "validate_public_route_candidate_registry_governance.py" not in (
         ROOT / "validators" / "validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all missing sprint 46 validator")
+        error("validate_all missing sprint 48 validator")
         ok = False
-    if "DEC-064" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-064 missing")
+    if "DEC-066" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-066 missing")
         ok = False
-    val = load("data/public-route-eligibility-governance-validation-results-v1.json")
-    if val.get("overall_result") != "public_route_eligibility_governance_validated":
-        error("Sprint 45 eligibility validation must show governance validated")
+    val = load("data/public-route-candidate-assessment-governance-validation-results-v1.json")
+    if val.get("overall_result") != "public_route_candidate_assessment_governance_validated":
+        error("Sprint 47 assessment governance validation must show governance validated")
         ok = False
     return ok
 
@@ -769,17 +777,18 @@ def validate_cache() -> bool:
 def main() -> int:
     parse = [
         POLICY,
-        "data/public-route-candidate-assessment-framework-v1.json",
-        "data/public-route-candidate-assessment-record-template-v1.json",
-        "data/public-route-candidate-assessment-state-model-v1.json",
-        "data/public-route-candidate-assessment-prohibited-candidates-v1.json",
-        "data/public-route-candidate-assessment-non-authorization-rules-v1.json",
-        "data/public-route-candidate-assessment-boundary-audit-v1.json",
+        "data/public-route-candidate-registry-schema-v1.json",
+        "data/public-route-candidate-registry-entry-template-v1.json",
+        "data/public-route-candidate-registry-state-model-v1.json",
+        "data/public-route-candidate-registry-entry-requirements-v1.json",
+        "data/public-route-candidate-registry-non-authorization-rules-v1.json",
+        "data/public-route-candidate-registry-boundary-audit-v1.json",
+        "data/public-route-candidate-assessment-governance-validation-results-v1.json",
+        "data/public-route-candidate-assessment-framework-validation-v1.json",
+        "data/public-route-candidate-assessment-record-template-validation-v1.json",
+        "data/public-route-candidate-assessment-state-model-validation-v1.json",
+        "data/public-route-candidate-assessment-non-authorization-validation-v1.json",
         "data/public-route-eligibility-governance-validation-results-v1.json",
-        "data/public-route-eligibility-criteria-validation-v1.json",
-        "data/public-route-eligibility-prerequisite-validation-v1.json",
-        "data/public-route-eligibility-non-authorization-validation-v1.json",
-        "data/public-route-eligibility-state-model-validation-v1.json",
         "data/publisher-governance-policy.json",
         "data/publisher-quality-gates.json",
         "data/reference-expansion-gate.json",
@@ -807,10 +816,10 @@ def main() -> int:
     checks = [
         validate_doctrine,
         validate_policy,
-        validate_framework,
-        validate_record_template,
+        validate_schema,
+        validate_entry_template,
         validate_state_model,
-        validate_prohibited_candidates,
+        validate_entry_requirements,
         validate_non_authorization,
         validate_audit,
         validate_files_public,
