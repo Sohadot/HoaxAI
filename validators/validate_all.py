@@ -68,6 +68,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_evidence_posture_standard_v1_public.py",
     ROOT / "validators" / "validate_standard_integration_protocol_readiness.py",
     ROOT / "validators" / "validate_evidence_posture_protocol_v1_draft.py",
+    ROOT / "validators" / "validate_protocol_integration_standard_alignment_interface_readiness.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

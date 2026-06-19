@@ -2112,3 +2112,29 @@ Evidence Posture Standard v1 defines allowed and prohibited language. Sprint 60 
 - Future controlled engine or report design may obey this protocol.
 - No public engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
 
+---
+
+## DEC-080 — Protocol Integration, Standard Alignment, and Interface Readiness Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Protocol Integration, Standard Alignment, and Interface Readiness to integrate Evidence Posture Protocol v1 Draft across the public reference and standard layers while preparing a bounded path toward future interface embodiment. This sprint strengthens standard-protocol alignment, adds protocol relationships across reference pages, and creates a non-route interface-readiness document. It does not create a public interface route, engine, classifier, upload workflow, scoring system, API, analytics, forms, DNS/Cloudflare change, custom domain launch, monetization, or public tool behavior.
+
+### Rationale
+
+Evidence Posture Protocol v1 Draft must not remain an isolated procedural page. For Hoax.ai to become a protocol-bearing evidence-posture asset, the protocol must be connected to the standard that authorizes it and to the reference concepts it uses. Interface readiness is appropriate only because a real public protocol now exists. The next interface must be prepared from existing protocol substance, not from generic design decoration or detector-dashboard conventions.
+
+### Implications
+
+- Existing reference pages may be updated to link to the protocol.
+- The standard page may be strengthened to explain its relationship to the protocol.
+- The protocol page may be strengthened to explain its relationship to the standard and future interface.
+- A non-route interface-readiness document may be created.
+- Sitemap remains exactly 18 URLs.
+- No new public route is authorized.
+- No public interface, engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
+- Future interface thesis work may be considered only after Sprint 62 validation passes.
+
