@@ -133,6 +133,7 @@
     "publisher_blocked_until_output_language_guardrail_model_v1_validation",
     "publisher_blocked_until_internal_non_public_engine_prototype_charter_validation",
     "publisher_blocked_until_controlled_internal_prototype_v0_implementation_sprint",
+    "publisher_blocked_until_controlled_internal_prototype_v0_validation",
     "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [

@@ -805,6 +805,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 71 authorization package. Sitemap remains nineteen URLs. No prototype implementation authorized in Sprint 71."
+    },
+    {
+      "claim_id": "CLAIM-0074",
+      "claim_text": "Hoax.ai has implemented Controlled Internal Prototype v0 as a local-only, non-public, synthetic-fixture-bound internal architecture test.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "internal/prototypes/controlled-engine-v0/README.md, internal/prototypes/controlled-engine-v0/prototype_scope.md, internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json, internal/prototypes/controlled-engine-v0/prototype_core.py, internal/prototypes/controlled-engine-v0/validation_harness.py, validators/validate_controlled_internal_prototype_v0_implementation.py, SPRINT_72_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_AUDIT.md, DECISION_LOG.md (DEC-090)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 72 controlled internal prototype v0. Sitemap remains nineteen URLs. Local-only non-public implementation."
     }
   ]
 }

@@ -178,6 +178,8 @@ The Category Intelligence Factory now defines prototype admissibility before pro
 
 The Category Intelligence Factory now separates prototype authorization from prototype implementation. Controlled Internal Prototype v0 Authorization Package defines permitted future components, prohibited components, file-path boundaries, fixture boundaries, output boundaries, validation requirements, and disqualification conditions before any prototype code exists. This prevents the internal prototype from becoming a public detector, upload tool, score system, API, output generator, demo, or product behavior.
 
+The Category Intelligence Factory now includes a controlled internal prototype v0, but only as a local-only, non-public, synthetic-fixture-bound architecture test. The prototype composes evidence-posture model structure, protocol-step mapping, boundary checks, caveat triggers, and output-language guardrails without producing public outputs, verdicts, scores, fake/real labels, reports, upload handling, APIs, analytics, JavaScript behavior, external lookups, or tool behavior. This preserves the distinction between internal intelligence infrastructure and public operational product.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

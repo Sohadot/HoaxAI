@@ -1588,6 +1588,32 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Controlled Internal Prototype v0 Authorization Package per DEC-089."
+    },
+    {
+      "claim_id": "CLAIM-0074",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "internal/prototypes/controlled-engine-v0/README.md",
+        "internal/prototypes/controlled-engine-v0/prototype_scope.md",
+        "internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json",
+        "internal/prototypes/controlled-engine-v0/prototype_core.py",
+        "internal/prototypes/controlled-engine-v0/validation_harness.py",
+        "SPRINT_72_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0441",
+        "SOURCE-0442",
+        "SOURCE-0443",
+        "SOURCE-0444",
+        "SOURCE-0445",
+        "SOURCE-0446"
+      ],
+      "support_scope": "controlled internal prototype v0 implementation",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Controlled Internal Prototype v0 implementation per DEC-090."
     }
   ],
   "last_reviewed": "2026-06-20"

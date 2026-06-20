@@ -218,8 +218,11 @@ Sprint 71 may authorize Sprint 72 to consider Controlled Internal Prototype v0 i
 
 Sprint 72 must be separately prompted, separately validated, and separately committed. Sprint 71 cannot be interpreted as automatic implementation permission.
 
+## Sprint 72 Implementation Status
+
+Controlled Internal Prototype v0 was implemented in Sprint 72 (DEC-090) under `internal/prototypes/controlled-engine-v0/` as a local-only, non-public architecture test. It remains non-operational as a public product.
+
 ---
 
-*Sprint 71 — Controlled Internal Prototype v0 Authorization Package*  
-*Decision: DEC-089*  
-*Date: 2026-06-20*
+*Sprint 71 — Controlled Internal Prototype v0 Authorization Package*
+*Updated Sprint 72 — Implementation status (DEC-090)*

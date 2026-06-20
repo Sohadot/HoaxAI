@@ -257,6 +257,10 @@ Internal Non-Public Engine Prototype Charter (Sprint 70, DEC-088) defines protot
 
 Controlled Internal Prototype v0 Authorization Package (Sprint 71, DEC-089) is the final authorization layer before Sprint 72 may consider implementation. It defines permitted future components, prohibited components, output boundaries, and disqualification conditions. See `CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md` and `data/controlled-internal-prototype-v0-authorization-package.json`.
 
+## Controlled Internal Prototype v0 Implementation Status
+
+Controlled Internal Prototype v0 was implemented in Sprint 72 (DEC-090) under `internal/prototypes/controlled-engine-v0/` as a local-only, non-public, synthetic-fixture-bound architecture test. It remains non-operational as a public product. See `internal/prototypes/controlled-engine-v0/README.md` and `SPRINT_72_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_AUDIT.md`.
+
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
 ---
@@ -264,5 +268,6 @@ No prototype, public route, sitemap entry, input system, output generator, class
 *Sprint 69 — Output Language Guardrail Model v1*
 *Updated Sprint 70 — Internal Non-Public Engine Prototype Charter dependency (DEC-088)*
 *Updated Sprint 71 — Authorization Package dependency (DEC-089)*
+*Updated Sprint 72 — Controlled Internal Prototype v0 implementation status (DEC-090)*
 *Decision: DEC-087*
 *Date: 2026-06-20*

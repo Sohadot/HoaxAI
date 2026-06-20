@@ -2361,3 +2361,28 @@ Sprint 70 established prototype admissibility. Sprint 71 now translates admissib
 - Sitemap remains exactly 19 URLs.
 - Sprint 72 may consider Controlled Internal Prototype v0 implementation only after Sprint 71 passes validation and a separate explicit sprint authorizes implementation.
 
+---
+
+## DEC-090 — Controlled Internal Prototype v0 Implemented
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai implements Controlled Internal Prototype v0 as a local-only, non-public, synthetic-fixture-bound internal prototype. The prototype composes governed fixtures, Evidence Posture Engine Model v0, Output Language Guardrail Model v1, the Internal Non-Public Engine Prototype Charter, and Controlled Internal Prototype v0 Authorization Package into internal structured validation objects. This sprint does not create a public route, sitemap entry, public engine, public interface, upload workflow, user input system, scoring system, API, analytics, JavaScript behavior, external data connector, report exporter, result card, DNS/Cloudflare change, custom-domain launch, monetization, external communication, or public tool behavior.
+
+### Rationale
+
+Sprint 71 created the final authorization package for a controlled internal prototype. Sprint 72 now implements the smallest admissible prototype: local-only, non-public, synthetic-fixture-bound, deterministic, non-networked, non-scoring, and non-verdict. The goal is not to ship a product but to test whether the evidence-posture model, protocol mapping, boundary checks, caveat triggers, and output-language guardrails can be composed without violating Hoax.ai's category boundaries.
+
+### Implications
+
+- Controlled Internal Prototype v0 may be implemented under internal/prototypes/controlled-engine-v0/.
+- Synthetic fixture set v0 may be created.
+- Local validation harness may be created.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report generator, result card, external connector, or public tool behavior is authorized.
+- Any future expansion of the prototype requires separate explicit sprint authorization.
+

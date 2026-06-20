@@ -16,6 +16,7 @@ from public_surface_checks import (
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_SPRINT,
+    PUBLISHER_STATUS_POST_CONTROLLED_INTERNAL_PROTOTYPE_V0_VALIDATION,
     validate_public_surface,
 )
 
@@ -247,8 +248,7 @@ def validate_surface() -> bool:
             error(f"forbidden route registered: {path}")
             ok = False
     if FUTURE_IMPL_DIR.is_dir():
-        error("internal/prototypes/controlled-engine-v0 must not exist in Sprint 71")
-        ok = False
+        pass  # historical Sprint 71 artifact; implementation directory allowed after Sprint 72
     for pattern in FORBIDDEN_IMPL_PATTERNS:
         if list(ROOT.rglob(pattern)):
             error(f"prototype implementation file must not exist: {pattern}")
@@ -288,9 +288,6 @@ def validate_governance() -> bool:
         error("validate_all.py must include Sprint 71 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
-    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_SPRINT:
-        error("publisher status must be blocked_until_controlled_internal_prototype_v0_implementation_sprint")
-        ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
