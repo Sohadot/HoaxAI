@@ -71,6 +71,8 @@ Sprint 79 adds `output_admissibility_contract.py`, `output_admissibility_harness
 
 Sprint 80 adds `admissibility_regression_suite.py`, `admissibility_regression_harness.py`, and Internal Prototype Admissibility Regression Suite v1 governance documents. Regression binds prior harness layers without adding fixtures or public capability.
 
+Sprint 81 adds `release_blocker_board.py`, `release_blocker_harness.py`, and Internal Prototype Release Blocker Board v1 governance documents. Blocker board identifies unresolved public-exposure blockers without clearing any blocker.
+
 ## Future Removal/Rollback Rule
 
 Any disqualifying drift requires rollback before commit. Public exposure fails the prototype boundary.

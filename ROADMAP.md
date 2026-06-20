@@ -2292,6 +2292,45 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+**Sprint 81 — Internal Prototype Release Blocker Board v1**
+
+---
+
+## Sprint 81 — Internal Prototype Release Blocker Board v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Define internal release blocker board that prevents premature public exposure without authorizing release, routes, or operational product behavior.
+
+### Deliverables
+
+- INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md
+- INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md
+- INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md
+- INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md
+- data/internal-prototype-release-blocker-board-v1.json
+- data/internal-prototype-release-blocker-board-v1.schema.json
+- internal/prototypes/controlled-engine-v0/release_blocker_board.py
+- internal/prototypes/controlled-engine-v0/release_blocker_harness.py
+- validators/validate_internal_prototype_release_blocker_board_v1.py
+- SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md
+- DEC-099 appended to DECISION_LOG.md
+- PUB-GATE-0076 added
+- Publisher status -> blocked_until_internal_prototype_release_blocker_board_validation
+
+### Validation
+
+All harnesses and `validate_all.py` — PASS required.
+
+### Gate
+
+**Gate G81 passed.** Public Exposure Prerequisite Map v1 is the recommended next phase.
+
+### Next Phase
+
+**Sprint 82 — Public Exposure Prerequisite Map v1**
+
+---
+
 **Sprint 80 — Internal Prototype Admissibility Regression Suite v1**
 
 ---

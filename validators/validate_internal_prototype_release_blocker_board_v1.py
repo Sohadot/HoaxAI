@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 79 — Internal Prototype Output Admissibility Contract v1."""
+"""Validate Sprint 81 — Internal Prototype Release Blocker Board v1."""
 
 from __future__ import annotations
 
@@ -15,22 +15,23 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (  # noqa: E402
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
+    PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_VALIDATION,
     validate_public_surface,
 )
 
-CONTRACT = "INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_CONTRACT_V1.md"
-MATRIX = "INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_MATRIX_V1.md"
-FAILURE_MODES = "INTERNAL_PROTOTYPE_OUTPUT_INADMISSIBILITY_FAILURE_MODES_V1.md"
-REPAIR_POLICY = "INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_REPAIR_POLICY_V1.md"
-CONTRACT_JSON = "data/internal-prototype-output-admissibility-contract-v1.json"
-CONTRACT_SCHEMA = "data/internal-prototype-output-admissibility-contract-v1.schema.json"
-AUDIT = "SPRINT_79_INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_CONTRACT_V1.md"
+BOARD = "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md"
+TAXONOMY = "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md"
+DENIAL = "INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md"
+CLEARANCE = "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md"
+BOARD_JSON = "data/internal-prototype-release-blocker-board-v1.json"
+BOARD_SCHEMA = "data/internal-prototype-release-blocker-board-v1.schema.json"
+AUDIT = "SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md"
 FIXTURES_JSON = "internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json"
 
 PROTOTYPE_DIR = ROOT / "internal" / "prototypes" / "controlled-engine-v0"
-CONTRACT_FILES = [
-    PROTOTYPE_DIR / "output_admissibility_contract.py",
-    PROTOTYPE_DIR / "output_admissibility_harness.py",
+BOARD_FILES = [
+    PROTOTYPE_DIR / "release_blocker_board.py",
+    PROTOTYPE_DIR / "release_blocker_harness.py",
 ]
 
 FORBIDDEN_NETWORK = ["requests", "urllib.request", "httpx", "aiohttp", "socket"]
@@ -61,18 +62,22 @@ PHRASE_SCAN_EXEMPT = {
     "output_admissibility_contract.py",
     "output_admissibility_harness.py",
     "admissibility_regression_suite.py",
-    "admissibility_regression_harness.py", "release_blocker_board.py", "release_blocker_harness.py",
+    "admissibility_regression_harness.py",
+    "release_blocker_board.py",
+    "release_blocker_harness.py",
 }
-REQUIRED_VOCABULARY = ["admissible_internal", "repair_required", "not_assessable_for_output"]
-REQUIRED_INADMISSIBILITY = [
-    "missing caveats",
-    "boundary collapse",
-    "guardrail failure",
-    "traceability gap",
-    "report-shape",
-    "score leakage",
-    "verdict leakage",
-    "accusation-transfer",
+CODE_SCAN_EXEMPT = PHRASE_SCAN_EXEMPT
+REQUIRED_BLOCKER_STATEMENTS = [
+    "no public route authorization",
+    "no public output generator authorization",
+    "no input system authorization",
+    "no upload behavior authorization",
+    "no scoring authorization",
+    "no public report authorization",
+    "no benchmark authorization",
+    "no real-world case authorization",
+    "no external data authorization",
+    "no public release clearance mechanism yet",
 ]
 FORBIDDEN_TERMS = [
     "rick",
@@ -83,18 +88,19 @@ FORBIDDEN_TERMS = [
     "marketing conversations",
 ]
 SOURCE_LOCS = [
-    CONTRACT,
-    MATRIX,
-    FAILURE_MODES,
-    REPAIR_POLICY,
-    CONTRACT_JSON,
-    CONTRACT_SCHEMA,
-    "internal/prototypes/controlled-engine-v0/output_admissibility_contract.py",
-    "internal/prototypes/controlled-engine-v0/output_admissibility_harness.py",
+    BOARD,
+    TAXONOMY,
+    DENIAL,
+    CLEARANCE,
+    BOARD_JSON,
+    BOARD_SCHEMA,
+    "internal/prototypes/controlled-engine-v0/release_blocker_board.py",
+    "internal/prototypes/controlled-engine-v0/release_blocker_harness.py",
     AUDIT,
-    "validators/validate_internal_prototype_output_admissibility_contract_v1.py",
+    "validators/validate_internal_prototype_release_blocker_board_v1.py",
 ]
 REQUIRED_FIXTURE_COUNT = 16
+REQUIRED_BLOCKER_COUNT = 20
 
 
 def error(msg: str) -> None:
@@ -108,57 +114,87 @@ def load_json(rel: str) -> dict:
 
 def validate_artifacts() -> bool:
     ok = True
-    for rel in [CONTRACT, MATRIX, FAILURE_MODES, REPAIR_POLICY, CONTRACT_JSON, CONTRACT_SCHEMA, AUDIT]:
+    for rel in [BOARD, TAXONOMY, DENIAL, CLEARANCE, BOARD_JSON, BOARD_SCHEMA, AUDIT]:
         if not (ROOT / rel).is_file():
             error(f"missing {rel}")
             ok = False
-    for path in CONTRACT_FILES:
+    for path in BOARD_FILES:
         if not path.is_file():
             error(f"missing {path.relative_to(ROOT)}")
             ok = False
     return ok
 
 
-def validate_contract_json() -> bool:
+def validate_board_json() -> bool:
     ok = True
-    data = load_json(CONTRACT_JSON)
-    _ = load_json(CONTRACT_SCHEMA)
-    if data.get("contract_id") != "internal-prototype-output-admissibility-contract-v1":
-        error("contract_id mismatch")
+    data = load_json(BOARD_JSON)
+    _ = load_json(BOARD_SCHEMA)
+    if data.get("board_id") != "internal-prototype-release-blocker-board-v1":
+        error("board_id mismatch")
         ok = False
-    if data.get("decision_ref") != "DEC-097":
-        error("decision_ref must be DEC-097")
+    if data.get("decision_ref") != "DEC-099":
+        error("decision_ref must be DEC-099")
         ok = False
-    if data.get("sprint") != "Sprint 79":
-        error("sprint must be Sprint 79")
+    if data.get("sprint") != "Sprint 81":
+        error("sprint must be Sprint 81")
         ok = False
-    if data.get("status") != "internal_non_public_output_admissibility_contract":
+    if data.get("status") != "internal_non_public_release_blocker_board":
         error("status mismatch")
         ok = False
     for key in [
+        "release_authorized",
         "public_route_authorized",
         "public_benchmark_authorized",
         "public_report_authorized",
         "output_generator_authorized",
+        "input_system_authorized",
+        "upload_authorized",
         "scoring_authorized",
         "api_authorized",
         "javascript_authorized",
+        "monetization_authorized",
     ]:
         if data.get(key) is not False:
             error(f"{key} must be false")
             ok = False
-    vocab = data.get("admissibility_status_vocabulary", [])
-    for item in REQUIRED_VOCABULARY:
-        if item not in vocab:
-            error(f"admissibility_status_vocabulary missing {item}")
+    blockers = data.get("blockers", [])
+    if len(blockers) < REQUIRED_BLOCKER_COUNT:
+        error(f"at least {REQUIRED_BLOCKER_COUNT} blockers required")
+        ok = False
+    statements = " ".join(b.get("blocker_statement", "") for b in blockers).lower()
+    for item in REQUIRED_BLOCKER_STATEMENTS:
+        if item not in statements:
+            error(f"blockers missing {item}")
             ok = False
-    conditions = " ".join(data.get("inadmissibility_conditions", [])).lower()
-    for item in REQUIRED_INADMISSIBILITY:
-        if item not in conditions:
-            error(f"inadmissibility_conditions missing {item}")
+    for blocker in blockers:
+        if blocker.get("current_status") != "unresolved":
+            error(f"blocker {blocker.get('blocker_id')} must remain unresolved")
             ok = False
-    if data.get("fixture_count") != REQUIRED_FIXTURE_COUNT:
-        error("fixture_count must remain 16")
+        if blocker.get("public_exposure_allowed") is not False:
+            error(f"blocker {blocker.get('blocker_id')} must deny public exposure")
+            ok = False
+        sprint = str(blocker.get("authorized_clearance_sprint", "")).lower()
+        if "future" not in sprint and "explicit" not in sprint:
+            error(f"blocker {blocker.get('blocker_id')} must require explicit future authorization")
+            ok = False
+    boundaries = data.get("operational_boundaries", {})
+    for key in [
+        "no_public_route",
+        "no_public_report",
+        "no_public_engine",
+        "no_output_generator",
+        "no_input_system",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior",
+    ]:
+        if boundaries.get(key) is not True:
+            error(f"operational_boundaries missing {key}")
+            ok = False
+    if "does not clear" not in data.get("non_release_statement", "").lower():
+        error("non_release_statement must deny clearance in Sprint 81")
         ok = False
     return ok
 
@@ -199,18 +235,18 @@ def validate_fixtures_unchanged() -> bool:
     return ok
 
 
-def validate_contract_code() -> bool:
+def validate_board_code() -> bool:
     ok = True
     for path in list(PROTOTYPE_DIR.rglob("*.py")):
+        if path.name in CODE_SCAN_EXEMPT:
+            continue
         text = path.read_text(encoding="utf-8")
         lower = text.lower()
         phrase_scan = path.name not in PHRASE_SCAN_EXEMPT
-        code_scan = path.name not in PHRASE_SCAN_EXEMPT
-        if code_scan:
-            for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
-                if term in lower:
-                    error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
-                    ok = False
+        for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
+            if term in lower:
+                error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
+                ok = False
         for term in FORBIDDEN_REPORTING:
             if term in lower and "public_report" not in lower and "report_generation" not in lower:
                 error(f"{path.relative_to(ROOT)} contains report/export behavior: {term}")
@@ -245,6 +281,16 @@ def _run_harness(rel: str, expected: str) -> bool:
 
 def validate_harnesses() -> bool:
     ok = True
+    if not _run_harness(
+        "release_blocker_harness.py",
+        "controlled internal release blocker board validation passed",
+    ):
+        ok = False
+    if not _run_harness(
+        "admissibility_regression_harness.py",
+        "controlled internal admissibility regression validation passed",
+    ):
+        ok = False
     if not _run_harness(
         "output_admissibility_harness.py",
         "controlled internal output admissibility validation passed",
@@ -287,34 +333,55 @@ def validate_harnesses() -> bool:
     return ok
 
 
+def validate_no_output_files() -> bool:
+    before = {p.name for p in PROTOTYPE_DIR.glob("*") if p.is_file()}
+    proc = subprocess.run(
+        [sys.executable, str(PROTOTYPE_DIR / "release_blocker_harness.py")],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    after = {p.name for p in PROTOTYPE_DIR.glob("*") if p.is_file()}
+    if proc.returncode != 0:
+        error("release blocker harness failed during output-file check")
+        return False
+    if before != after:
+        error("release blocker harness must not create output files")
+        return False
+    return True
+
+
 def validate_governance() -> bool:
     ok = True
-    if "DEC-097" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-097 missing from DECISION_LOG.md")
+    if "DEC-099" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-099 missing from DECISION_LOG.md")
         ok = False
-    if "validate_internal_prototype_output_admissibility_contract_v1.py" not in (
+    if "validate_internal_prototype_release_blocker_board_v1.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 79 validator")
+        error("validate_all.py must include Sprint 81 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
+    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_VALIDATION:
+        error("publisher status must be blocked_until_internal_prototype_release_blocker_board_validation")
+        ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
     claims = load_json("data/evidence-ledger.json").get("claims", [])
-    if not any(c.get("claim_id") == "CLAIM-0081" for c in claims):
-        error("CLAIM-0081 missing")
+    if not any(c.get("claim_id") == "CLAIM-0083" for c in claims):
+        error("CLAIM-0083 missing")
         ok = False
     gates = load_json("data/publisher-quality-gates.json").get("gates", [])
-    if not any(g.get("gate_id") == "PUB-GATE-0074" for g in gates):
-        error("PUB-GATE-0074 missing")
+    if not any(g.get("gate_id") == "PUB-GATE-0076" for g in gates):
+        error("PUB-GATE-0076 missing")
         ok = False
-    if "Sprint 79 | COMPLETE | G79 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 79 completion row")
+    if "Sprint 81 | COMPLETE | G81 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 81 completion row")
         ok = False
-    for rel in [CONTRACT, MATRIX, FAILURE_MODES, REPAIR_POLICY, AUDIT]:
+    for rel in [BOARD, TAXONOMY, DENIAL, CLEARANCE, AUDIT]:
         lower = (ROOT / rel).read_text(encoding="utf-8").lower()
         for term in FORBIDDEN_TERMS:
             if term in lower:
@@ -344,11 +411,12 @@ def main() -> int:
         fn()
         for fn in [
             validate_artifacts,
-            validate_contract_json,
+            validate_board_json,
             validate_surface,
             validate_fixtures_unchanged,
-            validate_contract_code,
+            validate_board_code,
             validate_harnesses,
+            validate_no_output_files,
             validate_governance,
             validate_cache,
         ]

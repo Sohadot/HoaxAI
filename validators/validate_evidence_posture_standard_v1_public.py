@@ -279,7 +279,7 @@ def validate_governance() -> bool:
         "blocked_until_targeted_synthetic_fixture_expansion_v1_validation",
         "blocked_until_internal_prototype_compound_boundary_stress_test_validation",
         "blocked_until_internal_prototype_guardrail_red_team_pack_validation",
-        "blocked_until_internal_prototype_admissibility_regression_suite_validation",
+        "blocked_until_internal_prototype_release_blocker_board_validation",
     ):
         error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")
         ok = False

@@ -9,6 +9,7 @@ PROTOTYPE_ROOT = Path(__file__).resolve().parent
 if str(PROTOTYPE_ROOT) not in sys.path:
     sys.path.insert(0, str(PROTOTYPE_ROOT))
 
+from release_blocker_harness import main as run_release_blocker_validation  # noqa: E402
 from admissibility_regression_harness import main as run_admissibility_regression_validation  # noqa: E402
 from compound_boundary_stress_harness import main as run_stress_validation  # noqa: E402
 from fixture_coverage_harness import main as run_coverage_validation  # noqa: E402
@@ -36,6 +37,8 @@ def main() -> int:
     if run_admissibility_validation() != 0:
         return 1
     if run_admissibility_regression_validation() != 0:
+        return 1
+    if run_release_blocker_validation() != 0:
         return 1
     if not run_guardrail_regression():
         return 1

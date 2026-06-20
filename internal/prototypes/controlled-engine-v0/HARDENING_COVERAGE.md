@@ -26,6 +26,8 @@ All fixtures remain synthetic, neutral, case-neutral, and free of real-person, c
 - `output_admissibility_harness.py` — output admissibility validation (Sprint 79+)
 - `admissibility_regression_suite.py` — unified admissibility regression evaluation (Sprint 80+)
 - `admissibility_regression_harness.py` — unified admissibility regression validation (Sprint 80+)
+- `release_blocker_board.py` — release blocker board evaluation (Sprint 81+)
+- `release_blocker_harness.py` — release blocker board validation (Sprint 81+)
 - `regression_harness.py` — combined hardening validation entry point
 
 ## Coverage Governance (Sprint 75)
@@ -47,6 +49,10 @@ Internal structured results are evaluated against the Output Admissibility Contr
 ## Admissibility Regression Coverage (Sprint 80)
 
 Unified regression suite binds fixture inventory, coverage, traceability, compound boundary stress, guardrail red-team, output admissibility, forbidden language, non-public boundary, no-score/no-verdict, and no-report-shape checks. See `INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md` and `data/internal-prototype-admissibility-regression-suite-v1.json`.
+
+## Release Blocker Board Coverage (Sprint 81)
+
+Twenty unresolved release blockers prevent public route, public output generator, input system, upload, scoring, benchmark, report, external data, and monetization authorization. See `INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md` and `data/internal-prototype-release-blocker-board-v1.json`.
 
 ## Boundaries Preserved
 

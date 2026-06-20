@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/internal-prototype-release-blocker-board-v1.schema.json",
+  "title": "Internal Prototype Release Blocker Board v1",
+  "type": "object",
+  "required": [
+    "board_id",
+    "version",
+    "status",
+    "decision_ref",
+    "sprint",
+    "release_authorized",
+    "public_route_authorized",
+    "public_benchmark_authorized",
+    "public_report_authorized",
+    "output_generator_authorized",
+    "input_system_authorized",
+    "upload_authorized",
+    "scoring_authorized",
+    "api_authorized",
+    "javascript_authorized",
+    "monetization_authorized",
+    "source_authority",
+    "blocker_categories",
+    "blockers",
+    "clearance_criteria",
+    "denial_policy",
+    "non_release_statement",
+    "operational_boundaries"
+  ],
+  "properties": {
+    "board_id": {
+      "type": "string",
+      "const": "internal-prototype-release-blocker-board-v1"
+    },
+    "version": { "type": "string" },
+    "status": {
+      "type": "string",
+      "const": "internal_non_public_release_blocker_board"
+    },
+    "decision_ref": {
+      "type": "string",
+      "const": "DEC-099"
+    },
+    "sprint": {
+      "type": "string",
+      "const": "Sprint 81"
+    },
+    "release_authorized": { "type": "boolean", "const": false },
+    "public_route_authorized": { "type": "boolean", "const": false },
+    "public_benchmark_authorized": { "type": "boolean", "const": false },
+    "public_report_authorized": { "type": "boolean", "const": false },
+    "output_generator_authorized": { "type": "boolean", "const": false },
+    "input_system_authorized": { "type": "boolean", "const": false },
+    "upload_authorized": { "type": "boolean", "const": false },
+    "scoring_authorized": { "type": "boolean", "const": false },
+    "api_authorized": { "type": "boolean", "const": false },
+    "javascript_authorized": { "type": "boolean", "const": false },
+    "monetization_authorized": { "type": "boolean", "const": false },
+    "source_authority": { "type": "array", "minItems": 7 },
+    "blocker_categories": { "type": "array", "minItems": 20 },
+    "blockers": { "type": "array", "minItems": 20 },
+    "clearance_criteria": { "type": "string" },
+    "denial_policy": { "type": "string" },
+    "non_release_statement": { "type": "string" },
+    "operational_boundaries": {
+      "type": "object",
+      "required": [
+        "no_public_route",
+        "no_public_report",
+        "no_public_engine",
+        "no_output_generator",
+        "no_input_system",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior"
+      ],
+      "properties": {
+        "no_public_route": { "type": "boolean", "const": true },
+        "no_public_report": { "type": "boolean", "const": true },
+        "no_public_engine": { "type": "boolean", "const": true },
+        "no_output_generator": { "type": "boolean", "const": true },
+        "no_input_system": { "type": "boolean", "const": true },
+        "no_upload": { "type": "boolean", "const": true },
+        "no_scoring": { "type": "boolean", "const": true },
+        "no_api": { "type": "boolean", "const": true },
+        "no_javascript": { "type": "boolean", "const": true },
+        "no_public_tool_behavior": { "type": "boolean", "const": true }
+      }
+    }
+  }
+}

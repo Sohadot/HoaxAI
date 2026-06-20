@@ -55,3 +55,5 @@ A regression failure blocks publication, public exposure, output behavior, and f
 ## 6. Non-Public Boundary
 
 Passing the regression suite does not authorize public release. It only preserves internal validation continuity.
+
+Sprint 81 Release Blocker Board v1 (DEC-099) identifies unresolved blockers that prevent any public exposure until separately governed clearance.

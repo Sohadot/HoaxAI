@@ -56,4 +56,8 @@ Run admissibility regression validation (Sprint 80+):
 
 `py -3 internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py`
 
+Run release blocker board validation (Sprint 81+):
+
+`py -3 internal/prototypes/controlled-engine-v0/release_blocker_harness.py`
+
 Do not deploy, link publicly, or treat this as a product feature.

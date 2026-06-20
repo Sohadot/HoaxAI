@@ -2603,3 +2603,31 @@ Sprint 79 defined output admissibility. Sprint 80 protects admissibility from re
 - No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
 - Any future prototype change must preserve Sprint 80 regression suite.
 
+---
+
+## DEC-099 — Internal Prototype Release Blocker Board v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Prototype Release Blocker Board v1 as an internal, non-public blocker-governance layer for Controlled Internal Prototype v0. The sprint defines release blocker categories, unresolved blocker board, public exposure denial policy, and blocker clearance criteria. It may add internal blocker board and harness files that verify no public release, route, engine, report, benchmark, output generator, input system, upload behavior, scoring system, API, JavaScript, monetization, external data behavior, or public tool behavior is authorized. This sprint does not clear any blocker and does not authorize public exposure.
+
+### Rationale
+
+Sprint 80 created the admissibility regression suite. Sprint 81 prevents successful internal validation from being misread as public readiness. Public exposure requires a separately governed future process. Every public-exposure pathway remains blocked until explicitly cleared by future sprint authorization, evidence, validators, and decision-log governance.
+
+### Implications
+
+- Internal Release Blocker Board v1 may be created.
+- Release blocker taxonomy may be created.
+- Public exposure denial policy may be created.
+- Release blocker clearance criteria may be created.
+- Internal release blocker module and harness may be added.
+- No blocker may be cleared in Sprint 81.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, monetization, or public tool behavior is authorized.
+- Any future public exposure requires separate explicit sprint authorization.
+

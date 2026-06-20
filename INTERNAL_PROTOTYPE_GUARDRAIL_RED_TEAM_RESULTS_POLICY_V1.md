@@ -53,3 +53,5 @@ Disallowed harness or result language includes: is fake, is real, verified true,
 Sprint 79 Output Admissibility Contract (DEC-097) extends result handling to admissibility status evaluation before any output form is considered valid.
 
 Sprint 80 Admissibility Regression Suite v1 (DEC-098) requires guardrail red-team resistance to remain protected by unified regression checks.
+
+Sprint 81 Release Blocker Board v1 (DEC-099) keeps detector/classifier and public output pathways blocked as unresolved release blockers.

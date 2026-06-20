@@ -55,7 +55,7 @@ PHRASE_SCAN_EXEMPT = {
     "output_admissibility_contract.py",
     "output_admissibility_harness.py",
     "admissibility_regression_suite.py",
-    "admissibility_regression_harness.py",
+    "admissibility_regression_harness.py", "release_blocker_board.py", "release_blocker_harness.py",
 }
 REQUIRED_COLLAPSE_TARGETS = [
     "is fake",

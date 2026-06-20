@@ -6201,6 +6201,116 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 80 decision record."
+    },
+    {
+      "source_id": "SOURCE-0520",
+      "source_title": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker board."
+    },
+    {
+      "source_id": "SOURCE-0521",
+      "source_title": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker taxonomy."
+    },
+    {
+      "source_id": "SOURCE-0522",
+      "source_title": "INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 public exposure denial policy."
+    },
+    {
+      "source_id": "SOURCE-0523",
+      "source_title": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker clearance criteria."
+    },
+    {
+      "source_id": "SOURCE-0524",
+      "source_title": "data/internal-prototype-release-blocker-board-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-release-blocker-board-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker board JSON."
+    },
+    {
+      "source_id": "SOURCE-0525",
+      "source_title": "data/internal-prototype-release-blocker-board-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-release-blocker-board-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker board schema."
+    },
+    {
+      "source_id": "SOURCE-0526",
+      "source_title": "internal/prototypes/controlled-engine-v0/release_blocker_board.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/release_blocker_board.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker board module."
+    },
+    {
+      "source_id": "SOURCE-0527",
+      "source_title": "internal/prototypes/controlled-engine-v0/release_blocker_harness.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/release_blocker_harness.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker harness."
+    },
+    {
+      "source_id": "SOURCE-0528",
+      "source_title": "validators/validate_internal_prototype_release_blocker_board_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_prototype_release_blocker_board_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 release blocker validator."
+    },
+    {
+      "source_id": "SOURCE-0529",
+      "source_title": "SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 audit record."
+    },
+    {
+      "source_id": "SOURCE-0530",
+      "source_title": "DECISION_LOG.md (DEC-099)",
+      "source_type": "internal_governance",
+      "location": "DECISION_LOG.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 81 decision record."
     }
   ]
 }

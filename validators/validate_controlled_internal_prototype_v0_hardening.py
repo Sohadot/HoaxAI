@@ -23,6 +23,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_VALIDATION,
     PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_CONTRACT_VALIDATION,
     PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_VALIDATION,
+    PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_VALIDATION,
     validate_public_surface,
 )
 
@@ -113,7 +114,7 @@ def validate_prototype_files() -> bool:
             error(f"missing prototype file: {rel}")
             ok = False
     for path in PROTOTYPE_DIR.rglob("*.py"):
-        if path.name in {"admissibility_regression_suite.py", "admissibility_regression_harness.py"}:
+        if path.name in {"admissibility_regression_suite.py", "admissibility_regression_harness.py", "release_blocker_board.py", "release_blocker_harness.py"}:
             continue
         text = path.read_text(encoding="utf-8").lower()
         phrase_scan = path.name not in ("output_guardrail_checker.py", "guardrail_regression.py", "guardrail_red_team_pack.py", "output_admissibility_contract.py", "output_admissibility_harness.py")

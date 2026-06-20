@@ -1122,6 +1122,24 @@
       "failure_condition": "internal_prototype_admissibility_regression_suite_v1_not_met",
       "bypassable": false,
       "notes": "Internal Prototype Admissibility Regression Suite v1 completed Sprint 80 (DEC-098). Unified regression suite, case matrix, failure response policy, and harness documented. Fixture count remains sixteen. Sitemap remains nineteen URLs. No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, forms, JavaScript, external connector, monetization, or public tool behavior authorized."
+    },
+    {
+      "gate_id": "PUB-GATE-0076",
+      "name": "Internal Prototype Release Blocker Board v1 Gate",
+      "status": "internal_prototype_release_blocker_board_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+      "failure_condition": "internal_prototype_release_blocker_board_v1_not_met",
+      "bypassable": false,
+      "notes": "Internal Prototype Release Blocker Board v1 completed Sprint 81 (DEC-099). Release blocker board, taxonomy, denial policy, clearance criteria, and harness documented. At least twenty blockers remain unresolved. Fixture count remains sixteen. Sitemap remains nineteen URLs. No public release, benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, forms, JavaScript, external connector, monetization, or public tool behavior authorized."
     }
   ],
   "last_reviewed": "2026-06-20"

@@ -50,3 +50,5 @@ Repair must document:
 ## Commit Discipline After Repair
 
 Stage only repair-related files. Do not commit Python cache files or unrelated untracked files. Do not use `git add .` unless the working tree is fully within repair scope.
+
+Sprint 81 Release Blocker Board v1 (DEC-099) confirms regression failure does not authorize public exposure; unresolved release blockers remain governed separately.

@@ -86,3 +86,5 @@ Compound stress testing supports internal governance and prototype hardening onl
 Sprint 78 adds Internal Prototype Guardrail Red-Team Pack v1 (DEC-096) to pressure-test output-language guardrails against adversarial linguistic collapse under separate sprint authorization.
 
 Sprint 80 Admissibility Regression Suite v1 (DEC-098) binds compound boundary stress checks into unified regression so collapse prevention cannot silently degrade.
+
+Sprint 81 Release Blocker Board v1 (DEC-099) keeps benchmark and public report pathways blocked as unresolved release blockers.

@@ -904,6 +904,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 80 admissibility regression suite. Fixture count remains sixteen. No public benchmark authorized."
+    },
+    {
+      "claim_id": "CLAIM-0083",
+      "claim_text": "Hoax.ai has adopted Internal Prototype Release Blocker Board v1 to prevent internal prototype validation from being misread as public release authorization.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md, INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md, INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md, INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md, data/internal-prototype-release-blocker-board-v1.json, data/internal-prototype-release-blocker-board-v1.schema.json, internal/prototypes/controlled-engine-v0/release_blocker_board.py, internal/prototypes/controlled-engine-v0/release_blocker_harness.py, validators/validate_internal_prototype_release_blocker_board_v1.py, SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md, DECISION_LOG.md (DEC-099)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 81 release blocker board. At least twenty blockers remain unresolved. No public release authorized."
     }
   ]
 }

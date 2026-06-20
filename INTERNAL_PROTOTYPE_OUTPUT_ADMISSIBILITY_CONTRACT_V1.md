@@ -83,3 +83,5 @@ An inadmissible internal output is not repaired by replacing one word. Repair re
 Passing output admissibility does not authorize public exposure. It only permits internal validation continuity.
 
 Sprint 80 Admissibility Regression Suite v1 (DEC-098) binds admissibility checks into unified regression so admissibility cannot silently degrade in future prototype changes.
+
+Sprint 81 Release Blocker Board v1 (DEC-099) prevents passing admissibility checks from being misread as public release authorization.

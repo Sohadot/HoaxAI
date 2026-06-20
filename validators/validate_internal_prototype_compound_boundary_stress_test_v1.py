@@ -167,7 +167,7 @@ def validate_fixtures_unchanged() -> bool:
 def validate_stress_code() -> bool:
     ok = True
     for path in list(PROTOTYPE_DIR.rglob("*.py")):
-        if path.name in {"admissibility_regression_suite.py", "admissibility_regression_harness.py"}:
+        if path.name in {"admissibility_regression_suite.py", "admissibility_regression_harness.py", "release_blocker_board.py", "release_blocker_harness.py"}:
             continue
         text = path.read_text(encoding="utf-8")
         lower = text.lower()

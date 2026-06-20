@@ -1869,6 +1869,41 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Internal Prototype Admissibility Regression Suite v1 per DEC-098."
+    },
+    {
+      "claim_id": "CLAIM-0083",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+        "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_TAXONOMY_V1.md",
+        "INTERNAL_PROTOTYPE_PUBLIC_EXPOSURE_DENIAL_POLICY_V1.md",
+        "INTERNAL_PROTOTYPE_RELEASE_BLOCKER_CLEARANCE_CRITERIA_V1.md",
+        "data/internal-prototype-release-blocker-board-v1.json",
+        "data/internal-prototype-release-blocker-board-v1.schema.json",
+        "internal/prototypes/controlled-engine-v0/release_blocker_board.py",
+        "internal/prototypes/controlled-engine-v0/release_blocker_harness.py",
+        "validators/validate_internal_prototype_release_blocker_board_v1.py",
+        "SPRINT_81_INTERNAL_PROTOTYPE_RELEASE_BLOCKER_BOARD_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0520",
+        "SOURCE-0521",
+        "SOURCE-0522",
+        "SOURCE-0523",
+        "SOURCE-0524",
+        "SOURCE-0525",
+        "SOURCE-0526",
+        "SOURCE-0527",
+        "SOURCE-0528",
+        "SOURCE-0529",
+        "SOURCE-0530"
+      ],
+      "support_scope": "internal prototype release blocker board v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal Prototype Release Blocker Board v1 per DEC-099."
     }
   ],
   "last_reviewed": "2026-06-20"

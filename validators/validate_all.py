@@ -88,6 +88,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_internal_prototype_guardrail_red_team_pack_v1.py",
     ROOT / "validators" / "validate_internal_prototype_output_admissibility_contract_v1.py",
     ROOT / "validators" / "validate_internal_prototype_admissibility_regression_suite_v1.py",
+    ROOT / "validators" / "validate_internal_prototype_release_blocker_board_v1.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 
