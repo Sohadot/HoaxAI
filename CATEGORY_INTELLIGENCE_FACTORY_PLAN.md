@@ -180,6 +180,8 @@ The Category Intelligence Factory now separates prototype authorization from pro
 
 The Category Intelligence Factory now includes a controlled internal prototype v0, but only as a local-only, non-public, synthetic-fixture-bound architecture test. The prototype composes evidence-posture model structure, protocol-step mapping, boundary checks, caveat triggers, and output-language guardrails without producing public outputs, verdicts, scores, fake/real labels, reports, upload handling, APIs, analytics, JavaScript behavior, external lookups, or tool behavior. This preserves the distinction between internal intelligence infrastructure and public operational product.
 
+The Category Intelligence Factory now hardens the controlled internal prototype v0 with expanded synthetic fixture coverage, edge-case boundary scenarios, guardrail regression checks, and combined regression harness validation. The hardened prototype remains local-only, non-public, fixture-bound, non-networked, non-scoring, and non-verdict. No public engine, upload workflow, API, dashboard, JavaScript behavior, or product feature is authorized.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

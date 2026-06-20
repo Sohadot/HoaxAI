@@ -105,6 +105,7 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G63 | Public Interface Thesis and Evidence Field Design Foundation | Sprint 63 validator PASS |
 | G65 | Evidence Field Visual System and Accessibility Hardening | Sprint 65 validator PASS |
 | G66 | Evidence Field Interface Trust Audit and Launch Readiness | Sprint 66 validator PASS |
+| G73 | Controlled Internal Prototype v0 Hardening and Fixture Coverage | Sprint 73 validator PASS |
 | G72 | Controlled Internal Prototype v0 Implementation | Sprint 72 validator PASS |
 | G71 | Controlled Internal Prototype v0 Authorization Package | Sprint 71 validator PASS |
 | G70 | Internal Non-Public Engine Prototype Charter | Sprint 70 validator PASS |
@@ -112,6 +113,8 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G68 | Evidence Posture Engine Model v0 | Sprint 68 validator PASS |
 | G67 | Engine Boundary Charter and Public Reference SEO Authority Map v1 | Sprint 67 validators PASS |
 | G64 | Evidence Field Static Interface Embodiment v1 | Sprint 64 validator PASS |
+
+**Gate G73 passed.** Controlled Internal Prototype v0 hardened with ten synthetic fixtures and regression checks. Sitemap remains nineteen URLs. No public engine or operational product behavior authorized.
 
 **Gate G72 passed.** Controlled Internal Prototype v0 implemented local-only under internal/prototypes/controlled-engine-v0/. Sitemap remains nineteen URLs. No public engine, input system, or output generator authorized.
 
@@ -325,6 +328,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G73: Controlled Internal Prototype v0 Hardening and Fixture Coverage
+
+Gate G73 is passed after internal/prototypes/controlled-engine-v0/ contains ten synthetic fixtures including edge-case coverage; guardrail_regression.py and regression_harness.py exist; regression harness passes; decision_ref is DEC-091; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_controlled_internal_prototype_v0_hardening.py` passes; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; no unrelated untracked files remain; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
+
 ## G72: Controlled Internal Prototype v0 Implementation
 
 Gate G72 is passed after internal/prototypes/controlled-engine-v0/ exists; required prototype files exist; synthetic fixtures exist; validation harness passes; decision_ref is DEC-090; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_controlled_internal_prototype_v0_implementation.py` passes; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; no unrelated untracked files remain; prototype files under _internal_prototypes/evidence-posture-workbench/ are not modified; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
@@ -458,6 +465,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 73 | COMPLETE | G73 passed — Controlled Internal Prototype v0 Hardening and Fixture Coverage |
 | Sprint 72 | COMPLETE | G72 passed — Controlled Internal Prototype v0 Implementation |
 | Sprint 71 | COMPLETE | G71 passed — Controlled Internal Prototype v0 Authorization Package |
 | Sprint 70 | COMPLETE | G70 passed — Internal Non-Public Engine Prototype Charter |
@@ -468,7 +476,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
 | Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 72+ | READY | G72 passed — Controlled Internal Prototype v0 Hardening and Fixture Coverage when governed; public product blocked |
+| Sprint 73+ | READY | G73 passed — further prototype expansion requires separate explicit sprint authorization; public product blocked |
 
 ## Governing Sentence
 

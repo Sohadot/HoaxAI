@@ -467,6 +467,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_internal_non_public_engine_prototype_charter_validation",
         "blocked_until_controlled_internal_prototype_v0_implementation_sprint",
         "blocked_until_controlled_internal_prototype_v0_validation",
+        "blocked_until_controlled_internal_prototype_v0_hardening_validation",
     }
     if pub.get("current_publisher_status") not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

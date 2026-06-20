@@ -816,6 +816,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 72 controlled internal prototype v0. Sitemap remains nineteen URLs. Local-only non-public implementation."
+    },
+    {
+      "claim_id": "CLAIM-0075",
+      "claim_text": "Hoax.ai has hardened Controlled Internal Prototype v0 with expanded synthetic fixture coverage, guardrail regression checks, and regression harness validation while preserving local-only non-public boundaries.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "internal/prototypes/controlled-engine-v0/HARDENING_COVERAGE.md, internal/prototypes/controlled-engine-v0/guardrail_regression.py, internal/prototypes/controlled-engine-v0/regression_harness.py, internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json, validators/validate_controlled_internal_prototype_v0_hardening.py, SPRINT_73_CONTROLLED_INTERNAL_PROTOTYPE_V0_HARDENING_AUDIT.md, DECISION_LOG.md (DEC-091)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 73 prototype hardening. Sitemap remains nineteen URLs. No public operational capability."
     }
   ]
 }

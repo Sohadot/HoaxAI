@@ -60,6 +60,10 @@ def verify_internal_structure(candidate: dict[str, Any]) -> dict[str, Any]:
     for family in PROHIBITED_FAMILIES:
         if family.lower() in serialized.lower():
             blocks.append(family)
+    extra_markers = ("verdict_label", "numeric_grade", "subject_transfer")
+    for marker in extra_markers:
+        if marker in serialized.lower():
+            blocks.append(f"prohibited_marker:{marker}")
     return {
         "prohibited_language_blocks": sorted(set(blocks)),
         "guardrail_failure_flags": sorted(set(blocks)),

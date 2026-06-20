@@ -16,7 +16,7 @@ REQUIRED_POSTURES = {"Supported", "Qualified", "Limited", "Not Assessable", "Out
 
 def main() -> int:
     results = run_prototype()
-    if len(results) < 5:
+    if len(results) < 10:
         return 1
     seen_postures: set[str] = set()
     for result in results:

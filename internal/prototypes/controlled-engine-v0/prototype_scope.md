@@ -51,6 +51,8 @@ Internal structured objects only: posture_state_candidate, active_boundary_check
 
 Sprint 72 includes `validators/validate_controlled_internal_prototype_v0_implementation.py` and local `validation_harness.py`.
 
+Sprint 73 adds ten synthetic fixtures, `guardrail_regression.py`, `regression_harness.py`, and `HARDENING_COVERAGE.md`.
+
 ## Future Removal/Rollback Rule
 
 Any disqualifying drift requires rollback before commit. Public exposure fails the prototype boundary.

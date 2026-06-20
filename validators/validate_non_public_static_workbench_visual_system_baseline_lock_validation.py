@@ -351,6 +351,7 @@ def validate_governance_and_registry() -> bool:
         "blocked_until_internal_non_public_engine_prototype_charter_validation",
         "blocked_until_controlled_internal_prototype_v0_implementation_sprint",
         "blocked_until_controlled_internal_prototype_v0_validation",
+        "blocked_until_controlled_internal_prototype_v0_hardening_validation",
     ):
         error("publisher status must be blocked until public-readiness boundary governance")
         ok = False

@@ -2386,3 +2386,27 @@ Sprint 71 created the final authorization package for a controlled internal prot
 - No public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report generator, result card, external connector, or public tool behavior is authorized.
 - Any future expansion of the prototype requires separate explicit sprint authorization.
 
+---
+
+## DEC-091 — Controlled Internal Prototype v0 Hardening and Fixture Coverage
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai hardens Controlled Internal Prototype v0 with expanded synthetic fixture coverage, guardrail regression checks, edge-case validation, and combined regression harness validation. The prototype remains local-only, non-public, fixture-bound, non-networked, non-scoring, and non-verdict. This sprint does not create a public route, sitemap entry, public engine, public interface, upload workflow, user input system, scoring system, API, analytics, JavaScript behavior, external data connector, report exporter, result card, DNS/Cloudflare change, custom-domain launch, monetization, external communication, or public tool behavior.
+
+### Rationale
+
+Sprint 72 implemented the smallest admissible controlled internal prototype. Sprint 73 now proves the prototype can absorb edge-case fixture coverage and guardrail regression checks without drifting into public tool behavior, detector behavior, score behavior, verdict language, upload handling, API behavior, or external data use.
+
+### Implications
+
+- Synthetic fixture coverage may expand to 10 governed fixtures including edge-case boundary scenarios.
+- Guardrail regression and regression harness may be created.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report generator, result card, external connector, or public tool behavior is authorized.
+- Further prototype expansion requires separate explicit sprint authorization.
+

@@ -2258,6 +2258,39 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 73 — Controlled Internal Prototype v0 Hardening and Fixture Coverage
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Harden Controlled Internal Prototype v0 with expanded synthetic fixtures, edge-case coverage, guardrail regression, and regression harness without public routes or operational product behavior.
+
+### Deliverables
+
+- 10 synthetic fixtures (5 base + 5 edge-case)
+- HARDENING_COVERAGE.md
+- guardrail_regression.py
+- regression_harness.py
+- output_guardrail_checker.py strengthened
+- validators/validate_controlled_internal_prototype_v0_hardening.py
+- SPRINT_73_CONTROLLED_INTERNAL_PROTOTYPE_V0_HARDENING_AUDIT.md
+- DEC-091 appended to DECISION_LOG.md
+- PUB-GATE-0068 added
+- Publisher status → blocked_until_controlled_internal_prototype_v0_hardening_validation
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required.  
+`py -3 internal/prototypes/controlled-engine-v0/regression_harness.py` — PASS required.
+
+### Gate
+
+**Gate G73 passed.** Further prototype expansion requires separate explicit sprint authorization.
+
+### Next Phase
+
+Further governed prototype work requires separate explicit sprint authorization. No public engine, classifier, upload, scoring, API, or public tool behavior is authorized.
+
+---
+
 ## Sprint 72 — Controlled Internal Prototype v0 Implementation
 
 **Status:** COMPLETE — 2026-06-20

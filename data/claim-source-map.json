@@ -1614,6 +1614,29 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Controlled Internal Prototype v0 implementation per DEC-090."
+    },
+    {
+      "claim_id": "CLAIM-0075",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "internal/prototypes/controlled-engine-v0/HARDENING_COVERAGE.md",
+        "internal/prototypes/controlled-engine-v0/guardrail_regression.py",
+        "internal/prototypes/controlled-engine-v0/regression_harness.py",
+        "internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json",
+        "SPRINT_73_CONTROLLED_INTERNAL_PROTOTYPE_V0_HARDENING_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0448",
+        "SOURCE-0449",
+        "SOURCE-0450",
+        "SOURCE-0451"
+      ],
+      "support_scope": "controlled internal prototype v0 hardening",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Controlled Internal Prototype v0 hardening per DEC-091."
     }
   ],
   "last_reviewed": "2026-06-20"

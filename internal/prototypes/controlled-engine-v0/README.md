@@ -18,8 +18,12 @@ All files remain under `internal/prototypes/controlled-engine-v0/`.
 
 ## Usage
 
-Run the local validation harness only:
+Run the local validation harness:
 
 `py -3 internal/prototypes/controlled-engine-v0/validation_harness.py`
+
+Run hardening regression (Sprint 73+):
+
+`py -3 internal/prototypes/controlled-engine-v0/regression_harness.py`
 
 Do not deploy, link publicly, or treat this as a product feature.

@@ -978,6 +978,24 @@
       "failure_condition": "controlled_internal_prototype_v0_implementation_not_met",
       "bypassable": false,
       "notes": "Controlled Internal Prototype v0 implemented Sprint 72 (DEC-090). Local-only internal path, synthetic fixtures, validation harness. Sitemap remains nineteen URLs. No public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, external connector, monetization, or public tool behavior authorized."
+    },
+    {
+      "gate_id": "PUB-GATE-0068",
+      "name": "Controlled Internal Prototype v0 Hardening and Fixture Coverage Gate",
+      "status": "controlled_internal_prototype_v0_hardening_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_73_CONTROLLED_INTERNAL_PROTOTYPE_V0_HARDENING_AUDIT.md",
+      "failure_condition": "controlled_internal_prototype_v0_hardening_not_met",
+      "bypassable": false,
+      "notes": "Controlled Internal Prototype v0 hardened Sprint 73 (DEC-091). Ten synthetic fixtures, guardrail regression, regression harness. Sitemap remains nineteen URLs. No public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, external connector, monetization, or public tool behavior authorized."
     }
   ],
   "last_reviewed": "2026-06-20"

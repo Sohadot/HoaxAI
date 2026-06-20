@@ -38,8 +38,8 @@ def load_fixtures() -> list[dict[str, Any]]:
     with FIXTURE_PATH.open(encoding="utf-8") as fh:
         data = json.load(fh)
     fixtures = data.get("fixtures", [])
-    if len(fixtures) < 5:
-        raise ValueError("fixture set must contain at least 5 fixtures")
+    if len(fixtures) < 10:
+        raise ValueError("fixture set must contain at least 10 fixtures after hardening")
     for fixture in fixtures:
         _validate_fixture(fixture)
     return fixtures
