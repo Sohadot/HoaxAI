@@ -24,6 +24,8 @@ All fixtures remain synthetic, neutral, case-neutral, and free of real-person, c
 - `guardrail_red_team_harness.py` — guardrail red-team validation (Sprint 78+)
 - `output_admissibility_contract.py` — output admissibility evaluation (Sprint 79+)
 - `output_admissibility_harness.py` — output admissibility validation (Sprint 79+)
+- `admissibility_regression_suite.py` — unified admissibility regression evaluation (Sprint 80+)
+- `admissibility_regression_harness.py` — unified admissibility regression validation (Sprint 80+)
 - `regression_harness.py` — combined hardening validation entry point
 
 ## Coverage Governance (Sprint 75)
@@ -41,6 +43,10 @@ Sixteen internal red-team vectors pressure-test output-language guardrails again
 ## Output Admissibility Coverage (Sprint 79)
 
 Internal structured results are evaluated against the Output Admissibility Contract before being considered admissible for internal validation continuity. See `INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_CONTRACT_V1.md` and `data/internal-prototype-output-admissibility-contract-v1.json`.
+
+## Admissibility Regression Coverage (Sprint 80)
+
+Unified regression suite binds fixture inventory, coverage, traceability, compound boundary stress, guardrail red-team, output admissibility, forbidden language, non-public boundary, no-score/no-verdict, and no-report-shape checks. See `INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md` and `data/internal-prototype-admissibility-regression-suite-v1.json`.
 
 ## Boundaries Preserved
 

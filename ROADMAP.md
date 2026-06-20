@@ -2292,6 +2292,44 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+**Sprint 80 — Internal Prototype Admissibility Regression Suite v1**
+
+---
+
+## Sprint 80 — Internal Prototype Admissibility Regression Suite v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Bind fixture coverage, traceability, compound boundary stress, guardrail red-team, and output admissibility into one unified internal regression suite without public capability, new fixtures, or operational product behavior.
+
+### Deliverables
+
+- INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md
+- INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md
+- INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md
+- data/internal-prototype-admissibility-regression-suite-v1.json
+- data/internal-prototype-admissibility-regression-suite-v1.schema.json
+- internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py
+- internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py
+- validators/validate_internal_prototype_admissibility_regression_suite_v1.py
+- SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md
+- DEC-098 appended to DECISION_LOG.md
+- PUB-GATE-0075 added
+- Publisher status -> blocked_until_internal_prototype_admissibility_regression_suite_validation
+
+### Validation
+
+All harnesses and `validate_all.py` — PASS required.
+
+### Gate
+
+**Gate G80 passed.** Internal Prototype Release Blocker Board v1 is the recommended next phase.
+
+### Next Phase
+
+**Sprint 81 — Internal Prototype Release Blocker Board v1**
+
+---
+
 **Sprint 79 — Internal Prototype Output Admissibility Contract v1**
 
 ---

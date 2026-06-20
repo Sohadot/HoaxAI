@@ -47,3 +47,5 @@ Results with persistent guardrail failure, report-shape output, or public-output
 ## Future Repair Validator Requirements
 
 Future sprints may add admissibility regression suites. Any expansion requires separate explicit sprint authorization.
+
+Sprint 80 Admissibility Regression Suite v1 (DEC-098) implements unified regression checks for inadmissible output mutations and required repair re-run sequences.

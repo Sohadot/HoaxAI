@@ -52,4 +52,8 @@ Run output admissibility validation (Sprint 79+):
 
 `py -3 internal/prototypes/controlled-engine-v0/output_admissibility_harness.py`
 
+Run admissibility regression validation (Sprint 80+):
+
+`py -3 internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py`
+
 Do not deploy, link publicly, or treat this as a product feature.

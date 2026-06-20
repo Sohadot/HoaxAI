@@ -687,7 +687,7 @@ def validate_governance() -> bool:
         "blocked_until_targeted_synthetic_fixture_expansion_v1_validation",
         "blocked_until_internal_prototype_compound_boundary_stress_test_validation",
         "blocked_until_internal_prototype_guardrail_red_team_pack_validation",
-        "blocked_until_internal_prototype_output_admissibility_contract_validation",
+        "blocked_until_internal_prototype_admissibility_regression_suite_validation",
     ):
         error("publisher status must be blocked until public route candidate assessment governance validation")
         ok = False

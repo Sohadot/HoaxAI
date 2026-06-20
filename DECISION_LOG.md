@@ -2576,3 +2576,30 @@ Sprint 78 verified that guardrails resist linguistic red-team pressure. Sprint 7
 - No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
 - Any future output admission expansion requires separate explicit sprint authorization.
 
+---
+
+## DEC-098 — Internal Prototype Admissibility Regression Suite v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Prototype Admissibility Regression Suite v1 as an internal, non-public regression layer for Controlled Internal Prototype v0. The sprint defines regression domains, regression case groups, required harness coverage, failure response policy, forbidden output-shape regression checks, and non-public boundary preservation. It may add internal admissibility regression suite and harness files that ensure future changes cannot silently weaken fixture coverage, traceability, compound boundary stress handling, guardrail red-team resistance, or output admissibility. This sprint does not add new fixtures, public benchmarks, public reports, public routes, sitemap entries, public engine behavior, classifier behavior, upload workflows, scoring systems, APIs, analytics, forms, JavaScript, DNS/Cloudflare changes, custom-domain launch, monetization, external communication, public output generator, or public tool behavior.
+
+### Rationale
+
+Sprint 79 defined output admissibility. Sprint 80 protects admissibility from regression by ensuring missing basis, missing caveats, missing traceability, forbidden phrase leakage, score leakage, verdict leakage, accusation transfer, report-shape output, result-card-shape output, public route drift, network import drift, and user input drift are detected before future work continues.
+
+### Implications
+
+- Internal Admissibility Regression Suite v1 may be created.
+- Regression case matrix may be created.
+- Regression failure response policy may be created.
+- Internal admissibility regression suite and harness may be added.
+- No new fixtures may be added in this sprint.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
+- Any future prototype change must preserve Sprint 80 regression suite.
+

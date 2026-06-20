@@ -331,6 +331,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G80: Internal Prototype Admissibility Regression Suite v1
+
+Gate G80 is passed after `INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md`, `INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md`, and `INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md` exist; `data/internal-prototype-admissibility-regression-suite-v1.json` and `data/internal-prototype-admissibility-regression-suite-v1.schema.json` exist; `internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py` and `admissibility_regression_harness.py` exist; admissibility regression harness passes; fixture count remains 16; no new fixtures are added; decision_ref is DEC-098; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public benchmark/report/generator is introduced; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_internal_prototype_admissibility_regression_suite_v1.py` passes; output admissibility harness, guardrail red-team harness, compound boundary stress harness, targeted fixture expansion harness, fixture coverage harness, traceability harness, and regression harness pass; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
+
 ## G79: Internal Prototype Output Admissibility Contract v1
 
 Gate G79 is passed after `INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_CONTRACT_V1.md`, `INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_MATRIX_V1.md`, `INTERNAL_PROTOTYPE_OUTPUT_INADMISSIBILITY_FAILURE_MODES_V1.md`, and `INTERNAL_PROTOTYPE_OUTPUT_ADMISSIBILITY_REPAIR_POLICY_V1.md` exist; `data/internal-prototype-output-admissibility-contract-v1.json` and `data/internal-prototype-output-admissibility-contract-v1.schema.json` exist; `internal/prototypes/controlled-engine-v0/output_admissibility_contract.py` and `output_admissibility_harness.py` exist; output admissibility harness passes; fixture count remains 16; no new fixtures are added; decision_ref is DEC-097; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public benchmark/report/generator is introduced; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_internal_prototype_output_admissibility_contract_v1.py` passes; guardrail red-team harness, compound boundary stress harness, targeted fixture expansion harness, fixture coverage harness, traceability harness, and regression harness pass; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
@@ -492,6 +496,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 80 | COMPLETE | G80 passed — Internal Prototype Admissibility Regression Suite v1 |
 | Sprint 79 | COMPLETE | G79 passed — Internal Prototype Output Admissibility Contract v1 |
 | Sprint 78 | COMPLETE | G78 passed — Internal Prototype Guardrail Red-Team Pack v1 |
 | Sprint 77 | COMPLETE | G77 passed — Internal Prototype Compound Boundary Stress Test v1 |
@@ -509,7 +514,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
 | Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 76+ | READY | G79 passed — Internal Prototype Admissibility Regression Suite v1 when governed; public benchmark blocked |
+| Sprint 76+ | READY | G80 passed — Internal Prototype Release Blocker Board v1 when governed; public benchmark blocked |
 
 ## Governing Sentence
 

@@ -141,6 +141,7 @@
     "publisher_blocked_until_internal_prototype_compound_boundary_stress_test_validation",
     "publisher_blocked_until_internal_prototype_guardrail_red_team_pack_validation",
     "publisher_blocked_until_internal_prototype_output_admissibility_contract_validation",
+    "publisher_blocked_until_internal_prototype_admissibility_regression_suite_validation",
     "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [

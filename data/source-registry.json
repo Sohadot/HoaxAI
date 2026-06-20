@@ -6101,6 +6101,106 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 79 audit record."
+    },
+    {
+      "source_id": "SOURCE-0510",
+      "source_title": "INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 admissibility regression suite."
+    },
+    {
+      "source_id": "SOURCE-0511",
+      "source_title": "INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 regression case matrix."
+    },
+    {
+      "source_id": "SOURCE-0512",
+      "source_title": "INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 regression failure response policy."
+    },
+    {
+      "source_id": "SOURCE-0513",
+      "source_title": "data/internal-prototype-admissibility-regression-suite-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-admissibility-regression-suite-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 regression suite JSON."
+    },
+    {
+      "source_id": "SOURCE-0514",
+      "source_title": "data/internal-prototype-admissibility-regression-suite-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-admissibility-regression-suite-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 regression suite schema."
+    },
+    {
+      "source_id": "SOURCE-0515",
+      "source_title": "internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 admissibility regression suite module."
+    },
+    {
+      "source_id": "SOURCE-0516",
+      "source_title": "internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 admissibility regression harness."
+    },
+    {
+      "source_id": "SOURCE-0517",
+      "source_title": "validators/validate_internal_prototype_admissibility_regression_suite_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_prototype_admissibility_regression_suite_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 admissibility regression validator."
+    },
+    {
+      "source_id": "SOURCE-0518",
+      "source_title": "SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 audit record."
+    },
+    {
+      "source_id": "SOURCE-0519",
+      "source_title": "DECISION_LOG.md (DEC-098)",
+      "source_type": "internal_governance",
+      "location": "DECISION_LOG.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 80 decision record."
     }
   ]
 }

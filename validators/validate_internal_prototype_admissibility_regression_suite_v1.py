@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 77 — Internal Prototype Compound Boundary Stress Test v1."""
+"""Validate Sprint 80 — Internal Prototype Admissibility Regression Suite v1."""
 
 from __future__ import annotations
 
@@ -15,21 +15,22 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (  # noqa: E402
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
+    PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_VALIDATION,
     validate_public_surface,
 )
 
-STRESS_TEST = "INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_TEST_V1.md"
-STRESS_MATRIX = "INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_MATRIX_V1.md"
-COLLAPSE_MODEL = "INTERNAL_PROTOTYPE_BOUNDARY_COLLAPSE_PREVENTION_MODEL_V1.md"
-STRESS_JSON = "data/internal-prototype-compound-boundary-stress-test-v1.json"
-STRESS_SCHEMA = "data/internal-prototype-compound-boundary-stress-test-v1.schema.json"
-AUDIT = "SPRINT_77_INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_TEST_V1.md"
+SUITE = "INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md"
+MATRIX = "INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md"
+FAILURE_POLICY = "INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md"
+SUITE_JSON = "data/internal-prototype-admissibility-regression-suite-v1.json"
+SUITE_SCHEMA = "data/internal-prototype-admissibility-regression-suite-v1.schema.json"
+AUDIT = "SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md"
 FIXTURES_JSON = "internal/prototypes/controlled-engine-v0/fixtures/synthetic-fixtures-v0.json"
 
 PROTOTYPE_DIR = ROOT / "internal" / "prototypes" / "controlled-engine-v0"
-STRESS_FILES = [
-    PROTOTYPE_DIR / "compound_boundary_stress_analyzer.py",
-    PROTOTYPE_DIR / "compound_boundary_stress_harness.py",
+SUITE_FILES = [
+    PROTOTYPE_DIR / "admissibility_regression_suite.py",
+    PROTOTYPE_DIR / "admissibility_regression_harness.py",
 ]
 
 FORBIDDEN_NETWORK = ["requests", "urllib.request", "httpx", "aiohttp", "socket"]
@@ -47,6 +48,43 @@ FORBIDDEN_PHRASES = [
     "guilty",
     "deceptive",
 ]
+FORBIDDEN_PHRASE_PATTERNS = [
+    re.compile(r"\bmanipulated\b", re.I),
+    re.compile(r"\bproven\b", re.I),
+    re.compile(r"\bcertified\b", re.I),
+    re.compile(r"\bconfirmed\b", re.I),
+]
+PHRASE_SCAN_EXEMPT = {
+    "output_guardrail_checker.py",
+    "guardrail_regression.py",
+    "guardrail_red_team_pack.py",
+    "output_admissibility_contract.py",
+    "output_admissibility_harness.py",
+    "admissibility_regression_suite.py",
+    "admissibility_regression_harness.py",
+}
+CODE_SCAN_EXEMPT = PHRASE_SCAN_EXEMPT
+REQUIRED_DOMAINS = [
+    "fixture_inventory_regression",
+    "traceability_regression",
+    "compound_boundary_regression",
+    "guardrail_red_team_regression",
+    "output_admissibility_regression",
+    "non_public_boundary_regression",
+]
+REQUIRED_CASE_GROUPS = [
+    "missing caveat",
+    "missing traceability refs",
+    "forbidden phrase leakage",
+    "score leakage",
+    "verdict leakage",
+    "accusation transfer",
+    "report-shape output",
+    "result-card-shape output",
+    "public route drift",
+    "network import drift",
+    "user input drift",
+]
 FORBIDDEN_TERMS = [
     "rick",
     "linkedin",
@@ -56,15 +94,15 @@ FORBIDDEN_TERMS = [
     "marketing conversations",
 ]
 SOURCE_LOCS = [
-    STRESS_TEST,
-    STRESS_MATRIX,
-    COLLAPSE_MODEL,
-    STRESS_JSON,
-    STRESS_SCHEMA,
-    "internal/prototypes/controlled-engine-v0/compound_boundary_stress_analyzer.py",
-    "internal/prototypes/controlled-engine-v0/compound_boundary_stress_harness.py",
+    SUITE,
+    MATRIX,
+    FAILURE_POLICY,
+    SUITE_JSON,
+    SUITE_SCHEMA,
+    "internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py",
+    "internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py",
     AUDIT,
-    "validators/validate_internal_prototype_compound_boundary_stress_test_v1.py",
+    "validators/validate_internal_prototype_admissibility_regression_suite_v1.py",
 ]
 REQUIRED_FIXTURE_COUNT = 16
 
@@ -80,32 +118,35 @@ def load_json(rel: str) -> dict:
 
 def validate_artifacts() -> bool:
     ok = True
-    for rel in [STRESS_TEST, STRESS_MATRIX, COLLAPSE_MODEL, STRESS_JSON, STRESS_SCHEMA, AUDIT]:
+    for rel in [SUITE, MATRIX, FAILURE_POLICY, SUITE_JSON, SUITE_SCHEMA, AUDIT]:
         if not (ROOT / rel).is_file():
             error(f"missing {rel}")
             ok = False
-    for path in STRESS_FILES:
+    for path in SUITE_FILES:
         if not path.is_file():
             error(f"missing {path.relative_to(ROOT)}")
             ok = False
     return ok
 
 
-def validate_stress_json() -> bool:
+def validate_suite_json() -> bool:
     ok = True
-    data = load_json(STRESS_JSON)
-    _ = load_json(STRESS_SCHEMA)
-    if data.get("stress_test_id") != "internal-prototype-compound-boundary-stress-test-v1":
-        error("stress_test_id mismatch")
+    data = load_json(SUITE_JSON)
+    _ = load_json(SUITE_SCHEMA)
+    if data.get("suite_id") != "internal-prototype-admissibility-regression-suite-v1":
+        error("suite_id mismatch")
         ok = False
-    if data.get("decision_ref") != "DEC-095":
-        error("decision_ref must be DEC-095")
+    if data.get("decision_ref") != "DEC-098":
+        error("decision_ref must be DEC-098")
         ok = False
-    if data.get("sprint") != "Sprint 77":
-        error("sprint must be Sprint 77")
+    if data.get("sprint") != "Sprint 80":
+        error("sprint must be Sprint 80")
         ok = False
-    if data.get("status") != "internal_non_public_compound_boundary_stress_test":
+    if data.get("status") != "internal_non_public_admissibility_regression_suite":
         error("status mismatch")
+        ok = False
+    if data.get("fixture_count_required") != REQUIRED_FIXTURE_COUNT:
+        error("fixture_count_required must be 16")
         ok = False
     for key in [
         "public_route_authorized",
@@ -119,12 +160,31 @@ def validate_stress_json() -> bool:
         if data.get(key) is not False:
             error(f"{key} must be false")
             ok = False
-    if len(data.get("stress_cases", [])) < 8:
-        error("stress_cases must define at least 8 cases")
-        ok = False
-    if data.get("fixture_count") != REQUIRED_FIXTURE_COUNT:
-        error("fixture_count must remain 16")
-        ok = False
+    domains = data.get("regression_domains", [])
+    for domain in REQUIRED_DOMAINS:
+        if domain not in domains:
+            error(f"regression_domains missing {domain}")
+            ok = False
+    groups = " ".join(data.get("regression_case_groups", [])).lower()
+    for item in REQUIRED_CASE_GROUPS:
+        if item not in groups:
+            error(f"regression_case_groups missing {item}")
+            ok = False
+    boundaries = data.get("operational_boundaries", {})
+    for key in [
+        "no_public_benchmark",
+        "no_public_report",
+        "no_public_engine",
+        "no_output_generator",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior",
+    ]:
+        if boundaries.get(key) is not True:
+            error(f"operational_boundaries missing {key}")
+            ok = False
     return ok
 
 
@@ -164,18 +224,18 @@ def validate_fixtures_unchanged() -> bool:
     return ok
 
 
-def validate_stress_code() -> bool:
+def validate_suite_code() -> bool:
     ok = True
     for path in list(PROTOTYPE_DIR.rglob("*.py")):
-        if path.name in {"admissibility_regression_suite.py", "admissibility_regression_harness.py"}:
-            continue
         text = path.read_text(encoding="utf-8")
         lower = text.lower()
-        phrase_scan = path.name not in {"output_guardrail_checker.py", "guardrail_regression.py", "guardrail_red_team_pack.py", "output_admissibility_contract.py", "output_admissibility_harness.py"}
-        for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
-            if term in lower:
-                error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
-                ok = False
+        phrase_scan = path.name not in PHRASE_SCAN_EXEMPT
+        code_scan = path.name not in CODE_SCAN_EXEMPT
+        if code_scan:
+            for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
+                if term in lower:
+                    error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
+                    ok = False
         for term in FORBIDDEN_REPORTING:
             if term in lower and "public_report" not in lower and "report_generation" not in lower:
                 error(f"{path.relative_to(ROOT)} contains report/export behavior: {term}")
@@ -183,6 +243,10 @@ def validate_stress_code() -> bool:
         for phrase in FORBIDDEN_PHRASES:
             if phrase_scan and phrase in lower:
                 error(f"{path.relative_to(ROOT)} contains forbidden phrase: {phrase}")
+                ok = False
+        for pattern in FORBIDDEN_PHRASE_PATTERNS:
+            if phrase_scan and pattern.search(text):
+                error(f"{path.relative_to(ROOT)} contains forbidden phrase: {pattern.pattern}")
                 ok = False
     return ok
 
@@ -206,6 +270,21 @@ def _run_harness(rel: str, expected: str) -> bool:
 
 def validate_harnesses() -> bool:
     ok = True
+    if not _run_harness(
+        "admissibility_regression_harness.py",
+        "controlled internal admissibility regression validation passed",
+    ):
+        ok = False
+    if not _run_harness(
+        "output_admissibility_harness.py",
+        "controlled internal output admissibility validation passed",
+    ):
+        ok = False
+    if not _run_harness(
+        "guardrail_red_team_harness.py",
+        "controlled internal guardrail red-team validation passed",
+    ):
+        ok = False
     if not _run_harness(
         "compound_boundary_stress_harness.py",
         "controlled internal compound boundary stress validation passed",
@@ -238,34 +317,55 @@ def validate_harnesses() -> bool:
     return ok
 
 
+def validate_no_output_files() -> bool:
+    before = {p.name for p in PROTOTYPE_DIR.glob("*") if p.is_file()}
+    proc = subprocess.run(
+        [sys.executable, str(PROTOTYPE_DIR / "admissibility_regression_harness.py")],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    after = {p.name for p in PROTOTYPE_DIR.glob("*") if p.is_file()}
+    if proc.returncode != 0:
+        error("admissibility regression harness failed during output-file check")
+        return False
+    if before != after:
+        error("admissibility regression harness must not create output files")
+        return False
+    return True
+
+
 def validate_governance() -> bool:
     ok = True
-    if "DEC-095" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-095 missing from DECISION_LOG.md")
+    if "DEC-098" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-098 missing from DECISION_LOG.md")
         ok = False
-    if "validate_internal_prototype_compound_boundary_stress_test_v1.py" not in (
+    if "validate_internal_prototype_admissibility_regression_suite_v1.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 77 validator")
+        error("validate_all.py must include Sprint 80 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
+    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_VALIDATION:
+        error("publisher status must be blocked_until_internal_prototype_admissibility_regression_suite_validation")
+        ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
     claims = load_json("data/evidence-ledger.json").get("claims", [])
-    if not any(c.get("claim_id") == "CLAIM-0079" for c in claims):
-        error("CLAIM-0079 missing")
+    if not any(c.get("claim_id") == "CLAIM-0082" for c in claims):
+        error("CLAIM-0082 missing")
         ok = False
     gates = load_json("data/publisher-quality-gates.json").get("gates", [])
-    if not any(g.get("gate_id") == "PUB-GATE-0072" for g in gates):
-        error("PUB-GATE-0072 missing")
+    if not any(g.get("gate_id") == "PUB-GATE-0075" for g in gates):
+        error("PUB-GATE-0075 missing")
         ok = False
-    if "Sprint 77 | COMPLETE | G77 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 77 completion row")
+    if "Sprint 80 | COMPLETE | G80 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 80 completion row")
         ok = False
-    for rel in [STRESS_TEST, STRESS_MATRIX, COLLAPSE_MODEL, AUDIT]:
+    for rel in [SUITE, MATRIX, FAILURE_POLICY, AUDIT]:
         lower = (ROOT / rel).read_text(encoding="utf-8").lower()
         for term in FORBIDDEN_TERMS:
             if term in lower:
@@ -295,11 +395,12 @@ def main() -> int:
         fn()
         for fn in [
             validate_artifacts,
-            validate_stress_json,
+            validate_suite_json,
             validate_surface,
             validate_fixtures_unchanged,
-            validate_stress_code,
+            validate_suite_code,
             validate_harnesses,
+            validate_no_output_files,
             validate_governance,
             validate_cache,
         ]

@@ -69,6 +69,8 @@ Sprint 78 adds `guardrail_red_team_pack.py`, `guardrail_red_team_harness.py`, an
 
 Sprint 79 adds `output_admissibility_contract.py`, `output_admissibility_harness.py`, and Internal Prototype Output Admissibility Contract v1 governance documents. Admissibility evaluates internal structured results only; no new fixtures are added.
 
+Sprint 80 adds `admissibility_regression_suite.py`, `admissibility_regression_harness.py`, and Internal Prototype Admissibility Regression Suite v1 governance documents. Regression binds prior harness layers without adding fixtures or public capability.
+
 ## Future Removal/Rollback Rule
 
 Any disqualifying drift requires rollback before commit. Public exposure fails the prototype boundary.

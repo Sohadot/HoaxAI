@@ -893,6 +893,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 79 output admissibility contract. Fixture count remains sixteen. No public benchmark authorized."
+    },
+    {
+      "claim_id": "CLAIM-0082",
+      "claim_text": "Hoax.ai has adopted Internal Prototype Admissibility Regression Suite v1 to prevent future internal prototype changes from silently weakening fixture coverage, traceability, compound boundary stress handling, guardrail red-team resistance, output admissibility, or non-public boundary controls.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md, INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md, INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md, data/internal-prototype-admissibility-regression-suite-v1.json, data/internal-prototype-admissibility-regression-suite-v1.schema.json, internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py, internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py, validators/validate_internal_prototype_admissibility_regression_suite_v1.py, SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md, DECISION_LOG.md (DEC-098)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 80 admissibility regression suite. Fixture count remains sixteen. No public benchmark authorized."
     }
   ]
 }

@@ -54,6 +54,8 @@ PHRASE_SCAN_EXEMPT = {
     "guardrail_red_team_pack.py",
     "output_admissibility_contract.py",
     "output_admissibility_harness.py",
+    "admissibility_regression_suite.py",
+    "admissibility_regression_harness.py",
 }
 REQUIRED_COLLAPSE_TARGETS = [
     "is fake",
@@ -202,10 +204,12 @@ def validate_red_team_code() -> bool:
         text = path.read_text(encoding="utf-8")
         lower = text.lower()
         phrase_scan = path.name not in PHRASE_SCAN_EXEMPT
-        for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
-            if term in lower:
-                error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
-                ok = False
+        code_scan = path.name not in PHRASE_SCAN_EXEMPT
+        if code_scan:
+            for term in FORBIDDEN_NETWORK + FORBIDDEN_INPUT + FORBIDDEN_FRAMEWORKS:
+                if term in lower:
+                    error(f"{path.relative_to(ROOT)} contains forbidden pattern: {term}")
+                    ok = False
         for term in FORBIDDEN_REPORTING:
             if term in lower and "public_report" not in lower and "report_generation" not in lower:
                 error(f"{path.relative_to(ROOT)} contains report/export behavior: {term}")

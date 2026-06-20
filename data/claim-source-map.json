@@ -1836,6 +1836,39 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Internal Prototype Output Admissibility Contract v1 per DEC-097."
+    },
+    {
+      "claim_id": "CLAIM-0082",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+        "INTERNAL_PROTOTYPE_REGRESSION_CASE_MATRIX_V1.md",
+        "INTERNAL_PROTOTYPE_REGRESSION_FAILURE_RESPONSE_POLICY_V1.md",
+        "data/internal-prototype-admissibility-regression-suite-v1.json",
+        "data/internal-prototype-admissibility-regression-suite-v1.schema.json",
+        "internal/prototypes/controlled-engine-v0/admissibility_regression_suite.py",
+        "internal/prototypes/controlled-engine-v0/admissibility_regression_harness.py",
+        "validators/validate_internal_prototype_admissibility_regression_suite_v1.py",
+        "SPRINT_80_INTERNAL_PROTOTYPE_ADMISSIBILITY_REGRESSION_SUITE_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0510",
+        "SOURCE-0511",
+        "SOURCE-0512",
+        "SOURCE-0513",
+        "SOURCE-0514",
+        "SOURCE-0515",
+        "SOURCE-0516",
+        "SOURCE-0517",
+        "SOURCE-0518",
+        "SOURCE-0519"
+      ],
+      "support_scope": "internal prototype admissibility regression suite v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal Prototype Admissibility Regression Suite v1 per DEC-098."
     }
   ],
   "last_reviewed": "2026-06-20"

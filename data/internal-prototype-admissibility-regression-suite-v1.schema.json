@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/internal-prototype-admissibility-regression-suite-v1.schema.json",
+  "title": "Internal Prototype Admissibility Regression Suite v1",
+  "type": "object",
+  "required": [
+    "suite_id",
+    "version",
+    "status",
+    "decision_ref",
+    "sprint",
+    "public_route_authorized",
+    "public_benchmark_authorized",
+    "public_report_authorized",
+    "output_generator_authorized",
+    "scoring_authorized",
+    "api_authorized",
+    "javascript_authorized",
+    "fixture_count_required",
+    "source_authority",
+    "regression_domains",
+    "regression_case_groups",
+    "required_harnesses",
+    "failure_response_policy",
+    "forbidden_output_shapes",
+    "non_public_boundary",
+    "operational_boundaries"
+  ],
+  "properties": {
+    "suite_id": {
+      "type": "string",
+      "const": "internal-prototype-admissibility-regression-suite-v1"
+    },
+    "version": { "type": "string" },
+    "status": {
+      "type": "string",
+      "const": "internal_non_public_admissibility_regression_suite"
+    },
+    "decision_ref": {
+      "type": "string",
+      "const": "DEC-098"
+    },
+    "sprint": {
+      "type": "string",
+      "const": "Sprint 80"
+    },
+    "public_route_authorized": { "type": "boolean", "const": false },
+    "public_benchmark_authorized": { "type": "boolean", "const": false },
+    "public_report_authorized": { "type": "boolean", "const": false },
+    "output_generator_authorized": { "type": "boolean", "const": false },
+    "scoring_authorized": { "type": "boolean", "const": false },
+    "api_authorized": { "type": "boolean", "const": false },
+    "javascript_authorized": { "type": "boolean", "const": false },
+    "fixture_count_required": { "type": "integer", "const": 16 },
+    "source_authority": { "type": "array", "minItems": 8 },
+    "regression_domains": { "type": "array", "minItems": 10 },
+    "regression_case_groups": { "type": "array", "minItems": 16 },
+    "required_harnesses": { "type": "array", "minItems": 9 },
+    "failure_response_policy": { "type": "string" },
+    "forbidden_output_shapes": { "type": "array", "minItems": 6 },
+    "non_public_boundary": { "type": "object" },
+    "operational_boundaries": {
+      "type": "object",
+      "required": [
+        "no_public_benchmark",
+        "no_public_report",
+        "no_public_engine",
+        "no_output_generator",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior"
+      ],
+      "properties": {
+        "no_public_benchmark": { "type": "boolean", "const": true },
+        "no_public_report": { "type": "boolean", "const": true },
+        "no_public_engine": { "type": "boolean", "const": true },
+        "no_output_generator": { "type": "boolean", "const": true },
+        "no_upload": { "type": "boolean", "const": true },
+        "no_scoring": { "type": "boolean", "const": true },
+        "no_api": { "type": "boolean", "const": true },
+        "no_javascript": { "type": "boolean", "const": true },
+        "no_public_tool_behavior": { "type": "boolean", "const": true }
+      }
+    }
+  }
+}

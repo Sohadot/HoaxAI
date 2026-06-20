@@ -194,6 +194,8 @@ The Category Intelligence Factory now pressure-tests output-language guardrails 
 
 The Category Intelligence Factory now governs output admissibility before output form. Internal Prototype Output Admissibility Contract v1 verifies that an internal structured result is admissible only when posture basis, caveats, boundary checks, traceability, guardrail blocks, forbidden-transformation blocks, non-verdict confirmation, non-score confirmation, and non-public confirmation are intact.
 
+The Category Intelligence Factory now prevents admissibility drift through regression rather than relying on one-time validation. Internal Prototype Admissibility Regression Suite v1 ensures fixture coverage, traceability, compound boundary stress behavior, guardrail red-team resistance, output admissibility, and non-public boundary constraints cannot silently degrade in future prototype changes.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
