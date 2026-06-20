@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/evidence-posture-engine-model-v0.schema.json",
+  "title": "Evidence Posture Engine Model v0",
+  "type": "object",
+  "required": [
+    "model_id",
+    "version",
+    "status",
+    "decision_ref",
+    "sprint",
+    "public_route_authorized",
+    "public_engine_authorized",
+    "input_system_authorized",
+    "output_generator_authorized",
+    "scoring_authorized",
+    "api_authorized",
+    "javascript_authorized",
+    "protocol_steps",
+    "standard_principles",
+    "posture_states",
+    "prohibited_output_types",
+    "operational_boundaries"
+  ],
+  "properties": {
+    "model_id": {
+      "type": "string",
+      "const": "evidence-posture-engine-model-v0"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "const": "internal_non_operational_model"
+    },
+    "decision_ref": {
+      "type": "string",
+      "const": "DEC-086"
+    },
+    "sprint": {
+      "type": "string",
+      "const": "Sprint 68"
+    },
+    "public_route_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "public_engine_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "input_system_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "output_generator_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "scoring_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "api_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "javascript_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "protocol_steps": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": {
+        "type": "object",
+        "required": ["step_id"],
+        "properties": {
+          "step_id": {
+            "type": "string",
+            "pattern": "^EP-P(0[1-9]|1[0-7])$"
+          }
+        }
+      }
+    },
+    "standard_principles": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "required": ["principle_id"],
+        "properties": {
+          "principle_id": {
+            "type": "string",
+            "pattern": "^EPS-0(0[1-9]|1[0-4])$"
+          }
+        }
+      }
+    },
+    "posture_states": {
+      "type": "array",
+      "contains": {
+        "enum": ["Supported", "Qualified", "Limited", "Not Assessable", "Out of Scope"]
+      },
+      "minItems": 5
+    },
+    "prohibited_output_types": {
+      "type": "array",
+      "allOf": [
+        {"contains": {"const": "fake/real verdict"}},
+        {"contains": {"const": "truth/falsity verdict"}},
+        {"contains": {"const": "subject guilt"}},
+        {"contains": {"const": "deception intent"}},
+        {"contains": {"const": "manipulation proof"}},
+        {"contains": {"const": "fraud accusation"}},
+        {"contains": {"const": "numeric score"}},
+        {"contains": {"const": "confidence percentage"}},
+        {"contains": {"const": "upload classification result"}}
+      ]
+    },
+    "operational_boundaries": {
+      "type": "object",
+      "required": [
+        "no_public_engine",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior"
+      ],
+      "properties": {
+        "no_public_engine": {"const": true},
+        "no_upload": {"const": true},
+        "no_scoring": {"const": true},
+        "no_api": {"const": true},
+        "no_javascript": {"const": true},
+        "no_public_tool_behavior": {"const": true}
+      }
+    }
+  },
+  "additionalProperties": true
+}

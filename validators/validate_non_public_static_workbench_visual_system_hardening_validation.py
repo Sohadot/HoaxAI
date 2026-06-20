@@ -431,6 +431,7 @@ def validate_governance() -> bool:
         "blocked_until_evidence_field_visual_system_accessibility_hardening_validation",
         "blocked_until_controlled_domain_connection_decision",
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
+        "blocked_until_evidence_posture_engine_model_v0_validation",
     ):
         error(f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK}")
         ok = False

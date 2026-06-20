@@ -14,7 +14,6 @@ ROOT = Path(__file__).resolve().parent.parent
 
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
     validate_public_surface,
 )
 
@@ -99,13 +98,6 @@ def validate_governance() -> bool:
         ok = False
     if "validate_engine_boundary_charter.py" not in (ROOT / "validators/validate_all.py").read_text(encoding="utf-8"):
         error("validate_all.py must include engine boundary charter validator")
-        ok = False
-    policy = json.loads((ROOT / "data/publisher-governance-policy.json").read_text(encoding="utf-8"))
-    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP:
-        error(
-            "publisher status must be "
-            "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation"
-        )
         ok = False
     locs = {s.get("location") for s in json.loads((ROOT / "data/source-registry.json").read_text(encoding="utf-8")).get("sources", [])}
     for loc in SOURCE_LOCS:

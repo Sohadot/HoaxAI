@@ -2258,6 +2258,39 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 68 — Evidence Posture Engine Model v0
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Create internal non-operational Engine Model v0 mapping standard, protocol, posture states, and boundaries without operational capability.
+
+### Deliverables
+
+- ENGINE_MODEL_V0.md
+- data/evidence-posture-engine-model-v0.json
+- data/evidence-posture-engine-model-v0.schema.json
+- validators/validate_evidence_posture_engine_model_v0.py
+- SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md
+- ENGINE_BOUNDARY_CHARTER.md updated
+- DEC-086 appended to DECISION_LOG.md
+- PUB-GATE-0063 added
+- Publisher status → blocked_until_evidence_posture_engine_model_v0_validation
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G68 passed.** Output Language Guardrail Model v1 is the recommended next phase.
+
+### Next Phase
+
+**Sprint 69 — Output Language Guardrail Model v1**
+
+Public engine, classifier, upload, scoring, API, analytics, monetization, and public tool behavior remain blocked until explicit governed decisions.
+
+---
+
 ## Sprint 67 — Engine Boundary Charter and Public Reference SEO Authority Map v1
 
 **Status:** COMPLETE — 2026-06-20

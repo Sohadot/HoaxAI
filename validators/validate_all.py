@@ -75,6 +75,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_evidence_field_interface_trust_audit_launch_readiness.py",
     ROOT / "validators" / "validate_engine_boundary_charter.py",
     ROOT / "validators" / "validate_public_reference_seo_authority_map.py",
+    ROOT / "validators" / "validate_evidence_posture_engine_model_v0.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

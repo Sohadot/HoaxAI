@@ -661,6 +661,7 @@ def validate_publisher_and_gates() -> bool:
         "blocked_until_evidence_field_visual_system_accessibility_hardening_validation",
         "blocked_until_controlled_domain_connection_decision",
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
+        "blocked_until_evidence_posture_engine_model_v0_validation",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "

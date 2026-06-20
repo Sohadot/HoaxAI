@@ -14,7 +14,6 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
     validate_public_surface,
 )
 
@@ -263,13 +262,6 @@ def validate_registry_entries() -> bool:
         if loc not in source_locs:
             error(f"source registry missing {loc}")
             ok = False
-    policy = load_json(ROOT / "data/publisher-governance-policy.json")
-    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP:
-        error(
-            "publisher status must be "
-            "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation"
-        )
-        ok = False
     if "Sprint 67 | COMPLETE | G67 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
         error("master execution plan missing Sprint 67 completion row")
         ok = False

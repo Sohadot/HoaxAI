@@ -5161,6 +5161,56 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 67 engine boundary and SEO authority map audit record."
+    },
+    {
+      "source_id": "SOURCE-0416",
+      "source_title": "ENGINE_MODEL_V0.md",
+      "source_type": "internal_governance",
+      "location": "ENGINE_MODEL_V0.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 68 Evidence Posture Engine Model v0."
+    },
+    {
+      "source_id": "SOURCE-0417",
+      "source_title": "data/evidence-posture-engine-model-v0.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-engine-model-v0.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 68 structured engine model v0."
+    },
+    {
+      "source_id": "SOURCE-0418",
+      "source_title": "data/evidence-posture-engine-model-v0.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/evidence-posture-engine-model-v0.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 68 engine model v0 JSON schema."
+    },
+    {
+      "source_id": "SOURCE-0419",
+      "source_title": "validators/validate_evidence_posture_engine_model_v0.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_evidence_posture_engine_model_v0.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 68 engine model v0 validator."
+    },
+    {
+      "source_id": "SOURCE-0420",
+      "source_title": "SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 68 engine model v0 audit record."
     }
   ]
 }

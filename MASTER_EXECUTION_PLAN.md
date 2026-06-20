@@ -105,10 +105,13 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G63 | Public Interface Thesis and Evidence Field Design Foundation | Sprint 63 validator PASS |
 | G65 | Evidence Field Visual System and Accessibility Hardening | Sprint 65 validator PASS |
 | G66 | Evidence Field Interface Trust Audit and Launch Readiness | Sprint 66 validator PASS |
+| G68 | Evidence Posture Engine Model v0 | Sprint 68 validator PASS |
 | G67 | Engine Boundary Charter and Public Reference SEO Authority Map v1 | Sprint 67 validators PASS |
 | G64 | Evidence Field Static Interface Embodiment v1 | Sprint 64 validator PASS |
 
-**Gate G67 passed.** Engine Boundary Charter and Public Reference SEO Authority Map v1 adopted. Publisher blocked until engine boundary and SEO authority map validation complete. Sitemap remains nineteen URLs. No new route. No operational capability authorized.
+**Gate G68 passed.** Evidence Posture Engine Model v0 adopted as internal non-operational model. Sitemap remains nineteen URLs. No public engine, input system, or output generator authorized.
+
+**Gate G67 passed.** Engine Boundary Charter and Public Reference SEO Authority Map v1 adopted. Sitemap remains nineteen URLs. No new route. No operational capability authorized.
 
 **Gate G66 passed.** Trust audit and launch readiness documented. Sitemap remains nineteen URLs. No operational capability authorized.
 
@@ -310,6 +313,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G68: Evidence Posture Engine Model v0
+
+Gate G68 is passed after ENGINE_MODEL_V0.md exists; data/evidence-posture-engine-model-v0.json and data/evidence-posture-engine-model-v0.schema.json exist; decision_ref is DEC-086; sitemap remains exactly 19 URLs; no new public route is created; no public engine, tool, API, upload, or scoring behavior is introduced; `validators/validate_evidence_posture_engine_model_v0.py` passes; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; no unrelated untracked files remain; prototype files are not modified; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
+
 ## G67: Engine Boundary Charter and Public Reference SEO Authority Map v1
 
 Gate G67 is passed after ENGINE_BOUNDARY_CHARTER.md and PUBLIC_REFERENCE_SEO_AUTHORITY_MAP_V1.md exist; data/public-reference-seo-authority-map-v1.json exists with decision_ref DEC-085 and expected_url_count 19; candidate-only SEO authority expansion is retained in PUBLIC_REFERENCE_PRODUCTION_PLAN_V1.md and data/public-reference-production-plan-v1.json; sitemap remains exactly 19 URLs; no new route is created; no placeholder pages exist; publisher status is blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation; DEC-085 exists in DECISION_LOG.md; CLAIM-0069 exists; SPRINT_67_ENGINE_BOUNDARY_AND_SEO_AUTHORITY_MAP_AUDIT.md exists; `validators/validate_engine_boundary_charter.py` and `validators/validate_public_reference_seo_authority_map.py` exist; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no unrelated untracked files remain; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
@@ -423,12 +430,13 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 68 | COMPLETE | G68 passed — Evidence Posture Engine Model v0 |
 | Sprint 67 | COMPLETE | G67 passed — Engine boundary charter and SEO authority map v1 |
 | Sprint 66 | COMPLETE | G66 passed — Trust audit and launch readiness documented |
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
 | Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 67+ | READY | G67 passed — Engine Model v0 when explicitly governed; engine/classifier blocked |
+| Sprint 68+ | READY | G68 passed — Output Language Guardrail Model v1 when governed; engine prototype blocked |
 
 ## Governing Sentence
 

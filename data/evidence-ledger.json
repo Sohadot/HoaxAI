@@ -761,6 +761,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 67 engine boundary and SEO authority map. Sitemap remains nineteen URLs. No new route. No operational capability authorized."
+    },
+    {
+      "claim_id": "CLAIM-0070",
+      "claim_text": "Hoax.ai has adopted Evidence Posture Engine Model v0 as an internal, non-operational model derived from its standard, protocol, and engine boundary charter.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "ENGINE_MODEL_V0.md, data/evidence-posture-engine-model-v0.json, data/evidence-posture-engine-model-v0.schema.json, SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md, DECISION_LOG.md (DEC-086)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 68 engine model v0. Sitemap remains nineteen URLs. No public engine, input system, or output generator authorized."
     }
   ]
 }

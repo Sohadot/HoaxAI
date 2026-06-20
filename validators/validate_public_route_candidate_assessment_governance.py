@@ -676,6 +676,7 @@ def validate_governance() -> bool:
         "blocked_until_evidence_field_visual_system_accessibility_hardening_validation",
         "blocked_until_controlled_domain_connection_decision",
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
+        "blocked_until_evidence_posture_engine_model_v0_validation",
     ):
         error("publisher status must be blocked until public route candidate assessment governance validation")
         ok = False

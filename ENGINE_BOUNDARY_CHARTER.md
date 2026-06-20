@@ -70,8 +70,15 @@ The engine may not redefine category language, override output boundaries, or co
 
 This charter is enforced through repository validators and publisher quality gates. Changes to engine boundaries require governed decisions, claim traceability where applicable, and validate_all.py PASS before any downstream sprint may proceed.
 
+## Engine Model v0 Status
+
+Evidence Posture Engine Model v0 was adopted in Sprint 68 (DEC-086) as an internal, non-operational model derived from Evidence Posture Standard v1, Evidence Posture Protocol v1 Draft, and this charter. The model maps protocol steps, standard principles, posture states, boundary checks, and permitted and prohibited output types without executing review or creating a public engine. See `ENGINE_MODEL_V0.md` and `data/evidence-posture-engine-model-v0.json`.
+
+A future internal prototype may be considered only after Engine Model v0 validation passes and a separate sprint explicitly authorizes controlled non-public prototyping.
+
 ---
 
 *Sprint 67 — Engine Boundary Charter and Public Reference SEO Authority Map v1*
+*Updated Sprint 68 — Engine Model v0 adoption (DEC-086)*
 *Decision: DEC-085*
 *Date: 2026-06-20*

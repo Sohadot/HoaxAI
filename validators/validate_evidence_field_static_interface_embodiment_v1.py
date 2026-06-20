@@ -18,6 +18,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_EVIDENCE_FIELD_VISUAL_SYSTEM_ACCESSIBILITY_HARDENING,
     PUBLISHER_STATUS_POST_CONTROLLED_DOMAIN_CONNECTION_DECISION,
         PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
+        PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_ENGINE_MODEL_V0,
     validate_public_surface,
 )
 
@@ -264,6 +265,7 @@ def validate_governance() -> bool:
         PUBLISHER_STATUS_POST_EVIDENCE_FIELD_VISUAL_SYSTEM_ACCESSIBILITY_HARDENING,
         PUBLISHER_STATUS_POST_CONTROLLED_DOMAIN_CONNECTION_DECISION,
         PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
+        PUBLISHER_STATUS_POST_EVIDENCE_POSTURE_ENGINE_MODEL_V0,
     ):
         error("publisher status must be blocked_until_evidence_field_static_interface_embodiment_v1_validation, visual system hardening validation, or controlled domain connection decision")
         ok = False

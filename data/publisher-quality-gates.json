@@ -891,6 +891,23 @@
       "failure_condition": "engine_boundary_and_public_reference_seo_authority_map_not_met",
       "bypassable": false,
       "notes": "Engine Boundary Charter and Public Reference SEO Authority Map v1 completed Sprint 67 (DEC-085). Engine drift and SEO drift boundaries documented. Sitemap remains nineteen URLs. No new route. Candidate-only SEO expansion retained. Does not authorize engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior."
+    },
+    {
+      "gate_id": "PUB-GATE-0063",
+      "name": "Evidence Posture Engine Model v0 Gate",
+      "status": "evidence_posture_engine_model_v0_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "validation_source": "SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md",
+      "failure_condition": "evidence_posture_engine_model_v0_not_met",
+      "bypassable": false,
+      "notes": "Evidence Posture Engine Model v0 completed Sprint 68 (DEC-086). Internal non-operational model maps standard, protocol, posture states, and boundaries. Sitemap remains nineteen URLs. No public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior authorized."
     }
   ],
   "last_reviewed": "2026-06-20"

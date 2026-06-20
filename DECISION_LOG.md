@@ -2263,3 +2263,26 @@ Hoax.ai has completed reference, standard, protocol, interface, static embodimen
 - A future Engine Model v0 sprint may be considered only after this charter passes validation.
 - Future reference expansion must obey the SEO authority map and no-thin-page doctrine.
 
+---
+
+## DEC-086 — Evidence Posture Engine Model v0 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Posture Engine Model v0 as an internal, non-operational model derived from Evidence Posture Standard v1, Evidence Posture Protocol v1 Draft, and the Engine Boundary Charter. The model maps evidence condition dimensions, protocol steps, standard principles, posture states, boundary checks, permitted output types, prohibited output types, and failure modes. This sprint does not create new routes, sitemap entries, public engine behavior, classifier behavior, upload workflows, scoring systems, APIs, analytics, forms, JavaScript, DNS/Cloudflare changes, custom-domain launch, monetization, external communications, or public tool behavior.
+
+### Rationale
+
+Sprint 67 created the Engine Boundary Charter to prevent engine drift before any model exists. Sprint 68 may now create an internal model that obeys the standard, protocol, and charter without becoming operational. This allows Hoax.ai to approach engine architecture safely: as a governed model first, not as a public detector, scanner, upload tool, score, API, or verdict system.
+
+### Implications
+
+- Evidence Posture Engine Model v0 may be created as internal JSON/schema/documentation.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No input, output generator, classifier, scorer, API, JavaScript, analytics, upload, form, or public tool behavior is authorized.
+- A future internal prototype may be considered only after this model passes validation and a separate sprint explicitly authorizes it.
+

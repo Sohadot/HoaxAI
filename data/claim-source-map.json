@@ -1490,6 +1490,28 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Engine Boundary Charter and Public Reference SEO Authority Map v1 per DEC-085."
+    },
+    {
+      "claim_id": "CLAIM-0070",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "ENGINE_MODEL_V0.md",
+        "data/evidence-posture-engine-model-v0.json",
+        "data/evidence-posture-engine-model-v0.schema.json",
+        "SPRINT_68_EVIDENCE_POSTURE_ENGINE_MODEL_V0_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0416",
+        "SOURCE-0417",
+        "SOURCE-0418",
+        "SOURCE-0420"
+      ],
+      "support_scope": "evidence posture engine model v0",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Evidence Posture Engine Model v0 per DEC-086."
     }
   ],
   "last_reviewed": "2026-06-20"
