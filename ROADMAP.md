@@ -2258,6 +2258,37 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 66 — Evidence Field Interface Trust Audit and Launch Readiness
+
+**Status:** COMPLETE — 2026-06-19
+**Goal:** Audit 19-URL public surface for trust safety and document launch readiness without DNS, Cloudflare, or custom domain changes.
+
+### Deliverables
+
+- EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT.md
+- PUBLIC_LAUNCH_READINESS_CHECKLIST.md
+- validators/validate_evidence_field_interface_trust_audit_launch_readiness.py
+- SPRINT_66_EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT_LAUNCH_READINESS_AUDIT.md
+- DEC-084 appended to DECISION_LOG.md
+- PUB-GATE-0061 added
+- Publisher status → blocked_until_controlled_domain_connection_decision
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G66 passed.** Controlled Domain Connection Decision Package is the recommended next phase.
+
+### Next Phase
+
+**Sprint 67 — Controlled Domain Connection Decision Package**
+
+Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, and public tool behavior remain blocked until explicit governed decisions.
+
+---
+
 ## Sprint 65 — Evidence Field Visual System and Accessibility Hardening
 
 **Status:** COMPLETE — 2026-06-19

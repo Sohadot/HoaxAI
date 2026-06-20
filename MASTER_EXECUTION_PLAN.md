@@ -104,7 +104,10 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G62 | Protocol Integration, Standard Alignment, and Interface Readiness | Sprint 62 validator PASS |
 | G63 | Public Interface Thesis and Evidence Field Design Foundation | Sprint 63 validator PASS |
 | G65 | Evidence Field Visual System and Accessibility Hardening | Sprint 65 validator PASS |
+| G66 | Evidence Field Interface Trust Audit and Launch Readiness | Sprint 66 validator PASS |
 | G64 | Evidence Field Static Interface Embodiment v1 | Sprint 64 validator PASS |
+
+**Gate G66 passed.** Trust audit and launch readiness documented. Publisher blocked until controlled domain connection decision. DNS/custom domain not changed.
 
 **Gate G65 passed.** Evidence Field visual system and accessibility hardened in place. Sitemap remains nineteen URLs. No operational interface authorized.
 
@@ -304,6 +307,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G66: Evidence Field Interface Trust Audit and Launch Readiness
+
+Gate G66 is passed after EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT.md and PUBLIC_LAUNCH_READINESS_CHECKLIST.md exist; interface, standard, and protocol trust boundaries are confirmed; sitemap remains exactly 19 URLs; no new route is created; publisher status is blocked_until_controlled_domain_connection_decision; DNS/Cloudflare/custom domain changes are not performed; DEC-084 exists in DECISION_LOG.md; CLAIM-0068 exists; SPRINT_66_EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT_LAUNCH_READINESS_AUDIT.md exists; `validators/validate_evidence_field_interface_trust_audit_launch_readiness.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no unrelated untracked files remain; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
+
 ## G65: Evidence Field Visual System and Accessibility Hardening
 
 Gate G65 is passed after `/interface/evidence-field/` visual system is hardened with visual grammar, reading order, boundary rail, posture states without scoring, mobile stability, and accessibility improvements; `styles.css` includes evidence-field classes and design tokens without scan/score meter styling; no new route is created; sitemap remains exactly 19 URLs; DEC-083 exists in DECISION_LOG.md; CLAIM-0067 exists; SPRINT_65_EVIDENCE_FIELD_VISUAL_SYSTEM_ACCESSIBILITY_HARDENING_AUDIT.md exists; `validators/validate_evidence_field_visual_system_accessibility_hardening.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
@@ -409,10 +416,11 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
-| Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
+| Sprint 66 | COMPLETE | G66 passed — Trust audit and launch readiness documented |
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
+| Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 66+ | READY | G65 passed — Trust audit and launch readiness when governance allows; engine/classifier blocked |
+| Sprint 67+ | READY | G66 passed — Controlled domain connection decision when governance allows; engine/classifier blocked |
 
 ## Governing Sentence
 

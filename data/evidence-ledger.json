@@ -739,6 +739,17 @@
       "status": "active",
       "last_reviewed": "2026-06-19",
       "notes": "Sprint 65 hardens visual grammar, reading order, mobile stability, and accessibility in place. Sitemap remains nineteen URLs. No operational interface authorized."
+    },
+    {
+      "claim_id": "CLAIM-0068",
+      "claim_text": "Hoax.ai has completed Evidence Field Interface Trust Audit and Launch Readiness while preserving a non-operational 19-URL public surface.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT.md, PUBLIC_LAUNCH_READINESS_CHECKLIST.md, SPRINT_66_EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT_LAUNCH_READINESS_AUDIT.md, DECISION_LOG.md (DEC-084)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-19",
+      "notes": "Sprint 66 trust audit and launch readiness. Sitemap remains nineteen URLs. DNS/Cloudflare/custom domain not changed. Controlled domain connection requires separate explicit decision."
     }
   ]
 }

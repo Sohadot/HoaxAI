@@ -517,6 +517,7 @@ def validate_publisher_and_gates() -> bool:
         "blocked_until_public_interface_thesis_evidence_field_validation",
         "blocked_until_evidence_field_static_interface_embodiment_v1_validation",
         "blocked_until_evidence_field_visual_system_accessibility_hardening_validation",
+        "blocked_until_controlled_domain_connection_decision",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must be "

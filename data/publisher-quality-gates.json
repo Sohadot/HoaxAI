@@ -857,6 +857,23 @@
       "failure_condition": "evidence_field_visual_system_accessibility_hardening_not_met",
       "bypassable": false,
       "notes": "Evidence Field Visual System and Accessibility Hardening completed Sprint 65 (DEC-083). Visual system hardened in place at /interface/evidence-field/. Sitemap remains nineteen URLs. No new route. Does not authorize operational interface, public engine, public classifier, public tool, upload, scoring, API, forms, analytics, JavaScript, deployment, DNS, Cloudflare, custom domain launch, monetization, or public release."
+    },
+    {
+      "gate_id": "PUB-GATE-0061",
+      "name": "Evidence Field Interface Trust Audit Launch Readiness Gate",
+      "status": "evidence_field_interface_trust_audit_launch_readiness_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_controlled_domain_connection_decision": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_governance": true,
+      "validation_source": "SPRINT_66_EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT_LAUNCH_READINESS_AUDIT.md",
+      "failure_condition": "evidence_field_interface_trust_audit_launch_readiness_not_met",
+      "bypassable": false,
+      "notes": "Evidence Field Interface Trust Audit and Launch Readiness completed Sprint 66 (DEC-084). Trust audit and launch readiness documentation created. Sitemap remains nineteen URLs. DNS/Cloudflare/custom domain not changed. Publisher blocked until controlled domain connection decision. Does not authorize engine, classifier, upload, scoring, API, analytics, monetization, or public tool behavior."
     }
   ],
   "last_reviewed": "2026-06-19"

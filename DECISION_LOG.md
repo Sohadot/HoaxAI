@@ -2210,3 +2210,29 @@ Sprint 64 proved that Hoax.ai can embody its evidence-posture thesis through a s
 - No public operational interface, engine, classifier, upload, scoring, API, analytics, forms, DNS/Cloudflare, custom domain launch, monetization, or public tool behavior is authorized.
 - Future interface work may proceed only if it remains static, accessible, standard-aligned, protocol-aware, and non-operational until explicitly authorized.
 
+---
+
+## DEC-084 — Evidence Field Interface Trust Audit and Launch Readiness Adopted
+
+**Date:** 2026-06-19
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Evidence Field Interface Trust Audit and Launch Readiness to verify that the current public surface, Evidence Field interface thesis, static interface embodiment, Evidence Posture Standard v1, and Evidence Posture Protocol v1 Draft are ready for a controlled domain-connection decision without introducing operational capability. This sprint creates trust-audit and launch-readiness documentation, validates non-operational boundaries, and preserves the 19-URL public surface. It does not create new routes, DNS/Cloudflare changes, custom domain launch, engine behavior, classifier behavior, upload workflow, scoring system, API, analytics, forms, JavaScript, monetization, or public tool behavior.
+
+### Rationale
+
+Hoax.ai has moved from reference layer to standard layer, protocol layer, and static interface embodiment. Before any domain connection or public launch step, the interface and public surface must be audited for trust leakage: detector-dashboard cues, upload/scan/score implications, fake/real verdict framing, subject-accusation risk, and operational overclaim. Launch readiness must be established as a controlled decision boundary, not as an automatic deployment action.
+
+### Implications
+
+- Trust-audit documentation may be created.
+- Launch-readiness documentation may be created.
+- Existing public pages may be tightened only where trust boundaries require clarification.
+- Sitemap remains exactly 19 URLs.
+- No new public route is authorized.
+- No DNS/Cloudflare/custom domain change is authorized.
+- No public engine, classifier, upload, scoring, API, analytics, forms, monetization, JavaScript, or tool behavior is authorized.
+- A controlled domain-connection decision may be considered only after Sprint 66 validation passes.
+
