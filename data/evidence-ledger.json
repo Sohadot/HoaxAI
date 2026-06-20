@@ -749,7 +749,18 @@
       "source_type": "governance_file",
       "status": "active",
       "last_reviewed": "2026-06-19",
-      "notes": "Sprint 66 trust audit and launch readiness. Sitemap remains nineteen URLs. DNS/Cloudflare/custom domain not changed. Controlled domain connection requires separate explicit decision."
+      "notes": "Sprint 66 trust audit and launch readiness. Sitemap remains nineteen URLs. Controlled domain connection requires separate explicit decision."
+    },
+    {
+      "claim_id": "CLAIM-0069",
+      "claim_text": "Hoax.ai has adopted Engine Boundary Charter and Public Reference SEO Authority Map v1 as internal asset-quality infrastructure while preserving a 19-URL public surface with candidate-only SEO expansion.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "ENGINE_BOUNDARY_CHARTER.md, PUBLIC_REFERENCE_SEO_AUTHORITY_MAP_V1.md, data/public-reference-seo-authority-map-v1.json, SPRINT_67_ENGINE_BOUNDARY_AND_SEO_AUTHORITY_MAP_AUDIT.md, DECISION_LOG.md (DEC-085)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 67 engine boundary and SEO authority map. Sitemap remains nineteen URLs. No new route. No operational capability authorized."
     }
   ]
 }

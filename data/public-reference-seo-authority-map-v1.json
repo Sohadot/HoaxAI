@@ -1,0 +1,228 @@
+{
+  "map_id": "PUB-REF-SEO-AUTH-MAP-V1",
+  "name": "Hoax.ai Public Reference SEO Authority Map v1",
+  "version": "v1.0.0",
+  "status": "active_planning_artifact",
+  "decision_ref": "DEC-085",
+  "sprint": "Sprint 67",
+  "maturity": "production_planning_only_no_new_routes_no_sitemap_expansion",
+  "current_public_surface": {
+    "expected_url_count": 19,
+    "sitemap_must_remain_count": 19,
+    "route_registry_must_remain_count": 19,
+    "public_surface_state": "existing_public_surface_only",
+    "new_public_routes_authorized": false,
+    "new_sitemap_entries_authorized": false
+  },
+  "seo_authority_principles": [
+    "reference_production_not_page_volume",
+    "people_first_reference_substance",
+    "original_category_language",
+    "standard_protocol_interface_alignment",
+    "artifact_subject_separation_preserved",
+    "output_boundary_preserved",
+    "unsupported_external_claims_prohibited",
+    "fake_pages_and_placeholder_pages_prohibited",
+    "technical_security_and_capability_boundaries_preserved"
+  ],
+  "authority_clusters": [
+    {
+      "cluster_id": "AUTH-CLUSTER-001",
+      "name": "Evidence Posture Core",
+      "role": "central_category_anchor",
+      "existing_routes": [
+        "/reference/evidence-posture/",
+        "/reference/artifact-subject-separation/",
+        "/reference/output-boundary/",
+        "/standard/evidence-posture/"
+      ],
+      "future_role": "anchor_all_future_reference_pages"
+    },
+    {
+      "cluster_id": "AUTH-CLUSTER-002",
+      "name": "Source And Provenance",
+      "role": "source_provenance_traceability_layer",
+      "existing_routes": [
+        "/reference/source-confidence/",
+        "/reference/provenance-gap/",
+        "/reference/evidence-chain/",
+        "/reference/claim-source-traceability/"
+      ],
+      "future_role": "expand_non_operational_verification_language_without_truth_verdicts"
+    },
+    {
+      "cluster_id": "AUTH-CLUSTER-003",
+      "name": "Context And Interpretation",
+      "role": "context_limitation_restraint_layer",
+      "existing_routes": [
+        "/reference/context-collapse/",
+        "/reference/claim-drift/",
+        "/reference/evidence-limitation/",
+        "/reference/interpretation-risk/",
+        "/reference/not-assessable/"
+      ],
+      "future_role": "own_uncertainty_context_and_interpretive_restraint_language"
+    },
+    {
+      "cluster_id": "AUTH-CLUSTER-004",
+      "name": "Standard Protocol Interface",
+      "role": "authority_layer_alignment",
+      "existing_routes": [
+        "/language/",
+        "/standard/evidence-posture/",
+        "/protocol/evidence-posture/",
+        "/interface/evidence-field/"
+      ],
+      "future_role": "prevent_reference_pages_from_becoming_isolated_glossary_entries"
+    }
+  ],
+  "candidate_pages": [
+    {
+      "candidate_id": "SEO-CAND-0001",
+      "proposed_path": "/reference/evidence-sufficiency/",
+      "cluster_id": "AUTH-CLUSTER-001",
+      "intent": "Define sufficient evidence for bounded posture without truth verdict language.",
+      "status": "candidate_only_no_route",
+      "priority": 1,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0002",
+      "proposed_path": "/reference/source-corroboration/",
+      "cluster_id": "AUTH-CLUSTER-002",
+      "intent": "Define corroboration as source relationship discipline, not agreement counting.",
+      "status": "candidate_only_no_route",
+      "priority": 1,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0003",
+      "proposed_path": "/reference/context-window/",
+      "cluster_id": "AUTH-CLUSTER-003",
+      "intent": "Define the surrounding context needed before posture language is responsible.",
+      "status": "candidate_only_no_route",
+      "priority": 1,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0004",
+      "proposed_path": "/reference/provenance-chain/",
+      "cluster_id": "AUTH-CLUSTER-002",
+      "intent": "Extend provenance gap into a chain model without promising detection.",
+      "status": "candidate_only_no_route",
+      "priority": 2,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0005",
+      "proposed_path": "/reference/media-lineage/",
+      "cluster_id": "AUTH-CLUSTER-002",
+      "intent": "Define artifact lineage across origin, transformation, reposting, and presentation.",
+      "status": "candidate_only_no_route",
+      "priority": 2,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0006",
+      "proposed_path": "/reference/synthetic-risk-signal/",
+      "cluster_id": "AUTH-CLUSTER-002",
+      "intent": "Explain signal language without detector-score claims.",
+      "status": "candidate_only_no_route",
+      "priority": 2,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0007",
+      "proposed_path": "/reference/artifact-integrity/",
+      "cluster_id": "AUTH-CLUSTER-001",
+      "intent": "Define integrity as evidence condition, not authenticity certification.",
+      "status": "candidate_only_no_route",
+      "priority": 2,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0008",
+      "proposed_path": "/reference/verification-burden/",
+      "cluster_id": "AUTH-CLUSTER-003",
+      "intent": "Define where uncertainty should remain when proof is incomplete.",
+      "status": "candidate_only_no_route",
+      "priority": 2,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0009",
+      "proposed_path": "/reference/claim-context/",
+      "cluster_id": "AUTH-CLUSTER-003",
+      "intent": "Define how claims depend on surrounding context, source, and framing.",
+      "status": "candidate_only_no_route",
+      "priority": 3,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0010",
+      "proposed_path": "/reference/evidence-threshold/",
+      "cluster_id": "AUTH-CLUSTER-001",
+      "intent": "Define thresholds for posture language while preserving output restraint.",
+      "status": "candidate_only_no_route",
+      "priority": 3,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0011",
+      "proposed_path": "/reference/interpretive-restraint/",
+      "cluster_id": "AUTH-CLUSTER-003",
+      "intent": "Define institutional restraint when evidence posture is partial.",
+      "status": "candidate_only_no_route",
+      "priority": 3,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    },
+    {
+      "candidate_id": "SEO-CAND-0012",
+      "proposed_path": "/reference/posture-state/",
+      "cluster_id": "AUTH-CLUSTER-001",
+      "intent": "Define state language across supported, limited, conflicted, and not assessable conditions.",
+      "status": "candidate_only_no_route",
+      "priority": 3,
+      "no_public_route_created": true,
+      "no_sitemap_entry_created": true
+    }
+  ],
+  "publication_preconditions": [
+    "candidate_registered_before_route_creation",
+    "route_registry_entry_before_sitemap_entry",
+    "canonical_url_before_public_surface_exposure",
+    "internal_links_before_public_surface_exposure",
+    "metadata_before_public_surface_exposure",
+    "depth_originality_and_boundary_validation_before_publication",
+    "validate_all_pass_required"
+  ],
+  "prohibited_capabilities": [
+    "engine",
+    "classifier",
+    "detector",
+    "upload",
+    "scoring",
+    "fake_real_verdict",
+    "subject_accusation",
+    "api",
+    "analytics",
+    "forms",
+    "javascript",
+    "monetization",
+    "public_tool_behavior",
+    "placeholder_pages",
+    "unsupported_external_factual_claims"
+  ],
+  "last_reviewed": "2026-06-20"
+}

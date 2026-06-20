@@ -873,8 +873,25 @@
       "validation_source": "SPRINT_66_EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT_LAUNCH_READINESS_AUDIT.md",
       "failure_condition": "evidence_field_interface_trust_audit_launch_readiness_not_met",
       "bypassable": false,
-      "notes": "Evidence Field Interface Trust Audit and Launch Readiness completed Sprint 66 (DEC-084). Trust audit and launch readiness documentation created. Sitemap remains nineteen URLs. DNS/Cloudflare/custom domain not changed. Publisher blocked until controlled domain connection decision. Does not authorize engine, classifier, upload, scoring, API, analytics, monetization, or public tool behavior."
+      "notes": "Evidence Field Interface Trust Audit and Launch Readiness completed Sprint 66 (DEC-084). Trust audit and launch readiness documentation created. Sitemap remains nineteen URLs. Does not authorize engine, classifier, upload, scoring, API, analytics, monetization, or public tool behavior."
+    },
+    {
+      "gate_id": "PUB-GATE-0062",
+      "name": "Engine Boundary Charter and Public Reference SEO Authority Map Gate",
+      "status": "engine_boundary_and_public_reference_seo_authority_map_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_model_v0": true,
+      "validation_source": "SPRINT_67_ENGINE_BOUNDARY_AND_SEO_AUTHORITY_MAP_AUDIT.md",
+      "failure_condition": "engine_boundary_and_public_reference_seo_authority_map_not_met",
+      "bypassable": false,
+      "notes": "Engine Boundary Charter and Public Reference SEO Authority Map v1 completed Sprint 67 (DEC-085). Engine drift and SEO drift boundaries documented. Sitemap remains nineteen URLs. No new route. Candidate-only SEO expansion retained. Does not authorize engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior."
     }
   ],
-  "last_reviewed": "2026-06-19"
+  "last_reviewed": "2026-06-20"
 }

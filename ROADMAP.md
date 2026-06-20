@@ -2258,6 +2258,40 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 67 — Engine Boundary Charter and Public Reference SEO Authority Map v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Establish internal asset-quality boundaries for engine drift and SEO drift without creating routes, sitemap expansion, or operational capability.
+
+### Deliverables
+
+- ENGINE_BOUNDARY_CHARTER.md
+- PUBLIC_REFERENCE_SEO_AUTHORITY_MAP_V1.md
+- data/public-reference-seo-authority-map-v1.json
+- validators/validate_engine_boundary_charter.py
+- validators/validate_public_reference_seo_authority_map.py
+- SPRINT_67_ENGINE_BOUNDARY_AND_SEO_AUTHORITY_MAP_AUDIT.md
+- DEC-085 appended to DECISION_LOG.md
+- PUB-GATE-0062 added
+- SEO candidate expansion retained in production plan as candidate-only
+- Publisher status → blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G67 passed.** Engine Model v0 may be considered only after explicit governed authorization.
+
+### Next Phase
+
+**Engine Model v0** — blocked until explicitly governed after G67 validation.
+
+Public engine, classifier, upload, scoring, API, analytics, monetization, and public tool behavior remain blocked until explicit governed decisions.
+
+---
+
 ## Sprint 66 — Evidence Field Interface Trust Audit and Launch Readiness
 
 **Status:** COMPLETE — 2026-06-19
@@ -2279,13 +2313,13 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ### Gate
 
-**Gate G66 passed.** Controlled Domain Connection Decision Package is the recommended next phase.
+**Gate G66 passed.** Trust audit and launch readiness documented. Sprint 67 engine boundary and SEO authority map is the recommended next phase.
 
 ### Next Phase
 
-**Sprint 67 — Controlled Domain Connection Decision Package**
+**Sprint 67 — Engine Boundary Charter and Public Reference SEO Authority Map v1**
 
-Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, custom domain launch, monetization, and public tool behavior remain blocked until explicit governed decisions.
+Public engine, classifier, upload, scoring, API, analytics, monetization, and public tool behavior remain blocked until explicit governed decisions.
 
 ---
 

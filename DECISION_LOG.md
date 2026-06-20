@@ -2236,3 +2236,30 @@ Hoax.ai has moved from reference layer to standard layer, protocol layer, and st
 - No public engine, classifier, upload, scoring, API, analytics, forms, monetization, JavaScript, or tool behavior is authorized.
 - A controlled domain-connection decision may be considered only after Sprint 66 validation passes.
 
+---
+
+## DEC-085 — Engine Boundary Charter and Public Reference SEO Authority Map v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Engine Boundary Charter and Public Reference SEO Authority Map v1 as internal asset-quality infrastructure. The Engine Boundary Charter defines what any future engine may and may not do before engine modeling begins. The Public Reference SEO Authority Map defines how the current 19-URL public surface builds search authority through reference substance, standard-bearing language, protocol structure, interface embodiment, candidate-only expansion discipline, and internal linking logic. This sprint does not create new routes, sitemap entries, engine behavior, classifier behavior, upload workflows, scoring systems, APIs, analytics, forms, JavaScript, DNS/Cloudflare changes, custom-domain launch, monetization, external communications, or public tool behavior.
+
+### Rationale
+
+Hoax.ai has completed reference, standard, protocol, interface, static embodiment, accessibility hardening, and launch-readiness validation. The next asset-quality step is to protect two future risks: engine drift and SEO drift. Engine drift would turn Hoax.ai into a generic detector or scoring tool. SEO drift would turn the reference layer into thin keyword pages. This sprint establishes boundaries for both while remaining entirely inside the digital asset's content and governance system.
+
+### Implications
+
+- Engine Boundary Charter may be created.
+- Public Reference SEO Authority Map v1 may be created.
+- Candidate-only SEO authority expansion may be documented.
+- A structured SEO authority map JSON may be created.
+- Sitemap remains exactly 19 URLs.
+- No new public route is authorized.
+- No public engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS/Cloudflare, custom-domain action, monetization, external communications, or public tool behavior is authorized.
+- A future Engine Model v0 sprint may be considered only after this charter passes validation.
+- Future reference expansion must obey the SEO authority map and no-thin-page doctrine.
+

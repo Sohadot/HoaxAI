@@ -213,6 +213,27 @@ No reference page may:
 | 9 | /reference/evidence-limitation/ | Sprint 54+ |
 | 10 | /reference/classification-boundary/ | Sprint 54+ |
 
+## SEO Authority Expansion (Candidate-Only)
+
+Sprint 67 documents twelve additional reference page candidates in `PUBLIC_REFERENCE_SEO_AUTHORITY_MAP_V1.md` and `data/public-reference-seo-authority-map-v1.json`. These candidates extend authority clusters for evidence posture core, source and provenance, context and interpretation, and standard-protocol-interface alignment.
+
+**Candidate-only discipline:** None of these paths are public routes, sitemap entries, navigation targets, or placeholder pages. Publication requires separate registration, production, internal linking, route validation, and validate_all.py PASS.
+
+| Candidate path | Cluster | Status |
+|----------------|---------|--------|
+| /reference/evidence-sufficiency/ | Evidence Posture Core | candidate-only |
+| /reference/source-corroboration/ | Source And Provenance | candidate-only |
+| /reference/context-window/ | Context And Interpretation | candidate-only |
+| /reference/provenance-chain/ | Source And Provenance | candidate-only |
+| /reference/media-lineage/ | Source And Provenance | candidate-only |
+| /reference/synthetic-risk-signal/ | Source And Provenance | candidate-only |
+| /reference/artifact-integrity/ | Evidence Posture Core | candidate-only |
+| /reference/verification-burden/ | Context And Interpretation | candidate-only |
+| /reference/claim-context/ | Context And Interpretation | candidate-only |
+| /reference/evidence-threshold/ | Evidence Posture Core | candidate-only |
+| /reference/interpretive-restraint/ | Context And Interpretation | candidate-only |
+| /reference/posture-state/ | Evidence Posture Core | candidate-only |
+
 ---
 
 *Sprint 52 — Governance Scaffolding Freeze and Public Reference Production Reset v1*

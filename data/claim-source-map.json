@@ -1468,7 +1468,29 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Evidence Field Interface Trust Audit and Launch Readiness per DEC-084."
+    },
+    {
+      "claim_id": "CLAIM-0069",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "ENGINE_BOUNDARY_CHARTER.md",
+        "PUBLIC_REFERENCE_SEO_AUTHORITY_MAP_V1.md",
+        "data/public-reference-seo-authority-map-v1.json",
+        "SPRINT_67_ENGINE_BOUNDARY_AND_SEO_AUTHORITY_MAP_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0410",
+        "SOURCE-0411",
+        "SOURCE-0412",
+        "SOURCE-0415"
+      ],
+      "support_scope": "engine boundary charter and public reference seo authority map",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Engine Boundary Charter and Public Reference SEO Authority Map v1 per DEC-085."
     }
   ],
-  "last_reviewed": "2026-06-19"
+  "last_reviewed": "2026-06-20"
 }

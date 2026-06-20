@@ -345,6 +345,7 @@ def validate_governance_and_registry() -> bool:
         "blocked_until_evidence_field_static_interface_embodiment_v1_validation",
         "blocked_until_evidence_field_visual_system_accessibility_hardening_validation",
         "blocked_until_controlled_domain_connection_decision",
+        "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
     ):
         error("publisher status must be blocked until public-readiness boundary governance")
         ok = False

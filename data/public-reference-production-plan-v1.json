@@ -98,6 +98,29 @@
     "/reference/not-assessable/",
     "/reference/output-boundary/"
   ],
+  "seo_authority_expansion": {
+    "status": "candidate_only_no_routes_no_sitemap",
+    "decision_ref": "DEC-085",
+    "sprint": "Sprint 67",
+    "map_ref": "data/public-reference-seo-authority-map-v1.json",
+    "candidate_count": 12,
+    "new_public_routes_authorized": false,
+    "new_sitemap_entries_authorized": false,
+    "candidate_paths": [
+      "/reference/evidence-sufficiency/",
+      "/reference/source-corroboration/",
+      "/reference/context-window/",
+      "/reference/provenance-chain/",
+      "/reference/media-lineage/",
+      "/reference/synthetic-risk-signal/",
+      "/reference/artifact-integrity/",
+      "/reference/verification-burden/",
+      "/reference/claim-context/",
+      "/reference/evidence-threshold/",
+      "/reference/interpretive-restraint/",
+      "/reference/posture-state/"
+    ]
+  },
   "page_quality_requirements": [
     "clear_public_purpose",
     "teaches_real_hoaxai_concept",
@@ -136,5 +159,5 @@
     "forms_or_inputs",
     "external_scripts"
   ],
-  "last_reviewed": "2026-06-19"
+  "last_reviewed": "2026-06-20"
 }

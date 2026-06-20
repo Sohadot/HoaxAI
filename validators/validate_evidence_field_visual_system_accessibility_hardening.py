@@ -16,6 +16,7 @@ from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_EVIDENCE_FIELD_VISUAL_SYSTEM_ACCESSIBILITY_HARDENING,
     PUBLISHER_STATUS_POST_CONTROLLED_DOMAIN_CONNECTION_DECISION,
+        PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
     validate_public_surface,
 )
 
@@ -259,6 +260,7 @@ def validate_governance() -> bool:
     if policy.get("current_publisher_status") not in (
         PUBLISHER_STATUS_POST_EVIDENCE_FIELD_VISUAL_SYSTEM_ACCESSIBILITY_HARDENING,
         PUBLISHER_STATUS_POST_CONTROLLED_DOMAIN_CONNECTION_DECISION,
+        PUBLISHER_STATUS_POST_ENGINE_BOUNDARY_AND_PUBLIC_REFERENCE_SEO_AUTHORITY_MAP,
     ):
         error("publisher status must be blocked_until_evidence_field_visual_system_accessibility_hardening_validation or controlled domain connection decision")
         ok = False
