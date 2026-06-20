@@ -105,11 +105,14 @@ A phase gate is a validation checkpoint. The next phase does not open until the 
 | G63 | Public Interface Thesis and Evidence Field Design Foundation | Sprint 63 validator PASS |
 | G65 | Evidence Field Visual System and Accessibility Hardening | Sprint 65 validator PASS |
 | G66 | Evidence Field Interface Trust Audit and Launch Readiness | Sprint 66 validator PASS |
+| G71 | Controlled Internal Prototype v0 Authorization Package | Sprint 71 validator PASS |
 | G70 | Internal Non-Public Engine Prototype Charter | Sprint 70 validator PASS |
 | G69 | Output Language Guardrail Model v1 | Sprint 69 validator PASS |
 | G68 | Evidence Posture Engine Model v0 | Sprint 68 validator PASS |
 | G67 | Engine Boundary Charter and Public Reference SEO Authority Map v1 | Sprint 67 validators PASS |
 | G64 | Evidence Field Static Interface Embodiment v1 | Sprint 64 validator PASS |
+
+**Gate G71 passed.** Controlled Internal Prototype v0 Authorization Package adopted. Sitemap remains nineteen URLs. No prototype implementation or executable code authorized in Sprint 71.
 
 **Gate G70 passed.** Internal Non-Public Engine Prototype Charter adopted. Sitemap remains nineteen URLs. No prototype implementation, public engine, input system, or output generator authorized.
 
@@ -319,6 +322,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G71: Controlled Internal Prototype v0 Authorization Package
+
+Gate G71 is passed after CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md exists; CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md exists; CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md exists; CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md exists; data/controlled-internal-prototype-v0-authorization-package.json and data/controlled-internal-prototype-v0-authorization-package.schema.json exist; decision_ref is DEC-089; sitemap remains exactly 19 URLs; no new public route is created; no prototype implementation is created; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; `validators/validate_controlled_internal_prototype_v0_authorization_package.py` passes; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; no unrelated untracked files remain; prototype files are not modified; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
+
 ## G70: Internal Non-Public Engine Prototype Charter
 
 Gate G70 is passed after INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md exists; INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md exists; INTERNAL_PROTOTYPE_FIXTURE_POLICY.md exists; data/internal-non-public-engine-prototype-charter-v1.json and data/internal-non-public-engine-prototype-charter-v1.schema.json exist; decision_ref is DEC-088; sitemap remains exactly 19 URLs; no new public route is created; no prototype implementation is created; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; `validators/validate_internal_non_public_engine_prototype_charter.py` passes; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; no unrelated untracked files remain; prototype files are not modified; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior is introduced.
@@ -444,6 +451,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 71 | COMPLETE | G71 passed — Controlled Internal Prototype v0 Authorization Package |
 | Sprint 70 | COMPLETE | G70 passed — Internal Non-Public Engine Prototype Charter |
 | Sprint 69 | COMPLETE | G69 passed — Output Language Guardrail Model v1 |
 | Sprint 68 | COMPLETE | G68 passed — Evidence Posture Engine Model v0 |
@@ -452,7 +460,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
 | Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 70+ | READY | G70 passed — Controlled Internal Prototype v0 Authorization Package when governed; prototype blocked |
+| Sprint 71+ | READY | G71 passed — Controlled Internal Prototype v0 Implementation when governed; implementation blocked |
 
 ## Governing Sentence
 

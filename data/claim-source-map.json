@@ -1560,6 +1560,34 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Internal Non-Public Engine Prototype Charter per DEC-088."
+    },
+    {
+      "claim_id": "CLAIM-0073",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md",
+        "CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md",
+        "CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md",
+        "CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md",
+        "data/controlled-internal-prototype-v0-authorization-package.json",
+        "data/controlled-internal-prototype-v0-authorization-package.schema.json",
+        "SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0433",
+        "SOURCE-0434",
+        "SOURCE-0435",
+        "SOURCE-0436",
+        "SOURCE-0437",
+        "SOURCE-0438",
+        "SOURCE-0439"
+      ],
+      "support_scope": "controlled internal prototype v0 authorization package",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Controlled Internal Prototype v0 Authorization Package per DEC-089."
     }
   ],
   "last_reviewed": "2026-06-20"

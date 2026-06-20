@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/controlled-internal-prototype-v0-authorization-package.schema.json",
+  "title": "Controlled Internal Prototype v0 Authorization Package",
+  "type": "object",
+  "required": [
+    "authorization_id",
+    "version",
+    "status",
+    "decision_ref",
+    "sprint",
+    "prototype_implemented",
+    "prototype_authorized_in_this_sprint",
+    "future_sprint_72_may_consider_implementation",
+    "public_route_authorized",
+    "public_engine_authorized",
+    "input_system_authorized",
+    "output_generator_authorized",
+    "scoring_authorized",
+    "api_authorized",
+    "javascript_authorized",
+    "source_authority",
+    "permitted_future_components",
+    "prohibited_future_components",
+    "file_path_boundaries",
+    "fixture_authorization_boundary",
+    "output_authorization_boundary",
+    "validation_requirements_before_implementation",
+    "disqualification_conditions",
+    "future_sprint_gate",
+    "operational_boundaries"
+  ],
+  "properties": {
+    "authorization_id": {
+      "type": "string",
+      "const": "controlled-internal-prototype-v0-authorization-package"
+    },
+    "version": { "type": "string" },
+    "status": {
+      "type": "string",
+      "const": "authorization_package_only"
+    },
+    "decision_ref": {
+      "type": "string",
+      "const": "DEC-089"
+    },
+    "sprint": {
+      "type": "string",
+      "const": "Sprint 71"
+    },
+    "prototype_implemented": { "type": "boolean", "const": false },
+    "prototype_authorized_in_this_sprint": { "type": "boolean", "const": false },
+    "future_sprint_72_may_consider_implementation": { "type": "boolean", "const": true },
+    "public_route_authorized": { "type": "boolean", "const": false },
+    "public_engine_authorized": { "type": "boolean", "const": false },
+    "input_system_authorized": { "type": "boolean", "const": false },
+    "output_generator_authorized": { "type": "boolean", "const": false },
+    "scoring_authorized": { "type": "boolean", "const": false },
+    "api_authorized": { "type": "boolean", "const": false },
+    "javascript_authorized": { "type": "boolean", "const": false },
+    "source_authority": {
+      "type": "array",
+      "allOf": [
+        { "contains": { "const": "evidence_posture_standard_v1" } },
+        { "contains": { "const": "evidence_posture_protocol_v1_draft" } },
+        { "contains": { "const": "engine_boundary_charter" } },
+        { "contains": { "const": "evidence_posture_engine_model_v0" } },
+        { "contains": { "const": "output_language_guardrail_model_v1" } },
+        { "contains": { "const": "internal_non_public_engine_prototype_charter" } },
+        { "contains": { "const": "internal_prototype_admissibility_model" } },
+        { "contains": { "const": "internal_prototype_fixture_policy" } },
+        { "contains": { "const": "public_reference_seo_authority_map_v1" } }
+      ]
+    },
+    "permitted_future_components": { "type": "array", "minItems": 10 },
+    "prohibited_future_components": { "type": "array", "minItems": 10 },
+    "file_path_boundaries": {
+      "type": "object",
+      "required": ["future_permitted_path_reference", "sprint_71_creates_directory", "forbidden_locations"]
+    },
+    "fixture_authorization_boundary": {
+      "type": "object",
+      "required": ["sprint_71_fixture_files_created", "prohibited_fixture_types"]
+    },
+    "output_authorization_boundary": {
+      "type": "object",
+      "required": ["permitted_structures", "prohibited_outputs"]
+    },
+    "validation_requirements_before_implementation": { "type": "array", "minItems": 10 },
+    "disqualification_conditions": { "type": "array", "minItems": 10 },
+    "future_sprint_gate": {
+      "type": "object",
+      "required": ["sprint_71_authorizes_implementation", "next_implementation_sprint"]
+    },
+    "operational_boundaries": {
+      "type": "object",
+      "required": [
+        "no_prototype_implementation_in_sprint_71",
+        "no_public_engine",
+        "no_output_generator",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior"
+      ],
+      "properties": {
+        "no_prototype_implementation_in_sprint_71": { "type": "boolean", "const": true },
+        "no_public_engine": { "type": "boolean", "const": true },
+        "no_output_generator": { "type": "boolean", "const": true },
+        "no_upload": { "type": "boolean", "const": true },
+        "no_scoring": { "type": "boolean", "const": true },
+        "no_api": { "type": "boolean", "const": true },
+        "no_javascript": { "type": "boolean", "const": true },
+        "no_public_tool_behavior": { "type": "boolean", "const": true }
+      }
+    }
+  },
+  "additionalProperties": true
+}

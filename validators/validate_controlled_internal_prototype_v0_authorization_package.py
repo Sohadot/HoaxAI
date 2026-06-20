@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 70 — Internal Non-Public Engine Prototype Charter."""
+"""Validate Sprint 71 — Controlled Internal Prototype v0 Authorization Package."""
 
 from __future__ import annotations
 
@@ -15,51 +15,54 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER,
     PUBLISHER_STATUS_POST_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_SPRINT,
     validate_public_surface,
 )
 
-CHARTER = "INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md"
-ADMISSIBILITY = "INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md"
-FIXTURE_POLICY = "INTERNAL_PROTOTYPE_FIXTURE_POLICY.md"
-CHARTER_JSON = "data/internal-non-public-engine-prototype-charter-v1.json"
-CHARTER_SCHEMA = "data/internal-non-public-engine-prototype-charter-v1.schema.json"
-AUDIT = "SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md"
+AUTH_PACKAGE = "CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md"
+CONTRACT = "CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md"
+VALIDATION_PLAN = "CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md"
+DISQUALIFICATION = "CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md"
+AUTH_JSON = "data/controlled-internal-prototype-v0-authorization-package.json"
+AUTH_SCHEMA = "data/controlled-internal-prototype-v0-authorization-package.schema.json"
+AUDIT = "SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md"
 
-PROHIBITED_FIXTURES = [
-    "real person accusation",
-    "active news event",
-    "political claim",
-    "company fraud claim",
-    "legal dispute",
-    "private screenshots",
-    "personal messages",
-    "uploaded user files",
-    "external fact-check target",
+FUTURE_IMPL_DIR = ROOT / "internal" / "prototypes" / "controlled-engine-v0"
+
+DISQUALIFICATION_CONDITIONS = [
+    "public route leakage",
+    "sitemap leakage",
+    "upload implication",
+    "user-input implication",
+    "fake/real leakage",
+    "score leakage",
+    "subject accusation leakage",
+    "real-person fixture",
+    "current-event fixture",
+    "external API call",
+    "live web lookup",
+    "output generator drift",
+    "public demo drift",
+    "report-export drift",
+    "API endpoint drift",
 ]
 
-PROHIBITED_OUTPUTS = [
-    "fake/real result",
-    "truth/falsity result",
-    "score",
-    "confidence percentage",
-    "subject guilt",
-    "deception finding",
-    "manipulation proof",
-    "fraud accusation",
-    "legal conclusion",
-    "moderation action",
-    "public result card",
+VALIDATION_PLAN_CHECKS = [
+    "fixture checks",
+    "output checks",
+    "guardrail checks",
+    "prohibited-language checks",
+    "public exposure checks",
+    "route/sitemap checks",
+    "external data checks",
+    "rollback checks",
 ]
 
 DOC_REQUIRED = [
-    "non-public, non-executable review architecture without producing verdicts",
-    "no prototype exists",
-    "Sprint 70 does not authorize a prototype",
-    "no input system is created in Sprint 70",
-    "Sprint 70 authorizes no execution",
-    "Sprint 71 may only consider",
+    "Sprint 71 authorizes only the controlled scope for a future internal prototype implementation sprint",
+    "no prototype is implemented in Sprint 71",
+    "Sprint 71 does not authorize implementation",
+    "Sprint 72 must be separately prompted, separately validated, and separately committed",
 ]
 
 FORBIDDEN_TERMS = [
@@ -85,13 +88,14 @@ FORBIDDEN_IMPL_PATTERNS = [
 ]
 
 SOURCE_LOCS = [
-    CHARTER,
-    ADMISSIBILITY,
-    FIXTURE_POLICY,
-    CHARTER_JSON,
-    CHARTER_SCHEMA,
+    AUTH_PACKAGE,
+    CONTRACT,
+    VALIDATION_PLAN,
+    DISQUALIFICATION,
+    AUTH_JSON,
+    AUTH_SCHEMA,
     AUDIT,
-    "validators/validate_internal_non_public_engine_prototype_charter.py",
+    "validators/validate_controlled_internal_prototype_v0_authorization_package.py",
 ]
 
 
@@ -106,23 +110,37 @@ def load_json(rel: str) -> dict:
 
 def validate_artifacts() -> bool:
     ok = True
-    for rel in (CHARTER, ADMISSIBILITY, FIXTURE_POLICY, CHARTER_JSON, CHARTER_SCHEMA, AUDIT):
+    for rel in (AUTH_PACKAGE, CONTRACT, VALIDATION_PLAN, DISQUALIFICATION, AUTH_JSON, AUTH_SCHEMA, AUDIT):
         if not (ROOT / rel).is_file():
             error(f"missing {rel}")
             ok = False
     if not ok:
         return False
-    charter = (ROOT / CHARTER).read_text(encoding="utf-8")
-    lower = charter.lower()
+    auth = (ROOT / AUTH_PACKAGE).read_text(encoding="utf-8")
+    lower = auth.lower()
     for phrase in DOC_REQUIRED:
         if phrase.lower() not in lower:
-            error(f"charter missing required phrase: {phrase}")
+            error(f"authorization package missing required phrase: {phrase}")
             ok = False
     for term in FORBIDDEN_TERMS:
         if term in lower:
-            error(f"charter contains forbidden term: {term}")
+            error(f"authorization package contains forbidden term: {term}")
             ok = False
-    for rel in SOURCE_LOCS[:5]:
+    contract = (ROOT / CONTRACT).read_text(encoding="utf-8").lower()
+    if "anything not explicitly allowed remains prohibited" not in contract:
+        error("implementation contract must state anything not explicitly allowed remains prohibited")
+        ok = False
+    plan = (ROOT / VALIDATION_PLAN).read_text(encoding="utf-8").lower()
+    for check in VALIDATION_PLAN_CHECKS:
+        if check not in plan:
+            error(f"validation plan missing: {check}")
+            ok = False
+    matrix = (ROOT / DISQUALIFICATION).read_text(encoding="utf-8").lower()
+    for item in DISQUALIFICATION_CONDITIONS:
+        if item.lower() not in matrix:
+            error(f"disqualification matrix missing: {item}")
+            ok = False
+    for rel in SOURCE_LOCS[:7]:
         text = (ROOT / rel).read_text(encoding="utf-8").lower()
         for term in FORBIDDEN_TERMS:
             if term in text:
@@ -131,23 +149,31 @@ def validate_artifacts() -> bool:
     return ok
 
 
-def validate_charter_json() -> bool:
+def validate_auth_json() -> bool:
     ok = True
-    data = load_json(CHARTER_JSON)
-    if data.get("charter_id") != "internal-non-public-engine-prototype-charter-v1":
-        error("charter_id mismatch")
+    data = load_json(AUTH_JSON)
+    if data.get("authorization_id") != "controlled-internal-prototype-v0-authorization-package":
+        error("authorization_id mismatch")
         ok = False
-    if data.get("decision_ref") != "DEC-088":
-        error("decision_ref must be DEC-088")
+    if data.get("decision_ref") != "DEC-089":
+        error("decision_ref must be DEC-089")
         ok = False
-    if data.get("sprint") != "Sprint 70":
-        error("sprint must be Sprint 70")
+    if data.get("sprint") != "Sprint 71":
+        error("sprint must be Sprint 71")
         ok = False
-    if data.get("status") != "internal_non_public_prototype_charter_only":
-        error("status must be internal_non_public_prototype_charter_only")
+    if data.get("status") != "authorization_package_only":
+        error("status must be authorization_package_only")
+        ok = False
+    if data.get("prototype_implemented") is not False:
+        error("prototype_implemented must be false")
+        ok = False
+    if data.get("prototype_authorized_in_this_sprint") is not False:
+        error("prototype_authorized_in_this_sprint must be false")
+        ok = False
+    if data.get("future_sprint_72_may_consider_implementation") is not True:
+        error("future_sprint_72_may_consider_implementation must be true")
         ok = False
     for flag in [
-        "prototype_authorized",
         "public_route_authorized",
         "public_engine_authorized",
         "input_system_authorized",
@@ -166,42 +192,28 @@ def validate_charter_json() -> bool:
         "engine_boundary_charter",
         "evidence_posture_engine_model_v0",
         "output_language_guardrail_model_v1",
+        "internal_non_public_engine_prototype_charter",
+        "internal_prototype_admissibility_model",
+        "internal_prototype_fixture_policy",
         "public_reference_seo_authority_map_v1",
     }
     if not required_auth.issubset(authority):
         error("source_authority missing required entries")
         ok = False
-    fixture = data.get("fixture_policy", {})
-    prohibited_fix = fixture.get("prohibited_classes", [])
-    for item in [
-        "real_person_accusation",
-        "active_news_event",
-        "political_claim",
-        "company_fraud_claim",
-        "legal_dispute",
-        "private_screenshots",
-        "personal_messages",
-        "uploaded_user_files",
-        "external_fact_check_target",
-    ]:
-        if item not in prohibited_fix:
-            error(f"fixture policy missing prohibited class: {item}")
-            ok = False
-    outputs = data.get("output_boundaries", {}).get("prohibited_outputs", [])
-    for item in PROHIBITED_OUTPUTS:
-        if item not in outputs:
-            error(f"output boundary missing prohibited: {item}")
-            ok = False
-    gate = data.get("future_authorization_gate", {})
-    if gate.get("sprint_70_authorizes_prototype") is not False:
-        error("future_authorization_gate must state sprint_70_authorizes_prototype false")
+    paths = data.get("file_path_boundaries", {})
+    if paths.get("sprint_71_creates_directory") is not False:
+        error("file_path_boundaries must state sprint_71_creates_directory false")
         ok = False
-    if gate.get("next_consideration_sprint") != "Sprint 71":
-        error("future_authorization_gate must reference Sprint 71")
+    gate = data.get("future_sprint_gate", {})
+    if gate.get("sprint_71_authorizes_implementation") is not False:
+        error("future_sprint_gate must state sprint_71_authorizes_implementation false")
+        ok = False
+    if gate.get("next_implementation_sprint") != "Sprint 72":
+        error("future_sprint_gate must reference Sprint 72")
         ok = False
     boundaries = data.get("operational_boundaries", {})
     for key in [
-        "no_prototype_implementation",
+        "no_prototype_implementation_in_sprint_71",
         "no_public_engine",
         "no_output_generator",
         "no_upload",
@@ -234,6 +246,9 @@ def validate_surface() -> bool:
         if path in registered:
             error(f"forbidden route registered: {path}")
             ok = False
+    if FUTURE_IMPL_DIR.is_dir():
+        error("internal/prototypes/controlled-engine-v0 must not exist in Sprint 71")
+        ok = False
     for pattern in FORBIDDEN_IMPL_PATTERNS:
         if list(ROOT.rglob(pattern)):
             error(f"prototype implementation file must not exist: {pattern}")
@@ -264,40 +279,45 @@ def validate_surface() -> bool:
 
 def validate_governance() -> bool:
     ok = True
-    if "DEC-088" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-088 missing from DECISION_LOG.md")
+    if "DEC-089" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-089 missing from DECISION_LOG.md")
         ok = False
-    if "validate_internal_non_public_engine_prototype_charter.py" not in (
+    if "validate_controlled_internal_prototype_v0_authorization_package.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 70 validator")
+        error("validate_all.py must include Sprint 71 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
+    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_CONTROLLED_INTERNAL_PROTOTYPE_V0_IMPLEMENTATION_SPRINT:
+        error("publisher status must be blocked_until_controlled_internal_prototype_v0_implementation_sprint")
+        ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
     if not any(
-        c.get("claim_id") == "CLAIM-0072"
+        c.get("claim_id") == "CLAIM-0073"
         for c in load_json("data/evidence-ledger.json").get("claims", [])
     ):
-        error("CLAIM-0072 missing")
+        error("CLAIM-0073 missing")
         ok = False
     gates = load_json("data/publisher-quality-gates.json").get("gates", [])
-    if not any(g.get("gate_id") == "PUB-GATE-0065" for g in gates):
-        error("PUB-GATE-0065 missing")
+    if not any(g.get("gate_id") == "PUB-GATE-0066" for g in gates):
+        error("PUB-GATE-0066 missing")
         ok = False
     for doc, needle in [
-        ("ENGINE_BOUNDARY_CHARTER.md", "DEC-088"),
-        ("ENGINE_MODEL_V0.md", "Internal Non-Public Engine Prototype Charter"),
-        ("OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1.md", "Internal Non-Public Engine Prototype Charter"),
+        ("INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md", "DEC-089"),
+        ("INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md", "Authorization Package"),
+        ("INTERNAL_PROTOTYPE_FIXTURE_POLICY.md", "Authorization Package"),
+        ("ENGINE_MODEL_V0.md", "Authorization Package"),
+        ("OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1.md", "Authorization Package"),
     ]:
         if needle not in (ROOT / doc).read_text(encoding="utf-8"):
-            error(f"{doc} must reference prototype charter")
+            error(f"{doc} must reference authorization package")
             ok = False
-    if "Sprint 70 | COMPLETE | G70 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 70 completion row")
+    if "Sprint 71 | COMPLETE | G71 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 71 completion row")
         ok = False
     return ok
 
@@ -320,7 +340,7 @@ def main() -> int:
         fn()
         for fn in [
             validate_artifacts,
-            validate_charter_json,
+            validate_auth_json,
             validate_surface,
             validate_governance,
             validate_cache,

@@ -70,18 +70,19 @@ Live web lookup, external fact-check targets, uploaded user files, account data,
 
 The prototype must not be framed as product, detector, scanner, upload tool, or public report engine. Documentation, filenames, and output structures must preserve non-operational, non-public status.
 
-## Future Sprint 71 Readiness Conditions
+## Future Sprint 72 Readiness Conditions
 
-Sprint 71 may consider Controlled Internal Prototype v0 Authorization Package only if:
+Sprint 72 may consider Controlled Internal Prototype v0 implementation only if:
 
-- DEC-088 charter validation passes
-- this admissibility model is registered in source registry
-- fixture policy is registered
-- publisher status reflects charter validation complete
-- separate explicit DEC authorizes prototype v0
-- prototype-specific validator is written before any implementation file
+- DEC-089 authorization package validation passes
+- Controlled Prototype v0 Implementation Contract is accepted
+- Controlled Prototype v0 Validation Plan is registered
+- Controlled Prototype v0 Disqualification Matrix is registered
+- separate explicit Sprint 72 authorization is given
+- prototype-specific validators are written before or with implementation
 
 ---
 
 *Sprint 70 — Internal Prototype Admissibility Model*
+*Updated Sprint 71 — Authorization Package (DEC-089)*
 *Decision: DEC-088*

@@ -942,6 +942,24 @@
       "failure_condition": "internal_non_public_engine_prototype_charter_not_met",
       "bypassable": false,
       "notes": "Internal Non-Public Engine Prototype Charter completed Sprint 70 (DEC-088). Admissibility conditions, environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, and failure modes documented. Sitemap remains nineteen URLs. No prototype implementation, public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior authorized."
+    },
+    {
+      "gate_id": "PUB-GATE-0066",
+      "name": "Controlled Internal Prototype v0 Authorization Package Gate",
+      "status": "controlled_internal_prototype_v0_authorization_package_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md",
+      "failure_condition": "controlled_internal_prototype_v0_authorization_package_not_met",
+      "bypassable": false,
+      "notes": "Controlled Internal Prototype v0 Authorization Package completed Sprint 71 (DEC-089). Implementation scope, component boundaries, file-path boundaries, fixture boundaries, output boundaries, validation requirements, and disqualification conditions documented. Sitemap remains nineteen URLs. No prototype implementation, executable code, public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior authorized in Sprint 71."
     }
   ],
   "last_reviewed": "2026-06-20"

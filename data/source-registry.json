@@ -5331,6 +5331,86 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 70 prototype charter validator."
+    },
+    {
+      "source_id": "SOURCE-0433",
+      "source_title": "CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md",
+      "source_type": "internal_governance",
+      "location": "CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 controlled internal prototype authorization package."
+    },
+    {
+      "source_id": "SOURCE-0434",
+      "source_title": "CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md",
+      "source_type": "internal_governance",
+      "location": "CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 controlled prototype implementation contract."
+    },
+    {
+      "source_id": "SOURCE-0435",
+      "source_title": "CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md",
+      "source_type": "internal_governance",
+      "location": "CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 controlled prototype validation plan."
+    },
+    {
+      "source_id": "SOURCE-0436",
+      "source_title": "CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md",
+      "source_type": "internal_governance",
+      "location": "CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 controlled prototype disqualification matrix."
+    },
+    {
+      "source_id": "SOURCE-0437",
+      "source_title": "data/controlled-internal-prototype-v0-authorization-package.json",
+      "source_type": "internal_governance",
+      "location": "data/controlled-internal-prototype-v0-authorization-package.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 authorization package structured source of truth."
+    },
+    {
+      "source_id": "SOURCE-0438",
+      "source_title": "data/controlled-internal-prototype-v0-authorization-package.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/controlled-internal-prototype-v0-authorization-package.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 authorization package schema."
+    },
+    {
+      "source_id": "SOURCE-0439",
+      "source_title": "SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 authorization package audit record."
+    },
+    {
+      "source_id": "SOURCE-0440",
+      "source_title": "validators/validate_controlled_internal_prototype_v0_authorization_package.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_controlled_internal_prototype_v0_authorization_package.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 71 authorization package validator."
     }
   ]
 }

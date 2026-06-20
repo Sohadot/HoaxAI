@@ -202,8 +202,15 @@ Existing files at `_internal_prototypes/evidence-posture-workbench/` remain gove
 
 Sprint 70 does not authorize a prototype. It only defines the conditions under which **Sprint 71 — Controlled Internal Prototype v0 Authorization Package** may consider a controlled internal prototype after separate explicit authorization and validation pass.
 
+## Controlled Internal Prototype v0 Authorization Package Status
+
+Controlled Internal Prototype v0 Authorization Package was adopted in Sprint 71 (DEC-089) as the final implementation-authorization layer before any controlled internal prototype may be considered. See `CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md` and `data/controlled-internal-prototype-v0-authorization-package.json`.
+
+Sprint 71 does not authorize implementation. Sprint 72 must be separately prompted, separately validated, and separately committed.
+
 ---
 
 *Sprint 70 — Internal Non-Public Engine Prototype Charter*
+*Updated Sprint 71 — Authorization Package adoption (DEC-089)*
 *Decision: DEC-088*
 *Date: 2026-06-20*

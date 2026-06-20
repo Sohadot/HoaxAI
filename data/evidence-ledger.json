@@ -794,6 +794,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 70 internal non-public engine prototype charter. Sitemap remains nineteen URLs. No prototype implementation authorized."
+    },
+    {
+      "claim_id": "CLAIM-0073",
+      "claim_text": "Hoax.ai has adopted Controlled Internal Prototype v0 Authorization Package as the final authorization layer before any controlled internal prototype implementation may be considered.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md, CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md, CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md, CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md, data/controlled-internal-prototype-v0-authorization-package.json, data/controlled-internal-prototype-v0-authorization-package.schema.json, SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md, DECISION_LOG.md (DEC-089)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 71 authorization package. Sitemap remains nineteen URLs. No prototype implementation authorized in Sprint 71."
     }
   ]
 }

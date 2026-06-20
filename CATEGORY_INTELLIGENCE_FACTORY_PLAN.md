@@ -176,6 +176,8 @@ The Category Intelligence Factory now establishes output-language guardrails bef
 
 The Category Intelligence Factory now defines prototype admissibility before prototype construction. Internal Non-Public Engine Prototype Charter separates the right to reason about prototype architecture from the right to implement a prototype. It defines environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, and failure modes so future prototyping cannot drift into public tool behavior, detector behavior, upload behavior, scoring, verdicts, external fact-checking, or case-specific accusations.
 
+The Category Intelligence Factory now separates prototype authorization from prototype implementation. Controlled Internal Prototype v0 Authorization Package defines permitted future components, prohibited components, file-path boundaries, fixture boundaries, output boundaries, validation requirements, and disqualification conditions before any prototype code exists. This prevents the internal prototype from becoming a public detector, upload tool, score system, API, output generator, demo, or product behavior.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

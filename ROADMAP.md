@@ -2258,6 +2258,46 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 71 — Controlled Internal Prototype v0 Authorization Package
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Create Controlled Internal Prototype v0 Authorization Package defining future implementation scope, boundaries, validation requirements, and disqualification conditions without creating a prototype or executable code.
+
+### Deliverables
+
+- CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md
+- CONTROLLED_PROTOTYPE_V0_IMPLEMENTATION_CONTRACT.md
+- CONTROLLED_PROTOTYPE_V0_VALIDATION_PLAN.md
+- CONTROLLED_PROTOTYPE_V0_DISQUALIFICATION_MATRIX.md
+- data/controlled-internal-prototype-v0-authorization-package.json
+- data/controlled-internal-prototype-v0-authorization-package.schema.json
+- validators/validate_controlled_internal_prototype_v0_authorization_package.py
+- SPRINT_71_CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE_AUDIT.md
+- INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md updated
+- INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md updated
+- INTERNAL_PROTOTYPE_FIXTURE_POLICY.md updated
+- ENGINE_MODEL_V0.md updated
+- OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1.md updated
+- DEC-089 appended to DECISION_LOG.md
+- PUB-GATE-0066 added
+- Publisher status → blocked_until_controlled_internal_prototype_v0_implementation_sprint
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G71 passed.** Controlled Internal Prototype v0 Implementation is the recommended next phase.
+
+### Next Phase
+
+**Sprint 72 — Controlled Internal Prototype v0 Implementation**
+
+Public engine, classifier, upload, scoring, API, analytics, monetization, and public tool behavior remain blocked until explicit governed decisions.
+
+---
+
 ## Sprint 70 — Internal Non-Public Engine Prototype Charter
 
 **Status:** COMPLETE — 2026-06-20

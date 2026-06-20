@@ -220,6 +220,10 @@ Evidence Posture Engine Model v0 maps evidence conditions and protocol structure
 
 Internal Non-Public Engine Prototype Charter (Sprint 70, DEC-088) defines admissibility conditions, fixture policy, environment boundaries, execution limits, and future authorization gates for any later controlled internal prototype. Any future prototype must obey this charter in addition to Engine Model v0 and Output Language Guardrail Model v1. See `INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md` and `data/internal-non-public-engine-prototype-charter-v1.json`.
 
+## Controlled Internal Prototype v0 Authorization Package Dependency
+
+Controlled Internal Prototype v0 Authorization Package (Sprint 71, DEC-089) defines future implementation scope, permitted and prohibited components, file-path boundaries, validation requirements, and disqualification conditions before any prototype code may be written. See `CONTROLLED_INTERNAL_PROTOTYPE_V0_AUTHORIZATION_PACKAGE.md` and `data/controlled-internal-prototype-v0-authorization-package.json`.
+
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
 ---
@@ -227,5 +231,6 @@ No prototype, public route, sitemap entry, input system, output generator, class
 *Sprint 68 — Evidence Posture Engine Model v0*
 *Updated Sprint 69 — Output Language Guardrail Model v1 dependency (DEC-087)*
 *Updated Sprint 70 — Internal Non-Public Engine Prototype Charter dependency (DEC-088)*
+*Updated Sprint 71 — Authorization Package dependency (DEC-089)*
 *Decision: DEC-086*
 *Date: 2026-06-20*

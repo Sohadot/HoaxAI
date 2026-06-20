@@ -86,7 +86,12 @@ Before any prototype uses fixtures, a fixture validator must confirm:
 - no real-person or current-event patterns detected
 - fixture output expectations remain non-verdict
 
+## Authorization Package Alignment
+
+Controlled Internal Prototype v0 Authorization Package (Sprint 71, DEC-089) governs fixture authorization boundaries for any future Sprint 72 implementation. Sprint 71 does not create fixture data files.
+
 ---
 
 *Sprint 70 — Internal Prototype Fixture Policy*
+*Updated Sprint 71 — Authorization Package alignment (DEC-089)*
 *Decision: DEC-088*

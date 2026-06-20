@@ -2335,3 +2335,29 @@ Hoax.ai now has Evidence Posture Standard v1, Evidence Posture Protocol v1 Draft
 - No input, output generator, classifier, scorer, API, JavaScript, analytics, upload, form, or public tool behavior is authorized.
 - Sprint 71 may consider a Controlled Internal Prototype v0 only after this charter passes validation and a separate explicit sprint authorizes it.
 
+---
+
+## DEC-089 — Controlled Internal Prototype v0 Authorization Package Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Controlled Internal Prototype v0 Authorization Package as the final implementation-authorization layer before any controlled internal prototype may be considered. The package defines future implementation scope, permitted future components, prohibited future components, file-path boundaries, fixture authorization boundaries, output authorization boundaries, validation requirements, disqualification conditions, and future sprint gates. This sprint does not create a prototype, executable code, public route, sitemap entry, public engine behavior, classifier behavior, upload workflow, scoring system, API, analytics, forms, JavaScript, DNS/Cloudflare change, custom-domain launch, monetization, external communication, output generator, or public tool behavior.
+
+### Rationale
+
+Sprint 70 established prototype admissibility. Sprint 71 now translates admissibility into a controlled implementation authorization package so that a later Sprint 72 cannot drift into public tool behavior, detector behavior, score behavior, output generation, upload handling, API behavior, real-case fixture use, or public exposure. The package separates authorization planning from implementation.
+
+### Implications
+
+- Controlled Internal Prototype v0 Authorization Package may be created.
+- Controlled Prototype v0 Implementation Contract may be created.
+- Controlled Prototype v0 Validation Plan may be created.
+- Controlled Prototype v0 Disqualification Matrix may be created.
+- No prototype implementation may be created.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- Sprint 72 may consider Controlled Internal Prototype v0 implementation only after Sprint 71 passes validation and a separate explicit sprint authorizes implementation.
+
