@@ -1671,6 +1671,40 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Internal Prototype Traceability and Interpretability Audit v1 per DEC-092."
+    },
+    {
+      "claim_id": "CLAIM-0077",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md",
+        "INTERNAL_PROTOTYPE_FIXTURE_TAXONOMY_V1.md",
+        "INTERNAL_PROTOTYPE_COVERAGE_GAP_ANALYSIS_V1.md",
+        "INTERNAL_PROTOTYPE_FUTURE_FIXTURE_ADMISSION_CRITERIA.md",
+        "data/internal-prototype-fixture-coverage-matrix-v1.json",
+        "data/internal-prototype-fixture-coverage-matrix-v1.schema.json",
+        "internal/prototypes/controlled-engine-v0/fixture_coverage_analyzer.py",
+        "internal/prototypes/controlled-engine-v0/fixture_coverage_harness.py",
+        "validators/validate_internal_prototype_fixture_coverage_matrix_v1.py",
+        "SPRINT_75_INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0463",
+        "SOURCE-0464",
+        "SOURCE-0465",
+        "SOURCE-0466",
+        "SOURCE-0467",
+        "SOURCE-0468",
+        "SOURCE-0469",
+        "SOURCE-0470",
+        "SOURCE-0471",
+        "SOURCE-0472"
+      ],
+      "support_scope": "internal prototype fixture coverage matrix v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal Prototype Fixture Coverage Matrix v1 per DEC-093."
     }
   ],
   "last_reviewed": "2026-06-20"

@@ -13,6 +13,7 @@ Test whether Evidence Posture Engine Model v0, Output Language Guardrail Model v
 - Map caveat family IDs
 - Run output guardrail checks on internal structures
 - Attach internal traceability and interpretability fields
+- Analyze governed fixture coverage as internal structured objects
 - Run deterministic in-memory validation harness
 
 ## Prohibited Behavior
@@ -23,6 +24,7 @@ Test whether Evidence Posture Engine Model v0, Output Language Guardrail Model v
 - Scoring, fake/real labels, verdicts, accusations
 - Natural-language reports, result cards, exports
 - Public explanations, rendered interpretability, or report-shape narratives
+- Public benchmarks, coverage reports, or performance rankings
 - Deployment, analytics, JavaScript public behavior
 
 ## Source Authority Stack
@@ -56,6 +58,8 @@ Sprint 72 includes `validators/validate_controlled_internal_prototype_v0_impleme
 Sprint 73 adds ten synthetic fixtures, `guardrail_regression.py`, `regression_harness.py`, and `HARDENING_COVERAGE.md`.
 
 Sprint 74 adds `traceability_mapper.py`, `interpretability_auditor.py`, `traceability_harness.py`, and internal traceability documentation.
+
+Sprint 75 adds `fixture_coverage_analyzer.py`, `fixture_coverage_harness.py`, and Internal Prototype Fixture Coverage Matrix v1 governance documents.
 
 ## Future Removal/Rollback Rule
 

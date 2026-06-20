@@ -104,3 +104,7 @@ The internal prototype may produce trace IDs and structured explanation objects,
 ## 10. Future Use Boundary
 
 Traceability may support future internal debugging and governance audits only. It does not authorize public interpretability UI, public reports, or public engine behavior.
+
+## 11. Fixture Coverage Matrix Linkage
+
+Internal Prototype Fixture Coverage Matrix v1 (Sprint 75, DEC-093) maps traceability field coverage across synthetic fixtures and identifies gaps for future authorized fixture expansion.

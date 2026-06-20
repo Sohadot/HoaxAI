@@ -136,6 +136,7 @@
     "publisher_blocked_until_controlled_internal_prototype_v0_validation",
     "publisher_blocked_until_controlled_internal_prototype_v0_hardening_validation",
     "publisher_blocked_until_internal_prototype_traceability_interpretability_audit_validation",
+    "publisher_blocked_until_internal_prototype_fixture_coverage_matrix_validation",
     "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [

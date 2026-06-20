@@ -838,6 +838,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 74 traceability and interpretability audit. Sitemap remains nineteen URLs. No public explanation or report generation authorized."
+    },
+    {
+      "claim_id": "CLAIM-0077",
+      "claim_text": "Hoax.ai has adopted Internal Prototype Fixture Coverage Matrix v1 to govern controlled internal prototype fixture coverage across posture states, evidence dimensions, protocol steps, standard principles, boundary checks, caveat families, guardrail rules, forbidden transformations, traceability fields, and regression vectors.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md, INTERNAL_PROTOTYPE_FIXTURE_TAXONOMY_V1.md, INTERNAL_PROTOTYPE_COVERAGE_GAP_ANALYSIS_V1.md, INTERNAL_PROTOTYPE_FUTURE_FIXTURE_ADMISSION_CRITERIA.md, data/internal-prototype-fixture-coverage-matrix-v1.json, data/internal-prototype-fixture-coverage-matrix-v1.schema.json, internal/prototypes/controlled-engine-v0/fixture_coverage_analyzer.py, internal/prototypes/controlled-engine-v0/fixture_coverage_harness.py, validators/validate_internal_prototype_fixture_coverage_matrix_v1.py, SPRINT_75_INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md, DECISION_LOG.md (DEC-093)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 75 fixture coverage matrix. Sitemap remains nineteen URLs. No public benchmark or report authorized."
     }
   ]
 }

@@ -90,8 +90,13 @@ Before any prototype uses fixtures, a fixture validator must confirm:
 
 Controlled Internal Prototype v0 Authorization Package (Sprint 71, DEC-089) governs fixture authorization boundaries for any future Sprint 72 implementation. Sprint 71 does not create fixture data files.
 
+## Coverage Matrix Alignment
+
+Internal Prototype Fixture Coverage Matrix v1 (Sprint 75, DEC-093) governs what existing synthetic fixtures cover and which future fixtures may be admitted. Future fixture expansion must close named coverage gaps and cannot be justified by count alone.
+
 ---
 
 *Sprint 70 — Internal Prototype Fixture Policy*
 *Updated Sprint 71 — Authorization Package alignment (DEC-089)*
+*Updated Sprint 75 — Coverage Matrix alignment (DEC-093)*
 *Decision: DEC-088*

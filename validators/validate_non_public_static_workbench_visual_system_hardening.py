@@ -421,6 +421,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_controlled_internal_prototype_v0_validation",
         "blocked_until_controlled_internal_prototype_v0_hardening_validation",
         "blocked_until_internal_prototype_traceability_interpretability_audit_validation",
+        "blocked_until_internal_prototype_fixture_coverage_matrix_validation",
     ):
         error(f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_HARDENING}")
         ok = False

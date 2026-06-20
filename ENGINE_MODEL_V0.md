@@ -232,6 +232,10 @@ Controlled Internal Prototype v0 was implemented in Sprint 72 (DEC-090) under `i
 
 Internal Prototype Traceability and Interpretability Audit v1 (Sprint 74, DEC-092) adds deterministic trace IDs, fixture-to-protocol mappings, protocol-to-standard mappings, boundary-to-caveat mappings, and guardrail-to-forbidden-transformation mappings for internal auditability only. It does not authorize public explanation output.
 
+## Internal Fixture Coverage Matrix Status
+
+Internal Prototype Fixture Coverage Matrix v1 (Sprint 75, DEC-093) governs synthetic fixture coverage across posture states, evidence dimensions, protocol steps, standard principles, boundary checks, caveat families, guardrail rules, forbidden transformations, traceability fields, and regression vectors. Coverage is a governance map, not a score. Future fixture expansion must close named gaps.
+
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
 ---
@@ -242,5 +246,6 @@ No prototype, public route, sitemap entry, input system, output generator, class
 *Updated Sprint 71 — Authorization Package dependency (DEC-089)*
 *Updated Sprint 72 — Controlled Internal Prototype v0 implementation status (DEC-090)*
 *Updated Sprint 74 — Internal traceability and interpretability audit status (DEC-092)*
+*Updated Sprint 75 — Internal fixture coverage matrix status (DEC-093)*
 *Decision: DEC-086*
 *Date: 2026-06-20*

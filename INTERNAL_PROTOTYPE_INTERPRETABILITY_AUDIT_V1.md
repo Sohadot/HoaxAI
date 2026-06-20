@@ -62,3 +62,7 @@ The audit permits structured interpretability objects only. It does not permit n
 - trace without source authority
 - explanation becoming report
 - report-shape drift
+
+## Future Coverage Linkage
+
+Internal Prototype Fixture Coverage Matrix v1 (Sprint 75, DEC-093) verifies that required interpretability fields remain covered across all synthetic fixtures without generating public explanations.

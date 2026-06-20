@@ -184,6 +184,8 @@ The Category Intelligence Factory now hardens the controlled internal prototype 
 
 The Category Intelligence Factory now adds internal traceability and interpretability audit infrastructure to its controlled internal prototype. Each internal result must be traceable from synthetic fixture basis through protocol steps, standard principles, boundary checks, caveat triggers, guardrail rules, and forbidden-transformation blocks. This establishes prototype explainability without creating a public explanation layer, report generator, public engine, output generator, API, upload workflow, scoring, JavaScript behavior, external lookup, or tool behavior.
 
+The Category Intelligence Factory now governs fixture coverage rather than fixture volume. Internal Prototype Fixture Coverage Matrix v1 maps synthetic fixtures across posture states, evidence dimensions, protocol steps, standard principles, boundary checks, caveat families, guardrail rules, forbidden transformations, traceability fields, fixture-policy controls, and regression vectors. Future fixture expansion must close named gaps and cannot be justified by count alone.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

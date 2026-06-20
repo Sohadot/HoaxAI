@@ -2438,3 +2438,30 @@ Sprint 72 implemented Controlled Internal Prototype v0, and Sprint 73 hardened f
 - No public explanation layer, report generator, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
 - Any future public-facing interpretability or reporting concept requires separate explicit sprint authorization.
 
+---
+
+## DEC-093 — Internal Prototype Fixture Coverage Matrix v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Prototype Fixture Coverage Matrix v1 as an internal, non-public coverage-governance layer for Controlled Internal Prototype v0. The sprint defines fixture taxonomy, coverage dimensions, posture-state coverage, evidence-condition coverage, protocol-step coverage, standard-principle coverage, boundary-check coverage, caveat-family coverage, guardrail-rule coverage, forbidden-transformation coverage, traceability-field coverage, fixture-policy coverage, regression-vector coverage, coverage gaps, and future fixture admission criteria. This sprint does not create public benchmarks, public reports, public routes, sitemap entries, public engine behavior, classifier behavior, upload workflows, scoring systems, APIs, analytics, forms, JavaScript, DNS/Cloudflare changes, custom-domain launch, monetization, external communication, public output generator, or public tool behavior.
+
+### Rationale
+
+Sprint 72 implemented Controlled Internal Prototype v0, Sprint 73 hardened fixture and guardrail regression coverage, and Sprint 74 added traceability and interpretability audit infrastructure. Sprint 75 now prevents fixture expansion from becoming volume-driven by establishing governed coverage measurement. Future fixtures must close named gaps rather than increase count for its own sake.
+
+### Implications
+
+- Internal Prototype Fixture Coverage Matrix v1 may be created.
+- Fixture taxonomy may be created.
+- Coverage gap analysis may be created.
+- Future fixture admission criteria may be created.
+- Internal fixture coverage analyzer and harness may be added.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
+- Any future fixture expansion requires separate explicit sprint authorization and must reference named coverage gaps.
+

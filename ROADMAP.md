@@ -2258,6 +2258,46 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 75 — Internal Prototype Fixture Coverage Matrix v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Convert controlled internal prototype fixtures from examples into a governed coverage system without public benchmarks, reports, or operational product behavior.
+
+### Deliverables
+
+- INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md
+- INTERNAL_PROTOTYPE_FIXTURE_TAXONOMY_V1.md
+- INTERNAL_PROTOTYPE_COVERAGE_GAP_ANALYSIS_V1.md
+- INTERNAL_PROTOTYPE_FUTURE_FIXTURE_ADMISSION_CRITERIA.md
+- data/internal-prototype-fixture-coverage-matrix-v1.json
+- data/internal-prototype-fixture-coverage-matrix-v1.schema.json
+- internal/prototypes/controlled-engine-v0/fixture_coverage_analyzer.py
+- internal/prototypes/controlled-engine-v0/fixture_coverage_harness.py
+- validators/validate_internal_prototype_fixture_coverage_matrix_v1.py
+- SPRINT_75_INTERNAL_PROTOTYPE_FIXTURE_COVERAGE_MATRIX_V1.md
+- DEC-093 appended to DECISION_LOG.md
+- PUB-GATE-0070 added
+- Publisher status -> blocked_until_internal_prototype_fixture_coverage_matrix_validation
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required.  
+`py -3 internal/prototypes/controlled-engine-v0/fixture_coverage_harness.py` — PASS required.  
+`py -3 internal/prototypes/controlled-engine-v0/traceability_harness.py` — PASS required.  
+`py -3 internal/prototypes/controlled-engine-v0/regression_harness.py` — PASS required.
+
+### Gate
+
+**Gate G75 passed.** Targeted Synthetic Fixture Expansion v1 is the recommended next phase.
+
+### Next Phase
+
+**Sprint 76 — Targeted Synthetic Fixture Expansion v1**
+
+No public benchmark, report, explanation layer, public engine, API, upload, scoring, or public tool behavior is authorized.
+
+---
+
 ## Sprint 74 — Internal Prototype Traceability and Interpretability Audit v1
 
 **Status:** COMPLETE — 2026-06-20

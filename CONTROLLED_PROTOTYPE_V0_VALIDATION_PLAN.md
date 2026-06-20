@@ -79,6 +79,13 @@ Before Sprint 72 implementation begins:
 - Traceability must remain structured internal data only
 - No natural-language report generation or public explanation rendering
 
+## Fixture Coverage Checks
+
+- Fixture coverage must be measured against governed coverage dimensions
+- Coverage statuses are qualitative governance labels, not scores
+- Future fixtures must reference named coverage gaps
+- No fixture may be added for volume alone
+
 ## Prototype Rollback Checks
 
 If disqualification triggers:
