@@ -48,3 +48,5 @@ Six targeted fixtures close six named gap categories without increasing fixture 
 ## Why No Public Benchmark Is Created
 
 Coverage measurement remains internal, synthetic, and non-scoring. No public report or benchmark surface is authorized.
+
+Sprint 78 guardrail red-team validation (DEC-096) adds linguistic pressure testing without changing fixture count.

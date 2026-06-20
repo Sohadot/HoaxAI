@@ -44,4 +44,8 @@ Run compound boundary stress validation (Sprint 77+):
 
 `py -3 internal/prototypes/controlled-engine-v0/compound_boundary_stress_harness.py`
 
+Run guardrail red-team validation (Sprint 78+):
+
+`py -3 internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py`
+
 Do not deploy, link publicly, or treat this as a product feature.

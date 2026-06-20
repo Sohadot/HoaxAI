@@ -331,6 +331,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G78: Internal Prototype Guardrail Red-Team Pack v1
+
+Gate G78 is passed after `INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md`, `INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md`, `INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md`, and `INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md` exist; `data/internal-prototype-guardrail-red-team-pack-v1.json` and `data/internal-prototype-guardrail-red-team-pack-v1.schema.json` exist; `internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py` and `guardrail_red_team_harness.py` exist; guardrail red-team harness passes; fixture count remains 16; no new fixtures are added; at least 16 red-team vectors exist; decision_ref is DEC-096; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public benchmark/report/generator is introduced; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_internal_prototype_guardrail_red_team_pack_v1.py` passes; compound boundary stress harness, targeted fixture expansion harness, fixture coverage harness, traceability harness, and regression harness pass; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
+
 ## G77: Internal Prototype Compound Boundary Stress Test v1
 
 Gate G77 is passed after `INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_TEST_V1.md`, `INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_MATRIX_V1.md`, and `INTERNAL_PROTOTYPE_BOUNDARY_COLLAPSE_PREVENTION_MODEL_V1.md` exist; `data/internal-prototype-compound-boundary-stress-test-v1.json` and `data/internal-prototype-compound-boundary-stress-test-v1.schema.json` exist; `internal/prototypes/controlled-engine-v0/compound_boundary_stress_analyzer.py` and `compound_boundary_stress_harness.py` exist; compound boundary stress harness passes; fixture count remains 16; no new fixtures are added; at least 8 stress cases exist; decision_ref is DEC-095; sitemap remains exactly 19 URLs; route registry remains 19 entries; no new public route is created; no public benchmark/report/generator is introduced; no public output generator, engine, tool, API, upload, or scoring behavior is introduced; no external API/network behavior exists; `validators/validate_internal_prototype_compound_boundary_stress_test_v1.py` passes; targeted fixture expansion harness, fixture coverage harness, traceability harness, and regression harness pass; validate_all.py PASS; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
@@ -484,6 +488,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 78 | COMPLETE | G78 passed — Internal Prototype Guardrail Red-Team Pack v1 |
 | Sprint 77 | COMPLETE | G77 passed — Internal Prototype Compound Boundary Stress Test v1 |
 | Sprint 76 | COMPLETE | G76 passed — Targeted Synthetic Fixture Expansion v1 |
 | Sprint 75 | COMPLETE | G75 passed — Internal Prototype Fixture Coverage Matrix v1 |
@@ -499,7 +504,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 65 | COMPLETE | G65 passed — Evidence Field visual system and accessibility hardened |
 | Sprint 64 | COMPLETE | G64 passed — Evidence Field Static Interface Embodiment v1 |
 | Sprint 63 | COMPLETE | G63 passed — Evidence Field Interface Thesis created |
-| Sprint 76+ | READY | G77 passed — Internal Prototype Guardrail Red-Team Pack v1 when governed; public benchmark blocked |
+| Sprint 76+ | READY | G78 passed — Internal Prototype Output Admissibility Contract v1 when governed; public benchmark blocked |
 
 ## Governing Sentence
 

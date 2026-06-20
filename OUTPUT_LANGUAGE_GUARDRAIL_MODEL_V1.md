@@ -271,6 +271,8 @@ Internal Prototype Fixture Coverage Matrix v1 (Sprint 75, DEC-093) maps forbidde
 
 Internal Prototype Compound Boundary Stress Test v1 (Sprint 77, DEC-095) validates compound boundary pressure against existing fixtures. Stress testing is internal-only and does not authorize public benchmarks, reports, scoring, or output generation.
 
+Internal Prototype Guardrail Red-Team Pack v1 (Sprint 78, DEC-096) pressure-tests forbidden language collapse under adversarial linguistic vectors. Red-team results remain internal structured validation objects only.
+
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
 ---
@@ -282,5 +284,6 @@ No prototype, public route, sitemap entry, input system, output generator, class
 *Updated Sprint 74 — Internal traceability and interpretability audit status (DEC-092)*
 *Updated Sprint 75 — Internal fixture coverage matrix status (DEC-093)*
 *Updated Sprint 77 — Internal compound boundary stress test status (DEC-095)*
+*Updated Sprint 78 — Internal guardrail red-team pack status (DEC-096)*
 *Decision: DEC-087*
 *Date: 2026-06-20*

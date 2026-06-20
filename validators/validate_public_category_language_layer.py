@@ -465,6 +465,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_internal_prototype_fixture_coverage_matrix_validation",
         "blocked_until_targeted_synthetic_fixture_expansion_v1_validation",
         "blocked_until_internal_prototype_compound_boundary_stress_test_validation",
+        "blocked_until_internal_prototype_guardrail_red_team_pack_validation",
     ):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_CATEGORY_LANGUAGE}, "

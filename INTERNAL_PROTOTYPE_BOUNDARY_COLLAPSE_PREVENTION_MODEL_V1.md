@@ -58,5 +58,5 @@ Rollback violating changes, re-run all internal harnesses, and document failure 
 ## Future Hardening Candidates
 
 - triple-boundary compound stress scenarios
-- guardrail red-team negative vectors under compound activation
+- guardrail red-team linguistic pressure (Sprint 78 addresses primary vector set)
 - EP-P17 full forbidden-output family stress under compound caveats

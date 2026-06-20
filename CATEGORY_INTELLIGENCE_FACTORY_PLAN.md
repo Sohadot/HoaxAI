@@ -190,6 +190,8 @@ The Category Intelligence Factory now expands synthetic fixtures only through na
 
 The Category Intelligence Factory now stress-tests compound boundary pressure rather than treating boundary checks as isolated controls. Internal Prototype Compound Boundary Stress Test v1 verifies that provenance gaps, context collapse, claim drift, evidence limitation, attribution boundary risk, output boundary risk, source weakness, and synthetic fragility cannot collapse into verdicts, scores, fake/real labels, accusations, report-shape outputs, or detector behavior under compound conditions.
 
+The Category Intelligence Factory now pressure-tests output-language guardrails using internal red-team vectors. Internal Prototype Guardrail Red-Team Pack v1 verifies that linguistic pressure cannot collapse evidence posture into verdicts, scores, fake/real labels, accusations, certification language, detector behavior, result-card shape, public-report shape, or confidence percentages.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

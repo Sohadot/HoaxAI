@@ -5901,6 +5901,106 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 77 stress test validator."
+    },
+    {
+      "source_id": "SOURCE-0490",
+      "source_title": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 guardrail red-team pack."
+    },
+    {
+      "source_id": "SOURCE-0491",
+      "source_title": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 red-team vector matrix."
+    },
+    {
+      "source_id": "SOURCE-0492",
+      "source_title": "INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 forbidden language collapse model."
+    },
+    {
+      "source_id": "SOURCE-0493",
+      "source_title": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 red-team results policy."
+    },
+    {
+      "source_id": "SOURCE-0494",
+      "source_title": "data/internal-prototype-guardrail-red-team-pack-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-guardrail-red-team-pack-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 red-team pack JSON."
+    },
+    {
+      "source_id": "SOURCE-0495",
+      "source_title": "data/internal-prototype-guardrail-red-team-pack-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-prototype-guardrail-red-team-pack-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 red-team pack schema."
+    },
+    {
+      "source_id": "SOURCE-0496",
+      "source_title": "internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 guardrail red-team pack module."
+    },
+    {
+      "source_id": "SOURCE-0497",
+      "source_title": "internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py",
+      "source_type": "internal_governance",
+      "location": "internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 guardrail red-team harness."
+    },
+    {
+      "source_id": "SOURCE-0498",
+      "source_title": "validators/validate_internal_prototype_guardrail_red_team_pack_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_prototype_guardrail_red_team_pack_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 red-team pack validator."
+    },
+    {
+      "source_id": "SOURCE-0499",
+      "source_title": "SPRINT_78_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_78_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 78 audit record."
     }
   ]
 }

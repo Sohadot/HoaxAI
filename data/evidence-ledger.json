@@ -871,6 +871,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 77 compound boundary stress test. Fixture count remains sixteen. No public benchmark authorized."
+    },
+    {
+      "claim_id": "CLAIM-0080",
+      "claim_text": "Hoax.ai has adopted Internal Prototype Guardrail Red-Team Pack v1 to verify that adversarial linguistic pressure does not collapse internal output boundaries into verdict, score, accusation, detector language, or public-report shape.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md, INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md, INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md, INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md, data/internal-prototype-guardrail-red-team-pack-v1.json, data/internal-prototype-guardrail-red-team-pack-v1.schema.json, internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py, internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py, validators/validate_internal_prototype_guardrail_red_team_pack_v1.py, SPRINT_78_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md, DECISION_LOG.md (DEC-096)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 78 guardrail red-team pack. Fixture count remains sixteen. No public benchmark authorized."
     }
   ]
 }

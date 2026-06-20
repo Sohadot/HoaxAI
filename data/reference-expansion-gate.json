@@ -139,6 +139,7 @@
     "publisher_blocked_until_internal_prototype_fixture_coverage_matrix_validation",
     "publisher_blocked_until_targeted_synthetic_fixture_expansion_v1_validation",
     "publisher_blocked_until_internal_prototype_compound_boundary_stress_test_validation",
+    "publisher_blocked_until_internal_prototype_guardrail_red_team_pack_validation",
     "governance_scaffolding_frozen_until_10_additional_public_reference_pages"
   ],
   "release_eligibility_rules": [

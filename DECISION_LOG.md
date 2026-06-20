@@ -2520,3 +2520,31 @@ Sprint 76 closed named coverage gaps through targeted synthetic fixtures. Sprint
 - No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
 - Any future stress expansion requires separate explicit sprint authorization.
 
+---
+
+## DEC-096 — Internal Prototype Guardrail Red-Team Pack v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Prototype Guardrail Red-Team Pack v1 as an internal, non-public guardrail pressure-testing layer for Controlled Internal Prototype v0. The sprint defines red-team vector classes, forbidden language collapse targets, required guardrail responses, result handling policy, and internal validation harnesses. It may add synthetic red-team vectors that test whether output-language guardrails resist pressure toward verdicts, scores, fake/real labels, accusations, certification, detector behavior, result-card shape, public report shape, or confidence percentages. This sprint does not add new fixtures, public benchmarks, public reports, public routes, sitemap entries, public engine behavior, classifier behavior, upload workflows, scoring systems, APIs, analytics, forms, JavaScript, DNS/Cloudflare changes, custom-domain launch, monetization, external communication, public output generator, or public tool behavior.
+
+### Rationale
+
+Sprint 77 verified compound boundary stress behavior. Sprint 78 now tests whether adversarial linguistic pressure can collapse internal outputs into forbidden public-facing language. This protects Hoax.ai from verdict leakage, score leakage, fake/real framing, accusation transfer, report-shape drift, and detector-language drift.
+
+### Implications
+
+- Internal guardrail red-team pack may be created.
+- Red-team vector matrix may be created.
+- Forbidden language collapse model may be created.
+- Guardrail red-team results policy may be created.
+- Internal guardrail red-team harness may be added.
+- No new fixtures may be added in this sprint.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No public benchmark, report, explanation layer, public engine, classifier, upload, scoring, API, analytics, JavaScript, form, report exporter, external connector, or public tool behavior is authorized.
+- Any future guardrail red-team expansion requires separate explicit sprint authorization.
+

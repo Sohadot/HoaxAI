@@ -20,6 +20,8 @@ All fixtures remain synthetic, neutral, case-neutral, and free of real-person, c
 - `targeted_fixture_expansion_harness.py` — targeted gap-closure fixture validation (Sprint 76+)
 - `compound_boundary_stress_analyzer.py` — compound boundary stress evaluation (Sprint 77+)
 - `compound_boundary_stress_harness.py` — compound boundary stress validation (Sprint 77+)
+- `guardrail_red_team_pack.py` — guardrail red-team vector definitions (Sprint 78+)
+- `guardrail_red_team_harness.py` — guardrail red-team validation (Sprint 78+)
 - `regression_harness.py` — combined hardening validation entry point
 
 ## Coverage Governance (Sprint 75)
@@ -29,6 +31,10 @@ Ten synthetic fixtures are mapped against posture states, evidence dimensions, p
 ## Compound Boundary Stress Coverage (Sprint 77)
 
 Eight internal stress cases test compound boundary classes against existing 16 synthetic fixtures. Stress testing verifies collapse prevention (no verdict, score, fake/real label, accusation, or report-shape output). See `INTERNAL_PROTOTYPE_COMPOUND_BOUNDARY_STRESS_TEST_V1.md` and `data/internal-prototype-compound-boundary-stress-test-v1.json`.
+
+## Guardrail Red-Team Coverage (Sprint 78)
+
+Sixteen internal red-team vectors pressure-test output-language guardrails against adversarial linguistic collapse (verdict, score, fake/real, accusation, certification, result-card, public-report shape). See `INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md` and `data/internal-prototype-guardrail-red-team-pack-v1.json`.
 
 ## Boundaries Preserved
 

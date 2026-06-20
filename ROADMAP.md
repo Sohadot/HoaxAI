@@ -2292,6 +2292,41 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 78 — Internal Prototype Guardrail Red-Team Pack v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Pressure-test output-language guardrails against adversarial linguistic vectors without public capability, new fixtures, or operational product behavior.
+
+### Deliverables
+
+- INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md
+- INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md
+- INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md
+- INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md
+- data/internal-prototype-guardrail-red-team-pack-v1.json
+- data/internal-prototype-guardrail-red-team-pack-v1.schema.json
+- internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py
+- internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py
+- validators/validate_internal_prototype_guardrail_red_team_pack_v1.py
+- SPRINT_78_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md
+- DEC-096 appended to DECISION_LOG.md
+- PUB-GATE-0073 added
+- Publisher status -> blocked_until_internal_prototype_guardrail_red_team_pack_validation
+
+### Validation
+
+All harnesses and `validate_all.py` — PASS required.
+
+### Gate
+
+**Gate G78 passed.** Internal Prototype Output Admissibility Contract v1 is the recommended next phase.
+
+### Next Phase
+
+**Sprint 79 — Internal Prototype Output Admissibility Contract v1**
+
+---
+
 ## Sprint 76 — Targeted Synthetic Fixture Expansion v1
 
 **Status:** COMPLETE — 2026-06-20

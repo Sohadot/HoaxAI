@@ -1768,6 +1768,40 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Internal Prototype Compound Boundary Stress Test v1 per DEC-095."
+    },
+    {
+      "claim_id": "CLAIM-0080",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+        "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_VECTOR_MATRIX_V1.md",
+        "INTERNAL_PROTOTYPE_FORBIDDEN_LANGUAGE_COLLAPSE_MODEL_V1.md",
+        "INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_RESULTS_POLICY_V1.md",
+        "data/internal-prototype-guardrail-red-team-pack-v1.json",
+        "data/internal-prototype-guardrail-red-team-pack-v1.schema.json",
+        "internal/prototypes/controlled-engine-v0/guardrail_red_team_pack.py",
+        "internal/prototypes/controlled-engine-v0/guardrail_red_team_harness.py",
+        "validators/validate_internal_prototype_guardrail_red_team_pack_v1.py",
+        "SPRINT_78_INTERNAL_PROTOTYPE_GUARDRAIL_RED_TEAM_PACK_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0490",
+        "SOURCE-0491",
+        "SOURCE-0492",
+        "SOURCE-0493",
+        "SOURCE-0494",
+        "SOURCE-0495",
+        "SOURCE-0496",
+        "SOURCE-0497",
+        "SOURCE-0498",
+        "SOURCE-0499"
+      ],
+      "support_scope": "internal prototype guardrail red-team pack v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal Prototype Guardrail Red-Team Pack v1 per DEC-096."
     }
   ],
   "last_reviewed": "2026-06-20"

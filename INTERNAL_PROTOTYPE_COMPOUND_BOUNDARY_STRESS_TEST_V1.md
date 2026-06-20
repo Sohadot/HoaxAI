@@ -82,3 +82,5 @@ Failures include:
 ## 7. Future Use Boundary
 
 Compound stress testing supports internal governance and prototype hardening only. It does not authorize public benchmarking, public reports, public engine behavior, output generation, scoring, API, UI, or real-world claim evaluation.
+
+Sprint 78 adds Internal Prototype Guardrail Red-Team Pack v1 (DEC-096) to pressure-test output-language guardrails against adversarial linguistic collapse under separate sprint authorization.
