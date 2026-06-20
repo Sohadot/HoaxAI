@@ -2309,3 +2309,29 @@ Evidence Posture Engine Model v0 maps evidence conditions, protocol steps, postu
 - No output generator, public engine, classifier, scorer, API, JavaScript, analytics, upload, form, or public tool behavior is authorized.
 - A future internal prototype may be considered only after this guardrail passes validation and a separate sprint explicitly authorizes it.
 
+---
+
+## DEC-088 — Internal Non-Public Engine Prototype Charter Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Internal Non-Public Engine Prototype Charter as a prototype-readiness governance layer. The charter defines admissibility conditions, environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, failure modes, and future authorization gates for any later controlled internal prototype. This sprint does not create a prototype, public route, sitemap entry, public engine behavior, classifier behavior, upload workflow, scoring system, API, analytics, forms, JavaScript, DNS/Cloudflare change, custom-domain launch, monetization, external communication, output generator, or public tool behavior.
+
+### Rationale
+
+Hoax.ai now has Evidence Posture Standard v1, Evidence Posture Protocol v1 Draft, Engine Boundary Charter, Evidence Posture Engine Model v0, and Output Language Guardrail Model v1. A prototype can still damage the asset if it is built before fixture rules, environment controls, execution limits, and public-exposure disqualifiers are defined. Sprint 70 establishes prototype admissibility before any prototype is authorized.
+
+### Implications
+
+- Internal Non-Public Engine Prototype Charter may be created.
+- Internal Prototype Admissibility Model may be created.
+- Internal Prototype Fixture Policy may be created.
+- No prototype implementation may be created.
+- No public route may be created.
+- Sitemap remains exactly 19 URLs.
+- No input, output generator, classifier, scorer, API, JavaScript, analytics, upload, form, or public tool behavior is authorized.
+- Sprint 71 may consider a Controlled Internal Prototype v0 only after this charter passes validation and a separate explicit sprint authorizes it.
+

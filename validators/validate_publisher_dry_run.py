@@ -545,6 +545,7 @@ def validate_state_machine() -> bool:
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
         "blocked_until_evidence_posture_engine_model_v0_validation",
         "blocked_until_output_language_guardrail_model_v1_validation",
+        "blocked_until_internal_non_public_engine_prototype_charter_validation",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
@@ -715,6 +716,7 @@ def validate_cross_file() -> bool:
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
         "blocked_until_evidence_posture_engine_model_v0_validation",
         "blocked_until_output_language_guardrail_model_v1_validation",
+        "blocked_until_internal_non_public_engine_prototype_charter_validation",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must remain blocked from publication, got {status}"

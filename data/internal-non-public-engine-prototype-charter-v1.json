@@ -1,0 +1,201 @@
+{
+  "charter_id": "internal-non-public-engine-prototype-charter-v1",
+  "name": "Internal Non-Public Engine Prototype Charter",
+  "version": "1.0.0",
+  "status": "internal_non_public_prototype_charter_only",
+  "decision_ref": "DEC-088",
+  "sprint": "Sprint 70",
+  "prototype_authorized": false,
+  "public_route_authorized": false,
+  "public_engine_authorized": false,
+  "input_system_authorized": false,
+  "output_generator_authorized": false,
+  "scoring_authorized": false,
+  "api_authorized": false,
+  "javascript_authorized": false,
+  "source_authority": [
+    "evidence_posture_standard_v1",
+    "evidence_posture_protocol_v1_draft",
+    "engine_boundary_charter",
+    "evidence_posture_engine_model_v0",
+    "output_language_guardrail_model_v1",
+    "public_reference_seo_authority_map_v1"
+  ],
+  "admissibility_conditions": [
+    "non_public_only",
+    "no_route",
+    "no_sitemap_entry",
+    "no_public_link",
+    "no_upload_interface",
+    "no_form",
+    "no_api_endpoint",
+    "no_javascript_public_behavior",
+    "governed_fixtures_only",
+    "bounded_non_verdict_output_only",
+    "artifact_subject_separation_preserved",
+    "separate_sprint_authorization_required"
+  ],
+  "environment_boundaries": [
+    "local_only_prototype_environment",
+    "non_public_test_directory",
+    "no_public_route",
+    "no_deployment",
+    "no_analytics",
+    "no_external_api_calls",
+    "no_public_asset_pipeline",
+    "no_crawler_exposure",
+    "no_sitemap_exposure"
+  ],
+  "fixture_policy": {
+    "permitted_classes": [
+      "synthetic_artifact_description",
+      "neutral_claim_text",
+      "governed_source_basis_stub",
+      "provenance_gap_scenario",
+      "context_collapse_scenario",
+      "claim_drift_scenario",
+      "evidence_limitation_scenario",
+      "interpretation_risk_scenario",
+      "not_assessable_scenario",
+      "out_of_scope_scenario"
+    ],
+    "prohibited_classes": [
+      "real_person_accusation",
+      "active_news_event",
+      "political_claim",
+      "celebrity_claim",
+      "company_fraud_claim",
+      "medical_misinformation_case",
+      "legal_dispute",
+      "public_scandal",
+      "private_screenshots",
+      "personal_messages",
+      "uploaded_user_files",
+      "copyrighted_article_reproduction",
+      "external_fact_check_target"
+    ],
+    "metadata_required": [
+      "fixture_id",
+      "synthetic",
+      "case_neutral",
+      "non_personal",
+      "non_accusatory",
+      "prohibited_output_check"
+    ]
+  },
+  "input_boundaries": {
+    "sprint_70_input_system_created": false,
+    "future_input_must_be_fixture_bound": true,
+    "prohibited_input_types": [
+      "user_upload",
+      "public_input",
+      "url_submission",
+      "live_web_lookup",
+      "external_api_ingestion",
+      "account_data_ingestion",
+      "private_data_ingestion",
+      "image_video_upload",
+      "real_world_accusation_submission"
+    ]
+  },
+  "output_boundaries": {
+    "permitted_structures": [
+      "posture_state_candidate",
+      "active_boundary_checks",
+      "triggered_caveats",
+      "prohibited_language_blocks",
+      "required_output_constraints",
+      "not_assessable_reason",
+      "out_of_scope_reason",
+      "guardrail_failure_flags"
+    ],
+    "prohibited_outputs": [
+      "fake/real result",
+      "truth/falsity result",
+      "score",
+      "confidence percentage",
+      "subject guilt",
+      "deception finding",
+      "manipulation proof",
+      "fraud accusation",
+      "legal conclusion",
+      "moderation action",
+      "public result card",
+      "downloadable report",
+      "shareable claim result"
+    ]
+  },
+  "execution_boundaries": {
+    "sprint_70_execution_authorized": false,
+    "future_execution_requires": [
+      "charter_validation_pass",
+      "fixture_policy_validation_pass",
+      "guardrail_model_validation_pass",
+      "engine_model_validation_pass",
+      "prototype_specific_validator_before_implementation",
+      "no_public_access",
+      "no_prohibited_output_emission"
+    ]
+  },
+  "file_boundaries": {
+    "allowed_categories": [
+      "internal_model_adapter",
+      "fixture_parser",
+      "validation_harness",
+      "output_guardrail_checker",
+      "no_public_route_test_harness",
+      "local_only_documentation"
+    ],
+    "prohibited_categories": [
+      "public_route",
+      "client_side_ui",
+      "upload_page",
+      "api_endpoint",
+      "public_javascript",
+      "score_renderer",
+      "detector_result_component",
+      "share_export_report_component",
+      "crawler_exposed_demo"
+    ]
+  },
+  "failure_modes": [
+    "public_route_leakage",
+    "sitemap_leakage",
+    "prototype_as_product_drift",
+    "upload_implication",
+    "detector_drift",
+    "output_generator_drift",
+    "score_drift",
+    "verdict_leakage",
+    "subject_transfer_leakage",
+    "external_fact_check_drift",
+    "live_event_fixture_drift",
+    "case_specific_accusation_drift",
+    "seo_bait_prototype_drift"
+  ],
+  "future_authorization_gate": {
+    "sprint_70_authorizes_prototype": false,
+    "next_consideration_sprint": "Sprint 71",
+    "next_package_name": "Controlled Internal Prototype v0 Authorization Package",
+    "requires_separate_explicit_authorization": true
+  },
+  "operational_boundaries": {
+    "no_prototype_implementation": true,
+    "no_public_engine": true,
+    "no_output_generator": true,
+    "no_classifier": true,
+    "no_detector": true,
+    "no_scanner": true,
+    "no_upload": true,
+    "no_scoring": true,
+    "no_api": true,
+    "no_analytics": true,
+    "no_forms": true,
+    "no_javascript": true,
+    "no_external_outreach": true,
+    "no_dns": true,
+    "no_monetization": true,
+    "no_public_tool_behavior": true
+  },
+  "last_reviewed": "2026-06-20"
+}

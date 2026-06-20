@@ -16,6 +16,7 @@ from public_surface_checks import (
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1,
+    PUBLISHER_STATUS_POST_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER,
     validate_public_surface,
 )
 
@@ -306,10 +307,6 @@ def validate_governance() -> bool:
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
         error("validate_all.py must include Sprint 69 validator")
-        ok = False
-    policy = load_json("data/publisher-governance-policy.json")
-    if policy.get("current_publisher_status") != PUBLISHER_STATUS_POST_OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1:
-        error("publisher status must be blocked_until_output_language_guardrail_model_v1_validation")
         ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:

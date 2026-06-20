@@ -247,12 +247,17 @@ Any future engine model, prototype, report system, or interface must obey this g
 
 ## 16. Future Prototype Gate
 
-A future internal non-public prototype may be considered only after Output Language Guardrail Model v1 validation passes and a separate sprint explicitly authorizes controlled non-public prototyping.
+A future internal non-public prototype may be considered only after Output Language Guardrail Model v1 validation passes, Internal Non-Public Engine Prototype Charter validation passes (DEC-088), and a separate sprint explicitly authorizes controlled non-public prototyping.
+
+## Internal Non-Public Engine Prototype Charter Dependency
+
+Internal Non-Public Engine Prototype Charter (Sprint 70, DEC-088) defines prototype admissibility, fixture policy, environment boundaries, and execution limits before any prototype is authorized. Any future prototype must obey this charter in addition to Engine Model v0 and this guardrail. See `INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md` and `data/internal-non-public-engine-prototype-charter-v1.json`.
 
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
 ---
 
 *Sprint 69 — Output Language Guardrail Model v1*
+*Updated Sprint 70 — Internal Non-Public Engine Prototype Charter dependency (DEC-088)*
 *Decision: DEC-087*
 *Date: 2026-06-20*

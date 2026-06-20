@@ -82,10 +82,17 @@ Output Language Guardrail Model v1 was adopted in Sprint 69 (DEC-087) as an inte
 
 A future internal non-public prototype may be considered only after Output Language Guardrail Model v1 validation passes and a separate sprint explicitly authorizes it.
 
+## Internal Non-Public Engine Prototype Charter Status
+
+Internal Non-Public Engine Prototype Charter was adopted in Sprint 70 (DEC-088) as a prototype-readiness governance layer derived from Evidence Posture Standard v1, Evidence Posture Protocol v1 Draft, this charter, Engine Model v0, and Output Language Guardrail Model v1. The charter defines admissibility conditions, environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, failure modes, and future authorization gates without creating a prototype, public route, input system, output generator, or operational capability. See `INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md` and `data/internal-non-public-engine-prototype-charter-v1.json`.
+
+Sprint 70 does not authorize a prototype. Sprint 71 may only consider a Controlled Internal Prototype v0 after separate explicit authorization.
+
 ---
 
 *Sprint 67 — Engine Boundary Charter and Public Reference SEO Authority Map v1*
 *Updated Sprint 68 — Engine Model v0 adoption (DEC-086)*
 *Updated Sprint 69 — Output Language Guardrail Model v1 (DEC-087)*
+*Updated Sprint 70 — Internal Non-Public Engine Prototype Charter (DEC-088)*
 *Decision: DEC-085*
 *Date: 2026-06-20*

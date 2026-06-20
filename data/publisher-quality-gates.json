@@ -925,6 +925,23 @@
       "failure_condition": "output_language_guardrail_model_v1_not_met",
       "bypassable": false,
       "notes": "Output Language Guardrail Model v1 completed Sprint 69 (DEC-087). Linguistic primitives, posture-state grammar, and boundary transformation rules documented. Sitemap remains nineteen URLs. No output generator, public engine, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior authorized."
+    },
+    {
+      "gate_id": "PUB-GATE-0065",
+      "name": "Internal Non-Public Engine Prototype Charter Gate",
+      "status": "internal_non_public_engine_prototype_charter_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "validation_source": "SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md",
+      "failure_condition": "internal_non_public_engine_prototype_charter_not_met",
+      "bypassable": false,
+      "notes": "Internal Non-Public Engine Prototype Charter completed Sprint 70 (DEC-088). Admissibility conditions, environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, and failure modes documented. Sitemap remains nineteen URLs. No prototype implementation, public engine, input system, output generator, classifier, upload, scoring, API, analytics, forms, JavaScript, monetization, or public tool behavior authorized."
     }
   ],
   "last_reviewed": "2026-06-20"

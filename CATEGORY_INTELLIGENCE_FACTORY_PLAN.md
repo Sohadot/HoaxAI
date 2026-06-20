@@ -174,6 +174,8 @@ The Category Intelligence Factory hardens the Evidence Field interface as a stat
 
 The Category Intelligence Factory now establishes output-language guardrails before any internal prototype exists. Output Language Guardrail Model v1 protects Hoax.ai from verdict leakage, detector drift, score drift, subject-accusation leakage, caveat omission, and boundary-transformation errors. It keeps future engine work inside the evidence-posture system by defining allowed output families, prohibited output families, posture-state language rules, required caveats, and forbidden transformations without creating a public output generator, engine, classifier, upload workflow, API, analytics, JavaScript, or tool behavior.
 
+The Category Intelligence Factory now defines prototype admissibility before prototype construction. Internal Non-Public Engine Prototype Charter separates the right to reason about prototype architecture from the right to implement a prototype. It defines environment boundaries, fixture policy, input boundaries, output boundaries, execution boundaries, file boundaries, and failure modes so future prototyping cannot drift into public tool behavior, detector behavior, upload behavior, scoring, verdicts, external fact-checking, or case-specific accusations.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.

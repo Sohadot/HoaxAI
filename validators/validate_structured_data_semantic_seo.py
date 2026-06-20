@@ -714,6 +714,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_engine_boundary_and_public_reference_seo_authority_map_validation",
         "blocked_until_evidence_posture_engine_model_v0_validation",
         "blocked_until_output_language_guardrail_model_v1_validation",
+        "blocked_until_internal_non_public_engine_prototype_charter_validation",
     ):
         error("publisher-governance-policy: publisher must remain blocked from drafts and publication")
         ok = False

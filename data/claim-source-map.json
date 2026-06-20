@@ -1534,6 +1534,32 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Output Language Guardrail Model v1 per DEC-087."
+    },
+    {
+      "claim_id": "CLAIM-0072",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md",
+        "INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md",
+        "INTERNAL_PROTOTYPE_FIXTURE_POLICY.md",
+        "data/internal-non-public-engine-prototype-charter-v1.json",
+        "data/internal-non-public-engine-prototype-charter-v1.schema.json",
+        "SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0426",
+        "SOURCE-0427",
+        "SOURCE-0428",
+        "SOURCE-0429",
+        "SOURCE-0430",
+        "SOURCE-0431"
+      ],
+      "support_scope": "internal non-public engine prototype charter",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Internal Non-Public Engine Prototype Charter per DEC-088."
     }
   ],
   "last_reviewed": "2026-06-20"

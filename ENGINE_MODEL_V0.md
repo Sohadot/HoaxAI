@@ -210,11 +210,15 @@ The model must prohibit:
 
 ## 13. Future Model Gate
 
-A future internal prototype may be considered only after Engine Model v0 validation passes, Output Language Guardrail Model v1 validation passes (DEC-087), and a separate sprint explicitly authorizes controlled non-public prototyping.
+A future internal prototype may be considered only after Engine Model v0 validation passes, Output Language Guardrail Model v1 validation passes (DEC-087), Internal Non-Public Engine Prototype Charter validation passes (DEC-088), and a separate sprint explicitly authorizes controlled non-public prototyping.
 
 ## Output Language Guardrail Dependency
 
 Evidence Posture Engine Model v0 maps evidence conditions and protocol structure. Output Language Guardrail Model v1 (Sprint 69, DEC-087) maps **allowed and prohibited output language**, linguistic primitives, posture-state grammar, and boundary transformation rules. Any future engine-facing output must obey both the model and the guardrail. See `OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1.md` and `data/output-language-guardrail-model-v1.json`.
+
+## Internal Non-Public Engine Prototype Charter Dependency
+
+Internal Non-Public Engine Prototype Charter (Sprint 70, DEC-088) defines admissibility conditions, fixture policy, environment boundaries, execution limits, and future authorization gates for any later controlled internal prototype. Any future prototype must obey this charter in addition to Engine Model v0 and Output Language Guardrail Model v1. See `INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md` and `data/internal-non-public-engine-prototype-charter-v1.json`.
 
 No prototype, public route, sitemap entry, input system, output generator, classifier, scorer, API, JavaScript surface, or public tool behavior is authorized by this document.
 
@@ -222,5 +226,6 @@ No prototype, public route, sitemap entry, input system, output generator, class
 
 *Sprint 68 — Evidence Posture Engine Model v0*
 *Updated Sprint 69 — Output Language Guardrail Model v1 dependency (DEC-087)*
+*Updated Sprint 70 — Internal Non-Public Engine Prototype Charter dependency (DEC-088)*
 *Decision: DEC-086*
 *Date: 2026-06-20*

@@ -783,6 +783,17 @@
       "status": "active",
       "last_reviewed": "2026-06-20",
       "notes": "Sprint 69 output language guardrail. Sitemap remains nineteen URLs. No output generator or public engine authorized."
+    },
+    {
+      "claim_id": "CLAIM-0072",
+      "claim_text": "Hoax.ai has adopted Internal Non-Public Engine Prototype Charter as a prototype-readiness governance layer before any prototype is authorized.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md, INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md, INTERNAL_PROTOTYPE_FIXTURE_POLICY.md, data/internal-non-public-engine-prototype-charter-v1.json, data/internal-non-public-engine-prototype-charter-v1.schema.json, SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md, DECISION_LOG.md (DEC-088)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-20",
+      "notes": "Sprint 70 internal non-public engine prototype charter. Sitemap remains nineteen URLs. No prototype implementation authorized."
     }
   ]
 }

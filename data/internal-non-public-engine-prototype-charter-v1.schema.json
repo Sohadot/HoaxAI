@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/internal-non-public-engine-prototype-charter-v1.schema.json",
+  "title": "Internal Non-Public Engine Prototype Charter v1",
+  "type": "object",
+  "required": [
+    "charter_id",
+    "version",
+    "status",
+    "decision_ref",
+    "sprint",
+    "prototype_authorized",
+    "public_route_authorized",
+    "public_engine_authorized",
+    "input_system_authorized",
+    "output_generator_authorized",
+    "scoring_authorized",
+    "api_authorized",
+    "javascript_authorized",
+    "source_authority",
+    "admissibility_conditions",
+    "environment_boundaries",
+    "fixture_policy",
+    "input_boundaries",
+    "output_boundaries",
+    "execution_boundaries",
+    "file_boundaries",
+    "failure_modes",
+    "future_authorization_gate",
+    "operational_boundaries"
+  ],
+  "properties": {
+    "charter_id": {
+      "type": "string",
+      "const": "internal-non-public-engine-prototype-charter-v1"
+    },
+    "version": { "type": "string" },
+    "status": {
+      "type": "string",
+      "const": "internal_non_public_prototype_charter_only"
+    },
+    "decision_ref": {
+      "type": "string",
+      "const": "DEC-088"
+    },
+    "sprint": {
+      "type": "string",
+      "const": "Sprint 70"
+    },
+    "prototype_authorized": { "type": "boolean", "const": false },
+    "public_route_authorized": { "type": "boolean", "const": false },
+    "public_engine_authorized": { "type": "boolean", "const": false },
+    "input_system_authorized": { "type": "boolean", "const": false },
+    "output_generator_authorized": { "type": "boolean", "const": false },
+    "scoring_authorized": { "type": "boolean", "const": false },
+    "api_authorized": { "type": "boolean", "const": false },
+    "javascript_authorized": { "type": "boolean", "const": false },
+    "source_authority": {
+      "type": "array",
+      "allOf": [
+        { "contains": { "const": "evidence_posture_standard_v1" } },
+        { "contains": { "const": "evidence_posture_protocol_v1_draft" } },
+        { "contains": { "const": "engine_boundary_charter" } },
+        { "contains": { "const": "evidence_posture_engine_model_v0" } },
+        { "contains": { "const": "output_language_guardrail_model_v1" } },
+        { "contains": { "const": "public_reference_seo_authority_map_v1" } }
+      ]
+    },
+    "admissibility_conditions": { "type": "array", "minItems": 10 },
+    "environment_boundaries": { "type": "array", "minItems": 8 },
+    "fixture_policy": {
+      "type": "object",
+      "required": ["permitted_classes", "prohibited_classes"]
+    },
+    "input_boundaries": { "type": "object" },
+    "output_boundaries": {
+      "type": "object",
+      "required": ["permitted_structures", "prohibited_outputs"]
+    },
+    "execution_boundaries": { "type": "object" },
+    "file_boundaries": {
+      "type": "object",
+      "required": ["allowed_categories", "prohibited_categories"]
+    },
+    "failure_modes": { "type": "array", "minItems": 10 },
+    "future_authorization_gate": { "type": "object" },
+    "operational_boundaries": {
+      "type": "object",
+      "required": [
+        "no_prototype_implementation",
+        "no_public_engine",
+        "no_output_generator",
+        "no_upload",
+        "no_scoring",
+        "no_api",
+        "no_javascript",
+        "no_public_tool_behavior"
+      ],
+      "properties": {
+        "no_prototype_implementation": { "const": true },
+        "no_public_engine": { "const": true },
+        "no_output_generator": { "const": true },
+        "no_upload": { "const": true },
+        "no_scoring": { "const": true },
+        "no_api": { "const": true },
+        "no_javascript": { "const": true },
+        "no_public_tool_behavior": { "const": true }
+      }
+    }
+  },
+  "additionalProperties": true
+}

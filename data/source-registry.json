@@ -5261,6 +5261,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 69 output language guardrail audit record."
+    },
+    {
+      "source_id": "SOURCE-0426",
+      "source_title": "INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 internal non-public engine prototype charter."
+    },
+    {
+      "source_id": "SOURCE-0427",
+      "source_title": "INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 internal prototype admissibility model."
+    },
+    {
+      "source_id": "SOURCE-0428",
+      "source_title": "INTERNAL_PROTOTYPE_FIXTURE_POLICY.md",
+      "source_type": "internal_governance",
+      "location": "INTERNAL_PROTOTYPE_FIXTURE_POLICY.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 internal prototype fixture policy."
+    },
+    {
+      "source_id": "SOURCE-0429",
+      "source_title": "data/internal-non-public-engine-prototype-charter-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-non-public-engine-prototype-charter-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 prototype charter structured source of truth."
+    },
+    {
+      "source_id": "SOURCE-0430",
+      "source_title": "data/internal-non-public-engine-prototype-charter-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/internal-non-public-engine-prototype-charter-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 prototype charter schema."
+    },
+    {
+      "source_id": "SOURCE-0431",
+      "source_title": "SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 prototype charter audit record."
+    },
+    {
+      "source_id": "SOURCE-0432",
+      "source_title": "validators/validate_internal_non_public_engine_prototype_charter.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_internal_non_public_engine_prototype_charter.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 70 prototype charter validator."
     }
   ]
 }

@@ -77,6 +77,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_public_reference_seo_authority_map.py",
     ROOT / "validators" / "validate_evidence_posture_engine_model_v0.py",
     ROOT / "validators" / "validate_output_language_guardrail_model_v1.py",
+    ROOT / "validators" / "validate_internal_non_public_engine_prototype_charter.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

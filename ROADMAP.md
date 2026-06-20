@@ -2258,6 +2258,43 @@ Public engine, classifier, upload, scoring, API, analytics, DNS/Cloudflare, cust
 
 ---
 
+## Sprint 70 — Internal Non-Public Engine Prototype Charter
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Create Internal Non-Public Engine Prototype Charter defining admissibility, environment boundaries, fixture policy, execution limits, output rendering limits, validation gates, failure modes, and future authorization requirements without creating a prototype.
+
+### Deliverables
+
+- INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER.md
+- INTERNAL_PROTOTYPE_ADMISSIBILITY_MODEL.md
+- INTERNAL_PROTOTYPE_FIXTURE_POLICY.md
+- data/internal-non-public-engine-prototype-charter-v1.json
+- data/internal-non-public-engine-prototype-charter-v1.schema.json
+- validators/validate_internal_non_public_engine_prototype_charter.py
+- SPRINT_70_INTERNAL_NON_PUBLIC_ENGINE_PROTOTYPE_CHARTER_AUDIT.md
+- ENGINE_BOUNDARY_CHARTER.md updated
+- ENGINE_MODEL_V0.md updated
+- OUTPUT_LANGUAGE_GUARDRAIL_MODEL_V1.md updated
+- DEC-088 appended to DECISION_LOG.md
+- PUB-GATE-0065 added
+- Publisher status → blocked_until_internal_non_public_engine_prototype_charter_validation
+
+### Validation
+
+`py -3 validators/validate_all.py` — PASS required for sprint closure.
+
+### Gate
+
+**Gate G70 passed.** Controlled Internal Prototype v0 Authorization Package is the recommended next phase.
+
+### Next Phase
+
+**Sprint 71 — Controlled Internal Prototype v0 Authorization Package**
+
+Public engine, classifier, upload, scoring, API, analytics, monetization, and public tool behavior remain blocked until explicit governed decisions.
+
+---
+
 ## Sprint 69 — Output Language Guardrail Model v1
 
 **Status:** COMPLETE — 2026-06-20
