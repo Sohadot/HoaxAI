@@ -561,6 +561,55 @@ a.utility-card:focus-visible {
   color: var(--text-secondary, #a8b3c2);
 }
 
+.reference-summary {
+  margin: 0.75rem 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-secondary, #a8b3c2);
+}
+
+.cite-this-reference-block,
+.retrieval-capsule-block {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border-subtle, #2a3441);
+  border-radius: 6px;
+  background: var(--bg-surface, #141a22);
+}
+
+.cite-this-reference-block h2,
+.retrieval-capsule-block h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cite-reference-dl,
+.retrieval-capsule-dl {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cite-reference-dl dt,
+.retrieval-capsule-dl dt {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 0.85rem;
+}
+
+.cite-reference-dl dt:first-child,
+.retrieval-capsule-dl dt:first-child {
+  margin-top: 0;
+}
+
+.cite-reference-dl dd,
+.retrieval-capsule-dl dd {
+  margin: 0.35rem 0 0 0;
+  color: var(--text-secondary, #a8b3c2);
+}
+
 @media (max-width: 640px) {
   .utility-card-grid,
   .posture-utility-cards,

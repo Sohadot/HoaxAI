@@ -331,6 +331,10 @@ Gate G58 is passed after the four Batch 3 pages are deepened in place with Stand
 
 Gate G59 is passed after `/standard/evidence-posture/` exists with all required standard sections, EPS-001 through EPS-014, five posture states, allowed and prohibited output language, standard matrix, and boundary rules; sitemap contains exactly 17 URLs; exactly one new standard route is created; DEC-077 exists in DECISION_LOG.md; CLAIM-0063 exists; SPRINT_59_EVIDENCE_POSTURE_STANDARD_V1_AUDIT.md exists; `validators/validate_evidence_posture_standard_v1_public.py` exists; validate_all.py PASS; DECISION_LOG chronology validator passes; prototype files are not modified; no Python cache files are tracked or staged; no meta-governance loop resumes; and no engine, classifier, upload, scoring, API, analytics, forms, JavaScript, DNS, Cloudflare, custom domain launch, monetization, or public tool behavior is introduced.
 
+## G90: Public Reference Citation and Retrieval Hardening v1
+
+Gate G90 is passed after `PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md`, `PUBLIC_CITATION_COMPONENT_STANDARD_V1.md`, `PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md`, and `PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md` exist; `data/public-reference-citation-retrieval-hardening-v1.json` and schema exist; homepage and all ten utility/reference pages include Cite This Reference blocks, Retrieval Capsules, stable anchor IDs, and reference summary lines; sitemap has exactly 29 URLs; route registry has exactly 29 entries; no new public route is created; no chatbot, generator, upload, scoring, verdict, detector claim, public API, automated report, JavaScript, or form behavior is introduced; decision_ref is DEC-108; `validators/validate_public_reference_citation_retrieval_hardening_v1.py` passes; validate_all.py PASS; all internal prototype harnesses pass; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
+
 ## G89: Public Reference Answer Surface v1
 
 Gate G89 is passed after `PUBLIC_REFERENCE_ANSWER_SURFACE_V1.md`, `PUBLIC_ANSWER_SURFACE_COMPONENT_STANDARD_V1.md`, and `PUBLIC_REFERENCE_ANSWER_SURFACE_AUDIT_V1.md` exist; `data/public-reference-answer-surface-v1.json` and `data/public-reference-answer-surface-v1.schema.json` exist; homepage and all ten utility/reference pages include Reference Answer blocks with question, short answer, use/do-not-use guidance, and related pages; sitemap has exactly 29 URLs; route registry has exactly 29 entries; no new public route is created; no chatbot, generator, upload, scoring, verdict, detector claim, public API, automated report, JavaScript, or form behavior is introduced; decision_ref is DEC-107; `validators/validate_public_reference_answer_surface_v1.py` passes; validate_all.py PASS; all internal prototype harnesses pass; DECISION_LOG chronology validator passes; no meta-governance loop resumes; and no unrelated untracked files remain.
@@ -528,6 +532,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
+| Sprint 90 | COMPLETE | G90 passed — Public Reference Citation and Retrieval Hardening v1 |
 | Sprint 89 | COMPLETE | G89 passed — Public Reference Answer Surface v1 |
 | Sprint 88 | COMPLETE | G88 passed — Public Reference Source Confidence Layer v1 |
 | Sprint 87 | COMPLETE | G87 passed — Public Reference Authority Internal Linking v1 |

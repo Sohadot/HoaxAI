@@ -1266,6 +1266,24 @@
       "failure_condition": "public_reference_answer_surface_v1_not_met",
       "bypassable": false,
       "notes": "Public Reference Answer Surface v1 completed Sprint 89 (DEC-107). Visible Reference Answer blocks on homepage and ten utility/reference pages. Answer surface is not chatbot, generator, or verdict system. Sitemap remains twenty-nine URLs. No new routes."
+    },
+    {
+      "gate_id": "PUB-GATE-0084",
+      "name": "Public Reference Citation and Retrieval Hardening v1 Gate",
+      "status": "public_reference_citation_retrieval_hardening_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
+      "failure_condition": "public_reference_citation_retrieval_hardening_v1_not_met",
+      "bypassable": false,
+      "notes": "Public Reference Citation and Retrieval Hardening v1 completed Sprint 90 (DEC-108). Cite This Reference blocks, Retrieval Capsules, stable anchors, and reference summaries on eleven pages. Not chatbot, generator, or verdict system. Sitemap remains twenty-nine URLs."
     }
   ],
   "last_reviewed": "2026-06-20"

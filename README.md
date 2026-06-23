@@ -107,3 +107,5 @@ Hoax.ai's public surface connects four manual utility routes and six evidence-ri
 Each homepage and utility/reference page includes a **Source Confidence** block that clarifies support type, what the page can and cannot support, and non-verdict boundaries — source confidence is not a score, verification claim, or detection result.
 
 Each homepage and utility/reference page also includes a **Reference Answer** block with a canonical question, short answer, usage guidance, and non-verdict limits — the answer surface is not a chatbot, generator, or verdict system.
+
+Each page also includes **Cite This Reference** and **Retrieval Capsule** blocks with stable anchor IDs and a reference summary line (utility/reference pages) so citations stay non-verdict and AI retrieval stays structured without JSON-LD, APIs, or generators.

@@ -7659,6 +7659,86 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 validator."
+    },
+    {
+      "source_id": "SOURCE-0598",
+      "source_title": "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 citation retrieval hardening."
+    },
+    {
+      "source_id": "SOURCE-0599",
+      "source_title": "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 citation standard."
+    },
+    {
+      "source_id": "SOURCE-0600",
+      "source_title": "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 retrieval capsule standard."
+    },
+    {
+      "source_id": "SOURCE-0601",
+      "source_title": "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 audit."
+    },
+    {
+      "source_id": "SOURCE-0602",
+      "source_title": "data/public-reference-citation-retrieval-hardening-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-citation-retrieval-hardening-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 hardening JSON."
+    },
+    {
+      "source_id": "SOURCE-0603",
+      "source_title": "data/public-reference-citation-retrieval-hardening-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-citation-retrieval-hardening-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 hardening schema."
+    },
+    {
+      "source_id": "SOURCE-0604",
+      "source_title": "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 record."
+    },
+    {
+      "source_id": "SOURCE-0605",
+      "source_title": "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 90 validator."
     }
   ]
 }

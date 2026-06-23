@@ -2812,3 +2812,28 @@ After Sprint 88 added source-confidence blocks, Hoax.ai needed concise answer su
 - The answer surface is not a chatbot, generator, detector, score, verdict, or report system.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-108 — Public Reference Citation and Retrieval Hardening v1 Adopted
+
+**Date:** 2026-06-20
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Citation and Retrieval Hardening v1 by adding visible Cite This Reference blocks, Retrieval Capsules, stable anchor IDs, and reference summary lines to the homepage, public utility pages, and public reference routes. The layer improves human citation safety and AI retrieval without creating new routes, chatbot behavior, answer generator behavior, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, or real-world case evaluation.
+
+### Rationale
+
+After Sprint 89 added Reference Answer blocks, Hoax.ai needed citation-safe and retrieval-stable structures so humans and AI agents can reference the public surface without mistaking it for a detector, verifier, verdict engine, or case-evaluation system.
+
+### Implications
+
+- Existing public pages may receive citation and retrieval hardening.
+- No new public route is authorized.
+- Sitemap remains 29 URLs.
+- Route registry remains 29 entries.
+- Cite This Reference blocks, Retrieval Capsules, stable anchors, and reference summary lines are authorized.
+- Citation support is not a verdict, score, detector result, public report, chatbot, generator, or truth verification.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, and real-world case evaluation remain unauthorized.
+

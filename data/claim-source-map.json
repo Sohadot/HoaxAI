@@ -2135,6 +2135,36 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Answer Surface v1 per DEC-107."
+    },
+    {
+      "claim_id": "CLAIM-0091",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md",
+        "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md",
+        "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md",
+        "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md",
+        "data/public-reference-citation-retrieval-hardening-v1.json",
+        "index.html",
+        "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
+        "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0598",
+        "SOURCE-0599",
+        "SOURCE-0600",
+        "SOURCE-0601",
+        "SOURCE-0602",
+        "SOURCE-0603",
+        "SOURCE-0604",
+        "SOURCE-0605"
+      ],
+      "support_scope": "public reference citation retrieval hardening v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Citation and Retrieval Hardening v1 per DEC-108."
     }
   ],
   "last_reviewed": "2026-06-20"

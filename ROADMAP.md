@@ -2469,7 +2469,34 @@ All harnesses and `validate_all.py` — PASS required.
 
 ### Next Phase
 
-**Sprint 90 — Public Reference Citation and Retrieval Hardening v1**
+**Sprint 91 — Public Reference Quality Consolidation Audit v1**
+
+---
+
+## Sprint 90 — Public Reference Citation and Retrieval Hardening v1
+
+**Status:** COMPLETE — 2026-06-20
+**Goal:** Add citation-safe Cite This Reference blocks, Retrieval Capsules, stable anchors, and reference summary lines across homepage and ten utility/reference pages.
+
+### Deliverables
+
+- PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md
+- PUBLIC_CITATION_COMPONENT_STANDARD_V1.md
+- PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md
+- PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md
+- data/public-reference-citation-retrieval-hardening-v1.json
+- validators/validate_public_reference_citation_retrieval_hardening_v1.py
+- Citation and retrieval components on eleven pages
+- DEC-108, PUB-GATE-0084
+- Publisher status -> blocked_until_public_reference_citation_retrieval_hardening_validation
+
+### Gate
+
+**Gate G90 passed.** Sprint 91 — Public Reference Quality Consolidation Audit v1 is next.
+
+### Next Phase
+
+**Sprint 91 — Public Reference Quality Consolidation Audit v1**
 
 ---
 

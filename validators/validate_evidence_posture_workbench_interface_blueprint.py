@@ -563,6 +563,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_authority_internal_linking_validation",
         "blocked_until_public_reference_source_confidence_layer_validation",
         "blocked_until_public_reference_answer_surface_validation",
+        "blocked_until_public_reference_citation_retrieval_hardening_validation",
     ):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_WORKBENCH_INTERFACE_BLUEPRINT_VALIDATION}, "

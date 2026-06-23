@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 88 — Public Reference Source Confidence Layer v1."""
+"""Validate Sprint 90 — Public Reference Citation and Retrieval Hardening v1."""
 
 from __future__ import annotations
 
@@ -13,24 +13,22 @@ ROOT = Path(__file__).resolve().parent.parent
 
 from public_surface_checks import (  # noqa: E402
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_AUTHORITY_INTERNAL_LINKING_VALIDATION,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SOURCE_CONFIDENCE_LAYER_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_ANSWER_SURFACE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_VALIDATION,
     validate_public_surface,
 )
 
-LAYER_DOC = "PUBLIC_REFERENCE_SOURCE_CONFIDENCE_LAYER_V1.md"
-STANDARD_DOC = "PUBLIC_SOURCE_CONFIDENCE_COMPONENT_STANDARD_V1.md"
-AUDIT_DOC = "PUBLIC_SOURCE_CONFIDENCE_AUDIT_V1.md"
-LAYER_JSON = "data/public-reference-source-confidence-layer-v1.json"
-LAYER_SCHEMA = "data/public-reference-source-confidence-layer-v1.schema.json"
-SPRINT_AUDIT = "SPRINT_88_PUBLIC_REFERENCE_SOURCE_CONFIDENCE_LAYER_V1.md"
+HARDENING_DOC = "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md"
+CITATION_STD = "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md"
+RETRIEVAL_STD = "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md"
+AUDIT_DOC = "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md"
+HARDENING_JSON = "data/public-reference-citation-retrieval-hardening-v1.json"
+HARDENING_SCHEMA = "data/public-reference-citation-retrieval-hardening-v1.schema.json"
+SPRINT_AUDIT = "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md"
 INDEX = "index.html"
 EXPECTED = 29
 
-ALL_PAGES = {
-    INDEX: "/",
+UTILITY_REFERENCE_PAGES = {
     "manual-evidence-checklist/index.html": "/manual-evidence-checklist/",
     "evidence-posture-map/index.html": "/evidence-posture-map/",
     "synthetic-examples/index.html": "/synthetic-examples/",
@@ -43,24 +41,27 @@ ALL_PAGES = {
     "why-hoax-ai-is-not-a-detector/index.html": "/why-hoax-ai-is-not-a-detector/",
 }
 
-ALLOWED_SUPPORT_MARKERS = [
-    "conceptual definition",
-    "manual utility guidance",
-    "synthetic example",
-    "boundary statement",
-    "repository-governed reference",
+ALL_PAGES = {INDEX: "/", **UTILITY_REFERENCE_PAGES}
+
+HOME_ANCHORS = [
+    "id=\"hero\"",
+    "id=\"public-utilities\"",
+    "id=\"reference-layer\"",
+    "id=\"reference-graph\"",
+    "id=\"source-confidence\"",
+    "id=\"reference-answer\"",
+    "id=\"cite-this-reference\"",
+    "id=\"retrieval-capsule\"",
+    "id=\"boundary\"",
 ]
 
-FORBIDDEN_SUPPORT = [
-    "verified truth",
-    "detected authenticity",
-    "factual determination",
-    "legal determination",
-    "forensic proof",
-    "manipulation finding",
-    "user-submitted evidence",
-    "live detection result",
-    "automated confidence score",
+PAGE_ANCHORS = [
+    "id=\"reference-answer\"",
+    "id=\"source-confidence\"",
+    "id=\"reference-path\"",
+    "id=\"cite-this-reference\"",
+    "id=\"retrieval-capsule\"",
+    "id=\"boundary\"",
 ]
 
 FORBIDDEN_PHRASE_CHECKS = [
@@ -91,21 +92,24 @@ FORBIDDEN_CLAIMS = [
     "deceptive",
 ]
 
+CHATBOT_MARKERS = ["chatbot", "answer generator", "automated response"]
+
 NEGATION_PATTERN = re.compile(
     r"(?:does not|do not|not a|not an|never|no |cannot|can't|without|not)\s+[\w\s\-/]{0,50}",
     re.IGNORECASE,
 )
 
 SOURCE_LOCS = [
-    LAYER_DOC,
-    STANDARD_DOC,
+    HARDENING_DOC,
+    CITATION_STD,
+    RETRIEVAL_STD,
     AUDIT_DOC,
-    LAYER_JSON,
-    LAYER_SCHEMA,
+    HARDENING_JSON,
+    HARDENING_SCHEMA,
     SPRINT_AUDIT,
-    "validators/validate_public_reference_source_confidence_layer_v1.py",
+    "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
     INDEX,
-    *[p for p in ALL_PAGES if p != INDEX],
+    *UTILITY_REFERENCE_PAGES.keys(),
 ]
 
 
@@ -135,22 +139,19 @@ def line_has_unnegated_claim(line: str, claim: str) -> bool:
 
 def validate_artifacts() -> bool:
     ok = True
-    for rel in [LAYER_DOC, STANDARD_DOC, AUDIT_DOC, LAYER_JSON, LAYER_SCHEMA, SPRINT_AUDIT]:
+    for rel in [HARDENING_DOC, CITATION_STD, RETRIEVAL_STD, AUDIT_DOC, HARDENING_JSON, HARDENING_SCHEMA, SPRINT_AUDIT]:
         if not (ROOT / rel).is_file():
             error(f"missing {rel}")
             ok = False
-    data = load_json(LAYER_JSON)
-    if data.get("decision_ref") != "DEC-106":
-        error("decision_ref must be DEC-106")
-        ok = False
-    if data.get("new_public_routes_added") is not False:
-        error("new_public_routes_added must be false")
+    data = load_json(HARDENING_JSON)
+    if data.get("decision_ref") != "DEC-108":
+        error("decision_ref must be DEC-108")
         ok = False
     if len(data.get("pages_updated", [])) != 11:
         error("pages_updated must contain exactly 11 entries")
         ok = False
-    if len(data.get("allowed_support_types", [])) != 5:
-        error("allowed_support_types must contain exactly 5 types")
+    if len(data.get("required_components", [])) != 5:
+        error("required_components must contain exactly 5 components")
         ok = False
     return ok
 
@@ -169,28 +170,41 @@ def validate_counts() -> bool:
     return ok
 
 
-def validate_page(rel: str) -> bool:
+def validate_page(rel: str, is_home: bool = False) -> bool:
     ok = True
     content = (ROOT / rel).read_text(encoding="utf-8")
     lower = content.lower()
     for label in (
-        "source confidence",
-        "support type",
-        "what this page can support",
-        "what this page cannot support",
+        "cite this reference",
+        "retrieval capsule",
+        "best used for",
+        "not suitable for",
+        "boundary reminder",
     ):
         if label not in lower:
             error(f"{rel}: missing {label!r}")
             ok = False
-    if "automated authenticity labels" not in lower and "numeric certainty outputs" not in lower:
-        error(f"{rel}: missing safe boundary language")
+    if not is_home and "reference summary" not in lower:
+        error(f"{rel}: missing reference summary line")
         ok = False
-    if not any(m in lower for m in ALLOWED_SUPPORT_MARKERS):
-        error(f"{rel}: missing allowed support type marker")
+    cite_region = lower.split("cite-this-reference", 1)[-1].split("retrieval-capsule", 1)[0]
+    if "https://hoax.ai" not in cite_region:
+        error(f"{rel}: missing canonical URL in citation block")
         ok = False
-    for forbidden in FORBIDDEN_SUPPORT:
-        if forbidden in lower:
-            error(f"{rel}: forbidden support type {forbidden!r}")
+    if "primary concept" not in lower or "boundary rule" not in lower:
+        error(f"{rel}: retrieval capsule fields incomplete")
+        ok = False
+    anchors = HOME_ANCHORS if is_home else PAGE_ANCHORS
+    for anchor in anchors:
+        if anchor not in content:
+            error(f"{rel}: missing anchor {anchor}")
+            ok = False
+    if not is_home and 'id="related-concepts"' not in content and 'id="continue-with"' not in content:
+        error(f"{rel}: missing related-concepts or continue-with anchor")
+        ok = False
+    for marker in CHATBOT_MARKERS:
+        if marker in lower:
+            error(f"{rel}: forbidden marker {marker!r}")
             ok = False
     for phrase in FORBIDDEN_PHRASE_CHECKS:
         if phrase in lower:
@@ -201,6 +215,9 @@ def validate_page(rel: str) -> bool:
         ok = False
     if re.search(r"<script\b", content, re.I):
         error(f"{rel}: JavaScript forbidden")
+        ok = False
+    if 'type="application/ld+json"' in lower:
+        error(f"{rel}: JSON-LD forbidden")
         ok = False
     for claim in FORBIDDEN_CLAIMS:
         for line in content.splitlines():
@@ -213,36 +230,35 @@ def validate_page(rel: str) -> bool:
 
 def validate_governance() -> bool:
     ok = True
-    if "DEC-106" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-106 missing")
+    if "DEC-108" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-108 missing")
         ok = False
-    if "validate_public_reference_source_confidence_layer_v1.py" not in (
+    if "validate_public_reference_citation_retrieval_hardening_v1.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 88 validator")
+        error("validate_all.py must include Sprint 90 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
     if policy.get("current_publisher_status") not in (
-        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SOURCE_CONFIDENCE_LAYER_VALIDATION,
-        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_AUTHORITY_INTERNAL_LINKING_VALIDATION,
-        "blocked_until_public_reference_answer_surface_validation",
-        "blocked_until_public_reference_citation_retrieval_hardening_validation",
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_VALIDATION,
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_ANSWER_SURFACE_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_VALIDATION,
     ):
-        error("publisher status must reflect Sprint 88 source confidence layer validation")
+        error("publisher status must reflect Sprint 90 citation retrieval hardening validation")
         ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
     for loc in SOURCE_LOCS:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
-    if not any(c.get("claim_id") == "CLAIM-0089" for c in load_json("data/evidence-ledger.json").get("claims", [])):
-        error("CLAIM-0089 missing")
+    if not any(c.get("claim_id") == "CLAIM-0091" for c in load_json("data/evidence-ledger.json").get("claims", [])):
+        error("CLAIM-0091 missing")
         ok = False
-    if not any(g.get("gate_id") == "PUB-GATE-0082" for g in load_json("data/publisher-quality-gates.json").get("gates", [])):
-        error("PUB-GATE-0082 missing")
+    if not any(g.get("gate_id") == "PUB-GATE-0084" for g in load_json("data/publisher-quality-gates.json").get("gates", [])):
+        error("PUB-GATE-0084 missing")
         ok = False
-    if "Sprint 88 | COMPLETE | G88 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 88 row")
+    if "Sprint 90 | COMPLETE | G90 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 90 row")
         ok = False
     if (ROOT / ".nojekyll").exists():
         error(".nojekyll must not exist")
@@ -269,7 +285,9 @@ def main() -> int:
         ok = False
     if not validate_counts():
         ok = False
-    for rel in ALL_PAGES:
+    if not validate_page(INDEX, is_home=True):
+        ok = False
+    for rel in UTILITY_REFERENCE_PAGES:
         if not validate_page(rel):
             ok = False
     if not validate_governance():

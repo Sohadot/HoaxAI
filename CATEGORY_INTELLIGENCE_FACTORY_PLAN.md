@@ -212,6 +212,8 @@ The Category Intelligence Factory now includes a visible source-confidence layer
 
 The Category Intelligence Factory now includes a public answer surface. Public Reference Answer Surface v1 gives humans and AI agents stable canonical answers to evidence-risk questions while preserving Hoax.ai's non-verdict and non-detector boundaries.
 
+The Category Intelligence Factory now includes citation-safe and retrieval-stable public reference surfaces. Public Reference Citation and Retrieval Hardening v1 gives humans and AI agents stable citation blocks, retrieval capsules, anchor IDs, and reference summaries while preserving Hoax.ai's non-verdict and non-detector boundaries.
+
 The Category Intelligence Factory treats chronology integrity as part of evidence integrity: decision records must not move backward in time unless a correction note explicitly explains and repairs the error.
 
 The category factory becomes reference-grade only when public-facing claims, evidence ledger entries, source records, and support locations are traceable as a governed system.
