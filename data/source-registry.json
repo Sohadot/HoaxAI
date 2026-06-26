@@ -8649,6 +8649,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 validator."
+    },
+    {
+      "source_id": "SOURCE-0697",
+      "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 doc."
+    },
+    {
+      "source_id": "SOURCE-0698",
+      "source_title": "PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 standard."
+    },
+    {
+      "source_id": "SOURCE-0699",
+      "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 audit."
+    },
+    {
+      "source_id": "SOURCE-0700",
+      "source_title": "data/public-reference-executive-overview-surface-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-executive-overview-surface-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 JSON."
+    },
+    {
+      "source_id": "SOURCE-0701",
+      "source_title": "data/public-reference-executive-overview-surface-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-executive-overview-surface-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 schema."
+    },
+    {
+      "source_id": "SOURCE-0702",
+      "source_title": "SPRINT_104_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_104_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 record."
+    },
+    {
+      "source_id": "SOURCE-0703",
+      "source_title": "validators/validate_public_reference_executive_overview_surface_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_reference_executive_overview_surface_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 104 validator."
     }
   ]
 }

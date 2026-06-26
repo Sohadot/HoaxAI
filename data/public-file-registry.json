@@ -59,7 +59,7 @@
         "../../styles.css"
       ],
       "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring, classifier, detector",
-      "notes": "Artifact–Subject Separation controlled public reference pilot page."
+      "notes": "Artifactâ€“Subject Separation controlled public reference pilot page."
     },
     {
       "file_id": "PUB-FILE-0008",
@@ -171,7 +171,7 @@
         "../../styles.css"
       ],
       "prohibited_content": "forms, scripts, external deps, active tool claims, upload, scoring, classifier, detector",
-      "notes": "Claim–Source Traceability public reference production batch 2 page."
+      "notes": "Claimâ€“Source Traceability public reference production batch 2 page."
     },
     {
       "file_id": "PUB-FILE-0016",
@@ -992,6 +992,76 @@
       ],
       "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
       "notes": "Sprint 102 reviewer packet per DEC-120."
+    },
+    {
+      "file_id": "PUB-FILE-0069",
+      "path": "executive-overview/index.html",
+      "file_type": "html",
+      "public_role": "executive_overview",
+      "route_id_if_applicable": "ROUTE-0069",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
+      "notes": "Sprint 104 per DEC-122."
+    },
+    {
+      "file_id": "PUB-FILE-0070",
+      "path": "executive-overview/category-thesis/index.html",
+      "file_type": "html",
+      "public_role": "executive_overview",
+      "route_id_if_applicable": "ROUTE-0070",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
+      "notes": "Sprint 104 per DEC-122."
+    },
+    {
+      "file_id": "PUB-FILE-0071",
+      "path": "executive-overview/public-reference-system/index.html",
+      "file_type": "html",
+      "public_role": "executive_overview",
+      "route_id_if_applicable": "ROUTE-0071",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
+      "notes": "Sprint 104 per DEC-122."
+    },
+    {
+      "file_id": "PUB-FILE-0072",
+      "path": "executive-overview/review-readiness/index.html",
+      "file_type": "html",
+      "public_role": "executive_overview",
+      "route_id_if_applicable": "ROUTE-0072",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
+      "notes": "Sprint 104 per DEC-122."
+    },
+    {
+      "file_id": "PUB-FILE-0073",
+      "path": "executive-overview/boundary-model/index.html",
+      "file_type": "html",
+      "public_role": "executive_overview",
+      "route_id_if_applicable": "ROUTE-0073",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
+      "notes": "Sprint 104 per DEC-122."
     }
   ],
   "last_reviewed": "2026-06-26"

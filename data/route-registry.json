@@ -62,12 +62,12 @@
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pilot",
       "live_surface_validation_status": "live_surface_validated_controlled_reference_pilot",
-      "notes": "First controlled public reference page — Evidence Posture."
+      "notes": "First controlled public reference page â€” Evidence Posture."
     },
     {
       "route_id": "ROUTE-0003",
       "path": "/reference/artifact-subject-separation/",
-      "title": "Artifact–Subject Separation",
+      "title": "Artifactâ€“Subject Separation",
       "route_type": "public_reference",
       "page_type": "public_reference",
       "status": "controlled_public_reference_route_created",
@@ -104,7 +104,7 @@
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pilot",
       "live_surface_validation_status": "live_surface_validated_controlled_reference_pilot",
-      "notes": "First controlled public reference page — Artifact–Subject Separation."
+      "notes": "First controlled public reference page â€” Artifactâ€“Subject Separation."
     },
     {
       "route_id": "ROUTE-0004",
@@ -144,7 +144,7 @@
       "link_policy": "registered_targets_only",
       "route_visibility": "public_category_language",
       "language_validation_status": "public_category_language_validated",
-      "notes": "Public category language layer — governed vocabulary and relation system."
+      "notes": "Public category language layer â€” governed vocabulary and relation system."
     },
     {
       "route_id": "ROUTE-0005",
@@ -182,7 +182,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 1 — Source Confidence."
+      "notes": "Public Reference Production Batch 1 â€” Source Confidence."
     },
     {
       "route_id": "ROUTE-0006",
@@ -220,7 +220,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 1 — Provenance Gap."
+      "notes": "Public Reference Production Batch 1 â€” Provenance Gap."
     },
     {
       "route_id": "ROUTE-0007",
@@ -258,7 +258,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 1 — Not Assessable."
+      "notes": "Public Reference Production Batch 1 â€” Not Assessable."
     },
     {
       "route_id": "ROUTE-0008",
@@ -296,7 +296,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 1 — Output Boundary."
+      "notes": "Public Reference Production Batch 1 â€” Output Boundary."
     },
     {
       "route_id": "ROUTE-0009",
@@ -334,7 +334,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 2 — Synthetic Fragility."
+      "notes": "Public Reference Production Batch 2 â€” Synthetic Fragility."
     },
     {
       "route_id": "ROUTE-0010",
@@ -372,7 +372,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 2 — Evidence Chain."
+      "notes": "Public Reference Production Batch 2 â€” Evidence Chain."
     },
     {
       "route_id": "ROUTE-0011",
@@ -410,12 +410,12 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 2 — Context Collapse."
+      "notes": "Public Reference Production Batch 2 â€” Context Collapse."
     },
     {
       "route_id": "ROUTE-0012",
       "path": "/reference/claim-source-traceability/",
-      "title": "Claim–Source Traceability",
+      "title": "Claimâ€“Source Traceability",
       "route_type": "public_reference",
       "page_type": "public_reference",
       "status": "public_reference_production_batch_2_created",
@@ -448,7 +448,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 2 — Claim–Source Traceability."
+      "notes": "Public Reference Production Batch 2 â€” Claimâ€“Source Traceability."
     },
     {
       "route_id": "ROUTE-0013",
@@ -486,7 +486,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 3 — Attribution Boundary."
+      "notes": "Public Reference Production Batch 3 â€” Attribution Boundary."
     },
     {
       "route_id": "ROUTE-0014",
@@ -524,7 +524,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 3 — Claim Drift."
+      "notes": "Public Reference Production Batch 3 â€” Claim Drift."
     },
     {
       "route_id": "ROUTE-0015",
@@ -562,7 +562,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 3 — Evidence Limitation."
+      "notes": "Public Reference Production Batch 3 â€” Evidence Limitation."
     },
     {
       "route_id": "ROUTE-0016",
@@ -600,7 +600,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_production",
-      "notes": "Public Reference Production Batch 3 — Interpretation Risk."
+      "notes": "Public Reference Production Batch 3 â€” Interpretation Risk."
     },
     {
       "route_id": "ROUTE-0017",
@@ -638,7 +638,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_standard_authority_layer",
-      "notes": "Sprint 59 — Hoax.ai Evidence Posture Standard v1. First public authority-layer standard. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
+      "notes": "Sprint 59 â€” Hoax.ai Evidence Posture Standard v1. First public authority-layer standard. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
     },
     {
       "route_id": "ROUTE-0018",
@@ -677,7 +677,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_protocol_layer",
-      "notes": "Sprint 61 — Hoax.ai Evidence Posture Protocol v1 Draft. First public protocol-layer document derived from Evidence Posture Standard v1. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
+      "notes": "Sprint 61 â€” Hoax.ai Evidence Posture Protocol v1 Draft. First public protocol-layer document derived from Evidence Posture Standard v1. No engine, classifier, upload, scoring, API, analytics, forms, or tool behavior."
     },
     {
       "route_id": "ROUTE-0019",
@@ -717,7 +717,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_interface_thesis_layer",
-      "notes": "Sprint 63 — Hoax.ai Evidence Field Interface Thesis. Public interface-thesis layer. No engine, classifier, upload, scoring, API, analytics, forms, JavaScript, or tool behavior."
+      "notes": "Sprint 63 â€” Hoax.ai Evidence Field Interface Thesis. Public interface-thesis layer. No engine, classifier, upload, scoring, API, analytics, forms, JavaScript, or tool behavior."
     },
     {
       "route_id": "ROUTE-0020",
@@ -756,7 +756,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_utility_layer",
-      "notes": "Sprint 84 — Manual Evidence Checklist public utility. No upload, score, verdict, or detector behavior."
+      "notes": "Sprint 84 â€” Manual Evidence Checklist public utility. No upload, score, verdict, or detector behavior."
     },
     {
       "route_id": "ROUTE-0021",
@@ -795,7 +795,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_utility_layer",
-      "notes": "Sprint 84 — Evidence Posture Map public utility. Visual map only; no scoring."
+      "notes": "Sprint 84 â€” Evidence Posture Map public utility. Visual map only; no scoring."
     },
     {
       "route_id": "ROUTE-0022",
@@ -835,7 +835,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_utility_layer",
-      "notes": "Sprint 84 — Synthetic evidence-risk examples. Fictional scenarios only."
+      "notes": "Sprint 84 â€” Synthetic evidence-risk examples. Fictional scenarios only."
     },
     {
       "route_id": "ROUTE-0023",
@@ -874,7 +874,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_utility_layer",
-      "notes": "Sprint 84 — Evidence-risk guided questions public utility."
+      "notes": "Sprint 84 â€” Evidence-risk guided questions public utility."
     },
     {
       "route_id": "ROUTE-0024",
@@ -913,7 +913,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Evidence Risk human/AI reference unit."
+      "notes": "Sprint 85 â€” Evidence Risk human/AI reference unit."
     },
     {
       "route_id": "ROUTE-0025",
@@ -952,7 +952,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Provenance Risk human/AI reference unit."
+      "notes": "Sprint 85 â€” Provenance Risk human/AI reference unit."
     },
     {
       "route_id": "ROUTE-0026",
@@ -991,7 +991,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Context Collapse human/AI reference unit (top-level route)."
+      "notes": "Sprint 85 â€” Context Collapse human/AI reference unit (top-level route)."
     },
     {
       "route_id": "ROUTE-0027",
@@ -1030,7 +1030,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Claim Drift human/AI reference unit (top-level route)."
+      "notes": "Sprint 85 â€” Claim Drift human/AI reference unit (top-level route)."
     },
     {
       "route_id": "ROUTE-0028",
@@ -1069,7 +1069,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Traceability Gap human/AI reference unit."
+      "notes": "Sprint 85 â€” Traceability Gap human/AI reference unit."
     },
     {
       "route_id": "ROUTE-0029",
@@ -1108,7 +1108,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_layer",
-      "notes": "Sprint 85 — Non-detector boundary reference unit for humans and AI agents."
+      "notes": "Sprint 85 â€” Non-detector boundary reference unit for humans and AI agents."
     },
     {
       "route_id": "ROUTE-0030",
@@ -1149,7 +1149,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Source Ambiguity deep reference unit."
+      "notes": "Sprint 92 â€” Source Ambiguity deep reference unit."
     },
     {
       "route_id": "ROUTE-0031",
@@ -1190,7 +1190,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Artifact-Claim Gap deep reference unit."
+      "notes": "Sprint 92 â€” Artifact-Claim Gap deep reference unit."
     },
     {
       "route_id": "ROUTE-0032",
@@ -1231,7 +1231,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Boundary Integrity deep reference unit."
+      "notes": "Sprint 92 â€” Boundary Integrity deep reference unit."
     },
     {
       "route_id": "ROUTE-0033",
@@ -1272,7 +1272,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Evidence Weight deep reference unit."
+      "notes": "Sprint 92 â€” Evidence Weight deep reference unit."
     },
     {
       "route_id": "ROUTE-0034",
@@ -1313,7 +1313,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Interpretation Risk deep reference unit (top-level route)."
+      "notes": "Sprint 92 â€” Interpretation Risk deep reference unit (top-level route)."
     },
     {
       "route_id": "ROUTE-0035",
@@ -1354,7 +1354,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_depth_layer",
-      "notes": "Sprint 92 — Not-Assessable Posture deep reference unit."
+      "notes": "Sprint 92 â€” Not-Assessable Posture deep reference unit."
     },
     {
       "route_id": "ROUTE-0036",
@@ -1395,7 +1395,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Source Unclear evidence-risk pathway."
+      "notes": "Sprint 93 â€” Source Unclear evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0037",
@@ -1436,7 +1436,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Provenance Weak evidence-risk pathway."
+      "notes": "Sprint 93 â€” Provenance Weak evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0038",
@@ -1477,7 +1477,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Context Missing evidence-risk pathway."
+      "notes": "Sprint 93 â€” Context Missing evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0039",
@@ -1518,7 +1518,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Claim Overextended evidence-risk pathway."
+      "notes": "Sprint 93 â€” Claim Overextended evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0040",
@@ -1559,7 +1559,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Traceability Incomplete evidence-risk pathway."
+      "notes": "Sprint 93 â€” Traceability Incomplete evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0041",
@@ -1600,7 +1600,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_pathway_layer",
-      "notes": "Sprint 93 — Posture Not Assessable evidence-risk pathway."
+      "notes": "Sprint 93 â€” Posture Not Assessable evidence-risk pathway."
     },
     {
       "route_id": "ROUTE-0042",
@@ -1641,7 +1641,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — Strategic entry-point hub."
+      "notes": "Sprint 96 â€” Strategic entry-point hub."
     },
     {
       "route_id": "ROUTE-0043",
@@ -1682,7 +1682,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — Human readers strategic entry point."
+      "notes": "Sprint 96 â€” Human readers strategic entry point."
     },
     {
       "route_id": "ROUTE-0044",
@@ -1723,7 +1723,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — AI agents strategic entry point."
+      "notes": "Sprint 96 â€” AI agents strategic entry point."
     },
     {
       "route_id": "ROUTE-0045",
@@ -1764,7 +1764,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — Research and review strategic entry point."
+      "notes": "Sprint 96 â€” Research and review strategic entry point."
     },
     {
       "route_id": "ROUTE-0046",
@@ -1805,7 +1805,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — Trust and safety strategic entry point."
+      "notes": "Sprint 96 â€” Trust and safety strategic entry point."
     },
     {
       "route_id": "ROUTE-0047",
@@ -1846,7 +1846,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_entry_layer",
-      "notes": "Sprint 96 — Education and literacy strategic entry point."
+      "notes": "Sprint 96 â€” Education and literacy strategic entry point."
     },
     {
       "route_id": "ROUTE-0048",
@@ -1887,7 +1887,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_narrative_layer",
-      "notes": "Sprint 97 — Strategic narrative hub."
+      "notes": "Sprint 97 â€” Strategic narrative hub."
     },
     {
       "route_id": "ROUTE-0049",
@@ -1928,7 +1928,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_narrative_layer",
-      "notes": "Sprint 97 — Evidence before verdict narrative."
+      "notes": "Sprint 97 â€” Evidence before verdict narrative."
     },
     {
       "route_id": "ROUTE-0050",
@@ -1969,7 +1969,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_narrative_layer",
-      "notes": "Sprint 97 — Why evidence risk matters narrative."
+      "notes": "Sprint 97 â€” Why evidence risk matters narrative."
     },
     {
       "route_id": "ROUTE-0051",
@@ -2010,7 +2010,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_narrative_layer",
-      "notes": "Sprint 97 — Reference before detection narrative."
+      "notes": "Sprint 97 â€” Reference before detection narrative."
     },
     {
       "route_id": "ROUTE-0052",
@@ -2051,7 +2051,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_strategic_narrative_layer",
-      "notes": "Sprint 97 — Non-verdict trust narrative."
+      "notes": "Sprint 97 â€” Non-verdict trust narrative."
     },
     {
       "route_id": "ROUTE-0053",
@@ -2095,7 +2095,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — Acquisition readiness hub."
+      "notes": "Sprint 98 â€” Acquisition readiness hub."
     },
     {
       "route_id": "ROUTE-0054",
@@ -2139,7 +2139,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — Category asset readiness."
+      "notes": "Sprint 98 â€” Category asset readiness."
     },
     {
       "route_id": "ROUTE-0055",
@@ -2183,7 +2183,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — Public reference surface readiness."
+      "notes": "Sprint 98 â€” Public reference surface readiness."
     },
     {
       "route_id": "ROUTE-0056",
@@ -2227,7 +2227,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — Governance traceability readiness."
+      "notes": "Sprint 98 â€” Governance traceability readiness."
     },
     {
       "route_id": "ROUTE-0057",
@@ -2271,7 +2271,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — AI retrieval readiness."
+      "notes": "Sprint 98 â€” AI retrieval readiness."
     },
     {
       "route_id": "ROUTE-0058",
@@ -2315,7 +2315,7 @@
       "canonical_policy": "registry_aligned",
       "link_policy": "registered_targets_only",
       "route_visibility": "public_reference_acquisition_readiness_layer",
-      "notes": "Sprint 98 — Non-detector moat readiness."
+      "notes": "Sprint 98 â€” Non-detector moat readiness."
     },
     {
       "route_type": "public_reference",
@@ -2359,7 +2359,7 @@
       "title": "Hoax.ai External Review Readiness",
       "reference_unit_layer": "external_review_hub",
       "canonical_url": "https://hoax.ai/external-review/",
-      "notes": "Sprint 101 — external_review_readiness_hub."
+      "notes": "Sprint 101 â€” external_review_readiness_hub."
     },
     {
       "route_type": "public_reference",
@@ -2403,7 +2403,7 @@
       "title": "External Reviewer Map",
       "reference_unit_layer": "external_reviewer_map",
       "canonical_url": "https://hoax.ai/external-review/reviewer-map/",
-      "notes": "Sprint 101 — external_reviewer_map."
+      "notes": "Sprint 101 â€” external_reviewer_map."
     },
     {
       "route_type": "public_reference",
@@ -2447,7 +2447,7 @@
       "title": "Public Surface Review Checklist",
       "reference_unit_layer": "public_surface_review_checklist",
       "canonical_url": "https://hoax.ai/external-review/public-surface-checklist/",
-      "notes": "Sprint 101 — public_surface_review_checklist."
+      "notes": "Sprint 101 â€” public_surface_review_checklist."
     },
     {
       "route_type": "public_reference",
@@ -2491,7 +2491,7 @@
       "title": "AI Review Guide",
       "reference_unit_layer": "ai_review_guide",
       "canonical_url": "https://hoax.ai/external-review/ai-review-guide/",
-      "notes": "Sprint 101 — ai_review_guide."
+      "notes": "Sprint 101 â€” ai_review_guide."
     },
     {
       "route_type": "public_reference",
@@ -2535,7 +2535,7 @@
       "title": "Boundary Review Guide",
       "reference_unit_layer": "boundary_review_guide",
       "canonical_url": "https://hoax.ai/external-review/boundary-review-guide/",
-      "notes": "Sprint 101 — boundary_review_guide."
+      "notes": "Sprint 101 â€” boundary_review_guide."
     },
     {
       "route_type": "public_reference",
@@ -2581,7 +2581,7 @@
       "title": "Hoax.ai Reviewer Packet",
       "reference_unit_layer": "reviewer_packet_hub",
       "canonical_url": "https://hoax.ai/reviewer-packet/",
-      "notes": "Sprint 102 — reviewer_packet_hub."
+      "notes": "Sprint 102 â€” reviewer_packet_hub."
     },
     {
       "route_type": "public_reference",
@@ -2627,7 +2627,7 @@
       "title": "Reviewer Sequence",
       "reference_unit_layer": "reviewer_sequence",
       "canonical_url": "https://hoax.ai/reviewer-packet/review-sequence/",
-      "notes": "Sprint 102 — reviewer_sequence."
+      "notes": "Sprint 102 â€” reviewer_sequence."
     },
     {
       "route_type": "public_reference",
@@ -2673,7 +2673,7 @@
       "title": "Public Surface Index for Reviewers",
       "reference_unit_layer": "public_surface_index",
       "canonical_url": "https://hoax.ai/reviewer-packet/public-surface-index/",
-      "notes": "Sprint 102 — public_surface_index."
+      "notes": "Sprint 102 â€” public_surface_index."
     },
     {
       "route_type": "public_reference",
@@ -2719,7 +2719,7 @@
       "title": "Citation and Retrieval Map",
       "reference_unit_layer": "citation_retrieval_map",
       "canonical_url": "https://hoax.ai/reviewer-packet/citation-and-retrieval-map/",
-      "notes": "Sprint 102 — citation_retrieval_map."
+      "notes": "Sprint 102 â€” citation_retrieval_map."
     },
     {
       "route_type": "public_reference",
@@ -2765,7 +2765,227 @@
       "title": "Boundary and Readiness Summary",
       "reference_unit_layer": "boundary_readiness_summary",
       "canonical_url": "https://hoax.ai/reviewer-packet/boundary-and-readiness-summary/",
-      "notes": "Sprint 102 — boundary_readiness_summary."
+      "notes": "Sprint 102 â€” boundary_readiness_summary."
+    },
+    {
+      "route_type": "public_reference",
+      "page_type": "executive_overview",
+      "status": "public_reference_executive_overview_created",
+      "index_policy": "indexable_public_reference",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_reference_metadata_created",
+      "navigation_status": "linked_from_homepage_executive_overview",
+      "publication_status": "public_reference_executive_overview_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "executive_overview_only_no_engine_no_classifier_no_transaction",
+      "prohibited_capabilities": [
+        "classifier",
+        "detector",
+        "upload",
+        "scoring",
+        "fake_real_verdict",
+        "subject_accusation",
+        "API",
+        "analytics",
+        "forms",
+        "javascript",
+        "monetization",
+        "public_tool_behavior",
+        "automated_report",
+        "chatbot",
+        "generator",
+        "pricing_statement",
+        "transaction_page",
+        "representative_mandate"
+      ],
+      "sitemap_policy": "public_reference_executive_overview_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_reference_executive_overview_layer",
+      "route_id": "ROUTE-0069",
+      "path": "/executive-overview/",
+      "title": "Hoax.ai Executive Overview",
+      "reference_unit_layer": "executive_overview_hub",
+      "canonical_url": "https://hoax.ai/executive-overview/",
+      "notes": "Sprint 104 — executive_overview_hub."
+    },
+    {
+      "route_type": "public_reference",
+      "page_type": "executive_overview",
+      "status": "public_reference_executive_overview_created",
+      "index_policy": "indexable_public_reference",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_reference_metadata_created",
+      "navigation_status": "linked_from_homepage_executive_overview",
+      "publication_status": "public_reference_executive_overview_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "executive_overview_only_no_engine_no_classifier_no_transaction",
+      "prohibited_capabilities": [
+        "classifier",
+        "detector",
+        "upload",
+        "scoring",
+        "fake_real_verdict",
+        "subject_accusation",
+        "API",
+        "analytics",
+        "forms",
+        "javascript",
+        "monetization",
+        "public_tool_behavior",
+        "automated_report",
+        "chatbot",
+        "generator",
+        "pricing_statement",
+        "transaction_page",
+        "representative_mandate"
+      ],
+      "sitemap_policy": "public_reference_executive_overview_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_reference_executive_overview_layer",
+      "route_id": "ROUTE-0070",
+      "path": "/executive-overview/category-thesis/",
+      "title": "Executive Overview of the Category Thesis",
+      "reference_unit_layer": "category_thesis_overview",
+      "canonical_url": "https://hoax.ai/executive-overview/category-thesis/",
+      "notes": "Sprint 104 — category_thesis_overview."
+    },
+    {
+      "route_type": "public_reference",
+      "page_type": "executive_overview",
+      "status": "public_reference_executive_overview_created",
+      "index_policy": "indexable_public_reference",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_reference_metadata_created",
+      "navigation_status": "linked_from_homepage_executive_overview",
+      "publication_status": "public_reference_executive_overview_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "executive_overview_only_no_engine_no_classifier_no_transaction",
+      "prohibited_capabilities": [
+        "classifier",
+        "detector",
+        "upload",
+        "scoring",
+        "fake_real_verdict",
+        "subject_accusation",
+        "API",
+        "analytics",
+        "forms",
+        "javascript",
+        "monetization",
+        "public_tool_behavior",
+        "automated_report",
+        "chatbot",
+        "generator",
+        "pricing_statement",
+        "transaction_page",
+        "representative_mandate"
+      ],
+      "sitemap_policy": "public_reference_executive_overview_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_reference_executive_overview_layer",
+      "route_id": "ROUTE-0071",
+      "path": "/executive-overview/public-reference-system/",
+      "title": "Executive Overview of the Public Reference System",
+      "reference_unit_layer": "public_reference_system_overview",
+      "canonical_url": "https://hoax.ai/executive-overview/public-reference-system/",
+      "notes": "Sprint 104 — public_reference_system_overview."
+    },
+    {
+      "route_type": "public_reference",
+      "page_type": "executive_overview",
+      "status": "public_reference_executive_overview_created",
+      "index_policy": "indexable_public_reference",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_reference_metadata_created",
+      "navigation_status": "linked_from_homepage_executive_overview",
+      "publication_status": "public_reference_executive_overview_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "executive_overview_only_no_engine_no_classifier_no_transaction",
+      "prohibited_capabilities": [
+        "classifier",
+        "detector",
+        "upload",
+        "scoring",
+        "fake_real_verdict",
+        "subject_accusation",
+        "API",
+        "analytics",
+        "forms",
+        "javascript",
+        "monetization",
+        "public_tool_behavior",
+        "automated_report",
+        "chatbot",
+        "generator",
+        "pricing_statement",
+        "transaction_page",
+        "representative_mandate"
+      ],
+      "sitemap_policy": "public_reference_executive_overview_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_reference_executive_overview_layer",
+      "route_id": "ROUTE-0072",
+      "path": "/executive-overview/review-readiness/",
+      "title": "Executive Overview of Review Readiness",
+      "reference_unit_layer": "review_readiness_overview",
+      "canonical_url": "https://hoax.ai/executive-overview/review-readiness/",
+      "notes": "Sprint 104 — review_readiness_overview."
+    },
+    {
+      "route_type": "public_reference",
+      "page_type": "executive_overview",
+      "status": "public_reference_executive_overview_created",
+      "index_policy": "indexable_public_reference",
+      "sitemap_included": true,
+      "internal_linking_required": true,
+      "public_surface": true,
+      "metadata_status": "public_reference_metadata_created",
+      "navigation_status": "linked_from_homepage_executive_overview",
+      "publication_status": "public_reference_executive_overview_v1",
+      "deployment_status": "repository_public_preview_only",
+      "governance_boundary": "executive_overview_only_no_engine_no_classifier_no_transaction",
+      "prohibited_capabilities": [
+        "classifier",
+        "detector",
+        "upload",
+        "scoring",
+        "fake_real_verdict",
+        "subject_accusation",
+        "API",
+        "analytics",
+        "forms",
+        "javascript",
+        "monetization",
+        "public_tool_behavior",
+        "automated_report",
+        "chatbot",
+        "generator",
+        "pricing_statement",
+        "transaction_page",
+        "representative_mandate"
+      ],
+      "sitemap_policy": "public_reference_executive_overview_included",
+      "canonical_policy": "registry_aligned",
+      "link_policy": "registered_targets_only",
+      "route_visibility": "public_reference_executive_overview_layer",
+      "route_id": "ROUTE-0073",
+      "path": "/executive-overview/boundary-model/",
+      "title": "Executive Overview of the Boundary Model",
+      "reference_unit_layer": "boundary_model_overview",
+      "canonical_url": "https://hoax.ai/executive-overview/boundary-model/",
+      "notes": "Sprint 104 — boundary_model_overview."
     }
   ]
 }

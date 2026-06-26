@@ -2477,6 +2477,24 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 104 — Public Reference Executive Overview Surface v1
+
+**Status:** COMPLETE — 2026-06-26
+**Goal:** Add five executive-overview routes for concise public orientation without transaction or operational tool behavior.
+
+### Deliverables
+
+- 5 routes: hub, category thesis, public reference system, review readiness, boundary model
+- Homepage Executive Overview section; snapshot at 73 routes
+- Reviewer packet public surface index updated
+- DEC-122, PUB-GATE-0098, CLAIM-0105
+
+### Gate
+
+**Gate G104 passed.** Sprint 105 — Public Reference Executive Overview Integrity Audit v1 is next.
+
+---
+
 ## Sprint 103 — Public Reference Review Packet Integrity Audit v1
 
 **Status:** COMPLETE — 2026-06-26

@@ -1146,6 +1146,17 @@
       "status": "active",
       "last_reviewed": "2026-06-26",
       "notes": "Sprint 103 review packet integrity audit. Sitemap sixty-eight URLs. total_repairs_made 2."
+    },
+    {
+      "claim_id": "CLAIM-0105",
+      "claim_text": "Hoax.ai has adopted Public Reference Executive Overview Surface v1, adding five executive-overview routes that give serious reviewers and AI agents concise public orientation without private data-room access, downloadable reports, pricing statements, transaction pages, chatbots, generators, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md, PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md, data/public-reference-executive-overview-surface-v1.json, executive-overview/index.html, validators/validate_public_reference_executive_overview_surface_v1.py, SPRINT_104_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md, DECISION_LOG.md (DEC-122)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-26",
+      "notes": "Sprint 104 executive overview. Sitemap seventy-three URLs."
     }
   ]
 }

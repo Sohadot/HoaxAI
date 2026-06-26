@@ -3160,3 +3160,28 @@ After Sprint 102 added the public reviewer packet, Hoax.ai needed an integrity a
 - Private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-122 — Public Reference Executive Overview Surface v1 Adopted
+
+**Date:** 2026-06-26
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Executive Overview Surface v1 by adding five public executive-overview routes: Hoax.ai Executive Overview, Executive Overview of the Category Thesis, Executive Overview of the Public Reference System, Executive Overview of Review Readiness, and Executive Overview of the Boundary Model. These pages provide concise public high-level orientation for serious reviewers and AI agents without creating private data-room access, downloadable reports, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 103 protected the reviewer packet, Hoax.ai needed an executive overview surface that summarizes the category thesis, public reference system, review readiness, and boundary model without converting the asset into a sales deck, transaction surface, private data room, report, detector, or operational review tool. This decision governs visible public pages, not abstract preparatory governance.
+
+### Implications
+
+- Five public executive-overview routes are authorized.
+- Sitemap may increase from 68 to 73 URLs.
+- Route registry may increase from 68 to 73 entries.
+- New route registry entries ROUTE-0069 through ROUTE-0073 are authorized.
+- Executive-overview pages are authorized as static, non-verdict, non-transactional public reference routes.
+- Private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+

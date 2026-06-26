@@ -17,6 +17,7 @@ from public_surface_checks import (  # noqa: E402
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEWER_PACKET_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
     validate_public_surface,
 )
 
@@ -62,8 +63,10 @@ REQUIRED_PACKET_SECTIONS = [
 STALE_ROUTE_COUNTS = [
     "63-route",
     "58-route",
+    "68-route",
     "63 urls",
     "58 urls",
+    "68 urls",
     "29-route",
     "41-route",
     "47-route",
@@ -223,11 +226,11 @@ def validate_counts() -> bool:
     ok = True
     sitemap_count = len([u for u in ET.parse(ROOT / "sitemap.xml").getroot().iter() if u.tag.endswith("loc")])
     registry_count = len(load_json("data/route-registry.json").get("routes", []))
-    if sitemap_count != EXPECTED:
-        error(f"sitemap must have {EXPECTED} URLs, found {sitemap_count}")
+    if sitemap_count != PUBLIC_SITEMAP_URL_COUNT:
+        error(f"sitemap must have {PUBLIC_SITEMAP_URL_COUNT} URLs, found {sitemap_count}")
         ok = False
-    if registry_count != EXPECTED:
-        error(f"route registry must have {EXPECTED} entries, found {registry_count}")
+    if registry_count != PUBLIC_SITEMAP_URL_COUNT:
+        error(f"route registry must have {PUBLIC_SITEMAP_URL_COUNT} entries, found {registry_count}")
         ok = False
     if sitemap_count != PUBLIC_SITEMAP_URL_COUNT:
         error(f"sitemap count {sitemap_count} != PUBLIC_SITEMAP_URL_COUNT {PUBLIC_SITEMAP_URL_COUNT}")
@@ -241,8 +244,8 @@ def validate_packet_hub_snapshot() -> bool:
     if "Reviewer Packet Integrity Snapshot" not in content:
         error("/reviewer-packet/ must include Reviewer Packet Integrity Snapshot")
         ok = False
-    if "Current public route count: 68" not in content:
-        error("/reviewer-packet/ must include Current public route count: 68")
+    if f"Current public route count: {PUBLIC_SITEMAP_URL_COUNT}" not in content:
+        error(f"/reviewer-packet/ must include Current public route count: {PUBLIC_SITEMAP_URL_COUNT}")
         ok = False
     if "Reviewer packet route count: 5" not in content:
         error("/reviewer-packet/ must include Reviewer packet route count: 5")
@@ -431,7 +434,7 @@ def validate_governance() -> bool:
     policy = load_json("data/publisher-governance-policy.json")
     if policy.get("current_publisher_status") not in (
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
-        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEWER_PACKET_VALIDATION,
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
     ):
         error("publisher status must reflect Sprint 103 review packet integrity audit validation")
         ok = False

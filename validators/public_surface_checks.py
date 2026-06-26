@@ -23,6 +23,7 @@ PUBLIC_ROUTE_IDS = [
     "ROUTE-0053", "ROUTE-0054", "ROUTE-0055", "ROUTE-0056", "ROUTE-0057", "ROUTE-0058",
     "ROUTE-0059", "ROUTE-0060", "ROUTE-0061", "ROUTE-0062", "ROUTE-0063",
     "ROUTE-0064", "ROUTE-0065", "ROUTE-0066", "ROUTE-0067", "ROUTE-0068",
+    "ROUTE-0069", "ROUTE-0070", "ROUTE-0071", "ROUTE-0072", "ROUTE-0073",
 ]
 
 PILOT_ROUTE_IDS = PUBLIC_ROUTE_IDS  # backward compatibility
@@ -103,6 +104,11 @@ ALLOWED_PUBLIC_HTML = {
     "reviewer-packet/public-surface-index/index.html",
     "reviewer-packet/citation-and-retrieval-map/index.html",
     "reviewer-packet/boundary-and-readiness-summary/index.html",
+    "executive-overview/index.html",
+    "executive-overview/category-thesis/index.html",
+    "executive-overview/public-reference-system/index.html",
+    "executive-overview/review-readiness/index.html",
+    "executive-overview/boundary-model/index.html",
 }
 
 ALLOWED_INTERNAL_PROTOTYPE_HTML = {
@@ -117,7 +123,7 @@ ALLOWED_PUBLIC_ROOT_FILES = ALLOWED_PUBLIC_HTML | {
     "sitemap.xml",
 }
 
-PUBLIC_SITEMAP_URL_COUNT = 68
+PUBLIC_SITEMAP_URL_COUNT = 73
 
 PILOT_SITEMAP_URL_COUNT = PUBLIC_SITEMAP_URL_COUNT  # backward compatibility
 
@@ -343,6 +349,10 @@ PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION 
     "blocked_until_public_reference_review_packet_integrity_audit_validation"
 )
 
+PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION = (
+    "blocked_until_public_reference_executive_overview_surface_validation"
+)
+
 PUBLISHER_STATUSES_ALLOWED = (
     "blocked_until_first_reference_candidate_pack",
     "blocked_until_internal_draft_blueprint",
@@ -426,6 +436,7 @@ PUBLISHER_STATUSES_ALLOWED = (
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEWER_PACKET_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
 )
 
 
