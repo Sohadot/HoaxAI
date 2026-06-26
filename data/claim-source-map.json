@@ -2417,6 +2417,32 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Strategic Surface Consolidation v1 per DEC-117."
+    },
+    {
+      "claim_id": "CLAIM-0101",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
+        "PUBLIC_REFERENCE_RELEASE_INTEGRITY_REPAIR_LOG_V1.md",
+        "data/public-reference-release-integrity-audit-v1.json",
+        "index.html",
+        "validators/validate_public_reference_release_integrity_audit_v1.py",
+        "SPRINT_100_PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0670",
+        "SOURCE-0671",
+        "SOURCE-0672",
+        "SOURCE-0673",
+        "SOURCE-0674",
+        "SOURCE-0675"
+      ],
+      "support_scope": "public reference release integrity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Release Integrity Audit v1 per DEC-118."
     }
   ],
   "last_reviewed": "2026-06-26"

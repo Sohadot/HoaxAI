@@ -2477,6 +2477,27 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 100 — Public Reference Release Integrity Audit v1
+
+**Status:** COMPLETE — 2026-06-26
+**Goal:** Inspect full 58-route public surface and add homepage Public Release Integrity Snapshot.
+
+### Deliverables
+
+- Homepage Public Release Integrity Snapshot (visible production improvement)
+- Full 58-route inspection with no additional defects found
+- PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md, repair log, JSON/schema, validator
+- Sitemap 58 URLs unchanged; route registry 58 entries unchanged
+- DEC-118, PUB-GATE-0094, CLAIM-0101
+- total_repairs_made: 1 (homepage snapshot)
+- Publisher status -> blocked_until_public_reference_release_integrity_audit_validation
+
+### Gate
+
+**Gate G100 passed.**
+
+---
+
 ## Sprint 99 — Public Reference Strategic Surface Consolidation v1
 
 **Status:** COMPLETE — 2026-06-26

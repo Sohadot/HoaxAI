@@ -1102,6 +1102,17 @@
       "status": "active",
       "last_reviewed": "2026-06-26",
       "notes": "Sprint 99 strategic surface consolidation. Sitemap fifty-eight URLs unchanged."
+    },
+    {
+      "claim_id": "CLAIM-0101",
+      "claim_text": "Hoax.ai has adopted Public Reference Release Integrity Audit v1, inspecting the full 58-route public surface, adding a homepage Public Release Integrity Snapshot, and confirming route-count, metadata, link, component, and boundary integrity without new routes, pricing statements, transaction pages, chatbots, generators, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md, PUBLIC_REFERENCE_RELEASE_INTEGRITY_REPAIR_LOG_V1.md, data/public-reference-release-integrity-audit-v1.json, index.html, validators/validate_public_reference_release_integrity_audit_v1.py, SPRINT_100_PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md, DECISION_LOG.md (DEC-118)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-26",
+      "notes": "Sprint 100 release integrity audit. Sitemap fifty-eight URLs unchanged. total_repairs_made 1."
     }
   ]
 }

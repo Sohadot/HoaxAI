@@ -228,6 +228,8 @@ The Category Intelligence Factory now includes a public acquisition-readiness su
 
 The Category Intelligence Factory now includes public strategic surface consolidation. Public Reference Strategic Surface Consolidation v1 connects entry points, strategic narrative, and acquisition-readiness pages into a coherent strategic review surface for humans and AI agents without creating transaction behavior, pricing statements, verdicts, detector behavior, scoring, upload behavior, or automated reports.
 
+The Category Intelligence Factory now includes public release integrity audit. Public Reference Release Integrity Audit v1 inspects the full 58-route public surface, adds a homepage Public Release Integrity Snapshot, and validates route-count, file, metadata, link, component, and boundary integrity without creating new routes, pricing statements, transaction pages, or operational tool behavior.
+
 The Category Intelligence Factory now includes public surface authority review. Public Reference Surface Authority Review v1 strengthens the full 41-route Hoax.ai public surface by improving page role clarity, system placement, internal authority links, citation safety, AI readability, and boundary language through visible repairs rather than abstract governance.
 
 The Category Intelligence Factory now includes public navigation and information architecture consolidation. Public Reference Navigation and IA Consolidation v1 makes Hoax.ai's utilities, core concepts, deep concepts, pathways, and boundary references easier for humans to navigate and easier for AI agents to parse as a coherent evidence-risk reference system.

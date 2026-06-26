@@ -420,6 +420,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_strategic_narrative_surface_validation",
         "blocked_until_public_reference_acquisition_readiness_surface_validation",
         "blocked_until_public_reference_strategic_surface_consolidation_validation",
+        "blocked_until_public_reference_release_integrity_audit_validation",
     }
     if pub.get("current_publisher_status") not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

@@ -3056,3 +3056,30 @@ After Sprint 98 added acquisition-readiness pages, Hoax.ai needed visible consol
 - Pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-118 — Public Reference Release Integrity Audit v1 Adopted
+
+**Date:** 2026-06-26
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Release Integrity Audit v1 by inspecting the full 58-route public reference surface, adding a Public Release Integrity Snapshot to the homepage, and applying visible release-integrity repairs to existing pages where needed. The sprint validates route-count integrity, file existence integrity, metadata integrity, internal link integrity, component preservation, boundary discipline, strategic surface integrity, and acquisition-readiness non-transactional boundaries without creating new public routes, pricing statements, transaction pages, acquisition term documents, representative mandates, legal or financial representations, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, or real-world case evaluation.
+
+### Rationale
+
+After Sprint 99 consolidated the strategic surface, Hoax.ai needed a release-integrity audit to ensure the complete public surface could be inspected, cited, retrieved, and navigated without route drift, boundary drift, metadata drift, link drift, component drift, or strategic confusion. This decision governs visible public-surface inspection, the homepage integrity snapshot, and any repairs made to production pages. It is not abstract preparatory governance.
+
+### Implications
+
+- Existing public pages may receive release-integrity repairs.
+- No new public route is authorized.
+- Sitemap remains 58 URLs.
+- Route registry remains 58 entries.
+- A homepage Public Release Integrity Snapshot is authorized.
+- The homepage snapshot counts as visible production contact.
+- Release-integrity validation is authorized across route counts, files, metadata, links, components, boundaries, strategic pages, and acquisition-readiness pages.
+- Pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+
