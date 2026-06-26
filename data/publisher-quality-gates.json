@@ -1500,6 +1500,24 @@
       "failure_condition": "public_reference_reviewer_packet_v1_not_met",
       "bypassable": false,
       "notes": "Public Reference Reviewer Packet v1 completed Sprint 102 (DEC-120). Five reviewer-packet routes. Sitemap sixty-eight URLs. Not chatbot, generator, private data room, or downloadable report."
+    },
+    {
+      "gate_id": "PUB-GATE-0097",
+      "name": "Public Reference Review Packet Integrity Audit v1 Gate",
+      "status": "public_reference_review_packet_integrity_audit_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+      "failure_condition": "public_reference_review_packet_integrity_audit_v1_not_met",
+      "bypassable": false,
+      "notes": "Public Reference Review Packet Integrity Audit v1 completed Sprint 103 (DEC-121). Reviewer Packet Integrity Snapshot. Sitemap sixty-eight URLs unchanged."
     }
   ],
   "last_reviewed": "2026-06-26"

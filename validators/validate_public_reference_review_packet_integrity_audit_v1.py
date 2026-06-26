@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 102 — Public Reference Reviewer Packet v1."""
+"""Validate Sprint 103 — Public Reference Review Packet Integrity Audit v1."""
 
 from __future__ import annotations
 
@@ -15,23 +15,21 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (  # noqa: E402
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEWER_PACKET_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
     validate_public_surface,
 )
 
-PACKET_DOC = "PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md"
-AUDIT_DOC = "PUBLIC_REFERENCE_REVIEWER_PACKET_AUDIT_V1.md"
-STANDARD_DOC = "PUBLIC_REVIEWER_PACKET_STANDARD_V1.md"
-PACKET_JSON = "data/public-reference-reviewer-packet-v1.json"
-PACKET_SCHEMA = "data/public-reference-reviewer-packet-v1.schema.json"
-SPRINT_DOC = "SPRINT_102_PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md"
-INDEX = "index.html"
+AUDIT_DOC = "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md"
+REPAIR_DOC = "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md"
+STANDARD_DOC = "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md"
+AUDIT_JSON = "data/public-reference-review-packet-integrity-audit-v1.json"
+AUDIT_SCHEMA = "data/public-reference-review-packet-integrity-audit-v1.schema.json"
+SPRINT_DOC = "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md"
+PACKET_HUB = "reviewer-packet/index.html"
 EXPECTED = 68
-MIN_WORDS = 850
 
-NEW_PAGES = [
+REVIEWER_PACKET_PAGES = [
     "reviewer-packet/index.html",
     "reviewer-packet/review-sequence/index.html",
     "reviewer-packet/public-surface-index/index.html",
@@ -39,7 +37,7 @@ NEW_PAGES = [
     "reviewer-packet/boundary-and-readiness-summary/index.html",
 ]
 
-NEW_PATHS = [
+REVIEWER_PACKET_PATHS = [
     "/reviewer-packet/",
     "/reviewer-packet/review-sequence/",
     "/reviewer-packet/public-surface-index/",
@@ -47,10 +45,7 @@ NEW_PATHS = [
     "/reviewer-packet/boundary-and-readiness-summary/",
 ]
 
-ROUTE_IDS = [f"ROUTE-{i:04d}" for i in range(64, 69)]
-PUB_FILE_IDS = [f"PUB-FILE-{i:04d}" for i in range(64, 69)]
-
-REQUIRED_SECTIONS = [
+REQUIRED_PACKET_SECTIONS = [
     "Reference summary",
     "Packet purpose",
     "Review path",
@@ -64,15 +59,15 @@ REQUIRED_SECTIONS = [
     "Non-transactional review boundary",
 ]
 
-REQUIRED_ANCHORS = [
-    "reference-summary",
-    "packet-purpose",
-    "review-path",
-    "reference-answer",
-    "source-confidence",
-    "cite-this-reference",
-    "retrieval-capsule",
-    "boundary",
+STALE_ROUTE_COUNTS = [
+    "63-route",
+    "58-route",
+    "63 urls",
+    "58 urls",
+    "29-route",
+    "41-route",
+    "47-route",
+    "52-route",
 ]
 
 FORBIDDEN_CLAIMS = [
@@ -114,7 +109,9 @@ NEGATION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
-SOURCE_LOCS = [PACKET_DOC, AUDIT_DOC, STANDARD_DOC, PACKET_JSON, PACKET_SCHEMA, SPRINT_DOC]
+SOURCE_LOCS = [AUDIT_DOC, REPAIR_DOC, STANDARD_DOC, AUDIT_JSON, AUDIT_SCHEMA, SPRINT_DOC]
+
+PUBLIC_FILE_REGISTRY_SUPPORT = {"styles.css", "sitemap.xml", "robots.txt"}
 
 
 def error(msg: str) -> None:
@@ -125,9 +122,9 @@ def load_json(rel: str) -> dict:
     return json.loads((ROOT / rel).read_text(encoding="utf-8"))
 
 
-def visible_words(html: str) -> int:
-    text = re.sub(r"<[^>]+>", " ", html)
-    return len(re.findall(r"[A-Za-z0-9']+", text))
+def route_to_file(path: str) -> str:
+    p = path.strip("/")
+    return "index.html" if not p else f"{p}/index.html"
 
 
 def line_has_unnegated_claim(line: str, claim: str) -> bool:
@@ -149,25 +146,52 @@ def line_has_unnegated_claim(line: str, claim: str) -> bool:
     return False
 
 
+def internal_route_set() -> set[str]:
+    routes = load_json("data/route-registry.json").get("routes", [])
+    out = set()
+    for r in routes:
+        p = r.get("path", "/").rstrip("/") or "/"
+        out.add(p)
+    return out
+
+
 def validate_artifacts() -> bool:
     ok = True
     for rel in SOURCE_LOCS:
         if not (ROOT / rel).is_file():
             error(f"missing {rel}")
             ok = False
-    data = load_json(PACKET_JSON)
-    if data.get("decision_ref") != "DEC-120":
-        error("decision_ref must be DEC-120")
+    data = load_json(AUDIT_JSON)
+    if data.get("decision_ref") != "DEC-121":
+        error("decision_ref must be DEC-121")
         ok = False
-    if data.get("new_public_routes_added") is not True:
-        error("new_public_routes_added must be true")
+    if data.get("new_public_routes_added") is not False:
+        error("new_public_routes_added must be false")
         ok = False
-    if set(data.get("public_routes_added", [])) != set(NEW_PATHS):
-        error("public_routes_added must list exactly the five new routes")
+    if data.get("total_repairs_made", 0) < 1:
+        error("total_repairs_made must be at least 1")
         ok = False
-    if data.get("expected_sitemap_url_count_after") != EXPECTED:
-        error("expected_sitemap_url_count_after must be 68")
+    if data.get("reviewer_packet_integrity_snapshot_added") is not True:
+        error("reviewer_packet_integrity_snapshot_added must be true")
         ok = False
+    for key in (
+        "reviewer_packet_snapshot_counts_as_visible_repair",
+        "visible_repairs_made",
+        "route_count_integrity_checked",
+        "file_existence_integrity_checked",
+        "metadata_integrity_checked",
+        "link_integrity_checked",
+        "reviewer_packet_component_integrity_checked",
+        "boundary_integrity_checked",
+        "private_data_room_drift_checked",
+        "downloadable_report_drift_checked",
+        "pricing_transaction_drift_checked",
+        "public_html_checked_only_for_current_forbidden_copy",
+        "historical_governance_not_rewritten_for_current_copy_rules",
+    ):
+        if data.get(key) is not True:
+            error(f"{key} must be true")
+            ok = False
     for flag in (
         "upload_authorized",
         "scoring_authorized",
@@ -186,8 +210,8 @@ def validate_artifacts() -> bool:
         "representative_mandate_authorized",
         "legal_representation_authorized",
         "financial_representation_authorized",
-        "downloadable_report_authorized",
         "private_data_room_authorized",
+        "downloadable_report_authorized",
     ):
         if data.get(flag) is not False:
             error(f"{flag} must be false")
@@ -198,65 +222,45 @@ def validate_artifacts() -> bool:
 def validate_counts() -> bool:
     ok = True
     sitemap_count = len([u for u in ET.parse(ROOT / "sitemap.xml").getroot().iter() if u.tag.endswith("loc")])
-    routes = load_json("data/route-registry.json").get("routes", [])
+    registry_count = len(load_json("data/route-registry.json").get("routes", []))
     if sitemap_count != EXPECTED:
         error(f"sitemap must have {EXPECTED} URLs, found {sitemap_count}")
         ok = False
-    if len(routes) != EXPECTED:
-        error(f"route registry must have {EXPECTED} entries, found {len(routes)}")
+    if registry_count != EXPECTED:
+        error(f"route registry must have {EXPECTED} entries, found {registry_count}")
         ok = False
-    by_id = {r.get("route_id"): r for r in routes}
-    for rid, path in zip(ROUTE_IDS, NEW_PATHS):
-        if rid not in by_id:
-            error(f"route registry missing {rid}")
-            ok = False
-        elif by_id[rid].get("path") != path:
-            error(f"{rid} path mismatch")
-            ok = False
+    if sitemap_count != PUBLIC_SITEMAP_URL_COUNT:
+        error(f"sitemap count {sitemap_count} != PUBLIC_SITEMAP_URL_COUNT {PUBLIC_SITEMAP_URL_COUNT}")
+        ok = False
     return ok
 
 
-def validate_public_file_registry() -> bool:
+def validate_packet_hub_snapshot() -> bool:
     ok = True
-    pfr = load_json("data/public-file-registry.json")
-    by_id = {f.get("file_id"): f for f in pfr.get("public_files", [])}
-    for fid, rel in zip(PUB_FILE_IDS, NEW_PAGES):
-        if fid not in by_id:
-            error(f"public-file-registry missing {fid}")
-            ok = False
-        elif by_id[fid].get("path") != rel:
-            error(f"{fid} path mismatch")
-            ok = False
-    return ok
-
-
-def validate_homepage() -> bool:
-    ok = True
-    content = (ROOT / INDEX).read_text(encoding="utf-8")
-    if "Reviewer Packet" not in content:
-        error("homepage must include Reviewer Packet section")
+    content = (ROOT / PACKET_HUB).read_text(encoding="utf-8")
+    if "Reviewer Packet Integrity Snapshot" not in content:
+        error("/reviewer-packet/ must include Reviewer Packet Integrity Snapshot")
         ok = False
     if "Current public route count: 68" not in content:
-        error("homepage Public Release Integrity Snapshot must include Current public route count: 68")
+        error("/reviewer-packet/ must include Current public route count: 68")
         ok = False
-    for path in NEW_PATHS:
+    if "Reviewer packet route count: 5" not in content:
+        error("/reviewer-packet/ must include Reviewer packet route count: 5")
+        ok = False
+    for path in REVIEWER_PACKET_PATHS:
         if f'href="{path}' not in content and f"href='{path}" not in content:
-            error(f"homepage must link to {path}")
+            error(f"/reviewer-packet/ must link to {path}")
             ok = False
     return ok
 
 
-def validate_new_page(rel: str) -> bool:
+def validate_reviewer_packet_page(rel: str) -> bool:
     ok = True
     fp = ROOT / rel
     if not fp.is_file():
         error(f"missing {rel}")
         return False
     content = fp.read_text(encoding="utf-8")
-    wc = visible_words(content)
-    if wc < MIN_WORDS:
-        error(f"{rel}: need at least {MIN_WORDS} visible words, found {wc}")
-        ok = False
     if len(re.findall(r"<h1\b", content, re.I)) != 1:
         error(f"{rel}: expected exactly one H1")
         ok = False
@@ -264,13 +268,9 @@ def validate_new_page(rel: str) -> bool:
         if field not in content.lower():
             error(f"{rel}: missing {field}")
             ok = False
-    for section in REQUIRED_SECTIONS:
+    for section in REQUIRED_PACKET_SECTIONS:
         if section not in content:
             error(f"{rel}: missing section {section!r}")
-            ok = False
-    for anchor in REQUIRED_ANCHORS:
-        if f'id="{anchor}"' not in content:
-            error(f"{rel}: missing anchor {anchor}")
             ok = False
     if 'href="/reviewer-packet/"' not in content and 'href="/reviewer-packet/#' not in content:
         error(f"{rel}: must link to /reviewer-packet/")
@@ -305,18 +305,70 @@ def validate_new_page(rel: str) -> bool:
     if utility_ref < 5:
         error(f"{rel}: must link to at least 5 reference or utility routes")
         ok = False
-    sibling_links = sum(1 for p in NEW_PATHS if f'href="{p}' in content or f"href='{p}" in content)
+    sibling_links = sum(1 for p in REVIEWER_PACKET_PATHS if f'href="{p}' in content or f"href='{p}" in content)
     if sibling_links < 2:
         error(f"{rel}: must link to at least 2 sibling reviewer-packet routes")
         ok = False
-    if "Non-transactional review boundary" not in content:
-        error(f"{rel}: missing non-transactional review boundary")
-        ok = False
-    if "<form" in content.lower() or "<input" in content.lower():
-        error(f"{rel}: forms/inputs forbidden")
-        ok = False
-    if re.search(r'<script\b(?![^>]*type=["\']application/ld\+json["\'])', content, re.I):
-        error(f"{rel}: JavaScript forbidden")
+    return ok
+
+
+def validate_route_files_and_metadata() -> bool:
+    ok = True
+    routes = load_json("data/route-registry.json").get("routes", [])
+    for r in routes:
+        rel = route_to_file(r["path"])
+        fp = ROOT / rel
+        if not fp.is_file():
+            error(f"missing route file {rel} for {r['path']}")
+            ok = False
+            continue
+        content = fp.read_text(encoding="utf-8")
+        if len(re.findall(r"<h1\b", content, re.I)) != 1:
+            error(f"{rel}: expected exactly one H1")
+            ok = False
+        for field in ('rel="canonical"', 'name="description"', "og:title", "og:description"):
+            if field not in content.lower():
+                error(f"{rel}: missing {field}")
+                ok = False
+    return ok
+
+
+def validate_internal_links() -> bool:
+    ok = True
+    routes = internal_route_set()
+    for rel in sorted(ALLOWED_PUBLIC_HTML):
+        content = (ROOT / rel).read_text(encoding="utf-8")
+        for m in re.finditer(r'href="(/[^"]*)"', content):
+            href = m.group(1)
+            if href.startswith("//"):
+                continue
+            base = href.split("#", 1)[0].rstrip("/") or "/"
+            if base not in routes:
+                error(f"{rel}: broken internal route link {href}")
+                ok = False
+    return ok
+
+
+def validate_stale_route_counts() -> bool:
+    ok = True
+    for rel in sorted(ALLOWED_PUBLIC_HTML):
+        lower = (ROOT / rel).read_text(encoding="utf-8").lower()
+        for stale in STALE_ROUTE_COUNTS:
+            if stale in lower:
+                error(f"{rel}: stale route-count language {stale!r}")
+                ok = False
+    return ok
+
+
+def validate_public_file_registry_scope() -> bool:
+    ok = True
+    pfr = load_json("data/public-file-registry.json")
+    files = pfr.get("public_files", [])
+    reg_paths = {f["path"] for f in files}
+    route_files = {route_to_file(r["path"]) for r in load_json("data/route-registry.json").get("routes", [])}
+    missing = sorted(route_files - reg_paths)
+    if missing:
+        error(f"public-file-registry missing route HTML files: {missing[:5]}")
         ok = False
     return ok
 
@@ -325,6 +377,13 @@ def validate_public_html_copy() -> bool:
     ok = True
     for rel in sorted(ALLOWED_PUBLIC_HTML):
         content = (ROOT / rel).read_text(encoding="utf-8")
+        lower = content.lower()
+        if "<form" in lower or "<input" in lower:
+            error(f"{rel}: forms/inputs forbidden")
+            ok = False
+        if re.search(r'<script\b(?![^>]*type=["\']application/ld\+json["\'])', content, re.I):
+            error(f"{rel}: JavaScript forbidden")
+            ok = False
         for claim in FORBIDDEN_CLAIMS:
             for line in content.splitlines():
                 if line_has_unnegated_claim(line, claim):
@@ -334,38 +393,61 @@ def validate_public_html_copy() -> bool:
     return ok
 
 
+def validate_repair_log() -> bool:
+    ok = True
+    text = (ROOT / REPAIR_DOC).read_text(encoding="utf-8")
+    for col in (
+        "repair_id",
+        "page_path",
+        "issue_or_improvement_target",
+        "repair_applied",
+        "route_group_affected",
+        "review_packet_integrity_impact",
+        "human_readability_impact",
+        "ai_retrieval_impact",
+        "non_verdict_impact",
+        "non_transactional_impact",
+        "validator_protection",
+    ):
+        if col not in text:
+            error(f"repair log missing column {col}")
+            ok = False
+    if "RPIA-001" not in text:
+        error("repair log must include RPIA-001")
+        ok = False
+    return ok
+
+
 def validate_governance() -> bool:
     ok = True
-    if "DEC-120" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-120 missing")
+    if "DEC-121" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-121 missing")
         ok = False
-    if "validate_public_reference_reviewer_packet_v1.py" not in (
+    if "validate_public_reference_review_packet_integrity_audit_v1.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 102 validator")
+        error("validate_all.py must include Sprint 103 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
     if policy.get("current_publisher_status") not in (
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEWER_PACKET_VALIDATION,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
-        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_VALIDATION,
-        "blocked_until_public_reference_review_packet_integrity_audit_validation",
     ):
-        error("publisher status must reflect Sprint 102 reviewer packet validation")
+        error("publisher status must reflect Sprint 103 review packet integrity audit validation")
         ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
-    for loc in SOURCE_LOCS + ["validators/validate_public_reference_reviewer_packet_v1.py"]:
+    for loc in SOURCE_LOCS + ["validators/validate_public_reference_review_packet_integrity_audit_v1.py"]:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
-    if not any(c.get("claim_id") == "CLAIM-0103" for c in load_json("data/evidence-ledger.json").get("claims", [])):
-        error("CLAIM-0103 missing")
+    if not any(c.get("claim_id") == "CLAIM-0104" for c in load_json("data/evidence-ledger.json").get("claims", [])):
+        error("CLAIM-0104 missing")
         ok = False
-    if not any(g.get("gate_id") == "PUB-GATE-0096" for g in load_json("data/publisher-quality-gates.json").get("gates", [])):
-        error("PUB-GATE-0096 missing")
+    if not any(g.get("gate_id") == "PUB-GATE-0097" for g in load_json("data/publisher-quality-gates.json").get("gates", [])):
+        error("PUB-GATE-0097 missing")
         ok = False
-    if "Sprint 102 | COMPLETE | G102 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 102 row")
+    if "Sprint 103 | COMPLETE | G103 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 103 row")
         ok = False
     if (ROOT / ".nojekyll").exists():
         error(".nojekyll must not exist")
@@ -392,14 +474,22 @@ def main() -> int:
         ok = False
     if not validate_counts():
         ok = False
-    if not validate_public_file_registry():
+    if not validate_packet_hub_snapshot():
         ok = False
-    if not validate_homepage():
+    if not validate_public_file_registry_scope():
         ok = False
-    for rel in NEW_PAGES:
-        if not validate_new_page(rel):
+    for rel in REVIEWER_PACKET_PAGES:
+        if not validate_reviewer_packet_page(rel):
             ok = False
+    if not validate_route_files_and_metadata():
+        ok = False
+    if not validate_internal_links():
+        ok = False
+    if not validate_stale_route_counts():
+        ok = False
     if not validate_public_html_copy():
+        ok = False
+    if not validate_repair_log():
         ok = False
     routes = load_json("data/route-registry.json").get("routes", [])
     if not validate_public_surface(routes, error, PUBLIC_SITEMAP_URL_COUNT):

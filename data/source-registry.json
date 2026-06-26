@@ -8579,6 +8579,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 validator."
+    },
+    {
+      "source_id": "SOURCE-0690",
+      "source_title": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 audit doc."
+    },
+    {
+      "source_id": "SOURCE-0691",
+      "source_title": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 repair log."
+    },
+    {
+      "source_id": "SOURCE-0692",
+      "source_title": "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 standard."
+    },
+    {
+      "source_id": "SOURCE-0693",
+      "source_title": "data/public-reference-review-packet-integrity-audit-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-review-packet-integrity-audit-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 JSON."
+    },
+    {
+      "source_id": "SOURCE-0694",
+      "source_title": "data/public-reference-review-packet-integrity-audit-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-review-packet-integrity-audit-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 schema."
+    },
+    {
+      "source_id": "SOURCE-0695",
+      "source_title": "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 record."
+    },
+    {
+      "source_id": "SOURCE-0696",
+      "source_title": "validators/validate_public_reference_review_packet_integrity_audit_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_reference_review_packet_integrity_audit_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 103 validator."
     }
   ]
 }

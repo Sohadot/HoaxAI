@@ -3133,3 +3133,30 @@ After Sprint 101 added external-review readiness, Hoax.ai needed a public review
 - Private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-121 — Public Reference Review Packet Integrity Audit v1 Adopted
+
+**Date:** 2026-06-26
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Review Packet Integrity Audit v1 by inspecting the full 68-route public surface, adding a Reviewer Packet Integrity Snapshot to `/reviewer-packet/`, and applying visible reviewer-packet integrity repairs where needed. The sprint validates reviewer-packet route integrity, metadata integrity, link integrity, component preservation, boundary discipline, private-data-room prohibition, downloadable-report prohibition, and pricing/transaction drift protection without creating new public routes, private data-room access, downloadable reports, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 102 added the public reviewer packet, Hoax.ai needed an integrity audit to ensure the packet remains a public reference organizer rather than a report, sales packet, private data room, transaction surface, scorecard, verdict system, or operational review tool. This decision governs visible public-surface inspection, the Reviewer Packet Integrity Snapshot, and any repairs made to production pages. It is not abstract preparatory governance.
+
+### Implications
+
+- Existing reviewer-packet pages may receive integrity repairs.
+- No new public route is authorized.
+- Sitemap remains 68 URLs.
+- Route registry remains 68 entries.
+- A Reviewer Packet Integrity Snapshot on `/reviewer-packet/` is authorized.
+- The Reviewer Packet Integrity Snapshot counts as visible production contact.
+- Reviewer-packet integrity validation is authorized across route counts, metadata, links, components, boundaries, private-data-room prohibition, downloadable-report prohibition, and transaction drift.
+- Private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+

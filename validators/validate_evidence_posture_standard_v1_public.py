@@ -297,6 +297,7 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_release_integrity_audit_validation",
         "blocked_until_public_reference_external_review_readiness_validation",
         "blocked_until_public_reference_reviewer_packet_validation",
+        "blocked_until_public_reference_review_packet_integrity_audit_validation",
     ):
         error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")
         ok = False

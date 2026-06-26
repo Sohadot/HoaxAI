@@ -741,6 +741,7 @@ def validate_cross_file_integration() -> bool:
         "blocked_until_public_reference_release_integrity_audit_validation",
         "blocked_until_public_reference_external_review_readiness_validation",
         "blocked_until_public_reference_reviewer_packet_validation",
+        "blocked_until_public_reference_review_packet_integrity_audit_validation",
     ):
         error("publisher-governance-policy: publisher must remain blocked from drafts and publication")
         ok = False

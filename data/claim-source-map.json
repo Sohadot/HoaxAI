@@ -2499,6 +2499,34 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Reviewer Packet v1 per DEC-120."
+    },
+    {
+      "claim_id": "CLAIM-0104",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+        "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md",
+        "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md",
+        "data/public-reference-review-packet-integrity-audit-v1.json",
+        "reviewer-packet/index.html",
+        "validators/validate_public_reference_review_packet_integrity_audit_v1.py",
+        "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0690",
+        "SOURCE-0691",
+        "SOURCE-0692",
+        "SOURCE-0693",
+        "SOURCE-0694",
+        "SOURCE-0695",
+        "SOURCE-0696"
+      ],
+      "support_scope": "public reference review packet integrity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Review Packet Integrity Audit v1 per DEC-121."
     }
   ],
   "last_reviewed": "2026-06-26"
