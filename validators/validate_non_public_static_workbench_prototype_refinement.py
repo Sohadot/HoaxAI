@@ -548,6 +548,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_review_packet_integrity_audit_validation",
         "blocked_until_public_reference_executive_overview_surface_validation",
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
+        "blocked_until_public_reference_strategic_review_index_validation",
     ):
         error(
             f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_PROTOTYPE_REFINEMENT_VALIDATION} "

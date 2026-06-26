@@ -3212,3 +3212,28 @@ After Sprint 104 added the public executive overview surface, Hoax.ai needed an 
 - Pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-124 — Public Reference Strategic Review Index v1 Adopted
+
+**Date:** 2026-06-26
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Strategic Review Index v1 by adding five public strategic-review index routes: Hoax.ai Strategic Review Index, Strategic Review of Category Position, Strategic Review of Public Reference Depth, Strategic Review of Retrieval and Citation Readiness, and Strategic Review of Boundary and Readiness. These pages organize public strategic inspection of Hoax.ai's category position, reference depth, retrieval/citation readiness, review readiness, and boundary discipline without creating private data-room access, downloadable reports, pitch decks, sales pages, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 105 protected the executive overview surface, Hoax.ai needed a strategic review index that helps serious reviewers and AI agents choose inspection paths by strategic question rather than navigating the public surface randomly. This decision governs visible public pages, not abstract preparatory governance.
+
+### Implications
+
+- Five public strategic-review index routes are authorized.
+- Sitemap may increase from 73 to 78 URLs.
+- Route registry may increase from 73 to 78 entries.
+- New route registry entries ROUTE-0074 through ROUTE-0078 are authorized.
+- Strategic-review index pages are authorized as static, non-verdict, non-transactional public reference routes.
+- Private data-room access, downloadable reports, pitch decks, sales pages, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+

@@ -438,4 +438,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
+  <url>
+    <loc>https://hoax.ai/strategic-review/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://hoax.ai/strategic-review/category-position/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://hoax.ai/strategic-review/public-reference-depth/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://hoax.ai/strategic-review/retrieval-and-citation/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://hoax.ai/strategic-review/boundary-and-readiness/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
 </urlset>

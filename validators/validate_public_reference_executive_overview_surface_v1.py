@@ -20,9 +20,9 @@ from public_surface_checks import (  # noqa: E402
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_VALIDATION,
     validate_public_surface,
 )
-
 OVERVIEW_DOC = "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md"
 AUDIT_DOC = "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_AUDIT_V1.md"
 STANDARD_DOC = "PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md"
@@ -204,11 +204,11 @@ def validate_counts() -> bool:
     ok = True
     sitemap_count = len([u for u in ET.parse(ROOT / "sitemap.xml").getroot().iter() if u.tag.endswith("loc")])
     routes = load_json("data/route-registry.json").get("routes", [])
-    if sitemap_count != EXPECTED:
-        error(f"sitemap must have {EXPECTED} URLs, found {sitemap_count}")
+    if sitemap_count != PUBLIC_SITEMAP_URL_COUNT:
+        error(f"sitemap must have {PUBLIC_SITEMAP_URL_COUNT} URLs, found {sitemap_count}")
         ok = False
-    if len(routes) != EXPECTED:
-        error(f"route registry must have {EXPECTED} entries, found {len(routes)}")
+    if len(routes) != PUBLIC_SITEMAP_URL_COUNT:
+        error(f"route registry must have {PUBLIC_SITEMAP_URL_COUNT} entries, found {len(routes)}")
         ok = False
     by_id = {r.get("route_id"): r for r in routes}
     for rid, path in zip(ROUTE_IDS, NEW_PATHS):
@@ -241,8 +241,8 @@ def validate_homepage() -> bool:
     if "Executive Overview" not in content:
         error("homepage must include Executive Overview section")
         ok = False
-    if "Current public route count: 73" not in content:
-        error("homepage snapshot must include Current public route count: 73")
+    if f"Current public route count: {PUBLIC_SITEMAP_URL_COUNT}" not in content:
+        error(f"homepage snapshot must include Current public route count: {PUBLIC_SITEMAP_URL_COUNT}")
         ok = False
     for path in NEW_PATHS:
         if f'href="{path}' not in content and f"href='{path}" not in content:
@@ -328,7 +328,7 @@ def validate_new_page(rel: str) -> bool:
 
 
 STALE_ROUTE_COUNTS = [
-    "58-route", "58 routes", "63-route", "63 routes", "68-route", "68 routes",
+    "58-route", "58 routes", "63-route", "63 routes", "68-route", "68 routes", "73-route", "73 routes",
 ]
 
 
@@ -380,6 +380,7 @@ def validate_governance() -> bool:
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_VALIDATION,
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_VALIDATION,
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_VALIDATION,
     ):
         error("publisher status must reflect Sprint 104 executive overview surface validation")
         ok = False

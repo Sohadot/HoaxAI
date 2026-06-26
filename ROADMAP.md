@@ -2477,6 +2477,24 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 106 — Public Reference Strategic Review Index v1
+
+**Status:** COMPLETE — 2026-06-26
+**Goal:** Add five strategic-review index routes organizing public inspection by strategic question.
+
+### Deliverables
+
+- 5 routes: hub, category position, public reference depth, retrieval and citation, boundary and readiness
+- Homepage Strategic Review Index section; snapshot at 78 routes
+- Reviewer packet and executive overview system page updated
+- DEC-124, PUB-GATE-0100, CLAIM-0107
+
+### Gate
+
+**Gate G106 passed.** Sprint 107 — Public Reference Strategic Review Index Integrity Audit v1 is next.
+
+---
+
 ## Sprint 105 — Public Reference Executive Overview Integrity Audit v1
 
 **Status:** COMPLETE — 2026-06-26

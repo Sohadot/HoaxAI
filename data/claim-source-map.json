@@ -2583,6 +2583,34 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Executive Overview Integrity Audit v1 per DEC-123."
+    },
+    {
+      "claim_id": "CLAIM-0107",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+        "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_AUDIT_V1.md",
+        "PUBLIC_STRATEGIC_REVIEW_INDEX_STANDARD_V1.md",
+        "data/public-reference-strategic-review-index-v1.json",
+        "strategic-review/index.html",
+        "validators/validate_public_reference_strategic_review_index_v1.py",
+        "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0711",
+        "SOURCE-0712",
+        "SOURCE-0713",
+        "SOURCE-0714",
+        "SOURCE-0715",
+        "SOURCE-0716",
+        "SOURCE-0717"
+      ],
+      "support_scope": "public reference strategic review index v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Strategic Review Index v1 per DEC-124."
     }
   ],
   "last_reviewed": "2026-06-26"

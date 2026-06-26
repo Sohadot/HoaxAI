@@ -456,6 +456,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_review_packet_integrity_audit_validation",
         "blocked_until_public_reference_executive_overview_surface_validation",
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
+        "blocked_until_public_reference_strategic_review_index_validation",
     }
     if status not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

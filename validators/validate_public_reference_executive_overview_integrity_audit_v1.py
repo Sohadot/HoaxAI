@@ -17,6 +17,7 @@ from public_surface_checks import (  # noqa: E402
     PUBLIC_SITEMAP_URL_COUNT,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_VALIDATION,
     validate_public_surface,
 )
 
@@ -65,6 +66,8 @@ STALE_ROUTE_COUNTS = [
     "63 routes",
     "68-route",
     "68 routes",
+    "73-route",
+    "73 routes",
 ]
 
 FORBIDDEN_CLAIMS = [
@@ -440,6 +443,7 @@ def validate_governance() -> bool:
     policy = load_json("data/publisher-governance-policy.json")
     if policy.get("current_publisher_status") not in (
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_VALIDATION,
+        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_VALIDATION,
     ):
         error("publisher status must reflect Sprint 105 executive overview integrity audit validation")
         ok = False

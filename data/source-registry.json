@@ -8789,6 +8789,76 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 validator."
+    },
+    {
+      "source_id": "SOURCE-0711",
+      "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 strategic review index."
+    },
+    {
+      "source_id": "SOURCE-0712",
+      "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 audit."
+    },
+    {
+      "source_id": "SOURCE-0713",
+      "source_title": "PUBLIC_STRATEGIC_REVIEW_INDEX_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_STRATEGIC_REVIEW_INDEX_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 standard."
+    },
+    {
+      "source_id": "SOURCE-0714",
+      "source_title": "data/public-reference-strategic-review-index-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-strategic-review-index-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 index JSON."
+    },
+    {
+      "source_id": "SOURCE-0715",
+      "source_title": "data/public-reference-strategic-review-index-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-strategic-review-index-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 index schema."
+    },
+    {
+      "source_id": "SOURCE-0716",
+      "source_title": "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 record."
+    },
+    {
+      "source_id": "SOURCE-0717",
+      "source_title": "validators/validate_public_reference_strategic_review_index_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_reference_strategic_review_index_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 106 validator."
     }
   ]
 }

@@ -1554,6 +1554,24 @@
       "failure_condition": "public_reference_executive_overview_integrity_audit_v1_not_met",
       "bypassable": false,
       "notes": "Public Reference Executive Overview Integrity Audit v1 completed Sprint 105 (DEC-123). Executive Overview Integrity Snapshot. Sitemap seventy-three URLs unchanged."
+    },
+    {
+      "gate_id": "PUB-GATE-0100",
+      "name": "Public Reference Strategic Review Index v1 Gate",
+      "status": "public_reference_strategic_review_index_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
+      "failure_condition": "public_reference_strategic_review_index_v1_not_met",
+      "bypassable": false,
+      "notes": "Public Reference Strategic Review Index v1 completed Sprint 106 (DEC-124). Five strategic-review index routes. Sitemap seventy-eight URLs."
     }
   ],
   "last_reviewed": "2026-06-26"
