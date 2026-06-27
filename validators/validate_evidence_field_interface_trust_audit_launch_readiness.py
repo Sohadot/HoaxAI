@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 )
 
 TRUST_AUDIT = "EVIDENCE_FIELD_INTERFACE_TRUST_AUDIT.md"

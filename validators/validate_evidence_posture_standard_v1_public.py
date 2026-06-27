@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (
     PUBLIC_SITEMAP_URL_COUNT,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 )
 
 STANDARD_PATH = "standard/evidence-posture/index.html"
@@ -302,6 +303,8 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
         "blocked_until_public_reference_strategic_review_index_validation",
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
+        "blocked_until_public_reference_system_map_surface_validation",        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
+
     ):
         error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")
         ok = False

@@ -16,6 +16,7 @@ from public_surface_checks import (
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
     validate_public_surface,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 )
 
 BATCH1_PAGES = {

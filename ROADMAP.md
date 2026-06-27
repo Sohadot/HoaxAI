@@ -2477,6 +2477,26 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 108 — Public Reference System Map Surface v1
+
+**Status:** COMPLETE — 2026-06-27
+**Goal:** Add five system-map routes organizing public structural inspection by layer; update homepage and release snapshot to 83 routes.
+
+### Deliverables
+
+- `/system-map/` hub and four child map routes
+- Homepage System Map section with five cards
+- Public Release Integrity Snapshot updated to 83 routes
+- PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_V1.md, standard, audit, JSON/schema, validator
+- Sitemap 83 URLs; route registry 83 entries
+- DEC-126, PUB-GATE-0102, CLAIM-0109
+
+### Gate
+
+**Gate G108 passed.** Sprint 109 — Public Reference System Map Integrity Audit v1 is next.
+
+---
+
 ## Sprint 107 — Public Reference Strategic Review Index Integrity Audit v1
 
 **Status:** COMPLETE — 2026-06-27

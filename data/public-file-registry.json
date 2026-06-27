@@ -1132,7 +1132,77 @@
       ],
       "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction",
       "notes": "Sprint 106 per DEC-124."
+    },
+    {
+      "file_id": "PUB-FILE-0079",
+      "path": "system-map/index.html",
+      "file_type": "html",
+      "public_role": "system_map_hub",
+      "route_id_if_applicable": "ROUTE-0079",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 108 per DEC-126."
+    },
+    {
+      "file_id": "PUB-FILE-0080",
+      "path": "system-map/route-groups/index.html",
+      "file_type": "html",
+      "public_role": "system_map_route_groups",
+      "route_id_if_applicable": "ROUTE-0080",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 108 per DEC-126."
+    },
+    {
+      "file_id": "PUB-FILE-0081",
+      "path": "system-map/human-review-paths/index.html",
+      "file_type": "html",
+      "public_role": "system_map_human_review_paths",
+      "route_id_if_applicable": "ROUTE-0081",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 108 per DEC-126."
+    },
+    {
+      "file_id": "PUB-FILE-0082",
+      "path": "system-map/ai-retrieval-paths/index.html",
+      "file_type": "html",
+      "public_role": "system_map_ai_retrieval_paths",
+      "route_id_if_applicable": "ROUTE-0082",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 108 per DEC-126."
+    },
+    {
+      "file_id": "PUB-FILE-0083",
+      "path": "system-map/boundary-layers/index.html",
+      "file_type": "html",
+      "public_role": "system_map_boundary_layers",
+      "route_id_if_applicable": "ROUTE-0083",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 108 per DEC-126."
     }
   ],
-  "last_reviewed": "2026-06-26"
+  "last_reviewed": "2026-06-27"
 }

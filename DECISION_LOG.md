@@ -3262,3 +3262,28 @@ After Sprint 106 added the public strategic review index, Hoax.ai needed an inte
 - Scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 
+---
+
+## DEC-126 — Public Reference System Map Surface v1 Adopted
+
+**Date:** 2026-06-27
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference System Map Surface v1 by adding five public system-map routes that organize structural inspection by layer — route groups, human review paths, AI retrieval paths, and boundary layers — across the 83-route public surface. The sprint validates system-map route integrity, metadata integrity, link integrity, component preservation, boundary discipline, scorecard prohibition, rating-system prohibition, dashboard prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, and pricing/transaction drift protection without creating scorecards, rating systems, dashboards, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 107 protected the strategic review index integrity, Hoax.ai needed a public system map so reviewers and AI agents could inspect structural layout by layer rather than browsing the 83-route surface by sitemap order alone. This decision governs visible production routes, homepage navigation, and release snapshot updates. It is not abstract preparatory governance.
+
+### Implications
+
+- Five new public routes are authorized: `/system-map/` hub and four child map routes.
+- Sitemap increases to 83 URLs.
+- Route registry increases to 83 entries including ROUTE-0079 through ROUTE-0083.
+- Homepage System Map section and Public Release Integrity Snapshot update to 83-route count are authorized.
+- System-map surface validation is authorized across route counts, metadata, links, components, boundaries, scorecard prohibition, rating-system prohibition, dashboard prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, and transaction drift.
+- Scorecards, rating systems, dashboards, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+

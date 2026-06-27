@@ -25,6 +25,7 @@ PUBLIC_ROUTE_IDS = [
     "ROUTE-0064", "ROUTE-0065", "ROUTE-0066", "ROUTE-0067", "ROUTE-0068",
     "ROUTE-0069", "ROUTE-0070", "ROUTE-0071", "ROUTE-0072", "ROUTE-0073",
     "ROUTE-0074", "ROUTE-0075", "ROUTE-0076", "ROUTE-0077", "ROUTE-0078",
+    "ROUTE-0079", "ROUTE-0080", "ROUTE-0081", "ROUTE-0082", "ROUTE-0083",
 ]
 
 PILOT_ROUTE_IDS = PUBLIC_ROUTE_IDS  # backward compatibility
@@ -115,6 +116,11 @@ ALLOWED_PUBLIC_HTML = {
     "strategic-review/public-reference-depth/index.html",
     "strategic-review/retrieval-and-citation/index.html",
     "strategic-review/boundary-and-readiness/index.html",
+    "system-map/index.html",
+    "system-map/route-groups/index.html",
+    "system-map/human-review-paths/index.html",
+    "system-map/ai-retrieval-paths/index.html",
+    "system-map/boundary-layers/index.html",
 }
 
 ALLOWED_INTERNAL_PROTOTYPE_HTML = {
@@ -129,7 +135,7 @@ ALLOWED_PUBLIC_ROOT_FILES = ALLOWED_PUBLIC_HTML | {
     "sitemap.xml",
 }
 
-PUBLIC_SITEMAP_URL_COUNT = 78
+PUBLIC_SITEMAP_URL_COUNT = 83
 
 PILOT_SITEMAP_URL_COUNT = PUBLIC_SITEMAP_URL_COUNT  # backward compatibility
 
@@ -371,6 +377,10 @@ PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_VA
     "blocked_until_public_reference_strategic_review_index_integrity_audit_validation"
 )
 
+PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION = (
+    "blocked_until_public_reference_system_map_surface_validation"
+)
+
 PUBLISHER_STATUSES_ALLOWED = (
     "blocked_until_first_reference_candidate_pack",
     "blocked_until_internal_draft_blueprint",
@@ -458,6 +468,7 @@ PUBLISHER_STATUSES_ALLOWED = (
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 )
 
 

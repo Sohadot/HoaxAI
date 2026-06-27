@@ -75,7 +75,7 @@ REQUIRED_STATES = [
     "retired",
 ]
 
-REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 102)]
+REQUIRED_GATE_IDS = [f"PUB-GATE-{i:04d}" for i in range(1, 103)]
 
 REQUIRED_WORKFLOW_IDS = [f"PUB-WORKFLOW-{i:04d}" for i in range(1, 16)]
 
@@ -128,6 +128,7 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_GOVERNANCE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 )
 
 PUBLIC_FILES = ALLOWED_PUBLIC_ROOT_FILES
@@ -409,6 +410,7 @@ def validate_state_machine() -> bool:
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
         "blocked_until_public_reference_strategic_review_index_validation",
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
+        "blocked_until_public_reference_system_map_surface_validation",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
