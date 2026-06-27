@@ -3233,7 +3233,32 @@ After Sprint 105 protected the executive overview surface, Hoax.ai needed a stra
 - Sitemap may increase from 73 to 78 URLs.
 - Route registry may increase from 73 to 78 entries.
 - New route registry entries ROUTE-0074 through ROUTE-0078 are authorized.
-- Strategic-review index pages are authorized as static, non-verdict, non-transactional public reference routes.
-- Private data-room access, downloadable reports, pitch decks, sales pages, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+
+---
+
+## DEC-125 — Public Reference Strategic Review Index Integrity Audit v1 Adopted
+
+**Date:** 2026-06-27
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Strategic Review Index Integrity Audit v1 by inspecting the full 78-route public surface, adding a Strategic Review Index Integrity Snapshot to `/strategic-review/`, and applying visible strategic-review-index integrity repairs where needed. The sprint validates strategic-review-index route integrity, metadata integrity, link integrity, component preservation, boundary discipline, scorecard prohibition, rating-system prohibition, due-diligence-room prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, and pricing/transaction drift protection without creating new public routes, scorecards, rating systems, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 106 added the public strategic review index, Hoax.ai needed an integrity audit to ensure the index remains a public route organizer by strategic question rather than a scorecard, rating system, due-diligence room, pitch deck, sales page, report, private data room, transaction surface, verdict system, or operational review tool. This decision governs visible public-surface inspection, the Strategic Review Index Integrity Snapshot, and any repairs made to production pages. It is not abstract preparatory governance.
+
+### Implications
+
+- Existing strategic-review pages may receive integrity repairs.
+- No new public route is authorized.
+- Sitemap remains 78 URLs.
+- Route registry remains 78 entries.
+- A Strategic Review Index Integrity Snapshot on `/strategic-review/` is authorized.
+- The Strategic Review Index Integrity Snapshot counts as visible production contact.
+- Strategic-review-index integrity validation is authorized across route counts, metadata, links, components, boundaries, scorecard prohibition, rating-system prohibition, due-diligence-room prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, and transaction drift.
+- Scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
 

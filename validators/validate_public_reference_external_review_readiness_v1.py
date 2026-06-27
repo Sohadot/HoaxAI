@@ -352,6 +352,8 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_executive_overview_surface_validation",
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
         "blocked_until_public_reference_strategic_review_index_validation",
+        "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
+
     ):
         error("publisher status must reflect Sprint 101 external review readiness validation")
         ok = False

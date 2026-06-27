@@ -1,0 +1,9 @@
+# Public Reference Strategic Review Index Integrity Repair Log v1
+
+Sprint 107 — Public Reference Strategic Review Index Integrity Audit v1  
+**Decision:** DEC-125  
+**Date:** 2026-06-27
+
+| repair_id | page_path | issue_or_improvement_target | repair_applied | route_group_affected | strategic_review_index_integrity_impact | human_readability_impact | ai_retrieval_impact | non_verdict_impact | non_transactional_impact | validator_protection |
+|-----------|-----------|----------------------------|----------------|----------------------|----------------------------------------|-------------------------|---------------------|-------------------|------------------------|----------------------|
+| SRIIA-001 | /strategic-review/ | Strategic review index lacked a visible index-level integrity snapshot. | Added Strategic Review Index Integrity Snapshot with 78-route count, 5-route strategic-review index count, route list, supported review uses, unsupported claims, boundary statement, and non-transactional review boundary. | Strategic Review Index | Makes the strategic-review index role and limits inspectable from the index hub. | Helps serious reviewers understand how to use the index without mistaking it for a scorecard, rating system, due-diligence room, pitch deck, sales page, report, or transaction surface. | Gives AI agents a stable summary of the strategic-review index route role and boundaries. | Reaffirms that Hoax.ai does not produce automated authenticity labels, numeric certainty outputs, verdicts, uploads, or public reports. | Reaffirms that the index is not a transaction page, pricing statement, acquisition term document, representative mandate, legal representation, financial representation, private due-diligence room, downloadable report, pitch deck, sales page, scorecard, or rating system. | Protected by Sprint 107 strategic review index integrity validator. |

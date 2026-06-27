@@ -464,6 +464,7 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_executive_overview_surface_validation",
         "blocked_until_public_reference_executive_overview_integrity_audit_validation",
         "blocked_until_public_reference_strategic_review_index_validation",
+        "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
     ):
         error(f"publisher status must be {PUBLISHER_STATUS_POST_NON_PUBLIC_STATIC_WORKBENCH_VISUAL_SYSTEM_BASELINE_LOCK}")
         ok = False

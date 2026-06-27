@@ -2477,6 +2477,24 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 107 — Public Reference Strategic Review Index Integrity Audit v1
+
+**Status:** COMPLETE — 2026-06-27
+**Goal:** Inspect full 78-route public surface; add Strategic Review Index Integrity Snapshot; repair strategic-review-index integrity without new routes.
+
+### Deliverables
+
+- Strategic Review Index Integrity Snapshot on `/strategic-review/`
+- PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md, repair log, standard, JSON/schema, validator
+- Sitemap 78 URLs unchanged; route registry 78 entries unchanged
+- DEC-125, PUB-GATE-0101, CLAIM-0108
+
+### Gate
+
+**Gate G107 passed.** Sprint 108 — Public Reference System Map Surface v1 is next.
+
+---
+
 ## Sprint 106 — Public Reference Strategic Review Index v1
 
 **Status:** COMPLETE — 2026-06-26

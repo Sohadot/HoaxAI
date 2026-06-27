@@ -1179,6 +1179,17 @@
       "status": "active",
       "last_reviewed": "2026-06-26",
       "notes": "Sprint 106 strategic review index. Sitemap seventy-eight URLs."
+    },
+    {
+      "claim_id": "CLAIM-0108",
+      "claim_text": "Hoax.ai has adopted Public Reference Strategic Review Index Integrity Audit v1, inspecting the full 78-route public surface and adding a Strategic Review Index Integrity Snapshot to /strategic-review/ without scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md, PUBLIC_STRATEGIC_REVIEW_INDEX_INTEGRITY_STANDARD_V1.md, data/public-reference-strategic-review-index-integrity-audit-v1.json, strategic-review/index.html, validators/validate_public_reference_strategic_review_index_integrity_audit_v1.py, SPRINT_107_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md, DECISION_LOG.md (DEC-125)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-27",
+      "notes": "Sprint 107 strategic review index integrity audit. Sitemap seventy-eight URLs unchanged. total_repairs_made 1."
     }
   ]
 }
