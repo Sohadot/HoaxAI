@@ -2754,6 +2754,47 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Navigation Backbone Integrity Audit v1 per DEC-129."
+    },
+    {
+      "claim_id": "CLAIM-0113",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+        "PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md",
+        "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_AUDIT_V1.md",
+        "data/public-reference-route-group-deepening-v1.json",
+        "index.html",
+        "system-map/index.html",
+        "route-groups/public-utilities/index.html",
+        "route-groups/core-concepts/index.html",
+        "route-groups/evidence-risk-pathways/index.html",
+        "route-groups/review-and-overview-layers/index.html",
+        "route-groups/boundary-and-support-references/index.html",
+        "validators/validate_public_reference_route_group_deepening_v1.py",
+        "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0754",
+        "SOURCE-0755",
+        "SOURCE-0756",
+        "SOURCE-0757",
+        "SOURCE-0758",
+        "SOURCE-0759",
+        "SOURCE-0760",
+        "SOURCE-0761",
+        "SOURCE-0762",
+        "SOURCE-0763",
+        "SOURCE-0764",
+        "SOURCE-0765",
+        "SOURCE-0766",
+        "SOURCE-0767"
+      ],
+      "support_scope": "public reference route group deepening v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Route Group Deepening v1 per DEC-130."
     }
   ],
   "last_reviewed": "2026-06-27"

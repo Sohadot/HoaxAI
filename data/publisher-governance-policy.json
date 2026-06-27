@@ -6,7 +6,7 @@
   "maturity": "publisher_blocked_until_public_reference_production_batch_1_validation",
   "governing_principle": "Automation may produce candidates. Governance decides what becomes public.",
   "quality_principle": "The publisher must not generate volume. It must generate governed reference value.",
-  "current_publisher_status": "blocked_until_public_reference_navigation_backbone_integrity_audit_validation",
+  "current_publisher_status": "blocked_until_public_reference_route_group_deepening_validation",
   "allowed_current_outputs": [
     "publisher_governance_policy",
     "publisher_workflow_registry",

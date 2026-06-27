@@ -3366,3 +3366,28 @@ After Sprint 110 consolidated the public navigation backbone, Hoax.ai needed an 
 - Navigation-backbone integrity validation is authorized across route counts, files, metadata, internal links, route-group connectivity, page-end navigation, AI retrieval navigation, boundaries, dashboard prohibition, graph-tool prohibition, scorecard prohibition, rating-system prohibition, due-diligence-room prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, transaction drift, and validator syntax safety.
 - Dashboards, graph tools, scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+
+---
+
+## DEC-130 — Public Reference Route Group Deepening v1 Adopted
+
+**Date:** 2026-06-27
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Route Group Deepening v1 by adding five public reference pages that deepen the existing public route groups: Public Utilities, Core Concepts, Evidence-Risk Pathways, Review and Overview Layers, and Boundary and Support References. These pages make existing public layers more understandable and retrievable for humans and AI agents without creating dashboards, graph tools, scorecards, rating systems, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 111 protected the navigation backbone, Hoax.ai needed visible reference depth rather than another abstract governance layer. The five route-group deepening pages strengthen public understanding of the route system by explaining group purpose, human use, AI retrieval use, safe boundaries, related routes, and citation-safe use. This decision governs pages built in this sprint and is not preparatory governance.
+
+### Implications
+
+- Five new public route-group deepening routes are authorized.
+- Sitemap may increase from 83 to 88 URLs.
+- Route registry may increase from 83 to 88 entries.
+- Public-file-registry may receive PUB-FILE-0084 through PUB-FILE-0088.
+- Homepage and `/system-map/` may be updated to link the new route-group deepening layer.
+- No dashboard, graph tool, scorecard, rating system, due-diligence room, private data-room access, downloadable report, pitch deck, sales page, pricing statement, transaction page, acquisition term document, representative mandate, legal representation, or financial representation is authorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.

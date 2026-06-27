@@ -1662,6 +1662,24 @@
       "failure_condition": "public_reference_navigation_backbone_integrity_audit_v1_not_met",
       "bypassable": false,
       "notes": "Public Reference Navigation Backbone Integrity Audit v1 completed Sprint 111 (DEC-129). Navigation Backbone Integrity Snapshot on homepage and note on system map. Sitemap eighty-three URLs unchanged."
+    },
+    {
+      "gate_id": "PUB-GATE-0106",
+      "name": "Public Reference Route Group Deepening v1 Gate",
+      "status": "public_reference_route_group_deepening_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+      "failure_condition": "public_reference_route_group_deepening_v1_not_met",
+      "bypassable": false,
+      "notes": "Public Reference Route Group Deepening v1 completed Sprint 112 (DEC-130). Five route-group deepening pages; homepage and system map updated. Sitemap eighty-eight URLs."
     }
   ],
   "last_reviewed": "2026-06-27"

@@ -9219,6 +9219,146 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 validator."
+    },
+    {
+      "source_id": "SOURCE-0754",
+      "source_title": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 route group deepening index."
+    },
+    {
+      "source_id": "SOURCE-0755",
+      "source_title": "PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 route group deepening standard."
+    },
+    {
+      "source_id": "SOURCE-0756",
+      "source_title": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_AUDIT_V1.md",
+      "source_type": "internal_governance",
+      "location": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_AUDIT_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 route group deepening audit."
+    },
+    {
+      "source_id": "SOURCE-0757",
+      "source_title": "data/public-reference-route-group-deepening-v1.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-route-group-deepening-v1.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 route group deepening record."
+    },
+    {
+      "source_id": "SOURCE-0758",
+      "source_title": "data/public-reference-route-group-deepening-v1.schema.json",
+      "source_type": "internal_governance",
+      "location": "data/public-reference-route-group-deepening-v1.schema.json",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 route group deepening schema."
+    },
+    {
+      "source_id": "SOURCE-0759",
+      "source_title": "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+      "source_type": "internal_governance",
+      "location": "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 record."
+    },
+    {
+      "source_id": "SOURCE-0760",
+      "source_title": "validators/validate_public_reference_route_group_deepening_v1.py",
+      "source_type": "internal_governance",
+      "location": "validators/validate_public_reference_route_group_deepening_v1.py",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 validator."
+    },
+    {
+      "source_id": "SOURCE-0761",
+      "source_title": "route-groups/public-utilities/index.html",
+      "source_type": "public_reference_page",
+      "location": "route-groups/public-utilities/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 public utilities route group deepening."
+    },
+    {
+      "source_id": "SOURCE-0762",
+      "source_title": "route-groups/core-concepts/index.html",
+      "source_type": "public_reference_page",
+      "location": "route-groups/core-concepts/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 core concepts route group deepening."
+    },
+    {
+      "source_id": "SOURCE-0763",
+      "source_title": "route-groups/evidence-risk-pathways/index.html",
+      "source_type": "public_reference_page",
+      "location": "route-groups/evidence-risk-pathways/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 evidence-risk pathways route group deepening."
+    },
+    {
+      "source_id": "SOURCE-0764",
+      "source_title": "route-groups/review-and-overview-layers/index.html",
+      "source_type": "public_reference_page",
+      "location": "route-groups/review-and-overview-layers/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 review and overview layers route group deepening."
+    },
+    {
+      "source_id": "SOURCE-0765",
+      "source_title": "route-groups/boundary-and-support-references/index.html",
+      "source_type": "public_reference_page",
+      "location": "route-groups/boundary-and-support-references/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 boundary and support references route group deepening."
+    },
+    {
+      "source_id": "SOURCE-0766",
+      "source_title": "index.html",
+      "source_type": "public_reference_page",
+      "location": "index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 homepage route group deepening section."
+    },
+    {
+      "source_id": "SOURCE-0767",
+      "source_title": "system-map/index.html",
+      "source_type": "public_reference_page",
+      "location": "system-map/index.html",
+      "supports": ["governance_claim", "operational_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 112 system map route group deepening layer."
     }
   ]
 }

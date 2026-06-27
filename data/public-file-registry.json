@@ -1202,6 +1202,76 @@
       ],
       "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
       "notes": "Sprint 108 per DEC-126."
+    },
+    {
+      "file_id": "PUB-FILE-0084",
+      "path": "route-groups/public-utilities/index.html",
+      "file_type": "html",
+      "public_role": "route_group_public_utilities",
+      "route_id_if_applicable": "ROUTE-0084",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 112 per DEC-130."
+    },
+    {
+      "file_id": "PUB-FILE-0085",
+      "path": "route-groups/core-concepts/index.html",
+      "file_type": "html",
+      "public_role": "route_group_core_concepts",
+      "route_id_if_applicable": "ROUTE-0085",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 112 per DEC-130."
+    },
+    {
+      "file_id": "PUB-FILE-0086",
+      "path": "route-groups/evidence-risk-pathways/index.html",
+      "file_type": "html",
+      "public_role": "route_group_evidence_risk_pathways",
+      "route_id_if_applicable": "ROUTE-0086",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 112 per DEC-130."
+    },
+    {
+      "file_id": "PUB-FILE-0087",
+      "path": "route-groups/review-and-overview-layers/index.html",
+      "file_type": "html",
+      "public_role": "route_group_review_overview_layers",
+      "route_id_if_applicable": "ROUTE-0087",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 112 per DEC-130."
+    },
+    {
+      "file_id": "PUB-FILE-0088",
+      "path": "route-groups/boundary-and-support-references/index.html",
+      "file_type": "html",
+      "public_role": "route_group_boundary_support_references",
+      "route_id_if_applicable": "ROUTE-0088",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 112 per DEC-130."
     }
   ],
   "last_reviewed": "2026-06-27"

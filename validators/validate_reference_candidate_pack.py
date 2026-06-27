@@ -623,6 +623,7 @@ def validate_cross_file() -> bool:
         "blocked_until_public_reference_system_map_integrity_audit_validation",
         "blocked_until_public_reference_navigation_backbone_consolidation_validation",
         "blocked_until_public_reference_navigation_backbone_integrity_audit_validation",
+        "blocked_until_public_reference_route_group_deepening_validation",
     ):
         error(
             "publisher-governance-policy: current_publisher_status must be "

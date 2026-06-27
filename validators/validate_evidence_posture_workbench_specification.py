@@ -501,6 +501,7 @@ def validate_publisher_governance() -> bool:
         "blocked_until_public_reference_system_map_integrity_audit_validation",
         "blocked_until_public_reference_navigation_backbone_consolidation_validation",
         "blocked_until_public_reference_navigation_backbone_integrity_audit_validation",
+        "blocked_until_public_reference_route_group_deepening_validation",
     }
     if pub.get("current_publisher_status") not in allowed:
         error(f"publisher status must be one of {sorted(allowed)}")

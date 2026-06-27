@@ -1234,6 +1234,17 @@
       "status": "active",
       "last_reviewed": "2026-06-27",
       "notes": "Sprint 111 navigation backbone integrity audit. Sitemap eighty-three URLs unchanged. total_repairs_made 2."
+    },
+    {
+      "claim_id": "CLAIM-0113",
+      "claim_text": "Hoax.ai has adopted Public Reference Route Group Deepening v1, adding five route-group deepening pages for public utilities, core concepts, evidence-risk pathways, review and overview layers, and boundary and support references on an 88-route public surface, with homepage and system map links, without dashboards, graph tools, scorecards, rating systems, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, pricing statements, transaction pages, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md, PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md, data/public-reference-route-group-deepening-v1.json, index.html, system-map/index.html, route-groups/public-utilities/index.html, route-groups/core-concepts/index.html, route-groups/evidence-risk-pathways/index.html, route-groups/review-and-overview-layers/index.html, route-groups/boundary-and-support-references/index.html, validators/validate_public_reference_route_group_deepening_v1.py, SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md, DECISION_LOG.md (DEC-130)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-27",
+      "notes": "Sprint 112 route group deepening. Sitemap eighty-eight URLs. Five new public routes."
     }
   ]
 }

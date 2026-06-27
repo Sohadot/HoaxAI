@@ -2538,6 +2538,27 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 112 — Public Reference Route Group Deepening v1
+
+**Status:** COMPLETE — 2026-06-27
+**Goal:** Add five route-group deepening pages; update homepage and system map; increase public surface from 83 to 88 routes.
+
+### Deliverables
+
+- Five `/route-groups/` deepening routes
+- Homepage Route Group Deepening section with five cards
+- `/system-map/` Route Group Deepening Layer
+- Public Release Integrity Snapshot updated to 88 routes
+- PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md, standard, audit, JSON/schema, validator
+- Sitemap 88 URLs; route registry 88 entries; PUB-FILE-0084–0088
+- DEC-130, PUB-GATE-0106, CLAIM-0113
+
+### Gate
+
+**Gate G112 passed.** Sprint 113 — Public Reference Route Group Deepening Integrity Audit v1 only if real production defects appear. Otherwise proceed to Sprint 113 — Public Reference Audience Path Expansion v1.
+
+---
+
 ## Sprint 108 — Public Reference System Map Surface v1
 
 **Status:** COMPLETE — 2026-06-27
