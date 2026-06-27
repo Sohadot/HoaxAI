@@ -3313,3 +3313,30 @@ After Sprint 108 added the public system map surface, Hoax.ai needed an integrit
 - System-map integrity validation is authorized across route counts, metadata, links, components, boundaries, dashboard prohibition, graph-tool prohibition, scorecard prohibition, rating-system prohibition, due-diligence-room prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, transaction drift, and validator syntax safety.
 - Dashboards, graph tools, scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+
+---
+
+## DEC-128 — Public Reference Navigation Backbone Consolidation v1 Adopted
+
+**Date:** 2026-06-27
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Navigation Backbone Consolidation v1 by inspecting the full 83-route public surface, adding a Navigation Backbone Snapshot to the homepage, adding a Navigation Backbone section to `/system-map/`, and applying visible navigation-backbone repairs where needed. The sprint validates route count integrity, link integrity, page-end navigation coherence, route-group connectivity, AI retrieval navigation, boundary discipline, dashboard prohibition, graph-tool prohibition, scorecard prohibition, rating-system prohibition, due-diligence-room prohibition, pitch-deck prohibition, sales-page prohibition, private-data-room prohibition, downloadable-report prohibition, pricing/transaction drift protection, and validator syntax safety after publisher-status updates without creating new public routes, dashboards, graph tools, scorecards, rating systems, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, upload behavior, scoring, verdicts, binary authenticity label outputs, detector claims, public API, automated reports, JavaScript, forms, chatbot behavior, generator behavior, real-world case evaluation, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, or financial representations.
+
+### Rationale
+
+After Sprint 109 protected the system map, Hoax.ai needed a navigation backbone consolidation sprint to make the 83-route public reference system easier to traverse without relying on isolated page clusters or random browsing. This decision governs visible public-surface navigation improvements, not abstract preparatory governance.
+
+### Implications
+
+- Existing public pages may receive navigation-backbone repairs.
+- No new public route is authorized.
+- Sitemap remains 83 URLs.
+- Route registry remains 83 entries.
+- A homepage Navigation Backbone Snapshot is authorized.
+- A Navigation Backbone section on `/system-map/` is authorized.
+- Navigation-backbone validation is authorized across route counts, links, route groups, page-end navigation, AI retrieval navigation, boundary discipline, and validator syntax safety.
+- Dashboards, graph tools, scorecards, rating systems, due-diligence rooms, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, acquisition term documents, representative mandates, legal representations, and financial representations remain unauthorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.

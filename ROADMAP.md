@@ -2497,6 +2497,27 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 110 — Public Reference Navigation Backbone Consolidation v1
+
+**Status:** COMPLETE — 2026-06-27
+**Goal:** Inspect full 83-route public surface; add Navigation Backbone Snapshot and system-map Navigation Backbone section; repair cross-group navigation without new routes.
+
+### Deliverables
+
+- Navigation Backbone Snapshot on homepage
+- Navigation Backbone section on `/system-map/`
+- Homepage system navigation and executive overview reading path repairs
+- PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md, repair log, standard, JSON/schema, validator
+- Sitemap 83 URLs unchanged; route registry 83 entries unchanged
+- DEC-128, PUB-GATE-0104, CLAIM-0111
+- `total_repairs_made`: 4
+
+### Gate
+
+**Gate G110 passed.** Sprint 111 — Public Reference Navigation Backbone Integrity Audit v1 is next.
+
+---
+
 ## Sprint 108 — Public Reference System Map Surface v1
 
 **Status:** COMPLETE — 2026-06-27

@@ -24,7 +24,8 @@ from public_surface_checks import (  # noqa: E402
     validate_public_surface,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,)
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,)
 
 READINESS_DOC = "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_V1.md"
 AUDIT_DOC = "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_AUDIT_V1.md"
@@ -357,8 +358,10 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
 
     ):
         error("publisher status must reflect Sprint 101 external review readiness validation")

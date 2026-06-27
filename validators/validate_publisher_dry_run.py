@@ -583,6 +583,7 @@ def validate_state_machine() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
     ):
         error(f"publisher-state-machine.json: invalid current_system_state {current}")
         ok = False
@@ -791,6 +792,7 @@ def validate_cross_file() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
     ):
         error(
             f"publisher-governance-policy: current_publisher_status must remain blocked from publication, got {status}"

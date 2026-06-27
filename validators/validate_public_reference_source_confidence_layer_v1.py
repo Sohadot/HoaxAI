@@ -50,7 +50,8 @@ from public_surface_checks import (  # noqa: E402
     validate_public_surface,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,)
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,)
 
 LAYER_DOC = "PUBLIC_REFERENCE_SOURCE_CONFIDENCE_LAYER_V1.md"
 STANDARD_DOC = "PUBLIC_SOURCE_CONFIDENCE_COMPONENT_STANDARD_V1.md"
@@ -278,8 +279,10 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
 
     ):
         error("publisher status must reflect Sprint 88 source confidence layer validation")

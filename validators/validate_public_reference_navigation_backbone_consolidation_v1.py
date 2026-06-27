@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Sprint 109 — Public Reference System Map Integrity Audit v1."""
+"""Validate Sprint 110 — Public Reference Navigation Backbone Consolidation v1."""
 
 from __future__ import annotations
 
@@ -16,48 +16,29 @@ ROOT = Path(__file__).resolve().parent.parent
 from public_surface_checks import (  # noqa: E402
     ALLOWED_PUBLIC_HTML,
     PUBLIC_SITEMAP_URL_COUNT,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
     validate_public_surface,
 )
 
-AUDIT_DOC = "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md"
-REPAIR_DOC = "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_REPAIR_LOG_V1.md"
-STANDARD_DOC = "PUBLIC_SYSTEM_MAP_INTEGRITY_STANDARD_V1.md"
-AUDIT_JSON = "data/public-reference-system-map-integrity-audit-v1.json"
-AUDIT_SCHEMA = "data/public-reference-system-map-integrity-audit-v1.schema.json"
-SPRINT_DOC = "SPRINT_109_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md"
+AUDIT_DOC = "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md"
+REPAIR_DOC = "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_REPAIR_LOG_V1.md"
+STANDARD_DOC = "PUBLIC_NAVIGATION_BACKBONE_STANDARD_V1.md"
+AUDIT_JSON = "data/public-reference-navigation-backbone-consolidation-v1.json"
+AUDIT_SCHEMA = "data/public-reference-navigation-backbone-consolidation-v1.schema.json"
+SPRINT_DOC = "SPRINT_110_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md"
+HOMEPAGE = "index.html"
 MAP_HUB = "system-map/index.html"
 
-SYSTEM_MAP_PAGES = [
-    "system-map/index.html",
-    "system-map/route-groups/index.html",
-    "system-map/human-review-paths/index.html",
-    "system-map/ai-retrieval-paths/index.html",
-    "system-map/boundary-layers/index.html",
-]
-
-SYSTEM_MAP_PATHS = [
-    "/system-map/",
+SYSTEM_MAP_BACKBONE_LINKS = [
+    "/",
     "/system-map/route-groups/",
     "/system-map/human-review-paths/",
     "/system-map/ai-retrieval-paths/",
     "/system-map/boundary-layers/",
-]
-
-REQUIRED_MAP_SECTIONS = [
-    "Reference summary",
-    "Map purpose",
-    "System map path",
-    "What this map supports",
-    "What this map does not claim",
-    "Reference Answer",
-    "Source Confidence",
-    "Cite This Reference",
-    "Retrieval Capsule",
-    "Boundary reminder",
-    "Non-transactional review boundary",
+    "/reviewer-packet/public-surface-index/",
+    "/executive-overview/public-reference-system/",
+    "/strategic-review/public-reference-depth/",
+    "/external-review/reviewer-map/",
 ]
 
 STALE_ROUTE_COUNTS = [
@@ -157,8 +138,8 @@ def text_has_unnegated_claim(text: str, claim: str) -> bool:
             "does not support",
             "what the map does not",
             "what this map does not",
-            "what the index does not",
-            "do not use this answer",
+            "what the backbone does not",
+            "navigation backbone role",
         )
     ) and claim in lower:
         return False
@@ -201,26 +182,31 @@ def validate_artifacts() -> bool:
             error(f"missing {rel}")
             ok = False
     data = load_json(AUDIT_JSON)
-    if data.get("decision_ref") != "DEC-127":
-        error("decision_ref must be DEC-127")
+    if data.get("decision_ref") != "DEC-128":
+        error("decision_ref must be DEC-128")
         ok = False
     if data.get("new_public_routes_added") is not False:
         error("new_public_routes_added must be false")
         ok = False
-    if data.get("total_repairs_made", 0) < 1:
-        error("total_repairs_made must be at least 1")
+    if data.get("total_repairs_made", 0) < 2:
+        error("total_repairs_made must be at least 2")
         ok = False
-    if data.get("system_map_integrity_snapshot_added") is not True:
-        error("system_map_integrity_snapshot_added must be true")
+    if data.get("navigation_backbone_snapshot_added") is not True:
+        error("navigation_backbone_snapshot_added must be true")
+        ok = False
+    if data.get("system_map_navigation_backbone_section_added") is not True:
+        error("system_map_navigation_backbone_section_added must be true")
         ok = False
     for key in (
-        "system_map_snapshot_counts_as_visible_repair",
         "visible_repairs_made",
         "route_count_integrity_checked",
         "file_existence_integrity_checked",
         "metadata_integrity_checked",
         "link_integrity_checked",
-        "system_map_component_integrity_checked",
+        "navigation_backbone_integrity_checked",
+        "route_group_connectivity_checked",
+        "page_end_navigation_checked",
+        "ai_retrieval_navigation_checked",
         "boundary_integrity_checked",
         "dashboard_drift_checked",
         "graph_tool_drift_checked",
@@ -287,92 +273,29 @@ def validate_counts() -> bool:
     return ok
 
 
-def validate_map_hub_snapshot() -> bool:
+def validate_navigation_backbone_surfaces() -> bool:
     ok = True
-    content = (ROOT / MAP_HUB).read_text(encoding="utf-8")
-    if "System Map Integrity Snapshot" not in content:
-        error("/system-map/ must include System Map Integrity Snapshot")
+    home = (ROOT / HOMEPAGE).read_text(encoding="utf-8")
+    if "Navigation Backbone Snapshot" not in home:
+        error("homepage must include Navigation Backbone Snapshot")
         ok = False
-    if f"Current public route count: {PUBLIC_SITEMAP_URL_COUNT}" not in content:
-        error(f"/system-map/ must include Current public route count: {PUBLIC_SITEMAP_URL_COUNT}")
+    if f"Current public route count: {PUBLIC_SITEMAP_URL_COUNT}" not in home:
+        error(f"homepage must include Current public route count: {PUBLIC_SITEMAP_URL_COUNT}")
         ok = False
-    if "System map route count: 5" not in content:
-        error("/system-map/ must include System map route count: 5")
+    if 'href="/system-map/"' not in home and 'href="/system-map/#' not in home:
+        error("homepage must link to /system-map/")
         ok = False
-    for path in SYSTEM_MAP_PATHS:
-        if f'href="{path}' not in content and f"href='{path}" not in content:
+    if 'href="/strategic-review/"' not in home and 'href="/strategic-review/#' not in home:
+        error("homepage must link to /strategic-review/")
+        ok = False
+    map_hub = (ROOT / MAP_HUB).read_text(encoding="utf-8")
+    if "Navigation Backbone" not in map_hub:
+        error("/system-map/ must include Navigation Backbone")
+        ok = False
+    for path in SYSTEM_MAP_BACKBONE_LINKS:
+        if f'href="{path}' not in map_hub and f"href='{path}" not in map_hub:
             error(f"/system-map/ must link to {path}")
             ok = False
-    return ok
-
-
-def validate_system_map_page(rel: str) -> bool:
-    ok = True
-    fp = ROOT / rel
-    if not fp.is_file():
-        error(f"missing {rel}")
-        return False
-    content = fp.read_text(encoding="utf-8")
-    lower = content.lower()
-    if len(re.findall(r"<h1\b", content, re.I)) != 1:
-        error(f"{rel}: expected exactly one H1")
-        ok = False
-    for field in ('rel="canonical"', 'name="description"', "og:title", "og:description"):
-        if field not in content.lower():
-            error(f"{rel}: missing {field}")
-            ok = False
-    for section in REQUIRED_MAP_SECTIONS:
-        if section not in content:
-            error(f"{rel}: missing section {section!r}")
-            ok = False
-    if 'href="/system-map/"' not in content and 'href="/system-map/#' not in content:
-        error(f"{rel}: must link to /system-map/")
-        ok = False
-    strategic_external = sum(
-        1
-        for p in (
-            "/executive-overview/",
-            "/entry-points/",
-            "/narrative/",
-            "/acquisition-readiness/",
-            "/external-review/",
-            "/reviewer-packet/",
-            "/strategic-review/",
-        )
-        if p in content
-    )
-    if strategic_external < 3:
-        error(f"{rel}: must link to at least 3 strategic layer routes")
-        ok = False
-    utility_ref = sum(
-        1
-        for p in (
-            "/manual-evidence-checklist/",
-            "/evidence-posture-map/",
-            "/evidence-risk/",
-            "/evidence-risk-questions/",
-            "/synthetic-examples/",
-            "/provenance-risk/",
-            "/source-ambiguity/",
-            "/boundary-integrity/",
-            "/reference/",
-            "/standard/",
-            "/protocol/",
-            "/why-hoax-ai-is-not-a-detector/",
-            "/pathways/",
-        )
-        if p in content
-    )
-    if utility_ref < 5:
-        error(f"{rel}: must link to at least 5 reference, utility, or pathway routes")
-        ok = False
-    sibling_links = sum(1 for p in SYSTEM_MAP_PATHS if f'href="{p}' in content or f"href='{p}" in content)
-    if sibling_links < 2:
-        error(f"{rel}: must link to at least 2 sibling system-map routes")
-        ok = False
-    if "pitch deck" not in lower or "sales page" not in lower:
-        error(f"{rel}: must include pitch-deck and sales-page role clarity (safe negative language)")
-        ok = False
     return ok
 
 
@@ -464,7 +387,7 @@ def validate_repair_log() -> bool:
         "issue_or_improvement_target",
         "repair_applied",
         "route_group_affected",
-        "system_map_integrity_impact",
+        "navigation_backbone_impact",
         "human_readability_impact",
         "ai_retrieval_impact",
         "non_verdict_impact",
@@ -474,8 +397,8 @@ def validate_repair_log() -> bool:
         if col not in text:
             error(f"repair log missing column {col}")
             ok = False
-    if "SMIA-001" not in text:
-        error("repair log must include SMIA-001")
+    if "NBB-001" not in text:
+        error("repair log must include NBB-001")
         ok = False
     return ok
 
@@ -493,37 +416,36 @@ def validate_validator_syntax() -> bool:
 
 def validate_governance() -> bool:
     ok = True
-    if "DEC-127" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
-        error("DEC-127 missing")
+    if "DEC-128" not in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"):
+        error("DEC-128 missing")
         ok = False
-    if "validate_public_reference_system_map_integrity_audit_v1.py" not in (
+    if "validate_public_reference_navigation_backbone_consolidation_v1.py" not in (
         ROOT / "validators/validate_all.py"
     ).read_text(encoding="utf-8"):
-        error("validate_all.py must include Sprint 109 validator")
+        error("validate_all.py must include Sprint 110 validator")
         ok = False
     policy = load_json("data/publisher-governance-policy.json")
     if policy.get("current_publisher_status") not in (
-        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
         PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
     ):
-        error("publisher status must reflect Sprint 109 system map integrity audit validation")
+        error("publisher status must reflect Sprint 110 navigation backbone consolidation validation")
         ok = False
     locs = {s.get("location") for s in load_json("data/source-registry.json").get("sources", [])}
-    for loc in SOURCE_LOCS + ["validators/validate_public_reference_system_map_integrity_audit_v1.py"]:
+    for loc in SOURCE_LOCS + ["validators/validate_public_reference_navigation_backbone_consolidation_v1.py"]:
         if loc not in locs:
             error(f"source registry missing {loc}")
             ok = False
-    if not any(c.get("claim_id") == "CLAIM-0110" for c in load_json("data/evidence-ledger.json").get("claims", [])):
-        error("CLAIM-0110 missing")
+    if not any(c.get("claim_id") == "CLAIM-0111" for c in load_json("data/evidence-ledger.json").get("claims", [])):
+        error("CLAIM-0111 missing")
         ok = False
     if not any(
-        g.get("gate_id") == "PUB-GATE-0103"
+        g.get("gate_id") == "PUB-GATE-0104"
         for g in load_json("data/publisher-quality-gates.json").get("gates", [])
     ):
-        error("PUB-GATE-0103 missing")
+        error("PUB-GATE-0104 missing")
         ok = False
-    if "Sprint 109 | COMPLETE | G109 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
-        error("master execution plan missing Sprint 109 row")
+    if "Sprint 110 | COMPLETE | G110 passed" not in (ROOT / "MASTER_EXECUTION_PLAN.md").read_text(encoding="utf-8"):
+        error("master execution plan missing Sprint 110 row")
         ok = False
     if (ROOT / ".nojekyll").exists():
         error(".nojekyll must not exist")
@@ -550,13 +472,10 @@ def main() -> int:
         ok = False
     if not validate_counts():
         ok = False
-    if not validate_map_hub_snapshot():
+    if not validate_navigation_backbone_surfaces():
         ok = False
     if not validate_public_file_registry_scope():
         ok = False
-    for rel in SYSTEM_MAP_PAGES:
-        if not validate_system_map_page(rel):
-            ok = False
     if not validate_route_files_and_metadata():
         ok = False
     if not validate_internal_links():

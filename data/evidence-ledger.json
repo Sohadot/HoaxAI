@@ -1212,6 +1212,17 @@
       "status": "active",
       "last_reviewed": "2026-06-27",
       "notes": "Sprint 109 system map integrity audit. Sitemap eighty-three URLs unchanged. total_repairs_made 5."
+    },
+    {
+      "claim_id": "CLAIM-0111",
+      "claim_text": "Hoax.ai has adopted Public Reference Navigation Backbone Consolidation v1, inspecting the full 83-route public surface, adding a Navigation Backbone Snapshot to the homepage and a Navigation Backbone section to /system-map/, and repairing cross-group navigation without new routes, scorecards, rating systems, dashboards, graph tools, pitch decks, sales pages, private data-room access, downloadable reports, pricing statements, transaction pages, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md, PUBLIC_NAVIGATION_BACKBONE_STANDARD_V1.md, data/public-reference-navigation-backbone-consolidation-v1.json, index.html, system-map/index.html, validators/validate_public_reference_navigation_backbone_consolidation_v1.py, SPRINT_110_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md, DECISION_LOG.md (DEC-128)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-27",
+      "notes": "Sprint 110 navigation backbone consolidation. Sitemap eighty-three URLs unchanged. total_repairs_made 4."
     }
   ]
 }

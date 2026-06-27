@@ -17,7 +17,8 @@ from public_surface_checks import (
     validate_public_surface,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,)
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,)
 
 STANDARD_PATH = "standard/evidence-posture/index.html"
 STANDARD_URL = "https://hoax.ai/standard/evidence-posture/"
@@ -306,7 +307,9 @@ def validate_governance() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
 
     ):
         error("publisher status must be blocked_until_evidence_posture_standard_v1_validation or protocol v1 draft validation")

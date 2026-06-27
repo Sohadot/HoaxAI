@@ -26,7 +26,8 @@ from public_surface_checks import (
     PUBLISHER_STATUS_POST_PUBLIC_ROUTE_CANDIDATE_REGISTRATION_AUTHORIZATION_GOVERNANCE,
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
 
-    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,)
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,)
 
 PROTO_DIR = ROOT / "_internal_prototypes" / "evidence-posture-workbench"
 INDEX_PATH = PROTO_DIR / "index.html"
@@ -730,7 +731,9 @@ def validate_governance_and_registry() -> bool:
         "blocked_until_public_reference_strategic_review_index_integrity_audit_validation",
         "blocked_until_public_reference_system_map_surface_validation",
         "blocked_until_public_reference_system_map_integrity_audit_validation",        PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_VALIDATION,
+        "blocked_until_public_reference_navigation_backbone_consolidation_validation",
     PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_VALIDATION,
+    PUBLISHER_STATUS_POST_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_VALIDATION,
 
     ):
         error("publisher status must be blocked until public route eligibility governance")
