@@ -1322,6 +1322,17 @@
       "status": "active",
       "last_reviewed": "2026-07-02",
       "notes": "Sprint 119 audit-only retrieval walkthrough hardening."
+    },
+    {
+      "claim_id": "CLAIM-0121",
+      "claim_text": "Hoax.ai added Public Reference Citation Orientation v1 at /citation-orientation/ as ROUTE-0103 and PUB-FILE-0103, expanding the public surface from 102 to 103 routes with citation-safe orientation only and no citation-generator, generated-citation, legal citation, academic endorsement, verification, detector, score, verdict, workflow, API, form, upload, dashboard, transaction, or sales behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_CITATION_ORIENTATION_V1.md, data/public-reference-citation-orientation-v1.json, citation-orientation/index.html, validators/validate_public_reference_citation_orientation_v1.py, SPRINT_120_PUBLIC_REFERENCE_CITATION_ORIENTATION_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-02",
+      "notes": "Sprint 120 citation orientation route."
     }
   ]
 }

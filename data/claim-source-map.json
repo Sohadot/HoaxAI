@@ -3047,6 +3047,37 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 119 audit-only walkthrough validation."
+    },
+    {
+      "claim_id": "CLAIM-0121",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_CITATION_ORIENTATION_V1.md",
+        "PUBLIC_REFERENCE_CITATION_ORIENTATION_STANDARD_V1.md",
+        "PUBLIC_REFERENCE_CITATION_ORIENTATION_AUDIT_V1.md",
+        "SPRINT_120_PUBLIC_REFERENCE_CITATION_ORIENTATION_V1.md",
+        "data/public-reference-citation-orientation-v1.json",
+        "data/public-reference-citation-orientation-v1.schema.json",
+        "validators/validate_public_reference_citation_orientation_v1.py",
+        "citation-orientation/index.html",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0833",
+        "SOURCE-0834",
+        "SOURCE-0835",
+        "SOURCE-0836",
+        "SOURCE-0837",
+        "SOURCE-0838",
+        "SOURCE-0839",
+        "SOURCE-0840",
+        "SOURCE-0797"
+      ],
+      "support_scope": "public reference citation orientation v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 120 citation orientation governance and production."
     }
   ],
   "last_reviewed": "2026-07-02"

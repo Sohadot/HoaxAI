@@ -3526,3 +3526,23 @@ At 102 routes, external usability requires intent-based retrieval orientation so
 - DEC-136 governs the visible Sprint 118 route `/retrieval-index/`.
 - Retrieval index behavior is static route orientation only.
 - Search interface behavior, ranking outputs, generated-answer behavior, detector behavior, and transaction behavior remain unauthorized.
+
+## DEC-137 — Public Reference Citation Orientation Rule Adopted
+
+**Date:** 2026-07-02
+**Status:** Active
+
+### Decision
+
+Sprint 120 adds a visible citation-orientation route at `/citation-orientation/`. Public citation orientation may guide humans and AI agents in citing Hoax.ai reference pages safely, but must not create citation-generator behavior, generated citations, legal citation claims, academic endorsement, authority claims, verification claims, detector support, score support, verdict support, case conclusions, operational procedures, report generation, or transaction surfaces.
+
+### Rationale
+
+At 103 routes, citation-safe reuse of Reference Answer, Source Confidence, Cite This Reference, and Retrieval Capsule blocks requires explicit orientation so humans and AI agents do not rewrite reference citations as authority, detector, or verdict language.
+
+### Implications
+
+- DEC-137 governs the visible Sprint 120 route `/citation-orientation/`.
+- Citation orientation is static reference guidance only.
+- Citation-generator behavior, generated-citation output, legal citation claims, academic endorsement, verification claims, detector support, score support, verdict support, and transaction behavior remain unauthorized.
+

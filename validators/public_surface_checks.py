@@ -32,6 +32,7 @@ PUBLIC_ROUTE_IDS = [
     "ROUTE-0100",
     "ROUTE-0101",
     "ROUTE-0102",
+    "ROUTE-0103",
 ]
 
 PILOT_ROUTE_IDS = PUBLIC_ROUTE_IDS  # backward compatibility
@@ -146,6 +147,7 @@ ALLOWED_PUBLIC_HTML = {
     "evidence-conditions/crosswalk/index.html",
     "reading-sequences/index.html",
     "retrieval-index/index.html",
+    "citation-orientation/index.html",
 }
 
 ALLOWED_INTERNAL_PROTOTYPE_HTML = {
@@ -160,7 +162,7 @@ ALLOWED_PUBLIC_ROOT_FILES = ALLOWED_PUBLIC_HTML | {
     "sitemap.xml",
 }
 
-PUBLIC_SITEMAP_URL_COUNT = 102
+PUBLIC_SITEMAP_URL_COUNT = 103
 
 PILOT_SITEMAP_URL_COUNT = PUBLIC_SITEMAP_URL_COUNT  # backward compatibility
 

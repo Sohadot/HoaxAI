@@ -1468,6 +1468,20 @@
       ],
       "prohibited_content": "scripts, forms, uploads, api behavior, search behavior, ranking, generated answers, scoring, detector, verdict, transaction, sales",
       "notes": "Sprint 118 per DEC-136."
+    },
+    {
+      "file_id": "PUB-FILE-0103",
+      "path": "citation-orientation/index.html",
+      "file_type": "html",
+      "public_role": "public_reference_citation_orientation",
+      "route_id_if_applicable": "ROUTE-0103",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../styles.css"
+      ],
+      "prohibited_content": "scripts, forms, uploads, api behavior, citation generator, generated citations, legal citation claims, academic endorsement, verification claims, scoring, detector, verdict, transaction, sales",
+      "notes": "Sprint 120 per DEC-137."
     }
   ],
   "last_reviewed": "2026-07-02"

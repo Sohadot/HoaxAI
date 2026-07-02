@@ -648,7 +648,9 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 60 | COMPLETE | G60 passed — Standard integrated across reference layer |
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
-| Sprint 119 | COMPLETE | G119 passed — Public Reference Retrieval Walkthrough Audit v1 |
+| Sprint 119 — retrieval walkthrough audit.
+- Sprint 120 — citation orientation route (`/citation-orientation/`, 103 routes).
+- Sprint 119 | COMPLETE | G119 passed — Public Reference Retrieval Walkthrough Audit v1 |
 | Sprint 118 | COMPLETE | G118 passed — Public Reference Retrieval Index v1 |
 | Sprint 117 | COMPLETE | G117 passed — Public Reference Reading Sequences v1 |
 | Sprint 116 | COMPLETE | G116 passed — Public Reference 100-Route Surface Integrity Audit v1 |

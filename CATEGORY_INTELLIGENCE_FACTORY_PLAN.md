@@ -331,3 +331,5 @@ Public Reference Retrieval Index v1 extends the category intelligence factory wi
 
 
 Public Reference Retrieval Walkthrough Audit v1 validates that the live retrieval index supports citation-safe external retrieval through scenario testing without adding routes, search behavior, ranking outputs, generated answers, or transaction surfaces.
+
+Public Reference Citation Orientation v1 extends the category intelligence factory with citation-safe reference guidance at `/citation-orientation/` across the 103-route public surface. The route teaches humans and AI agents how to cite Reference Answer, Source Confidence, Cite This Reference, and Retrieval Capsule blocks safely without citation-generator behavior, generated-citation output, legal citation claims, academic endorsement, verification claims, detector support, score support, verdict support, or transaction surfaces.

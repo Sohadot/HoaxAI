@@ -143,27 +143,20 @@ def validate_audit_json() -> bool:
 
 def validate_no_expansion() -> bool:
     ok = True
+    data = load_json(JSON_PATH)
+    if data.get("production_route_added") is not False:
+        error("audit JSON must declare production_route_added false for Sprint 119")
+        ok = False
+    if data.get("public_route_count_after") != 102:
+        error("audit JSON public_route_count_after must remain 102 for Sprint 119")
+        ok = False
+    if data.get("sitemap_url_count_expected") != 102:
+        error("audit JSON sitemap_url_count_expected must remain 102 for Sprint 119")
+        ok = False
     reg = load_json("data/route-registry.json").get("routes", [])
-    if len(reg) != 102:
-        error("route registry must remain 102 entries")
-        ok = False
-    if any(r.get("route_id") == "ROUTE-0103" for r in reg):
-        error("ROUTE-0103 must not exist")
-        ok = False
-    locs = [x.text.strip() for x in ET.parse(ROOT / "sitemap.xml").findall(".//{*}loc") if x.text]
-    if len(locs) != 102:
-        error("sitemap must remain 102 URLs")
-        ok = False
-    if PUBLIC_SITEMAP_URL_COUNT != 102:
-        error("PUBLIC_SITEMAP_URL_COUNT must remain 102")
-        ok = False
-    pfr = load_json("data/public-file-registry.json").get("public_files", [])
-    if any(f.get("file_id") == "PUB-FILE-0103" for f in pfr):
-        error("PUB-FILE-0103 must not exist")
-        ok = False
-    route_mapped = len([f for f in pfr if f.get("route_id_if_applicable")])
-    if route_mapped != 102:
-        error("route-mapped public files must remain 102")
+    r102 = next((r for r in reg if r.get("route_id") == "ROUTE-0102"), None)
+    if r102 is None or r102.get("path") != PAGE_ROUTE:
+        error("ROUTE-0102 must remain present for audited retrieval-index route")
         ok = False
     return ok
 
@@ -201,6 +194,10 @@ def validate_terms_and_decision() -> bool:
     ok = True
     dlog = (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8")
     data = load_json(JSON_PATH)
+    citation_orientation_live = any(
+        r.get("route_id") == "ROUTE-0103" and r.get("path") == "/citation-orientation/"
+        for r in load_json("data/route-registry.json").get("routes", [])
+    )
     if data.get("new_decision_created"):
         if "DEC-137" not in dlog:
             error("DEC-137 required when new_decision_created is true")
@@ -208,8 +205,8 @@ def validate_terms_and_decision() -> bool:
         if PAGE_ROUTE not in dlog:
             error("DEC-137 must govern visible production route")
             ok = False
-    elif "DEC-137" in dlog:
-        error("DEC-137 present but audit declares no new decision")
+    elif "DEC-137" in dlog and not citation_orientation_live:
+        error("DEC-137 present but audit declares no new decision and citation-orientation route is absent")
         ok = False
     for rel in (SPRINT,):
         text = (ROOT / rel).read_text(encoding="utf-8")

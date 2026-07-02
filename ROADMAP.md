@@ -4227,7 +4227,9 @@ Future layers may include:
 
 ---
 
-## Sprint 119 — Public Reference Retrieval Walkthrough Audit v1
+## Sprint 119 — retrieval walkthrough audit complete (102 routes).
+- Sprint 120 — Public Reference Citation Orientation v1 (`/citation-orientation/`, 103 routes).
+- Sprint 119 — Public Reference Retrieval Walkthrough Audit v1
 
 **Status:** COMPLETE — 2026-07-02  
 **Goal:** Audit live `/retrieval-index/` usability through 20 retrieval walkthrough scenarios without route expansion.

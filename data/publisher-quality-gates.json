@@ -1806,6 +1806,24 @@
       "failure_condition": "public_reference_retrieval_walkthrough_audit_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 119 audit-only walkthrough of /retrieval-index/ with 20 scenarios and no route expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0114",
+      "name": "Public Reference Citation Orientation v1 Gate",
+      "status": "public_reference_citation_orientation_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_120_PUBLIC_REFERENCE_CITATION_ORIENTATION_V1.md",
+      "failure_condition": "public_reference_citation_orientation_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 120 citation orientation route at /citation-orientation/."
     }
   ],
   "last_reviewed": "2026-07-02"
