@@ -1860,6 +1860,24 @@
       "failure_condition": "public_reference_source_use_orientation_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 122 source use orientation route at /source-use-orientation/."
+    },
+    {
+      "gate_id": "PUB-GATE-0117",
+      "name": "Public Reference Source Use Walkthrough Audit v1 Gate",
+      "status": "public_reference_source_use_walkthrough_audit_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_123_PUBLIC_REFERENCE_SOURCE_USE_WALKTHROUGH_AUDIT_V1.md",
+      "failure_condition": "public_reference_source_use_walkthrough_audit_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 123 audit-only walkthrough of /source-use-orientation/ with 24 scenarios and no route expansion."
     }
   ],
   "last_reviewed": "2026-07-02"

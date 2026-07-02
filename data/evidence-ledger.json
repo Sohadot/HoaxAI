@@ -1355,6 +1355,17 @@
       "status": "active",
       "last_reviewed": "2026-07-02",
       "notes": "Sprint 122 source use orientation route."
+    },
+    {
+      "claim_id": "CLAIM-0124",
+      "claim_text": "Hoax.ai completed Public Reference Source Use Walkthrough Audit v1 on the live /source-use-orientation/ route with 24 source-use walkthrough scenarios (all pass), three scenario-backed hardening patches, and no route expansion while keeping the public surface at 104 routes and preserving non-proof, non-verification, non-authority, non-endorsement, non-detector, and non-transaction boundaries.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_SOURCE_USE_WALKTHROUGH_AUDIT_V1.md, data/public-reference-source-use-walkthrough-audit-v1.json, source-use-orientation/index.html, citation-orientation/index.html, retrieval-index/index.html, validators/validate_public_reference_source_use_walkthrough_audit_v1.py, SPRINT_123_PUBLIC_REFERENCE_SOURCE_USE_WALKTHROUGH_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-02",
+      "notes": "Sprint 123 audit-only source use walkthrough hardening."
     }
   ]
 }

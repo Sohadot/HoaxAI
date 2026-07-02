@@ -1,0 +1,438 @@
+{
+  "id": "public-reference-source-use-walkthrough-audit-v1",
+  "name": "Public Reference Source Use Walkthrough Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 123",
+  "status": "public_reference_source_use_walkthrough_audit",
+  "audit_only": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "primary_route_under_audit": "/source-use-orientation/",
+  "related_routes_checked": [
+    "/",
+    "/system-map/",
+    "/reading-sequences/",
+    "/retrieval-index/",
+    "/citation-orientation/",
+    "/why-hoax-ai-is-not-a-detector/",
+    "/evidence-risk/",
+    "/provenance-risk/",
+    "/context-collapse/",
+    "/claim-drift/",
+    "/traceability-gap/",
+    "/evidence-conditions/",
+    "/evidence-conditions/crosswalk/",
+    "/evidence-conditions/source-uncertainty/",
+    "/reference/source-confidence/",
+    "/reference/claim-source-traceability/",
+    "/acquisition-readiness/governance-traceability/",
+    "/route-groups/core-concepts/",
+    "/route-groups/evidence-risk-pathways/",
+    "/audience-paths/research-reviewers/",
+    "/audience-paths/trust-safety-readers/",
+    "/audience-paths/ai-agents/",
+    "/strategic-review/",
+    "/reviewer-packet/citation-and-retrieval-map/"
+  ],
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "SW-001",
+      "source_interpretation_intent": "Understand how Hoax.ai uses sources without treating sources as proof",
+      "expected_reference_destination": "/source-use-orientation/#source-use-inside-hoax",
+      "actual_reference_destination": "/source-use-orientation/#source-use-inside-hoax",
+      "supporting_routes": [
+        "/source-use-orientation/#sources-as-reference-support",
+        "/reference/source-confidence/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Source use is framed as reference support, not proof of external facts."
+    },
+    {
+      "scenario_id": "SW-002",
+      "source_interpretation_intent": "Understand Source Confidence without treating it as a confidence score",
+      "expected_reference_destination": "/source-use-orientation/#source-confidence-blocks",
+      "actual_reference_destination": "/source-use-orientation/#source-confidence-blocks",
+      "supporting_routes": [
+        "/reference/source-confidence/",
+        "/citation-orientation/#citing-source-confidence"
+      ],
+      "result": "pass",
+      "observed_issue": "How-to-use section did not link directly to the Source Confidence blocks orientation anchor.",
+      "repair_applied": "Added #source-confidence-blocks self-reference link in how-to-use section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Source Confidence remains support-type language without numeric certainty framing."
+    },
+    {
+      "scenario_id": "SW-003",
+      "source_interpretation_intent": "Understand claim-source mapping without treating it as verification",
+      "expected_reference_destination": "/source-use-orientation/#claim-source-relationship",
+      "actual_reference_destination": "/source-use-orientation/#claim-source-relationship",
+      "supporting_routes": [
+        "/reference/claim-source-traceability/",
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "result": "pass",
+      "observed_issue": "How-to-use section did not link directly to claim-source relationship guidance.",
+      "repair_applied": "Added #claim-source-relationship self-reference link in how-to-use section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Claim-source mapping supports bounded public claims, not verification outcomes."
+    },
+    {
+      "scenario_id": "SW-004",
+      "source_interpretation_intent": "Understand evidence-ledger traceability without treating it as adjudication",
+      "expected_reference_destination": "/source-use-orientation/#evidence-ledger-traceability",
+      "actual_reference_destination": "/source-use-orientation/#evidence-ledger-traceability",
+      "supporting_routes": [
+        "/acquisition-readiness/governance-traceability/",
+        "/reviewer-packet/boundary-and-readiness-summary/"
+      ],
+      "result": "pass",
+      "observed_issue": "How-to-use section did not link directly to evidence-ledger traceability guidance.",
+      "repair_applied": "Added #evidence-ledger-traceability self-reference link in how-to-use section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Ledger traceability supports repository orientation, not case adjudication."
+    },
+    {
+      "scenario_id": "SW-005",
+      "source_interpretation_intent": "Understand source-supported reference claims without turning them into case conclusions",
+      "expected_reference_destination": "/source-use-orientation/#sources-as-reference-support",
+      "actual_reference_destination": "/source-use-orientation/#sources-as-reference-support",
+      "supporting_routes": [
+        "/source-use-orientation/#source-use-without-proof",
+        "/not-assessable-posture/"
+      ],
+      "result": "pass",
+      "observed_issue": "How-to-use section did not link directly to sources-as-reference-support anchor.",
+      "repair_applied": "Added #sources-as-reference-support self-reference link in how-to-use section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Reference support is separated from case-conclusion language."
+    },
+    {
+      "scenario_id": "SW-006",
+      "source_interpretation_intent": "Understand source support for evidence risk without implying verified truth",
+      "expected_reference_destination": "/evidence-risk/",
+      "actual_reference_destination": "/evidence-risk/",
+      "supporting_routes": [
+        "/source-use-orientation/#source-use-without-proof",
+        "/evidence-conditions/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Evidence-risk citation stays definitional without verified-truth implication."
+    },
+    {
+      "scenario_id": "SW-007",
+      "source_interpretation_intent": "Understand source support for provenance risk without implying authentication",
+      "expected_reference_destination": "/provenance-risk/",
+      "actual_reference_destination": "/provenance-risk/",
+      "supporting_routes": [
+        "/evidence-conditions/provenance-discontinuity/",
+        "/source-use-orientation/#source-use-without-detector"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Provenance-risk source context avoids authentication or detector framing."
+    },
+    {
+      "scenario_id": "SW-008",
+      "source_interpretation_intent": "Understand source support for context collapse without implying deception",
+      "expected_reference_destination": "/context-collapse/",
+      "actual_reference_destination": "/context-collapse/",
+      "supporting_routes": [
+        "/evidence-conditions/context-loss/",
+        "/source-use-orientation/#sources-as-reference-support"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Context-collapse source support remains interpretive-limit language."
+    },
+    {
+      "scenario_id": "SW-009",
+      "source_interpretation_intent": "Understand source support for claim drift without implying falsity",
+      "expected_reference_destination": "/claim-drift/",
+      "actual_reference_destination": "/claim-drift/",
+      "supporting_routes": [
+        "/evidence-conditions/claim-evidence-misalignment/",
+        "/source-use-orientation/#claim-source-relationship"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Claim-drift source support avoids falsity or verdict implication."
+    },
+    {
+      "scenario_id": "SW-010",
+      "source_interpretation_intent": "Understand source support for traceability gap without implying manipulation proof",
+      "expected_reference_destination": "/traceability-gap/",
+      "actual_reference_destination": "/traceability-gap/",
+      "supporting_routes": [
+        "/evidence-conditions/traceability-break/",
+        "/source-use-orientation/#source-use-without-proof"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Traceability-gap source support avoids manipulation-proof claims."
+    },
+    {
+      "scenario_id": "SW-011",
+      "source_interpretation_intent": "Understand source use in evidence condition pages without implying detector evidence",
+      "expected_reference_destination": "/evidence-conditions/source-uncertainty/",
+      "actual_reference_destination": "/evidence-conditions/source-uncertainty/",
+      "supporting_routes": [
+        "/source-use-orientation/#source-use-without-detector",
+        "/why-hoax-ai-is-not-a-detector/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Condition pages remain source-framed without detector-evidence implication."
+    },
+    {
+      "scenario_id": "SW-012",
+      "source_interpretation_intent": "Understand source use in the evidence-condition crosswalk without implying ranking, severity, or authority",
+      "expected_reference_destination": "/evidence-conditions/crosswalk/",
+      "actual_reference_destination": "/evidence-conditions/crosswalk/",
+      "supporting_routes": [
+        "/evidence-conditions/",
+        "/source-use-orientation/#what-source-use-orientation-is-not"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Crosswalk source interpretation uses relation labels only, not ranking or authority."
+    },
+    {
+      "scenario_id": "SW-013",
+      "source_interpretation_intent": "Understand source use in citation orientation without creating authority claims",
+      "expected_reference_destination": "/citation-orientation/#source-use-citation-orientation",
+      "actual_reference_destination": "/source-use-orientation/#source-use-citation-orientation",
+      "supporting_routes": [
+        "/citation-orientation/",
+        "/source-use-orientation/#source-use-citation-orientation"
+      ],
+      "result": "pass",
+      "observed_issue": "Citation orientation listed Source Use Orientation but did not deep-link to source-use and citation orientation section.",
+      "repair_applied": "Added /source-use-orientation/#source-use-citation-orientation link in citation-orientation how-to-use section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Citation and source-use orientation pair without authority-claim drift."
+    },
+    {
+      "scenario_id": "SW-014",
+      "source_interpretation_intent": "Understand source use in retrieval index without creating search, ranking, or generated-answer behavior",
+      "expected_reference_destination": "/retrieval-index/#retrieval-intent-citation-retrieval-blocks",
+      "actual_reference_destination": "/retrieval-index/#retrieval-intent-citation-retrieval-blocks",
+      "supporting_routes": [
+        "/source-use-orientation/",
+        "/citation-orientation/"
+      ],
+      "result": "pass",
+      "observed_issue": "Retrieval index citation intent listed Source Use Orientation but not its source-interpretation block anchors.",
+      "repair_applied": "Added /source-use-orientation/ block anchor links in retrieval-index citation intent section.",
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Retrieval index remains static orientation without search or ranking behavior."
+    },
+    {
+      "scenario_id": "SW-015",
+      "source_interpretation_intent": "Understand source use as AI agent context without inventing proof, verification, or detector claims",
+      "expected_reference_destination": "/source-use-orientation/#source-use-ai-agents",
+      "actual_reference_destination": "/source-use-orientation/#source-use-ai-agents",
+      "supporting_routes": [
+        "/audience-paths/ai-agents/",
+        "/system-map/ai-retrieval-paths/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "AI agents preserve source-support limits and boundary negations."
+    },
+    {
+      "scenario_id": "SW-016",
+      "source_interpretation_intent": "Understand source use for research reviewers without academic endorsement drift",
+      "expected_reference_destination": "/audience-paths/research-reviewers/",
+      "actual_reference_destination": "/audience-paths/research-reviewers/",
+      "supporting_routes": [
+        "/source-use-orientation/#source-use-depth-context",
+        "/reviewer-packet/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Research-reviewer source interpretation avoids academic endorsement."
+    },
+    {
+      "scenario_id": "SW-017",
+      "source_interpretation_intent": "Understand source use for trust-and-safety readers without operational procedure or case-review drift",
+      "expected_reference_destination": "/audience-paths/trust-safety-readers/",
+      "actual_reference_destination": "/audience-paths/trust-safety-readers/",
+      "supporting_routes": [
+        "/source-use-orientation/#what-source-use-orientation-is-not",
+        "/manual-evidence-checklist/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Trust-and-safety orientation avoids operational procedure or case-review claims."
+    },
+    {
+      "scenario_id": "SW-018",
+      "source_interpretation_intent": "Understand source use for strategic reviewers without pitch-deck, sales, transaction, or due-diligence drift",
+      "expected_reference_destination": "/source-use-orientation/#source-use-strategic-review",
+      "actual_reference_destination": "/source-use-orientation/#source-use-strategic-review",
+      "supporting_routes": [
+        "/strategic-review/",
+        "/executive-overview/public-reference-system/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Strategic source review remains non-transactional reference infrastructure framing."
+    },
+    {
+      "scenario_id": "SW-019",
+      "source_interpretation_intent": "Understand the difference between source support and source certification",
+      "expected_reference_destination": "/source-use-orientation/#what-source-use-orientation-is-not",
+      "actual_reference_destination": "/source-use-orientation/#what-source-use-orientation-is-not",
+      "supporting_routes": [
+        "/source-use-orientation/#sources-as-reference-support",
+        "/boundary-integrity/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Source support is explicitly distinguished from certification language."
+    },
+    {
+      "scenario_id": "SW-020",
+      "source_interpretation_intent": "Understand the difference between source confidence and source authority",
+      "expected_reference_destination": "/source-use-orientation/#source-confidence-blocks",
+      "actual_reference_destination": "/source-use-orientation/#source-confidence-blocks",
+      "supporting_routes": [
+        "/reference/source-confidence/",
+        "/source-use-orientation/#does-not-claim"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Source Confidence naming does not imply source authority or certification."
+    },
+    {
+      "scenario_id": "SW-021",
+      "source_interpretation_intent": "Understand the difference between citation-safe source use and legal citation",
+      "expected_reference_destination": "/citation-orientation/#what-citation-orientation-is-not",
+      "actual_reference_destination": "/citation-orientation/#what-citation-orientation-is-not",
+      "supporting_routes": [
+        "/source-use-orientation/#source-use-citation-orientation",
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Citation-safe source use is separated from legal citation framing."
+    },
+    {
+      "scenario_id": "SW-022",
+      "source_interpretation_intent": "Understand why a source-supported page does not mean Hoax.ai verified a case",
+      "expected_reference_destination": "/source-use-orientation/#source-use-without-proof",
+      "actual_reference_destination": "/source-use-orientation/#source-use-without-proof",
+      "supporting_routes": [
+        "/source-use-orientation/#reference-answer",
+        "/narrative/non-verdict-trust/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Explicit negation prevents verified-case implication from source support."
+    },
+    {
+      "scenario_id": "SW-023",
+      "source_interpretation_intent": "Understand why sources are not detector evidence",
+      "expected_reference_destination": "/source-use-orientation/#source-use-without-detector",
+      "actual_reference_destination": "/source-use-orientation/#source-use-without-detector",
+      "supporting_routes": [
+        "/why-hoax-ai-is-not-a-detector/",
+        "/source-use-orientation/#what-source-use-orientation-is-not"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Sources are not detector evidence; boundary language is explicit."
+    },
+    {
+      "scenario_id": "SW-024",
+      "source_interpretation_intent": "Understand why source discipline supports reference maturity without becoming proof infrastructure",
+      "expected_reference_destination": "/source-use-orientation/#purpose-source-use-orientation",
+      "actual_reference_destination": "/source-use-orientation/#purpose-source-use-orientation",
+      "supporting_routes": [
+        "/acquisition-readiness/governance-traceability/",
+        "/strategic-review/public-reference-depth/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "boundary_check": "pass",
+      "ai_source_interpretation_note": "Source discipline supports governed reference maturity, not proof infrastructure."
+    }
+  ],
+  "total_scenarios": 24,
+  "scenarios_passed": 24,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "Added #sources-as-reference-support, #source-confidence-blocks, #evidence-ledger-traceability, and #claim-source-relationship self-reference links in how-to-use section (SW-002 through SW-005).",
+    "Added /source-use-orientation/#source-use-citation-orientation link in citation-orientation how-to-use section (SW-013).",
+    "Added /source-use-orientation/ block anchor links in retrieval-index citation intent section (SW-014)."
+  ],
+  "boundary_regressions_found": false,
+  "proof_drift_found": false,
+  "verification_drift_found": false,
+  "authority_claim_drift_found": false,
+  "endorsement_drift_found": false,
+  "source_certification_drift_found": false,
+  "detector_evidence_drift_found": false,
+  "score_basis_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "legal_or_academic_source_drift_found": false,
+  "transaction_or_sales_drift_found": false,
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "non_proof": true,
+  "non_verification_claim": true,
+  "non_authority_claim": true,
+  "non_endorsement": true,
+  "non_legal_source_status": true,
+  "non_academic_source_status": true,
+  "non_detector_evidence": true,
+  "non_score_basis": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "non_workflow": true,
+  "non_operational": true,
+  "non_transactional_review_surface": true
+}

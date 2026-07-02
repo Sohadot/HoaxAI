@@ -129,6 +129,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_public_reference_citation_orientation_v1.py",
     ROOT / "validators" / "validate_public_reference_citation_walkthrough_audit_v1.py",
     ROOT / "validators" / "validate_public_reference_source_use_orientation_v1.py",
+    ROOT / "validators" / "validate_public_reference_source_use_walkthrough_audit_v1.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 
