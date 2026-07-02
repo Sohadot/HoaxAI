@@ -1716,6 +1716,24 @@
       "failure_condition": "public_reference_evidence_condition_library_v1_not_met",
       "bypassable": false,
       "notes": "Public Reference Evidence Condition Library v1 completed Sprint 114 (DEC-132). Six evidence-condition pages; homepage, system map, and related pages updated. Sitemap ninety-nine URLs."
+    },
+    {
+      "gate_id": "PUB-GATE-0109",
+      "name": "Public Reference Evidence Condition Crosswalk v1 Gate",
+      "status": "public_reference_evidence_condition_crosswalk_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_115_PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md",
+      "failure_condition": "public_reference_evidence_condition_crosswalk_v1_not_met",
+      "bypassable": false,
+      "notes": "Public Reference Evidence Condition Crosswalk v1 completed Sprint 115 (DEC-133). One crosswalk page; homepage, hub, system map, and related pages updated. Sitemap one hundred URLs."
     }
   ],
   "last_reviewed": "2026-06-27"

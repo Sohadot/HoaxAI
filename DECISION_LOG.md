@@ -3441,3 +3441,26 @@ After Sprint 113 added audience paths, Hoax.ai needed visible evidence-condition
 - Homepage, `/system-map/`, related route-group pages, and related audience-path pages may be updated to link the new Evidence Condition Library.
 - No dashboard, graph tool, scorecard, rating system, due-diligence room, private data-room access, downloadable report, pitch deck, sales page, consulting offer, service funnel, pricing statement, transaction page, acquisition term document, representative mandate, legal representation, or financial representation is authorized.
 - Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.
+
+## DEC-133 — Public Reference Evidence Condition Crosswalk v1 Adopted
+
+**Date:** 2026-07-02
+**Status:** Active
+
+### Decision
+
+Hoax.ai adopts Public Reference Evidence Condition Crosswalk v1 by adding one public reference page at /evidence-conditions/crosswalk/ that relates the five evidence conditions — Source Uncertainty, Provenance Discontinuity, Context Loss, Claim-Evidence Misalignment, and Traceability Break — to core concepts, evidence-risk pathways, route groups, audience paths, boundary language, and AI retrieval use. Crosswalk layers may relate evidence conditions across the public reference system, but must not rank, score, verify, detect, adjudicate, or operationalize them.
+
+### Rationale
+
+After Sprint 114 added the Evidence Condition Library, readers and AI agents needed a governed relation surface stating how conditions connect to the rest of the public reference system, so relations are stated by the surface rather than invented by readers or retrieval systems. This decision governs a visible page built in this sprint and is not preparatory governance. The crosswalk uses only non-ranking relation labels (directly relevant, contextually relevant, boundary-sensitive, retrieval-supporting, confusion-preventing, adjacent reference) and preserves the non-verdict trust model.
+
+### Implications
+
+- One new public evidence-condition crosswalk route is authorized: /evidence-conditions/crosswalk/.
+- Sitemap may increase from 99 to 100 URLs.
+- Route registry may increase from 99 to 100 entries (ROUTE-0100).
+- Public-file-registry may receive PUB-FILE-0100.
+- Homepage, /evidence-conditions/, /system-map/, related route-group pages, and related audience-path pages may be updated to link the crosswalk.
+- No ranking, severity ordering, risk matrix, scorecard, rating system, dashboard, graph tool, due-diligence room, private data-room access, downloadable report, pitch deck, sales page, consulting offer, service funnel, pricing statement, transaction page, acquisition term document, representative mandate, legal representation, or financial representation is authorized.
+- Upload, scoring, verdict, detector, API, automated report, JavaScript, forms, chatbot, generator, and real-world case evaluation remain unauthorized.

@@ -26,7 +26,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Core boundary including Artifact\u2013Subject Separation Doctrine."
+      "notes": "Core boundary including Artifact–Subject Separation Doctrine."
     },
     {
       "source_id": "SOURCE-0003",
@@ -1541,7 +1541,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Internal draft DRAFT-0002 Artifact\u2013Subject Separation."
+      "notes": "Internal draft DRAFT-0002 Artifact–Subject Separation."
     },
     {
       "source_id": "SOURCE-0124",
@@ -1768,7 +1768,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Artifact\u2013Subject Separation controlled public reference page."
+      "notes": "Artifact–Subject Separation controlled public reference page."
     },
     {
       "source_id": "SOURCE-0142",
@@ -4663,7 +4663,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Public Reference Production Batch 1 \u2014 Source Confidence page."
+      "notes": "Public Reference Production Batch 1 — Source Confidence page."
     },
     {
       "source_id": "SOURCE-0366",
@@ -4676,7 +4676,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Public Reference Production Batch 1 \u2014 Provenance Gap page."
+      "notes": "Public Reference Production Batch 1 — Provenance Gap page."
     },
     {
       "source_id": "SOURCE-0367",
@@ -4689,7 +4689,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Public Reference Production Batch 1 \u2014 Not Assessable page."
+      "notes": "Public Reference Production Batch 1 — Not Assessable page."
     },
     {
       "source_id": "SOURCE-0368",
@@ -4702,7 +4702,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Public Reference Production Batch 1 \u2014 Output Boundary page."
+      "notes": "Public Reference Production Batch 1 — Output Boundary page."
     },
     {
       "source_id": "SOURCE-0369",
@@ -4806,7 +4806,7 @@
       ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
-      "notes": "Claim\u2013Source Traceability public reference production batch 2 page."
+      "notes": "Claim–Source Traceability public reference production batch 2 page."
     },
     {
       "source_id": "SOURCE-0377",
@@ -7595,7 +7595,10 @@
       "source_title": "PUBLIC_REFERENCE_ANSWER_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ANSWER_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 answer surface layer."
@@ -7605,7 +7608,10 @@
       "source_title": "PUBLIC_ANSWER_SURFACE_COMPONENT_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ANSWER_SURFACE_COMPONENT_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 component standard."
@@ -7615,7 +7621,10 @@
       "source_title": "PUBLIC_REFERENCE_ANSWER_SURFACE_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ANSWER_SURFACE_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 audit."
@@ -7625,7 +7634,10 @@
       "source_title": "data/public-reference-answer-surface-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-answer-surface-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 surface JSON."
@@ -7635,7 +7647,10 @@
       "source_title": "data/public-reference-answer-surface-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-answer-surface-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 surface schema."
@@ -7645,7 +7660,10 @@
       "source_title": "SPRINT_89_PUBLIC_REFERENCE_ANSWER_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_89_PUBLIC_REFERENCE_ANSWER_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 record."
@@ -7655,7 +7673,10 @@
       "source_title": "validators/validate_public_reference_answer_surface_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_answer_surface_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 89 validator."
@@ -7665,7 +7686,10 @@
       "source_title": "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_CITATION_AND_RETRIEVAL_HARDENING_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 citation retrieval hardening."
@@ -7675,7 +7699,10 @@
       "source_title": "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_CITATION_COMPONENT_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 citation standard."
@@ -7685,7 +7712,10 @@
       "source_title": "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_AI_RETRIEVAL_CAPSULE_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 retrieval capsule standard."
@@ -7695,7 +7725,10 @@
       "source_title": "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_CITATION_RETRIEVAL_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 audit."
@@ -7705,7 +7738,10 @@
       "source_title": "data/public-reference-citation-retrieval-hardening-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-citation-retrieval-hardening-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 hardening JSON."
@@ -7715,7 +7751,10 @@
       "source_title": "data/public-reference-citation-retrieval-hardening-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-citation-retrieval-hardening-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 hardening schema."
@@ -7725,7 +7764,10 @@
       "source_title": "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_90_PUBLIC_REFERENCE_CITATION_RETRIEVAL_HARDENING_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 record."
@@ -7735,7 +7777,10 @@
       "source_title": "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_citation_retrieval_hardening_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 90 validator."
@@ -7745,7 +7790,10 @@
       "source_title": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 quality consolidation audit."
@@ -7755,7 +7803,10 @@
       "source_title": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 repair log."
@@ -7765,7 +7816,10 @@
       "source_title": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 quality standard."
@@ -7775,7 +7829,10 @@
       "source_title": "data/public-reference-quality-consolidation-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-quality-consolidation-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 consolidation JSON."
@@ -7785,7 +7842,10 @@
       "source_title": "data/public-reference-quality-consolidation-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-quality-consolidation-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 consolidation schema."
@@ -7795,7 +7855,10 @@
       "source_title": "SPRINT_91_PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_91_PUBLIC_REFERENCE_QUALITY_CONSOLIDATION_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 record."
@@ -7805,7 +7868,10 @@
       "source_title": "validators/validate_public_reference_quality_consolidation_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_quality_consolidation_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 91 validator."
@@ -7815,7 +7881,10 @@
       "source_title": "PUBLIC_REFERENCE_DEPTH_EXPANSION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_DEPTH_EXPANSION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 depth expansion."
@@ -7825,7 +7894,10 @@
       "source_title": "PUBLIC_REFERENCE_DEPTH_EXPANSION_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_DEPTH_EXPANSION_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 depth audit."
@@ -7835,7 +7907,10 @@
       "source_title": "DEEP_REFERENCE_UNIT_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "DEEP_REFERENCE_UNIT_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 deep reference standard."
@@ -7845,7 +7920,10 @@
       "source_title": "data/public-reference-depth-expansion-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-depth-expansion-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 depth JSON."
@@ -7855,7 +7933,10 @@
       "source_title": "data/public-reference-depth-expansion-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-depth-expansion-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 depth schema."
@@ -7865,7 +7946,10 @@
       "source_title": "SPRINT_92_PUBLIC_REFERENCE_DEPTH_EXPANSION_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_92_PUBLIC_REFERENCE_DEPTH_EXPANSION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 record."
@@ -7875,7 +7959,10 @@
       "source_title": "validators/validate_public_reference_depth_expansion_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_depth_expansion_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 92 validator."
@@ -7885,7 +7972,10 @@
       "source_title": "PUBLIC_REFERENCE_PATHWAY_PAGES_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_PATHWAY_PAGES_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 pathway statement."
@@ -7895,7 +7985,10 @@
       "source_title": "PUBLIC_REFERENCE_PATHWAY_PAGES_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_PATHWAY_PAGES_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 pathway audit."
@@ -7905,7 +7998,10 @@
       "source_title": "PUBLIC_PATHWAY_PAGE_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_PATHWAY_PAGE_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 pathway standard."
@@ -7915,7 +8011,10 @@
       "source_title": "data/public-reference-pathway-pages-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-pathway-pages-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 pathway JSON."
@@ -7925,7 +8024,10 @@
       "source_title": "data/public-reference-pathway-pages-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-pathway-pages-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 pathway schema."
@@ -7935,7 +8037,10 @@
       "source_title": "SPRINT_93_PUBLIC_REFERENCE_PATHWAY_PAGES_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_93_PUBLIC_REFERENCE_PATHWAY_PAGES_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 record."
@@ -7945,7 +8050,10 @@
       "source_title": "validators/validate_public_reference_pathway_pages_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_pathway_pages_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 93 validator."
@@ -7955,7 +8063,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_IA_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_IA_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 navigation IA statement."
@@ -7965,7 +8076,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_IA_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_IA_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 navigation IA audit."
@@ -7975,7 +8089,10 @@
       "source_title": "PUBLIC_NAVIGATION_IA_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_NAVIGATION_IA_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 navigation IA standard."
@@ -7985,7 +8102,10 @@
       "source_title": "data/public-reference-navigation-ia-consolidation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-ia-consolidation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 navigation IA JSON."
@@ -7995,7 +8115,10 @@
       "source_title": "data/public-reference-navigation-ia-consolidation-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-ia-consolidation-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 navigation IA schema."
@@ -8005,7 +8128,10 @@
       "source_title": "SPRINT_94_PUBLIC_REFERENCE_NAVIGATION_IA_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_94_PUBLIC_REFERENCE_NAVIGATION_IA_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 record."
@@ -8015,7 +8141,10 @@
       "source_title": "validators/validate_public_reference_navigation_ia_consolidation_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_navigation_ia_consolidation_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 94 validator."
@@ -8025,7 +8154,10 @@
       "source_title": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_REVIEW_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_REVIEW_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 authority review statement."
@@ -8035,7 +8167,10 @@
       "source_title": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 repair log."
@@ -8045,7 +8180,10 @@
       "source_title": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SURFACE_AUTHORITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 authority standard."
@@ -8055,7 +8193,10 @@
       "source_title": "data/public-reference-surface-authority-review-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-surface-authority-review-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 authority review JSON."
@@ -8065,7 +8206,10 @@
       "source_title": "data/public-reference-surface-authority-review-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-surface-authority-review-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 authority review schema."
@@ -8075,7 +8219,10 @@
       "source_title": "SPRINT_95_PUBLIC_REFERENCE_SURFACE_AUTHORITY_REVIEW_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_95_PUBLIC_REFERENCE_SURFACE_AUTHORITY_REVIEW_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 completion record."
@@ -8085,7 +8232,10 @@
       "source_title": "validators/validate_public_reference_surface_authority_review_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_surface_authority_review_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 95 validator."
@@ -8095,7 +8245,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 entry points statement."
@@ -8105,7 +8258,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 audit."
@@ -8115,7 +8271,10 @@
       "source_title": "PUBLIC_STRATEGIC_ENTRY_POINT_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_STRATEGIC_ENTRY_POINT_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 standard."
@@ -8125,7 +8284,10 @@
       "source_title": "data/public-reference-strategic-entry-points-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-entry-points-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 JSON."
@@ -8135,7 +8297,10 @@
       "source_title": "data/public-reference-strategic-entry-points-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-entry-points-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 schema."
@@ -8145,7 +8310,10 @@
       "source_title": "SPRINT_96_PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_96_PUBLIC_REFERENCE_STRATEGIC_ENTRY_POINTS_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 record."
@@ -8155,7 +8323,10 @@
       "source_title": "validators/validate_public_reference_strategic_entry_points_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_strategic_entry_points_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 96 validator."
@@ -8165,7 +8336,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 narrative statement."
@@ -8175,7 +8349,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 audit."
@@ -8185,7 +8362,10 @@
       "source_title": "PUBLIC_STRATEGIC_NARRATIVE_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_STRATEGIC_NARRATIVE_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 standard."
@@ -8195,7 +8375,10 @@
       "source_title": "data/public-reference-strategic-narrative-surface-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-narrative-surface-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 JSON."
@@ -8205,7 +8388,10 @@
       "source_title": "data/public-reference-strategic-narrative-surface-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-narrative-surface-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 schema."
@@ -8215,7 +8401,10 @@
       "source_title": "SPRINT_97_PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_97_PUBLIC_REFERENCE_STRATEGIC_NARRATIVE_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 record."
@@ -8225,7 +8414,10 @@
       "source_title": "validators/validate_public_reference_strategic_narrative_surface_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_strategic_narrative_surface_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 97 validator."
@@ -8235,7 +8427,10 @@
       "source_title": "PUBLIC_REFERENCE_ACQUISITION_READINESS_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ACQUISITION_READINESS_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 readiness statement."
@@ -8245,7 +8440,10 @@
       "source_title": "PUBLIC_REFERENCE_ACQUISITION_READINESS_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ACQUISITION_READINESS_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 audit."
@@ -8255,7 +8453,10 @@
       "source_title": "PUBLIC_ACQUISITION_READINESS_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ACQUISITION_READINESS_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 standard."
@@ -8265,7 +8466,10 @@
       "source_title": "data/public-reference-acquisition-readiness-surface-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-acquisition-readiness-surface-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 JSON."
@@ -8275,7 +8479,10 @@
       "source_title": "data/public-reference-acquisition-readiness-surface-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-acquisition-readiness-surface-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 schema."
@@ -8285,7 +8492,10 @@
       "source_title": "SPRINT_98_PUBLIC_REFERENCE_ACQUISITION_READINESS_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_98_PUBLIC_REFERENCE_ACQUISITION_READINESS_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 record."
@@ -8295,7 +8505,10 @@
       "source_title": "validators/validate_public_reference_acquisition_readiness_surface_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_acquisition_readiness_surface_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 98 validator."
@@ -8305,7 +8518,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 consolidation statement."
@@ -8315,7 +8531,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 audit."
@@ -8325,7 +8544,10 @@
       "source_title": "PUBLIC_STRATEGIC_SURFACE_CONSOLIDATION_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_STRATEGIC_SURFACE_CONSOLIDATION_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 standard."
@@ -8335,7 +8557,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_SURFACE_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 repair log."
@@ -8345,7 +8570,10 @@
       "source_title": "data/public-reference-strategic-surface-consolidation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-surface-consolidation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 JSON."
@@ -8355,7 +8583,10 @@
       "source_title": "data/public-reference-strategic-surface-consolidation-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-surface-consolidation-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 schema."
@@ -8365,7 +8596,10 @@
       "source_title": "SPRINT_99_PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_99_PUBLIC_REFERENCE_STRATEGIC_SURFACE_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 record."
@@ -8375,7 +8609,10 @@
       "source_title": "validators/validate_public_reference_strategic_surface_consolidation_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_strategic_surface_consolidation_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 99 validator."
@@ -8385,7 +8622,10 @@
       "source_title": "PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 audit."
@@ -8395,7 +8635,10 @@
       "source_title": "PUBLIC_REFERENCE_RELEASE_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_RELEASE_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 repair log."
@@ -8405,7 +8648,10 @@
       "source_title": "data/public-reference-release-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-release-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 JSON."
@@ -8415,7 +8661,10 @@
       "source_title": "data/public-reference-release-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-release-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 schema."
@@ -8425,7 +8674,10 @@
       "source_title": "SPRINT_100_PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_100_PUBLIC_REFERENCE_RELEASE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 record."
@@ -8435,7 +8687,10 @@
       "source_title": "validators/validate_public_reference_release_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_release_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 100 validator."
@@ -8445,7 +8700,10 @@
       "source_title": "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 readiness statement."
@@ -8455,7 +8713,10 @@
       "source_title": "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 audit."
@@ -8465,7 +8726,10 @@
       "source_title": "PUBLIC_EXTERNAL_REVIEW_READINESS_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_EXTERNAL_REVIEW_READINESS_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 standard."
@@ -8475,7 +8739,10 @@
       "source_title": "data/public-reference-external-review-readiness-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-external-review-readiness-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 JSON."
@@ -8485,7 +8752,10 @@
       "source_title": "data/public-reference-external-review-readiness-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-external-review-readiness-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 schema."
@@ -8495,7 +8765,10 @@
       "source_title": "SPRINT_101_PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_101_PUBLIC_REFERENCE_EXTERNAL_REVIEW_READINESS_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 record."
@@ -8505,7 +8778,10 @@
       "source_title": "validators/validate_public_reference_external_review_readiness_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_external_review_readiness_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 101 validator."
@@ -8515,7 +8791,10 @@
       "source_title": "PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 reviewer packet doc."
@@ -8525,7 +8804,10 @@
       "source_title": "PUBLIC_REVIEWER_PACKET_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REVIEWER_PACKET_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 standard."
@@ -8535,7 +8817,10 @@
       "source_title": "PUBLIC_REFERENCE_REVIEWER_PACKET_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_REVIEWER_PACKET_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 audit."
@@ -8545,7 +8830,10 @@
       "source_title": "data/public-reference-reviewer-packet-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-reviewer-packet-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 JSON."
@@ -8555,7 +8843,10 @@
       "source_title": "data/public-reference-reviewer-packet-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-reviewer-packet-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 schema."
@@ -8565,7 +8856,10 @@
       "source_title": "SPRINT_102_PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_102_PUBLIC_REFERENCE_REVIEWER_PACKET_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 record."
@@ -8575,7 +8869,10 @@
       "source_title": "validators/validate_public_reference_reviewer_packet_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_reviewer_packet_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 102 validator."
@@ -8585,7 +8882,10 @@
       "source_title": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 audit doc."
@@ -8595,7 +8895,10 @@
       "source_title": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 repair log."
@@ -8605,7 +8908,10 @@
       "source_title": "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REVIEW_PACKET_INTEGRITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 standard."
@@ -8615,7 +8921,10 @@
       "source_title": "data/public-reference-review-packet-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-review-packet-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 JSON."
@@ -8625,7 +8934,10 @@
       "source_title": "data/public-reference-review-packet-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-review-packet-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 schema."
@@ -8635,7 +8947,10 @@
       "source_title": "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_103_PUBLIC_REFERENCE_REVIEW_PACKET_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 record."
@@ -8645,7 +8960,10 @@
       "source_title": "validators/validate_public_reference_review_packet_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_review_packet_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 103 validator."
@@ -8655,7 +8973,10 @@
       "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 doc."
@@ -8665,7 +8986,10 @@
       "source_title": "PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_EXECUTIVE_OVERVIEW_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 standard."
@@ -8675,7 +8999,10 @@
       "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 audit."
@@ -8685,7 +9012,10 @@
       "source_title": "data/public-reference-executive-overview-surface-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-executive-overview-surface-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 JSON."
@@ -8695,7 +9025,10 @@
       "source_title": "data/public-reference-executive-overview-surface-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-executive-overview-surface-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 schema."
@@ -8705,7 +9038,10 @@
       "source_title": "SPRINT_104_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_104_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 record."
@@ -8715,7 +9051,10 @@
       "source_title": "validators/validate_public_reference_executive_overview_surface_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_executive_overview_surface_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 104 validator."
@@ -8725,7 +9064,10 @@
       "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 executive overview integrity audit."
@@ -8735,7 +9077,10 @@
       "source_title": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 repair log."
@@ -8745,7 +9090,10 @@
       "source_title": "PUBLIC_EXECUTIVE_OVERVIEW_INTEGRITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_EXECUTIVE_OVERVIEW_INTEGRITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 integrity standard."
@@ -8755,7 +9103,10 @@
       "source_title": "data/public-reference-executive-overview-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-executive-overview-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 audit JSON."
@@ -8765,7 +9116,10 @@
       "source_title": "data/public-reference-executive-overview-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-executive-overview-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 audit schema."
@@ -8775,7 +9129,10 @@
       "source_title": "SPRINT_105_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_105_PUBLIC_REFERENCE_EXECUTIVE_OVERVIEW_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 record."
@@ -8785,7 +9142,10 @@
       "source_title": "validators/validate_public_reference_executive_overview_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_executive_overview_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 105 validator."
@@ -8795,7 +9155,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 strategic review index."
@@ -8805,7 +9168,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 audit."
@@ -8815,7 +9181,10 @@
       "source_title": "PUBLIC_STRATEGIC_REVIEW_INDEX_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_STRATEGIC_REVIEW_INDEX_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 standard."
@@ -8825,7 +9194,10 @@
       "source_title": "data/public-reference-strategic-review-index-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-review-index-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 index JSON."
@@ -8835,7 +9207,10 @@
       "source_title": "data/public-reference-strategic-review-index-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-review-index-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 index schema."
@@ -8845,7 +9220,10 @@
       "source_title": "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_106_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 record."
@@ -8855,7 +9233,10 @@
       "source_title": "validators/validate_public_reference_strategic_review_index_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_strategic_review_index_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 106 validator."
@@ -8865,7 +9246,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 integrity audit."
@@ -8875,7 +9259,10 @@
       "source_title": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 repair log."
@@ -8885,7 +9272,10 @@
       "source_title": "PUBLIC_STRATEGIC_REVIEW_INDEX_INTEGRITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_STRATEGIC_REVIEW_INDEX_INTEGRITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 integrity standard."
@@ -8895,7 +9285,10 @@
       "source_title": "data/public-reference-strategic-review-index-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-review-index-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 integrity audit JSON."
@@ -8905,7 +9298,10 @@
       "source_title": "data/public-reference-strategic-review-index-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-strategic-review-index-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 integrity audit schema."
@@ -8915,7 +9311,10 @@
       "source_title": "SPRINT_107_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_107_PUBLIC_REFERENCE_STRATEGIC_REVIEW_INDEX_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 record."
@@ -8925,7 +9324,10 @@
       "source_title": "validators/validate_public_reference_strategic_review_index_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_strategic_review_index_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 107 validator."
@@ -8935,7 +9337,10 @@
       "source_title": "PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map surface record."
@@ -8945,7 +9350,10 @@
       "source_title": "PUBLIC_SYSTEM_MAP_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_SYSTEM_MAP_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map standard."
@@ -8955,7 +9363,10 @@
       "source_title": "PUBLIC_REFERENCE_SYSTEM_MAP_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SYSTEM_MAP_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map audit."
@@ -8965,7 +9376,10 @@
       "source_title": "data/public-reference-system-map-surface-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-system-map-surface-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map JSON."
@@ -8975,7 +9389,10 @@
       "source_title": "data/public-reference-system-map-surface-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-system-map-surface-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map schema."
@@ -8985,7 +9402,10 @@
       "source_title": "SPRINT_108_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_108_PUBLIC_REFERENCE_SYSTEM_MAP_SURFACE_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 record."
@@ -8995,7 +9415,10 @@
       "source_title": "validators/validate_public_reference_system_map_surface_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_system_map_surface_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 validator."
@@ -9005,7 +9428,10 @@
       "source_title": "system-map/index.html",
       "source_type": "internal_governance",
       "location": "system-map/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 108 system map hub."
@@ -9015,7 +9441,10 @@
       "source_title": "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 system map integrity audit."
@@ -9025,7 +9454,10 @@
       "source_title": "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 repair log."
@@ -9035,7 +9467,10 @@
       "source_title": "PUBLIC_SYSTEM_MAP_INTEGRITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_SYSTEM_MAP_INTEGRITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 integrity standard."
@@ -9045,7 +9480,10 @@
       "source_title": "data/public-reference-system-map-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-system-map-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 integrity audit JSON."
@@ -9055,7 +9493,10 @@
       "source_title": "data/public-reference-system-map-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-system-map-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 integrity audit schema."
@@ -9065,7 +9506,10 @@
       "source_title": "SPRINT_109_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_109_PUBLIC_REFERENCE_SYSTEM_MAP_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 record."
@@ -9075,7 +9519,10 @@
       "source_title": "validators/validate_public_reference_system_map_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_system_map_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 109 validator."
@@ -9085,7 +9532,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 navigation backbone consolidation."
@@ -9095,7 +9545,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 repair log."
@@ -9105,7 +9558,10 @@
       "source_title": "PUBLIC_NAVIGATION_BACKBONE_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_NAVIGATION_BACKBONE_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 navigation backbone standard."
@@ -9115,7 +9571,10 @@
       "source_title": "data/public-reference-navigation-backbone-consolidation-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-backbone-consolidation-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 consolidation JSON."
@@ -9125,7 +9584,10 @@
       "source_title": "data/public-reference-navigation-backbone-consolidation-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-backbone-consolidation-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 consolidation schema."
@@ -9135,7 +9597,10 @@
       "source_title": "SPRINT_110_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_110_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_CONSOLIDATION_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 record."
@@ -9145,7 +9610,10 @@
       "source_title": "validators/validate_public_reference_navigation_backbone_consolidation_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_navigation_backbone_consolidation_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 110 validator."
@@ -9155,7 +9623,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 navigation backbone integrity audit."
@@ -9165,7 +9636,10 @@
       "source_title": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_REPAIR_LOG_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_REPAIR_LOG_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 repair log."
@@ -9175,7 +9649,10 @@
       "source_title": "PUBLIC_NAVIGATION_BACKBONE_INTEGRITY_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_NAVIGATION_BACKBONE_INTEGRITY_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 integrity standard."
@@ -9185,7 +9662,10 @@
       "source_title": "data/public-reference-navigation-backbone-integrity-audit-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-backbone-integrity-audit-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 integrity audit JSON."
@@ -9195,7 +9675,10 @@
       "source_title": "data/public-reference-navigation-backbone-integrity-audit-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-navigation-backbone-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 integrity audit schema."
@@ -9205,7 +9688,10 @@
       "source_title": "SPRINT_111_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_111_PUBLIC_REFERENCE_NAVIGATION_BACKBONE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 record."
@@ -9215,7 +9701,10 @@
       "source_title": "validators/validate_public_reference_navigation_backbone_integrity_audit_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_navigation_backbone_integrity_audit_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 111 validator."
@@ -9225,7 +9714,10 @@
       "source_title": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 route group deepening index."
@@ -9235,7 +9727,10 @@
       "source_title": "PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_ROUTE_GROUP_DEEPENING_STANDARD_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 route group deepening standard."
@@ -9245,7 +9740,10 @@
       "source_title": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_AUDIT_V1.md",
       "source_type": "internal_governance",
       "location": "PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_AUDIT_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 route group deepening audit."
@@ -9255,7 +9753,10 @@
       "source_title": "data/public-reference-route-group-deepening-v1.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-route-group-deepening-v1.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 route group deepening record."
@@ -9265,7 +9766,10 @@
       "source_title": "data/public-reference-route-group-deepening-v1.schema.json",
       "source_type": "internal_governance",
       "location": "data/public-reference-route-group-deepening-v1.schema.json",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 route group deepening schema."
@@ -9275,7 +9779,10 @@
       "source_title": "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
       "source_type": "internal_governance",
       "location": "SPRINT_112_PUBLIC_REFERENCE_ROUTE_GROUP_DEEPENING_V1.md",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 record."
@@ -9285,7 +9792,10 @@
       "source_title": "validators/validate_public_reference_route_group_deepening_v1.py",
       "source_type": "internal_governance",
       "location": "validators/validate_public_reference_route_group_deepening_v1.py",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 validator."
@@ -9295,7 +9805,10 @@
       "source_title": "route-groups/public-utilities/index.html",
       "source_type": "public_reference_page",
       "location": "route-groups/public-utilities/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 public utilities route group deepening."
@@ -9305,7 +9818,10 @@
       "source_title": "route-groups/core-concepts/index.html",
       "source_type": "public_reference_page",
       "location": "route-groups/core-concepts/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 core concepts route group deepening."
@@ -9315,7 +9831,10 @@
       "source_title": "route-groups/evidence-risk-pathways/index.html",
       "source_type": "public_reference_page",
       "location": "route-groups/evidence-risk-pathways/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 evidence-risk pathways route group deepening."
@@ -9325,7 +9844,10 @@
       "source_title": "route-groups/review-and-overview-layers/index.html",
       "source_type": "public_reference_page",
       "location": "route-groups/review-and-overview-layers/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 review and overview layers route group deepening."
@@ -9335,7 +9857,10 @@
       "source_title": "route-groups/boundary-and-support-references/index.html",
       "source_type": "public_reference_page",
       "location": "route-groups/boundary-and-support-references/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 boundary and support references route group deepening."
@@ -9345,7 +9870,10 @@
       "source_title": "index.html",
       "source_type": "public_reference_page",
       "location": "index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 homepage route group deepening section."
@@ -9355,7 +9883,10 @@
       "source_title": "system-map/index.html",
       "source_type": "public_reference_page",
       "location": "system-map/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 112 system map route group deepening layer."
@@ -9365,7 +9896,9 @@
       "source_title": "PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path expansion statement."
@@ -9375,7 +9908,9 @@
       "source_title": "PUBLIC_AUDIENCE_PATH_STANDARD_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_AUDIENCE_PATH_STANDARD_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path standard."
@@ -9385,7 +9920,9 @@
       "source_title": "PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path expansion audit."
@@ -9395,7 +9932,9 @@
       "source_title": "data/public-reference-audience-path-expansion-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-audience-path-expansion-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path expansion JSON."
@@ -9405,7 +9944,9 @@
       "source_title": "validators/validate_public_reference_audience_path_expansion_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_audience_path_expansion_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path expansion validator."
@@ -9415,7 +9956,9 @@
       "source_title": "SPRINT_113_PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_113_PUBLIC_REFERENCE_AUDIENCE_PATH_EXPANSION_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 sprint record."
@@ -9425,7 +9968,10 @@
       "source_title": "audience-paths/index.html",
       "source_type": "public_reference_page",
       "location": "audience-paths/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience paths hub."
@@ -9435,7 +9981,10 @@
       "source_title": "audience-paths/research-reviewers/index.html",
       "source_type": "public_reference_page",
       "location": "audience-paths/research-reviewers/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 research reviewers audience path."
@@ -9445,7 +9994,10 @@
       "source_title": "audience-paths/trust-safety-readers/index.html",
       "source_type": "public_reference_page",
       "location": "audience-paths/trust-safety-readers/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 trust and safety readers audience path."
@@ -9455,7 +10007,10 @@
       "source_title": "audience-paths/education-literacy/index.html",
       "source_type": "public_reference_page",
       "location": "audience-paths/education-literacy/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 education and literacy audience path."
@@ -9465,7 +10020,10 @@
       "source_title": "audience-paths/ai-agents/index.html",
       "source_type": "public_reference_page",
       "location": "audience-paths/ai-agents/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 AI agents audience path."
@@ -9475,7 +10033,10 @@
       "source_title": "index.html",
       "source_type": "public_reference_page",
       "location": "index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 homepage audience paths section."
@@ -9485,7 +10046,10 @@
       "source_title": "system-map/index.html",
       "source_type": "public_reference_page",
       "location": "system-map/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 system map audience path layer."
@@ -9495,7 +10059,9 @@
       "source_title": "DECISION_LOG.md",
       "source_type": "governance_file",
       "location": "DECISION_LOG.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "DEC-131 audience path expansion decision."
@@ -9505,7 +10071,9 @@
       "source_title": "data/public-reference-audience-path-expansion-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-audience-path-expansion-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 113 audience path expansion schema."
@@ -9515,7 +10083,9 @@
       "source_title": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition library statement."
@@ -9525,7 +10095,9 @@
       "source_title": "PUBLIC_EVIDENCE_CONDITION_LIBRARY_STANDARD_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_EVIDENCE_CONDITION_LIBRARY_STANDARD_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition standard."
@@ -9535,7 +10107,9 @@
       "source_title": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition audit."
@@ -9545,7 +10119,9 @@
       "source_title": "data/public-reference-evidence-condition-library-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-evidence-condition-library-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition JSON."
@@ -9555,7 +10131,9 @@
       "source_title": "data/public-reference-evidence-condition-library-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-evidence-condition-library-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition schema."
@@ -9565,7 +10143,9 @@
       "source_title": "validators/validate_public_reference_evidence_condition_library_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_evidence_condition_library_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition validator."
@@ -9575,7 +10155,9 @@
       "source_title": "SPRINT_114_PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_114_PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 sprint record."
@@ -9585,7 +10167,10 @@
       "source_title": "evidence-conditions/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 evidence condition hub."
@@ -9595,7 +10180,10 @@
       "source_title": "evidence-conditions/source-uncertainty/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/source-uncertainty/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 source uncertainty condition."
@@ -9605,7 +10193,10 @@
       "source_title": "evidence-conditions/provenance-discontinuity/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/provenance-discontinuity/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 provenance discontinuity condition."
@@ -9615,7 +10206,10 @@
       "source_title": "evidence-conditions/context-loss/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/context-loss/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 context loss condition."
@@ -9625,7 +10219,10 @@
       "source_title": "evidence-conditions/claim-evidence-misalignment/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/claim-evidence-misalignment/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 claim-evidence misalignment condition."
@@ -9635,7 +10232,10 @@
       "source_title": "evidence-conditions/traceability-break/index.html",
       "source_type": "public_reference_page",
       "location": "evidence-conditions/traceability-break/index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 traceability break condition."
@@ -9645,7 +10245,10 @@
       "source_title": "index.html",
       "source_type": "public_reference_page",
       "location": "index.html",
-      "supports": ["governance_claim", "operational_claim"],
+      "supports": [
+        "governance_claim",
+        "operational_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 114 homepage evidence condition library section."
@@ -9655,10 +10258,108 @@
       "source_title": "DECISION_LOG.md",
       "source_type": "governance_file",
       "location": "DECISION_LOG.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "DEC-132 evidence condition library decision."
+    },
+    {
+      "source_id": "SOURCE-0798",
+      "source_title": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md",
+      "source_type": "governance_file",
+      "location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 evidence condition crosswalk statement."
+    },
+    {
+      "source_id": "SOURCE-0799",
+      "source_title": "PUBLIC_EVIDENCE_CONDITION_CROSSWALK_STANDARD_V1.md",
+      "source_type": "governance_file",
+      "location": "PUBLIC_EVIDENCE_CONDITION_CROSSWALK_STANDARD_V1.md",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 crosswalk standard."
+    },
+    {
+      "source_id": "SOURCE-0800",
+      "source_title": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_AUDIT_V1.md",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 crosswalk audit."
+    },
+    {
+      "source_id": "SOURCE-0801",
+      "source_title": "SPRINT_115_PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md",
+      "source_type": "governance_file",
+      "location": "SPRINT_115_PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 sprint record."
+    },
+    {
+      "source_id": "SOURCE-0802",
+      "source_title": "public-reference-evidence-condition-crosswalk-v1.json",
+      "source_type": "governance_file",
+      "location": "data/public-reference-evidence-condition-crosswalk-v1.json",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 crosswalk data record."
+    },
+    {
+      "source_id": "SOURCE-0803",
+      "source_title": "public-reference-evidence-condition-crosswalk-v1.schema.json",
+      "source_type": "governance_file",
+      "location": "data/public-reference-evidence-condition-crosswalk-v1.schema.json",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 crosswalk schema."
+    },
+    {
+      "source_id": "SOURCE-0804",
+      "source_title": "validate_public_reference_evidence_condition_crosswalk_v1.py",
+      "source_type": "governance_file",
+      "location": "validators/validate_public_reference_evidence_condition_crosswalk_v1.py",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 crosswalk validator."
+    },
+    {
+      "source_id": "SOURCE-0805",
+      "source_title": "index.html",
+      "source_type": "public_reference_page",
+      "location": "evidence-conditions/crosswalk/index.html",
+      "supports": [
+        "governance_claim"
+      ],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 115 public crosswalk route."
     }
   ]
 }

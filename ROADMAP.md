@@ -2603,6 +2603,28 @@ All harnesses and `validate_all.py` — PASS required.
 
 ---
 
+## Sprint 115 — Public Reference Evidence Condition Crosswalk v1
+
+**Status:** COMPLETE — 2026-07-02
+**Goal:** Add one evidence-condition crosswalk route relating the Evidence Condition Library to concepts, pathways, route groups, audience paths, boundary language, and AI retrieval use; increase public surface from 99 to 100 routes.
+
+### Deliverables
+
+- `/evidence-conditions/crosswalk/` route with 21 required reference sections and non-ranking relation labels
+- Homepage Evidence Condition Library section updated with crosswalk card
+- `/evidence-conditions/` hub and `/system-map/` Evidence Condition Library Layer linked to the crosswalk
+- Route-group and audience-path pages linked to the crosswalk
+- Public Release Integrity Snapshot updated to 100 routes
+- PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md, standard, audit, JSON/schema, validator
+- Sitemap 100 URLs; route registry 100 entries; PUB-FILE-0100
+- DEC-133, PUB-GATE-0109, CLAIM-0116
+
+### Gate
+
+**Gate G115 passed.** Sprint 116 — next phase to be defined through governance.
+
+---
+
 ## Sprint 108 — Public Reference System Map Surface v1
 
 **Status:** COMPLETE — 2026-06-27

@@ -30,11 +30,11 @@
       "claim_text": "Hoax.ai classifies evidence artifacts, not connected subjects.",
       "claim_type": "governance_claim",
       "evidence_posture": "repository_supported",
-      "support_location": "DECISION_LOG.md (DEC-012), GOVERNANCE_BOUNDARY.md (Artifact\u2013Subject Separation Doctrine), CLAIM_POLICY.md",
+      "support_location": "DECISION_LOG.md (DEC-012), GOVERNANCE_BOUNDARY.md (Artifact–Subject Separation Doctrine), CLAIM_POLICY.md",
       "source_type": "decision_log",
       "status": "active",
       "last_reviewed": "2026-06-17",
-      "notes": "Artifact\u2013Subject Separation Doctrine. Evidence risk on artifacts does not transfer to persons or institutions."
+      "notes": "Artifact–Subject Separation Doctrine. Evidence risk on artifacts does not transfer to persons or institutions."
     },
     {
       "claim_id": "CLAIM-0004",
@@ -661,7 +661,7 @@
       "source_type": "governance_file",
       "status": "active",
       "last_reviewed": "2026-06-17",
-      "notes": "Batch 2 adds Synthetic Fragility, Evidence Chain, Context Collapse, and Claim\u2013Source Traceability reference pages. Public surface expanded to twelve URLs. No engine, classifier, upload, scoring, API, analytics, or public tool behavior authorized."
+      "notes": "Batch 2 adds Synthetic Fragility, Evidence Chain, Context Collapse, and Claim–Source Traceability reference pages. Public surface expanded to twelve URLs. No engine, classifier, upload, scoring, API, analytics, or public tool behavior authorized."
     },
     {
       "claim_id": "CLAIM-0061",
@@ -1263,6 +1263,17 @@
       "claim_type": "governance_claim",
       "evidence_posture": "repository_supported",
       "support_location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md, PUBLIC_EVIDENCE_CONDITION_LIBRARY_STANDARD_V1.md, data/public-reference-evidence-condition-library-v1.json, index.html, system-map/index.html, evidence-conditions/index.html, evidence-conditions/source-uncertainty/index.html, evidence-conditions/provenance-discontinuity/index.html, evidence-conditions/context-loss/index.html, evidence-conditions/claim-evidence-misalignment/index.html, evidence-conditions/traceability-break/index.html, validators/validate_public_reference_evidence_condition_library_v1.py, SPRINT_114_PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md, DECISION_LOG.md (DEC-132)",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-06-27",
+      "notes": "Sprint 114 evidence condition library. Sitemap ninety-nine URLs. Six new public routes."
+    },
+    {
+      "claim_id": "CLAIM-0116",
+      "claim_text": "Hoax.ai has adopted Public Reference Evidence Condition Crosswalk v1, adding one crosswalk page at /evidence-conditions/crosswalk/ that relates the five evidence conditions to core concepts, pathways, route groups, audience paths, boundary language, and AI retrieval use on a 100-route public surface with non-ranking relation labels, without ranking, severity ordering, risk matrices, dashboards, graph tools, scorecards, rating systems, due-diligence rooms, private data-room access, downloadable reports, pitch decks, sales pages, consulting offers, service funnels, pricing statements, transaction pages, verdicts, or detector behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_EVIDENCE_CONDITION_CROSSWALK_V1.md, PUBLIC_EVIDENCE_CONDITION_CROSSWALK_STANDARD_V1.md, data/public-reference-evidence-condition-crosswalk-v1.json, index.html, system-map/index.html, evidence-conditions/index.html, evidence-conditions/crosswalk/index.html, sitemap.xml, data/route-registry.json",
       "source_type": "governance_file",
       "status": "active",
       "last_reviewed": "2026-06-27",

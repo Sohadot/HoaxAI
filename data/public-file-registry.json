@@ -1426,7 +1426,21 @@
       ],
       "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
       "notes": "Sprint 114 per DEC-132."
+    },
+    {
+      "file_id": "PUB-FILE-0100",
+      "path": "evidence-conditions/crosswalk/index.html",
+      "file_type": "html",
+      "public_role": "evidence_condition_crosswalk",
+      "route_id_if_applicable": "ROUTE-0100",
+      "required": true,
+      "validation_scope": "html_metadata_accessibility_security",
+      "allowed_dependencies": [
+        "../../styles.css"
+      ],
+      "prohibited_content": "forms, scripts, upload, scoring, detector, verdict, pricing, transaction, dashboard",
+      "notes": "Sprint 115 per DEC-133."
     }
   ],
-  "last_reviewed": "2026-06-27"
+  "last_reviewed": "2026-07-02"
 }

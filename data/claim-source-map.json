@@ -2880,7 +2880,60 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Public Reference Evidence Condition Library v1 per DEC-132."
+    },
+    {
+      "claim_id": "CLAIM-0116",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
+        "PUBLIC_EVIDENCE_CONDITION_LIBRARY_STANDARD_V1.md",
+        "PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_AUDIT_V1.md",
+        "data/public-reference-evidence-condition-library-v1.json",
+        "index.html",
+        "system-map/index.html",
+        "evidence-conditions/index.html",
+        "evidence-conditions/source-uncertainty/index.html",
+        "evidence-conditions/provenance-discontinuity/index.html",
+        "evidence-conditions/context-loss/index.html",
+        "evidence-conditions/claim-evidence-misalignment/index.html",
+        "evidence-conditions/traceability-break/index.html",
+        "validators/validate_public_reference_evidence_condition_library_v1.py",
+        "SPRINT_114_PUBLIC_REFERENCE_EVIDENCE_CONDITION_LIBRARY_V1.md",
+        "DECISION_LOG.md"
+      ],
+      "source_refs": [
+        "SOURCE-0783",
+        "SOURCE-0784",
+        "SOURCE-0785",
+        "SOURCE-0786",
+        "SOURCE-0787",
+        "SOURCE-0788",
+        "SOURCE-0789",
+        "SOURCE-0790",
+        "SOURCE-0791",
+        "SOURCE-0792",
+        "SOURCE-0793",
+        "SOURCE-0794",
+        "SOURCE-0795",
+        "SOURCE-0796",
+        "SOURCE-0797"
+      ],
+      "support_scope": "public reference evidence condition library v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Public Reference Evidence Condition Library v1 per DEC-132.",
+      "source_ids": [
+        "SOURCE-0798",
+        "SOURCE-0799",
+        "SOURCE-0800",
+        "SOURCE-0801",
+        "SOURCE-0802",
+        "SOURCE-0803",
+        "SOURCE-0804",
+        "SOURCE-0805"
+      ]
     }
   ],
-  "last_reviewed": "2026-06-27"
+  "last_reviewed": "2026-07-02"
 }
