@@ -3192,6 +3192,35 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 124 audit-only external use integrity validation."
+    },
+    {
+      "claim_id": "CLAIM-0126",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_STRATEGIC_REVIEWER_SURFACE_AUDIT_V1.md",
+        "SPRINT_125_PUBLIC_REFERENCE_STRATEGIC_REVIEWER_SURFACE_AUDIT_V1.md",
+        "data/public-reference-strategic-reviewer-surface-audit-v1.json",
+        "data/public-reference-strategic-reviewer-surface-audit-v1.schema.json",
+        "validators/validate_public_reference_strategic_reviewer_surface_audit_v1.py",
+        "strategic-review/index.html",
+        "strategic-review/retrieval-and-citation/index.html",
+        "strategic-review/public-reference-depth/index.html",
+        "reviewer-packet/index.html",
+        "reviewer-packet/citation-and-retrieval-map/index.html",
+        "acquisition-readiness/governance-traceability/index.html"
+      ],
+      "source_refs": [
+        "SOURCE-0864",
+        "SOURCE-0865",
+        "SOURCE-0866",
+        "SOURCE-0867",
+        "SOURCE-0868"
+      ],
+      "support_scope": "public reference strategic reviewer surface audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 125 audit-only strategic reviewer surface validation."
     }
   ],
   "last_reviewed": "2026-07-02"

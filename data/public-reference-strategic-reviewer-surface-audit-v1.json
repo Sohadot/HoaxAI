@@ -1,0 +1,710 @@
+{
+  "id": "public-reference-strategic-reviewer-surface-audit-v1",
+  "name": "Public Reference Strategic Reviewer Surface Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 125",
+  "status": "public_reference_strategic_reviewer_surface_audit",
+  "audit_only": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "strategic_reviewer_surfaces_checked": [
+    "/strategic-review/",
+    "/strategic-review/category-position/",
+    "/strategic-review/public-reference-depth/",
+    "/strategic-review/retrieval-and-citation/",
+    "/strategic-review/boundary-and-readiness/",
+    "/reviewer-packet/",
+    "/reviewer-packet/review-sequence/",
+    "/reviewer-packet/public-surface-index/",
+    "/reviewer-packet/citation-and-retrieval-map/",
+    "/reviewer-packet/boundary-and-readiness-summary/",
+    "/acquisition-readiness/governance-traceability/"
+  ],
+  "external_use_layers_checked": [
+    "/reading-sequences/",
+    "/retrieval-index/",
+    "/citation-orientation/",
+    "/source-use-orientation/"
+  ],
+  "related_routes_checked": [
+    "/",
+    "/system-map/",
+    "/executive-overview/",
+    "/executive-overview/category-thesis/",
+    "/external-review/",
+    "/acquisition-readiness/",
+    "/audience-paths/",
+    "/audience-paths/research-reviewers/",
+    "/audience-paths/ai-agents/",
+    "/route-groups/core-concepts/",
+    "/evidence-conditions/",
+    "/evidence-conditions/crosswalk/",
+    "/why-hoax-ai-is-not-a-detector/",
+    "/reference/claim-source-traceability/",
+    "/reading-sequences/",
+    "/retrieval-index/",
+    "/citation-orientation/",
+    "/source-use-orientation/"
+  ],
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "SR-001",
+      "reviewer_intent": "Identify Hoax.ai category thesis without pitch-deck language",
+      "expected_reference_destinations": [
+        "/executive-overview/category-thesis/",
+        "/narrative/"
+      ],
+      "actual_reference_destinations": [
+        "/executive-overview/category-thesis/",
+        "/narrative/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/category-position/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Category thesis routes use reference framing, not pitch-deck solicitation."
+    },
+    {
+      "scenario_id": "SR-002",
+      "reviewer_intent": "Understand Hoax.ai as public reference system, not a detector",
+      "expected_reference_destinations": [
+        "/why-hoax-ai-is-not-a-detector/",
+        "/strategic-review/"
+      ],
+      "actual_reference_destinations": [
+        "/why-hoax-ai-is-not-a-detector/",
+        "/strategic-review/"
+      ],
+      "supporting_routes": [
+        "/acquisition-readiness/non-detector-moat/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Strategic surfaces reinforce non-detector positioning."
+    },
+    {
+      "scenario_id": "SR-003",
+      "reviewer_intent": "Understand evidence-risk infrastructure without truth-authority drift",
+      "expected_reference_destinations": [
+        "/evidence-risk/",
+        "/strategic-review/public-reference-depth/"
+      ],
+      "actual_reference_destinations": [
+        "/evidence-risk/",
+        "/strategic-review/public-reference-depth/"
+      ],
+      "supporting_routes": [
+        "/narrative/evidence-before-verdict/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Evidence-risk framing avoids truth-authority or verdict implication."
+    },
+    {
+      "scenario_id": "SR-004",
+      "reviewer_intent": "Find Phase 2 external-use layer: reading, retrieval, citation, source-use",
+      "expected_reference_destinations": [
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "actual_reference_destinations": [
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/",
+        "/system-map/#external-use-layer"
+      ],
+      "result": "pass",
+      "observed_issue": "Strategic review index did not link to Phase 2 external-use layer in strategic review path.",
+      "repair_applied": "Added external-use layer step and index-depth companion links on strategic-review index.",
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Strategic reviewers can locate all four external-use layers from strategic review hub."
+    },
+    {
+      "scenario_id": "SR-005",
+      "reviewer_intent": "Understand 104-route public surface without route-count hype",
+      "expected_reference_destinations": [
+        "/strategic-review/#strategic-review-index-integrity-snapshot",
+        "/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/#strategic-review-index-integrity-snapshot",
+        "/"
+      ],
+      "supporting_routes": [
+        "/reviewer-packet/#reviewer-packet-integrity-snapshot"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Route count appears as integrity metadata, not promotional hype."
+    },
+    {
+      "scenario_id": "SR-006",
+      "reviewer_intent": "Find system-map orientation without product-suite or tool-suite drift",
+      "expected_reference_destinations": [
+        "/system-map/",
+        "/system-map/#external-use-layer"
+      ],
+      "actual_reference_destinations": [
+        "/system-map/",
+        "/system-map/#external-use-layer"
+      ],
+      "supporting_routes": [
+        "/strategic-review/public-reference-depth/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "System map remains structural orientation, not a product or tool suite."
+    },
+    {
+      "scenario_id": "SR-007",
+      "reviewer_intent": "Find retrieval and citation discipline without generated-answer or generated-citation drift",
+      "expected_reference_destinations": [
+        "/strategic-review/retrieval-and-citation/",
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/retrieval-and-citation/",
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "supporting_routes": [
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "result": "pass",
+      "observed_issue": "Strategic retrieval-and-citation path omitted direct Phase 2 retrieval and reading layer links.",
+      "repair_applied": "Added reading sequences, retrieval index, citation orientation, and source use orientation to strategic retrieval-and-citation path and companion block.",
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Retrieval and citation discipline stays static-orientation without generated outputs."
+    },
+    {
+      "scenario_id": "SR-008",
+      "reviewer_intent": "Find source-use discipline without proof, verification, certification, or endorsement drift",
+      "expected_reference_destinations": [
+        "/source-use-orientation/",
+        "/strategic-review/retrieval-and-citation/"
+      ],
+      "actual_reference_destinations": [
+        "/source-use-orientation/",
+        "/strategic-review/retrieval-and-citation/"
+      ],
+      "supporting_routes": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Source-use boundaries remain explicit on strategic companion surfaces."
+    },
+    {
+      "scenario_id": "SR-009",
+      "reviewer_intent": "Understand governance traceability without due-diligence room implication",
+      "expected_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "actual_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "supporting_routes": [
+        "/reference/claim-source-traceability/"
+      ],
+      "result": "pass",
+      "observed_issue": "Governance traceability listed only source-use companion, not full external-use layer context.",
+      "repair_applied": "Added full external-use layer companion links on governance-traceability page.",
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Governance traceability supports inspectability, not a due-diligence room."
+    },
+    {
+      "scenario_id": "SR-010",
+      "reviewer_intent": "Understand claim-source mapping without proof or case conclusion drift",
+      "expected_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/",
+        "/reference/claim-source-traceability/"
+      ],
+      "actual_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/",
+        "/reference/claim-source-traceability/"
+      ],
+      "supporting_routes": [
+        "/source-use-orientation/#claim-source-relationship"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Claim-source mapping remains traceability support, not case conclusions."
+    },
+    {
+      "scenario_id": "SR-011",
+      "reviewer_intent": "Understand publisher gates without certification or authority claim drift",
+      "expected_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "actual_reference_destinations": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "supporting_routes": [
+        "/data/publisher-quality-gates.json"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Publisher gates are described as integrity checks, not certification."
+    },
+    {
+      "scenario_id": "SR-012",
+      "reviewer_intent": "Understand audits as integrity checks, not legal or financial review",
+      "expected_reference_destinations": [
+        "/strategic-review/boundary-and-readiness/",
+        "/external-review/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/boundary-and-readiness/",
+        "/external-review/"
+      ],
+      "supporting_routes": [
+        "/reviewer-packet/boundary-and-readiness-summary/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Audit and review language avoids legal or financial review implication."
+    },
+    {
+      "scenario_id": "SR-013",
+      "reviewer_intent": "Find evidence condition library without ranking, severity, or verdict implication",
+      "expected_reference_destinations": [
+        "/evidence-conditions/",
+        "/evidence-conditions/crosswalk/"
+      ],
+      "actual_reference_destinations": [
+        "/evidence-conditions/",
+        "/evidence-conditions/crosswalk/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/public-reference-depth/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Evidence conditions use relation-safe language without ranking or verdicts."
+    },
+    {
+      "scenario_id": "SR-014",
+      "reviewer_intent": "Find evidence-condition crosswalk without operational procedure implication",
+      "expected_reference_destinations": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "actual_reference_destinations": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "supporting_routes": [
+        "/reading-sequences/#evidence-condition-sequence"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Crosswalk remains relation navigation, not operational procedure."
+    },
+    {
+      "scenario_id": "SR-015",
+      "reviewer_intent": "Understand audience paths without workflow or assessment drift",
+      "expected_reference_destinations": [
+        "/audience-paths/",
+        "/audience-paths/research-reviewers/"
+      ],
+      "actual_reference_destinations": [
+        "/audience-paths/",
+        "/audience-paths/research-reviewers/"
+      ],
+      "supporting_routes": [
+        "/route-groups/review-and-overview-layers/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Audience paths orient readers without workflow or assessment claims."
+    },
+    {
+      "scenario_id": "SR-016",
+      "reviewer_intent": "Understand route groups without SEO doorway-page implication",
+      "expected_reference_destinations": [
+        "/route-groups/core-concepts/",
+        "/route-groups/public-utilities/"
+      ],
+      "actual_reference_destinations": [
+        "/route-groups/core-concepts/",
+        "/route-groups/public-utilities/"
+      ],
+      "supporting_routes": [
+        "/system-map/route-groups/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Route groups function as structural shelves, not SEO doorways."
+    },
+    {
+      "scenario_id": "SR-017",
+      "reviewer_intent": "See strategic maturity without acquisition solicitation",
+      "expected_reference_destinations": [
+        "/acquisition-readiness/",
+        "/strategic-review/"
+      ],
+      "actual_reference_destinations": [
+        "/acquisition-readiness/",
+        "/strategic-review/"
+      ],
+      "supporting_routes": [
+        "/acquisition-readiness/category-asset/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Acquisition-readiness routes describe inspectability, not solicitation."
+    },
+    {
+      "scenario_id": "SR-018",
+      "reviewer_intent": "See asset quality without sales-page, pricing, or transaction language",
+      "expected_reference_destinations": [
+        "/strategic-review/",
+        "/executive-overview/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/",
+        "/executive-overview/"
+      ],
+      "supporting_routes": [
+        "/acquisition-readiness/category-asset/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Strategic surfaces avoid sales, pricing, and transaction language."
+    },
+    {
+      "scenario_id": "SR-019",
+      "reviewer_intent": "See buyer logic through maturity framing, not direct sales claims",
+      "expected_reference_destinations": [
+        "/strategic-review/category-position/",
+        "/acquisition-readiness/category-asset/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/category-position/",
+        "/acquisition-readiness/category-asset/"
+      ],
+      "supporting_routes": [
+        "/narrative/reference-before-detection/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Maturity is shown through structure, not buyer solicitation copy."
+    },
+    {
+      "scenario_id": "SR-020",
+      "reviewer_intent": "Understand non-transactional review boundary",
+      "expected_reference_destinations": [
+        "/strategic-review/#non-transactional-boundary",
+        "/reviewer-packet/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/#non-transactional-boundary",
+        "/reviewer-packet/"
+      ],
+      "supporting_routes": [
+        "/external-review/public-surface-checklist/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Non-transactional boundaries are explicit on strategic and reviewer hubs."
+    },
+    {
+      "scenario_id": "SR-021",
+      "reviewer_intent": "Distinguish reference infrastructure from service offering",
+      "expected_reference_destinations": [
+        "/strategic-review/",
+        "/executive-overview/public-reference-system/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/",
+        "/executive-overview/public-reference-system/"
+      ],
+      "supporting_routes": [
+        "/why-hoax-ai-is-not-a-detector/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Reference infrastructure language avoids service-offering framing."
+    },
+    {
+      "scenario_id": "SR-022",
+      "reviewer_intent": "AI agent summarizes strategic reviewer surface without acquisition, sale, authority, verification, or detector claims",
+      "expected_reference_destinations": [
+        "/strategic-review/",
+        "/audience-paths/ai-agents/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/",
+        "/audience-paths/ai-agents/"
+      ],
+      "supporting_routes": [
+        "/system-map/ai-retrieval-paths/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "AI-oriented strategic routes preserve boundary negations."
+    },
+    {
+      "scenario_id": "SR-023",
+      "reviewer_intent": "AI agent cites strategic/reviewer pages without pitch or due-diligence support drift",
+      "expected_reference_destinations": [
+        "/reviewer-packet/citation-and-retrieval-map/",
+        "/citation-orientation/"
+      ],
+      "actual_reference_destinations": [
+        "/reviewer-packet/citation-and-retrieval-map/",
+        "/citation-orientation/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/retrieval-and-citation/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Citation guidance on reviewer surfaces avoids pitch or diligence-room framing."
+    },
+    {
+      "scenario_id": "SR-024",
+      "reviewer_intent": "Homepage and system map give enough strategic orientation without overpromising",
+      "expected_reference_destinations": [
+        "/",
+        "/system-map/"
+      ],
+      "actual_reference_destinations": [
+        "/",
+        "/system-map/"
+      ],
+      "supporting_routes": [
+        "/#strategic-review-index",
+        "/strategic-review/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Homepage and system map orient strategically without overpromising capability."
+    },
+    {
+      "scenario_id": "SR-025",
+      "reviewer_intent": "Reviewer-packet pages do not imply private data room or downloadable report behavior",
+      "expected_reference_destinations": [
+        "/reviewer-packet/",
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "actual_reference_destinations": [
+        "/reviewer-packet/",
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "supporting_routes": [
+        "/reviewer-packet/boundary-and-readiness-summary/"
+      ],
+      "result": "pass",
+      "observed_issue": "Reviewer packet hub did not connect reviewers to Phase 2 external-use layer before citation map depth.",
+      "repair_applied": "Added Phase 2 external-use layer step to reviewer-packet hub review path; expanded citation-and-retrieval-map review path and Reference Answer related links.",
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Reviewer packet explicitly negates private data room and downloadable report behavior."
+    },
+    {
+      "scenario_id": "SR-026",
+      "reviewer_intent": "Strategic-review pages do not imply legal, financial, investment, or acquisition advice",
+      "expected_reference_destinations": [
+        "/strategic-review/",
+        "/strategic-review/boundary-and-readiness/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/",
+        "/strategic-review/boundary-and-readiness/"
+      ],
+      "supporting_routes": [
+        "/acquisition-readiness/governance-traceability/"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Strategic review negates legal, financial, and investment advice implication."
+    },
+    {
+      "scenario_id": "SR-027",
+      "reviewer_intent": "External-use layer supports strategic legibility without creating a new reviewer route",
+      "expected_reference_destinations": [
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "actual_reference_destinations": [
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/retrieval-and-citation/",
+        "/reading-sequences/#external-use-layer-sequence"
+      ],
+      "result": "pass",
+      "observed_issue": null,
+      "repair_applied": null,
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Phase 2 layers support strategic legibility; no new reviewer orientation route required."
+    },
+    {
+      "scenario_id": "SR-028",
+      "reviewer_intent": "Reviewer moves from strategic/reviewer pages to external-use pages without broken links or unclear roles",
+      "expected_reference_destinations": [
+        "/strategic-review/",
+        "/reviewer-packet/",
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "actual_reference_destinations": [
+        "/strategic-review/",
+        "/reviewer-packet/",
+        "/reading-sequences/",
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "supporting_routes": [
+        "/strategic-review/public-reference-depth/"
+      ],
+      "result": "pass",
+      "observed_issue": "Public reference depth index did not name Phase 2 external-use layers in depth orientation.",
+      "repair_applied": "Added Phase 2 external-use layer links to public-reference-depth index purpose.",
+      "strategic_legibility_check": "pass",
+      "boundary_check": "pass",
+      "ai_agent_note": "Strategic-to-external-use transitions are linked with clear role separation."
+    }
+  ],
+  "total_scenarios": 28,
+  "scenarios_passed": 28,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "Added Phase 2 external-use layer step and index-depth links on strategic-review index (SR-004).",
+    "Added Phase 2 layer path and companion block on strategic-review retrieval-and-citation (SR-007, SR-027).",
+    "Added Phase 2 external-use layer step on reviewer-packet hub (SR-025).",
+    "Added Phase 2 layer review path, Reference Answer links, and companion block on citation-and-retrieval-map (SR-025, SR-028).",
+    "Added full external-use layer companion links on governance-traceability (SR-009).",
+    "Added Phase 2 external-use layer links to public-reference-depth index purpose (SR-028)."
+  ],
+  "boundary_regressions_found": false,
+  "strategic_legibility_confirmed": true,
+  "reviewer_surface_integrity_confirmed": true,
+  "phase_2_support_confirmed": true,
+  "ai_agent_strategic_interpretation_confirmed": true,
+  "human_reviewer_interpretation_confirmed": true,
+  "route_count_drift_found": false,
+  "stale_copy_found": false,
+  "role_confusion_found": false,
+  "link_imbalance_found": false,
+  "pitch_deck_drift_found": false,
+  "sales_page_drift_found": false,
+  "acquisition_solicitation_drift_found": false,
+  "due_diligence_room_drift_found": false,
+  "private_data_room_drift_found": false,
+  "authority_claim_drift_found": false,
+  "verification_drift_found": false,
+  "proof_drift_found": false,
+  "detector_drift_found": false,
+  "score_or_verdict_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "legal_or_financial_representation_drift_found": false,
+  "transaction_or_pricing_drift_found": false,
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "non_sales_surface": true,
+  "non_pitch_deck": true,
+  "non_acquisition_solicitation": true,
+  "non_due_diligence_room": true,
+  "non_private_data_room": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_transactional_review_surface": true
+}

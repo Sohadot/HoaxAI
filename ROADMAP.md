@@ -4228,6 +4228,7 @@ Future layers may include:
 ---
 
 ## Sprint 119 — retrieval walkthrough audit complete (102 routes).
+- Sprint 125 — strategic reviewer surface audit complete (104 routes, audit-only, Phase 3 entry).
 - Sprint 124 — external use integrity audit complete (104 routes, audit-only).
 - Sprint 123 — source use walkthrough audit complete (104 routes, audit-only).
 - Sprint 122 — Public Reference Source Use Orientation v1 (`/source-use-orientation/`, 104 routes).

@@ -649,6 +649,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
 | Sprint 119 — retrieval walkthrough audit.
+- Sprint 125 — strategic reviewer surface audit (Phase 3 entry).
 - Sprint 124 — external use integrity audit.
 - Sprint 123 — source use walkthrough audit.
 - Sprint 122 — source use orientation route (`/source-use-orientation/`, 104 routes).
