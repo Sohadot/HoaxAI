@@ -1,0 +1,2692 @@
+{
+  "id": "public-reference-release-candidate-integrity-audit-v1",
+  "name": "Public Reference Release Candidate Integrity Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 135",
+  "status": "public_reference_release_candidate_integrity_audit",
+  "audit_only": true,
+  "release_candidate_audit": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "route_registry_count_expected": 104,
+  "public_file_registry_unchanged": true,
+  "phases_checked": {
+    "Phase 1 public reference foundation": true,
+    "Phase 2 external-use discipline": true,
+    "Phase 3 strategic-review integrity": true,
+    "Phase 4 value integrity": true,
+    "Phase 5 public discovery integrity": true
+  },
+  "release_candidate_records": [
+    {
+      "release_candidate_record_id": "RCI-001",
+      "public_page_or_file": "/",
+      "record_type": "Homepage release-candidate role",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Primary full-system release-candidate reference entry",
+      "actual_release_candidate_role": "Homepage now anchors Phases 1-5 coherence without release-page behavior",
+      "expected_supporting_paths": [
+        "/system-map/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "repaired",
+      "observed_issue": "Release-candidate posture needed one visible system anchor",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Primary full-system release-candidate reference entry"
+    },
+    {
+      "release_candidate_record_id": "RCI-002",
+      "public_page_or_file": "/system-map/",
+      "record_type": "System map release-candidate role",
+      "route_or_file_path": "system-map/index.html",
+      "expected_release_candidate_role": "Structural full-system map",
+      "actual_release_candidate_role": "System map links release-candidate integrity and preserves static-map role",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "status": "repaired",
+      "observed_issue": "System map needed explicit release-candidate cross-link",
+      "repair_applied": "system-map/index.html - release-candidate cross-link clarifies structural system role",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Structural full-system map"
+    },
+    {
+      "release_candidate_record_id": "RCI-003",
+      "public_page_or_file": "sitemap.xml",
+      "record_type": "Sitemap integrity",
+      "route_or_file_path": "sitemap.xml",
+      "expected_release_candidate_role": "Exactly 104 public URLs",
+      "actual_release_candidate_role": "Sitemap remains 104 URLs",
+      "expected_supporting_paths": [
+        "data/route-registry.json"
+      ],
+      "actual_supporting_paths": [
+        "data/route-registry.json"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Exactly 104 public URLs"
+    },
+    {
+      "release_candidate_record_id": "RCI-004",
+      "public_page_or_file": "robots.txt",
+      "record_type": "Robots integrity",
+      "route_or_file_path": "robots.txt",
+      "expected_release_candidate_role": "Allows intended public crawling and references sitemap",
+      "actual_release_candidate_role": "robots.txt allows public crawl and references sitemap",
+      "expected_supporting_paths": [
+        "/sitemap.xml"
+      ],
+      "actual_supporting_paths": [
+        "/sitemap.xml"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Allows intended public crawling and references sitemap"
+    },
+    {
+      "release_candidate_record_id": "RCI-005",
+      "public_page_or_file": "data/route-registry.json",
+      "record_type": "Route registry integrity",
+      "route_or_file_path": "data/route-registry.json",
+      "expected_release_candidate_role": "Exactly 104 registered routes",
+      "actual_release_candidate_role": "Registry remains 104 routes",
+      "expected_supporting_paths": [
+        "/"
+      ],
+      "actual_supporting_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Exactly 104 registered routes"
+    },
+    {
+      "release_candidate_record_id": "RCI-006",
+      "public_page_or_file": "data/public-file-registry.json",
+      "record_type": "Public file registry integrity",
+      "route_or_file_path": "data/public-file-registry.json",
+      "expected_release_candidate_role": "Aligned with current public route files",
+      "actual_release_candidate_role": "No PUB-FILE-0105 and no route expansion",
+      "expected_supporting_paths": [
+        "data/route-registry.json"
+      ],
+      "actual_supporting_paths": [
+        "data/route-registry.json"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Aligned with current public route files"
+    },
+    {
+      "release_candidate_record_id": "RCI-007",
+      "public_page_or_file": "/",
+      "record_type": "Canonical integrity",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Core pages declare correct Hoax.ai canonicals",
+      "actual_release_candidate_role": "Canonicals present on core pages",
+      "expected_supporting_paths": [
+        "/",
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/",
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Core pages declare correct Hoax.ai canonicals"
+    },
+    {
+      "release_candidate_record_id": "RCI-008",
+      "public_page_or_file": "/",
+      "record_type": "Metadata integrity",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Reference-grade titles and descriptions",
+      "actual_release_candidate_role": "Metadata supports reference interpretation",
+      "expected_supporting_paths": [
+        "/"
+      ],
+      "actual_supporting_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade titles and descriptions"
+    },
+    {
+      "release_candidate_record_id": "RCI-009",
+      "public_page_or_file": "/",
+      "record_type": "Open Graph integrity",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Reference-grade social metadata",
+      "actual_release_candidate_role": "Open Graph tags remain non-launch and non-sales",
+      "expected_supporting_paths": [
+        "/"
+      ],
+      "actual_supporting_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade social metadata"
+    },
+    {
+      "release_candidate_record_id": "RCI-010",
+      "public_page_or_file": "/",
+      "record_type": "Internal navigation integrity",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Major public layers reachable from homepage",
+      "actual_release_candidate_role": "Homepage links system, phase, route-group, and reference layers",
+      "expected_supporting_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Major public layers reachable from homepage"
+    },
+    {
+      "release_candidate_record_id": "RCI-011",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Related-page block integrity",
+      "route_or_file_path": "system-map/index.html",
+      "expected_release_candidate_role": "Related pages remain structural",
+      "actual_release_candidate_role": "No misleading priority or commercial role",
+      "expected_supporting_paths": [
+        "/system-map/route-groups/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/route-groups/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Related pages remain structural"
+    },
+    {
+      "release_candidate_record_id": "RCI-012",
+      "public_page_or_file": "/reading-sequences/",
+      "record_type": "Reference block integrity",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_release_candidate_role": "Reference blocks remain citation-safe",
+      "actual_release_candidate_role": "No certification, proof, detector, or verdict role",
+      "expected_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference blocks remain citation-safe"
+    },
+    {
+      "release_candidate_record_id": "RCI-013",
+      "public_page_or_file": "/",
+      "record_type": "Footer/internal link integrity",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Footer links remain reference links",
+      "actual_release_candidate_role": "No conversion behavior",
+      "expected_supporting_paths": [
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Footer links remain reference links"
+    },
+    {
+      "release_candidate_record_id": "RCI-014",
+      "public_page_or_file": "/standard/evidence-posture/",
+      "record_type": "Phase 1 foundation support",
+      "route_or_file_path": "standard/evidence-posture/index.html",
+      "expected_release_candidate_role": "Public reference foundation support",
+      "actual_release_candidate_role": "Foundation remains standard/protocol/reference, not product claim",
+      "expected_supporting_paths": [
+        "/protocol/evidence-posture/",
+        "/reference/evidence-posture/"
+      ],
+      "actual_supporting_paths": [
+        "/protocol/evidence-posture/",
+        "/reference/evidence-posture/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public reference foundation support"
+    },
+    {
+      "release_candidate_record_id": "RCI-015",
+      "public_page_or_file": "/reading-sequences/",
+      "record_type": "Phase 2 external-use support",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_release_candidate_role": "External-use discipline support",
+      "actual_release_candidate_role": "External-use route links release-candidate posture",
+      "expected_supporting_paths": [
+        "/retrieval-index/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "repaired",
+      "observed_issue": "Phase 2 needed full-system cross-link",
+      "repair_applied": "reading-sequences/index.html - release-candidate cross-link added to Phase 2 external-use route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "External-use discipline support"
+    },
+    {
+      "release_candidate_record_id": "RCI-016",
+      "public_page_or_file": "/strategic-review/",
+      "record_type": "Phase 3 strategic-review support",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_release_candidate_role": "Strategic reviewer legibility support",
+      "actual_release_candidate_role": "Strategic review links release-candidate posture",
+      "expected_supporting_paths": [
+        "/reviewer-packet/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/reviewer-packet/",
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "repaired",
+      "observed_issue": "Phase 3/4 closure needed full-system cross-link",
+      "repair_applied": "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Strategic reviewer legibility support"
+    },
+    {
+      "release_candidate_record_id": "RCI-017",
+      "public_page_or_file": "/strategic-review/#phase-4-value-integrity-closure",
+      "record_type": "Phase 4 value-integrity support",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_release_candidate_role": "Non-transactional value support",
+      "actual_release_candidate_role": "Value integrity remains visible and non-commercial",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Non-transactional value support"
+    },
+    {
+      "release_candidate_record_id": "RCI-018",
+      "public_page_or_file": "/#public-discovery-integrity-closure",
+      "record_type": "Phase 5 discovery support",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Discovery integrity support",
+      "actual_release_candidate_role": "Discovery closure remains linked into release-candidate posture",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Discovery integrity support"
+    },
+    {
+      "release_candidate_record_id": "RCI-019",
+      "public_page_or_file": "/reading-sequences/",
+      "record_type": "Reading sequence role",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_release_candidate_role": "Reading order without workflow",
+      "actual_release_candidate_role": "Reading sequence remains reference navigation",
+      "expected_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reading order without workflow"
+    },
+    {
+      "release_candidate_record_id": "RCI-020",
+      "public_page_or_file": "/retrieval-index/",
+      "record_type": "Retrieval index role",
+      "route_or_file_path": "retrieval-index/index.html",
+      "expected_release_candidate_role": "Retrieval organization without search product",
+      "actual_release_candidate_role": "Retrieval index remains static route orientation",
+      "expected_supporting_paths": [
+        "/citation-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/citation-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Retrieval organization without search product"
+    },
+    {
+      "release_candidate_record_id": "RCI-021",
+      "public_page_or_file": "/citation-orientation/",
+      "record_type": "Citation orientation role",
+      "route_or_file_path": "citation-orientation/index.html",
+      "expected_release_candidate_role": "Citation guidance without generator/service",
+      "actual_release_candidate_role": "Citation orientation remains guidance only",
+      "expected_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Citation guidance without generator/service"
+    },
+    {
+      "release_candidate_record_id": "RCI-022",
+      "public_page_or_file": "/source-use-orientation/",
+      "record_type": "Source-use orientation role",
+      "route_or_file_path": "source-use-orientation/index.html",
+      "expected_release_candidate_role": "Source boundary without proof drift",
+      "actual_release_candidate_role": "Source-use remains boundary explanation",
+      "expected_supporting_paths": [
+        "/citation-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/citation-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source boundary without proof drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-023",
+      "public_page_or_file": "/strategic-review/",
+      "record_type": "Strategic review role",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_release_candidate_role": "Reviewer legibility without pitch or sales drift",
+      "actual_release_candidate_role": "Strategic review remains public reviewer legibility",
+      "expected_supporting_paths": [
+        "/reviewer-packet/"
+      ],
+      "actual_supporting_paths": [
+        "/reviewer-packet/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer legibility without pitch or sales drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-024",
+      "public_page_or_file": "/reviewer-packet/",
+      "record_type": "Reviewer packet role",
+      "route_or_file_path": "reviewer-packet/index.html",
+      "expected_release_candidate_role": "Public review support without buyer packet drift",
+      "actual_release_candidate_role": "Reviewer packet links release-candidate posture",
+      "expected_supporting_paths": [
+        "/reviewer-packet/public-surface-index/"
+      ],
+      "actual_supporting_paths": [
+        "/reviewer-packet/public-surface-index/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Reviewer packet needed full-system release-candidate support",
+      "repair_applied": "reviewer-packet/index.html - release-candidate cross-link added to reviewer support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public review support without buyer packet drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-025",
+      "public_page_or_file": "/acquisition-readiness/",
+      "record_type": "Acquisition-readiness role",
+      "route_or_file_path": "acquisition-readiness/index.html",
+      "expected_release_candidate_role": "Acquisition-readability without solicitation",
+      "actual_release_candidate_role": "Acquisition readiness links release-candidate posture with non-solicitation boundary",
+      "expected_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "actual_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Acquisition-readiness needed explicit release-candidate boundary",
+      "repair_applied": "acquisition-readiness/index.html - release-candidate cross-link added with non-solicitation boundary",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Acquisition-readability without solicitation"
+    },
+    {
+      "release_candidate_record_id": "RCI-026",
+      "public_page_or_file": "/strategic-review/#public-reference-value-boundary",
+      "record_type": "Value boundary role",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_release_candidate_role": "Visible value without transaction drift",
+      "actual_release_candidate_role": "Value remains public reference maturity",
+      "expected_supporting_paths": [
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Visible value without transaction drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-027",
+      "public_page_or_file": "/strategic-review/#non-transactional-revenue-boundary",
+      "record_type": "Non-transactional revenue boundary role",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_release_candidate_role": "Revenue boundary without commercial surface",
+      "actual_release_candidate_role": "Boundary remains non-transactional",
+      "expected_supporting_paths": [
+        "/acquisition-readiness/"
+      ],
+      "actual_supporting_paths": [
+        "/acquisition-readiness/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Revenue boundary without commercial surface"
+    },
+    {
+      "release_candidate_record_id": "RCI-028",
+      "public_page_or_file": "/#public-release-indexation-integrity",
+      "record_type": "Release/indexation role",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Indexation integrity without launch behavior",
+      "actual_release_candidate_role": "Release/indexation remains technical public integrity",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Indexation integrity without launch behavior"
+    },
+    {
+      "release_candidate_record_id": "RCI-029",
+      "public_page_or_file": "/#public-entry-path-integrity",
+      "record_type": "Entry-path role",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Entry path without funnel behavior",
+      "actual_release_candidate_role": "Entry paths remain public reference entry",
+      "expected_supporting_paths": [
+        "/reading-sequences/"
+      ],
+      "actual_supporting_paths": [
+        "/reading-sequences/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Entry path without funnel behavior"
+    },
+    {
+      "release_candidate_record_id": "RCI-030",
+      "public_page_or_file": "/#public-discovery-integrity-closure",
+      "record_type": "Discovery closure role",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Discovery integrity without SEO expansion",
+      "actual_release_candidate_role": "Discovery closure remains Phase 5 integrity",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Discovery integrity without SEO expansion"
+    },
+    {
+      "release_candidate_record_id": "RCI-031",
+      "public_page_or_file": "/route-groups/review-and-overview-layers/",
+      "record_type": "Route-group role",
+      "route_or_file_path": "route-groups/review-and-overview-layers/index.html",
+      "expected_release_candidate_role": "Route-group support without SEO spam",
+      "actual_release_candidate_role": "104-route release ambiguity repaired",
+      "expected_supporting_paths": [
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Route-group page used ambiguous 104-route release language",
+      "repair_applied": "route-groups/review-and-overview-layers/index.html - 104-route release ambiguity changed to current 104-route public surface",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-group support without SEO spam"
+    },
+    {
+      "release_candidate_record_id": "RCI-032",
+      "public_page_or_file": "/audience-paths/",
+      "record_type": "Audience-path role",
+      "route_or_file_path": "audience-paths/index.html",
+      "expected_release_candidate_role": "Audience orientation without persona funnel",
+      "actual_release_candidate_role": "Audience hub remains orientation",
+      "expected_supporting_paths": [
+        "/audience-paths/ai-agents/"
+      ],
+      "actual_supporting_paths": [
+        "/audience-paths/ai-agents/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audience orientation without persona funnel"
+    },
+    {
+      "release_candidate_record_id": "RCI-033",
+      "public_page_or_file": "/external-review/public-surface-checklist/",
+      "record_type": "External-review role",
+      "route_or_file_path": "external-review/public-surface-checklist/index.html",
+      "expected_release_candidate_role": "Public reviewability without private diligence",
+      "actual_release_candidate_role": "Checklist links release-candidate posture",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "repaired",
+      "observed_issue": "Checklist needed full-system release-candidate cross-link",
+      "repair_applied": "external-review/public-surface-checklist/index.html - release-candidate checklist cross-link added",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public reviewability without private diligence"
+    },
+    {
+      "release_candidate_record_id": "RCI-034",
+      "public_page_or_file": "/narrative/",
+      "record_type": "Narrative role",
+      "route_or_file_path": "narrative/index.html",
+      "expected_release_candidate_role": "Strategic narrative without marketing funnel",
+      "actual_release_candidate_role": "Narrative remains conceptual story",
+      "expected_supporting_paths": [
+        "/entry-points/"
+      ],
+      "actual_supporting_paths": [
+        "/entry-points/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Strategic narrative without marketing funnel"
+    },
+    {
+      "release_candidate_record_id": "RCI-035",
+      "public_page_or_file": "/evidence-risk/",
+      "record_type": "Core concept role",
+      "route_or_file_path": "evidence-risk/index.html",
+      "expected_release_candidate_role": "Evidence-risk concept without verdict drift",
+      "actual_release_candidate_role": "Concept remains reference definition",
+      "expected_supporting_paths": [
+        "/source-ambiguity/"
+      ],
+      "actual_supporting_paths": [
+        "/source-ambiguity/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Evidence-risk concept without verdict drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-036",
+      "public_page_or_file": "/evidence-conditions/",
+      "record_type": "Evidence condition role",
+      "route_or_file_path": "evidence-conditions/index.html",
+      "expected_release_candidate_role": "Condition definitions without case conclusions",
+      "actual_release_candidate_role": "Condition hub remains non-verdict",
+      "expected_supporting_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "actual_supporting_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Condition definitions without case conclusions"
+    },
+    {
+      "release_candidate_record_id": "RCI-037",
+      "public_page_or_file": "/reference/claim-source-traceability/",
+      "record_type": "Governance/reference role",
+      "route_or_file_path": "reference/claim-source-traceability/index.html",
+      "expected_release_candidate_role": "Traceability without legal/financial proof drift",
+      "actual_release_candidate_role": "Traceability remains reference support",
+      "expected_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Traceability without legal/financial proof drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-038",
+      "public_page_or_file": "/entry-points/ai-agents/",
+      "record_type": "AI-agent interpretation role",
+      "route_or_file_path": "entry-points/ai-agents/index.html",
+      "expected_release_candidate_role": "AI entry without tool claims",
+      "actual_release_candidate_role": "AI path remains reference orientation",
+      "expected_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI entry without tool claims"
+    },
+    {
+      "release_candidate_record_id": "RCI-039",
+      "public_page_or_file": "/entry-points/human-readers/",
+      "record_type": "Human reader interpretation role",
+      "route_or_file_path": "entry-points/human-readers/index.html",
+      "expected_release_candidate_role": "Human entry without onboarding product",
+      "actual_release_candidate_role": "Human path remains reference entry",
+      "expected_supporting_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "actual_supporting_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human entry without onboarding product"
+    },
+    {
+      "release_candidate_record_id": "RCI-040",
+      "public_page_or_file": "sitemap.xml",
+      "record_type": "Crawler interpretation role",
+      "route_or_file_path": "sitemap.xml",
+      "expected_release_candidate_role": "Crawler receives complete 104-route surface",
+      "actual_release_candidate_role": "Sitemap and robots remain coherent",
+      "expected_supporting_paths": [
+        "robots.txt"
+      ],
+      "actual_supporting_paths": [
+        "robots.txt"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Crawler receives complete 104-route surface"
+    },
+    {
+      "release_candidate_record_id": "RCI-041",
+      "public_page_or_file": "/",
+      "record_type": "Commercial drift check",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "No commercial conversion",
+      "actual_release_candidate_role": "Commercial terms remain negated",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No commercial conversion"
+    },
+    {
+      "release_candidate_record_id": "RCI-042",
+      "public_page_or_file": "/",
+      "record_type": "SEO/marketing drift check",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "No SEO or marketing surface",
+      "actual_release_candidate_role": "Marketing and SEO drift remain negated",
+      "expected_supporting_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_supporting_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No SEO or marketing surface"
+    },
+    {
+      "release_candidate_record_id": "RCI-043",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Workflow/tool/service drift check",
+      "route_or_file_path": "system-map/index.html",
+      "expected_release_candidate_role": "No workflow, tool, dashboard, or service role",
+      "actual_release_candidate_role": "System map remains static map",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No workflow, tool, dashboard, or service role"
+    },
+    {
+      "release_candidate_record_id": "RCI-044",
+      "public_page_or_file": "/",
+      "record_type": "Detector/proof/verdict drift check",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "No detector, proof, score, verdict, or case conclusion",
+      "actual_release_candidate_role": "Release-candidate anchor negates these roles",
+      "expected_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "actual_supporting_paths": [
+        "/#public-reference-release-candidate-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No detector, proof, score, verdict, or case conclusion"
+    },
+    {
+      "release_candidate_record_id": "RCI-045",
+      "public_page_or_file": "/acquisition-readiness/",
+      "record_type": "Acquisition/sales drift check",
+      "route_or_file_path": "acquisition-readiness/index.html",
+      "expected_release_candidate_role": "No acquisition or sales solicitation",
+      "actual_release_candidate_role": "Non-solicitation boundary present",
+      "expected_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "actual_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No acquisition or sales solicitation"
+    },
+    {
+      "release_candidate_record_id": "RCI-046",
+      "public_page_or_file": "DECISION_LOG.md",
+      "record_type": "Governance inflation check",
+      "route_or_file_path": "DECISION_LOG.md",
+      "expected_release_candidate_role": "No new DEC for audit-only confirmation",
+      "actual_release_candidate_role": "new_decision_created remains false",
+      "expected_supporting_paths": [
+        "public-reference-release-candidate-integrity-audit-v1.json"
+      ],
+      "actual_supporting_paths": [
+        "public-reference-release-candidate-integrity-audit-v1.json"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No new DEC for audit-only confirmation"
+    },
+    {
+      "release_candidate_record_id": "RCI-047",
+      "public_page_or_file": "/executive-overview/",
+      "record_type": "Executive overview role",
+      "route_or_file_path": "executive-overview/index.html",
+      "expected_release_candidate_role": "Executive overview without sales drift",
+      "actual_release_candidate_role": "Overview remains public reference support",
+      "expected_supporting_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "actual_supporting_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Executive overview without sales drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-048",
+      "public_page_or_file": "/manual-evidence-checklist/",
+      "record_type": "Manual evidence checklist role",
+      "route_or_file_path": "manual-evidence-checklist/index.html",
+      "expected_release_candidate_role": "Manual checklist without operational service",
+      "actual_release_candidate_role": "Checklist remains reference material",
+      "expected_supporting_paths": [
+        "/evidence-risk/"
+      ],
+      "actual_supporting_paths": [
+        "/evidence-risk/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Manual checklist without operational service"
+    },
+    {
+      "release_candidate_record_id": "RCI-049",
+      "public_page_or_file": "/system-map/ai-retrieval-paths/",
+      "record_type": "System map AI retrieval role",
+      "route_or_file_path": "system-map/ai-retrieval-paths/index.html",
+      "expected_release_candidate_role": "AI retrieval map without tool drift",
+      "actual_release_candidate_role": "Map remains static reference layer",
+      "expected_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI retrieval map without tool drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-050",
+      "public_page_or_file": "/system-map/human-review-paths/",
+      "record_type": "System map human review role",
+      "route_or_file_path": "system-map/human-review-paths/index.html",
+      "expected_release_candidate_role": "Human review map without workflow drift",
+      "actual_release_candidate_role": "Map remains static reference layer",
+      "expected_supporting_paths": [
+        "/reading-sequences/"
+      ],
+      "actual_supporting_paths": [
+        "/reading-sequences/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human review map without workflow drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-051",
+      "public_page_or_file": "/system-map/boundary-layers/",
+      "record_type": "Boundary layer role",
+      "route_or_file_path": "system-map/boundary-layers/index.html",
+      "expected_release_candidate_role": "Boundary map without legal/financial representation",
+      "actual_release_candidate_role": "Boundary layer remains reference map",
+      "expected_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "actual_supporting_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Boundary map without legal/financial representation"
+    },
+    {
+      "release_candidate_record_id": "RCI-052",
+      "public_page_or_file": "/evidence-conditions/crosswalk/",
+      "record_type": "Evidence condition crosswalk role",
+      "route_or_file_path": "evidence-conditions/crosswalk/index.html",
+      "expected_release_candidate_role": "Condition relation map without ranking",
+      "actual_release_candidate_role": "Crosswalk remains non-ranking relation map",
+      "expected_supporting_paths": [
+        "/evidence-conditions/"
+      ],
+      "actual_supporting_paths": [
+        "/evidence-conditions/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Condition relation map without ranking"
+    },
+    {
+      "release_candidate_record_id": "RCI-053",
+      "public_page_or_file": "/reference/source-confidence/",
+      "record_type": "Source confidence role",
+      "route_or_file_path": "reference/source-confidence/index.html",
+      "expected_release_candidate_role": "Source confidence without proof drift",
+      "actual_release_candidate_role": "Source confidence remains posture language",
+      "expected_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source confidence without proof drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-054",
+      "public_page_or_file": "/reference/claim-source-traceability/",
+      "record_type": "Claim-source traceability role",
+      "route_or_file_path": "reference/claim-source-traceability/index.html",
+      "expected_release_candidate_role": "Claim-source traceability without certification drift",
+      "actual_release_candidate_role": "Traceability remains inspectability",
+      "expected_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_supporting_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Claim-source traceability without certification drift"
+    },
+    {
+      "release_candidate_record_id": "RCI-055",
+      "public_page_or_file": "/reference/output-boundary/",
+      "record_type": "Output boundary role",
+      "route_or_file_path": "reference/output-boundary/index.html",
+      "expected_release_candidate_role": "Output boundary without generated-answer behavior",
+      "actual_release_candidate_role": "Output boundary remains static reference pattern",
+      "expected_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_supporting_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Output boundary without generated-answer behavior"
+    },
+    {
+      "release_candidate_record_id": "RCI-056",
+      "public_page_or_file": "/",
+      "record_type": "Route count role",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Route-count copy remains 104",
+      "actual_release_candidate_role": "Homepage and system map use current 104-route count",
+      "expected_supporting_paths": [
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-count copy remains 104"
+    },
+    {
+      "release_candidate_record_id": "RCI-057",
+      "public_page_or_file": "/#public-reference-release-candidate-integrity",
+      "record_type": "Release-candidate ambiguity check",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Release-candidate language without release page",
+      "actual_release_candidate_role": "Homepage anchor clarifies no release page or launch page",
+      "expected_supporting_paths": [
+        "/system-map/"
+      ],
+      "actual_supporting_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Release-candidate language without release page"
+    },
+    {
+      "release_candidate_record_id": "RCI-058",
+      "public_page_or_file": "/",
+      "record_type": "Launch ambiguity repair",
+      "route_or_file_path": "index.html",
+      "expected_release_candidate_role": "Legacy launch wording removed where ambiguous",
+      "actual_release_candidate_role": "Controlled domain-connection readiness replaces launch-readiness ambiguity",
+      "expected_supporting_paths": [
+        "/interface/evidence-field/"
+      ],
+      "actual_supporting_paths": [
+        "/interface/evidence-field/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Legacy launch wording removed where ambiguous"
+    },
+    {
+      "release_candidate_record_id": "RCI-059",
+      "public_page_or_file": "data/route-registry.json",
+      "record_type": "Registry/sitemap parity role",
+      "route_or_file_path": "data/route-registry.json",
+      "expected_release_candidate_role": "Registry and sitemap path sets match",
+      "actual_release_candidate_role": "No route drift",
+      "expected_supporting_paths": [
+        "sitemap.xml"
+      ],
+      "actual_supporting_paths": [
+        "sitemap.xml"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Registry and sitemap path sets match"
+    },
+    {
+      "release_candidate_record_id": "RCI-060",
+      "public_page_or_file": "BUILD_MANIFEST.json",
+      "record_type": "Build manifest role",
+      "route_or_file_path": "BUILD_MANIFEST.json",
+      "expected_release_candidate_role": "Build manifest reflects current governance counts",
+      "actual_release_candidate_role": "Manifest regenerated by validation",
+      "expected_supporting_paths": [
+        "validators/validate_all.py"
+      ],
+      "actual_supporting_paths": [
+        "validators/validate_all.py"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Build manifest reflects current governance counts"
+    }
+  ],
+  "total_release_candidate_records": 60,
+  "release_candidate_records_safe": 52,
+  "release_candidate_records_repaired": 8,
+  "release_candidate_records_unsafe": 0,
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "RCI-SCENARIO-001",
+      "release_candidate_intent": "Human reader can understand Hoax.ai as a governed public reference system from the homepage",
+      "expected_pages_checked": [
+        "index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader can understand Hoax.ai as a governed public reference system from the homepage"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-002",
+      "release_candidate_intent": "Human reader can understand the 104-route surface from the system map",
+      "expected_pages_checked": [
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader can understand the 104-route surface from the system map"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-003",
+      "release_candidate_intent": "Human reader can move from homepage to system map to Phase 2, Phase 3, Phase 4, and Phase 5 support pages without broken links",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html",
+        "reading-sequences/index.html",
+        "strategic-review/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html",
+        "reading-sequences/index.html",
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader can move from homepage to system map to Phase 2, Phase 3, Phase 4, and Phase 5 support pages without broken links"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-004",
+      "release_candidate_intent": "Crawler can discover exactly 104 sitemap URLs",
+      "expected_pages_checked": [
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Crawler can discover exactly 104 sitemap URLs"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-005",
+      "release_candidate_intent": "Sitemap URL count matches route registry count",
+      "expected_pages_checked": [
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Sitemap URL count matches route registry count"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-006",
+      "release_candidate_intent": "Sitemap URL count matches public route count",
+      "expected_pages_checked": [
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Sitemap URL count matches public route count"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-007",
+      "release_candidate_intent": "Public file registry remains aligned with the 104-route public surface",
+      "expected_pages_checked": [
+        "data/public-file-registry.json"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "data/public-file-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public file registry remains aligned with the 104-route public surface"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-008",
+      "release_candidate_intent": "No public HTML route exists outside registry and sitemap",
+      "expected_pages_checked": [
+        "data/route-registry.json",
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "data/route-registry.json",
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No public HTML route exists outside registry and sitemap"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-009",
+      "release_candidate_intent": "No route registry entry is missing from sitemap",
+      "expected_pages_checked": [
+        "data/route-registry.json",
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "data/route-registry.json",
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No route registry entry is missing from sitemap"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-010",
+      "release_candidate_intent": "No sitemap URL resolves to a missing local public file",
+      "expected_pages_checked": [
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No sitemap URL resolves to a missing local public file"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-011",
+      "release_candidate_intent": "robots.txt allows intended public crawling and references sitemap",
+      "expected_pages_checked": [
+        "robots.txt"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "robots.txt"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "robots.txt allows intended public crawling and references sitemap"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-012",
+      "release_candidate_intent": "No intended public page contains accidental noindex",
+      "expected_pages_checked": [
+        "index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No intended public page contains accidental noindex"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-013",
+      "release_candidate_intent": "Canonical URLs are present and correct on core pages",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Canonical URLs are present and correct on core pages"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-014",
+      "release_candidate_intent": "Metadata supports reference interpretation, not marketing interpretation",
+      "expected_pages_checked": [
+        "index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Metadata supports reference interpretation, not marketing interpretation"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-015",
+      "release_candidate_intent": "Open Graph tags support reference interpretation, not launch or sales interpretation",
+      "expected_pages_checked": [
+        "index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Open Graph tags support reference interpretation, not launch or sales interpretation"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-016",
+      "release_candidate_intent": "Phase 1 foundation pages remain understandable as reference foundation, not product claims",
+      "expected_pages_checked": [
+        "standard/evidence-posture/index.html",
+        "protocol/evidence-posture/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "standard/evidence-posture/index.html",
+        "protocol/evidence-posture/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 1 foundation pages remain understandable as reference foundation, not product claims"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-017",
+      "release_candidate_intent": "Phase 2 external-use routes remain understandable as reading, retrieval, citation, and source-use discipline, not tools or services",
+      "expected_pages_checked": [
+        "reading-sequences/index.html",
+        "retrieval-index/index.html",
+        "citation-orientation/index.html",
+        "source-use-orientation/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html",
+        "retrieval-index/index.html",
+        "citation-orientation/index.html",
+        "source-use-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "reading-sequences/index.html - release-candidate cross-link added to Phase 2 external-use route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 2 external-use routes remain understandable as reading, retrieval, citation, and source-use discipline, not tools or services"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-018",
+      "release_candidate_intent": "Phase 3 strategic-review surfaces remain understandable as reviewer legibility, not pitch deck, buyer packet, acquisition solicitation, or due-diligence room",
+      "expected_pages_checked": [
+        "strategic-review/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 3 strategic-review surfaces remain understandable as reviewer legibility, not pitch deck, buyer packet, acquisition solicitation, or due-diligence room"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-019",
+      "release_candidate_intent": "Phase 4 value-integrity language remains understandable as non-transactional value clarity, not monetization, revenue, subscription, pricing, support, sponsorship, donation, consulting, lead generation, paid reports, private access, or sales",
+      "expected_pages_checked": [
+        "strategic-review/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 4 value-integrity language remains understandable as non-transactional value clarity, not monetization, revenue, subscription, pricing, support, sponsorship, donation, consulting, lead generation, paid reports, private access, or sales"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-020",
+      "release_candidate_intent": "Phase 5 discovery language remains understandable as public discovery integrity, not SEO campaign, launch campaign, onboarding product, workflow, tool, service path, or marketing funnel",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 5 discovery language remains understandable as public discovery integrity, not SEO campaign, launch campaign, onboarding product, workflow, tool, service path, or marketing funnel"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-021",
+      "release_candidate_intent": "AI agent can summarize the whole system as governed public reference infrastructure without inventing product claims",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can summarize the whole system as governed public reference infrastructure without inventing product claims"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-022",
+      "release_candidate_intent": "AI agent can summarize the whole system without inventing detector, verification, score, proof, verdict, or case-assessment behavior",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can summarize the whole system without inventing detector, verification, score, proof, verdict, or case-assessment behavior"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-023",
+      "release_candidate_intent": "AI agent can summarize strategic value without inventing acquisition, buyer, investor, valuation, or investment claims",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can summarize strategic value without inventing acquisition, buyer, investor, valuation, or investment claims"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-024",
+      "release_candidate_intent": "AI agent can cite/refer to pages through existing reference blocks without treating audits as certification",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can cite/refer to pages through existing reference blocks without treating audits as certification"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-025",
+      "release_candidate_intent": "AI agent can follow reading, retrieval, citation, and source-use routes without treating them as generated-answer systems",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can follow reading, retrieval, citation, and source-use routes without treating them as generated-answer systems"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-026",
+      "release_candidate_intent": "AI agent can follow strategic-review pages without treating them as sales surfaces",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can follow strategic-review pages without treating them as sales surfaces"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-027",
+      "release_candidate_intent": "AI agent can follow acquisition-readiness pages without treating them as acquisition solicitation",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "acquisition-readiness/index.html - release-candidate cross-link added with non-solicitation boundary",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can follow acquisition-readiness pages without treating them as acquisition solicitation"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-028",
+      "release_candidate_intent": "AI agent can follow value-integrity pages without treating them as monetization",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can follow value-integrity pages without treating them as monetization"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-029",
+      "release_candidate_intent": "AI agent can follow discovery/integration pages without treating them as SEO or marketing",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent can follow discovery/integration pages without treating them as SEO or marketing"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-030",
+      "release_candidate_intent": "Human reviewer can trace value claims to visible production maturity, audits, registries, and public routes without sales proof",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reviewer can trace value claims to visible production maturity, audits, registries, and public routes without sales proof"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-031",
+      "release_candidate_intent": "Human reviewer can trace strategic claims without proof, verification, certification, or legal/financial representation drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reviewer can trace strategic claims without proof, verification, certification, or legal/financial representation drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-032",
+      "release_candidate_intent": "Human reader can understand evidence-risk concepts without fake/real verdict drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader can understand evidence-risk concepts without fake/real verdict drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-033",
+      "release_candidate_intent": "Human reader can understand evidence conditions without case conclusion drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader can understand evidence conditions without case conclusion drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-034",
+      "release_candidate_intent": "Route-group pages support discovery without SEO-spam behavior",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "route-groups/review-and-overview-layers/index.html - 104-route release ambiguity changed to current 104-route public surface",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-group pages support discovery without SEO-spam behavior"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-035",
+      "release_candidate_intent": "Audience-path pages support orientation without persona-funnel behavior",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audience-path pages support orientation without persona-funnel behavior"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-036",
+      "release_candidate_intent": "External-review public-surface checklist supports public reviewability without private due-diligence behavior",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "external-review/public-surface-checklist/index.html - release-candidate checklist cross-link added",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "External-review public-surface checklist supports public reviewability without private due-diligence behavior"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-037",
+      "release_candidate_intent": "Related-page blocks do not create misleading priority, workflow drift, commercial drift, or role conflict",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Related-page blocks do not create misleading priority, workflow drift, commercial drift, or role conflict"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-038",
+      "release_candidate_intent": "Reference blocks do not create certification, proof, verification, detector, score, verdict, or case-conclusion drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference blocks do not create certification, proof, verification, detector, score, verdict, or case-conclusion drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-039",
+      "release_candidate_intent": "Footer/internal navigation does not create commercial conversion behavior",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Footer/internal navigation does not create commercial conversion behavior"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-040",
+      "release_candidate_intent": "Homepage does not become a launch page, marketing page, sales page, or funnel",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Homepage does not become a launch page, marketing page, sales page, or funnel"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-041",
+      "release_candidate_intent": "System map does not become a dashboard, product suite, or tool directory",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "system-map/index.html - release-candidate cross-link clarifies structural system role",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "System map does not become a dashboard, product suite, or tool directory"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-042",
+      "release_candidate_intent": "Release-candidate language does not create launch, press, marketing, or official certification implication",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Release-candidate language does not create launch, press, marketing, or official certification implication"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-043",
+      "release_candidate_intent": "Public maturity language does not create hype, sales proof, value proof, or authority proof",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public maturity language does not create hype, sales proof, value proof, or authority proof"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-044",
+      "release_candidate_intent": "Audit language does not create certification or guarantee implication",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audit language does not create certification or guarantee implication"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-045",
+      "release_candidate_intent": "Source language does not create source-as-proof drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source language does not create source-as-proof drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-046",
+      "release_candidate_intent": "Claim-source language does not create legal or financial proof drift",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Claim-source language does not create legal or financial proof drift"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-047",
+      "release_candidate_intent": "Acquisition-readiness language remains reviewability, not solicitation",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "acquisition-readiness/index.html - release-candidate cross-link added with non-solicitation boundary",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Acquisition-readiness language remains reviewability, not solicitation"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-048",
+      "release_candidate_intent": "Value language remains visible and not over-softened",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Value language remains visible and not over-softened"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-049",
+      "release_candidate_intent": "Value language remains non-transactional and non-commercial",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Value language remains non-transactional and non-commercial"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-050",
+      "release_candidate_intent": "Route-count copy remains 104 wherever route count appears",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-count copy remains 104 wherever route count appears"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-051",
+      "release_candidate_intent": "No stale phase language conflicts with Phases 1-5 closure status",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No stale phase language conflicts with Phases 1-5 closure status"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-052",
+      "release_candidate_intent": "No stale release, indexation, discovery, or entry language remains after Sprint 134",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No stale release, indexation, discovery, or entry language remains after Sprint 134"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-053",
+      "release_candidate_intent": "No orphaned high-value page appears outside homepage, system map, sitemap, or cross-links",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No orphaned high-value page appears outside homepage, system map, sitemap, or cross-links"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-054",
+      "release_candidate_intent": "No registry, sitemap, canonical, metadata, robots, or internal-link defect blocks release-candidate interpretation",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No registry, sitemap, canonical, metadata, robots, or internal-link defect blocks release-candidate interpretation"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-055",
+      "release_candidate_intent": "The system can be described as a release candidate without creating a release page",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The system can be described as a release candidate without creating a release page"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-056",
+      "release_candidate_intent": "The system can be described as a release candidate without creating a launch page",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The system can be described as a release candidate without creating a launch page"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-057",
+      "release_candidate_intent": "The system can be described as a release candidate without creating a new route",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The system can be described as a release candidate without creating a new route"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-058",
+      "release_candidate_intent": "The system can be described as a release candidate without creating a new DEC unless a concrete production defect required one",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The system can be described as a release candidate without creating a new DEC unless a concrete production defect required one"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-059",
+      "release_candidate_intent": "The current 104-route surface works as one coherent system across Phases 1-5",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The current 104-route surface works as one coherent system across Phases 1-5"
+    },
+    {
+      "scenario_id": "RCI-SCENARIO-060",
+      "release_candidate_intent": "Sprint 135 can close as audit-only with no route expansion and no governance inflation",
+      "expected_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "expected_safe_interpretation": "coherent governed public reference system without route, release-page, launch, commercial, detector, proof, verdict, or governance-inflation drift",
+      "actual_interpretation": "confirmed as audit-only public reference release-candidate integrity",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_candidate_integrity_check": "confirmed",
+      "cross_phase_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Sprint 135 can close as audit-only with no route expansion and no governance inflation"
+    }
+  ],
+  "total_scenarios": 60,
+  "scenarios_passed": 60,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "index.html - public-reference-release-candidate-integrity anchor connects Phases 1-5 without a new route",
+    "index.html - controlled domain-connection readiness wording replaced launch-readiness ambiguity",
+    "system-map/index.html - release-candidate cross-link clarifies structural system role",
+    "reading-sequences/index.html - release-candidate cross-link added to Phase 2 external-use route",
+    "strategic-review/index.html - release-candidate cross-link added to Phase 3/4 closure support",
+    "reviewer-packet/index.html - release-candidate cross-link added to reviewer support",
+    "acquisition-readiness/index.html - release-candidate cross-link added with non-solicitation boundary",
+    "external-review/public-surface-checklist/index.html - release-candidate checklist cross-link added",
+    "route-groups/review-and-overview-layers/index.html - 104-route release ambiguity changed to current 104-route public surface"
+  ],
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "release_candidate_integrity_confirmed": true,
+  "system_coherence_confirmed": true,
+  "cross_phase_integrity_confirmed": true,
+  "public_reference_foundation_confirmed": true,
+  "external_use_discipline_confirmed": true,
+  "strategic_review_integrity_confirmed": true,
+  "value_integrity_confirmed": true,
+  "public_discovery_integrity_confirmed": true,
+  "indexation_integrity_confirmed": true,
+  "entry_path_integrity_confirmed": true,
+  "discoverability_confirmed": true,
+  "navigability_confirmed": true,
+  "crawler_readability_confirmed": true,
+  "ai_agent_readability_confirmed": true,
+  "human_reader_interpretation_confirmed": true,
+  "sitemap_integrity_confirmed": true,
+  "route_registry_integrity_confirmed": true,
+  "public_file_registry_integrity_confirmed": true,
+  "canonical_integrity_confirmed": true,
+  "metadata_integrity_confirmed": true,
+  "robots_integrity_confirmed": true,
+  "internal_link_integrity_confirmed": true,
+  "non_release_page": true,
+  "non_launch_page": true,
+  "non_marketing_surface": true,
+  "non_seo_spam_surface": true,
+  "non_workflow_surface": true,
+  "non_funnel_surface": true,
+  "non_onboarding_surface": true,
+  "non_tool_surface": true,
+  "non_dashboard_surface": true,
+  "non_product_suite_surface": true,
+  "non_service_surface": true,
+  "non_commercial_surface": true,
+  "non_monetization_surface": true,
+  "non_pricing": true,
+  "non_subscription": true,
+  "non_support_surface": true,
+  "non_sponsorship_surface": true,
+  "non_donation_surface": true,
+  "non_paid_report": true,
+  "non_private_access": true,
+  "non_consulting_offer": true,
+  "non_lead_generation": true,
+  "non_sales_surface": true,
+  "non_pitch_deck": true,
+  "non_acquisition_solicitation": true,
+  "non_buyer_solicitation": true,
+  "non_transaction_surface": true,
+  "non_due_diligence_room": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_investment_claim": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "route_count_drift_found": false,
+  "stale_copy_found": false,
+  "stale_phase_language_found": false,
+  "stale_release_language_found": false,
+  "stale_discovery_language_found": false,
+  "sitemap_mismatch_found": false,
+  "route_registry_mismatch_found": false,
+  "public_file_registry_mismatch_found": false,
+  "orphaned_public_page_found": false,
+  "missing_public_page_found": false,
+  "broken_internal_link_found": false,
+  "canonical_defect_found": false,
+  "metadata_defect_found": false,
+  "og_defect_found": false,
+  "robots_defect_found": false,
+  "accidental_noindex_found": false,
+  "accidental_public_exposure_found": false,
+  "role_confusion_found": false,
+  "cross_phase_conflict_found": false,
+  "release_candidate_ambiguity_found": false,
+  "seo_spam_drift_found": false,
+  "marketing_drift_found": false,
+  "launch_campaign_drift_found": false,
+  "workflow_drift_found": false,
+  "funnel_drift_found": false,
+  "onboarding_drift_found": false,
+  "tool_drift_found": false,
+  "dashboard_drift_found": false,
+  "product_suite_drift_found": false,
+  "service_drift_found": false,
+  "commercial_conversion_drift_found": false,
+  "monetization_drift_found": false,
+  "pricing_drift_found": false,
+  "subscription_drift_found": false,
+  "support_or_sponsorship_drift_found": false,
+  "donation_drift_found": false,
+  "paid_report_drift_found": false,
+  "private_access_drift_found": false,
+  "consulting_offer_drift_found": false,
+  "lead_generation_drift_found": false,
+  "sales_page_drift_found": false,
+  "pitch_deck_drift_found": false,
+  "acquisition_solicitation_drift_found": false,
+  "buyer_solicitation_drift_found": false,
+  "transaction_readiness_drift_found": false,
+  "due_diligence_room_drift_found": false,
+  "legal_or_financial_representation_drift_found": false,
+  "investment_claim_drift_found": false,
+  "authority_claim_drift_found": false,
+  "verification_drift_found": false,
+  "proof_drift_found": false,
+  "detector_drift_found": false,
+  "score_or_verdict_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "audit_as_certification_drift_found": false,
+  "source_as_proof_drift_found": false,
+  "governance_inflation_found": false
+}

@@ -1487,6 +1487,17 @@
       "status": "active",
       "last_reviewed": "2026-07-03",
       "notes": "Sprint 134 audit-only public discovery integrity closure."
+    },
+    {
+      "claim_id": "CLAIM-0136",
+      "claim_text": "Hoax.ai completed Public Reference Release Candidate Integrity Audit v1 with 60 release-candidate records inventoried (51 safe, 9 repaired, 0 unsafe), 60 walkthrough scenarios (all pass), nine scenario-backed hardening patches, and no route expansion while keeping the public surface at 104 routes and confirming release-candidate integrity, system coherence, cross-phase integrity, public reference foundation, external-use discipline, strategic-review integrity, value integrity, public discovery integrity, indexation, entry-path, discoverability, navigability, crawler readability, AI-agent readability, human-reader interpretation, sitemap, registry, canonical, metadata, robots, and internal-link integrity without release-page, launch, marketing, commercial, detector, proof, verdict, acquisition, sales, or governance-inflation drift.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md, data/public-reference-release-candidate-integrity-audit-v1.json, index.html, validators/validate_public_reference_release_candidate_integrity_audit_v1.py, SPRINT_135_PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-03",
+      "notes": "Sprint 135 audit-only public reference release candidate integrity."
     }
   ]
 }

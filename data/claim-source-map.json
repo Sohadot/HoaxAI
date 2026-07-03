@@ -3502,6 +3502,39 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 134 audit-only public discovery integrity closure validation."
+    },
+    {
+      "claim_id": "CLAIM-0136",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
+        "SPRINT_135_PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
+        "data/public-reference-release-candidate-integrity-audit-v1.json",
+        "data/public-reference-release-candidate-integrity-audit-v1.schema.json",
+        "validators/validate_public_reference_release_candidate_integrity_audit_v1.py",
+        "index.html",
+        "system-map/index.html",
+        "reading-sequences/index.html",
+        "strategic-review/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html",
+        "external-review/public-surface-checklist/index.html",
+        "route-groups/review-and-overview-layers/index.html",
+        "sitemap.xml",
+        "robots.txt"
+      ],
+      "source_refs": [
+        "SOURCE-0914",
+        "SOURCE-0915",
+        "SOURCE-0916",
+        "SOURCE-0917",
+        "SOURCE-0918"
+      ],
+      "support_scope": "public reference release candidate integrity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 135 audit-only public reference release candidate integrity validation."
     }
   ],
   "last_reviewed": "2026-07-02"
