@@ -11396,6 +11396,56 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 audit validator."
+    },
+    {
+      "source_id": "SOURCE-0894",
+      "source_title": "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "location": "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 131 value integrity closure audit."
+    },
+    {
+      "source_id": "SOURCE-0895",
+      "source_title": "SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "location": "SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 131 sprint record."
+    },
+    {
+      "source_id": "SOURCE-0896",
+      "source_title": "public-reference-value-integrity-closure-audit-v1.json",
+      "source_type": "governance_file",
+      "location": "data/public-reference-value-integrity-closure-audit-v1.json",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 131 audit JSON."
+    },
+    {
+      "source_id": "SOURCE-0897",
+      "source_title": "public-reference-value-integrity-closure-audit-v1.schema.json",
+      "source_type": "governance_file",
+      "location": "data/public-reference-value-integrity-closure-audit-v1.schema.json",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 131 audit schema."
+    },
+    {
+      "source_id": "SOURCE-0898",
+      "source_title": "validate_public_reference_value_integrity_closure_audit_v1.py",
+      "source_type": "governance_file",
+      "location": "validators/validate_public_reference_value_integrity_closure_audit_v1.py",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 131 audit validator."
     }
   ]
 }

@@ -1443,6 +1443,17 @@
       "status": "active",
       "last_reviewed": "2026-07-02",
       "notes": "Sprint 130 audit-only non-transactional revenue boundary hardening."
+    },
+    {
+      "claim_id": "CLAIM-0132",
+      "claim_text": "Hoax.ai completed Public Reference Value Integrity Closure Audit v1 with 42 walkthrough scenarios (all pass), seven scenario-backed hardening patches, Phase 4 closure recommended, and no route expansion while keeping the public surface at 104 routes and confirming value integrity, value legibility, value traceability, non-transactional revenue boundary, and public reference value as maturity without monetization, pricing, subscription, support, sponsorship, donation, consulting, lead-generation, or transaction behavior.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md, data/public-reference-value-integrity-closure-audit-v1.json, strategic-review/index.html, validators/validate_public_reference_value_integrity_closure_audit_v1.py, SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-03",
+      "notes": "Sprint 131 audit-only Phase 4 value integrity closure."
     }
   ]
 }

@@ -137,6 +137,7 @@ VALIDATORS = [
     ROOT / "validators" / "validate_public_reference_strategic_review_integrity_closure_audit_v1.py",
     ROOT / "validators" / "validate_public_reference_value_boundary_audit_v1.py",
     ROOT / "validators" / "validate_public_reference_non_transactional_revenue_boundary_audit_v1.py",
+    ROOT / "validators" / "validate_public_reference_value_integrity_closure_audit_v1.py",
 ]
 MANIFEST_GENERATOR = ROOT / "validators" / "generate_build_manifest.py"
 

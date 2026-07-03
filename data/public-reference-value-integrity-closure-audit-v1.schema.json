@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/public-reference-value-integrity-closure-audit-v1.schema.json",
+  "title": "Public Reference Value Integrity Closure Audit v1",
+  "type": "object",
+  "required": [
+    "id", "name", "version", "sprint", "status", "audit_only", "phase", "phase_closure_candidate",
+    "production_route_added", "public_route_count_before", "public_route_count_after",
+    "sitemap_url_count_expected", "walkthrough_scenarios",
+    "total_scenarios", "scenarios_passed", "scenarios_failed",
+    "value_integrity_confirmed", "phase_4_closure_recommended", "new_decision_created",
+    "route_registry_changed", "public_file_registry_changed", "no_new_routes"
+  ],
+  "properties": {
+    "id": { "const": "public-reference-value-integrity-closure-audit-v1" },
+    "sprint": { "const": "Sprint 131" },
+    "status": { "const": "public_reference_value_integrity_closure_audit" },
+    "audit_only": { "const": true },
+    "phase": { "const": "Phase 4" },
+    "phase_closure_candidate": { "const": true },
+    "production_route_added": { "const": false },
+    "public_route_count_before": { "const": 104 },
+    "public_route_count_after": { "const": 104 },
+    "sitemap_url_count_expected": { "const": 104 },
+    "walkthrough_scenarios": { "type": "array", "minItems": 36 },
+    "value_integrity_confirmed": { "const": true },
+    "phase_4_closure_recommended": { "const": true },
+    "new_decision_created": { "type": "boolean" },
+    "no_new_routes": { "const": true }
+  }
+}

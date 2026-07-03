@@ -3371,6 +3371,36 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 130 audit-only non-transactional revenue boundary validation."
+    },
+    {
+      "claim_id": "CLAIM-0132",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+        "SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
+        "data/public-reference-value-integrity-closure-audit-v1.json",
+        "data/public-reference-value-integrity-closure-audit-v1.schema.json",
+        "validators/validate_public_reference_value_integrity_closure_audit_v1.py",
+        "strategic-review/index.html",
+        "index.html",
+        "system-map/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html",
+        "retrieval-index/index.html",
+        "source-use-orientation/index.html"
+      ],
+      "source_refs": [
+        "SOURCE-0894",
+        "SOURCE-0895",
+        "SOURCE-0896",
+        "SOURCE-0897",
+        "SOURCE-0898"
+      ],
+      "support_scope": "public reference value integrity closure audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 131 audit-only Phase 4 value integrity closure validation."
     }
   ],
   "last_reviewed": "2026-07-02"
