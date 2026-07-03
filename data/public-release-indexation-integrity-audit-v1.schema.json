@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hoax.ai/schemas/public-release-indexation-integrity-audit-v1.schema.json",
+  "title": "Public Release and Indexation Integrity Audit v1",
+  "type": "object",
+  "required": [
+    "id", "name", "version", "sprint", "status", "audit_only", "phase", "phase_entry_audit",
+    "production_route_added", "public_route_count_before", "public_route_count_after",
+    "sitemap_url_count_expected", "route_registry_count_expected", "release_records",
+    "total_release_records", "walkthrough_scenarios", "total_scenarios",
+    "scenarios_passed", "scenarios_failed", "public_release_integrity_confirmed",
+    "indexation_integrity_confirmed", "new_decision_created", "no_new_routes"
+  ],
+  "properties": {
+    "id": { "const": "public-release-indexation-integrity-audit-v1" },
+    "sprint": { "const": "Sprint 132" },
+    "status": { "const": "public_release_indexation_integrity_audit" },
+    "audit_only": { "const": true },
+    "phase": { "const": "Phase 5" },
+    "phase_entry_audit": { "const": true },
+    "production_route_added": { "const": false },
+    "public_route_count_before": { "const": 104 },
+    "public_route_count_after": { "const": 104 },
+    "sitemap_url_count_expected": { "const": 104 },
+    "route_registry_count_expected": { "const": 104 },
+    "release_records": { "type": "array", "minItems": 40 },
+    "walkthrough_scenarios": { "type": "array", "minItems": 40 },
+    "public_release_integrity_confirmed": { "const": true },
+    "indexation_integrity_confirmed": { "const": true },
+    "new_decision_created": { "type": "boolean" },
+    "no_new_routes": { "const": true }
+  }
+}

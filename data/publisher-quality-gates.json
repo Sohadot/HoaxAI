@@ -2022,6 +2022,24 @@
       "failure_condition": "public_reference_value_integrity_closure_audit_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 131 Phase 4 value integrity closure audit with 42 scenarios, no route expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0126",
+      "name": "Public Release and Indexation Integrity Audit v1 Gate",
+      "status": "public_release_indexation_integrity_audit_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_132_PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
+      "failure_condition": "public_release_indexation_integrity_audit_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 132 public release indexation integrity audit with 42 records and 42 scenarios, no route expansion."
     }
   ],
   "last_reviewed": "2026-07-02"

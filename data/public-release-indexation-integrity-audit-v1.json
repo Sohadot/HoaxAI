@@ -1,0 +1,1539 @@
+{
+  "id": "public-release-indexation-integrity-audit-v1",
+  "name": "Public Release and Indexation Integrity Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 132",
+  "status": "public_release_indexation_integrity_audit",
+  "audit_only": true,
+  "phase": "Phase 5",
+  "phase_entry_audit": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "route_registry_count_expected": 104,
+  "public_file_registry_unchanged": true,
+  "release_records": [
+    {
+      "release_record_id": "REL-001",
+      "public_page_or_file": "data/route-registry.json",
+      "record_type": "Route registry entry",
+      "route_or_file_path": "data/route-registry.json",
+      "expected_state": "104 entries",
+      "actual_state": "104 entries",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104 entries"
+    },
+    {
+      "release_record_id": "REL-002",
+      "public_page_or_file": "data/public-file-registry.json",
+      "record_type": "Public file registry entry",
+      "route_or_file_path": "data/public-file-registry.json",
+      "expected_state": "Aligned with 104 routes",
+      "actual_state": "Aligned",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Aligned with 104 routes"
+    },
+    {
+      "release_record_id": "REL-003",
+      "public_page_or_file": "sitemap.xml",
+      "record_type": "Sitemap URL",
+      "route_or_file_path": "sitemap.xml",
+      "expected_state": "104 URLs",
+      "actual_state": "104 URLs",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104 URLs"
+    },
+    {
+      "release_record_id": "REL-004",
+      "public_page_or_file": "robots.txt",
+      "record_type": "Robots directive",
+      "route_or_file_path": "robots.txt",
+      "expected_state": "Allow public crawl",
+      "actual_state": "Allow: /",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Allow public crawl"
+    },
+    {
+      "release_record_id": "REL-005",
+      "public_page_or_file": "/",
+      "record_type": "Canonical URL",
+      "route_or_file_path": "index.html",
+      "expected_state": "https://hoax.ai/",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "https://hoax.ai/"
+    },
+    {
+      "release_record_id": "REL-006",
+      "public_page_or_file": "/",
+      "record_type": "Meta title",
+      "route_or_file_path": "index.html",
+      "expected_state": "Non-empty title",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Non-empty title"
+    },
+    {
+      "release_record_id": "REL-007",
+      "public_page_or_file": "/",
+      "record_type": "Meta description",
+      "route_or_file_path": "index.html",
+      "expected_state": "Non-empty description",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Non-empty description"
+    },
+    {
+      "release_record_id": "REL-008",
+      "public_page_or_file": "/",
+      "record_type": "Open Graph title",
+      "route_or_file_path": "index.html",
+      "expected_state": "Coherent OG title",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Coherent OG title"
+    },
+    {
+      "release_record_id": "REL-009",
+      "public_page_or_file": "/",
+      "record_type": "Open Graph description",
+      "route_or_file_path": "index.html",
+      "expected_state": "Coherent OG description",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Coherent OG description"
+    },
+    {
+      "release_record_id": "REL-010",
+      "public_page_or_file": "/",
+      "record_type": "Open Graph URL",
+      "route_or_file_path": "index.html",
+      "expected_state": "https://hoax.ai/",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "https://hoax.ai/"
+    },
+    {
+      "release_record_id": "REL-011",
+      "public_page_or_file": "/",
+      "record_type": "H1",
+      "route_or_file_path": "index.html",
+      "expected_state": "One H1",
+      "actual_state": "One H1",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "One H1"
+    },
+    {
+      "release_record_id": "REL-012",
+      "public_page_or_file": "/",
+      "record_type": "Homepage release status",
+      "route_or_file_path": "index.html#public-release-integrity-snapshot",
+      "expected_state": "104-route snapshot",
+      "actual_state": "104 routes",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104-route snapshot"
+    },
+    {
+      "release_record_id": "REL-013",
+      "public_page_or_file": "/",
+      "record_type": "Route-count language",
+      "route_or_file_path": "index.html",
+      "expected_state": "104 only",
+      "actual_state": "104",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104 only"
+    },
+    {
+      "release_record_id": "REL-014",
+      "public_page_or_file": "/",
+      "record_type": "Phase status language",
+      "route_or_file_path": "index.html",
+      "expected_state": "Phase 4 closure linked",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Phase 4 closure linked"
+    },
+    {
+      "release_record_id": "REL-015",
+      "public_page_or_file": "/system-map/",
+      "record_type": "System map release status",
+      "route_or_file_path": "system-map/index.html",
+      "expected_state": "104-route count",
+      "actual_state": "104",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation cross-link (REL-015)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104-route count"
+    },
+    {
+      "release_record_id": "REL-016",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Canonical URL",
+      "route_or_file_path": "system-map/index.html",
+      "expected_state": "https://hoax.ai/system-map/",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "https://hoax.ai/system-map/"
+    },
+    {
+      "release_record_id": "REL-017",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Meta description",
+      "route_or_file_path": "system-map/index.html",
+      "expected_state": "104 routes referenced",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104 routes referenced"
+    },
+    {
+      "release_record_id": "REL-018",
+      "public_page_or_file": "/reading-sequences/",
+      "record_type": "External-use link integrity",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_state": "Phase 2 discoverable",
+      "actual_state": "Linked",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation link (REL-018)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Phase 2 discoverable"
+    },
+    {
+      "release_record_id": "REL-019",
+      "public_page_or_file": "/retrieval-index/",
+      "record_type": "Citation/retrieval metadata",
+      "route_or_file_path": "retrieval-index/index.html",
+      "expected_state": "104-route reference",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104-route reference"
+    },
+    {
+      "release_record_id": "REL-020",
+      "public_page_or_file": "/citation-orientation/",
+      "record_type": "Citation metadata",
+      "route_or_file_path": "citation-orientation/index.html",
+      "expected_state": "Boundary metadata",
+      "actual_state": "Present",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation cross-link (REL-020)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Boundary metadata"
+    },
+    {
+      "release_record_id": "REL-021",
+      "public_page_or_file": "/source-use-orientation/",
+      "record_type": "Source-use metadata",
+      "route_or_file_path": "source-use-orientation/index.html",
+      "expected_state": "104-route reference",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104-route reference"
+    },
+    {
+      "release_record_id": "REL-022",
+      "public_page_or_file": "/strategic-review/",
+      "record_type": "Strategic-review link integrity",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_state": "Phase 3 and 4 linked",
+      "actual_state": "Present",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation link in Phase 4 closure (REL-022)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Phase 3 and 4 linked"
+    },
+    {
+      "release_record_id": "REL-023",
+      "public_page_or_file": "/reviewer-packet/",
+      "record_type": "Internal navigation",
+      "route_or_file_path": "reviewer-packet/index.html",
+      "expected_state": "Release snapshot linked",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Release snapshot linked"
+    },
+    {
+      "release_record_id": "REL-024",
+      "public_page_or_file": "/acquisition-readiness/",
+      "record_type": "Acquisition-readiness boundary metadata",
+      "route_or_file_path": "acquisition-readiness/index.html",
+      "expected_state": "Non-solicitation",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Non-solicitation"
+    },
+    {
+      "release_record_id": "REL-025",
+      "public_page_or_file": "/external-review/public-surface-checklist/",
+      "record_type": "Reference block",
+      "route_or_file_path": "external-review/public-surface-checklist/index.html",
+      "expected_state": "104-route checklist",
+      "actual_state": "Present",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Updated release indexation checklist copy (REL-025)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "104-route checklist"
+    },
+    {
+      "release_record_id": "REL-026",
+      "public_page_or_file": "/",
+      "record_type": "Public surface maturity language",
+      "route_or_file_path": "index.html",
+      "expected_state": "Reference-grade not marketing",
+      "actual_state": "Present",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added public-release-indexation-integrity paragraph (REL-026)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Reference-grade not marketing"
+    },
+    {
+      "release_record_id": "REL-027",
+      "public_page_or_file": "/",
+      "record_type": "Indexability status",
+      "route_or_file_path": "index.html",
+      "expected_state": "index, follow",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "index, follow"
+    },
+    {
+      "release_record_id": "REL-028",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Indexability status",
+      "route_or_file_path": "system-map/index.html",
+      "expected_state": "index, follow",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "index, follow"
+    },
+    {
+      "release_record_id": "REL-029",
+      "public_page_or_file": "/",
+      "record_type": "Noindex/robots status",
+      "route_or_file_path": "index.html",
+      "expected_state": "No accidental noindex",
+      "actual_state": "No noindex",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "No accidental noindex"
+    },
+    {
+      "release_record_id": "REL-030",
+      "public_page_or_file": "ALL_PUBLIC",
+      "record_type": "Broken-link check",
+      "route_or_file_path": "ALLOWED_PUBLIC_HTML",
+      "expected_state": "All internal links resolve",
+      "actual_state": "Verified",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "All internal links resolve"
+    },
+    {
+      "release_record_id": "REL-031",
+      "public_page_or_file": "/",
+      "record_type": "AI-agent interpretation status",
+      "route_or_file_path": "index.html",
+      "expected_state": "Governed reference infrastructure",
+      "actual_state": "Boundary negation",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Governed reference infrastructure"
+    },
+    {
+      "release_record_id": "REL-032",
+      "public_page_or_file": "/",
+      "record_type": "Commercial drift check in metadata",
+      "route_or_file_path": "index.html",
+      "expected_state": "No marketing funnel",
+      "actual_state": "Negated",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "No marketing funnel"
+    },
+    {
+      "release_record_id": "REL-033",
+      "public_page_or_file": "/strategic-review/",
+      "record_type": "Value-integrity link integrity",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_state": "Phase 4 closure",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Phase 4 closure"
+    },
+    {
+      "release_record_id": "REL-034",
+      "public_page_or_file": "/#public-release-indexation-integrity",
+      "record_type": "Footer link",
+      "route_or_file_path": "index.html",
+      "expected_state": "Anchor discoverable",
+      "actual_state": "Present",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added public-release-indexation-integrity anchor (REL-034)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Anchor discoverable"
+    },
+    {
+      "release_record_id": "REL-035",
+      "public_page_or_file": "/route-groups/review-and-overview-layers/",
+      "record_type": "Route-count language",
+      "route_or_file_path": "route-groups/review-and-overview-layers/index.html",
+      "expected_state": "No stale 100-103 counts",
+      "actual_state": "104 or boundary only",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "No stale 100-103 counts"
+    },
+    {
+      "release_record_id": "REL-036",
+      "public_page_or_file": "sitemap.xml",
+      "record_type": "Sitemap/registry alignment",
+      "route_or_file_path": "sitemap.xml + route-registry.json",
+      "expected_state": "1:1 match",
+      "actual_state": "Matched",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "1:1 match"
+    },
+    {
+      "release_record_id": "REL-037",
+      "public_page_or_file": "robots.txt",
+      "record_type": "Sitemap reference",
+      "route_or_file_path": "robots.txt",
+      "expected_state": "Points to sitemap.xml",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Points to sitemap.xml"
+    },
+    {
+      "release_record_id": "REL-038",
+      "public_page_or_file": "/",
+      "record_type": "Related-page block",
+      "route_or_file_path": "index.html",
+      "expected_state": "Major entry routes",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Major entry routes"
+    },
+    {
+      "release_record_id": "REL-039",
+      "public_page_or_file": "/system-map/",
+      "record_type": "Internal navigation",
+      "route_or_file_path": "system-map/index.html",
+      "expected_state": "Release snapshot link",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Release snapshot link"
+    },
+    {
+      "release_record_id": "REL-040",
+      "public_page_or_file": "PUB-FILE-0105",
+      "record_type": "Public file registry entry",
+      "route_or_file_path": "data/public-file-registry.json",
+      "expected_state": "Must not exist",
+      "actual_state": "Absent",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Must not exist"
+    },
+    {
+      "release_record_id": "REL-041",
+      "public_page_or_file": "/",
+      "record_type": "Phase 4 support discoverability",
+      "route_or_file_path": "index.html",
+      "expected_state": "Value integrity linked",
+      "actual_state": "Present",
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Value integrity linked"
+    },
+    {
+      "release_record_id": "REL-042",
+      "public_page_or_file": "/",
+      "record_type": "Deployment note",
+      "route_or_file_path": "index.html#public-release-indexation-integrity",
+      "expected_state": "Queue not validation failure",
+      "actual_state": "Documented",
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Clarified deployment queue vs validation (REL-042)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "ai_agent_note": "Queue not validation failure"
+    }
+  ],
+  "total_release_records": 42,
+  "release_records_safe": 34,
+  "release_records_repaired": 8,
+  "release_records_unsafe": 0,
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "RII-001",
+      "release_integrity_intent": "Crawler discovers exactly 104 sitemap URLs",
+      "expected_pages_checked": [
+        "/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "104 URLs",
+      "actual_interpretation": "Sitemap count 104",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 URLs"
+    },
+    {
+      "scenario_id": "RII-002",
+      "release_integrity_intent": "Sitemap count matches route registry",
+      "expected_pages_checked": [
+        "data/route-registry.json",
+        "/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "Registry parity",
+      "actual_interpretation": "Both 104",
+      "supporting_routes_or_artifacts": [
+        "route-registry.json",
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Registry parity"
+    },
+    {
+      "scenario_id": "RII-003",
+      "release_integrity_intent": "Sitemap count matches public route count",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104 routes",
+      "actual_interpretation": "Homepage 104",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 routes"
+    },
+    {
+      "scenario_id": "RII-004",
+      "release_integrity_intent": "Public file registry does not expose route beyond 104",
+      "expected_pages_checked": [
+        "data/public-file-registry.json"
+      ],
+      "expected_safe_interpretation": "No PUB-FILE-0105",
+      "actual_interpretation": "Absent",
+      "supporting_routes_or_artifacts": [
+        "public-file-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No PUB-FILE-0105"
+    },
+    {
+      "scenario_id": "RII-005",
+      "release_integrity_intent": "No public HTML outside registry and sitemap",
+      "expected_pages_checked": [
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "Aligned surface",
+      "actual_interpretation": "104 files",
+      "supporting_routes_or_artifacts": [
+        "route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Aligned surface"
+    },
+    {
+      "scenario_id": "RII-006",
+      "release_integrity_intent": "No registry entry missing from sitemap",
+      "expected_pages_checked": [
+        "/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "Full coverage",
+      "actual_interpretation": "All routes listed",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Full coverage"
+    },
+    {
+      "scenario_id": "RII-007",
+      "release_integrity_intent": "No sitemap URL missing local file",
+      "expected_pages_checked": [
+        "/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "Files exist",
+      "actual_interpretation": "All resolve",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Files exist"
+    },
+    {
+      "scenario_id": "RII-008",
+      "release_integrity_intent": "robots.txt does not block public pages",
+      "expected_pages_checked": [
+        "/robots.txt"
+      ],
+      "expected_safe_interpretation": "Allow: /",
+      "actual_interpretation": "Allows crawl",
+      "supporting_routes_or_artifacts": [
+        "robots.txt"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Allow: /"
+    },
+    {
+      "scenario_id": "RII-009",
+      "release_integrity_intent": "No accidental noindex on public pages",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "index, follow",
+      "actual_interpretation": "No noindex on public HTML",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "index, follow"
+    },
+    {
+      "scenario_id": "RII-010",
+      "release_integrity_intent": "Canonical URLs present on core pages",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Hoax.ai canonicals",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Hoax.ai canonicals"
+    },
+    {
+      "scenario_id": "RII-011",
+      "release_integrity_intent": "Canonical URLs not stale or wrong",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Correct paths",
+      "actual_interpretation": "Match routes",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Correct paths"
+    },
+    {
+      "scenario_id": "RII-012",
+      "release_integrity_intent": "Meta titles on core pages",
+      "expected_pages_checked": [
+        "/",
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Non-empty",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Non-empty"
+    },
+    {
+      "scenario_id": "RII-013",
+      "release_integrity_intent": "Meta descriptions on core pages",
+      "expected_pages_checked": [
+        "/",
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Non-empty",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Non-empty"
+    },
+    {
+      "scenario_id": "RII-014",
+      "release_integrity_intent": "Open Graph tags coherent on core pages",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "OG title/desc/url",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "OG title/desc/url"
+    },
+    {
+      "scenario_id": "RII-015",
+      "release_integrity_intent": "Homepage reflects 104 routes",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104 snapshot",
+      "actual_interpretation": "Current count",
+      "supporting_routes_or_artifacts": [
+        "index.html#public-release-integrity-snapshot"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 snapshot"
+    },
+    {
+      "scenario_id": "RII-016",
+      "release_integrity_intent": "System map reflects 104 routes",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "104 integrity snapshot",
+      "actual_interpretation": "Current count",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html#system-map-integrity-snapshot"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation cross-link (RII-016)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 integrity snapshot"
+    },
+    {
+      "scenario_id": "RII-017",
+      "release_integrity_intent": "Route-group pages avoid stale 88/100/101/102/103 counts",
+      "expected_pages_checked": [
+        "/route-groups/review-and-overview-layers/"
+      ],
+      "expected_safe_interpretation": "104 or boundary only",
+      "actual_interpretation": "No stale counts",
+      "supporting_routes_or_artifacts": [
+        "route-groups/review-and-overview-layers/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 or boundary only"
+    },
+    {
+      "scenario_id": "RII-018",
+      "release_integrity_intent": "Strategic-review avoids Phase 3-only language after Phase 4",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Phase 4 closure visible",
+      "actual_interpretation": "Both phases linked",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html#phase-4-value-integrity-closure"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 4 closure visible"
+    },
+    {
+      "scenario_id": "RII-019",
+      "release_integrity_intent": "Value-integrity cross-links discoverable",
+      "expected_pages_checked": [
+        "/",
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Phase 4 links",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 4 links"
+    },
+    {
+      "scenario_id": "RII-020",
+      "release_integrity_intent": "Phase 2 external-use pages discoverable",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Four layers linked",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html#external-use-layer-sequence"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation link (RII-020)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Four layers linked"
+    },
+    {
+      "scenario_id": "RII-021",
+      "release_integrity_intent": "Phase 3 strategic-review pages discoverable",
+      "expected_pages_checked": [
+        "/strategic-review/",
+        "/reviewer-packet/"
+      ],
+      "expected_safe_interpretation": "Integrity sections",
+      "actual_interpretation": "Present",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html",
+        "reviewer-packet/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Integrity sections"
+    },
+    {
+      "scenario_id": "RII-022",
+      "release_integrity_intent": "Phase 4 closure visible without new route",
+      "expected_pages_checked": [
+        "/strategic-review/#phase-4-value-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Existing anchor",
+      "actual_interpretation": "No new route",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added release indexation link (RII-022)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Existing anchor"
+    },
+    {
+      "scenario_id": "RII-023",
+      "release_integrity_intent": "Internal navigation non-commercial",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "No sales implication",
+      "actual_interpretation": "Boundary language",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No sales implication"
+    },
+    {
+      "scenario_id": "RII-024",
+      "release_integrity_intent": "Metadata non-commercial",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Reference-grade",
+      "actual_interpretation": "No marketing funnel",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade"
+    },
+    {
+      "scenario_id": "RII-025",
+      "release_integrity_intent": "Related blocks not product suite",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Orientation not dashboard",
+      "actual_interpretation": "Negated",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Orientation not dashboard"
+    },
+    {
+      "scenario_id": "RII-026",
+      "release_integrity_intent": "Reference blocks not certification",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Audits not proof",
+      "actual_interpretation": "Negated",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audits not proof"
+    },
+    {
+      "scenario_id": "RII-027",
+      "release_integrity_intent": "AI agent summarizes as reference infrastructure",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Governed surface",
+      "actual_interpretation": "Boundary negation",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Governed surface"
+    },
+    {
+      "scenario_id": "RII-028",
+      "release_integrity_intent": "AI agent finds Phase 2 routes not as services",
+      "expected_pages_checked": [
+        "/reading-sequences/",
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Discipline not tools",
+      "actual_interpretation": "Boundary language",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html",
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Discipline not tools"
+    },
+    {
+      "scenario_id": "RII-029",
+      "release_integrity_intent": "AI agent finds strategic-review not pitch deck",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Not sales page",
+      "actual_interpretation": "Negated",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not sales page"
+    },
+    {
+      "scenario_id": "RII-030",
+      "release_integrity_intent": "AI agent finds value integrity not monetization",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Non-commercial indexation",
+      "actual_interpretation": "Documented",
+      "supporting_routes_or_artifacts": [
+        "index.html#public-release-indexation-integrity"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added public-release-indexation-integrity paragraph (RII-030)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Non-commercial indexation"
+    },
+    {
+      "scenario_id": "RII-031",
+      "release_integrity_intent": "Human navigation homepage to system map to Phase 2/3/4",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Linked paths",
+      "actual_interpretation": "No broken links",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Linked paths"
+    },
+    {
+      "scenario_id": "RII-032",
+      "release_integrity_intent": "Human understands maturity without stale copy",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104 current",
+      "actual_interpretation": "No 100-103",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 current"
+    },
+    {
+      "scenario_id": "RII-033",
+      "release_integrity_intent": "Human understands release without launch marketing",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Not launch campaign",
+      "actual_interpretation": "Negated",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not launch campaign"
+    },
+    {
+      "scenario_id": "RII-034",
+      "release_integrity_intent": "Human understands indexation without SEO spam",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Reference-grade metadata",
+      "actual_interpretation": "Documented",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade metadata"
+    },
+    {
+      "scenario_id": "RII-035",
+      "release_integrity_intent": "Crawler metadata reference-grade",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Not marketing-grade",
+      "actual_interpretation": "Boundary copy",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not marketing-grade"
+    },
+    {
+      "scenario_id": "RII-036",
+      "release_integrity_intent": "Route-count copy 104 everywhere required",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "104 consistent",
+      "actual_interpretation": "Verified",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 consistent"
+    },
+    {
+      "scenario_id": "RII-037",
+      "release_integrity_intent": "One H1 per public page convention",
+      "expected_pages_checked": [
+        "/",
+        "/citation-orientation/"
+      ],
+      "expected_safe_interpretation": "Single H1",
+      "actual_interpretation": "Convention held",
+      "supporting_routes_or_artifacts": [
+        "citation-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Single H1"
+    },
+    {
+      "scenario_id": "RII-038",
+      "release_integrity_intent": "No duplicate canonical paths",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Unique canonicals",
+      "actual_interpretation": "Verified",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Unique canonicals"
+    },
+    {
+      "scenario_id": "RII-039",
+      "release_integrity_intent": "No orphaned public page",
+      "expected_pages_checked": [
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "All in sitemap",
+      "actual_interpretation": "Aligned",
+      "supporting_routes_or_artifacts": [
+        "route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "All in sitemap"
+    },
+    {
+      "scenario_id": "RII-040",
+      "release_integrity_intent": "No governance artifact as public route",
+      "expected_pages_checked": [
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "HTML routes only",
+      "actual_interpretation": "No JSON routes",
+      "supporting_routes_or_artifacts": [
+        "route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "HTML routes only"
+    },
+    {
+      "scenario_id": "RII-041",
+      "release_integrity_intent": "Deployment queue not misrepresented as validation failure",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Separate concerns",
+      "actual_interpretation": "Documented",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Clarified deployment queue vs validation (RII-041)",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Separate concerns"
+    },
+    {
+      "scenario_id": "RII-042",
+      "release_integrity_intent": "Sprint 132 hardens without new route or DEC",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Audit-only",
+      "actual_interpretation": "104 unchanged",
+      "supporting_routes_or_artifacts": [
+        "data/public-release-indexation-integrity-audit-v1.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "release_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audit-only"
+    }
+  ],
+  "total_scenarios": 42,
+  "scenarios_passed": 42,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "index.html \u2014 public-release-indexation-integrity paragraph (RII-030, RII-041, REL-026, REL-034, REL-042)",
+    "system-map/index.html \u2014 release indexation cross-link (RII-016, REL-015)",
+    "reading-sequences/index.html \u2014 release indexation link (RII-020, REL-018)",
+    "external-review/public-surface-checklist/index.html \u2014 release indexation checklist copy (REL-025)",
+    "citation-orientation/index.html \u2014 release indexation cross-link (REL-020)",
+    "strategic-review/index.html \u2014 release indexation link in Phase 4 closure (RII-022, REL-022)"
+  ],
+  "public_release_integrity_confirmed": true,
+  "indexation_integrity_confirmed": true,
+  "deployability_confirmed": true,
+  "discoverability_confirmed": true,
+  "crawler_readability_confirmed": true,
+  "ai_agent_readability_confirmed": true,
+  "human_navigation_integrity_confirmed": true,
+  "sitemap_integrity_confirmed": true,
+  "route_registry_integrity_confirmed": true,
+  "public_file_registry_integrity_confirmed": true,
+  "canonical_integrity_confirmed": true,
+  "metadata_integrity_confirmed": true,
+  "robots_integrity_confirmed": true,
+  "internal_link_integrity_confirmed": true,
+  "phase_2_support_discoverability_confirmed": true,
+  "phase_3_support_discoverability_confirmed": true,
+  "phase_4_support_discoverability_confirmed": true,
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "non_seo_spam_surface": true,
+  "non_marketing_surface": true,
+  "non_commercial_surface": true,
+  "non_monetization_surface": true,
+  "non_pricing": true,
+  "non_subscription": true,
+  "non_support_surface": true,
+  "non_sponsorship_surface": true,
+  "non_donation_surface": true,
+  "non_paid_report": true,
+  "non_private_access": true,
+  "non_consulting_offer": true,
+  "non_service_funnel": true,
+  "non_lead_generation": true,
+  "non_sales_surface": true,
+  "non_pitch_deck": true,
+  "non_acquisition_solicitation": true,
+  "non_buyer_solicitation": true,
+  "non_transaction_surface": true,
+  "non_due_diligence_room": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_investment_claim": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "route_count_drift_found": false,
+  "stale_copy_found": false,
+  "stale_phase_language_found": false,
+  "stale_release_language_found": false,
+  "sitemap_mismatch_found": false,
+  "route_registry_mismatch_found": false,
+  "public_file_registry_mismatch_found": false,
+  "orphaned_public_page_found": false,
+  "missing_public_page_found": false,
+  "broken_internal_link_found": false,
+  "canonical_defect_found": false,
+  "metadata_defect_found": false,
+  "og_defect_found": false,
+  "robots_defect_found": false,
+  "accidental_noindex_found": false,
+  "accidental_public_exposure_found": false,
+  "commercial_metadata_drift_found": false,
+  "seo_spam_drift_found": false,
+  "marketing_drift_found": false,
+  "monetization_drift_found": false,
+  "pricing_drift_found": false,
+  "subscription_drift_found": false,
+  "support_or_sponsorship_drift_found": false,
+  "donation_drift_found": false,
+  "paid_report_drift_found": false,
+  "private_access_drift_found": false,
+  "consulting_offer_drift_found": false,
+  "service_funnel_drift_found": false,
+  "lead_generation_drift_found": false,
+  "sales_page_drift_found": false,
+  "pitch_deck_drift_found": false,
+  "acquisition_solicitation_drift_found": false,
+  "buyer_solicitation_drift_found": false,
+  "transaction_readiness_drift_found": false,
+  "due_diligence_room_drift_found": false,
+  "legal_or_financial_representation_drift_found": false,
+  "investment_claim_drift_found": false,
+  "authority_claim_drift_found": false,
+  "verification_drift_found": false,
+  "proof_drift_found": false,
+  "detector_drift_found": false,
+  "score_or_verdict_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "governance_inflation_found": false
+}

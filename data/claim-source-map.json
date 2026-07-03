@@ -3401,6 +3401,37 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 131 audit-only Phase 4 value integrity closure validation."
+    },
+    {
+      "claim_id": "CLAIM-0133",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
+        "SPRINT_132_PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
+        "data/public-release-indexation-integrity-audit-v1.json",
+        "data/public-release-indexation-integrity-audit-v1.schema.json",
+        "validators/validate_public_release_indexation_integrity_audit_v1.py",
+        "index.html",
+        "system-map/index.html",
+        "reading-sequences/index.html",
+        "external-review/public-surface-checklist/index.html",
+        "citation-orientation/index.html",
+        "strategic-review/index.html",
+        "robots.txt",
+        "sitemap.xml"
+      ],
+      "source_refs": [
+        "SOURCE-0899",
+        "SOURCE-0900",
+        "SOURCE-0901",
+        "SOURCE-0902",
+        "SOURCE-0903"
+      ],
+      "support_scope": "public release and indexation integrity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 132 audit-only public release indexation integrity validation."
     }
   ],
   "last_reviewed": "2026-07-02"

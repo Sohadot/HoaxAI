@@ -1454,6 +1454,17 @@
       "status": "active",
       "last_reviewed": "2026-07-03",
       "notes": "Sprint 131 audit-only Phase 4 value integrity closure."
+    },
+    {
+      "claim_id": "CLAIM-0133",
+      "claim_text": "Hoax.ai completed Public Release and Indexation Integrity Audit v1 with 42 release/indexation records inventoried (35 safe, 7 repaired, 0 unsafe), 42 walkthrough scenarios (all pass), six scenario-backed hardening patches, and no route expansion while keeping the public surface at 104 routes and confirming sitemap, route registry, public file registry, robots, canonical, metadata, and internal link integrity without SEO spam, marketing drift, or commercial surfaces.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md, data/public-release-indexation-integrity-audit-v1.json, index.html, validators/validate_public_release_indexation_integrity_audit_v1.py, SPRINT_132_PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-03",
+      "notes": "Sprint 132 audit-only public release indexation integrity."
     }
   ]
 }
