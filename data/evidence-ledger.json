@@ -1465,6 +1465,17 @@
       "status": "active",
       "last_reviewed": "2026-07-03",
       "notes": "Sprint 132 audit-only public release indexation integrity."
+    },
+    {
+      "claim_id": "CLAIM-0134",
+      "claim_text": "Hoax.ai completed Public Entry Path Integrity Audit v1 with 44 entry-path records inventoried (33 safe, 11 repaired, 0 unsafe), 44 walkthrough scenarios (all pass), thirteen scenario-backed hardening patches, and no route expansion while keeping the public surface at 104 routes and confirming homepage, system map, Phase 2, Phase 3, Phase 4, Phase 5, AI-agent, human-reader, crawler, route-group, audience-path, internal-navigation, related-page, and metadata entry integrity without workflow, funnel, onboarding, tool, dashboard, product-suite, service, commercial conversion, or governance-inflation drift.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md, data/public-entry-path-integrity-audit-v1.json, index.html, validators/validate_public_entry_path_integrity_audit_v1.py, SPRINT_133_PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-03",
+      "notes": "Sprint 133 audit-only public entry path integrity."
     }
   ]
 }

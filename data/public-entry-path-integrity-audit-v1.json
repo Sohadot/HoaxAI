@@ -1,0 +1,1871 @@
+{
+  "id": "public-entry-path-integrity-audit-v1",
+  "name": "Public Entry Path Integrity Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 133",
+  "status": "public_entry_path_integrity_audit",
+  "audit_only": true,
+  "phase": "Phase 5",
+  "phase_entry_path_audit": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "route_registry_count_expected": 104,
+  "public_file_registry_unchanged": true,
+  "entry_path_records": [
+    {
+      "entry_path_record_id": "EPI-001",
+      "public_page": "/",
+      "entry_path_type": "Homepage primary entry",
+      "route_or_file_path": "index.html",
+      "expected_entry_role": "Primary entry into 104-route reference system",
+      "actual_entry_role": "Homepage release snapshot and major entry routes",
+      "expected_next_paths": [
+        "/system-map/",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/system-map/",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "Added public-entry-path-integrity anchor",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Primary entry into 104-route reference system"
+    },
+    {
+      "entry_path_record_id": "EPI-002",
+      "public_page": "/",
+      "entry_path_type": "Homepage secondary entry",
+      "route_or_file_path": "index.html#choose-entry-point",
+      "expected_entry_role": "Role-based existing entry links",
+      "actual_entry_role": "Entry points remain reference routes",
+      "expected_next_paths": [
+        "/entry-points/"
+      ],
+      "actual_next_paths": [
+        "/entry-points/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Role-based existing entry links"
+    },
+    {
+      "entry_path_record_id": "EPI-003",
+      "public_page": "/system-map/",
+      "entry_path_type": "System map entry",
+      "route_or_file_path": "system-map/index.html",
+      "expected_entry_role": "Structural map into public layers",
+      "actual_entry_role": "System map links major layers",
+      "expected_next_paths": [
+        "/reading-sequences/",
+        "/strategic-review/",
+        "/reviewer-packet/"
+      ],
+      "actual_next_paths": [
+        "/reading-sequences/",
+        "/strategic-review/",
+        "/reviewer-packet/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "Added public-entry-path-integrity cross-link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Structural map into public layers"
+    },
+    {
+      "entry_path_record_id": "EPI-004",
+      "public_page": "/entry-points/",
+      "entry_path_type": "First-time reader entry",
+      "route_or_file_path": "entry-points/index.html",
+      "expected_entry_role": "Role and intent orientation",
+      "actual_entry_role": "Entry points direct to existing routes",
+      "expected_next_paths": [
+        "/entry-points/human-readers/",
+        "/entry-points/ai-agents/"
+      ],
+      "actual_next_paths": [
+        "/entry-points/human-readers/",
+        "/entry-points/ai-agents/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Onboarding wording could imply a managed flow",
+      "repair_applied": "Replaced onboarding wording with reference orientation",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Role and intent orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-005",
+      "public_page": "/reading-sequences/",
+      "entry_path_type": "Reading sequence entry",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_entry_role": "Reference reading order",
+      "actual_entry_role": "External-use layer sequence",
+      "expected_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/",
+        "/source-use-orientation/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference reading order"
+    },
+    {
+      "entry_path_record_id": "EPI-006",
+      "public_page": "/retrieval-index/",
+      "entry_path_type": "Retrieval entry",
+      "route_or_file_path": "retrieval-index/index.html",
+      "expected_entry_role": "Route organization by retrieval intent",
+      "actual_entry_role": "Retrieval is route orientation, not search",
+      "expected_next_paths": [
+        "/reading-sequences/",
+        "/citation-orientation/"
+      ],
+      "actual_next_paths": [
+        "/reading-sequences/",
+        "/citation-orientation/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Clarified not workflow, service path, or tool",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route organization by retrieval intent"
+    },
+    {
+      "entry_path_record_id": "EPI-007",
+      "public_page": "/citation-orientation/",
+      "entry_path_type": "Citation entry",
+      "route_or_file_path": "citation-orientation/index.html",
+      "expected_entry_role": "Citation-safe orientation",
+      "actual_entry_role": "Citation guidance without service drift",
+      "expected_next_paths": [
+        "/source-use-orientation/",
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/source-use-orientation/",
+        "/retrieval-index/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Citation-safe orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-008",
+      "public_page": "/source-use-orientation/",
+      "entry_path_type": "Source-use entry",
+      "route_or_file_path": "source-use-orientation/index.html",
+      "expected_entry_role": "Source boundary explanation",
+      "actual_entry_role": "Source support without proof drift",
+      "expected_next_paths": [
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source boundary explanation"
+    },
+    {
+      "entry_path_record_id": "EPI-009",
+      "public_page": "/strategic-review/",
+      "entry_path_type": "Strategic reviewer entry",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_entry_role": "Reviewer legibility route",
+      "actual_entry_role": "Strategic review links Phase 3, 4, and entry integrity",
+      "expected_next_paths": [
+        "/reviewer-packet/",
+        "/acquisition-readiness/"
+      ],
+      "actual_next_paths": [
+        "/reviewer-packet/",
+        "/acquisition-readiness/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer legibility route"
+    },
+    {
+      "entry_path_record_id": "EPI-010",
+      "public_page": "/reviewer-packet/",
+      "entry_path_type": "Reviewer packet entry",
+      "route_or_file_path": "reviewer-packet/index.html",
+      "expected_entry_role": "Public review support",
+      "actual_entry_role": "Packet framing without buyer packet drift",
+      "expected_next_paths": [
+        "/reviewer-packet/public-surface-index/",
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "actual_next_paths": [
+        "/reviewer-packet/public-surface-index/",
+        "/reviewer-packet/citation-and-retrieval-map/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Reviewer onboarding wording could imply productized onboarding",
+      "repair_applied": "Replaced reviewer onboarding with reviewer orientation",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public review support"
+    },
+    {
+      "entry_path_record_id": "EPI-011",
+      "public_page": "/acquisition-readiness/",
+      "entry_path_type": "Acquisition-readiness entry",
+      "route_or_file_path": "acquisition-readiness/index.html",
+      "expected_entry_role": "Inspectability without solicitation",
+      "actual_entry_role": "Readiness as public reference maturity",
+      "expected_next_paths": [
+        "/acquisition-readiness/governance-traceability/",
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/acquisition-readiness/governance-traceability/",
+        "/strategic-review/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Onboarding wording could imply an entry product",
+      "repair_applied": "Replaced onboarding with strategic review orientation",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Inspectability without solicitation"
+    },
+    {
+      "entry_path_record_id": "EPI-012",
+      "public_page": "/strategic-review/#phase-4-value-integrity-closure",
+      "entry_path_type": "Value-integrity entry",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_entry_role": "Value boundary and non-transactional revenue boundary",
+      "actual_entry_role": "Phase 4 closure linked",
+      "expected_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "actual_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Value boundary and non-transactional revenue boundary"
+    },
+    {
+      "entry_path_record_id": "EPI-013",
+      "public_page": "/#public-release-indexation-integrity",
+      "entry_path_type": "Release/indexation entry",
+      "route_or_file_path": "index.html",
+      "expected_entry_role": "Phase 5 release/indexation support",
+      "actual_entry_role": "Homepage anchor visible",
+      "expected_next_paths": [
+        "/system-map/"
+      ],
+      "actual_next_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 5 release/indexation support"
+    },
+    {
+      "entry_path_record_id": "EPI-014",
+      "public_page": "/route-groups/public-utilities/",
+      "entry_path_type": "Route-group entry",
+      "route_or_file_path": "route-groups/public-utilities/index.html",
+      "expected_entry_role": "Route group orientation",
+      "actual_entry_role": "Utility group boundary safe",
+      "expected_next_paths": [
+        "/manual-evidence-checklist/",
+        "/evidence-posture-map/"
+      ],
+      "actual_next_paths": [
+        "/manual-evidence-checklist/",
+        "/evidence-posture-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route group orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-015",
+      "public_page": "/route-groups/review-and-overview-layers/",
+      "entry_path_type": "Route-group entry",
+      "route_or_file_path": "route-groups/review-and-overview-layers/index.html",
+      "expected_entry_role": "Review layer orientation",
+      "actual_entry_role": "Third-party reader orientation",
+      "expected_next_paths": [
+        "/external-review/",
+        "/executive-overview/"
+      ],
+      "actual_next_paths": [
+        "/external-review/",
+        "/executive-overview/"
+      ],
+      "status": "repaired",
+      "observed_issue": "Onboarding wording could imply managed onboarding",
+      "repair_applied": "Replaced onboarding with orienting",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Review layer orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-016",
+      "public_page": "/audience-paths/",
+      "entry_path_type": "Audience-path entry",
+      "route_or_file_path": "audience-paths/index.html",
+      "expected_entry_role": "Reader orientation by audience",
+      "actual_entry_role": "Audience paths do not create persona funnels",
+      "expected_next_paths": [
+        "/audience-paths/ai-agents/",
+        "/audience-paths/research-reviewers/"
+      ],
+      "actual_next_paths": [
+        "/audience-paths/ai-agents/",
+        "/audience-paths/research-reviewers/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reader orientation by audience"
+    },
+    {
+      "entry_path_record_id": "EPI-017",
+      "public_page": "/external-review/public-surface-checklist/",
+      "entry_path_type": "External-review entry",
+      "route_or_file_path": "external-review/public-surface-checklist/index.html",
+      "expected_entry_role": "Review checklist for public surface",
+      "actual_entry_role": "Checklist includes entry integrity",
+      "expected_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "actual_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Review checklist for public surface"
+    },
+    {
+      "entry_path_record_id": "EPI-018",
+      "public_page": "/narrative/",
+      "entry_path_type": "Narrative entry",
+      "route_or_file_path": "narrative/index.html",
+      "expected_entry_role": "Strategic narrative without marketing funnel",
+      "actual_entry_role": "Narrative hub links reference paths",
+      "expected_next_paths": [
+        "/entry-points/",
+        "/acquisition-readiness/"
+      ],
+      "actual_next_paths": [
+        "/entry-points/",
+        "/acquisition-readiness/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Strategic narrative without marketing funnel"
+    },
+    {
+      "entry_path_record_id": "EPI-019",
+      "public_page": "/evidence-risk/",
+      "entry_path_type": "Core concept entry",
+      "route_or_file_path": "evidence-risk/index.html",
+      "expected_entry_role": "Core concept orientation",
+      "actual_entry_role": "Concept route with reference blocks",
+      "expected_next_paths": [
+        "/manual-evidence-checklist/",
+        "/source-ambiguity/"
+      ],
+      "actual_next_paths": [
+        "/manual-evidence-checklist/",
+        "/source-ambiguity/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Core concept orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-020",
+      "public_page": "/evidence-conditions/",
+      "entry_path_type": "Evidence condition entry",
+      "route_or_file_path": "evidence-conditions/index.html",
+      "expected_entry_role": "Condition library hub",
+      "actual_entry_role": "Condition pages linked safely",
+      "expected_next_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "actual_next_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Condition library hub"
+    },
+    {
+      "entry_path_record_id": "EPI-021",
+      "public_page": "/reference/claim-source-traceability/",
+      "entry_path_type": "Governance/reference entry",
+      "route_or_file_path": "reference/claim-source-traceability/index.html",
+      "expected_entry_role": "Traceability reference",
+      "actual_entry_role": "Reference page not proof system",
+      "expected_next_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_next_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Traceability reference"
+    },
+    {
+      "entry_path_record_id": "EPI-022",
+      "public_page": "/entry-points/ai-agents/",
+      "entry_path_type": "AI-agent entry",
+      "route_or_file_path": "entry-points/ai-agents/index.html",
+      "expected_entry_role": "AI retrieval orientation",
+      "actual_entry_role": "Agent page links reference routes",
+      "expected_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI retrieval orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-023",
+      "public_page": "/sitemap.xml",
+      "entry_path_type": "Crawler entry",
+      "route_or_file_path": "sitemap.xml",
+      "expected_entry_role": "Crawler discovers 104 URLs",
+      "actual_entry_role": "Sitemap count remains 104",
+      "expected_next_paths": [
+        "/"
+      ],
+      "actual_next_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Crawler discovers 104 URLs"
+    },
+    {
+      "entry_path_record_id": "EPI-024",
+      "public_page": "/entry-points/human-readers/",
+      "entry_path_type": "Human reader entry",
+      "route_or_file_path": "entry-points/human-readers/index.html",
+      "expected_entry_role": "Human reader starting point",
+      "actual_entry_role": "Manual evidence reading route",
+      "expected_next_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "actual_next_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader starting point"
+    },
+    {
+      "entry_path_record_id": "EPI-025",
+      "public_page": "/strategic-review/retrieval-and-citation/",
+      "entry_path_type": "Strategic reviewer path",
+      "route_or_file_path": "strategic-review/retrieval-and-citation/index.html",
+      "expected_entry_role": "Reviewer retrieval and citation support",
+      "actual_entry_role": "Strategic support without service drift",
+      "expected_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer retrieval and citation support"
+    },
+    {
+      "entry_path_record_id": "EPI-026",
+      "public_page": "/strategic-review/#non-transactional-revenue-boundary",
+      "entry_path_type": "Non-transactional value path",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_entry_role": "Value without commercial conversion",
+      "actual_entry_role": "Boundary explicit",
+      "expected_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "actual_next_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Value without commercial conversion"
+    },
+    {
+      "entry_path_record_id": "EPI-027",
+      "public_page": "/#public-release-integrity-snapshot",
+      "entry_path_type": "Public reference maturity path",
+      "route_or_file_path": "index.html",
+      "expected_entry_role": "104-route maturity snapshot",
+      "actual_entry_role": "Release snapshot current",
+      "expected_next_paths": [
+        "/system-map/"
+      ],
+      "actual_next_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104-route maturity snapshot"
+    },
+    {
+      "entry_path_record_id": "EPI-028",
+      "public_page": "/system-map/#external-use-layer",
+      "entry_path_type": "Cross-phase path",
+      "route_or_file_path": "system-map/index.html",
+      "expected_entry_role": "Phase 2/3/4/5 support discoverable",
+      "actual_entry_role": "System map links support layers",
+      "expected_next_paths": [
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 2/3/4/5 support discoverable"
+    },
+    {
+      "entry_path_record_id": "EPI-029",
+      "public_page": "/system-map/#reference-answer",
+      "entry_path_type": "Related-page entry",
+      "route_or_file_path": "system-map/index.html",
+      "expected_entry_role": "Related pages preserve role",
+      "actual_entry_role": "Related pages are structural",
+      "expected_next_paths": [
+        "/system-map/route-groups/"
+      ],
+      "actual_next_paths": [
+        "/system-map/route-groups/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Related pages preserve role"
+    },
+    {
+      "entry_path_record_id": "EPI-030",
+      "public_page": "/reading-sequences/#reference-answer",
+      "entry_path_type": "Reference block entry",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_entry_role": "Reference answer safe for AI agents",
+      "actual_entry_role": "No workflow or assessment output",
+      "expected_next_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference answer safe for AI agents"
+    },
+    {
+      "entry_path_record_id": "EPI-031",
+      "public_page": "/",
+      "entry_path_type": "Footer/internal navigation entry",
+      "route_or_file_path": "index.html",
+      "expected_entry_role": "Internal navigation stays public reference",
+      "actual_entry_role": "Footer and nav links remain non-commercial",
+      "expected_next_paths": [
+        "/system-map/",
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/system-map/",
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Internal navigation stays public reference"
+    },
+    {
+      "entry_path_record_id": "EPI-032",
+      "public_page": "/reviewer-packet/public-surface-index/",
+      "entry_path_type": "Reviewer packet entry",
+      "route_or_file_path": "reviewer-packet/public-surface-index/index.html",
+      "expected_entry_role": "Reviewer surface index",
+      "actual_entry_role": "Public surface index without buyer packet drift",
+      "expected_next_paths": [
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer surface index"
+    },
+    {
+      "entry_path_record_id": "EPI-033",
+      "public_page": "/reviewer-packet/citation-and-retrieval-map/",
+      "entry_path_type": "Citation entry",
+      "route_or_file_path": "reviewer-packet/citation-and-retrieval-map/index.html",
+      "expected_entry_role": "Reviewer citation map",
+      "actual_entry_role": "Citation/retrieval without service drift",
+      "expected_next_paths": [
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/citation-orientation/",
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer citation map"
+    },
+    {
+      "entry_path_record_id": "EPI-034",
+      "public_page": "/acquisition-readiness/governance-traceability/",
+      "entry_path_type": "Acquisition-readiness entry",
+      "route_or_file_path": "acquisition-readiness/governance-traceability/index.html",
+      "expected_entry_role": "Governance traceability support",
+      "actual_entry_role": "Traceability without transaction claims",
+      "expected_next_paths": [
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Governance traceability support"
+    },
+    {
+      "entry_path_record_id": "EPI-035",
+      "public_page": "/executive-overview/",
+      "entry_path_type": "Human reader entry",
+      "route_or_file_path": "executive-overview/index.html",
+      "expected_entry_role": "Executive overview entry",
+      "actual_entry_role": "Overview without pitch or sales drift",
+      "expected_next_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "actual_next_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Executive overview entry"
+    },
+    {
+      "entry_path_record_id": "EPI-036",
+      "public_page": "/manual-evidence-checklist/",
+      "entry_path_type": "First-time reader entry",
+      "route_or_file_path": "manual-evidence-checklist/index.html",
+      "expected_entry_role": "Manual utility entry",
+      "actual_entry_role": "Checklist not diagnostic workflow",
+      "expected_next_paths": [
+        "/evidence-risk/"
+      ],
+      "actual_next_paths": [
+        "/evidence-risk/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Manual utility entry"
+    },
+    {
+      "entry_path_record_id": "EPI-037",
+      "public_page": "/entry-points/research-review/",
+      "entry_path_type": "Strategic reviewer entry",
+      "route_or_file_path": "entry-points/research-review/index.html",
+      "expected_entry_role": "Research and review entry",
+      "actual_entry_role": "Review without case assessment",
+      "expected_next_paths": [
+        "/evidence-risk/",
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/evidence-risk/",
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Research and review entry"
+    },
+    {
+      "entry_path_record_id": "EPI-038",
+      "public_page": "/entry-points/trust-safety/",
+      "entry_path_type": "Audience-path entry",
+      "route_or_file_path": "entry-points/trust-safety/index.html",
+      "expected_entry_role": "Trust and safety orientation",
+      "actual_entry_role": "Vocabulary without enforcement automation",
+      "expected_next_paths": [
+        "/boundary-integrity/"
+      ],
+      "actual_next_paths": [
+        "/boundary-integrity/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Trust and safety orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-039",
+      "public_page": "/entry-points/education-literacy/",
+      "entry_path_type": "Human reader entry",
+      "route_or_file_path": "entry-points/education-literacy/index.html",
+      "expected_entry_role": "Education/literacy orientation",
+      "actual_entry_role": "Literacy without assessment product",
+      "expected_next_paths": [
+        "/synthetic-examples/"
+      ],
+      "actual_next_paths": [
+        "/synthetic-examples/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Education/literacy orientation"
+    },
+    {
+      "entry_path_record_id": "EPI-040",
+      "public_page": "/system-map/ai-retrieval-paths/",
+      "entry_path_type": "AI-agent entry",
+      "route_or_file_path": "system-map/ai-retrieval-paths/index.html",
+      "expected_entry_role": "AI retrieval structural map",
+      "actual_entry_role": "Map not graph tool or dashboard",
+      "expected_next_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI retrieval structural map"
+    },
+    {
+      "entry_path_record_id": "EPI-041",
+      "public_page": "/system-map/human-review-paths/",
+      "entry_path_type": "Human reader entry",
+      "route_or_file_path": "system-map/human-review-paths/index.html",
+      "expected_entry_role": "Human review structural map",
+      "actual_entry_role": "Human route map without workflow drift",
+      "expected_next_paths": [
+        "/reading-sequences/"
+      ],
+      "actual_next_paths": [
+        "/reading-sequences/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human review structural map"
+    },
+    {
+      "entry_path_record_id": "EPI-042",
+      "public_page": "/audience-paths/ai-agents/",
+      "entry_path_type": "AI-agent entry",
+      "route_or_file_path": "audience-paths/ai-agents/index.html",
+      "expected_entry_role": "AI agent audience path",
+      "actual_entry_role": "Agent path without generated-answer system",
+      "expected_next_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_next_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent audience path"
+    },
+    {
+      "entry_path_record_id": "EPI-043",
+      "public_page": "/audience-paths/research-reviewers/",
+      "entry_path_type": "Strategic reviewer entry",
+      "route_or_file_path": "audience-paths/research-reviewers/index.html",
+      "expected_entry_role": "Research reviewer path",
+      "actual_entry_role": "Audience path without persona funnel",
+      "expected_next_paths": [
+        "/strategic-review/"
+      ],
+      "actual_next_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Research reviewer path"
+    },
+    {
+      "entry_path_record_id": "EPI-044",
+      "public_page": "/#public-entry-path-integrity",
+      "entry_path_type": "Cross-phase path",
+      "route_or_file_path": "index.html",
+      "expected_entry_role": "Entry integrity visible without new route",
+      "actual_entry_role": "Homepage anchor only",
+      "expected_next_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "actual_next_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added anchor instead of new route",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Entry integrity visible without new route"
+    }
+  ],
+  "total_entry_path_records": 44,
+  "entry_path_records_safe": 33,
+  "entry_path_records_repaired": 11,
+  "entry_path_records_unsafe": 0,
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "EPW-001",
+      "entry_path_intent": "First-time human reader enters from homepage and understands governed public reference system",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Reference system not product",
+      "actual_interpretation": "Homepage snapshot and entry path anchor",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added public-entry-path-integrity anchor",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference system not product"
+    },
+    {
+      "scenario_id": "EPW-002",
+      "entry_path_intent": "First-time human reader finds a non-workflow reading path from homepage",
+      "expected_pages_checked": [
+        "/",
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Reading route not workflow",
+      "actual_interpretation": "Reading sequences linked from homepage",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reading route not workflow"
+    },
+    {
+      "scenario_id": "EPW-003",
+      "entry_path_intent": "Reader reaches reading sequences without assessment workflow interpretation",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Reference navigation",
+      "actual_interpretation": "External-use sequence is bounded",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference navigation"
+    },
+    {
+      "scenario_id": "EPW-004",
+      "entry_path_intent": "Human reader reaches system map and understands 104-route surface",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Structural map",
+      "actual_interpretation": "System map 104-route snapshot",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Structural map"
+    },
+    {
+      "scenario_id": "EPW-005",
+      "entry_path_intent": "Human reader moves from system map to Phase 2 routes",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "External-use links visible",
+      "actual_interpretation": "Four Phase 2 links present",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html#external-use-layer"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "External-use links visible"
+    },
+    {
+      "scenario_id": "EPW-006",
+      "entry_path_intent": "Human reader moves from system map to Phase 3 routes",
+      "expected_pages_checked": [
+        "/system-map/",
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Strategic review links visible",
+      "actual_interpretation": "Phase 3 links present",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html",
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Strategic review links visible"
+    },
+    {
+      "scenario_id": "EPW-007",
+      "entry_path_intent": "Human reader moves from system map to Phase 4 closure",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Value integrity visible",
+      "actual_interpretation": "Phase 4 link present",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Value integrity visible"
+    },
+    {
+      "scenario_id": "EPW-008",
+      "entry_path_intent": "Human reader moves from system map to Phase 5 release/indexation",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Release/indexation visible",
+      "actual_interpretation": "Release indexation link present",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Release/indexation visible"
+    },
+    {
+      "scenario_id": "EPW-009",
+      "entry_path_intent": "AI agent identifies homepage as primary public entry without product claims",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Primary reference entry",
+      "actual_interpretation": "Homepage negates tools and commercial paths",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Primary reference entry"
+    },
+    {
+      "scenario_id": "EPW-010",
+      "entry_path_intent": "AI agent identifies system map as structural map not dashboard",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Map not dashboard",
+      "actual_interpretation": "Dashboard negation visible",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity note",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Map not dashboard"
+    },
+    {
+      "scenario_id": "EPW-011",
+      "entry_path_intent": "AI agent identifies reading sequences as reference navigation not workflow",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Not workflow",
+      "actual_interpretation": "Workflow negation visible",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not workflow"
+    },
+    {
+      "scenario_id": "EPW-012",
+      "entry_path_intent": "AI agent identifies retrieval index as route organization not search engine",
+      "expected_pages_checked": [
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Not search product",
+      "actual_interpretation": "Reference summary says not search interface",
+      "supporting_routes_or_artifacts": [
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Clarified not workflow, service path, or tool",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not search product"
+    },
+    {
+      "scenario_id": "EPW-013",
+      "entry_path_intent": "AI agent identifies citation orientation as guidance not generator",
+      "expected_pages_checked": [
+        "/citation-orientation/"
+      ],
+      "expected_safe_interpretation": "Not citation generator",
+      "actual_interpretation": "Citation services negated",
+      "supporting_routes_or_artifacts": [
+        "citation-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not citation generator"
+    },
+    {
+      "scenario_id": "EPW-014",
+      "entry_path_intent": "AI agent identifies source-use orientation as boundary explanation not proof",
+      "expected_pages_checked": [
+        "/source-use-orientation/"
+      ],
+      "expected_safe_interpretation": "Not proof",
+      "actual_interpretation": "Proof and verification negated",
+      "supporting_routes_or_artifacts": [
+        "source-use-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not proof"
+    },
+    {
+      "scenario_id": "EPW-015",
+      "entry_path_intent": "AI agent identifies strategic review as reviewer legibility not pitch deck",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Not pitch deck",
+      "actual_interpretation": "Strategic review boundary visible",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not pitch deck"
+    },
+    {
+      "scenario_id": "EPW-016",
+      "entry_path_intent": "AI agent identifies reviewer packet as public review support not buyer packet",
+      "expected_pages_checked": [
+        "/reviewer-packet/"
+      ],
+      "expected_safe_interpretation": "Not buyer packet",
+      "actual_interpretation": "Packet boundary visible",
+      "supporting_routes_or_artifacts": [
+        "reviewer-packet/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Replaced reviewer onboarding wording",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not buyer packet"
+    },
+    {
+      "scenario_id": "EPW-017",
+      "entry_path_intent": "AI agent identifies acquisition readiness as readability not solicitation",
+      "expected_pages_checked": [
+        "/acquisition-readiness/"
+      ],
+      "expected_safe_interpretation": "Not solicitation",
+      "actual_interpretation": "Acquisition language boundary visible",
+      "supporting_routes_or_artifacts": [
+        "acquisition-readiness/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Replaced onboarding wording",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not solicitation"
+    },
+    {
+      "scenario_id": "EPW-018",
+      "entry_path_intent": "AI agent identifies value integrity as non-transactional value clarity",
+      "expected_pages_checked": [
+        "/strategic-review/#phase-4-value-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Not monetization",
+      "actual_interpretation": "Phase 4 closure visible",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not monetization"
+    },
+    {
+      "scenario_id": "EPW-019",
+      "entry_path_intent": "AI agent identifies release/indexation as integrity not SEO campaign",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Not SEO campaign",
+      "actual_interpretation": "Release indexation anchor visible",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not SEO campaign"
+    },
+    {
+      "scenario_id": "EPW-020",
+      "entry_path_intent": "Crawler discovers entry pages through sitemap and links",
+      "expected_pages_checked": [
+        "/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "104 sitemap URLs",
+      "actual_interpretation": "Sitemap unchanged",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 sitemap URLs"
+    },
+    {
+      "scenario_id": "EPW-021",
+      "entry_path_intent": "Crawler metadata supports reference interpretation",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Reference-grade metadata",
+      "actual_interpretation": "No marketing metadata drift",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade metadata"
+    },
+    {
+      "scenario_id": "EPW-022",
+      "entry_path_intent": "Homepage does not over-concentrate entry into one funnel",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Multiple entry routes",
+      "actual_interpretation": "Major system entry routes listed",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Multiple entry routes"
+    },
+    {
+      "scenario_id": "EPW-023",
+      "entry_path_intent": "Homepage does not create commercial path",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "No commercial conversion",
+      "actual_interpretation": "Boundary paragraphs visible",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No commercial conversion"
+    },
+    {
+      "scenario_id": "EPW-024",
+      "entry_path_intent": "System map does not create product-suite or dashboard interpretation",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "No dashboard/tool suite",
+      "actual_interpretation": "Negations visible",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No dashboard/tool suite"
+    },
+    {
+      "scenario_id": "EPW-025",
+      "entry_path_intent": "Route-group pages provide meaningful entry paths without SEO spam",
+      "expected_pages_checked": [
+        "/route-groups/public-utilities/"
+      ],
+      "expected_safe_interpretation": "Route-group orientation",
+      "actual_interpretation": "Reference summary safe",
+      "supporting_routes_or_artifacts": [
+        "route-groups/public-utilities/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-group orientation"
+    },
+    {
+      "scenario_id": "EPW-026",
+      "entry_path_intent": "Audience paths provide orientation without persona funnel behavior",
+      "expected_pages_checked": [
+        "/audience-paths/"
+      ],
+      "expected_safe_interpretation": "Audience orientation",
+      "actual_interpretation": "No funnel behavior",
+      "supporting_routes_or_artifacts": [
+        "audience-paths/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audience orientation"
+    },
+    {
+      "scenario_id": "EPW-027",
+      "entry_path_intent": "External-review checklist supports reviewability without private diligence",
+      "expected_pages_checked": [
+        "/external-review/public-surface-checklist/"
+      ],
+      "expected_safe_interpretation": "Public review only",
+      "actual_interpretation": "Checklist bounded",
+      "supporting_routes_or_artifacts": [
+        "external-review/public-surface-checklist/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public review only"
+    },
+    {
+      "scenario_id": "EPW-028",
+      "entry_path_intent": "Strategic reviewer enters through strategic review and reaches support pages",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Review support links",
+      "actual_interpretation": "Source, citation, retrieval, value, release links visible",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added entry path integrity link",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Review support links"
+    },
+    {
+      "scenario_id": "EPW-029",
+      "entry_path_intent": "Reviewer enters through packet and reaches public surface support",
+      "expected_pages_checked": [
+        "/reviewer-packet/"
+      ],
+      "expected_safe_interpretation": "Reviewer support not buyer packet",
+      "actual_interpretation": "Public surface index linked",
+      "supporting_routes_or_artifacts": [
+        "reviewer-packet/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer support not buyer packet"
+    },
+    {
+      "scenario_id": "EPW-030",
+      "entry_path_intent": "Reader enters through citation orientation and moves to source/retrieval context",
+      "expected_pages_checked": [
+        "/citation-orientation/"
+      ],
+      "expected_safe_interpretation": "Citation to source/retrieval",
+      "actual_interpretation": "Companion routes linked",
+      "supporting_routes_or_artifacts": [
+        "citation-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Citation to source/retrieval"
+    },
+    {
+      "scenario_id": "EPW-031",
+      "entry_path_intent": "Reader enters through source-use and moves to citation/retrieval",
+      "expected_pages_checked": [
+        "/source-use-orientation/"
+      ],
+      "expected_safe_interpretation": "Source-use to companions",
+      "actual_interpretation": "Retrieval and citation linked",
+      "supporting_routes_or_artifacts": [
+        "source-use-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source-use to companions"
+    },
+    {
+      "scenario_id": "EPW-032",
+      "entry_path_intent": "Reader enters through retrieval index and moves to external-use context",
+      "expected_pages_checked": [
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Retrieval not search",
+      "actual_interpretation": "Reading/citation context linked",
+      "supporting_routes_or_artifacts": [
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Retrieval not search"
+    },
+    {
+      "scenario_id": "EPW-033",
+      "entry_path_intent": "Reader enters through reading sequences and moves to system map",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Reading to structure",
+      "actual_interpretation": "System map linked",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reading to structure"
+    },
+    {
+      "scenario_id": "EPW-034",
+      "entry_path_intent": "Entry paths avoid detector verification scoring verdict behavior",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "No detector drift",
+      "actual_interpretation": "Boundary negations present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No detector drift"
+    },
+    {
+      "scenario_id": "EPW-035",
+      "entry_path_intent": "Entry paths avoid consulting service paid report private access and transaction behavior",
+      "expected_pages_checked": [
+        "/",
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "No commercial drift",
+      "actual_interpretation": "Non-transactional boundaries visible",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No commercial drift"
+    },
+    {
+      "scenario_id": "EPW-036",
+      "entry_path_intent": "Entry paths preserve 104-route count",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "104 only",
+      "actual_interpretation": "Counts current",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 only"
+    },
+    {
+      "scenario_id": "EPW-037",
+      "entry_path_intent": "Entry paths preserve Phase 2/3/4/5 role boundaries",
+      "expected_pages_checked": [
+        "/#public-entry-path-integrity"
+      ],
+      "expected_safe_interpretation": "Roles distinct",
+      "actual_interpretation": "Phase links visible",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added public-entry-path-integrity anchor",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Roles distinct"
+    },
+    {
+      "scenario_id": "EPW-038",
+      "entry_path_intent": "No important entry surface orphaned from homepage or system map",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Entry surfaces linked",
+      "actual_interpretation": "Major entry surfaces linked",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Entry surfaces linked"
+    },
+    {
+      "scenario_id": "EPW-039",
+      "entry_path_intent": "Related-page block avoids misleading priority",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Related pages structural",
+      "actual_interpretation": "No commercial priority",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Related pages structural"
+    },
+    {
+      "scenario_id": "EPW-040",
+      "entry_path_intent": "Footer/internal navigation avoids commercial conversion",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "No conversion behavior",
+      "actual_interpretation": "Public reference links only",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No conversion behavior"
+    },
+    {
+      "scenario_id": "EPW-041",
+      "entry_path_intent": "Entry metadata avoids tool service sales marketing interpretation",
+      "expected_pages_checked": [
+        "/",
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Reference-grade metadata",
+      "actual_interpretation": "No service metadata",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade metadata"
+    },
+    {
+      "scenario_id": "EPW-042",
+      "entry_path_intent": "Current entry paths clear enough without new route",
+      "expected_pages_checked": [
+        "/#public-entry-path-integrity"
+      ],
+      "expected_safe_interpretation": "No new route",
+      "actual_interpretation": "Homepage anchor only",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added anchor instead of new route",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No new route"
+    },
+    {
+      "scenario_id": "EPW-043",
+      "entry_path_intent": "Weak entry paths repaired through existing pages only",
+      "expected_pages_checked": [
+        "/entry-points/",
+        "/reviewer-packet/"
+      ],
+      "expected_safe_interpretation": "Copy repair only",
+      "actual_interpretation": "No registry changes",
+      "supporting_routes_or_artifacts": [
+        "entry-points/index.html",
+        "reviewer-packet/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Replaced onboarding wording",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Copy repair only"
+    },
+    {
+      "scenario_id": "EPW-044",
+      "entry_path_intent": "Sprint 133 confirms entry path integrity without new DEC",
+      "expected_pages_checked": [
+        "data/public-entry-path-integrity-audit-v1.json"
+      ],
+      "expected_safe_interpretation": "No DEC required",
+      "actual_interpretation": "new_decision_created false",
+      "supporting_routes_or_artifacts": [
+        "data/public-entry-path-integrity-audit-v1.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "entry_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No DEC required"
+    }
+  ],
+  "total_scenarios": 44,
+  "scenarios_passed": 44,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "index.html \u2014 public-entry-path-integrity anchor and cross-links (EPW-001, EPW-037, EPW-042)",
+    "system-map/index.html \u2014 entry path integrity cross-link in system map snapshot (EPW-004, EPW-010)",
+    "reading-sequences/index.html \u2014 entry path link in external-use layer sequence (EPW-003)",
+    "retrieval-index/index.html \u2014 entry-role clarification in reference summary (EPW-012)",
+    "citation-orientation/index.html \u2014 entry path integrity cross-link (EPW-013)",
+    "source-use-orientation/index.html \u2014 entry path integrity cross-link (EPW-014)",
+    "strategic-review/index.html \u2014 entry path integrity link in Phase 4 closure (EPW-028)",
+    "entry-points/index.html \u2014 orientation wording replacing onboarding drift (EPW-043)",
+    "reviewer-packet/index.html \u2014 reviewer orientation wording (EPW-016)",
+    "reviewer-packet/boundary-and-readiness-summary/index.html \u2014 reviewer orientation wording (EPW-016)",
+    "acquisition-readiness/index.html \u2014 strategic review orientation wording (EPW-017)",
+    "external-review/public-surface-checklist/index.html \u2014 entry integrity checklist cross-link (EPW-027)",
+    "route-groups/review-and-overview-layers/index.html \u2014 third-party reader orientation wording (EPW-025)"
+  ],
+  "public_entry_path_integrity_confirmed": true,
+  "homepage_entry_integrity_confirmed": true,
+  "system_map_entry_integrity_confirmed": true,
+  "phase_2_entry_integrity_confirmed": true,
+  "phase_3_entry_integrity_confirmed": true,
+  "phase_4_entry_integrity_confirmed": true,
+  "phase_5_entry_integrity_confirmed": true,
+  "ai_agent_entry_interpretation_confirmed": true,
+  "human_reader_entry_interpretation_confirmed": true,
+  "crawler_entry_discoverability_confirmed": true,
+  "route_group_entry_integrity_confirmed": true,
+  "audience_path_entry_integrity_confirmed": true,
+  "internal_navigation_integrity_confirmed": true,
+  "related_page_entry_integrity_confirmed": true,
+  "metadata_entry_integrity_confirmed": true,
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "non_workflow_surface": true,
+  "non_funnel_surface": true,
+  "non_onboarding_surface": true,
+  "non_tool_surface": true,
+  "non_dashboard_surface": true,
+  "non_product_suite_surface": true,
+  "non_service_surface": true,
+  "non_commercial_surface": true,
+  "non_monetization_surface": true,
+  "non_pricing": true,
+  "non_subscription": true,
+  "non_support_surface": true,
+  "non_sponsorship_surface": true,
+  "non_donation_surface": true,
+  "non_paid_report": true,
+  "non_private_access": true,
+  "non_consulting_offer": true,
+  "non_lead_generation": true,
+  "non_sales_surface": true,
+  "non_acquisition_solicitation": true,
+  "non_buyer_solicitation": true,
+  "non_transaction_surface": true,
+  "non_due_diligence_room": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_investment_claim": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "route_count_drift_found": false,
+  "stale_copy_found": false,
+  "stale_phase_language_found": false,
+  "orphaned_entry_surface_found": false,
+  "broken_internal_link_found": false,
+  "role_confusion_found": false,
+  "entry_path_ambiguity_found": false,
+  "workflow_drift_found": false,
+  "funnel_drift_found": false,
+  "onboarding_drift_found": false,
+  "tool_drift_found": false,
+  "dashboard_drift_found": false,
+  "product_suite_drift_found": false,
+  "service_drift_found": false,
+  "consulting_offer_drift_found": false,
+  "lead_generation_drift_found": false,
+  "sales_page_drift_found": false,
+  "commercial_conversion_drift_found": false,
+  "monetization_drift_found": false,
+  "pricing_drift_found": false,
+  "subscription_drift_found": false,
+  "support_or_sponsorship_drift_found": false,
+  "donation_drift_found": false,
+  "paid_report_drift_found": false,
+  "private_access_drift_found": false,
+  "acquisition_solicitation_drift_found": false,
+  "buyer_solicitation_drift_found": false,
+  "transaction_readiness_drift_found": false,
+  "due_diligence_room_drift_found": false,
+  "legal_or_financial_representation_drift_found": false,
+  "investment_claim_drift_found": false,
+  "authority_claim_drift_found": false,
+  "verification_drift_found": false,
+  "proof_drift_found": false,
+  "detector_drift_found": false,
+  "score_or_verdict_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "governance_inflation_found": false
+}

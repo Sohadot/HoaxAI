@@ -3432,6 +3432,41 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 132 audit-only public release indexation integrity validation."
+    },
+    {
+      "claim_id": "CLAIM-0134",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
+        "SPRINT_133_PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
+        "data/public-entry-path-integrity-audit-v1.json",
+        "data/public-entry-path-integrity-audit-v1.schema.json",
+        "validators/validate_public_entry_path_integrity_audit_v1.py",
+        "index.html",
+        "system-map/index.html",
+        "reading-sequences/index.html",
+        "retrieval-index/index.html",
+        "citation-orientation/index.html",
+        "source-use-orientation/index.html",
+        "strategic-review/index.html",
+        "entry-points/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html",
+        "external-review/public-surface-checklist/index.html",
+        "route-groups/review-and-overview-layers/index.html"
+      ],
+      "source_refs": [
+        "SOURCE-0904",
+        "SOURCE-0905",
+        "SOURCE-0906",
+        "SOURCE-0907",
+        "SOURCE-0908"
+      ],
+      "support_scope": "public entry path integrity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 133 audit-only public entry path integrity validation."
     }
   ],
   "last_reviewed": "2026-07-02"

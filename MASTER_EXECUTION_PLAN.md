@@ -649,6 +649,7 @@ Gate G56A is passed after DECISION_LOG.md DEC entries are in ascending numeric o
 | Sprint 61 | COMPLETE | G61 passed — Evidence Posture Protocol v1 Draft created |
 | Sprint 62 | COMPLETE | G62 passed — Protocol integrated across reference and standard layers |
 | Sprint 119 — retrieval walkthrough audit.
+- Sprint 133 — public entry path integrity audit (Phase 5 entry path).
 - Sprint 132 — public release indexation integrity audit (Phase 5 entry).
 - Sprint 131 — value integrity closure audit (Phase 4 closure candidate).
 - Sprint 130 — non-transactional revenue boundary audit.
