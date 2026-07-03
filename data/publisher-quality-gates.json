@@ -2058,6 +2058,24 @@
       "failure_condition": "public_entry_path_integrity_audit_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 133 public entry path integrity audit with 44 records and 44 scenarios, no route expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0128",
+      "name": "Public Discovery Integrity Closure Audit v1 Gate",
+      "status": "public_discovery_integrity_closure_audit_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_134_PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "failure_condition": "public_discovery_integrity_closure_audit_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 134 public discovery integrity closure audit with 50 records and 50 scenarios, no route expansion."
     }
   ],
   "last_reviewed": "2026-07-02"

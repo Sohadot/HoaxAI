@@ -1476,6 +1476,17 @@
       "status": "active",
       "last_reviewed": "2026-07-03",
       "notes": "Sprint 133 audit-only public entry path integrity."
+    },
+    {
+      "claim_id": "CLAIM-0135",
+      "claim_text": "Hoax.ai completed Public Discovery Integrity Closure Audit v1 with 50 discovery records inventoried (39 safe, 11 repaired, 0 unsafe), 50 walkthrough scenarios (all pass), ten scenario-backed hardening patches, Phase 5 closure recommended, and no route expansion while keeping the public surface at 104 routes and confirming public discovery, release/indexation, entry-path, discoverability, navigability, deployability, crawler readability, AI-agent readability, human-reader discovery, sitemap, registry, canonical, metadata, robots, and internal-link integrity without SEO spam, marketing, launch-campaign, workflow, funnel, onboarding, tool, dashboard, product-suite, service, commercial conversion, or governance-inflation drift.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md, data/public-discovery-integrity-closure-audit-v1.json, index.html, validators/validate_public_discovery_integrity_closure_audit_v1.py, SPRINT_134_PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-03",
+      "notes": "Sprint 134 audit-only public discovery integrity closure."
     }
   ]
 }

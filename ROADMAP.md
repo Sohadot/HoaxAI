@@ -4228,6 +4228,7 @@ Future layers may include:
 ---
 
 ## Sprint 119 — retrieval walkthrough audit complete (102 routes).
+- Sprint 134 — public discovery integrity closure audit complete (104 routes, audit-only, Phase 5 closure candidate).
 - Sprint 133 — public entry path integrity audit complete (104 routes, audit-only, Phase 5 entry path).
 - Sprint 132 — public release indexation integrity audit complete (104 routes, audit-only, Phase 5 entry).
 - Sprint 131 — value integrity closure audit complete (104 routes, audit-only, Phase 4 closure candidate).

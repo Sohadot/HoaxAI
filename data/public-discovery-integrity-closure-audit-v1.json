@@ -1,0 +1,2312 @@
+{
+  "id": "public-discovery-integrity-closure-audit-v1",
+  "name": "Public Discovery Integrity Closure Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 134",
+  "status": "public_discovery_integrity_closure_audit",
+  "audit_only": true,
+  "phase": "Phase 5",
+  "phase_closure_candidate": true,
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "sitemap_url_count_expected": 104,
+  "route_registry_count_expected": 104,
+  "public_file_registry_unchanged": true,
+  "phase_5_components_checked": {
+    "public release and indexation integrity": true,
+    "public entry path integrity": true
+  },
+  "phase_2_support_layers_checked": {
+    "/reading-sequences/": true,
+    "/retrieval-index/": true,
+    "/citation-orientation/": true,
+    "/source-use-orientation/": true
+  },
+  "phase_3_support_layers_checked": {
+    "strategic reviewer legibility": true,
+    "strategic claim traceability": true,
+    "acquisition language boundary": true,
+    "strategic review integrity closure": true
+  },
+  "phase_4_support_layers_checked": {
+    "value boundary": true,
+    "non-transactional revenue boundary": true,
+    "value integrity closure": true
+  },
+  "discovery_records": [
+    {
+      "discovery_record_id": "PDI-001",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Homepage discovery entry",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Primary discovery entry",
+      "actual_discovery_role": "Homepage anchors release, entry, and discovery closure",
+      "expected_discovery_paths": [
+        "/system-map/",
+        "/reading-sequences/",
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/",
+        "/reading-sequences/",
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added public-discovery-integrity-closure anchor",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Primary discovery entry"
+    },
+    {
+      "discovery_record_id": "PDI-002",
+      "public_page_or_file": "/system-map/",
+      "discovery_record_type": "System map discovery entry",
+      "route_or_file_path": "system-map/index.html",
+      "expected_discovery_role": "Structural discovery map",
+      "actual_discovery_role": "System map links Phase 5 closure",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure",
+        "/reading-sequences/",
+        "/strategic-review/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure cross-link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Structural discovery map"
+    },
+    {
+      "discovery_record_id": "PDI-003",
+      "public_page_or_file": "sitemap.xml",
+      "discovery_record_type": "Sitemap discovery record",
+      "route_or_file_path": "sitemap.xml",
+      "expected_discovery_role": "104 sitemap URLs",
+      "actual_discovery_role": "104 URLs",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 sitemap URLs"
+    },
+    {
+      "discovery_record_id": "PDI-004",
+      "public_page_or_file": "robots.txt",
+      "discovery_record_type": "Robots discovery record",
+      "route_or_file_path": "robots.txt",
+      "expected_discovery_role": "Allows crawl and references sitemap",
+      "actual_discovery_role": "Allow: / and sitemap present",
+      "expected_discovery_paths": [
+        "/sitemap.xml"
+      ],
+      "actual_discovery_paths": [
+        "/sitemap.xml"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Allows crawl and references sitemap"
+    },
+    {
+      "discovery_record_id": "PDI-005",
+      "public_page_or_file": "data/route-registry.json",
+      "discovery_record_type": "Route registry record",
+      "route_or_file_path": "data/route-registry.json",
+      "expected_discovery_role": "104 route entries",
+      "actual_discovery_role": "104 entries",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 route entries"
+    },
+    {
+      "discovery_record_id": "PDI-006",
+      "public_page_or_file": "data/public-file-registry.json",
+      "discovery_record_type": "Public file registry record",
+      "route_or_file_path": "data/public-file-registry.json",
+      "expected_discovery_role": "Aligned with route files",
+      "actual_discovery_role": "Aligned",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Aligned with route files"
+    },
+    {
+      "discovery_record_id": "PDI-007",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Canonical URL record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Canonical points to Hoax.ai route",
+      "actual_discovery_role": "Present and correct",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Canonical points to Hoax.ai route"
+    },
+    {
+      "discovery_record_id": "PDI-008",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Meta title record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Reference-grade title",
+      "actual_discovery_role": "Present",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade title"
+    },
+    {
+      "discovery_record_id": "PDI-009",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Meta description record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Reference-grade description",
+      "actual_discovery_role": "Present",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade description"
+    },
+    {
+      "discovery_record_id": "PDI-010",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Open Graph record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Reference-grade OG tags",
+      "actual_discovery_role": "Present",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade OG tags"
+    },
+    {
+      "discovery_record_id": "PDI-011",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Internal navigation record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Major layers linked",
+      "actual_discovery_role": "Major entry routes and layers linked",
+      "expected_discovery_paths": [
+        "/system-map/",
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/",
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Major layers linked"
+    },
+    {
+      "discovery_record_id": "PDI-012",
+      "public_page_or_file": "/system-map/",
+      "discovery_record_type": "Related-page block record",
+      "route_or_file_path": "system-map/index.html",
+      "expected_discovery_role": "Related pages structural",
+      "actual_discovery_role": "Related pages remain non-commercial",
+      "expected_discovery_paths": [
+        "/system-map/route-groups/"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/route-groups/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Related pages structural"
+    },
+    {
+      "discovery_record_id": "PDI-013",
+      "public_page_or_file": "/reading-sequences/",
+      "discovery_record_type": "Reference block record",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_discovery_role": "Reference answer safe for AI agents",
+      "actual_discovery_role": "Reference blocks remain non-workflow",
+      "expected_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference answer safe for AI agents"
+    },
+    {
+      "discovery_record_id": "PDI-014",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Footer/internal link record",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Public reference links only",
+      "actual_discovery_role": "No conversion behavior",
+      "expected_discovery_paths": [
+        "/system-map/",
+        "/reviewer-packet/"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/",
+        "/reviewer-packet/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public reference links only"
+    },
+    {
+      "discovery_record_id": "PDI-015",
+      "public_page_or_file": "/reading-sequences/",
+      "discovery_record_type": "Reading sequence discovery",
+      "route_or_file_path": "reading-sequences/index.html",
+      "expected_discovery_role": "Reading order without workflow",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reading order without workflow"
+    },
+    {
+      "discovery_record_id": "PDI-016",
+      "public_page_or_file": "/retrieval-index/",
+      "discovery_record_type": "Retrieval index discovery",
+      "route_or_file_path": "retrieval-index/index.html",
+      "expected_discovery_role": "Retrieval organization without search product",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Retrieval organization without search product"
+    },
+    {
+      "discovery_record_id": "PDI-017",
+      "public_page_or_file": "/citation-orientation/",
+      "discovery_record_type": "Citation orientation discovery",
+      "route_or_file_path": "citation-orientation/index.html",
+      "expected_discovery_role": "Citation guidance without generator/service",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_discovery_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Citation guidance without generator/service"
+    },
+    {
+      "discovery_record_id": "PDI-018",
+      "public_page_or_file": "/source-use-orientation/",
+      "discovery_record_type": "Source-use orientation discovery",
+      "route_or_file_path": "source-use-orientation/index.html",
+      "expected_discovery_role": "Source boundary without proof/certification",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/citation-orientation/"
+      ],
+      "actual_discovery_paths": [
+        "/citation-orientation/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Source boundary without proof/certification"
+    },
+    {
+      "discovery_record_id": "PDI-019",
+      "public_page_or_file": "/strategic-review/",
+      "discovery_record_type": "Strategic review discovery",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_discovery_role": "Reviewer legibility without pitch/sales drift",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/reviewer-packet/",
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/reviewer-packet/",
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer legibility without pitch/sales drift"
+    },
+    {
+      "discovery_record_id": "PDI-020",
+      "public_page_or_file": "/reviewer-packet/",
+      "discovery_record_type": "Reviewer packet discovery",
+      "route_or_file_path": "reviewer-packet/index.html",
+      "expected_discovery_role": "Public review support without buyer packet drift",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/reviewer-packet/public-surface-index/"
+      ],
+      "actual_discovery_paths": [
+        "/reviewer-packet/public-surface-index/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure paragraph",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public review support without buyer packet drift"
+    },
+    {
+      "discovery_record_id": "PDI-021",
+      "public_page_or_file": "/acquisition-readiness/",
+      "discovery_record_type": "Acquisition-readiness discovery",
+      "route_or_file_path": "acquisition-readiness/index.html",
+      "expected_discovery_role": "Acquisition-readability without solicitation",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure list item",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Acquisition-readability without solicitation"
+    },
+    {
+      "discovery_record_id": "PDI-022",
+      "public_page_or_file": "/strategic-review/#phase-4-value-integrity-closure",
+      "discovery_record_type": "Value-integrity discovery",
+      "route_or_file_path": "strategic-review/index.html",
+      "expected_discovery_role": "Phase 4 value integrity discoverable",
+      "actual_discovery_role": "Linked from homepage and system map",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 4 value integrity discoverable"
+    },
+    {
+      "discovery_record_id": "PDI-023",
+      "public_page_or_file": "/#public-release-indexation-integrity",
+      "discovery_record_type": "Release/indexation discovery",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Phase 5 release/indexation discoverable",
+      "actual_discovery_role": "Homepage anchor present",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 5 release/indexation discoverable"
+    },
+    {
+      "discovery_record_id": "PDI-024",
+      "public_page_or_file": "/#public-entry-path-integrity",
+      "discovery_record_type": "Entry-path discovery",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Phase 5 entry path discoverable",
+      "actual_discovery_role": "Homepage anchor present",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 5 entry path discoverable"
+    },
+    {
+      "discovery_record_id": "PDI-025",
+      "public_page_or_file": "/route-groups/public-utilities/",
+      "discovery_record_type": "Route-group discovery",
+      "route_or_file_path": "route-groups/public-utilities/index.html",
+      "expected_discovery_role": "Route-group orientation without SEO spam",
+      "actual_discovery_role": "Safe reference summary",
+      "expected_discovery_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "actual_discovery_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route-group orientation without SEO spam"
+    },
+    {
+      "discovery_record_id": "PDI-026",
+      "public_page_or_file": "/audience-paths/",
+      "discovery_record_type": "Audience-path discovery",
+      "route_or_file_path": "audience-paths/index.html",
+      "expected_discovery_role": "Audience orientation without persona funnel",
+      "actual_discovery_role": "Audience hub safe",
+      "expected_discovery_paths": [
+        "/audience-paths/ai-agents/"
+      ],
+      "actual_discovery_paths": [
+        "/audience-paths/ai-agents/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audience orientation without persona funnel"
+    },
+    {
+      "discovery_record_id": "PDI-027",
+      "public_page_or_file": "/external-review/public-surface-checklist/",
+      "discovery_record_type": "External-review discovery",
+      "route_or_file_path": "external-review/public-surface-checklist/index.html",
+      "expected_discovery_role": "Public reviewability without private diligence",
+      "actual_discovery_role": "Phase 5 closure linked",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public reviewability without private diligence"
+    },
+    {
+      "discovery_record_id": "PDI-028",
+      "public_page_or_file": "/narrative/",
+      "discovery_record_type": "Narrative discovery",
+      "route_or_file_path": "narrative/index.html",
+      "expected_discovery_role": "Narrative without marketing funnel",
+      "actual_discovery_role": "Narrative hub linked",
+      "expected_discovery_paths": [
+        "/entry-points/"
+      ],
+      "actual_discovery_paths": [
+        "/entry-points/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Narrative without marketing funnel"
+    },
+    {
+      "discovery_record_id": "PDI-029",
+      "public_page_or_file": "/evidence-risk/",
+      "discovery_record_type": "Core concept discovery",
+      "route_or_file_path": "evidence-risk/index.html",
+      "expected_discovery_role": "Core concept reference entry",
+      "actual_discovery_role": "Reference blocks safe",
+      "expected_discovery_paths": [
+        "/source-ambiguity/"
+      ],
+      "actual_discovery_paths": [
+        "/source-ambiguity/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Core concept reference entry"
+    },
+    {
+      "discovery_record_id": "PDI-030",
+      "public_page_or_file": "/evidence-conditions/",
+      "discovery_record_type": "Evidence condition discovery",
+      "route_or_file_path": "evidence-conditions/index.html",
+      "expected_discovery_role": "Condition library discovery",
+      "actual_discovery_role": "Condition hub safe",
+      "expected_discovery_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "actual_discovery_paths": [
+        "/evidence-conditions/crosswalk/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Condition library discovery"
+    },
+    {
+      "discovery_record_id": "PDI-031",
+      "public_page_or_file": "/reference/claim-source-traceability/",
+      "discovery_record_type": "Governance/reference discovery",
+      "route_or_file_path": "reference/claim-source-traceability/index.html",
+      "expected_discovery_role": "Traceability reference without proof drift",
+      "actual_discovery_role": "Reference page safe",
+      "expected_discovery_paths": [
+        "/source-use-orientation/"
+      ],
+      "actual_discovery_paths": [
+        "/source-use-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Traceability reference without proof drift"
+    },
+    {
+      "discovery_record_id": "PDI-032",
+      "public_page_or_file": "/entry-points/ai-agents/",
+      "discovery_record_type": "AI-agent discovery",
+      "route_or_file_path": "entry-points/ai-agents/index.html",
+      "expected_discovery_role": "AI agent entry without tool claims",
+      "actual_discovery_role": "AI route safe",
+      "expected_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI agent entry without tool claims"
+    },
+    {
+      "discovery_record_id": "PDI-033",
+      "public_page_or_file": "sitemap.xml",
+      "discovery_record_type": "Crawler discovery",
+      "route_or_file_path": "sitemap.xml",
+      "expected_discovery_role": "Crawler sees all public URLs",
+      "actual_discovery_role": "104 URLs",
+      "expected_discovery_paths": [
+        "/"
+      ],
+      "actual_discovery_paths": [
+        "/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Crawler sees all public URLs"
+    },
+    {
+      "discovery_record_id": "PDI-034",
+      "public_page_or_file": "/entry-points/human-readers/",
+      "discovery_record_type": "Human reader discovery",
+      "route_or_file_path": "entry-points/human-readers/index.html",
+      "expected_discovery_role": "Human reader starts safely",
+      "actual_discovery_role": "Manual reference path",
+      "expected_discovery_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "actual_discovery_paths": [
+        "/manual-evidence-checklist/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human reader starts safely"
+    },
+    {
+      "discovery_record_id": "PDI-035",
+      "public_page_or_file": "/system-map/#external-use-layer",
+      "discovery_record_type": "Cross-phase discovery",
+      "route_or_file_path": "system-map/index.html",
+      "expected_discovery_role": "Phase 2/3/4/5 connected",
+      "actual_discovery_role": "System map and homepage connect phases",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 2/3/4/5 connected"
+    },
+    {
+      "discovery_record_id": "PDI-036",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Commercial drift discovery check",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "No commercial conversion",
+      "actual_discovery_role": "Boundary language present",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No commercial conversion"
+    },
+    {
+      "discovery_record_id": "PDI-037",
+      "public_page_or_file": "/",
+      "discovery_record_type": "SEO spam discovery check",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "No SEO spam",
+      "actual_discovery_role": "Reference-grade discovery language",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No SEO spam"
+    },
+    {
+      "discovery_record_id": "PDI-038",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Marketing drift discovery check",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "No launch/marketing drift",
+      "actual_discovery_role": "Marketing and launch language negated",
+      "expected_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "actual_discovery_paths": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No launch/marketing drift"
+    },
+    {
+      "discovery_record_id": "PDI-039",
+      "public_page_or_file": "/system-map/",
+      "discovery_record_type": "Workflow/tool/service drift discovery check",
+      "route_or_file_path": "system-map/index.html",
+      "expected_discovery_role": "No workflow/tool/service drift",
+      "actual_discovery_role": "System map negates workflow/tool/service behavior",
+      "expected_discovery_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "actual_discovery_paths": [
+        "/#public-entry-path-integrity"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No workflow/tool/service drift"
+    },
+    {
+      "discovery_record_id": "PDI-040",
+      "public_page_or_file": "/",
+      "discovery_record_type": "Route-count discovery check",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "104-route copy current",
+      "actual_discovery_role": "104 only",
+      "expected_discovery_paths": [
+        "/system-map/"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104-route copy current"
+    },
+    {
+      "discovery_record_id": "PDI-041",
+      "public_page_or_file": "/reviewer-packet/public-surface-index/",
+      "discovery_record_type": "Reviewer packet discovery",
+      "route_or_file_path": "reviewer-packet/public-surface-index/index.html",
+      "expected_discovery_role": "Reviewer public surface index",
+      "actual_discovery_role": "Public index safe",
+      "expected_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reviewer public surface index"
+    },
+    {
+      "discovery_record_id": "PDI-042",
+      "public_page_or_file": "/strategic-review/retrieval-and-citation/",
+      "discovery_record_type": "Strategic review discovery",
+      "route_or_file_path": "strategic-review/retrieval-and-citation/index.html",
+      "expected_discovery_role": "Strategic retrieval/citation support",
+      "actual_discovery_role": "No service drift",
+      "expected_discovery_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "actual_discovery_paths": [
+        "/retrieval-index/",
+        "/citation-orientation/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Strategic retrieval/citation support"
+    },
+    {
+      "discovery_record_id": "PDI-043",
+      "public_page_or_file": "/acquisition-readiness/governance-traceability/",
+      "discovery_record_type": "Acquisition-readiness discovery",
+      "route_or_file_path": "acquisition-readiness/governance-traceability/index.html",
+      "expected_discovery_role": "Governance traceability without transaction drift",
+      "actual_discovery_role": "Traceability safe",
+      "expected_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Governance traceability without transaction drift"
+    },
+    {
+      "discovery_record_id": "PDI-044",
+      "public_page_or_file": "/executive-overview/",
+      "discovery_record_type": "Human reader discovery",
+      "route_or_file_path": "executive-overview/index.html",
+      "expected_discovery_role": "Executive overview without sales drift",
+      "actual_discovery_role": "Overview safe",
+      "expected_discovery_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "actual_discovery_paths": [
+        "/executive-overview/public-reference-system/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Executive overview without sales drift"
+    },
+    {
+      "discovery_record_id": "PDI-045",
+      "public_page_or_file": "/entry-points/",
+      "discovery_record_type": "Entry-path discovery",
+      "route_or_file_path": "entry-points/index.html",
+      "expected_discovery_role": "Role-based entry without onboarding product",
+      "actual_discovery_role": "Orientation wording safe",
+      "expected_discovery_paths": [
+        "/entry-points/human-readers/"
+      ],
+      "actual_discovery_paths": [
+        "/entry-points/human-readers/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Role-based entry without onboarding product"
+    },
+    {
+      "discovery_record_id": "PDI-046",
+      "public_page_or_file": "/system-map/human-review-paths/",
+      "discovery_record_type": "Human reader discovery",
+      "route_or_file_path": "system-map/human-review-paths/index.html",
+      "expected_discovery_role": "Human review path map without workflow drift",
+      "actual_discovery_role": "Map safe",
+      "expected_discovery_paths": [
+        "/reading-sequences/"
+      ],
+      "actual_discovery_paths": [
+        "/reading-sequences/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Human review path map without workflow drift"
+    },
+    {
+      "discovery_record_id": "PDI-047",
+      "public_page_or_file": "/system-map/ai-retrieval-paths/",
+      "discovery_record_type": "AI-agent discovery",
+      "route_or_file_path": "system-map/ai-retrieval-paths/index.html",
+      "expected_discovery_role": "AI retrieval map without tool drift",
+      "actual_discovery_role": "Map safe",
+      "expected_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "actual_discovery_paths": [
+        "/retrieval-index/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "AI retrieval map without tool drift"
+    },
+    {
+      "discovery_record_id": "PDI-048",
+      "public_page_or_file": "/route-groups/review-and-overview-layers/",
+      "discovery_record_type": "Route-group discovery",
+      "route_or_file_path": "route-groups/review-and-overview-layers/index.html",
+      "expected_discovery_role": "Review layer route group without onboarding drift",
+      "actual_discovery_role": "Orientation wording safe",
+      "expected_discovery_paths": [
+        "/external-review/"
+      ],
+      "actual_discovery_paths": [
+        "/external-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Review layer route group without onboarding drift"
+    },
+    {
+      "discovery_record_id": "PDI-049",
+      "public_page_or_file": "/audience-paths/research-reviewers/",
+      "discovery_record_type": "Audience-path discovery",
+      "route_or_file_path": "audience-paths/research-reviewers/index.html",
+      "expected_discovery_role": "Research reviewer path without funnel drift",
+      "actual_discovery_role": "Audience path safe",
+      "expected_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "actual_discovery_paths": [
+        "/strategic-review/"
+      ],
+      "status": "safe",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Research reviewer path without funnel drift"
+    },
+    {
+      "discovery_record_id": "PDI-050",
+      "public_page_or_file": "/#public-discovery-integrity-closure",
+      "discovery_record_type": "Cross-phase discovery",
+      "route_or_file_path": "index.html",
+      "expected_discovery_role": "Phase 5 closure visible without new route",
+      "actual_discovery_role": "Homepage anchor only",
+      "expected_discovery_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "actual_discovery_paths": [
+        "/system-map/",
+        "/reading-sequences/"
+      ],
+      "status": "repaired",
+      "observed_issue": "",
+      "repair_applied": "Added closure anchor without route expansion",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Phase 5 closure visible without new route"
+    }
+  ],
+  "total_discovery_records": 50,
+  "discovery_records_safe": 39,
+  "discovery_records_repaired": 11,
+  "discovery_records_unsafe": 0,
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "PDC-001",
+      "discovery_integrity_intent": "Crawler discovers exactly 104 sitemap URLs",
+      "expected_pages_checked": [
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "104 URLs",
+      "actual_interpretation": "Sitemap count remains 104",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 URLs"
+    },
+    {
+      "scenario_id": "PDC-002",
+      "discovery_integrity_intent": "Sitemap count matches route registry count",
+      "expected_pages_checked": [
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "Registry and sitemap parity",
+      "actual_interpretation": "Both 104",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Registry and sitemap parity"
+    },
+    {
+      "scenario_id": "PDC-003",
+      "discovery_integrity_intent": "Sitemap count matches public route count",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104-route public surface",
+      "actual_interpretation": "Homepage and registry align",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104-route public surface"
+    },
+    {
+      "scenario_id": "PDC-004",
+      "discovery_integrity_intent": "Public file registry remains aligned",
+      "expected_pages_checked": [
+        "data/public-file-registry.json"
+      ],
+      "expected_safe_interpretation": "No extra route exposure",
+      "actual_interpretation": "Aligned",
+      "supporting_routes_or_artifacts": [
+        "public-file-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No extra route exposure"
+    },
+    {
+      "scenario_id": "PDC-005",
+      "discovery_integrity_intent": "No public HTML route outside registry and sitemap",
+      "expected_pages_checked": [
+        "data/route-registry.json"
+      ],
+      "expected_safe_interpretation": "No orphaned HTML",
+      "actual_interpretation": "Registry aligned",
+      "supporting_routes_or_artifacts": [
+        "route-registry.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No orphaned HTML"
+    },
+    {
+      "scenario_id": "PDC-006",
+      "discovery_integrity_intent": "No route registry entry missing from sitemap",
+      "expected_pages_checked": [
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "All routes discoverable",
+      "actual_interpretation": "All registered routes in sitemap",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "All routes discoverable"
+    },
+    {
+      "scenario_id": "PDC-007",
+      "discovery_integrity_intent": "No sitemap URL resolves to missing file",
+      "expected_pages_checked": [
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "All local files exist",
+      "actual_interpretation": "All files present",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "All local files exist"
+    },
+    {
+      "scenario_id": "PDC-008",
+      "discovery_integrity_intent": "robots.txt allows intended public crawl",
+      "expected_pages_checked": [
+        "robots.txt"
+      ],
+      "expected_safe_interpretation": "Allow and sitemap present",
+      "actual_interpretation": "robots.txt allows crawl",
+      "supporting_routes_or_artifacts": [
+        "robots.txt"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Allow and sitemap present"
+    },
+    {
+      "scenario_id": "PDC-009",
+      "discovery_integrity_intent": "No accidental noindex on public pages",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Indexable public pages",
+      "actual_interpretation": "No noindex on public HTML",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Indexable public pages"
+    },
+    {
+      "scenario_id": "PDC-010",
+      "discovery_integrity_intent": "Canonical URLs correct on core pages",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Correct Hoax.ai routes",
+      "actual_interpretation": "Canonicals present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Correct Hoax.ai routes"
+    },
+    {
+      "scenario_id": "PDC-011",
+      "discovery_integrity_intent": "Meta titles and descriptions reference-grade",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Not marketing-grade",
+      "actual_interpretation": "Metadata remains reference-oriented",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not marketing-grade"
+    },
+    {
+      "scenario_id": "PDC-012",
+      "discovery_integrity_intent": "Open Graph tags reference-grade",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Not sales or launch interpretation",
+      "actual_interpretation": "OG tags bounded",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not sales or launch interpretation"
+    },
+    {
+      "scenario_id": "PDC-013",
+      "discovery_integrity_intent": "Homepage reflects 104 routes",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104 current count",
+      "actual_interpretation": "No stale count",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 current count"
+    },
+    {
+      "scenario_id": "PDC-014",
+      "discovery_integrity_intent": "System map reflects 104 routes",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "104 current count",
+      "actual_interpretation": "No stale count",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 current count"
+    },
+    {
+      "scenario_id": "PDC-015",
+      "discovery_integrity_intent": "Homepage gives clear entry without funnel",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Multiple reference entries",
+      "actual_interpretation": "Discovery closure anchor added",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added public-discovery-integrity-closure anchor",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Multiple reference entries"
+    },
+    {
+      "scenario_id": "PDC-016",
+      "discovery_integrity_intent": "System map gives structural navigation without dashboard/product suite",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Static map only",
+      "actual_interpretation": "Discovery closure link added",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Static map only"
+    },
+    {
+      "scenario_id": "PDC-017",
+      "discovery_integrity_intent": "Human reader moves from homepage to reading/system map without workflow drift",
+      "expected_pages_checked": [
+        "/",
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Reference navigation",
+      "actual_interpretation": "Links clear",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference navigation"
+    },
+    {
+      "scenario_id": "PDC-018",
+      "discovery_integrity_intent": "AI agent identifies homepage as reference entry",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "No product claims",
+      "actual_interpretation": "Boundary language present",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No product claims"
+    },
+    {
+      "scenario_id": "PDC-019",
+      "discovery_integrity_intent": "AI agent identifies system map as structural map",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Not tool suite",
+      "actual_interpretation": "Dashboard/tool negations present",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not tool suite"
+    },
+    {
+      "scenario_id": "PDC-020",
+      "discovery_integrity_intent": "AI agent identifies reading sequences as navigation not workflow",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "Not workflow",
+      "actual_interpretation": "Boundary language present",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not workflow"
+    },
+    {
+      "scenario_id": "PDC-021",
+      "discovery_integrity_intent": "AI agent identifies retrieval index as route organization not search engine",
+      "expected_pages_checked": [
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Not search product",
+      "actual_interpretation": "Retrieval summary bounded",
+      "supporting_routes_or_artifacts": [
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not search product"
+    },
+    {
+      "scenario_id": "PDC-022",
+      "discovery_integrity_intent": "AI agent identifies citation orientation as guidance not generator/service",
+      "expected_pages_checked": [
+        "/citation-orientation/"
+      ],
+      "expected_safe_interpretation": "Not generator",
+      "actual_interpretation": "Citation generator negated",
+      "supporting_routes_or_artifacts": [
+        "citation-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not generator"
+    },
+    {
+      "scenario_id": "PDC-023",
+      "discovery_integrity_intent": "AI agent identifies source-use as boundary not proof/certification",
+      "expected_pages_checked": [
+        "/source-use-orientation/"
+      ],
+      "expected_safe_interpretation": "Not proof",
+      "actual_interpretation": "Proof and verification negated",
+      "supporting_routes_or_artifacts": [
+        "source-use-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not proof"
+    },
+    {
+      "scenario_id": "PDC-024",
+      "discovery_integrity_intent": "AI agent identifies strategic review as legibility not pitch/sales",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Not pitch deck",
+      "actual_interpretation": "Strategic review bounded",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not pitch deck"
+    },
+    {
+      "scenario_id": "PDC-025",
+      "discovery_integrity_intent": "AI agent identifies reviewer packet as public review support",
+      "expected_pages_checked": [
+        "/reviewer-packet/"
+      ],
+      "expected_safe_interpretation": "Not buyer packet or paid report",
+      "actual_interpretation": "Discovery closure paragraph added",
+      "supporting_routes_or_artifacts": [
+        "reviewer-packet/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure paragraph",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not buyer packet or paid report"
+    },
+    {
+      "scenario_id": "PDC-026",
+      "discovery_integrity_intent": "AI agent identifies acquisition readiness as readability not solicitation",
+      "expected_pages_checked": [
+        "/acquisition-readiness/"
+      ],
+      "expected_safe_interpretation": "Not acquisition solicitation",
+      "actual_interpretation": "Discovery closure list item added",
+      "supporting_routes_or_artifacts": [
+        "acquisition-readiness/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure list item",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not acquisition solicitation"
+    },
+    {
+      "scenario_id": "PDC-027",
+      "discovery_integrity_intent": "AI agent identifies value integrity as non-transactional value clarity",
+      "expected_pages_checked": [
+        "/strategic-review/#phase-4-value-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Not monetization",
+      "actual_interpretation": "Phase 4 closure linked",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not monetization"
+    },
+    {
+      "scenario_id": "PDC-028",
+      "discovery_integrity_intent": "AI agent identifies release/indexation as integrity not SEO campaign",
+      "expected_pages_checked": [
+        "/#public-release-indexation-integrity"
+      ],
+      "expected_safe_interpretation": "Not SEO campaign",
+      "actual_interpretation": "Release anchor linked into closure",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not SEO campaign"
+    },
+    {
+      "scenario_id": "PDC-029",
+      "discovery_integrity_intent": "Human moves homepage to system map to Phase 2/3/4/5 without broken links",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Cross-phase navigation",
+      "actual_interpretation": "Links resolve",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Cross-phase navigation"
+    },
+    {
+      "scenario_id": "PDC-030",
+      "discovery_integrity_intent": "Human understands maturity without stale copy or hype",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "104-route reference maturity",
+      "actual_interpretation": "No hype framing",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104-route reference maturity"
+    },
+    {
+      "scenario_id": "PDC-031",
+      "discovery_integrity_intent": "Human understands discovery without launch marketing",
+      "expected_pages_checked": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Not launch campaign",
+      "actual_interpretation": "Launch negation visible",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added closure anchor",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not launch campaign"
+    },
+    {
+      "scenario_id": "PDC-032",
+      "discovery_integrity_intent": "Crawler-facing metadata remains reference-grade",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Not SEO spam",
+      "actual_interpretation": "Metadata unchanged and bounded",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Not SEO spam"
+    },
+    {
+      "scenario_id": "PDC-033",
+      "discovery_integrity_intent": "Route-group pages provide discovery without SEO spam",
+      "expected_pages_checked": [
+        "/route-groups/public-utilities/"
+      ],
+      "expected_safe_interpretation": "Route group reference",
+      "actual_interpretation": "Safe route-group copy",
+      "supporting_routes_or_artifacts": [
+        "route-groups/public-utilities/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Route group reference"
+    },
+    {
+      "scenario_id": "PDC-034",
+      "discovery_integrity_intent": "Audience paths provide orientation without persona funnel",
+      "expected_pages_checked": [
+        "/audience-paths/"
+      ],
+      "expected_safe_interpretation": "Audience orientation",
+      "actual_interpretation": "No funnel behavior",
+      "supporting_routes_or_artifacts": [
+        "audience-paths/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Audience orientation"
+    },
+    {
+      "scenario_id": "PDC-035",
+      "discovery_integrity_intent": "External-review checklist supports reviewability without private diligence",
+      "expected_pages_checked": [
+        "/external-review/public-surface-checklist/"
+      ],
+      "expected_safe_interpretation": "Public review checklist",
+      "actual_interpretation": "Discovery closure linked",
+      "supporting_routes_or_artifacts": [
+        "external-review/public-surface-checklist/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public review checklist"
+    },
+    {
+      "scenario_id": "PDC-036",
+      "discovery_integrity_intent": "Strategic reviewer reaches source citation retrieval value release and entry support",
+      "expected_pages_checked": [
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "Support links visible",
+      "actual_interpretation": "Strategic review links support anchors",
+      "supporting_routes_or_artifacts": [
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added discovery closure link",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Support links visible"
+    },
+    {
+      "scenario_id": "PDC-037",
+      "discovery_integrity_intent": "Reader enters citation orientation and moves to source/retrieval",
+      "expected_pages_checked": [
+        "/citation-orientation/"
+      ],
+      "expected_safe_interpretation": "No service drift",
+      "actual_interpretation": "Companion links present",
+      "supporting_routes_or_artifacts": [
+        "citation-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No service drift"
+    },
+    {
+      "scenario_id": "PDC-038",
+      "discovery_integrity_intent": "Reader enters source-use and moves to citation/retrieval",
+      "expected_pages_checked": [
+        "/source-use-orientation/"
+      ],
+      "expected_safe_interpretation": "No proof drift",
+      "actual_interpretation": "Companion links present",
+      "supporting_routes_or_artifacts": [
+        "source-use-orientation/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No proof drift"
+    },
+    {
+      "scenario_id": "PDC-039",
+      "discovery_integrity_intent": "Reader enters retrieval and moves to reading/citation/source-use",
+      "expected_pages_checked": [
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "No search-product drift",
+      "actual_interpretation": "External-use links present",
+      "supporting_routes_or_artifacts": [
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No search-product drift"
+    },
+    {
+      "scenario_id": "PDC-040",
+      "discovery_integrity_intent": "Reader enters reading sequences and moves to system map",
+      "expected_pages_checked": [
+        "/reading-sequences/"
+      ],
+      "expected_safe_interpretation": "No workflow drift",
+      "actual_interpretation": "System map linked",
+      "supporting_routes_or_artifacts": [
+        "reading-sequences/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No workflow drift"
+    },
+    {
+      "scenario_id": "PDC-041",
+      "discovery_integrity_intent": "Discovery paths do not imply detector verification scoring verdict",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "No detector/verdict drift",
+      "actual_interpretation": "Boundary negations present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No detector/verdict drift"
+    },
+    {
+      "scenario_id": "PDC-042",
+      "discovery_integrity_intent": "Discovery paths do not imply consulting service paid report private access or transaction",
+      "expected_pages_checked": [
+        "/",
+        "/strategic-review/"
+      ],
+      "expected_safe_interpretation": "No commercial drift",
+      "actual_interpretation": "Non-transactional boundaries present",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "strategic-review/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No commercial drift"
+    },
+    {
+      "scenario_id": "PDC-043",
+      "discovery_integrity_intent": "Discovery paths preserve Phase 2/3/4/5 role boundaries",
+      "expected_pages_checked": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Roles connected without conflict",
+      "actual_interpretation": "Closure anchor connects layers",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added closure anchor",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Roles connected without conflict"
+    },
+    {
+      "scenario_id": "PDC-044",
+      "discovery_integrity_intent": "No discovery surface orphaned",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/",
+        "sitemap.xml"
+      ],
+      "expected_safe_interpretation": "Homepage/map/sitemap coverage",
+      "actual_interpretation": "No orphaned surface",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html",
+        "sitemap.xml"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Homepage/map/sitemap coverage"
+    },
+    {
+      "scenario_id": "PDC-045",
+      "discovery_integrity_intent": "Related-page blocks do not create misleading priority",
+      "expected_pages_checked": [
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "Structural related pages",
+      "actual_interpretation": "No commercial priority",
+      "supporting_routes_or_artifacts": [
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Structural related pages"
+    },
+    {
+      "scenario_id": "PDC-046",
+      "discovery_integrity_intent": "Footer/internal navigation does not create conversion behavior",
+      "expected_pages_checked": [
+        "/"
+      ],
+      "expected_safe_interpretation": "Public reference navigation only",
+      "actual_interpretation": "No conversion links",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Public reference navigation only"
+    },
+    {
+      "scenario_id": "PDC-047",
+      "discovery_integrity_intent": "Discovery metadata avoids tool service sales marketing interpretation",
+      "expected_pages_checked": [
+        "/",
+        "/retrieval-index/"
+      ],
+      "expected_safe_interpretation": "Reference-grade metadata",
+      "actual_interpretation": "No service metadata",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "retrieval-index/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Reference-grade metadata"
+    },
+    {
+      "scenario_id": "PDC-048",
+      "discovery_integrity_intent": "Route-count copy remains 104",
+      "expected_pages_checked": [
+        "/",
+        "/system-map/"
+      ],
+      "expected_safe_interpretation": "104 only",
+      "actual_interpretation": "Counts current",
+      "supporting_routes_or_artifacts": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "104 only"
+    },
+    {
+      "scenario_id": "PDC-049",
+      "discovery_integrity_intent": "Phase 5 closes without new route",
+      "expected_pages_checked": [
+        "/#public-discovery-integrity-closure"
+      ],
+      "expected_safe_interpretation": "Closure anchor on existing homepage",
+      "actual_interpretation": "No route expansion",
+      "supporting_routes_or_artifacts": [
+        "index.html"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "Added homepage anchor only",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Closure anchor on existing homepage"
+    },
+    {
+      "scenario_id": "PDC-050",
+      "discovery_integrity_intent": "Phase 5 closes without new DEC",
+      "expected_pages_checked": [
+        "data/public-discovery-integrity-closure-audit-v1.json"
+      ],
+      "expected_safe_interpretation": "No DEC required",
+      "actual_interpretation": "new_decision_created false",
+      "supporting_routes_or_artifacts": [
+        "data/public-discovery-integrity-closure-audit-v1.json"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "repair_applied": "",
+      "discovery_integrity_check": "confirmed",
+      "indexation_check": "confirmed",
+      "entry_path_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "No DEC required"
+    }
+  ],
+  "total_scenarios": 50,
+  "scenarios_passed": 50,
+  "scenarios_failed": 0,
+  "repairs_applied": [
+    "index.html \u2014 public-discovery-integrity-closure anchor (PDC-015, PDC-031, PDC-043, PDC-049)",
+    "system-map/index.html \u2014 discovery closure cross-link in system map snapshot (PDC-016)",
+    "reading-sequences/index.html \u2014 discovery closure link in external-use sequence (PDC-020)",
+    "retrieval-index/index.html \u2014 discovery closure link in reference summary (PDC-021)",
+    "citation-orientation/index.html \u2014 discovery closure cross-link (PDC-022)",
+    "source-use-orientation/index.html \u2014 discovery closure cross-link (PDC-023)",
+    "strategic-review/index.html \u2014 Phase 5 discovery closure link in Phase 4 closure (PDC-024, PDC-036)",
+    "reviewer-packet/index.html \u2014 Phase 5 discovery integrity paragraph (PDC-025)",
+    "acquisition-readiness/index.html \u2014 Phase 5 discovery integrity list item (PDC-026)",
+    "external-review/public-surface-checklist/index.html \u2014 discovery closure checklist cross-link (PDC-035)"
+  ],
+  "public_discovery_integrity_confirmed": true,
+  "public_release_integrity_confirmed": true,
+  "indexation_integrity_confirmed": true,
+  "public_entry_path_integrity_confirmed": true,
+  "discoverability_confirmed": true,
+  "navigability_confirmed": true,
+  "deployability_confirmed": true,
+  "crawler_readability_confirmed": true,
+  "ai_agent_readability_confirmed": true,
+  "human_reader_discovery_confirmed": true,
+  "sitemap_integrity_confirmed": true,
+  "route_registry_integrity_confirmed": true,
+  "public_file_registry_integrity_confirmed": true,
+  "canonical_integrity_confirmed": true,
+  "metadata_integrity_confirmed": true,
+  "robots_integrity_confirmed": true,
+  "internal_link_integrity_confirmed": true,
+  "phase_5_closure_recommended": true,
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "non_seo_spam_surface": true,
+  "non_marketing_surface": true,
+  "non_launch_campaign_surface": true,
+  "non_workflow_surface": true,
+  "non_funnel_surface": true,
+  "non_onboarding_surface": true,
+  "non_tool_surface": true,
+  "non_dashboard_surface": true,
+  "non_product_suite_surface": true,
+  "non_service_surface": true,
+  "non_commercial_surface": true,
+  "non_monetization_surface": true,
+  "non_pricing": true,
+  "non_subscription": true,
+  "non_support_surface": true,
+  "non_sponsorship_surface": true,
+  "non_donation_surface": true,
+  "non_paid_report": true,
+  "non_private_access": true,
+  "non_consulting_offer": true,
+  "non_lead_generation": true,
+  "non_sales_surface": true,
+  "non_pitch_deck": true,
+  "non_acquisition_solicitation": true,
+  "non_buyer_solicitation": true,
+  "non_transaction_surface": true,
+  "non_due_diligence_room": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_investment_claim": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true,
+  "route_count_drift_found": false,
+  "stale_copy_found": false,
+  "stale_phase_language_found": false,
+  "stale_release_language_found": false,
+  "sitemap_mismatch_found": false,
+  "route_registry_mismatch_found": false,
+  "public_file_registry_mismatch_found": false,
+  "orphaned_public_page_found": false,
+  "orphaned_discovery_surface_found": false,
+  "missing_public_page_found": false,
+  "broken_internal_link_found": false,
+  "canonical_defect_found": false,
+  "metadata_defect_found": false,
+  "og_defect_found": false,
+  "robots_defect_found": false,
+  "accidental_noindex_found": false,
+  "accidental_public_exposure_found": false,
+  "entry_path_ambiguity_found": false,
+  "role_confusion_found": false,
+  "seo_spam_drift_found": false,
+  "marketing_drift_found": false,
+  "launch_campaign_drift_found": false,
+  "workflow_drift_found": false,
+  "funnel_drift_found": false,
+  "onboarding_drift_found": false,
+  "tool_drift_found": false,
+  "dashboard_drift_found": false,
+  "product_suite_drift_found": false,
+  "service_drift_found": false,
+  "commercial_conversion_drift_found": false,
+  "monetization_drift_found": false,
+  "pricing_drift_found": false,
+  "subscription_drift_found": false,
+  "support_or_sponsorship_drift_found": false,
+  "donation_drift_found": false,
+  "paid_report_drift_found": false,
+  "private_access_drift_found": false,
+  "consulting_offer_drift_found": false,
+  "lead_generation_drift_found": false,
+  "sales_page_drift_found": false,
+  "pitch_deck_drift_found": false,
+  "acquisition_solicitation_drift_found": false,
+  "buyer_solicitation_drift_found": false,
+  "transaction_readiness_drift_found": false,
+  "due_diligence_room_drift_found": false,
+  "legal_or_financial_representation_drift_found": false,
+  "investment_claim_drift_found": false,
+  "authority_claim_drift_found": false,
+  "verification_drift_found": false,
+  "proof_drift_found": false,
+  "detector_drift_found": false,
+  "score_or_verdict_drift_found": false,
+  "case_conclusion_drift_found": false,
+  "governance_inflation_found": false
+}
