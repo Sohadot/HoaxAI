@@ -1509,6 +1509,17 @@
       "status": "active",
       "last_reviewed": "2026-07-04",
       "notes": "Sprint 136 audit-only live public surface parity audit."
+    },
+    {
+      "claim_id": "CLAIM-0138",
+      "claim_text": "Hoax.ai completed Live Deployment Freshness Recheck Audit v1 with 10 recheck records, 10 recheck scenarios (all pass), all five Sprint 136 live freshness failures resolved after empty deployment trigger commit 0a25e37, Sprint 135 release-candidate language and public-reference-release-candidate-integrity visible live on the homepage, system map, and strategic review page, live sitemap confirmed at 104 URLs, no repository repair required, no route expansion, and no new DEC.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md, data/live-deployment-freshness-recheck-audit-v1.json, validators/validate_live_deployment_freshness_recheck_audit_v1.py, SPRINT_137_LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-04",
+      "notes": "Sprint 137 audit-only live deployment freshness recheck."
     }
   ]
 }

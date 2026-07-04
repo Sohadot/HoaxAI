@@ -2112,6 +2112,24 @@
       "failure_condition": "live_public_surface_parity_audit_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 136 live public surface parity audit with 60 records and 60 scenarios, live sitemap at 104 URLs, and no route expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0131",
+      "name": "Live Deployment Freshness Recheck Audit v1 Gate",
+      "status": "live_deployment_freshness_recheck_audit_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_137_LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
+      "failure_condition": "live_deployment_freshness_recheck_audit_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 137 rechecked the five Sprint 136 live freshness failures after empty deployment trigger 0a25e37; all resolved, no route expansion."
     }
   ],
   "last_reviewed": "2026-07-02"

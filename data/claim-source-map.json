@@ -3563,6 +3563,32 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 136 audit-only live public surface parity validation."
+    },
+    {
+      "claim_id": "CLAIM-0138",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
+        "SPRINT_137_LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
+        "data/live-deployment-freshness-recheck-audit-v1.json",
+        "data/live-deployment-freshness-recheck-audit-v1.schema.json",
+        "validators/validate_live_deployment_freshness_recheck_audit_v1.py",
+        "data/live-public-surface-parity-audit-v1.json",
+        "sitemap.xml",
+        "data/route-registry.json"
+      ],
+      "source_refs": [
+        "SOURCE-0924",
+        "SOURCE-0925",
+        "SOURCE-0926",
+        "SOURCE-0927",
+        "SOURCE-0928"
+      ],
+      "support_scope": "live deployment freshness recheck audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 137 audit-only live deployment freshness recheck validation."
     }
   ],
   "last_reviewed": "2026-07-02"
