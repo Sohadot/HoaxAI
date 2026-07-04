@@ -11646,6 +11646,56 @@
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 audit validator."
+    },
+    {
+      "source_id": "SOURCE-0919",
+      "source_title": "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "location": "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 136 live public surface parity audit."
+    },
+    {
+      "source_id": "SOURCE-0920",
+      "source_title": "SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "location": "SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 136 sprint record."
+    },
+    {
+      "source_id": "SOURCE-0921",
+      "source_title": "live-public-surface-parity-audit-v1.json",
+      "source_type": "governance_file",
+      "location": "data/live-public-surface-parity-audit-v1.json",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 136 audit JSON."
+    },
+    {
+      "source_id": "SOURCE-0922",
+      "source_title": "live-public-surface-parity-audit-v1.schema.json",
+      "source_type": "governance_file",
+      "location": "data/live-public-surface-parity-audit-v1.schema.json",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 136 audit schema."
+    },
+    {
+      "source_id": "SOURCE-0923",
+      "source_title": "validate_live_public_surface_parity_audit_v1.py",
+      "source_type": "governance_file",
+      "location": "validators/validate_live_public_surface_parity_audit_v1.py",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 136 audit validator."
     }
   ]
 }

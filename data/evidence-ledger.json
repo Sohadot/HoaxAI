@@ -1498,6 +1498,17 @@
       "status": "active",
       "last_reviewed": "2026-07-03",
       "notes": "Sprint 135 audit-only public reference release candidate integrity."
+    },
+    {
+      "claim_id": "CLAIM-0137",
+      "claim_text": "Hoax.ai completed Live Public Surface Parity Audit v1 with 60 live parity records inventoried (59 safe, 0 repaired, 1 unsafe), 60 live parity scenarios (55 pass, 5 fail), live fetch completed against https://hoax.ai/, live sitemap confirmed at 104 URLs matching the repository sitemap, core sampled routes returning successful responses, and no repository route expansion while recording Sprint 135 release-candidate language as not yet live-visible due to deployment freshness lag rather than a repository validation defect.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md, data/live-public-surface-parity-audit-v1.json, validators/validate_live_public_surface_parity_audit_v1.py, SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-04",
+      "notes": "Sprint 136 audit-only live public surface parity audit."
     }
   ]
 }

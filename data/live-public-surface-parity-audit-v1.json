@@ -1,0 +1,2779 @@
+{
+  "id": "live-public-surface-parity-audit-v1",
+  "name": "Live Public Surface Parity Audit v1",
+  "version": "1.0.0",
+  "sprint": "Sprint 136",
+  "status": "live_public_surface_parity_audit",
+  "audit_only": true,
+  "live_parity_audit": true,
+  "live_base_url": "https://hoax.ai/",
+  "repository_release_candidate_commit": "fe7214d",
+  "production_route_added": false,
+  "public_route_count_before": 104,
+  "public_route_count_after": 104,
+  "repository_sitemap_url_count_expected": 104,
+  "live_sitemap_url_count_expected": 104,
+  "route_registry_count_expected": 104,
+  "public_file_registry_unchanged": true,
+  "live_fetch_completed": true,
+  "live_fetch_timestamp_utc": "2026-07-04T06:48:06.111357+00:00",
+  "live_fetch_environment": "Cursor agent urllib live parity fetch against https://hoax.ai/",
+  "live_access_issue_found": false,
+  "live_access_issue_summary": "",
+  "live_deployment_freshness_confirmed": false,
+  "repository_release_candidate_visible_live": false,
+  "live_parity_records": [
+    {
+      "live_parity_record_id": "LPSP-001",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live homepage status",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage status"
+    },
+    {
+      "live_parity_record_id": "LPSP-002",
+      "repository_page_or_file": "sitemap.xml",
+      "live_url": "https://hoax.ai/sitemap.xml",
+      "record_type": "Live sitemap status",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live sitemap status"
+    },
+    {
+      "live_parity_record_id": "LPSP-003",
+      "repository_page_or_file": "robots.txt",
+      "live_url": "https://hoax.ai/robots.txt",
+      "record_type": "Live robots status",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live robots status"
+    },
+    {
+      "live_parity_record_id": "LPSP-004",
+      "repository_page_or_file": "system-map/index.html",
+      "live_url": "https://hoax.ai/system-map/",
+      "record_type": "Live system map status",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/system-map/; title=Hoax.ai System Map \u2014 Public Reference System Map Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map status"
+    },
+    {
+      "live_parity_record_id": "LPSP-005",
+      "repository_page_or_file": "reading-sequences/index.html",
+      "live_url": "https://hoax.ai/reading-sequences/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reading-sequences/; title=Public Reference Reading Sequences \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route availability"
+    },
+    {
+      "live_parity_record_id": "LPSP-006",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live canonical parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live canonical parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-007",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live title parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live title parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-008",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live meta description parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live meta description parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-009",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live Open Graph parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Open Graph parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-010",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live H1 parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live H1 parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-011",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live route-count parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route-count parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-012",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live phase-status parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live phase-status parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-013",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live release-candidate language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live release-candidate language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-014",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live discovery language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live discovery language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-015",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live entry-path language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live entry-path language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-016",
+      "repository_page_or_file": "strategic-review/index.html",
+      "live_url": "https://hoax.ai/strategic-review/",
+      "record_type": "Live value-integrity language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/strategic-review/; title=Hoax.ai Strategic Review Index \u2014 Public Strategic Review Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live value-integrity language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-017",
+      "repository_page_or_file": "strategic-review/index.html",
+      "live_url": "https://hoax.ai/strategic-review/",
+      "record_type": "Live strategic-review language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/strategic-review/; title=Hoax.ai Strategic Review Index \u2014 Public Strategic Review Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live strategic-review language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-018",
+      "repository_page_or_file": "reading-sequences/index.html",
+      "live_url": "https://hoax.ai/reading-sequences/",
+      "record_type": "Live external-use language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reading-sequences/; title=Public Reference Reading Sequences \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live external-use language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-019",
+      "repository_page_or_file": "evidence-risk/index.html",
+      "live_url": "https://hoax.ai/evidence-risk/",
+      "record_type": "Live evidence-risk boundary language parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/evidence-risk/; title=Evidence Risk \u2014 Hoax.ai Reference",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live evidence-risk boundary language parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-020",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live internal navigation parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live internal navigation parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-021",
+      "repository_page_or_file": "system-map/index.html",
+      "live_url": "https://hoax.ai/system-map/",
+      "record_type": "Live related-page block parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/system-map/; title=Hoax.ai System Map \u2014 Public Reference System Map Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live related-page block parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-022",
+      "repository_page_or_file": "reading-sequences/index.html",
+      "live_url": "https://hoax.ai/reading-sequences/",
+      "record_type": "Live reference block parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reading-sequences/; title=Public Reference Reading Sequences \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live reference block parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-023",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live footer/internal link parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live footer/internal link parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-024",
+      "repository_page_or_file": "robots.txt",
+      "live_url": "https://hoax.ai/robots.txt",
+      "record_type": "Live noindex/robots parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live noindex/robots parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-025",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live commercial-drift check",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live commercial-drift check"
+    },
+    {
+      "live_parity_record_id": "LPSP-026",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live detector/proof/verdict drift check",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live detector/proof/verdict drift check"
+    },
+    {
+      "live_parity_record_id": "LPSP-027",
+      "repository_page_or_file": "acquisition-readiness/index.html",
+      "live_url": "https://hoax.ai/acquisition-readiness/",
+      "record_type": "Live acquisition/sales drift check",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/acquisition-readiness/; title=Hoax.ai Acquisition Readiness \u2014 Strategic Inspectability Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live acquisition/sales drift check"
+    },
+    {
+      "live_parity_record_id": "LPSP-028",
+      "repository_page_or_file": "index.html",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live deployment freshness check",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "unsafe",
+      "http_status": 200,
+      "observed_issue": "Live parity mismatch or access issue recorded",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live deployment freshness check"
+    },
+    {
+      "live_parity_record_id": "LPSP-029",
+      "repository_page_or_file": "CNAME",
+      "live_url": "https://hoax.ai/",
+      "record_type": "Live GitHub Pages parity check",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/; title=Hoax.ai \u2014 Evidence-Risk Intelligence for the Synthetic Media Age",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live GitHub Pages parity check"
+    },
+    {
+      "live_parity_record_id": "LPSP-030",
+      "repository_page_or_file": "entry-points/ai-agents/index.html",
+      "live_url": "https://hoax.ai/entry-points/ai-agents/",
+      "record_type": "Live AI-agent interpretation parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/entry-points/ai-agents/; title=For AI Agents \u2014 Hoax.ai Entry Point",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live AI-agent interpretation parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-031",
+      "repository_page_or_file": "sitemap.xml",
+      "live_url": "https://hoax.ai/sitemap.xml",
+      "record_type": "Live crawler interpretation parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live crawler interpretation parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-032",
+      "repository_page_or_file": "entry-points/human-readers/index.html",
+      "live_url": "https://hoax.ai/entry-points/human-readers/",
+      "record_type": "Live human-reader interpretation parity",
+      "expected_repository_state": "Matches validated 104-route Sprint 135 release candidate",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/entry-points/human-readers/; title=For Human Readers \u2014 Hoax.ai Entry Point",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live human-reader interpretation parity"
+    },
+    {
+      "live_parity_record_id": "LPSP-033",
+      "repository_page_or_file": "retrieval-index/index.html",
+      "live_url": "https://hoax.ai/retrieval-index/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/retrieval-index/; title=Public Reference Retrieval Index \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-034",
+      "repository_page_or_file": "citation-orientation/index.html",
+      "live_url": "https://hoax.ai/citation-orientation/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/citation-orientation/; title=Public Reference Citation Orientation \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-035",
+      "repository_page_or_file": "source-use-orientation/index.html",
+      "live_url": "https://hoax.ai/source-use-orientation/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/source-use-orientation/; title=Public Reference Source Use Orientation \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-036",
+      "repository_page_or_file": "strategic-review/retrieval-and-citation/index.html",
+      "live_url": "https://hoax.ai/strategic-review/retrieval-and-citation/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/strategic-review/retrieval-and-citation/; title=Strategic Review of Retrieval and Citation Readiness \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-037",
+      "repository_page_or_file": "strategic-review/public-reference-depth/index.html",
+      "live_url": "https://hoax.ai/strategic-review/public-reference-depth/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/strategic-review/public-reference-depth/; title=Strategic Review of Public Reference Depth \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-038",
+      "repository_page_or_file": "reviewer-packet/index.html",
+      "live_url": "https://hoax.ai/reviewer-packet/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reviewer-packet/; title=Hoax.ai Reviewer Packet \u2014 Public Reference Packet Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-039",
+      "repository_page_or_file": "reviewer-packet/citation-and-retrieval-map/index.html",
+      "live_url": "https://hoax.ai/reviewer-packet/citation-and-retrieval-map/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reviewer-packet/citation-and-retrieval-map/; title=Citation and Retrieval Map \u2014 Hoax.ai Reviewer Packet",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-040",
+      "repository_page_or_file": "reviewer-packet/public-surface-index/index.html",
+      "live_url": "https://hoax.ai/reviewer-packet/public-surface-index/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reviewer-packet/public-surface-index/; title=Public Surface Index for Reviewers \u2014 Hoax.ai Reviewer Packet",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-041",
+      "repository_page_or_file": "acquisition-readiness/governance-traceability/index.html",
+      "live_url": "https://hoax.ai/acquisition-readiness/governance-traceability/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/acquisition-readiness/governance-traceability/; title=Governance Traceability Readiness \u2014 Production Discipline",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-042",
+      "repository_page_or_file": "external-review/public-surface-checklist/index.html",
+      "live_url": "https://hoax.ai/external-review/public-surface-checklist/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/external-review/public-surface-checklist/; title=Public Surface Review Checklist \u2014 Hoax.ai External Review",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-043",
+      "repository_page_or_file": "entry-points/index.html",
+      "live_url": "https://hoax.ai/entry-points/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/entry-points/; title=Hoax.ai Entry Points \u2014 Strategic Reference Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-044",
+      "repository_page_or_file": "route-groups/review-and-overview-layers/index.html",
+      "live_url": "https://hoax.ai/route-groups/review-and-overview-layers/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/route-groups/review-and-overview-layers/; title=Route Group Deepening: Review and Overview Layers \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-045",
+      "repository_page_or_file": "route-groups/evidence-risk-pathways/index.html",
+      "live_url": "https://hoax.ai/route-groups/evidence-risk-pathways/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/route-groups/evidence-risk-pathways/; title=Route Group Deepening: Evidence-Risk Pathways \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-046",
+      "repository_page_or_file": "audience-paths/ai-agents/index.html",
+      "live_url": "https://hoax.ai/audience-paths/ai-agents/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/audience-paths/ai-agents/; title=Audience Path for AI Agents \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-047",
+      "repository_page_or_file": "audience-paths/research-reviewers/index.html",
+      "live_url": "https://hoax.ai/audience-paths/research-reviewers/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/audience-paths/research-reviewers/; title=Audience Path for Research Reviewers \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-048",
+      "repository_page_or_file": "narrative/index.html",
+      "live_url": "https://hoax.ai/narrative/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/narrative/; title=Hoax.ai Strategic Narrative \u2014 Category Thesis Hub",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-049",
+      "repository_page_or_file": "narrative/reference-before-detection/index.html",
+      "live_url": "https://hoax.ai/narrative/reference-before-detection/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/narrative/reference-before-detection/; title=Reference Before Detection \u2014 Hoax.ai Strategic Narrative",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-050",
+      "repository_page_or_file": "evidence-risk/index.html",
+      "live_url": "https://hoax.ai/evidence-risk/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/evidence-risk/; title=Evidence Risk \u2014 Hoax.ai Reference",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-051",
+      "repository_page_or_file": "boundary-integrity/index.html",
+      "live_url": "https://hoax.ai/boundary-integrity/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/boundary-integrity/; title=Boundary Integrity \u2014 Hoax.ai Reference",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-052",
+      "repository_page_or_file": "evidence-conditions/index.html",
+      "live_url": "https://hoax.ai/evidence-conditions/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/evidence-conditions/; title=Hoax.ai Evidence Conditions",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-053",
+      "repository_page_or_file": "evidence-conditions/crosswalk/index.html",
+      "live_url": "https://hoax.ai/evidence-conditions/crosswalk/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/evidence-conditions/crosswalk/; title=Evidence Condition Crosswalk \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-054",
+      "repository_page_or_file": "reference/claim-source-traceability/index.html",
+      "live_url": "https://hoax.ai/reference/claim-source-traceability/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reference/claim-source-traceability/; title=Claim\u2013Source Traceability \u2014 Hoax.ai Reference",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-055",
+      "repository_page_or_file": "reference/source-confidence/index.html",
+      "live_url": "https://hoax.ai/reference/source-confidence/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/reference/source-confidence/; title=Source Confidence \u2014 Hoax.ai Reference",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-056",
+      "repository_page_or_file": "standard/evidence-posture/index.html",
+      "live_url": "https://hoax.ai/standard/evidence-posture/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/standard/evidence-posture/; title=Hoax.ai Evidence Posture Standard v1",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-057",
+      "repository_page_or_file": "protocol/evidence-posture/index.html",
+      "live_url": "https://hoax.ai/protocol/evidence-posture/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/protocol/evidence-posture/; title=Hoax.ai Evidence Posture Protocol v1 Draft",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-058",
+      "repository_page_or_file": "manual-evidence-checklist/index.html",
+      "live_url": "https://hoax.ai/manual-evidence-checklist/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/manual-evidence-checklist/; title=Manual Evidence Checklist \u2014 Hoax.ai Public Utility",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-059",
+      "repository_page_or_file": "system-map/ai-retrieval-paths/index.html",
+      "live_url": "https://hoax.ai/system-map/ai-retrieval-paths/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/system-map/ai-retrieval-paths/; title=System Map for AI Retrieval Paths \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    },
+    {
+      "live_parity_record_id": "LPSP-060",
+      "repository_page_or_file": "system-map/human-review-paths/index.html",
+      "live_url": "https://hoax.ai/system-map/human-review-paths/",
+      "record_type": "Live route availability",
+      "expected_repository_state": "Registered repository route is live-visible and boundary-safe",
+      "actual_live_state": "HTTP 200; canonical=https://hoax.ai/system-map/human-review-paths/; title=System Map for Human Review Paths \u2014 Hoax.ai",
+      "parity_status": "safe",
+      "http_status": 200,
+      "observed_issue": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route sample is part of the validated public surface."
+    }
+  ],
+  "total_live_parity_records": 60,
+  "live_parity_records_safe": 59,
+  "live_parity_records_repaired": 0,
+  "live_parity_records_unsafe": 1,
+  "walkthrough_scenarios": [
+    {
+      "scenario_id": "LPSP-SCENARIO-001",
+      "live_parity_intent": "Live homepage returns a successful HTTP response",
+      "repository_pages_checked": [
+        "index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage returns a successful HTTP response"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-002",
+      "live_parity_intent": "Live sitemap returns a successful HTTP response",
+      "repository_pages_checked": [
+        "sitemap.xml"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/sitemap.xml"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live sitemap returns a successful HTTP response"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-003",
+      "live_parity_intent": "Live robots.txt returns a successful HTTP response",
+      "repository_pages_checked": [
+        "robots.txt"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/robots.txt"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live robots.txt returns a successful HTTP response"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-004",
+      "live_parity_intent": "Live sitemap contains exactly 104 URLs",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live sitemap contains exactly 104 URLs"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-005",
+      "live_parity_intent": "Live sitemap URL count matches repository sitemap count",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live sitemap URL count matches repository sitemap count"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-006",
+      "live_parity_intent": "Live sitemap route set matches repository sitemap route set",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live sitemap route set matches repository sitemap route set"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-007",
+      "live_parity_intent": "Live robots references the live sitemap",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live robots references the live sitemap"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-008",
+      "live_parity_intent": "Live robots does not block intended public routes",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live robots does not block intended public routes"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-009",
+      "live_parity_intent": "Live homepage canonical points to the correct Hoax.ai URL",
+      "repository_pages_checked": [
+        "index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage canonical points to the correct Hoax.ai URL"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-010",
+      "live_parity_intent": "Live system map canonical points to the correct Hoax.ai URL",
+      "repository_pages_checked": [
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map canonical points to the correct Hoax.ai URL"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-011",
+      "live_parity_intent": "Live homepage title and meta description match repository intent",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage title and meta description match repository intent"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-012",
+      "live_parity_intent": "Live system map title and meta description match repository intent",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map title and meta description match repository intent"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-013",
+      "live_parity_intent": "Live Open Graph tags on homepage are reference-grade, not launch or sales oriented",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Open Graph tags on homepage are reference-grade, not launch or sales oriented"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-014",
+      "live_parity_intent": "Live homepage reflects the current 104-route public surface",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage reflects the current 104-route public surface"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-015",
+      "live_parity_intent": "Live system map reflects the current 104-route public surface",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map reflects the current 104-route public surface"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-016",
+      "live_parity_intent": "Live homepage contains no stale 88/100/101/102/103 route-count language",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage contains no stale 88/100/101/102/103 route-count language"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-017",
+      "live_parity_intent": "Live system map contains no stale 88/100/101/102/103 route-count language",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map contains no stale 88/100/101/102/103 route-count language"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-018",
+      "live_parity_intent": "Live Phase 2 routes are reachable",
+      "repository_pages_checked": [
+        "reading-sequences/index.html",
+        "retrieval-index/index.html",
+        "citation-orientation/index.html",
+        "source-use-orientation/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/reading-sequences/",
+        "https://hoax.ai/retrieval-index/",
+        "https://hoax.ai/citation-orientation/",
+        "https://hoax.ai/source-use-orientation/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 2 routes are reachable"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-019",
+      "live_parity_intent": "Live reading sequences is reachable and reads as reference navigation, not workflow",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live reading sequences is reachable and reads as reference navigation, not workflow"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-020",
+      "live_parity_intent": "Live retrieval index is reachable and reads as citation-safe route organization, not search engine",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live retrieval index is reachable and reads as citation-safe route organization, not search engine"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-021",
+      "live_parity_intent": "Live citation orientation is reachable and reads as citation guidance, not citation generator or legal citation service",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live citation orientation is reachable and reads as citation guidance, not citation generator or legal citation service"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-022",
+      "live_parity_intent": "Live source-use orientation is reachable and reads as source boundary explanation, not proof or certification",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live source-use orientation is reachable and reads as source boundary explanation, not proof or certification"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-023",
+      "live_parity_intent": "Live Phase 3 strategic-review routes are reachable",
+      "repository_pages_checked": [
+        "strategic-review/index.html",
+        "reviewer-packet/index.html",
+        "acquisition-readiness/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/strategic-review/",
+        "https://hoax.ai/reviewer-packet/",
+        "https://hoax.ai/acquisition-readiness/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 3 strategic-review routes are reachable"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-024",
+      "live_parity_intent": "Live strategic review reads as reviewer legibility, not pitch deck or sales page",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live strategic review reads as reviewer legibility, not pitch deck or sales page"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-025",
+      "live_parity_intent": "Live reviewer-packet pages read as public review support, not buyer packet or paid report",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live reviewer-packet pages read as public review support, not buyer packet or paid report"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-026",
+      "live_parity_intent": "Live acquisition-readiness pages read as acquisition-readability, not acquisition solicitation",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live acquisition-readiness pages read as acquisition-readability, not acquisition solicitation"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-027",
+      "live_parity_intent": "Live Phase 4 value-integrity language remains discoverable",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 4 value-integrity language remains discoverable"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-028",
+      "live_parity_intent": "Live Phase 4 value-integrity language reads as non-transactional value clarity, not monetization",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 4 value-integrity language reads as non-transactional value clarity, not monetization"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-029",
+      "live_parity_intent": "Live Phase 5 discovery integrity language remains discoverable",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 5 discovery integrity language remains discoverable"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-030",
+      "live_parity_intent": "Live Phase 5 discovery language reads as public discovery integrity, not SEO campaign or marketing launch",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live Phase 5 discovery language reads as public discovery integrity, not SEO campaign or marketing launch"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-031",
+      "live_parity_intent": "Live release-candidate language remains discoverable",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Live parity issue recorded separately from repository validation",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "fail",
+      "observed_issue": "Live parity scenario did not meet expected repository release-candidate state",
+      "deferred_reason": "Live issue recorded for deployment parity; repository invariants remain validated",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live release-candidate language remains discoverable"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-032",
+      "live_parity_intent": "Live release-candidate language does not create launch page, press, announcement, or official certification implication",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live release-candidate language does not create launch page, press, announcement, or official certification implication"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-033",
+      "live_parity_intent": "Live homepage internal links to system map and major layers resolve",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live homepage internal links to system map and major layers resolve"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-034",
+      "live_parity_intent": "Live system map internal links to major layers resolve",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live system map internal links to major layers resolve"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-035",
+      "live_parity_intent": "Live route-group sample pages are reachable and do not read as SEO spam",
+      "repository_pages_checked": [
+        "route-groups/review-and-overview-layers/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/route-groups/review-and-overview-layers/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live route-group sample pages are reachable and do not read as SEO spam"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-036",
+      "live_parity_intent": "Live audience-path sample pages are reachable and do not read as persona funnels",
+      "repository_pages_checked": [
+        "audience-paths/ai-agents/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/audience-paths/ai-agents/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live audience-path sample pages are reachable and do not read as persona funnels"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-037",
+      "live_parity_intent": "Live narrative sample pages are reachable and do not create commercial drift",
+      "repository_pages_checked": [
+        "narrative/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/narrative/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live narrative sample pages are reachable and do not create commercial drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-038",
+      "live_parity_intent": "Live core concept sample pages are reachable and do not create detector/proof/verdict drift",
+      "repository_pages_checked": [
+        "evidence-risk/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/evidence-risk/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live core concept sample pages are reachable and do not create detector/proof/verdict drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-039",
+      "live_parity_intent": "Live evidence condition sample pages are reachable and do not create case-conclusion drift",
+      "repository_pages_checked": [
+        "evidence-conditions/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/evidence-conditions/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live evidence condition sample pages are reachable and do not create case-conclusion drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-040",
+      "live_parity_intent": "Live external-review public-surface checklist supports reviewability without private due-diligence behavior",
+      "repository_pages_checked": [
+        "external-review/public-surface-checklist/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/external-review/public-surface-checklist/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live external-review public-surface checklist supports reviewability without private due-diligence behavior"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-041",
+      "live_parity_intent": "Live internal navigation does not create commercial conversion behavior",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live internal navigation does not create commercial conversion behavior"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-042",
+      "live_parity_intent": "Live related-page blocks do not create workflow, product-suite, or service drift",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live related-page blocks do not create workflow, product-suite, or service drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-043",
+      "live_parity_intent": "Live reference blocks do not create certification, proof, verification, detector, score, verdict, or case-conclusion drift",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live reference blocks do not create certification, proof, verification, detector, score, verdict, or case-conclusion drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-044",
+      "live_parity_intent": "Live metadata does not create launch, marketing, sales, acquisition, monetization, pricing, subscription, support, sponsorship, donation, consulting, or lead-generation drift",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live metadata does not create launch, marketing, sales, acquisition, monetization, pricing, subscription, support, sponsorship, donation, consulting, or lead-generation drift"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-045",
+      "live_parity_intent": "Live pages contain no accidental noindex on intended public routes",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live pages contain no accidental noindex on intended public routes"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-046",
+      "live_parity_intent": "Live canonical URLs do not point to stale or wrong repository routes",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live canonical URLs do not point to stale or wrong repository routes"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-047",
+      "live_parity_intent": "Live public surface does not expose non-public artifacts as public routes",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface does not expose non-public artifacts as public routes"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-048",
+      "live_parity_intent": "Live 104-route surface does not have a missing route sampled from repository sitemap",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live 104-route surface does not have a missing route sampled from repository sitemap"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-049",
+      "live_parity_intent": "Live public surface does not show stale deployment from before Sprint 135 on homepage",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Live parity issue recorded separately from repository validation",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "fail",
+      "observed_issue": "Live parity scenario did not meet expected repository release-candidate state",
+      "deferred_reason": "Live issue recorded for deployment parity; repository invariants remain validated",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface does not show stale deployment from before Sprint 135 on homepage"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-050",
+      "live_parity_intent": "Live public surface does not show stale deployment from before Sprint 135 on system map",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Live parity issue recorded separately from repository validation",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "fail",
+      "observed_issue": "Live parity scenario did not meet expected repository release-candidate state",
+      "deferred_reason": "Live issue recorded for deployment parity; repository invariants remain validated",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface does not show stale deployment from before Sprint 135 on system map"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-051",
+      "live_parity_intent": "Live public surface does not show stale deployment from before Sprint 135 on Sprint 135-patched pages",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Live parity issue recorded separately from repository validation",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "fail",
+      "observed_issue": "Live parity scenario did not meet expected repository release-candidate state",
+      "deferred_reason": "Live issue recorded for deployment parity; repository invariants remain validated",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface does not show stale deployment from before Sprint 135 on Sprint 135-patched pages"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-052",
+      "live_parity_intent": "Live public surface preserves Phase 1-5 coherence",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface preserves Phase 1-5 coherence"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-053",
+      "live_parity_intent": "Live public surface can be interpreted by a human as a governed public reference system",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface can be interpreted by a human as a governed public reference system"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-054",
+      "live_parity_intent": "Live public surface can be interpreted by a crawler as a coherent indexable site",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface can be interpreted by a crawler as a coherent indexable site"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-055",
+      "live_parity_intent": "Live public surface can be interpreted by an AI agent without inventing product, service, tool, workflow, commercial, detection, verification, sales, acquisition, investment, or authority claims",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live public surface can be interpreted by an AI agent without inventing product, service, tool, workflow, commercial, detection, verification, sales, acquisition, investment, or authority claims"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-056",
+      "live_parity_intent": "Live deployment queue or deployment lag, if observed, is recorded as deployment parity status, not repository validation failure",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live deployment queue or deployment lag, if observed, is recorded as deployment parity status, not repository validation failure"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-057",
+      "live_parity_intent": "Live parity can be confirmed without creating a new route",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live parity can be confirmed without creating a new route"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-058",
+      "live_parity_intent": "Live parity can be confirmed without creating a release page or launch page",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live parity can be confirmed without creating a release page or launch page"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-059",
+      "live_parity_intent": "Live parity can be confirmed without creating a new DEC unless a concrete production defect required one",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Confirmed live parity",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "pass",
+      "observed_issue": "",
+      "deferred_reason": "",
+      "repair_applied": "",
+      "live_parity_check": "confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "Live parity can be confirmed without creating a new DEC unless a concrete production defect required one"
+    },
+    {
+      "scenario_id": "LPSP-SCENARIO-060",
+      "live_parity_intent": "The deployed Hoax.ai surface matches the validated repository release candidate sufficiently to treat Sprint 135 as live-visible",
+      "repository_pages_checked": [
+        "index.html",
+        "system-map/index.html"
+      ],
+      "live_urls_checked": [
+        "https://hoax.ai/",
+        "https://hoax.ai/system-map/"
+      ],
+      "expected_safe_interpretation": "Live site matches the validated 104-route governed public reference release candidate without launch, marketing, commercial, detector, proof, verdict, or governance-inflation drift.",
+      "actual_live_interpretation": "Live parity issue recorded separately from repository validation",
+      "supporting_routes_or_artifacts": [
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md"
+      ],
+      "result": "fail",
+      "observed_issue": "Live parity scenario did not meet expected repository release-candidate state",
+      "deferred_reason": "Live issue recorded for deployment parity; repository invariants remain validated",
+      "repair_applied": "",
+      "live_parity_check": "not_confirmed",
+      "repository_integrity_check": "confirmed",
+      "boundary_check": "confirmed",
+      "ai_agent_note": "The deployed Hoax.ai surface matches the validated repository release candidate sufficiently to treat Sprint 135 as live-visible"
+    }
+  ],
+  "total_scenarios": 60,
+  "scenarios_passed": 55,
+  "scenarios_failed": 5,
+  "repairs_applied": [],
+  "new_decision_created": false,
+  "route_registry_changed": false,
+  "public_file_registry_changed": false,
+  "sitemap_changed": false,
+  "no_new_routes": true,
+  "observed_live_sitemap_url_count": 104,
+  "observed_repository_sitemap_url_count": 104,
+  "sampled_live_route_count": 37,
+  "live_surface_parity_confirmed": false,
+  "repository_integrity_confirmed": true,
+  "sitemap_parity_confirmed": true,
+  "robots_parity_confirmed": true,
+  "route_availability_confirmed": true,
+  "canonical_parity_confirmed": true,
+  "metadata_parity_confirmed": true,
+  "open_graph_parity_confirmed": true,
+  "homepage_parity_confirmed": true,
+  "system_map_parity_confirmed": true,
+  "phase_2_live_visibility_confirmed": true,
+  "phase_3_live_visibility_confirmed": true,
+  "phase_4_live_visibility_confirmed": false,
+  "phase_5_live_visibility_confirmed": false,
+  "release_candidate_live_visibility_confirmed": false,
+  "live_internal_link_integrity_confirmed": true,
+  "live_crawler_readability_confirmed": true,
+  "live_ai_agent_readability_confirmed": false,
+  "live_human_reader_interpretation_confirmed": false,
+  "live_route_count_drift_found": false,
+  "stale_live_deployment_found": true,
+  "live_sitemap_mismatch_found": false,
+  "live_robots_mismatch_found": false,
+  "live_route_missing_found": false,
+  "live_canonical_defect_found": false,
+  "live_metadata_defect_found": false,
+  "live_og_defect_found": false,
+  "live_internal_link_defect_found": false,
+  "live_accidental_noindex_found": false,
+  "live_accidental_public_exposure_found": false,
+  "live_stale_copy_found": true,
+  "live_stale_phase_language_found": false,
+  "live_stale_release_language_found": false,
+  "live_commercial_drift_found": false,
+  "live_marketing_drift_found": false,
+  "live_launch_campaign_drift_found": false,
+  "live_seo_spam_drift_found": false,
+  "live_workflow_drift_found": false,
+  "live_funnel_drift_found": false,
+  "live_tool_drift_found": false,
+  "live_dashboard_drift_found": false,
+  "live_product_suite_drift_found": false,
+  "live_service_drift_found": false,
+  "live_commercial_conversion_drift_found": false,
+  "live_monetization_drift_found": false,
+  "live_pricing_drift_found": false,
+  "live_subscription_drift_found": false,
+  "live_support_or_sponsorship_drift_found": false,
+  "live_donation_drift_found": false,
+  "live_paid_report_drift_found": false,
+  "live_private_access_drift_found": false,
+  "live_consulting_offer_drift_found": false,
+  "live_lead_generation_drift_found": false,
+  "live_sales_page_drift_found": false,
+  "live_pitch_deck_drift_found": false,
+  "live_acquisition_solicitation_drift_found": false,
+  "live_buyer_solicitation_drift_found": false,
+  "live_transaction_readiness_drift_found": false,
+  "live_due_diligence_room_drift_found": false,
+  "live_legal_or_financial_representation_drift_found": false,
+  "live_investment_claim_drift_found": false,
+  "live_authority_claim_drift_found": false,
+  "live_verification_drift_found": false,
+  "live_proof_drift_found": false,
+  "live_detector_drift_found": false,
+  "live_score_or_verdict_drift_found": false,
+  "live_case_conclusion_drift_found": false,
+  "live_audit_as_certification_drift_found": false,
+  "live_source_as_proof_drift_found": false,
+  "governance_inflation_found": false,
+  "non_live_status_page": true,
+  "non_deployment_page": true,
+  "non_release_page": true,
+  "non_launch_page": true,
+  "non_marketing_surface": true,
+  "non_seo_spam_surface": true,
+  "non_workflow_surface": true,
+  "non_funnel_surface": true,
+  "non_onboarding_surface": true,
+  "non_tool_surface": true,
+  "non_dashboard_surface": true,
+  "non_product_suite_surface": true,
+  "non_service_surface": true,
+  "non_commercial_surface": true,
+  "non_monetization_surface": true,
+  "non_pricing": true,
+  "non_subscription": true,
+  "non_support_surface": true,
+  "non_sponsorship_surface": true,
+  "non_donation": true,
+  "non_paid_report": true,
+  "non_private_access": true,
+  "non_consulting_offer": true,
+  "non_lead_generation": true,
+  "non_sales_surface": true,
+  "non_pitch_deck": true,
+  "non_acquisition_solicitation": true,
+  "non_buyer_solicitation": true,
+  "non_transaction_surface": true,
+  "non_due_diligence_room": true,
+  "non_legal_representation": true,
+  "non_financial_representation": true,
+  "non_investment_claim": true,
+  "non_authority_claim": true,
+  "non_verification_claim": true,
+  "non_proof": true,
+  "non_detector": true,
+  "non_scoring": true,
+  "non_verdict": true,
+  "non_case_conclusion": true
+}

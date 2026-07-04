@@ -3535,6 +3535,34 @@
       "traceability_status": "traceable",
       "public_surface_refs": [],
       "notes": "Sprint 135 audit-only public reference release candidate integrity validation."
+    },
+    {
+      "claim_id": "CLAIM-0137",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_locations": [
+        "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+        "SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
+        "data/live-public-surface-parity-audit-v1.json",
+        "data/live-public-surface-parity-audit-v1.schema.json",
+        "validators/validate_live_public_surface_parity_audit_v1.py",
+        "CNAME",
+        "sitemap.xml",
+        "robots.txt",
+        "data/route-registry.json",
+        "data/public-file-registry.json"
+      ],
+      "source_refs": [
+        "SOURCE-0919",
+        "SOURCE-0920",
+        "SOURCE-0921",
+        "SOURCE-0922",
+        "SOURCE-0923"
+      ],
+      "support_scope": "live public surface parity audit v1",
+      "traceability_status": "traceable",
+      "public_surface_refs": [],
+      "notes": "Sprint 136 audit-only live public surface parity validation."
     }
   ],
   "last_reviewed": "2026-07-02"
