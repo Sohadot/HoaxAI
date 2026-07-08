@@ -182,6 +182,44 @@ strong {
   margin-bottom: 0;
 }
 
+.reader-entry-bridge {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--amber-border, #c9a227);
+  padding-left: 1rem;
+}
+
+.reference-pull-quote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--amber-text);
+  background: rgba(201, 162, 39, 0.06);
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.reference-pull-quote p {
+  margin: 0;
+}
+
+.fictional-example {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+}
+
+.fictional-example h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ol.ordered-chain {
+  list-style: decimal;
+  margin-left: 1.25rem;
+}
+
 .thesis-lead {
   font-size: 1.1rem;
   color: var(--text-secondary);
