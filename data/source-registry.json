@@ -9425,9 +9425,9 @@
     },
     {
       "source_id": "SOURCE-0732",
-      "source_title": "system-map/index.html",
+      "source_title": "about-this-reference/index.html",
       "source_type": "internal_governance",
-      "location": "system-map/index.html",
+      "location": "about-this-reference/index.html",
       "supports": [
         "governance_claim",
         "operational_claim"
@@ -9880,9 +9880,9 @@
     },
     {
       "source_id": "SOURCE-0767",
-      "source_title": "system-map/index.html",
+      "source_title": "about-this-reference/index.html",
       "source_type": "public_reference_page",
-      "location": "system-map/index.html",
+      "location": "about-this-reference/index.html",
       "supports": [
         "governance_claim",
         "operational_claim"
@@ -10043,9 +10043,9 @@
     },
     {
       "source_id": "SOURCE-0780",
-      "source_title": "system-map/index.html",
+      "source_title": "about-this-reference/index.html",
       "source_type": "public_reference_page",
-      "location": "system-map/index.html",
+      "location": "about-this-reference/index.html",
       "supports": [
         "governance_claim",
         "operational_claim"
@@ -11302,7 +11302,9 @@
       "source_title": "PUBLIC_REFERENCE_VALUE_BOUNDARY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_VALUE_BOUNDARY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 129 value boundary audit."
@@ -11312,7 +11314,9 @@
       "source_title": "SPRINT_129_PUBLIC_REFERENCE_VALUE_BOUNDARY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_129_PUBLIC_REFERENCE_VALUE_BOUNDARY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 129 sprint record."
@@ -11322,7 +11326,9 @@
       "source_title": "public-reference-value-boundary-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-value-boundary-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 129 audit JSON."
@@ -11332,7 +11338,9 @@
       "source_title": "public-reference-value-boundary-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-value-boundary-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 129 audit schema."
@@ -11342,7 +11350,9 @@
       "source_title": "validate_public_reference_value_boundary_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_value_boundary_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 129 audit validator."
@@ -11352,7 +11362,9 @@
       "source_title": "PUBLIC_REFERENCE_NON_TRANSACTIONAL_REVENUE_BOUNDARY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_NON_TRANSACTIONAL_REVENUE_BOUNDARY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 revenue boundary audit."
@@ -11362,7 +11374,9 @@
       "source_title": "SPRINT_130_PUBLIC_REFERENCE_NON_TRANSACTIONAL_REVENUE_BOUNDARY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_130_PUBLIC_REFERENCE_NON_TRANSACTIONAL_REVENUE_BOUNDARY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 sprint record."
@@ -11372,7 +11386,9 @@
       "source_title": "public-reference-non-transactional-revenue-boundary-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-non-transactional-revenue-boundary-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 audit JSON."
@@ -11382,7 +11398,9 @@
       "source_title": "public-reference-non-transactional-revenue-boundary-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-non-transactional-revenue-boundary-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 audit schema."
@@ -11392,7 +11410,9 @@
       "source_title": "validate_public_reference_non_transactional_revenue_boundary_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_non_transactional_revenue_boundary_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 130 audit validator."
@@ -11402,7 +11422,9 @@
       "source_title": "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 131 value integrity closure audit."
@@ -11412,7 +11434,9 @@
       "source_title": "SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_131_PUBLIC_REFERENCE_VALUE_INTEGRITY_CLOSURE_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 131 sprint record."
@@ -11422,7 +11446,9 @@
       "source_title": "public-reference-value-integrity-closure-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-value-integrity-closure-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 131 audit JSON."
@@ -11432,7 +11458,9 @@
       "source_title": "public-reference-value-integrity-closure-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-value-integrity-closure-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 131 audit schema."
@@ -11442,7 +11470,9 @@
       "source_title": "validate_public_reference_value_integrity_closure_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_value_integrity_closure_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 131 audit validator."
@@ -11452,7 +11482,9 @@
       "source_title": "PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 132 release indexation audit."
@@ -11462,7 +11494,9 @@
       "source_title": "SPRINT_132_PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_132_PUBLIC_RELEASE_INDEXATION_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 132 sprint record."
@@ -11472,7 +11506,9 @@
       "source_title": "public-release-indexation-integrity-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-release-indexation-integrity-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 132 audit JSON."
@@ -11482,7 +11518,9 @@
       "source_title": "public-release-indexation-integrity-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-release-indexation-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 132 audit schema."
@@ -11492,7 +11530,9 @@
       "source_title": "validate_public_release_indexation_integrity_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_release_indexation_integrity_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 132 audit validator."
@@ -11502,7 +11542,9 @@
       "source_title": "PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 133 entry path audit."
@@ -11512,7 +11554,9 @@
       "source_title": "SPRINT_133_PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_133_PUBLIC_ENTRY_PATH_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 133 sprint record."
@@ -11522,7 +11566,9 @@
       "source_title": "public-entry-path-integrity-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-entry-path-integrity-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 133 audit JSON."
@@ -11532,7 +11578,9 @@
       "source_title": "public-entry-path-integrity-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-entry-path-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 133 audit schema."
@@ -11542,7 +11590,9 @@
       "source_title": "validate_public_entry_path_integrity_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_entry_path_integrity_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 133 audit validator."
@@ -11552,7 +11602,9 @@
       "source_title": "PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 134 discovery integrity closure audit."
@@ -11562,7 +11614,9 @@
       "source_title": "SPRINT_134_PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_134_PUBLIC_DISCOVERY_INTEGRITY_CLOSURE_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 134 sprint record."
@@ -11572,7 +11626,9 @@
       "source_title": "public-discovery-integrity-closure-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-discovery-integrity-closure-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 134 audit JSON."
@@ -11582,7 +11638,9 @@
       "source_title": "public-discovery-integrity-closure-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-discovery-integrity-closure-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 134 audit schema."
@@ -11592,7 +11650,9 @@
       "source_title": "validate_public_discovery_integrity_closure_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_discovery_integrity_closure_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 134 audit validator."
@@ -11602,7 +11662,9 @@
       "source_title": "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 release candidate integrity audit."
@@ -11612,7 +11674,9 @@
       "source_title": "SPRINT_135_PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_135_PUBLIC_REFERENCE_RELEASE_CANDIDATE_INTEGRITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 sprint record."
@@ -11622,7 +11686,9 @@
       "source_title": "public-reference-release-candidate-integrity-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/public-reference-release-candidate-integrity-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 audit JSON."
@@ -11632,7 +11698,9 @@
       "source_title": "public-reference-release-candidate-integrity-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/public-reference-release-candidate-integrity-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 audit schema."
@@ -11642,7 +11710,9 @@
       "source_title": "validate_public_reference_release_candidate_integrity_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_public_reference_release_candidate_integrity_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 135 audit validator."
@@ -11652,7 +11722,9 @@
       "source_title": "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 136 live public surface parity audit."
@@ -11662,7 +11734,9 @@
       "source_title": "SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_136_LIVE_PUBLIC_SURFACE_PARITY_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 136 sprint record."
@@ -11672,7 +11746,9 @@
       "source_title": "live-public-surface-parity-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/live-public-surface-parity-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 136 audit JSON."
@@ -11682,7 +11758,9 @@
       "source_title": "live-public-surface-parity-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/live-public-surface-parity-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 136 audit schema."
@@ -11692,7 +11770,9 @@
       "source_title": "validate_live_public_surface_parity_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_live_public_surface_parity_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 136 audit validator."
@@ -11702,7 +11782,9 @@
       "source_title": "LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 137 live deployment freshness recheck audit."
@@ -11712,7 +11794,9 @@
       "source_title": "SPRINT_137_LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
       "source_type": "governance_file",
       "location": "SPRINT_137_LIVE_DEPLOYMENT_FRESHNESS_RECHECK_AUDIT_V1.md",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 137 sprint record."
@@ -11722,7 +11806,9 @@
       "source_title": "live-deployment-freshness-recheck-audit-v1.json",
       "source_type": "governance_file",
       "location": "data/live-deployment-freshness-recheck-audit-v1.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 137 audit JSON."
@@ -11732,7 +11818,9 @@
       "source_title": "live-deployment-freshness-recheck-audit-v1.schema.json",
       "source_type": "governance_file",
       "location": "data/live-deployment-freshness-recheck-audit-v1.schema.json",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 137 audit schema."
@@ -11742,10 +11830,62 @@
       "source_title": "validate_live_deployment_freshness_recheck_audit_v1.py",
       "source_type": "governance_file",
       "location": "validators/validate_live_deployment_freshness_recheck_audit_v1.py",
-      "supports": ["governance_claim"],
+      "supports": [
+        "governance_claim"
+      ],
       "reliability_posture": "repository_authoritative",
       "status": "active",
       "notes": "Sprint 137 audit validator."
+    },
+    {
+      "source_id": "SOURCE-0929",
+      "source_title": "SPRINT_138_PUBLIC_SURFACE_REBALANCE_PASS.md",
+      "source_type": "governance_file",
+      "location": "SPRINT_138_PUBLIC_SURFACE_REBALANCE_PASS.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 138 production rebalance sprint doc."
+    },
+    {
+      "source_id": "SOURCE-0930",
+      "source_title": "DECISION_LOG.md",
+      "source_type": "governance_file",
+      "location": "DECISION_LOG.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "DEC-139 public surface rebalance decision."
+    },
+    {
+      "source_id": "SOURCE-0931",
+      "source_title": "CHANGELOG.md",
+      "source_type": "governance_file",
+      "location": "CHANGELOG.md",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint history relocated from README."
+    },
+    {
+      "source_id": "SOURCE-0932",
+      "source_title": "validate_public_surface_rebalance_pass_v1.py",
+      "source_type": "governance_file",
+      "location": "validators/validate_public_surface_rebalance_pass_v1.py",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 138 acceptance validator."
+    },
+    {
+      "source_id": "SOURCE-0933",
+      "source_title": "about-this-reference/index.html",
+      "source_type": "public_surface",
+      "location": "about-this-reference/index.html",
+      "supports": ["governance_claim"],
+      "reliability_posture": "repository_authoritative",
+      "status": "active",
+      "notes": "Sprint 138 consolidated orientation route."
     }
   ]
 }

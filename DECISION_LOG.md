@@ -3565,3 +3565,59 @@ At 104 routes, source-backed public reference claims require explicit orientatio
 - Source use orientation is static reference guidance only.
 - Proof claims, verification claims, authority certification, source endorsement, detector evidence, score basis, verdict support, and transaction behavior remain unauthorized.
 
+## DEC-139 — Public Surface Rebalance and Audit Sprint Freeze
+
+**Date:** 2026-07-08
+**Status:** Active
+
+### Decision
+
+Hoax.ai will stop creating sequential audit-only sprints unless the audit is directly attached to one of the following:
+
+1. a newly released public route;
+2. a live deployment defect;
+3. a search/indexation defect;
+4. a reader confusion signal from external use;
+5. a production-facing content, metadata, sitemap, or route defect.
+
+Audit-only sprints must not continue as a chain of governance validating governance.
+
+Hoax.ai will also rebalance its public surface so that indexable public routes primarily teach evidence, synthetic media, misinformation, provenance, source confidence, context, traceability, and evidence posture — not Hoax.ai's own acquisition readiness, review readiness, governance history, or internal operating structure.
+
+### Rationale
+
+Hoax.ai's value comes from becoming a category reference layer for evidence interpretation in the synthetic media age.
+
+A public reference asset should demonstrate authority through useful reference substance, not through excessive public explanation of its own readiness, reviewability, or acquisition logic.
+
+The public surface must make the category stronger, not make the asset look like it is advertising its own strategic value.
+
+### Implications
+
+- No new audit-only sprint may be opened unless it is tied to a concrete production change or defect.
+- Public self-referential routes must be consolidated, removed from sitemap, noindexed, or moved into repository documentation where appropriate.
+- Acquisition-readiness language must not appear as a public indexed surface unless it also teaches category substance.
+- README must become a concise entry document: thesis, live routes, standard, protocol, utilities, boundaries, and current status.
+- Sprint history must move to CHANGELOG.md or a dedicated internal release log.
+- Public route balance must favor category knowledge over site self-description.
+- Sprint 138 executes the first production rebalance pass under this decision.
+
+### Public Surface Rule
+
+Every indexable public route must answer this test:
+
+Does this page teach the reader something useful about evidence, synthetic media, misinformation, source confidence, provenance, context, traceability, or evidence posture?
+
+If not, it should not remain an indexable public route.
+
+### Audit Rule
+
+No audit without production contact.
+
+An audit is permitted only when it examines something that was just built, just deployed, just indexed, externally misunderstood, or visibly defective.
+
+### Boundary
+
+This decision does not delete governance.
+It relocates governance to its proper role: controlling production, not replacing production.
+

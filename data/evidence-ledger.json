@@ -1520,6 +1520,17 @@
       "status": "active",
       "last_reviewed": "2026-07-04",
       "notes": "Sprint 137 audit-only live deployment freshness recheck."
+    },
+    {
+      "claim_id": "CLAIM-0139",
+      "claim_text": "Hoax.ai completed Sprint 138 Public Surface Rebalance Pass under DEC-139, reducing the indexable public surface from 104 to 63 routes, removing 42 self-referential strategic and review routes from sitemap, adding /about-this-reference/, rewriting README, creating CHANGELOG.md, freezing sequential audit-only sprints unless tied to production contact, and passing validate_public_surface_rebalance_pass_v1.",
+      "claim_type": "governance_claim",
+      "evidence_posture": "repository_supported",
+      "support_location": "SPRINT_138_PUBLIC_SURFACE_REBALANCE_PASS.md, DECISION_LOG.md, CHANGELOG.md, validators/validate_public_surface_rebalance_pass_v1.py, about-this-reference/index.html, data/route-registry.json, sitemap.xml",
+      "source_type": "governance_file",
+      "status": "active",
+      "last_reviewed": "2026-07-08",
+      "notes": "Sprint 138 production corrective rebalance per DEC-139."
     }
   ]
 }

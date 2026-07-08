@@ -2130,7 +2130,25 @@
       "failure_condition": "live_deployment_freshness_recheck_audit_v1_not_met",
       "bypassable": false,
       "notes": "Sprint 137 rechecked the five Sprint 136 live freshness failures after empty deployment trigger 0a25e37; all resolved, no route expansion."
+    },
+    {
+      "gate_id": "PUB-GATE-0132",
+      "name": "Public Surface Rebalance Pass v1 Gate",
+      "status": "public_surface_rebalance_pass_v1_complete_pre_validation",
+      "required_currently": true,
+      "required_before_public_release": true,
+      "required_before_broader_public_release": true,
+      "required_before_engine_governance": true,
+      "required_before_any_public_route": true,
+      "required_before_any_sitemap_expansion": true,
+      "required_before_any_public_navigation": true,
+      "required_before_engine_prototype": true,
+      "required_before_engine_prototype_implementation": true,
+      "validation_source": "SPRINT_138_PUBLIC_SURFACE_REBALANCE_PASS.md",
+      "failure_condition": "public_surface_rebalance_pass_v1_not_met",
+      "bypassable": false,
+      "notes": "Sprint 138 production rebalance: 63-route public surface, DEC-139 audit freeze, README/CHANGELOG cleanup."
     }
   ],
-  "last_reviewed": "2026-07-02"
+  "last_reviewed": "2026-07-08"
 }
