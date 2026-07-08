@@ -160,6 +160,28 @@ strong {
   padding-top: 5rem;
 }
 
+.public-entry-hook {
+  margin-bottom: 2.5rem;
+  max-width: 56ch;
+}
+
+.public-entry-hook p {
+  margin-bottom: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.entry-hook-question {
+  font-size: 1.15rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.entry-hook-metaphor {
+  font-style: italic;
+  color: var(--amber-text);
+  margin-bottom: 0;
+}
+
 .thesis-lead {
   font-size: 1.1rem;
   color: var(--text-secondary);

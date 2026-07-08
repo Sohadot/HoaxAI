@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-08T16:33:29.211284+00:00",
-  "commit_sha": "4ff3f3850da440882810354b4bb2131658e7a0aa",
+  "generated_at": "2026-07-08T18:14:42.045096+00:00",
+  "commit_sha": "0391706e6615456338e7dc1199ebbf4427c0282a",
   "commit_sha_note": null,
   "validator_entrypoint": "validators/validate_all.py",
   "validator_status": "pending_until_validate_all",
@@ -190,7 +190,7 @@
     "EVIDENCE_POSTURE_TAXONOMY.md": "c206cf6008ef6644a3dd6b5a794dfc51c1ee34fc45c9a281d20375aa6bf23987",
     "GOVERNANCE_BOUNDARY.md": "e65ce88b867171f8d60feb6257ed4c72784a3ad0d9f80271b9d7a0860d905b72",
     "CLAIM_POLICY.md": "d198fdaf62e97ec33a5d10a4cedea64403f2f9477b2d0dc087e0054ecb2a5fe2",
-    "DECISION_LOG.md": "72a7cfcf3fcfb78b3bedfa94f2900bf43d3bba60df92a5f403a832d92ad59b8b",
+    "DECISION_LOG.md": "140149172bf635694be17f61d6632eac9be8b5f1c092cda2eb49c51eae5f3b75",
     "ROADMAP.md": "2af93ca409e0b31871375be994fc2fb22d5e00c8742bbc0a9f9f77188a6d2678",
     "MASTER_EXECUTION_PLAN.md": "a499f118e9caf03abde81c33b18535588e1d780aa3237f799cccdf23b7311337",
     "CATEGORY_INTELLIGENCE_FACTORY_PLAN.md": "fed7a0cb9e45c3e6812b3a530f22e7ad7ab24fc25329db4d5951cf382941a326",
@@ -298,7 +298,7 @@
     "validators/validate_controlled_public_reference_pilot.py": "abe77c78f6930b13de47c12fb0a17f658d739202b6ad4f79ca8e1fe3e29590aa",
     "validators/validate_public_reference_live_surface.py": "f544cefc5301127b86310288ad1a44f785873e31c085d7eadc0ef7dff2b96b9e",
     "validators/generate_build_manifest.py": "7b109953c3b190a45954c45ecccd7edd6092af74115985f686c8b8369d5f2e21",
-    "index.html": "001d212f88167fdbe282fa275f1ba7b8302807a36ea29e7aad34f88b2e1ce56b",
+    "index.html": "6907a8f6ba6105b8599c8e435ebfcda8e7bb83256b1f480b566cde0df0f6d3c9",
     "reference/evidence-posture/index.html": "3b67f3bb74fde3931b6303d9294016b3e04fcb53d261db5dba94bccbdf8c3a3c",
     "reference/artifact-subject-separation/index.html": "8657cf1ce0984b62d35b0d8998d23d82b607468259c73489c5b3c56d883efef0",
     "sitemap.xml": "90a2c790ff53b3dc73f8cd2cc64757bf717418b94e2bba53e93d1d97f95b2b64"

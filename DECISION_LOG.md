@@ -3621,3 +3621,43 @@ An audit is permitted only when it examines something that was just built, just 
 This decision does not delete governance.
 It relocates governance to its proper role: controlling production, not replacing production.
 
+## DEC-140 — Public Entry Hook Hierarchy
+
+**Date:** 2026-07-08  
+**Status:** Active
+
+### Origin
+
+External reader feedback from the domain owner review in July 2026 identified that Hoax.ai's homepage entry language was conceptually strong but too abstract for the first public reading moment.
+
+This qualifies under DEC-139's external-use signal clause and extends DEC-002 and DEC-005.
+
+### Decision
+
+Hoax.ai may use the human question "Is it fake or real?" as a homepage entry hook, but never as an output promise.
+
+The hook is permitted only when immediately bounded by evidence-examination language.
+
+Hoax.ai does not answer by issuing an instant verdict. It answers by organizing the evidence conditions a reader should examine before belief, sharing, publication, escalation, or action.
+
+### Homepage Entry Hierarchy
+
+The homepage may introduce Hoax.ai through the following sequence:
+
+1. suspicious-content scenario;
+2. human fake/real question;
+3. evidence-examination promise;
+4. door/house metaphor;
+5. evidence-first thesis.
+
+### Scope
+
+This hierarchy applies to the homepage entry only.
+
+Reference pages, standard pages, protocol pages, source-confidence blocks, reference answers, citation blocks, and retrieval capsules retain thesis-first and evidence-condition-first language.
+
+### Boundary
+
+"Is it fake or real?" must not be used as a detector promise, score promise, upload promise, truth-verification promise, or automated authenticity claim.
+
+Any future use of fake/real language without immediate evidence-examination boundary language is non-compliant.
