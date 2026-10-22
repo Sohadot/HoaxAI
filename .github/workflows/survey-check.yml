@@ -1,0 +1,22 @@
+name: Survey checks
+on:
+  pull_request:
+    paths:
+      - "survey/**"
+      - "survey-api/**"
+      - ".github/workflows/survey-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check survey UI and collection endpoint
+        run: npm test --prefix survey-api
