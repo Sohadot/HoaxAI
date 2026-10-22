@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0c1117">
+  <meta name="description" content="Share your first impression of Hoax.ai and help improve its practical usefulness.">
+  <title>Hoax.ai — First Impressions</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0c1117;--panel:#141c25;--border:#31414a;--ink:#f1f4ef;--sub:#b7c6c8;--accent:#a8e2c2}
+    *{box-sizing:border-box}
+    html{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+    body{margin:0;min-height:100vh}
+    .top{border-bottom:1px solid var(--border);padding:20px max(20px,calc((100% - 760px)/2));display:flex;justify-content:space-between;align-items:center}
+    .mark{font-size:1.15rem;font-weight:750;letter-spacing:-.03em}.muted{color:var(--sub)}
+    main{max-width:760px;margin:auto;padding:clamp(24px,5vw,58px) 20px 80px}
+    .eyebrow{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.35rem);letter-spacing:-.045em;line-height:1.12;margin:12px 0 14px}
+    h2{font-size:clamp(1.4rem,3.5vw,2rem);line-height:1.25}
+    p{line-height:1.65}.intro{max-width:56ch;color:var(--sub)}
+    .panel{border:1px solid var(--border);border-radius:16px;padding:clamp(18px,4vw,30px);background:var(--panel);margin-top:25px}
+    fieldset{border:0;padding:0;margin:0}legend{font-weight:700;font-size:1.14rem;line-height:1.45;margin-bottom:16px}
+    .choice{display:flex;gap:12px;align-items:flex-start;padding:14px;margin:9px 0;border:1px solid var(--border);border-radius:10px;cursor:pointer;line-height:1.5}
+    .choice:has(input:checked){border-color:var(--accent);background:#1c302e}
+    input[type=radio],input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;flex:none;margin-top:3px}
+    textarea{display:block;width:100%;max-width:100%;min-height:106px;color:var(--ink);background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px;font:inherit}
+    button,.btn{appearance:none;border:1px solid var(--accent);border-radius:9px;background:var(--accent);color:#0b211a;font:inherit;font-weight:750;cursor:pointer;padding:12px 18px;text-decoration:none;display:inline-block}
+    button:disabled{opacity:.48;cursor:not-allowed}.btn-secondary{background:transparent;color:var(--ink);border-color:var(--border)}
+    a{color:var(--accent)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #d5f8e2;outline-offset:3px}
+    .actions{margin-top:23px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .hint{font-size:.88rem;color:var(--sub)}.status{padding:12px;border:1px solid var(--border);border-radius:8px;margin:16px 0}
+    .error{border-color:#eb9d9d;color:#ffd1d1}.success{border-color:var(--accent);color:#c8f7db}
+    [hidden]{display:none!important}
+    .divider{height:1px;background:var(--border);margin:24px 0}
+    .privacy{font-size:.87rem;color:var(--sub);margin-top:27px}
+    .progress{color:var(--sub);font-size:.83rem;margin-top:20px}
+  </style>
+</head>
+<body>
+  <header class="top"><span class="mark">Hoax.ai</span><span class="muted">Independent feedback</span></header>
+  <main>
+    <div class="eyebrow">Public interpretation survey</div>
+    <h1>What does this name mean to you?</h1>
+    <p class="intro" id="lead">Please answer the first question based on the name alone. Do not visit the main website until you have submitted your first impression.</p>
+    <p class="progress" id="progress" aria-live="polite">Step 1 of 3</p>
+    <div id="service-message" class="status" role="status" aria-live="polite">Checking whether responses can be accepted…</div>
+    <form id="survey" novalidate hidden>
+      <section class="panel" id="stage1">
+        <fieldset>
+          <legend>1. Based on the name Hoax.ai alone, what would you expect this website to offer?</legend>
+          <label class="choice"><input type="radio" name="q1" value="detector" required> An AI-powered fake-content detector</label>
+          <label class="choice"><input type="radio" name="q1" value="guidance"> Guidance for investigating suspicious information</label>
+          <label class="choice"><input type="radio" name="q1" value="news"> News and examples of online hoaxes</label>
+          <label class="choice"><input type="radio" name="q1" value="other"> Something else</label>
+          <label class="choice"><input type="radio" name="q1" value="unsure"> I'm not sure</label>
+        </fieldset>
+        <div class="actions"><button type="button" id="first-next">Lock first impression &amp; continue</button></div>
+        <p class="hint">Your first choice is locked before you explore the website.</p>
+      </section>
+      <section class="panel" id="stage2" hidden>
+        <h2>Now explore the website</h2>
+        <p>Open the main Hoax.ai website in a new tab and explore the introduction and at least one reference or manual utility. Then return here.</p>
+        <div class="actions"><a class="btn btn-secondary" href="https://hoax.ai/" target="_blank" rel="noopener noreferrer">Explore Hoax.ai ↗</a></div>
+        <label class="choice"><input type="checkbox" id="explored"> I have explored the website and am ready to continue.</label>
+        <div class="actions"><button type="button" id="second-next">Continue to feedback</button></div>
+      </section>
+      <section class="panel" id="stage3" hidden>
+        <fieldset>
+          <legend>2. After exploring Hoax.ai, what do you understand its main purpose to be?</legend>
+          <label class="choice"><input type="radio" name="q2" value="evidence" required> Helping people examine evidence, sources, and context</label>
+          <label class="choice"><input type="radio" name="q2" value="detector"> Automatically determining whether content is fake or real</label>
+          <label class="choice"><input type="radio" name="q2" value="reporting"> Reporting misinformation and online hoaxes</label>
+          <label class="choice"><input type="radio" name="q2" value="unsure"> I'm still not sure</label>
+        </fieldset>
+        <div class="divider"></div>
+        <fieldset>
+          <legend>3. Which capability would be most useful to you? (Choose one.)</legend>
+          <label class="choice"><input type="radio" name="q3" value="checklist" required> A simple checklist for evaluating suspicious content</label>
+          <label class="choice"><input type="radio" name="q3" value="sources"> Tools for examining sources and context</label>
+          <label class="choice"><input type="radio" name="q3" value="synthetic"> Guidance on AI-generated or manipulated media</label>
+          <label class="choice"><input type="radio" name="q3" value="gaps"> Identifying missing, unclear, or unsupported evidence</label>
+        </fieldset>
+        <div class="divider"></div>
+        <fieldset>
+          <legend>4. Would you use a resource like Hoax.ai?</legend>
+          <label class="choice"><input type="radio" name="q4" value="regular" required> Yes, regularly in my work</label>
+          <label class="choice"><input type="radio" name="q4" value="occasional"> Yes, occasionally</label>
+          <label class="choice"><input type="radio" name="q4" value="conditional"> Possibly, if it addressed a specific need</label>
+          <label class="choice"><input type="radio" name="q4" value="unlikely"> Probably not</label>
+        </fieldset>
+        <div class="divider"></div>
+        <label for="q5"><strong>5. What would make Hoax.ai more useful to you?</strong> (Optional)</label>
+        <p class="hint">Please do not include names, contact details, or other personal information.</p>
+        <textarea id="q5" name="q5" maxlength="500" placeholder="Your feedback (up to 500 characters)"></textarea>
+        <div class="divider"></div>
+        <div id="turnstile"></div>
+        <p class="hint">Anonymous feedback, no account required. Your selections and optional comment are securely stored for research; we do not request names or email addresses. Avoid personal information. Automated abuse protection is used. Responses may be retained for up to 90 days and are not published individually.</p>
+        <div class="actions"><button type="submit" id="submit" disabled>Submit anonymous feedback</button></div>
+      </section>
+    </form>
+    <div id="done" class="panel" hidden><h2>Thank you for your feedback.</h2><p>Your response has been received. We appreciate your independent perspective.</p><a href="https://hoax.ai/" class="btn btn-secondary">Return to Hoax.ai</a></div>
+    <p class="privacy">This survey is for understanding how visitors interpret and might use Hoax.ai, not for making truth judgments or evaluating individuals. Participation is voluntary.</p>
+  </main>
+<script>
+(function(){
+  'use strict';
+  const api='/survey/api/', form=document.getElementById('survey'), message=document.getElementById('service-message');
+  const stages=[document.getElementById('stage1'),document.getElementById('stage2'),document.getElementById('stage3')];
+  const progress=document.getElementById('progress'), lead=document.getElementById('lead');
+  const submit=document.getElementById('submit');
+  let config=null, token='', widget=null, lockedQ1='', requestId=crypto.randomUUID(), current=0, complete=false;
+  const source=(new URLSearchParams(location.search)).get('ref')||'direct';
+  const referral=['rick','discord','direct','other'].includes(source)?source:'other';
+  function status(s, error){message.hidden=false;message.textContent=s;message.className='status'+(error?' error':'');}
+  function picked(name){return form.querySelector('input[name="'+name+'"]:checked')?.value || '';}
+  function stage(n){current=n;stages.forEach((s,i)=>s.hidden=i!==n);progress.textContent='Step '+(n+1)+' of 3';}
+  function turnstileReady(){
+    if(!window.turnstile){status('The verification component could not load. Please refresh and try again.',true);return;}
+    widget=window.turnstile.render('#turnstile',{
+      sitekey:config.sitekey,action:'hoax_survey',theme:'dark',
+      callback:function(value){token=value;submit.disabled=false;},
+      'expired-callback':function(){token='';submit.disabled=true;},
+      'error-callback':function(){token='';submit.disabled=true;status('Verification failed. Please try again.',true);}
+    });
+  }
+  async function init(){
+    try{
+      const r=await fetch(api+'status',{cache:'no-store'});
+      if(!r.ok)throw new Error('Unavailable');
+      config=await r.json();
+      if(!config.ready || !config.sitekey)throw new Error('Not configured');
+      message.hidden=true;form.hidden=false;
+    }catch(e){status('The survey is not accepting responses yet. Please return later.',true);}
+  }
+  document.getElementById('first-next').addEventListener('click',function(){
+    const v=picked('q1');
+    if(!v){status('Please select your first impression to continue.',true);return;}
+    lockedQ1=v;
+    form.querySelectorAll('input[name="q1"]').forEach(x=>x.disabled=true);
+    message.hidden=true;lead.textContent='Thank you. Now explore the site before answering the remaining questions.';stage(1);
+  });
+  document.getElementById('second-next').addEventListener('click',function(){
+    if(!document.getElementById('explored').checked){status('Please explore the website before continuing.',true);return;}
+    message.hidden=true;stage(2);
+    const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    script.async=true;script.defer=true;script.onload=turnstileReady;script.onerror=function(){status('Verification is unavailable. Please try again later.',true);};
+    document.head.appendChild(script);
+  });
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    if(current!==2 || complete)return;
+    if(!picked('q2')||!picked('q3')||!picked('q4')){status('Please complete questions 2–4.',true);return;}
+    if(!token){status('Complete the verification to submit.',true);return;}
+    submit.disabled=true;message.hidden=true;
+    const body={request_id:requestId,q1:lockedQ1,q2:picked('q2'),q3:picked('q3'),q4:picked('q4'),q5:document.getElementById('q5').value.trim(),referral:referral,turnstile_token:token};
+    try{
+      const r=await fetch(api+'submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),cache:'no-store',credentials:'omit'});
+      if(!r.ok)throw new Error('The response was not saved.');
+      complete=true;form.hidden=true;lead.hidden=true;progress.hidden=true;message.hidden=true;document.getElementById('done').hidden=false;
+    }catch(err){
+      status('We could not confirm receipt. Please try again after verifying again.',true);
+      token='';if(window.turnstile&&widget!==null)window.turnstile.reset(widget);
+      submit.disabled=true;
+    }
+  });
+  init();
+})();
+</script>
+</body></html>
