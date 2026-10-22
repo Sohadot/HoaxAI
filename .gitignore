@@ -2,3 +2,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
+
+# Local Cloudflare survey configuration and secrets
+survey-api/wrangler.toml
+survey-api/.dev.vars
+survey-api/.env*
+survey-api/.wrangler/
