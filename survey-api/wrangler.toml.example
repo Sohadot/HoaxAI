@@ -1,0 +1,20 @@
+# TEMPLATE ONLY; create survey-api/wrangler.toml privately after provisioning.
+# Cloudflare Worker route can be used only when the zone is on Cloudflare's proxy.
+name = "hoax-survey-api"
+main = "src/index.js"
+compatibility_date = "2026-10-22"
+workers_dev = false
+
+routes = [{ pattern = "hoax.ai/survey/api/*", zone_name = "hoax.ai" }]
+
+[vars]
+ALLOWED_ORIGIN = "https://hoax.ai"
+TURNSTILE_SITEKEY = "REPLACE_WITH_PUBLIC_SITE_KEY"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hoax-survey-private"
+database_id = "REPLACE_WITH_D1_UUID"
+
+# Never add TURNSTILE_SECRET here or commit your live credentials.
+# Set through: npx wrangler secret put TURNSTILE_SECRET
