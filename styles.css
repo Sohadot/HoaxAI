@@ -91,6 +91,67 @@ a.site-mark-link:focus-visible {
   text-transform: uppercase;
 }
 
+/* Independent audience survey: off-site invitation, not a Hoax.ai data-collection tool. */
+.independent-survey-invite {
+  width: min(calc(100% - 2 * var(--gutter)), var(--max-width));
+  margin: 1.25rem auto 0;
+  border: 1px solid #30445d;
+  border-radius: 12px;
+  background: var(--bg-surface);
+}
+.independent-survey-inner { padding: 1.2rem 1.5rem; }
+.independent-survey-kicker {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  color: #8ac6ec;
+  margin-bottom: .6rem;
+}
+.independent-survey-invite h2 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-transform: none;
+  color: var(--text);
+  margin-bottom: .5rem;
+}
+.independent-survey-invite p:not(.independent-survey-kicker) {
+  max-width: 61ch;
+  font-size: .925rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: .8rem;
+}
+.independent-survey-invite .independent-survey-link {
+  display: inline-block;
+  color: #0c1117;
+  background: #a6d7f4;
+  border: 1px solid #a6d7f4;
+  padding: .55rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.independent-survey-link:hover,
+.independent-survey-link:focus-visible {
+  color: #0c1117;
+  background: #d6edff;
+  outline: 2px solid #d6edff;
+  outline-offset: 2px;
+}
+.independent-survey-invite .independent-survey-note {
+  margin-top: .6rem;
+  margin-bottom: 0;
+  font-size: .77rem;
+}
+@media (max-width: 520px) {
+  .independent-survey-inner { padding: 1rem; }
+}
+
 /* ─── Main ──────────────────────────────────────────── */
 
 main {
